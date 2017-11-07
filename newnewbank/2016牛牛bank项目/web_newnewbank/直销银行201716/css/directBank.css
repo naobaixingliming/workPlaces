@@ -1,0 +1,440 @@
+		div.slideBox {
+				/*position:relative;*/
+				width: 637px;
+				height: 505px;
+				overflow: hidden;
+			}			
+			div.slideBox ul.items {
+				position: absolute;
+				float: left;
+				background: none;
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			div.slideBox ul.items li {
+				float: left;
+				height: 330px;
+				background: none;
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			div.slideBox ul.items li a {
+				float: left;
+				line-height: normal !important;
+				padding: 0px !important;
+				border: none/*For IE.ADD.JENA.201206300844*/
+				;
+			}
+			
+			div.slideBox ul.items li a img {
+				margin: 0px !important;
+				padding: 0px !important;
+				display: block;
+				border: none/*For IE.ADD.JENA.201206300844*/
+				;
+			}
+			
+			div.slideBox div.tips {
+				position: absolute;
+				bottom: -5px;
+				width: 100%;
+				height: 50px;
+				overflow: hidden;
+			}
+			
+			div.slideBox div.tips div.title {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				height: 100%;
+			}
+			
+			div.slideBox div.tips div.title a {
+				color: #FFF;
+				font-size: 18px;
+				line-height: 50px;
+				margin-left: 10px;
+				text-decoration: none;
+			}
+			
+			div.slideBox div.tips div.title a:hover {
+				text-decoration: underline !important;
+			}
+			
+			div.slideBox div.tips div.nums {
+				position: absolute;
+				right: 40%;
+				top: 0px;
+				height: 100%;
+			}
+			
+			div.slideBox div.tips div.nums a {
+				display: inline-block;
+				>float: left;
+				width: 15px;
+				height: 15px;
+				background-color: #b9000c;
+				text-indent: -99999px;
+				margin: 15px 10px 0px 0px;
+			}
+			
+			div.slideBox div.tips div.nums a.active {
+				width: 17px;
+				height: 17px;
+				border: 1px solid #b9000c;
+				background-color: #fff;
+			}
+			#carousel {
+			    position: absolute;
+			    border-radius: 10px;
+			    top: 20px;
+			    right: 15px;
+			    border: 1.5px #fff solid;
+			}
+			/*----2----*/
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: "microsoft yahei";
+			}
+			li{
+				list-style: none;
+			}
+			i {
+				display: inline-block;
+				font-style: normal;
+			}
+			
+			.w_1200 {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.font_14{
+				font-size: 14px;
+			}
+			.font_16{
+				font-size: 16px;
+			}
+			.font_18{
+				font-size: 18px;
+			}
+			.font_20 {
+				font-size: 20px;
+			}
+			
+			.font_30 {
+				font-size: 30px;
+			}
+			
+			.font_40 {
+				font-size: 40px;
+			}
+			
+			.font_60 {
+				font-size: 60px;
+			}
+			
+			.color_fff {
+				color: #fff;
+			}
+			.color_999{
+				color: #999;
+			}
+			.text_center {
+				text-align: center;
+			}
+			
+			.bold {
+				font-weight: bold;
+			}
+			
+			.overflow {
+				overflow: hidden;
+			}
+			.color_666{
+				color: #666;
+			}
+			.color_b9000c {
+				color: #b9000c;
+			}
+			.inline_block{
+				display: inline-block;
+			}
+			.related{
+				position: relative;
+			}
+			.leftFloat{
+				float: left;
+			}	
+			.float-right{
+				float: right;
+			}
+			/*----3----*/
+			#root-diretBank {
+				width: 100%;
+			}			
+			.header-one {
+				width: 100%;
+				min-width:1200px ;
+				height: 492px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/gorgeousBg201716.jpg) no-repeat center top;
+			}			
+			.textShadow {
+				width: 862px;
+				height: 271px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/textshadow201716.png) no-repeat;
+				margin-left: 150px;
+				background-position: 60px 14px;
+			}			
+			.margin {
+				margin: 135px 0 10px;
+			}			
+			.inverseDistance {
+				margin-top: 30px;
+			}			
+			.letter {
+				letter-spacing: 3px;
+			}			
+			.nav-two {
+				width: 100%;
+				height: 628px;
+				background-color: #e6e6e6;
+				position: relative;
+			}	
+			.star-1{
+				width:119px ;
+				height: 152px;
+				position: absolute;
+				right: 3%;
+				top: 13%;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/star1-201717.png) no-repeat ;
+			}
+			.star-2{
+				width:362px ;
+				height: 308px;
+				position: absolute;
+				left: 0%;
+				bottom: -37%;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/star2-201717.png) no-repeat ;
+			}			
+			.meetingProfile {
+				width: 1031px;
+				height: 19px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/redAdorn201716.png) no-repeat;
+				margin: 60px auto 45px;
+			}
+			.whiteBox{
+				width: 1063px;
+				height: 358px;
+				background-color: #fff;
+				border-radius: 5px;
+				position: relative;
+				margin:0 auto ;
+			}
+			.left-text{
+				width: 472px;				
+			}
+			.left-text p{
+				text-indent: 2em;
+			    letter-spacing: 1.5px;
+			    padding-top: 50px;
+			    padding-left: 30px;
+			    line-height: 25px;				
+			}
+			.floatCenter{
+				float: left;
+			    width: 100%;
+			    margin-top: -10px;
+			}
+			.content-three{
+				width:100% ;
+				height: 760px;
+			}
+			.star-3{
+				width: 133px;
+				height: 158px;
+				position: absolute;
+				right: 5%;
+				top:-70px ;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/star3-201717.png) no-repeat ;
+			}
+			
+			.diagramsArray{
+				width:983px ;
+				height: 641px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/eightDiagramsArray201716.png) no-repeat;
+				margin: 55px auto;
+				position: relative;
+			}
+			.common-text{
+				width: 290px;						
+			}
+			.common-text p{
+				text-align: center;
+				color: #666;
+			}
+			.text-first{
+				position: absolute;	
+				top: 60px;
+				left: 230px;
+			}
+			.text-second{
+				position: absolute;
+			    top: 20px;
+			    right: 0px;
+			}
+			.text-third{
+				position: absolute;
+			    bottom: 30px;
+			    left: 0px;
+			}
+			.text-firty{
+				position: absolute;
+			    bottom: 35px;
+			    right: 230px;
+			}
+			.arrDown{
+				width: 0;
+			    height: 0;
+			    border-left: 12px solid transparent;
+			    border-right: 12px solid transparent;
+			    border-top: 20px solid #999;
+			    margin: 10px auto;
+			}
+			.arrUp{
+				width: 0;
+			    height: 0;
+			    border-left: 12px solid transparent;
+			    border-right: 12px solid transparent;
+			    border-bottom: 20px solid #999;
+			    margin: 10px auto;
+			}
+			.process-four{
+				width:100% ;
+				min-width:1200px ;
+				height: 1169px;
+				position: relative;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/buildingBg201716.jpg) no-repeat center top;
+			}
+			.star-4{
+				width:137px ;
+				height: 88px;
+				position: absolute;
+				top: 570px;
+				left: 4%;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/star4-201717.png) no-repeat;
+			}
+			.bgColor_fff{
+				background-color:#fff ;	
+			}
+			.meetingAgenda{
+				width: 1063px;
+				height: 896px;
+				border-radius: 5px;
+				text-align: center;
+				margin: 0 auto;
+				position: relative;
+			}
+			.meetingAgenda img{
+				margin-top: 35px;
+			}
+			.position-one{
+				position: absolute;
+			    right: 190px;
+			    top: 35px;
+			    text-align: left;
+			}
+			.course-one,.course-two,.course-three,.course-four,.course-five{
+				margin-bottom: 20px;
+			}
+			.location{
+				
+			}
+			.twoEndAlign{
+				text-align: justify;
+				/*margin-right: 10px;*/
+			}
+			.leftAlign{
+				text-align: left;
+				margin-left: 10px;
+			}
+			.w2{
+				letter-spacing: 5px;
+			}
+			.position-two{
+				position: absolute;
+			    left: 160px;
+			    top: 150px;
+			    text-align: right;
+			}
+			.w4{
+				letter-spacing: 8px;
+			}
+			.position-three{
+				width: 430px;
+				position: absolute;
+			    right:75px;
+			    top: 265px;
+			    
+			}
+			.mar-left{
+				margin-left: 30px;
+			}
+			.position-four{
+				position: absolute;
+			    left: 180px;
+			    top: 445px;
+			    text-align: right;
+			}
+			.position-five{
+				width: 410px;
+			    position: absolute;
+			    right: 90px;
+			    top: 585px;			    
+			}
+			.position-six{
+				position: absolute;
+			    left: 280px;
+			    bottom: 50px;
+			}
+			.iconFloat{
+				width:1062px ;
+				margin: 60px auto 50px;
+			}
+			.iconFloat ul{
+				width: 1020px;
+				margin: 0 auto;
+			}
+			.iconFloat ul li{
+				float: left;
+			    margin: 0 10px 20px 10px;
+			}
+			
+			.scene-five{
+				width: 100%;
+				height: 540px;
+				background-color: #fff;
+				border-bottom:2px solid #e6e6e6 ;
+			}
+			.bottom-six{
+				width: 100%;
+				height: 233px;
+				
+			}
+			.company{
+				line-height: 30px;
+				margin-top:45px ;
+			}
+			.footer-seven{
+				width: 100%;
+				height: 84px;
+				background-color: #e6e6e6;
+			}
+			.foot-text{
+				padding-top:25px ;
+			}
+			

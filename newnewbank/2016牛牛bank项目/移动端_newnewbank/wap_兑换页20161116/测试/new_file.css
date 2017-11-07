@@ -1,0 +1,173 @@
+{
+				padding: 0;
+				margin: 0;
+				font-family: "microsoft yahei";
+			}
+			a{
+				list-style: none;
+				text-decoration:none ;
+			}
+			#root{
+				width:640px ;
+				height:1136px ;
+				background-color:#f0b51b ;
+			}
+			
+			#cover {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 640px;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.8);
+				display: block;
+				z-index: 1;
+			}
+			.popup{
+				position: fixed;
+				top:300px;
+				left:105px ;
+				width: 426px;
+				height:600px ;
+				display: block;
+				z-index: 2;
+			}
+			.recBox{
+				width:426px ;
+				height:446px ;
+				background-color:#fff ;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+			.p_icon{
+				width:353px ;
+				height:198px ;
+				margin-left: 35px;
+				float: left;
+				background:url(img/wap_exchangeSuccess20161116.png) no-repeat ;
+			}
+			.bge9e9e9{
+				margin:8px ;
+				height:215px ;
+				background-color:#e9e9e9;
+			}
+			.fs27{
+				font-size: 27px;
+				font-weight: bold;
+				text-align: center;
+				margin: 25px 0 20px;
+			}
+			.account{
+				font-size:22px ;
+				color: #666;
+				text-align: center;
+			}
+			.account a{
+				color: #f44975;
+			}
+			.investment{
+				font-size:24px ;
+				color: #fff;
+				width:325px ;
+				height: 56px;
+				text-align: center;
+				line-height: 56px;
+				margin: 25px auto;
+				background-color:#f44975 ;
+				border-radius:28px ;
+			}
+			.w_1line{
+				width:1px ;
+				height: 95px;
+				background-color:#fff;
+				margin:0 auto ;
+			}
+			.delete{
+				width: 56px;
+				height: 56px;
+				margin: 0 auto;
+				background:url(img/wap_delete20161116.png) no-repeat ;
+			}
+			
+			
+			
+			.head{
+				
+			}
+			.head img{
+				width:640px ;
+				height:395px ;
+			}
+			.main{
+				width:640px ;
+				height:741px ;
+				overflow: hidden;
+			}
+			.w_535{
+				width:535px ;
+				height:600px ;
+				margin:50px auto ;
+			}
+			.logLine{
+				font-size: 20px;
+				color: #bd2929;
+				float: right;
+				margin-right:20px ;
+			}
+			.clearF{
+				clear: both;
+			}
+			.logLine span a,.logLine span{
+				color: #fff;
+			}
+			.logLine span{
+				font-size: 24px;				
+			}
+			.inputBox{
+				width:530px ;
+				height:70px ;
+				background-color:#FFFFFF ;
+				font-size: 28px;
+				color: #fff;
+				border:1px #de3232 solid;
+				border-radius:10px ;
+				text-align: center;
+				line-height:70px ;
+			}
+			.margBox{
+				margin:38px 0 12px 0 ;
+			}			
+			.inputBox input{
+				width:500px ;
+				height:70px ;
+				text-align: center;
+				margin:0 auto;
+				border: 0px;
+				outline:0 ;
+				font-size: 28px;
+			}
+			.redBox{
+				background-color:#de3232 ;
+				margin-bottom: 40px;
+			}
+			.prompt{
+				color: #bd2929;
+				font-size: 24px;
+				text-align: center;
+				margin-bottom: 45px;
+			}
+			.icon{
+				background:url(img/wap_pointLine20161116.png) no-repeat;
+				background-size:494px 10px ;
+				background-position: 20px;
+			}
+			.textDescription{
+				text-align: left;
+				color: #bc2121;
+				font-size: 20px;
+				padding: 0 15px;
+				line-height: 35px;
+			}
+			.textDescription p{
+				margin-top:20px ;
+			}

@@ -1,0 +1,152 @@
+@charset "utf-8";
+/*  客户档案  */
+.cust-head{ width: 120px; height: 120px; border:1px solid #e5e5e5; text-align: center; vertical-align: middle; line-height: 120px;}
+.cust-head img{ width: 86px; height: auto;}
+.cust-id{ display: block; text-align: center; margin-top: 10px;}
+.cus-info{ width: 100%;}
+.cus-info tr{ border-bottom: 1px solid #eeeeee;}
+.cus-info th{ font: bold 24px/42px "Microsoft Yahei"; color: #828282; vertical-align: middle;}
+.cus-info td{font:normal 14px/42px "Microsoft Yahei"; color:#666666; vertical-align: middle; position: relative;}
+.cus-info .fa{ margin-right: 4px; position: relative;}
+.cus-info .fa b{position: absolute;top: -12px;left: 10px; min-width:52px;font-size: 12px;font-weight: normal;display: none;}
+.cus-info .fa:hover b{ display: block;}
+.cus-info th p, .cus-info td p{ margin: 0;}
+.green{color: #1ab394;}
+.green a{color: #1ab394;}
+.text-underline{ text-decoration: underline;}
+.cus-info p.text-underline{ cursor: pointer;}
+.cus-info th p.mgl10, .cus-info td p.mgl10{ margin-left: 10%;}
+.cus-info p.showInfo{ position: absolute; top: 0px; left: 16px;}
+.cus-info p.showInfo a{ display: inline-block; margin-left: 10px; display: none;}
+.cus-info p.showInfo:hover a{ display: inline-block;}
+.editBox{ width: 84%; height: 42px; position:absolute; left: 16px; top: 0px; display: none;}
+.editBox .editInfo{ position: absolute; top: 4px; left: 0px; padding-right: 40px;}
+.editBox .queren, .editBox .quxiao{ display: inline-block; width: 18px; height: 18px; text-align: center; border-radius: 50%; background-color: #1ab394; font:normal 12px/18px "Microsoft Yahei"; color: #FFFFFF;  position: absolute;top: 12px;}
+.editBox .quxiao{ right: 2px;}
+.editBox .queren{ right: 22px;}
+.cus-info .no-border,.loginRecord .no-border{border: none;}
+.cus-info .zhaoshang{width: 26px; height: 20px;}
+.cus-info .zhaoshang img{ width: 20px;}
+.dotted-right{ border-right: 1px dotted #dcdcdc;}
+.loginRecord{ width: 100%;}
+.loginRecord li{ list-style: none; height: 42px; margin: 0; font: normal 12px/42px "Microsoft Yahei"; color: #666666; border-bottom: 1px solid #eeeeee;}
+.loginRecord .fa{margin-right: 8px;}
+.loginRecord li.stress{ font: bold 18px/42px "Microsoft Yahei"; color:#999999;}
+.loginRecord li span{ margin-left: 10px;}
+.loginRecord li .mobile-phone{ font-size: 24px;}
+.operaRecords{ width: 100%; padding: 28px 0;}
+.operaRecords li{ height: 28px; list-style: none; font:normal 21px/56px "Microsoft Yahei"; color: #f44975; text-align: left;}
+.operaRecords li .fa{ margin-right: 20px; color: #000000;}
+.assets{ margin-top: 10px;}
+.ibox-content h5.total-num{ font: bold 24px/24px "Microsoft Yahei"; color:#666666; margin-bottom: 0px;  display: inline-block;margin: 0 0 7px;padding: 0;text-overflow: ellipsis;float: left;}
+.ibox-content h5.total-num .fa{ margin-right: 8px;}
+.total-num2{display:inline-block; float:left; margin-left:0px; font: normal 18px/24px "Microsoft Yahei"; color:#666666; margin-bottom: 0px;}
+.total-num2 .fa{ margin-right: 8px;}
+.ratioBox{ width: 90%; position: relative; margin: 90px auto 0 auto; font-size: 0px; height: 18px; border-radius: 9px; border: 1px solid #dcdcdc;}
+.ratioBox .available{ width: 25%; height: 16px; position: relative; display: inline-block; background: #19baaa; border-radius: 9px 0 0 9px;}
+.ratioBox .raise{ width: 25%; height: 16px; position: relative; display: inline-block; background: #f3d6c6;}
+.ratioBox .duein{ width: 25%; height: 16px; position: relative; display: inline-block; background: #7dbdd0; border-radius: 0 9px 9px 0;}
+
+.totalBox{margin: 40px auto 10px auto; text-align: center;}
+.totalAssets{ display: inline-block; width: auto; height: 36px; padding: 0 12px; border: 1px solid #dcdcdc; font: normal 14px/36px "Microsoft Yahei"; color: #666666; text-align: center; position: relative; }
+.totalAssets strong{ font:bold 18px/36px "Microsoft Yahei";color:#333333;}
+.avaiInfo,.raiInfo,.dueinInfo{ display: inline-block; min-width: 77px; border: 1px solid #dcdcdc; padding: 4px; position: absolute; bottom: 24px; left: 50%; margin-left: -38px;}
+.avaiInfo p,.raiInfo p,.dueinInfo p{font:normal 12px/16px "Microsoft Yahei";color:#666666; text-align: center; margin: 0;}
+.avaiInfo strong,.raiInfo strong,.dueinInfo strong{ display:block;font:normal 14px/16px "Microsoft Yahei";color:#333333; text-align: center;}
+.avaiInfo img,.raiInfo img,.dueinInfo img{ display: block; width: 77px; height: 5px; position: absolute; left: 50%; margin-left: -38px; bottom: -5px;}
+
+.cusRela{ width: 100%; padding: 20px 10px; margin: 0 auto;}
+.cusRela li{ position: relative; height: 180px; float: left; list-style: none;}
+.cusRela li.cusRela01{ width: 16.5%;}
+.cusRela li.cusRela02{ width: 34%;}
+.cusRela li.cusRela03{ width: 24%;}
+.cusRela li.cusRela04{ width: 20%;}
+.cusRela li img{ display: block; margin-top:26px;}
+.cusRela li.cusRela01 img{ width: 61%;}
+.cusRela li.cusRela02 img{ width: 70%;}
+.cusRela li.cusRela03 img{ width: 41%;}
+.cusRela li.cusRela04 img{ width: 51%;}
+.cusRela li.cusRela02 img{ margin-left: 35px;margin-top: 0px;}
+.cusRela li.cusRela03 img, .cusRela li.cusRela04 img{margin-left: 42px;}
+.cusRela li .arrow{ width: 22px; height: 19px; position: absolute; top: 55px; left:0px; background: url(../images/arrow.png) no-repeat center top;}
+.cusRela li .cusRelaInfo p{ text-align: center; font:normal 12px/24px "Microsoft Yahei"; color: #333333; margin-bottom: 0;}
+.cusRela li .cusRelaInfo span{ display: block;font:normal 12px/24px "宋体"; text-align: center;}
+.cusRela01 .cusRelaInfo p, .cusRela03 .cusRelaInfo p, .cusRela04 .cusRelaInfo p{ margin-top: 38px;}
+.cusRela01 .cusRelaInfo span, .cusRela02 .cusRelaInfo span{ color: #f44975;}
+.cusRela03 .cusRelaInfo span, .cusRela04 .cusRelaInfo span{ color: #999999;}
+
+.txwhrz{ background: #7dbdd0;}
+.txwh-l{ float: left; width: 25%; min-width: 96px; height: 110px; margin-top: 50px;} /*2015.12.22*/
+.txwh-l .fa{ width: 100%; color: #FFFFFF; font-size: 32px; text-align: center; margin: 0 auto; line-height: 1.5;} /*2015.12.22*/
+.txwh-l p{text-align: center; font: normal 14px/16px "宋体"; color: #FFFFFF;}
+.txwh-l .time{font-weight: bold; margin-bottom: 0;}
+.txwh-r{ float: left; width: 72%;}
+.txwh-r .whcz{ width: 100%; height: 32px; position: relative; margin-top: 10px;} /*2015.12.22*/
+.whcz > p{ font: bold 15px/30px "Microsoft Yahei"; color:#FFFFFF; position: absolute; left: 0px; top: 0px;}  /*2015.12.22*/
+.whcz .whcz-btns{ position: absolute; top: 0px; right: 0px;}
+.whcz .whcz-btns a{ display: inline-block; text-decoration: underline; line-height: 30px; color: #FFFFFF; margin-left: 10px;}
+.whInfo{ padding: 15px; background: #FFFFFF; margin-top: 6px; min-height: 100px;}
+.whInfo p{ font: normal 13px/18px "宋体"; color:#999999; margin: 0;}
+.whjl{ width: 100%; margin-top: 24px; margin-bottom: 20px;}
+.whjl p{ width: 33.33%; float: left; font: normal 12px/24px "宋体"; color: #FFFFFF; margin-bottom: 0;}
+.whjl p .fa{ font-size: 16px;}
+.whjl .ddh{ text-align: left;}
+.whjl .txnz{ text-align: center;}
+.whjl .jhy{ text-align: right;}
+.whjl .txnz span{ font-size: 14px; font-weight: bold;}
+.whjl p a{ color: #FFFFFF;}
+.txwhrz-btn{ display: block; width: 328px; height: 62px; text-align: center; font: normal 20px/62px "Microsoft Yahei"; color:#7dbdd0; margin: 26px auto; border-radius: 6px; border: 1px solid #7dbdd0;}
+.vertical-container {width: 95%;}
+.vertical-timeline-block{ margin: 1em 0;} /*2015.12.22*/
+.vertical-timeline-left{ width: 100px; position: absolute; top: 0px; left: 0px;}
+.vertical-timeline-icon2 {position: absolute;top: 0;right: 0;width: 36px;height: 30px;font-size: 16px;border: 1px solid #e5e5e5;text-align: center;}
+.navy-bg2 {background-color: #eeeeee;color: #7dbdd0;}
+#vertical-timeline{ margin-top: 0;}
+#vertical-timeline.light-timeline:before {background: #e7eaec;width: 1px;right: 0px; left: 99px;}
+.vertical-timeline-icon2 .fa{ line-height: 30px; font-size:20px; }
+.vertical-timeline-content {margin-left: 100px;border-bottom: 1px solid #e7eaec;}
+.wh-time{ font:normal 12px/18px "宋体"; color:#999999; padding-right: 10px; margin-top: 48px;}
+.wh-time p{ margin: 0;}
+.wh-time .gray{ color: #333333; font-weight: bold;}
+.vertical-timeline-content::before {border: none;}
+.vertical-timeline-right{ padding:0 20px 20px 20px;}
+.whjl-top{ width: 100%; height: 32px; position: relative; margin-top: 10px;}
+.whjl-top > p{font: bold 15px/32px "Microsoft Yahei"; color:#333333; position: absolute; left: 0px; top: 0px; margin: 0;}  /*2015.12.22*/
+.whjl-top .whjl-btns{ position: absolute; top: 0px; right: 0px;}
+.whjl-top .whjl-btns a{ display: inline-block; text-decoration: underline; line-height: 30px; color: #333333; margin-left: 10px;}
+.whjl-middle{ width: 100%; padding: 15px; border-radius: 6px; background: #f5f5f5; margin-top: 8px;}
+.whjl-middle p{ margin: 0; font:normal 12px/18px "宋体"; color: #999999;}
+.whjl-bottom{ width: 100%; margin-top: 4px; margin-bottom: 0px;}  /*2015.12.22*/
+.whjl-bottom p{ width: 33.33%; float: left; font: normal 12px/24px "宋体"; color: #999999; margin-bottom: 0;}
+.whjl-bottom p.ddh{ text-align: left;}
+.whjl-bottom p.txnz{ color: #7dbdd0; text-align: center;}
+.whjl-bottom p.jhy{ text-align: right;}
+.whjl-bottom p a{ color: #999999; text-decoration: underline;}
+.whjl-bottom p .fa{ font-size: 16px;}
+.margin-bottom200{ margin-bottom: 200px;}
+
+.btn .caret {margin-left: 5px;}
+.dropdown-menu{ min-width: 50px;}
+.icon-list .fa{color:#7dbdd0;}
+.input-group-btn .fa{ font-size: 18px;}
+.dropdown-menu>li>a { padding:3px 12px;}
+.my-btn{ text-align: left; padding-right: 18px;}
+.my-btn .whzt{ display:block; position: absolute; right: 10px; top: 15px;}
+.state-list{border: 1px solid #eeeeee;}
+.state-list table{ width: 300px;}
+.state-list th, .state-list td{ border: 1px solid #eeeeee; padding:4px 8px;}
+.cz-btns{ margin-top: 20px;}
+.cz-btns a{ display:inline-block; width: 68px; height: 30px; text-align: center; line-height: 30px; color: #bfbfbf; margin:0 9px; border: 1px solid #dbdbdb; border-radius: 5px; background: #FFFFFF;}
+.cz-btns a:hover, .cz-btns a.active{ border: 1px solid #f44975; color:#f44975;}
+.bjwhrz{ border: 1px dotted #dbdbdb; margin-top: 20px; width: 100%;resize: none; min-height: 190px;}
+.sztx{ margin-top: 30px;}
+.sztx .control-label{ font: normal 14px/24px "宋体"; color: #999999;}
+.sztx .control-label .fa{ font-size: 16px;color: #7dbdd0; margin-right: 8px;}
+.release-btn{ width: 220px; height: 45px; font-size: 18px; color: #FFFFFF; background-color: #7dbdd0; border-color:#7dbdd0;}
+.release-btn:hover{background-color:#64b8d1;border-color:#64b8d1; color: #FFFFFF;}
+.modal-footer.release{ text-align:center; margin-bottom: 30px; padding-top: 30px;}
+
+.modal-title.phoneCall{ color: #1ab394;}
+.showNumber{ text-decoration: underline; color: #333333; font: normal 16px/24px "Microsoft Yahei";}
+/* 报表 */
+.tabTrMid td{vertical-align: middle!important;}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>十月福利节 · 活动先行</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "microsoft yahei";
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			#all {
+				min-height: 4757px;
+				background: url(img/bg20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.contain1200w {
+				width: 1200px;
+				margin: 0 auto;
+				overflow: hidden;
+				border: solid 1px red;
+			}
+			
+			.header {
+				width: 970px;
+				height: 970px;
+				margin: 0 auto;
+				margin-top: 130px;
+				background: url(img/pc-welfare20161014.png) no-repeat;
+				background-size: 100% 100%;
+				overflow: hidden;
+			}
+			
+			.titleText {
+				width: 100%;
+				text-align: center;
+				font-size: 38px;
+				color: #fff;
+				margin-top: 35px;
+			}
+			
+			.activityTime {
+				width: 100%;
+				text-align: center;
+				font-size: 18px;
+				color: #fff;
+				margin-top: 310px;
+			}
+			
+			.headerTextDescript {
+				margin-top: 190px;
+				/*width: 100%;*/
+			}
+			
+			.headerTextDescript .leftText {
+				margin-left: 10%;
+				display: inline-block;
+				/*width:10% ;*/
+				color: #d3941f;
+				font-size: 24px;
+			}
+			
+			.leftText p {
+				text-align: center;
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
+				border: 1px solid #7f0a9b;
+				border-radius: 50%;
+			}
+			
+			.headerTextDescript .rightText {
+				height: 200px;
+				line-height: 30px;
+				margin-left: 20px;
+				display: inline-block;
+				width: 80%;
+				color: #fff;
+				font-size: 16px;
+			}
+			
+			.rightText>p>a {
+				/*list-style: none;*/
+				color: #d3941f;
+			}
+			
+			.headerloginBox {
+				margin-top: 40px;
+				position: relative;
+			}
+			
+			.headerloginBox .buttonClick {
+				width: 20%;
+				margin-left: 15%;
+				display: inline-block;
+				font-size: 26px;
+				color: #fff;
+			}
+			
+			.buttonClick p {
+				color: #D3941F;
+				font-size: 18px;
+				line-height: 30px;
+			}
+			
+			.buttonClick a {
+				cursor: pointer;
+				color: #fff;
+				font-size: 26px;
+			}
+			
+			.investmentButton {
+				display: inline-block;
+				width: 171px;
+				height: 59px;
+				line-height: 59px;
+				text-align: center;
+				color: #54127d;
+				cursor: pointer;
+				background: url(img/advisoryButton20161014.png) no-repeat;
+				background-size: 100% 100%;
+				font-size: 24px;
+				margin-left: 10%;
+			}
+			
+			.consultationButton {
+				display: inline-block;
+				width: 171px;
+				height: 59px;
+				line-height: 59px;
+				color: #fff;
+				text-align: center;
+				cursor: pointer;
+				background: url(img/investmentButton20161014.png) no-repeat;
+				background-size: 100% 100%;
+				font-size: 24px;
+				margin-left: 20px;
+			}
+			
+			.hideText {
+				display: none;
+				width: 20%;
+				margin-left: 15%;
+				position: absolute;
+				top: 1%;
+			}
+			
+			.hideText p:first-child {
+				font-size: 18px;
+				color: #D3941F;
+			}
+			
+			.hideText p:last-child {
+				font-size: 35px;
+				color: #e8b513;
+			}
+			
+			.investmentAmountBox {
+				margin-top: 260px;
+				width: 1200px;
+				height: 3300px;
+				position: relative;
+			}
+			/*1万 satrt*/
+			
+			.tenThousandSmallIsland {
+				width: 736px;
+				height: 439px;
+				margin-left: 310px;
+				background: url(img/tenThousandSmallIslands20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.oneText {
+				position: absolute;
+				font-size: 26px;
+				font-weight: bold;
+				color: #fff;
+				right: 455px;
+				top: 58px;
+			}
+			
+			.tenThousandSmallIsland .giftText,
+			.twistText {
+				position: absolute;
+				color: #fff;
+				font-size: 14px;
+			}
+			
+			.tenThousandSmallIsland .giftText {
+				right: 415px;
+				top: 150px;
+				line-height: 33px;
+			}
+			
+			.twistText {
+				position: absolute;
+				left: 790px;
+				top: 150px;
+			}
+			
+			.twistText a:first-child {
+				width: 80px;
+				position: absolute;
+				top: 5px;
+				left: 85px;
+			}
+			
+			.twistText a:last-child {
+				position: absolute;
+				left: 128px;
+				top: 12px;
+				width: 100px;
+			}
+			
+			.tenThousandSmallIsland .liquidizer {
+				width: 118px;
+				height: 210px;
+				position: absolute;
+				top: -200px;
+				left: 350px;
+				background: url(img/liquidizer20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.tenThousandSmallIsland .liquidizer:hover {
+				background: url(img/liquidizerText20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			/*<!--翻转 1 end-->*/
+			
+			.ergoChef {
+				width: 116px;
+				height: 191px;
+				position: absolute;
+				top: -200px;
+				left: 560px;
+				background: url(img/ergoChef20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.ergoChef:hover {
+				background: url(img/ergoChefText20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.vacuumCleaner {
+				width: 116px;
+				height: 191px;
+				position: absolute;
+				top: -100px;
+				left: 750px;
+				background: url(img/vacuumCleaner20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.vacuumCleaner:hover {
+				background: url(img/vacuumCleanerText20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.oneButton {
+				position: absolute;
+				top: 290px;
+				left: 350px;
+			}
+			/*1万 end*/
+			/*4万 start*/
+			.fortyThousandSmallIsland {
+				width: 809px;
+				height: 443px;
+				margin-top: 220px;
+				margin-left: 350px;
+				background: url(img/pc_4w20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.fourText {
+				position: absolute;
+				font-size: 26px;
+				font-weight: bold;
+				color: #fff;
+				right: 670px;
+				top: 800px;
+			}
+			
+			.fortyThousandSmallIsland .giftText {
+			    position: absolute;
+			    color: #fff;
+			    font-size: 14px;
+			    right: 550px;
+			    top: 890px;
+			    line-height: 22px;
+			    text-align: right;
+			}
+			.fourButton{
+				position: absolute;
+				right: 200px;
+    			top: 955px;
+			}
+			.phoenixBrand {
+				width: 118px;
+				height: 195px;
+			    position: absolute;
+			    top: 550px;
+			    left: 680px;
+				background: url(img/pc_phoenixBrand20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.phoenixBrand:hover {
+				background: url(img/pc_phoenixBrandText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.camera{
+				width: 116px;
+				height: 191px;
+			    position: absolute;
+			    top: 500px;
+			    left: 870px;
+				background: url(img/pc_camera20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.camera:hover {
+				background: url(img/pc_cameraText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.humidifier{
+				width: 116px;
+				height: 192px;
+			    position: absolute;
+			    top: 550px;
+			    left: 1050px;
+				background: url(img/pc_humidifier20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.humidifier:hover {
+				background: url(img/pc_humidifierText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			/*4万 end*/
+			/*8万 start*/
+			.eightThousandSmallIsland {
+				width: 809px;
+				height: 443px;
+				margin-top: 220px;
+				margin-left: 350px;
+				background: url(img/pc_8w20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.eightText {
+				position: absolute;
+			    font-size: 26px;
+			    font-weight: bold;
+			    color: #fff;
+			    right: 470px;
+			    top: 1400px;
+			}
+			.eightThousandSmallIsland .giftText {
+			    position: absolute;
+			    color: #fff;
+			    font-size: 14px;
+			    right: 550px;
+			    top: 1400px;
+			    line-height: 22px;
+			    text-align: right;
+			}
+			.eightButton{
+				position: absolute;
+				right: 500px;
+    			top: 1800px;
+			}
+			.intelligentBalanceVehicle{
+				width: 116px;
+				height: 192px;
+			    position: absolute;
+			    top: 1200px;
+			    left: 120px;
+				background: url(img/pc_camera20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.intelligentBalanceVehicle:hover {
+				background: url(img/pc_cameraText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.safetySeat{
+				width: 117px;
+				height: 192px;
+			    position: absolute;
+			    top: 1350px;
+			    left: 1050px;
+				background: url(img/pc_safetySeat20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.safetySeat:hover {
+				background: url(img/pc_safetySeatText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			/*8万 end*/
+			/*10万 start*/
+			.onehundredthousandSmallIsland {
+				width: 809px;
+				height: 443px;
+				margin-top: 420px;
+				margin-left: 100px;
+				background: url(img/pc_10w20161014.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.tenText {
+				position: absolute;
+			    font-size: 26px;
+			    font-weight: bold;
+			    color: #fff;
+			    right: 670px;
+			    top: 1600px;
+			}
+			.onehundredthousandSmallIsland .giftText {
+			    position: absolute;
+			    color: #fff;
+			    font-size: 14px;
+			    right: 550px;
+			    top: 1600px;
+			    line-height: 22px;
+			    text-align: right;
+			}
+			.tenButton{
+				position: absolute;
+				right: 500px;
+    			top: 2100px;
+			}
+			.funShot {
+				width: 118px;
+				height:210px;
+			    position: absolute;
+			    top: 1150px;
+			    left: 280px;
+				background: url(img/pc_funShot20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.funShot:hover {
+				background: url(img/pc_funShotText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.bicycle {
+				width: 119px;
+				height: 195px;
+			    position: absolute;
+			    top: 1800px;
+			    left: 480px;
+				background: url(img/pc_bicycle20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.bicycle:hover {
+				background: url(img/pc_bicycleText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.reader{
+				width: 116px;
+				height: 191px;
+			    position: absolute;
+			    top: 1800px;
+			    left: 870px;
+				background: url(img/pc_reader20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.reader:hover {
+				background: url(img/pc_readerText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.robot{
+				width: 116px;
+				height: 192px;
+			    position: absolute;
+			    top: 1800px;
+			    left: 1050px;
+				background: url(img/pc_robot20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			.robot:hover {
+				background: url(img/pc_robotText20161015.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			/*10万 end*/
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="all">
+
+			<!--1200宽内容层  start-->
+			<div class="contain1200w">
+				<!--头部信息 start -->
+				<div class="header">
+					<p class="titleText">
+						十月福利节 · 活动先行
+					</p>
+					<p class="activityTime">2016年10月15日-10月21日</p>
+					<!--头部主题内容 start -->
+					<div class="headLead">
+						<!--头部文字说明 start -->
+						<div class="headerTextDescript">
+							<div class="leftText">
+								<p>教</p>
+								<p>你</p>
+								<p>领</p>
+								<p>福</p>
+								<p>利</p>
+							</div>
+							<div class="rightText">
+								<p>(1) 以10月15日00:00用户账户的年化投资额为数据的起点，截止10月21日23:59，客户累计新增年化投资额</p>
+								<p>达到一定级别，
+									<a>即可获得对应级别的一件礼品</a>，每个客户可以领取一个礼品；</p>
+								<p>(2) 活动时间：10月15日—10月21日；</p>
+								<p>(3) 活动投资产品不限制；</p>
+								<p>(4) 年化投资额=投资金额*投资天数/365；</p>
+								<p>(5) 活动结束后的7个工作日内，进行礼品寄送。</p>
+							</div>
+						</div>
+						<!--头部文字说明 end -->
+						<!--头部登录 start -->
+						<div class="headerloginBox">
+							<div class="buttonClick">
+								<p>我的新增年化投资额</p>
+								<a href="#">登录 </a> |
+								<a href="#">注册</a>
+							</div>
+							<!--隐藏 -->
+							<div class="hideText">
+								<p>我的新增年化投资额</p>
+								<p>￥40,000.88</p>
+							</div>
+							<!--隐藏 -->
+							<a class="investmentButton">继续投资</a>
+							<a class="consultationButton">在线咨询</a>
+						</div>
+						<!--头部登录 end -->
+					</div>
+					<!--头部主题内容 end -->
+				</div>
+				<!--头部信息 end -->
+				<!--投资金额 start -->
+				<div class="investmentAmountBox">
+					<!--投资金额 1万 start -->
+					<div class="tenThousandSmallIsland">
+						<!--翻转 start-->
+						<div class="liquidizer "></div>
+						<div class="ergoChef "></div>
+						<div class="vacuumCleaner "></div>
+
+						<!--<div id="vertical" class="brand vertical">
+							
+							<div class="flip">
+								<div class="liquidizer liquidizerFront"></div>
+								<div class="liquidizer liquidizerBehind"></div>
+							</div>
+							
+							
+							<div class="flip">
+								<div class="ergoChef ergoChefFront"></div>
+								<div class="ergoChef ergoChefBehind"></div>
+							</div>
+							
+							
+							<div class="flip">
+								<div class="vacuumCleaner vacuumCleanerFront"></div>
+								<div class="vacuumCleaner vacuumCleanerBehind"></div>
+							</div>
+							
+						</div>-->
+						<!--翻转 end-->
+						<div class="oneText">
+							年化投资额1万
+						</div>
+						<div class="giftText">
+							<p>本等级对应礼品</p>
+							<p>可任意挑选其一</p>
+							<p>（手持吸尘器 东菱果汁机 碾磨器）</p>
+						</div>
+						<p class="twistText">以下等级礼品
+							<a>更精彩</a>
+							<a>赶紧投资吧</a>
+						</p>
+						<a class="investmentButton oneButton">立即投资</a>
+					</div>
+					<!--投资金额 1万 end -->
+					<!--投资金额 4万 start -->
+					<div class="fortyThousandSmallIsland">
+						<!--翻转 start-->
+						<div class="phoenixBrand"></div>
+						<div class="camera"></div>
+						<div class="humidifier"></div>
+						<!--翻转 end-->
+						<div class="fourText">
+							年化投资额4万
+						</div>
+						<div class="giftText">
+							<p>凤凰牌女士自行车</p>
+							<p>富士相机</p>
+							<p>氧吧加湿器</p>
+							<p>（本等级礼品可任选其一哦）</p>
+						</div>
+						<a class="investmentButton fourButton">立即投资</a>
+					</div>
+				<!--投资金额4万 end -->
+				<!--投资金额8万 start -->
+					<div class="eightThousandSmallIsland">
+						<!--翻转 start-->
+						<div class="funShot"></div>
+						<div class="intelligentBalanceVehicle"></div>
+						<div class="safetySeat"></div>
+						<!--翻转 end-->
+						<div class="eightText">
+							年化投资额8万
+						</div>
+						<div class="giftText">
+							<p>本等级对应礼品</p>
+							<p>可任意挑选其一</p>
+							<p>（LG趣拍得  平衡车   儿童安全座椅）</p>
+						</div>
+						<a class="investmentButton eightButton">立即投资</a>
+					</div>
+				<!--投资金额8万 end -->
+				<!--投资金额 10万 start -->
+					<div class="onehundredthousandSmallIsland">
+						<!--翻转 start-->
+						
+						<div class="bicycle"></div>
+						<div class="reader"></div>
+						<div class="robot"></div>
+						<!--翻转 end-->
+						<div class="tenText">
+							年化投资额10万
+						</div>
+						<div class="giftText">
+							<p>扫地机器人</p>
+							<p>电子书阅读器</p>
+							<p>智能球型机器人</p>
+							<p>（本等级礼品可任选其一哦）</p>
+						</div>
+						<a class="investmentButton tenButton">立即投资</a>
+					</div>
+					<!--投资金额10万 end -->
+
+
+				</div>
+				<!--投资金额 end -->
+			</div>
+			<!--1200宽内容层  end-->
+		</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+			//品牌翻转
+			//			var turn = function(target, time, opts) {
+			//				target.find('.flip').hover(function() {
+			//					//翻转前正面
+			//					$(this).find('.liquidizerFront').stop().animate(opts[0], time, function() {
+			//						$(this).hide().next().show();
+			//						$(this).next().animate(opts[1], time);
+			//					});
+			//					//翻转后
+			//				}, function() {
+			//					$(this).find('.liquidizerBehind').animate(opts[0], time, function() {
+			//						$(this).hide().prev().show();
+			//						$(this).prev().animate(opts[1], time);
+			//					});
+			//				});
+			//			}
+			//			var verticalOpts = [{
+			//				'width': 0
+			//			}, {
+			//			'width': '118px'
+			//			}];
+			//			turn($('#vertical'), 100, verticalOpts);
+		</script>
+	</body>
+
+</html>

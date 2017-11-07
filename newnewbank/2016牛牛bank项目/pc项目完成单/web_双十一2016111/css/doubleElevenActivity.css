@@ -1,0 +1,731 @@
+		* {
+				margin: 0;
+				padding: 0;
+			}			
+			#all {
+				font-family: "microsoft yahei";
+				width: 100%;
+				min-width: 1200px;
+				height: 3900px;
+				/*http://images-web.oss-cn-hangzhou.aliyuncs.com/web_cashbonus2016111.png*/
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_SinglesDay2016111.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			#pageWrap {
+					position: absolute;
+				    top: 245px;
+				    right: 280px;
+				    width: 230px;
+				}
+				.barVal{
+					float: left;
+				    margin-top: -18px;
+				    margin-left: 240px;
+				    color: #f54975;
+				}
+			.meter {
+				height: 10px;
+			    position: relative;
+			    background: #eee;
+			    -moz-border-radius: 25px;
+			    -webkit-border-radius: 25px;
+			    border-radius: 25px;
+			    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+			    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+			    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+			}
+			
+			.meter> span {
+				display: block;
+				height: 100%;
+				-webkit-border-top-right-radius: 8px;
+				-webkit-border-bottom-right-radius: 8px;
+				-moz-border-radius-topright: 8px;
+				-moz-border-radius-bottomright: 8px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+				-webkit-border-top-left-radius: 20px;
+				-webkit-border-bottom-left-radius: 20px;
+				-moz-border-radius-topleft: 20px;
+				-moz-border-radius-bottomleft: 20px;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+				background-color: rgb(43, 194, 83);
+				background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(43, 194, 83)), color-stop(1, rgb(84, 240, 84)));
+				background-image: -moz-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+				-webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+				-moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+				box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.meter> span:after,
+			.animate> span> span {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+				background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+				z-index: 1;
+				-webkit-background-size: 50px 50px;
+				-moz-background-size: 50px 50px;
+				background-size: 50px 50px;
+				-webkit-animation: move 2s linear infinite;
+				-moz-animation: move 2s linear infinite;
+				-webkit-border-top-right-radius: 8px;
+				-webkit-border-bottom-right-radius: 8px;
+				-moz-border-radius-topright: 8px;
+				-moz-border-radius-bottomright: 8px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+				-webkit-border-top-left-radius: 20px;
+				-webkit-border-bottom-left-radius: 20px;
+				-moz-border-radius-topleft: 20px;
+				-moz-border-radius-bottomleft: 20px;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+				overflow: hidden;
+			}
+			
+			.animate> span:after {
+				display: none;
+			}
+			
+			@-webkit-keyframes move {
+				0% {
+					background-position: 0 0;
+				}
+				100% {
+					background-position: 50px 50px;
+				}
+			}
+			
+			@-moz-keyframes move {
+				0% {
+					background-position: 0 0;
+				}
+				100% {
+					background-position: 50px 50px;
+				}
+			}
+
+			.red> span {
+				background-color: #f0a3a3;
+				background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+				background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0a3a3), color-stop(1, #f42323));
+				background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+			}
+			.nostripes> span> span,
+			.nostripes> span:after {
+				-webkit-animation: none;
+				-moz-animation: none;
+				background-image: none;
+			}
+			
+			
+			
+			/*  覆盖层  start   */
+			#cover { 
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: none;
+				/*display: block;*/
+				z-index: 1;
+			}
+			#coverTop {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: none;
+				/*display: block;*/
+				z-index:3;
+			}
+			/*  覆盖层  end   */			
+			/*.popup_w1200 {
+				width: 1200px;
+				margin: 0 auto;
+			}*/		
+			/*  覆盖层  end   */
+			.content-ing {
+				display: none;
+			}						
+			.content-ing .canvas {
+				/*position: relative;*/
+				overflow: hidden;
+			}			
+			.content-ing .canvas .item {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: -400px;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/wap_redpack113.png) no-repeat;
+			}		
+
+			/*弹框  -1 start   */
+			.popup_1{
+				position: fixed;
+			    left: 35%;
+			    top: 300px;
+			    text-align: center;
+			    display: none;
+			    z-index: 2;
+			    line-height: 60px;
+			}
+			.popup_1 p:first-child{
+				color: #fff;
+				font-size: 60px;
+				font-weight: bold;
+			}
+			.popup_1 p:first-child a{
+				color: #fffa01;
+			}
+			.popup_1 .message,.popup_1 div{
+				color: #fff;	
+				font-size: 24px;
+			}
+			.popup_1 .message{
+				opacity: .8;
+			}
+			.popup_1 div{
+				width: 300px;
+				height:70px ;
+				text-align: center;	
+				border: 2px solid #FFFA01 ;
+				border-radius: 35px;
+				margin: 0 auto;
+				opacity: .8;
+				line-height: 70px;
+			}
+			/*弹框  -1 end   */	
+			/*弹框  -2 start   */
+			.popup_2,.popup_4,.popup_5,.popup_6{
+				position: fixed;
+			    top: 200px;
+			    left: 30%;
+			    text-align: center;
+			    display: none;
+			    z-index: 2;
+			}
+			.popup_4,.popup_5,.popup_6{
+				z-index: 4;
+			}
+			 .delete{
+				width:38px ;
+				height:38px ;
+				cursor: pointer;
+				position: absolute;
+				top: 10px;
+				right: 70px;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_delete2016112.png) no-repeat ;
+			}
+			 .mainIcon{
+				width: 599px;
+				height: 407px;
+				overflow: hidden;
+				margin: 0 auto;
+				margin-bottom:20px ;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_redType2016112.png) no-repeat ;
+			}
+			 .money,.cashBonus{
+				color: #e31953;
+				margin-top: 10px;
+			}
+			 .money{
+				font-size:24px ;
+				margin-top: 100px;
+			}
+			 .money a{
+				font-size:60px ;
+			}
+			 .cashBonus{
+				font-size: 30px;
+			}
+			 .look{
+				color: #d97c00;
+				margin-top: 125px;
+				font-size: 24px;
+			}
+			 .fcc707{
+				color: #fcc707;
+				font-size: 24px;
+				/*margin: 25px 0 40px;*/
+			}
+			 .investmentBtn{
+				width: 260px;
+				height:76px ;
+				line-height:70px ;
+				margin: 0 auto;
+				cursor: pointer;
+				text-align: center;
+				font-size: 28px;
+				color: #ffea97;
+				margin-top: 40px;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_redInvestmentbutton2016112.png) no-repeat ;
+			}
+			/*弹框  -2 end   */
+			/*弹框  -3 start   */
+			.popup_3{
+				position: fixed;
+			    top: 200px;
+			    left: 35%;
+			    text-align: center;
+			    display: none;
+			    z-index: 2;
+			}
+			.popup_3 .countDown{
+				font-size: 40px;
+				color: #fff;
+			}
+			.popup_3 .countDown a{
+				color: #FFE12E;
+			}
+			.popup_3 .grabRed{
+				color: #fff;
+				font-size: 24px;
+				margin-top: 25px;
+			}
+			.popup_3 .number{
+				position: absolute;
+			    top: 150px;
+			    left: 160px;
+			    width: 303px;
+			    height: 239px;
+			}
+			.popup_3 .go{
+				top: 170px;
+				left:90px ;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_go2016112.png) no-repeat ;
+			}			
+			.popup_3 .one{
+				display: none;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_one2016112.png) no-repeat ;
+			}
+			.popup_3 .two{
+				display: none;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_two2016112.png) no-repeat ;
+			}
+			.popup_3 .three{
+				display: none;
+				background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_three2016112.png) no-repeat;
+			}			
+			/*弹框  -3 end   */
+			/*弹框  -6 start   */
+			.mainIcon6{
+				width: 519px;
+				height: 412px;
+				overflow: hidden;
+				margin: 0 auto;
+				margin-bottom:20px ;
+				background:url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_notgrab2016112.png) no-repeat ;
+			}
+			.popup_6 .delete{
+				right: 280px;
+			}
+			.mainIcon6 .look{
+				margin-top:355px ;
+			}
+			/*弹框  -6 end   */
+			/*弹框  -7 start   */
+			.popup_7{
+				/*width:1200px ;*/
+				position: fixed;
+				left:35% ;
+				top: 180px;
+				text-align: center;
+				display: none;
+				z-index: 2;
+			}
+			.popup_7 .textBox{
+				
+			}
+			.textBox .end{
+				width: 200px;
+				height: 42px;
+				line-height:42px ;
+				color: #fff;
+				font-size: 20px;
+				border: solid 2px #FFE12E;
+				border-radius:21px ;
+				margin:0 auto ;
+			}
+			.end a{
+				color: #FFFA01;
+			}
+			.popup_7 .drop{
+				font-size: 40px;
+				font-weight:bold ;
+				color: #FFE12E;
+				text-align: center;
+				margin: 25px 0;
+			}
+			.popup_7 .jabbed{
+				font-size: 30px;
+				color: #fff;
+				opacity: .8;
+				text-align: center;
+			}
+			/*弹框  -7 end   */
+			
+			/*主题内容  start   */
+			.content_w1200 {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			
+			.headIcon {
+				width: 1200px;
+				height: 849px;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_hiexplosion2016111.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			/*--红包袋   start--*/
+			
+			.redBag {
+				width: 1095px;
+				height: 1054px;
+				margin: 0 auto;
+				margin-top: -250px;
+				position: relative;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_redBag2016111.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.redBag .time {
+				position: absolute;
+				top: 500px;
+				left: 260px;
+				font-size: 50px;
+				font-weight: bold;
+			}
+			
+			.time #hour,
+			#minute,
+			#second {
+				letter-spacing: 60px;
+			}
+			
+			.time #minute {
+				margin-left: 20px;
+			}
+			
+			.time #second {
+				margin-left: 18px;
+			}
+			
+			.redBag .jump {
+				position: absolute;
+				top: 420px;
+				left: 450px;
+				font-size: 18px;
+				color: #fff;
+			}
+			
+			.jump a {
+				color: #e09c07;
+			}
+			
+			.jump a:first-child,
+			.jump a:last-child {
+				cursor: pointer;
+			}
+			/*--红包袋   end--*/
+			
+			.textMiddle {
+				margin-top: 40px;
+				text-align: center;
+			}
+			
+			.textMiddle p:first-child {
+				margin-bottom: 20px;
+				font-size: 50px;
+				font-weight: bold;
+				color: #fffa01;
+			}
+			
+			.textMiddle p:last-child {
+				font-size: 20px;
+				color: #fff;
+			}
+			/*红包开启   start*/
+			
+			.redPackets {
+				width: 1200px;
+				height: 500px;
+				margin-top: 70px;
+			}
+			
+			.redPackets .OneBox {
+				width: 400px;
+				height: 500px;
+				float: left;
+			}
+			
+			.OneBox .topIcon {
+				width: 165px;
+				height: 65px;
+				line-height: 47px;
+				margin: 0 auto;
+				text-align: center;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_openingBag2016111.png) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+			.topIcon p {
+				color: #fff;
+				opacity: .8;
+				cursor: pointer;
+			}
+			
+			.topIcon p a {
+				color: #ffe12e;
+			}
+			
+			.topIcon .once a:first-child,
+			.zero a:first-child {
+				font-size: 24px;
+			}
+			
+			.topIcon .fiveMoeny,
+			.tenMoeny {
+				display: none;
+			}
+			
+			.OneBox .bottomIcon {
+				position: relative;
+				width: 281px;
+				height: 358px;
+				margin-left: 70px;
+				margin-top: 40px;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_redPackets2016111.png) no-repeat;
+			}
+			
+			.bottomIcon .luminescenceBackground {
+				width: 402px;
+				height: 361px;
+				margin-left: -70px;
+				display: none;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_luminescence2016111.png) no-repeat;
+			}
+			
+			.bottomIcon .start {
+				position: absolute;
+				height: 72px;
+				width: 72px;
+				line-height: 72px;
+				font-size: 20px;
+				left: 105px;
+				top: 48px;
+				cursor: pointer;
+				text-align: center;
+				color: #b24528;
+				border-radius: 36px;
+			}
+			
+			.bottomIcon .investmentText {
+				position: absolute;
+				left: 80px;
+				top: 320px;
+				font-size: 20px;
+				text-align: center;
+				color: #fff;
+			}
+			
+			.investmentButton {
+				width: 310px;
+				height: 83px;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_investmentbutton2016111.png) no-repeat;
+				margin: 40px auto 20px;
+				font-size: 28px;
+				font-weight: bold;
+				color: #56038e;
+				text-align: center;
+				line-height: 68px;
+				margin-bottom: 50px;
+				cursor: pointer;
+			}
+			/*红包开启   end*/
+			
+			.textDescription,
+			.ruleText {
+				text-align: left;
+				font-size: 18px;
+				color: #fff;
+				opacity: .9;
+				margin-left: 50px;
+				line-height: 38px;
+			}
+			
+			.textDescription p:first-child {
+				color: #fffa01;
+			}
+			
+			.longText {
+				line-height: 60px;
+				margin: 200px 0 50px;
+				text-align: center;
+			}
+			
+			.longText p:first-child {
+				font-size: 50px;
+				color: #FFFA01;
+				font-weight: bold;
+			}
+			
+			.longText p:last-child {
+				font-size: 20px;
+				color: #fff;
+				opacity: .8;
+			}
+			
+			.longText p:last-child a {
+				color: #fffa01;
+				opacity: .9;
+			}
+			
+			.containBox {
+				width: 1110px;
+				height: 299px;
+				overflow: hidden;
+				position: relative;
+				margin: 0 auto 50px;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/web_product2016112.png) no-repeat;
+			}
+			
+			.getText {
+				position: absolute;
+				font-size: 16px;
+				color: #fff;
+				opacity: .8;
+				margin-left: 80px;
+				margin-top: 20px;
+				letter-spacing: 3px;
+			}
+			
+			.getText a {
+				font-size: 25px;
+				color: #FFFA01;
+			}
+			
+			.moneyEight {
+				position: absolute;
+				top: 100px;
+				left: 200px;
+				font-size: 36px;
+				color: #f2376e;
+			}
+			
+			.cashEnvelopes {
+				position: absolute;
+				top: 160px;
+				left: 220px;
+				font-size: 20px;
+				color: #f2376e;
+			}
+			
+			.receive {
+				width: 65px;
+				height: 65px;
+				cursor: pointer;
+				text-align: center;
+				line-height: 65px;
+				border-radius: 50px;
+				position: absolute;
+				color: #56038e;
+				font-size: 20px;
+				font-weight: bold;
+				top: 190px;
+				left: 238px;
+			}
+			
+			
+			
+			.from50{
+				width: 557px;
+			    height: 295px;
+			    float: right;
+			    /*margin-top: -50px;*/
+			}
+			
+			
+			
+			.from50 .black{
+				margin-top: 40px;
+			    margin-left: 110px;
+			    font-size: 20px;
+			}
+			.color999{
+				color: #999;
+				font-size: 14px;
+			}
+			.flex{
+    			margin-top: 25px;
+				display: flex;
+			}
+			.flex1,.flex2,.flex3{
+				flex: 1;
+				-webkit-box-flex: 1; 
+				-moz-box-flex: 1;  
+				-ms-flex: 1; 
+				text-align: center;
+			}
+			.flex2,.flex3{
+				padding-top: 22px;
+   				 line-height: 35px;
+			}
+			.flex2,.flex3 p:first-child{
+				font-size:24px ;
+			}
+			.flex1 p:first-child{
+				color: #e7376a; 
+   				 font-size: 24px;
+			}
+			.flex1 p:first-child a{
+				font-size: 50px;
+			}
+			
+			
+			
+			.buy {
+				width: 140px;
+				height: 40px;
+				position: absolute;
+				cursor: pointer;
+				right: 40px;
+				top: 230px;
+				border-radius: 8px;
+				background-color: #f44975;
+				color: #fff;
+				font-size: 16px;
+				text-align: center;
+				line-height: 40px;
+			}
+			
+			
+			
+			
+			
+			.ruleText P:first-child {
+				color: #FFE12E;
+			}
+			
+			
+			
+			.footerText {
+				margin-top: 90px;
+				text-align: center;
+				font-size: 13px;
+				color: #fff;
+				opacity: .8;
+				line-height: 25px;
+			}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="UTF-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/confirmDeparture.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<title>我的预约状态</title>
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  1  start-->
+			<div class="popup bombBox">
+				<!--<p class="notice">是否成功与车主汇合，确定出发</p>-->
+				<p class="forConfirmation dif_top">已到达目的地并下车</br>
+					请确认安全下车并报平安</p>
+				<p class="reached">确认抵达</p>
+			</div>
+			<!--弹框  1  end-->
+			<!--弹框  2  start-->
+			<div class="bombBox2">
+				<div class="lattice">
+					<div class="line twoPageLine">
+						<div class="delete">×</div>
+						<span class="carPhoto"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male">
+									<span class="fL">刘小牛</span>
+									<span class="maleIcon invitation"></span>
+								</div>
+								<div class="phoneNumber">电 话：180****1234</div>
+								<div class="licenseNumber">车牌号：赣A123***</div>
+							</div>
+						</div>
+					</div>
+					<div class="twoPageLine">
+						<div class="evaluateText">对爱心车主的评价，以及整体行程的感受</div>
+					</div>
+					<div class="evaluateBox">
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+					</div>
+					<p class="evaluationWords">非常满意，无可挑剔</p>
+					<p class="praise">夸夸司机吧</p>
+					<div class="bottomFrame">
+						<div class="lineBtn">
+							<p class="defaultState">车内整洁</p>
+							<p class="defaultState">活地图认路准</p>
+						</div>
+						<div class="lineBtn">
+							<p class="defaultState">驾驶平稳</p>
+							<p class="defaultState">态度服务棒</p>
+						</div>
+						<textarea class="inputText" name="" rows="" cols="" placeholder="说说您对整体行程的感受吧"></textarea>
+					</div>
+				</div>
+				<button class="submit">确认提交</button>
+			</div>
+			<!--弹框2  end-->
+			<div class="header">
+				<div class="headerText">
+					<p>您好，李大爷 18018018000</p>
+					<!--<span class="editIcon"></span>-->
+				</div>
+				<div class="headRed">
+					<p class="fontS_24">您已申请的行程如下</p>
+					<div class="trip">
+						<span></span>
+						<div class="date">
+
+							<p class="carImg"></p>
+							<p class="rectangularLine"></p>
+						</div>
+						<span></span>
+					</div>
+					<div class="place">
+						<div class="placeText placeText1">
+							<p>广东省深圳市</p>
+							<p>南山区</p>
+						</div>
+						<div class="placeText placeText2">
+							<p>江西省九江市</p>
+							<p>湖口县</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clickBtn">
+						<p class="comBtn uploadBtn">上传目的地照片</p>
+						<!--增加    class="sureGoBtn"--显示  可点击-->
+						<p class="comBtn sureGo sureGoBtn">安全抵达</p>
+						<!--增加    class="confirmIcon"--显示-->
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">车主资料</span>
+					<span class="arrow arrowUp"></span>
+				</p>
+				<div class="toggle">
+					<div class="line twoPageLine">
+						<span class="carPhoto"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male">
+									<span class="fL">刘小牛</span>
+									<span class="maleIcon invitation"></span>
+								</div>
+								<div class="phoneNumber">电 话：180****1234</div>
+								<div class="licenseNumber">车牌号：赣A123***</div>
+							</div>
+							<span class="whether  confirm topRealy">已抵达</span>
+						</div>
+					</div>
+					<div class="line">
+						<div class="nullSeat">
+							<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">余2座</span></div>
+							<div class="placeBlack"><span>深圳南山区  </span><span class="horizontalLine"></span> <span>江西省九江市彭泽县</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">完善乘车人信息</span>
+					<span class="arrow arrowUp"></span>
+				</p>
+				<div class="toggle">
+					<div class="lineOfInfo">
+						<span class="passenger passenger1">乘客</span>
+						<span class="passInfo">王**&nbsp;&nbsp;&nbsp;15000001111</span>
+						<span class="certified">已认证  （2人）</span>
+						<span class="whether confirm">已抵达</span>
+					</div>
+					<div class="lineOfInfo">
+						<span class="passenger passenger1">乘客</span>
+						<span class="passInfo">王**&nbsp;&nbsp;&nbsp;13299998888</span>
+						<span class="certified">已认证  </span>
+						<span class="whether confirm">已抵达</span>
+					</div>
+					<div class="lineOfInfo">
+						<span class="passenger passenger2">乘客</span>
+						<span class="passInfo">周**&nbsp;&nbsp;&nbsp;15188886666</span>
+						<span class="certified">已认证  </span>
+						<span class="whether toBeSure">未抵达</span>
+					</div>
+				</div>
+			</div>
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">沿途照片</span>
+					<span class="uploadAndShare">+上传分享</span>
+				</p>
+			</div>
+
+			<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="icon home"></div>一起回家</a>
+						</li>
+						<li class="currentf">
+							<a href="#">
+								<div class="icon money"></div>我的预约</a>
+						</li>
+						<li>
+							<a href="proposal20161212.html">
+								<div class="icon fdj"></div>倡议书</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {
+				//安全抵达--弹框
+				$('.clickBtn').delegate('.sureGoBtn', 'click', function() {
+					$('#cover,.bombBox').css('display', 'block');
+				});
+				//箭头--显示与隐藏事件
+				$('.arrow').on('click', function() {
+					$(this).toggleClass('arrowLeft');
+					$(this).toggleClass('arrowUp');
+					$(this).parents('.onePage').find('.toggle').slideToggle('slow');
+				});
+				//弹框事件里---确认抵达按钮
+				$('.reached').on('click', function() {
+					$('.popup').css('display', 'none');
+					$('.bombBox2').css('display', 'block');
+				});
+				//评价弹框---删除按钮
+				$('.delete').on('click', function() {
+					$('.bombBox2,#cover').css('display', 'none');
+				});
+				//评价弹框---五角星
+				$('.evaluateIcon').on('click', function() {
+					initStar();
+					$(this).find('.star').addClass('activeStar');
+					$(this).prevAll('.evaluateIcon').find('.star').addClass('activeStar');
+				});
+				function initStar() {
+					$('.evaluateIcon .star').removeClass('activeStar');
+				}
+				//评价弹框---评价司机   
+				$('.defaultState').on('click', function() {
+					$(this).toggleClass('changeState');
+				});
+
+			})();
+		</script>
+
+	</body>
+
+</html>

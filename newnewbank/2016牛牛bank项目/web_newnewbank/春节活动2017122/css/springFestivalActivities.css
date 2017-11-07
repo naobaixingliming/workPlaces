@@ -1,0 +1,199 @@
+			*{
+				margin: 0 ;
+				padding: 0;
+				font-family: "microsoft yahei";
+			}
+			i{
+				font-style: normal;
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			#root-spring{
+				max-width: 1920px;
+				margin: 0 auto;
+				background-color: #fe2224;
+			}
+			.mar_center{
+				margin: 0 auto;
+			}
+			.relative{
+				position: relative;
+			}
+			.font_12{
+				font-size: 12px;
+			}
+			.font_16{
+				font-size: 16px;
+			}
+			.font_18{
+				font-size: 18px;
+			}
+			.font_20{
+				font-size: 20px;
+			}
+			.font_24{
+				font-size: 24px;
+			}
+			.font_30{
+				font-size: 30px;
+			}
+			.font_32{
+				font-size: 32px;
+			}
+			.font_40{
+				font-size: 40px;
+			}
+			.font_50{
+				font-size: 50px;
+			}
+			.left-align{
+				text-align: left;
+			}
+			.bold{
+				font-weight: bold;
+			}
+			.ffe700{
+				color: #ffe700;
+			}
+			.fe2d25{
+				color: #fe2d25;
+			}
+			.fe2224{
+				color: #fe2224;
+			}
+			.pointer{
+				cursor: pointer;
+			}
+			.text-center{
+				text-align: center;
+			}
+			.white{
+				color: #fff;
+			}
+			.header_spring{
+				width: 100%;
+				max-width: 1920px;
+				/*min-width: 1200px;*/
+				height: 763px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/header_img2017122.jpg) no-repeat center top ;				
+			}
+			.frame_1{
+				width: 1021px;
+				height: 605px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/frame-1-2017122.jpg) no-repeat ;
+				margin-top: 108px;
+			}
+			.redPacket_spring{
+				width: 253px;
+				height: 434px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/redPacket2017122.png) no-repeat;
+				position: absolute;
+				left: 385px;
+				top: 50px;
+			}
+			.getRed{
+			    width: 110px;
+			    height: 110px;
+			    border-radius: 50%;
+			    /* border: 1px solid red; */
+			    margin-top: 88px;
+			    margin-left: 70px;
+			}
+			.redPacket_spring p{
+				border-bottom: 1px #d75b3c solid;
+				border-top:1px #d75b3c solid ;
+				color: #f8d856;
+				padding:8px ;
+			}
+			.login,.user{
+				position: absolute;
+				left: 130px;
+				top: 120px;
+				height: 120px;
+			}
+			.red-explain{
+				width: 800px;
+				position: absolute;
+				bottom: 40px;
+				left: 150px;
+				line-height: 25px;
+			}
+			.endDate{
+				margin: 50px 20px 0 40px;
+			}
+			.circle-spring:before{
+				display: inline-block;
+			    content: '';
+			    width: 10px;
+			    height: 10px;
+			    float: left;
+			    border-radius: 50%;
+			    background-color: #cf3c36;
+			    margin-top: 5px;
+			    margin-right: 15px;
+			}
+			.mar-left{
+				margin-left: 105px;
+			}
+			.title_spring{
+				width: 100%;
+				max-width: 1920px;
+				height: 157px;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/title2017122.png) no-repeat center center ;
+				margin-top: 135px;
+				margin-bottom: 105px;
+			}
+			.frame_2{
+				width: 1021px;
+				height: 495px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/frame-2-2017122.jpg) no-repeat ; 
+			}
+			.nav-spring{
+				padding-top: 105px;
+				padding-bottom: 45px;
+			}
+			.single-mark{
+				width: 890px;
+				height: 86px;
+				background-color: #8c1a07;
+				border-radius:73px ;
+			}
+			.mark-explain{
+				margin-top: 45px;
+				padding-left: 130px;
+				line-height: 25px;
+			}
+			.single-mark p{
+				float: left;
+				margin-top: 9px;
+				margin-right: 100px;
+			}
+			.single-mark p:first-child{
+				margin-left: 165px;
+			}
+			.buy-now{
+				padding: 14px 30px;
+				border-radius: 45px;
+				background-color:#fe2224 ;
+				margin-right: 0 !important;
+			}
+			.f5b720{
+				color: #f5b720;
+				margin-right: 10px;
+			}
+			.texture{
+				width: 100%;
+				max-width: 1920px;
+				height: 13px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/texture2017122.png) no-repeat center center;
+				margin: 108px 0 30px;
+			}
+			.foot{
+				padding-bottom: 45px;
+			}
+			

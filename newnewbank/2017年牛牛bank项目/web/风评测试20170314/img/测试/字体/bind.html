@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>手机绑定</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bind.css"/>	
+	</head>
+	<body>
+		<div id="alert">
+			<div>
+				<img id="alertBg" src="img/alertUp.png"/>
+				<span id="alertText"></span>
+			</div>			
+		</div>
+		<div id="header"></div>
+		<div id="nav">
+			<img id="numBg" src="img/haoma.png"/>
+			<input type="text" id="phoneNumInput" placeholder="请输入手机号" maxlength="11"/>
+		</div>
+		<div id="ibody">
+			<img id="regCodeBg" src="img/yanzhengma.png"/>
+			<input id="getRegCode" type="image" src="img/huo.png" />
+			<span id="counter"></span>
+			<input type="text" id="regCodeInput" placeholder="验证码" maxlength="6"/>
+		</div>
+		<div id="footer">	
+			<img id="login" src="img/denglu.png" />
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bind.js" type="text/javascript" charset="utf-8"></script>	
+		<script type="text/javascript">
+		window.onload = function(){
+			document.getElementById("phoneNumInput").style.height = document.getElementById("numBg").offsetHeight + "px";
+			document.getElementById("regCodeInput").style.height = document.getElementById("regCodeBg").offsetHeight + "px";
+			document.getElementById("counter").style.height = document.getElementById("counter").offsetWidth + "px";
+			document.getElementById("counter").style.lineHeight = document.getElementById("counter").offsetWidth + "px";
+}		
+		</script>	
+	</body>
+</html>

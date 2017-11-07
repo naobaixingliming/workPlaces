@@ -1,0 +1,178 @@
+@font-face {
+	font-family:'hanyihuochai';
+	src: url(../font/hanyihuochai.TTF);
+}
+@font-face {
+	font-family:'huakangwawa';
+	src: url(../font/huakangwawa.TTC);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* 01 - Main */
+/*-----------------------------------------------------------------------------------------------------------*/
+
+html{
+	font-size: 62.5%;	
+}
+
+body{
+	height: auto;
+	background-color: #FFD600;
+	text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #6A6A6A; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #6A6A6A; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #6A6A6A; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #6A6A6A; 
+} 
+
+#alert{
+	width: 100%;
+	position: fixed;
+	top: 20px;
+	z-index: 5555;
+	display: none;
+}
+
+#alert div{
+	width: 100%;
+	position: relative;
+}
+
+#alertBg{
+	width: 80%;
+	float: right;
+}
+
+#alertText{
+	display: inline-block;
+	font-family: "huakangwawa";
+	font-size: 2rem;
+	position: absolute;
+	width: 65%;
+	right: 10%;
+	margin-top: 18%;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 02 - header */
+/*--------------------------------------------------------------------------------------------*/
+
+#header{
+	background: url(../img/bindBg.png) no-repeat top;
+	background-size: contain;
+	width: 100%;
+	padding-top: 125.74%;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 02 - phoneNum */
+/*--------------------------------------------------------------------------------------------*/
+
+#nav{
+	width: 100%;
+	position: relative;
+}
+
+#nav img{
+	width: 80%;
+	margin: 2.5rem auto 0;
+}
+
+#phoneNumInput{
+	position: absolute;
+	width: 50%;
+	left: 30%;
+	top: 2.5rem;
+	border-style: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 2.5rem;
+	font-family: "楷体";
+	box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 03 - regCode */
+/*--------------------------------------------------------------------------------------------*/
+
+#ibody{
+	width: 100%;
+	position: relative;
+}
+
+#ibody img{
+	width: 50%;
+	margin: 1.5rem 40% 0 10%;
+}
+
+#regCodeInput{
+	position: absolute;
+	width: 50%;
+	top: 1.5rem;
+	left: 30%;
+	border-style: none;
+	outline: none;
+	background-color: transparent;
+	height: 50%;
+	font-size: 2.5rem;
+	font-family: "楷体";
+	box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 04 - getCode */
+/*--------------------------------------------------------------------------------------------*/
+
+#getRegCode{
+	background-color: transparent;
+	margin: 0 !important;
+	padding: 0;
+	width: 27% !important;
+	position: absolute;
+	top: 1.5rem;
+	right: 10%;
+	z-index: 999;
+	outline: none !important;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+
+}
+
+#counter{
+	display: inline-block;
+	position: absolute;
+	font-size: 40px;
+	font-family: "hanyihuochai";
+	width: 27%;
+	padding: 0;
+	top: 1.5rem;
+	right: 10%;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 05 - login */
+/*--------------------------------------------------------------------------------------------*/
+
+#login{
+	width: 80%;
+	margin-top: 1.5rem;
+	margin-bottom: 15%;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/*  - adapter */
+/*--------------------------------------------------------------------------------------------*/
+
+@media only screen (max-width: 376px) {
+	html{
+		font-size: 58%;
+	}
+}

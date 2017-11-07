@@ -1,0 +1,510 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+.font_60 {
+	font-size: 60px;
+}
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+		.rootNode {
+				width: 100%;
+				max-width: 1920px;
+				margin: 0 auto;
+				background-color: #cc203b;
+			}
+			.onePage {
+				width: 100%;
+				min-width: 1200px;
+				height: 837px;
+				background: url(https://images-web.newnewbank.com/pc-headbg20170720.png) no-repeat center top;
+			}
+			.starBg{
+				background: url(https://images-web.newnewbank.com/pc-adorn20170720.png) repeat;
+			}
+			.twoPage{
+				padding-top: 20px;
+			}
+			.titleIcon{
+				width: 679px;
+				height: 115px;
+				background: url(https://images-web.newnewbank.com/pc-titleIcon20170720.png) no-repeat;
+			}
+			.color_c21e38{
+				color: #c21e38;
+			}
+			.color_ec2544{
+				color: #ec2544;
+			}
+			.color_dfa125{
+				color: #dfa125;
+			}
+			.one-ul{
+				margin: 0  100px 0 152px ;
+				background-color: rgba(255,255,255,.2);
+				border-bottom-left-radius: 100px;
+				border-top-left-radius: 100px;
+			}
+			.one-ul li{
+				float: left;
+				margin-right: 25px;
+			}
+			.one-ul li:first-child{
+				margin-right:45px;
+			}
+			.one-ul li:last-child{
+				margin-right:0 ;
+			}
+			.first-page{
+				width: 199px;
+				height: 257px;
+				background: url(https://images-web.newnewbank.com/pc-page20170720.png) no-repeat;
+			}
+			.com-page{
+				width: 207px;
+				height: 234px;
+				background: url(https://images-web.newnewbank.com/pc-exhibition20170720.png) no-repeat;
+				margin-top: 12px;
+			}
+			.regPos{
+				position: absolute;
+			    top: 20px;
+			    right: 0;
+			    transform: rotate(30deg);
+			    -ms-transform: rotate(30deg);
+			    -moz-transform: rotate(30deg);
+			    -webkit-transform: rotate(40deg);
+			    -o-transform: rotate(30deg);
+			}
+			.yellow-circle{
+				width: 115px;
+				height: 115px;
+				line-height: 115px;
+				background-color: #fef1d7;
+				border-radius:50% ;
+				margin: 34px 0 20px;
+			}
+			.colorful{
+				width: 672px;
+				height: 289px;
+				background: url(https://images-web.newnewbank.com/pc-colorful20170720.png) no-repeat;
+			}
+			.ovalIocn{
+				width: 722px;
+				height: 31px;
+				background: url(https://images-web.newnewbank.com/pc-oval20170720.png) no-repeat;
+				position: relative;
+			}
+			.padding-left-30{
+				padding-left: 30px;
+			}
+			.longEllipse{
+				width: 930px;
+				height: 156px;
+				border-radius: 78px;
+				background-color: #fff;
+				box-shadow: 0 5px 0px 5px #b41c33;
+			}
+			.regisBtn{
+				width:166px;
+				height: 45px;
+				line-height: 45px;
+				box-shadow: 0 5px 0 0px #d31e3a;
+				background-color: #ec2544;
+				border-radius:4px ;
+			}
+			.packageIcon{}
+			.stepUl li{
+				float: left;
+				margin-right: 60px;
+			}
+			.stepUl li:last-child{
+				margin-right:0 ;
+			}
+			.stepIcon{
+				width: 125px;
+				height: 125px;
+				margin-bottom: 20px;
+			}
+			.stepIcon1{				
+				background: url(https://images-web.newnewbank.com/pc-step1-20170720.png) no-repeat; 
+			}
+			.stepIcon2{				
+				background: url(https://images-web.newnewbank.com/pc-step2-20170720.png) no-repeat; 
+			}
+			.stepIcon3{				
+				background: url(https://images-web.newnewbank.com/pc-step3-20170720.png) no-repeat; 
+			}
+			.stepIcon4{				
+				background: url(https://images-web.newnewbank.com/pc-step4-20170720.png) no-repeat; 
+			}
+			.stepIcon5{				
+				background: url(https://images-web.newnewbank.com/pc-step5-20170720.png) no-repeat; 
+			}
+			
+			.guideUl2{
+				
+			}
+			.guideUl2 li{
+				float: left;
+				/*margin-right: 60px;*/
+			}
+			.diff-li{
+				margin: 38px 60px 0;
+			}
+			.diff-li4{
+				margin-left:30px ;
+				margin-right: 30px;
+			}
+			.diff-li .arrow-leftIcon{
+				width: 33px;
+				height: 20px;
+				background: url(https://images-web.newnewbank.com/pc-arrow20170720.png) no-repeat;
+			}
+			.guideIcon{
+				width: 83px;
+				height: 89px;
+				padding-bottom: 20px;
+			}
+			.guideIcon1{
+				background: url(https://images-web.newnewbank.com/pc-guide1-20170720.png) no-repeat; 
+			}
+			.guideIcon2{				
+				background: url(https://images-web.newnewbank.com/pc-guide2-20170720.png) no-repeat; 
+			}
+			.guideIcon3{				
+				background: url(https://images-web.newnewbank.com/pc-guide3-20170720.png) no-repeat; 
+			}
+			.guideIcon4{				
+				background: url(https://images-web.newnewbank.com/pc-guide4-20170720.png) no-repeat; 
+			}
+			.guideIcon5{				
+				background: url(https://images-web.newnewbank.com/pc-guide5-20170720.png) no-repeat; 
+			}
+			.moreDataBtn{
+				width: 368px;
+				height: 70px;
+				line-height: 70px;
+				border: 1px solid #f1a614;
+				border-radius: 35px;
+			}
+			.color_f1a614{
+				color: #f1a614;
+			}
+			.fourPage{
+				background-color: #f1a614;
+				height: 286px;
+			}
+			.bgStar{
+				width: 1306px;
+				height: 245px;
+				background: url(https://images-web.newnewbank.com/pc-star20170720.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: -75px;
+			}
+			.telphone{
+				width: 199px;
+				height: 220px;
+				background: url(https://images-web.newnewbank.com/pc-tellPhone20170720.png) no-repeat;
+				position: absolute;
+				bottom: 0;
+				left: 110px;
+			}
+			.posImg{
+				position: absolute;
+				top: 85px;
+				right: 52px;
+			}
+			.downloadPack{
+				width: 140px;
+				height: 140px;				
+				box-shadow:0 0 0 4px  #d69922;
+				border-radius:2px ;
+				margin-bottom: 15px;
+			}
+			.loadPack{
+				position: absolute;
+				top: 96px;
+				right: 270px;
+			}
+			.yellowBtn,.redBtn{
+				text-align: center;
+				width: 200px;
+				height: 52px;
+				line-height: 52px;
+				border-radius: 26px;
+				box-shadow:0 5px 5px 0 #ef8f10;	
+							
+			}
+			.yellowBtn{
+				margin-bottom: 18px;
+				background-color: #f6bb48;
+			}
+			.redBtn{
+				background-color: #cc203b;
+			}

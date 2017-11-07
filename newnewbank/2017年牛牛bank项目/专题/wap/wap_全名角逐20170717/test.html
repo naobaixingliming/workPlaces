@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="wap-font-scale" content="no">
+		<script type="text/javascript" charset="utf-8">
+			! function() {
+				setRem();
+				window.addEventListener('orientation' in window ? "deviceorientation" : "resize", setRem);
+
+				function setRem() {
+					var html = document.documentElement;
+					var width = html.clientWidth;
+					html.style.fontSize = width / 16 + 'px'
+				}
+			}();
+		</script>
+		<title>全民角逐·上榜有奖</title>
+		<link rel="stylesheet" type="text/css" href="css/nationalCompetition.css" />
+		<style type="text/css">
+			.logo_cc3 p {
+				font-size: .7rem!important;
+			}
+			
+			.logo_cc3 span a {
+				font-size: .6rem!important;
+			}
+			
+			.innerBox {
+				width: 7.5rem;
+				height: 1rem;
+				background-color: #fff;
+				border-radius: .5rem;
+				position: absolute;
+				top: .4rem;
+				left: 5rem;
+			}
+			
+			.search {
+				outline: none;
+				border: none;
+				position: absolute;
+				top: .25rem;
+				width: 4.5rem;
+				height: .5rem;
+				left: 1.25rem;
+			}
+			
+			.searBtn {
+				outline: none;
+				border: none;
+				position: absolute;
+				top: .125rem;
+				right: .125rem;
+				width: 1.5rem;
+				height: .75rem;
+				/*line-height:0;*/
+				background-color: #ccc;
+				border-radius: .375rem;
+				/*display:-webkit-flex;
+		justify-content:center;
+		align-items:center;*/
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
+			}
+			.flex-parent{
+				display: flex;
+				display: -webkit-flex;
+				justify-content:center;
+				align-items: center;
+			}
+			.flex-child{
+				flex: 1;
+				-webkit-flex: 1;
+			}
+			.active .red-circle{
+				width: 0.625rem;
+				height: 0.625rem;
+				line-height: 0.625rem;
+				border-radius: 50%;
+				background-color: #e14b4a;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="rootNode">
+			<div class="four-page relative">
+				<div class="reelBox">
+					<i class="reel-top"></i>
+					<div class="reel-innerBox">
+						<ul class="flex-parent text_center color_80b4ca font_24" style="padding: 0.75rem 0 0.4rem 0;">
+							<li class="flex-child">排名</li>
+							<li class="flex-child">用户</li>
+							<li class="flex-child" style="padding: 0 .8rem;">推荐投资金额</li>
+						</ul>
+						<p class="under_line " style="background-color: #bfd9e4;"></p>
+						<div class="data-display">
+							<ul class="flex-parent active color_666 font_20 " style="background: #eee;height: 1rem;">
+								<li class="flex-child text_center ">
+									<i class="red-circle">1</i>
+								</li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">
+									￥123456789.36
+								</li>
+							</ul>
+							<ul class="flex-parent active color_666 font_20 " style="background: #eee;margin-top: 5px;height: 4rem;">
+								<li class="flex-child text_center  ">
+									<i class="red-circle">1</i>
+								</li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">
+									￥123456789.36
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<i class="reel-bottom"></i>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

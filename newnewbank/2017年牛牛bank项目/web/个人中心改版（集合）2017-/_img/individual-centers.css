@@ -1,0 +1,2139 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul,ol,li {
+	list-style: none;
+}
+i {
+	font-style: normal;
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+span {
+	display: inline-block;
+}
+
+/*字体大小 start*/
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+.font_28{
+	font-size: 28px;
+}
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_35 {
+	font-size: 35px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+.font_70 {
+	font-size: 70px;
+}
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000!important;
+}
+
+.color_fff {
+	color: #fff!important;
+}
+.color_333 {
+	color: #333!important;
+}
+.color_666 {
+	color: #666!important;
+}
+
+.color_999 {
+	color: #999!important;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9!important;
+}
+
+.color_f44975 {
+	color: #f44975!important;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe!important;
+}
+
+.color_fbb03b {
+	color: #fbb03b!important;
+}
+
+/*字体颜色 end*/
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.none ,.none-big{
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+.text_left{
+	text-align: left;
+}
+.text_right{
+	text-align: right;
+}
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+.clearfloat {
+	zoom: 1
+}
+.clear {
+	clear: both;
+}
+
+/*common end*/
+
+/*hover下拉出现覆盖 start*/
+
+[btn-triggle="expandUp"] {
+	position: relative;
+}
+
+[btn-triggle="expandUp"]:after {
+	content: '';
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	background: rgba(51, 51, 51, 0.1);
+}
+
+[btn-triggle="expandUp"]:hover:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*hover下拉出现覆盖 end*/
+
+/*单条数据效果  start*/
+
+.bottom-shadow:hover {
+	/*background-color: rgba(238, 238, 238, .2);*/
+	-webkit-box-shadow: 0 5px 5px rgba(106, 106, 106, 0.1);
+	box-shadow: 0 5px 5px rgba(106, 106, 106, 0.1);
+	-webkit-transform: translate3d(0, -1px, 0);
+	transform: translate3d(0, -2px, 0);
+}
+
+/*单条数据效果  end*/
+
+/*--start --  彩虹灯效果    */
+
+/*.rainbow-light {
+	box-sizing: border-box;
+}
+
+.rainbow-light {
+	position: relative;
+}
+
+.rainbow-light:after,
+.rainbow-light:before {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.rainbow-light:after,
+.rainbow-light:before {
+	box-sizing: border-box;
+	border: .5px solid transparent;
+	width: 0;
+	height: 0;
+	opacity: .4;
+}
+
+.rainbow-light:after {
+	top: 0;
+	left: 0;
+	-webkit-transition: border-color 0s ease-in 0.8s, width 0.2s ease-in 0.6s, height 0.2s ease-in 0.4s;
+	transition: border-color 0s ease-in 0.8s, width 0.2s ease-in 0.6s, height 0.2s ease-in 0.4s;
+}
+
+.rainbow-light:before {
+	bottom: 0;
+	right: 0;
+	-webkit-transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+	transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.2s, height 0.2s ease-in;
+}
+
+.rainbow-light:hover:after,
+.rainbow-light:hover:before {
+	width: 100%;
+	height: 100%;
+}
+
+.rainbow-light:hover:after {
+	border-top-color: #F44975;
+	border-right-color: #F44975;
+	-webkit-transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+	transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+}
+
+.rainbow-light:hover:before {
+	border-bottom-color: #F44975;
+	border-left-color: #F44975;
+	-webkit-transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s;
+	transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.6s;
+}*/
+/*--end--  彩虹灯效果    */
+
+/*--效果 start --  镜面效果    */
+
+.mirror-effect {
+	display: block;
+	position: relative;
+}
+
+.mirror-effect:before {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 100%;
+	top: 0;
+	left: -150px;
+	overflow: hidden;
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, .2)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%);
+	-webkit-transform: skewX(-25deg);
+	-moz-transform: skewX(-25deg)
+}
+
+.mirror-effect:hover:before {
+	left: 98%;
+	transition: left .5s ease 0s;
+}
+
+
+/*--效果 end--  镜面效果    */
+
+/*accountSum start*/
+#accountSum,#accountSetting,#listOfFund,#investRecord,#privilegeGold,#coupon {
+	background-color: #f2f2f2;
+}
+
+.header-accountSum {
+	width: 100%;
+	height: 240px;
+}
+
+.w-210 {
+	width: 220px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.bgTransparent {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.w-966 {
+	width: 966px;
+	box-sizing: border-box;
+}
+
+.circle-shadow {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 6px solid rgba(244, 73, 117, .4);
+	margin-top: 45px;
+	margin-left: 55px;
+}
+
+.person-photo {
+	width: 64px;
+	height: 55px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/site2017217.png) no-repeat -100px 0;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.newResources{
+	    position: absolute;
+	    right: 40px;
+	    top: 20px;
+	    width: 20px;
+	    height: 15px;
+	    line-height: 15px;
+	    background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/newResources2017223.png) no-repeat;
+}
+
+.color_f6ce95 {
+	color: #f6ce95;
+}
+
+.color_80cce6 {
+	color: #80cce6;
+}
+
+.safety-grade {
+	width: 120px;
+	height: 12px;
+	border-radius: 6px;
+}
+
+.grade-coefficient {
+	width: 35%;
+	position: absolute;
+	height: 100%;
+	border-radius: 6px;
+}
+
+.rounded-rectangle {
+	width: 138px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+}
+
+.side-navigation {
+	height:45px;
+	/*border-right: 3px solid #e1e1e1;*/
+	line-height: 45px;
+	color: #000;
+}
+
+.side-navigation-bottom {
+	/*height: 200px;*/
+	/*border-right: 3px solid #e1e1e1;*/
+}
+
+.active-account {
+	/*border-right: 3px solid #80cce6;*/
+	color: #F44975!important;
+	background-color:#f8f8f8;
+}
+
+ .circle-shadow-box{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #ddd8d8;
+	border: 5px solid #f0eded;
+	
+}
+
+.sprite-account {
+	background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017217.png);
+	background-repeat: no-repeat;
+}
+
+
+.sprite-account-all{
+	background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/smallIcon20170321.png); 
+	background-repeat: no-repeat;
+	float: left;
+	margin: 10px 0 0 20px;
+}
+.sprite-account-photo{
+	width: 53px;
+	height: 56px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/site2017217.png) no-repeat -99px 0 ;
+	margin-top: 12px;
+}
+.sprite-account1 {
+	width: 29px;
+	height: 24px;
+	background-position:-41px 0;
+}
+.active-account .sprite-account-red1{
+	background-position:0 0 ;
+}
+.sprite-account2 {
+	width: 29px;
+	height: 27px;
+	background-position:-41px -45px;
+}
+.active-account .sprite-account-red2{
+	background-position: 0 -45px;
+}
+
+.sprite-account3 {
+	width: 29px;
+	height: 29px;
+	background-position:-41px -87px;
+	
+}
+
+.active-account .sprite-account3{
+	background-position: 0 -87px;
+}
+
+.sprite-account4 {
+	width: 29px;
+	height: 29px;
+	background-position:-41px -129px;
+	
+}
+
+.active-account .sprite-account4{
+	background-position: 0 -129px;
+}
+
+.sprite-account5 {
+	width: 29px;
+	height: 23px;
+	background-position: -41px -176px;
+	
+}
+.active-account .sprite-account5{
+	background-position: 0 -176px;
+}
+
+
+.sprite-account6 {
+	width: 29px;
+	height: 26px;
+	background-position: -41px -221px;
+	
+}
+.active-account .sprite-account6{
+	background-position: 0 -221px;
+}
+
+
+
+.sprite-account7 {
+	width: 29px;
+	height: 25px;
+	background-position: -41px -262px;
+	
+}
+.active-account .sprite-account7{
+	background-position: 0 -262px;
+}
+
+
+.sprite-account8 {
+	width: 29px;
+	height: 25px;
+	background-position: -41px -303px;
+	
+}
+.active-account .sprite-account8{
+	background-position: 0 -303px;
+}
+
+.sprite-account9 {
+	width: 29px;
+	height: 23px;
+	background-position: -41px -351px;
+	
+}
+.active-account .sprite-account9{
+	background-position: 0 -351px;
+}
+.sprite-account10 {
+	width: 29px;
+	height: 27px;
+	background-position: -41px -390px;
+	
+}
+.active-account .sprite-account10{
+	background-position: 0 -390px;
+}
+.sprite-account11 {
+	width: 29px;
+	height: 27px;
+	background-position: -41px -433px;
+	
+}
+.active-account .sprite-account11{
+	background-position: 0 -433px;
+}
+
+
+
+
+
+.sprite-account-vcode{
+	width: 152px;
+	height: 152px;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/qrcode20170331.png) no-repeat;
+}
+
+.side-navigation:hover {
+	background-color: #f8f8f8;
+}
+
+.side-navigation-bottom img {
+	width: 100%;
+	position: absolute;
+	bottom: -28px;
+	border-right: 3px solid #e1e1e1;
+}
+
+.color_7dcae6 {
+	color: #7dcae6;
+}
+
+.questionNumber {
+	width: 20px;
+	height: 20px;
+	background-position: -68px -300px;
+}
+
+.eyeIcon {
+	width: 36px;
+	height: 22px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/site2017217.png) no-repeat -114px -68px;
+}
+
+.main-assets {
+	height: 236px;
+}
+
+.left-side {
+	width: 330px;
+	height: 100%;
+	box-sizing: border-box;
+	padding-left: 50px;
+	padding-right: 30px;
+}
+
+.middle-side {
+	width: 320px;
+	height: 100%;
+	box-sizing: border-box;	
+	padding-left: 20px;
+}
+.middle-side:hover,.right-side:hover,.left-side:hover{
+	border: 10px solid #e5f4fa;
+}
+
+.right-side {
+	width: 310px;
+	height: 100%;
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+
+.recharge,
+.investment,
+.extract {
+	border-radius: 5px;
+	padding: 8px 25px;
+	margin-right: 15px;
+	font-size: 14px;
+}
+
+.problem-no {
+	width: 20px;
+	height: 20px;
+	background-position: -50px -300px;
+}
+
+.haveInHand {
+	width: 180px;
+}
+
+.capitalNumber {
+	width: 240px;
+}
+
+.w-250 {
+	width: 250px;
+}
+
+.two-page-account,
+.three-page-account,
+.four-page-account {
+	margin-top: 20px;
+}
+
+.three-page-account {
+	padding-bottom: 30px;
+}
+
+.four-page-account {
+	padding-bottom: 20px;
+}
+
+.two-page-account {
+	height: 85px;
+}
+
+.border-right {
+	height: 100%;
+	padding-top: 5px;
+	box-sizing: border-box;
+	border-right: 1px solid #eee;
+}
+
+.two-page-account p i {
+	float: left;
+}
+
+.authentication {
+	width: 19px;
+	height: 19px;
+	background-position: -48px -320px;
+	margin: 25px 0 0 10px;
+}
+
+.notCertified {
+	width: 19px;
+	height: 19px;
+	background-position: -69px -320px;
+	margin: 25px 0 0 10px;
+}
+
+
+
+
+.nameAuthentication {
+	width: 46px;
+	height: 33px;
+	background-position: -46px 0;
+	margin: 20px 10px 0 80px;
+}
+
+.notNameAuthentication {
+	width: 46px;
+	height: 33px;
+	background-position: 0 0;
+}
+
+.mobileAuthentication {
+	width: 38px;
+	height: 35px;
+	background-position: -46px -36px;
+	margin: 20px 10px 0 80px;
+}
+
+.notMobileAuthentication {
+	width: 38px;
+	height: 35px;
+	background-position: 0 -36px;
+	margin: 20px 10px 0 80px;
+}
+
+.emailAuthentication {
+	width: 45px;
+	height: 28px;
+	background-position: 0 -70px;
+	margin: 20px 20px 0 80px;
+}
+
+.notEmailAuthentication {
+	width: 45px;
+	height: 28px;
+	background-position: -46px -70px;
+	margin: 20px 10px 0 80px;
+}
+
+.boundCard {
+	width: 38px;
+	height: 35px;
+	background-position: -46px -98px;
+	margin: 20px 10px 0 80px;
+}
+
+.notBoundCard {
+	width: 38px;
+	height: 35px;
+	background-position: 0 -98px;
+	margin: 20px 10px 0 80px;
+}
+
+.w-235 {
+	width: 310px;
+}
+
+
+
+
+
+
+
+
+
+.more_financial {
+	margin-top: 5px;
+}
+
+.more_financial:hover {
+	text-decoration: underline;
+}
+
+.preferred-product {
+	width: 94px;
+	height: 97px;
+}
+
+.preferred-product1 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/qualityProducts01-2017217.jpg) no-repeat;
+}
+
+.preferred-product2 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/qualityProducts02-2017217.jpg) no-repeat;
+}
+
+.preferred-product3 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/qualityProducts03-2017217.jpg) no-repeat;
+}
+
+div.single-line {
+	padding: 15px 30px 15px 20px;
+}
+
+div.middle-box {
+	padding-left: 25px;
+}
+
+.buy-immediately {
+	width: 110px;
+	height: 38px;
+	cursor: pointer;
+	line-height: 38px;
+	border-radius: 5px;
+	margin-top: 45px;
+}
+
+.mirror-effect {
+	width: 906px;
+	height: 110px;
+}
+/*accountSum end*/
+
+			/*accountSetting start*/
+			.sprites-setting{
+				width: 39px;
+				height: 30px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -25px ;
+				margin-left: 25px;				
+				margin-top:8px ;			
+			}
+			.red-sureIcon{
+				width: 22px;
+				height: 22px;
+				margin: 2px 5px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat -10px -332px ;
+			}
+			.notSureIcon{
+				width: 22px;
+				height: 22px;
+				margin: 3px 5px 0;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat -10px -353px ;
+			}
+			.sprite-accountSet1{
+				width: 39px;
+				height: 30px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -57px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet2{
+				width: 39px;
+				height: 30px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -94px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet3{
+				width: 39px;
+				height: 41px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -128px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet4{
+				width: 39px;
+				height: 38px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -170px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet5{
+				width: 39px;
+				height: 27px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -208px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet6{
+				width: 39px;
+				height: 28px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -235px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet7{
+				width: 39px;
+				height: 32px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -265px ;
+				margin-left: 50px;	
+				margin-right: 45px;	
+				margin-top:8px ;	
+			}
+			.sprite-accountSet8{
+				width: 39px;
+				height: 34px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/sprites2017220.png) no-repeat 0 -297px ;
+				margin-left: 50px;	
+				margin-right: 45px;		
+			}
+			.boot-bar{
+				height: 44px;
+				line-height: 44px;
+			}
+			.content-accountset{
+				margin-top: 8px;
+			}
+			.rectangular-progress{
+				width: 260px;
+			    height: 8px;
+			    border-radius: 5px;
+			    background-color: #ddd;
+			}
+			.red-progress{
+				width: 50%;
+				position: absolute;
+				height: 100%;
+				border-radius: 5px;
+			}
+			.circle-btn{
+				width: 16px;
+				height: 16px;
+				border: 1px solid #dedede;
+				border-radius:50% ;
+				float: right;
+    			margin-top: -5px;
+			}
+			.security-one{
+				height: 90px;
+				line-height: 90px;
+				padding: 0 35px 0 25px;
+			}
+			.singleMessageSet{
+				height: 144px;
+			}
+			.sprite-accountSet{
+				
+			}
+			.same-settings{
+				padding-top: 45px;
+			}
+			.w-596{
+				width: 596px;
+			}
+			.w-480{
+				width: 480px;
+			}
+			.bgColor_d2d7d9{
+				background-color:#d2d7d9 ;
+			}
+			.bgColor_fbb03b{
+				background-color:#fbb03b;
+			}
+			.passwordStrength{
+				width: 48px;
+				height: 15px;
+				text-align: center;
+				line-height: 15px;
+				border-radius:7px ;
+				margin-right: 5px;
+			}
+			.changeBtn{
+				width: 102px;
+				height: 40px;
+				line-height: 40px;
+				margin-right: 50px;
+				border-radius:5px ;
+				border: 1px solid #ddd;
+			}
+			.changeBtn:hover{
+				background-color: #F44975;
+				color: #fff!important;
+				border: 0;
+			}
+			.modifyBtn{
+				border: 1px solid #fbb03b;
+				margin-right: 5px;
+				color: #FBB03B!important;
+			}
+			.bindingBtn,.sureBtn{
+				border: 1px solid #f44975;
+				color:#F44975!important
+			}
+			.sureBtn{
+				margin-right: 5px;
+			}
+			.setUpBtn{
+				border: 1px solid #fbb03b;
+				color: #FBB03B!important;
+			}
+			.input-box{
+				width: 50%;
+				background-color: #f8f8f8;
+				border-radius:5px ;
+			}
+			.input-box input{
+				width: 100%;
+				outline: none;
+				border: 0;
+				background-color: rgba(0,0,0,0);
+				padding: 8px 10px;
+				
+			}
+			.input-box input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+		　　			color: #A9A9A9;
+			　}
+		　　  .input-box input:-moz-placeholder, textarea:-moz-placeholder {
+	　　			color: #A9A9A9;
+		　　  }
+			.input-box input::-moz-placeholder, textarea::-moz-placeholder {
+			　　		color: #A9A9A9;
+			}
+			.input-box input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+			　　		color: #A9A9A9;
+			}
+			
+			.singleMessageSetBottom{
+				height: 225px;
+			}
+			.generateBtn{
+				width: 135px;
+				height: 35px;
+				line-height: 35px;
+				margin-right: 50px;
+				border-radius:5px ;
+				border: 1px solid #F44975;
+			}
+			.sureGenerateBtn{
+				width: 135px;
+				height: 35px;
+				line-height: 35px;
+				margin-right: 5px;
+				border-radius:5px ;
+				background-color: #F44975;
+			}
+			/*accountSetting end*/		
+			
+			
+			/*listOfFunds start*/			
+			.h-288 {
+				height: 288px;
+				border: 1px solid #e6e6e6;
+			}
+			.h-156{
+				padding: 40px 45px 30px 45px;
+			}
+			.w-600{
+				width: 600px;
+				height: 100%;
+				border-right:1.5px solid #E6E6E6 ;
+			}
+			.bgColor_f8f8f8{
+				background-color: #f8f8f8;
+			}
+			.bgColor_7dcae6{
+				background-color: #7dcae6;
+			}
+			.w-300{
+				width: 300px;
+				border-right:1px solid #e6e6e6;
+			}
+			.bottomPage-box{
+				margin-top: 10px;
+			}
+			.dataStatistics{
+				margin-top: 8px;
+				border-right:1.5px solid #E6E6E6 ;
+			}
+			.dataStatistics .table_nav ul li{
+				float: left;
+				cursor: pointer;
+				height: 100%;
+				color: #999;
+				padding: 0 25px;
+				position: relative;
+			}
+			.dataStatistics .table_nav ul li:hover{
+				background-color: #ededed;
+				color: #333;
+			}
+			.current{
+				color: #F44975!important;
+			}
+			.dataStatistics .current .navUnderline{
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				width: 100%;
+				height: 5px;
+				background:#F44975 ;
+			}
+			#queryTime{
+				border-radius:3px ;
+				padding: 5px 15px;
+			}
+			.table_nav ul{
+				height: 76px;
+				line-height: 76px;
+			}
+			.datetimepicker1,.datetimepicker2{
+				width: 106px;
+				background: #ededed;
+				padding: 5px 0;
+				text-align: center;
+			    outline: none;
+			    border: 1px solid #d4d4d4;
+			}
+			.table_nav{
+				height: 76px;
+				border-bottom: 5px solid #ebebeb;
+			}
+			.table table ,.table table tr{
+				width: 100%;
+				border: 0;
+				outline: none;
+			}
+			.table table tr td{
+				text-align: center;
+				font-size: 14px;
+				color:#333;
+				padding: 30px 0;
+			}
+			.table table tr th{
+				font-weight: lighter;
+			}
+			.active,.active-big{
+				display: block;
+			}
+			.float_right a.previous,.float_right a.next{
+				width: 66px;
+				height: 24px;
+				line-height: 24px;
+				background-color: #d4d4d4;
+				border-radius:2px ;
+				color: #fff;
+				text-align: center;
+				cursor: pointer;
+			}
+			a.previous:hover,a.next:hover{
+				background-color: #7dcae6;
+			}
+			.arrow-previous{
+				width: 0;
+			    height: 0;
+			    border-top: 6px solid transparent;
+			    border-right: 10px solid #fff;
+			    border-bottom: 6px solid transparent;
+			    margin-right: 4px;
+			}
+			.arrow-next{
+				width: 0;
+			    height: 0;
+			    border-top: 6px solid transparent;
+			    border-left: 10px solid #fff;
+			    border-bottom: 6px solid transparent;
+			    margin-left: 4px;
+			}
+			.pageNum{
+				border-radius:3px ;
+				padding: 3px;
+			}
+			.jumpBtn{
+				padding: 0 5px;
+				cursor: pointer;
+			}
+			/*listOfFunds end*/		
+			
+				/*investRecord start*/	
+				.h-76{
+					height: 76px;
+					line-height: 76px;
+				}
+				.bgColor_f4e5cd{
+					background-color: #f4e5cd;
+					
+				}
+				.bgColor_f6f6f6{
+					background-color: #f6f6f6;
+				}
+				.color_2855aa{
+					color: #2855aa;
+				}
+				.h-40{
+					height: 40px;
+					line-height: 40px;
+				}
+				.insurance{
+					margin-top: 25px;
+					border: 1px solid #f5dab0;
+					border-radius:5px ;					
+				}
+				.insurance p i{
+					font-style: italic;
+				}
+				.insuranceIcon{
+					width: 146px;
+					height: 29px;
+					margin: 5px 5px;
+					background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/insurance2017221.png) no-repeat;
+				}
+				.dateSelection{
+					margin: 25px 50px 0 0;
+				}
+				.dateSelection  li{
+					float: left;
+					cursor: pointer;
+					font-size: 14px;
+					color: #999;
+					height: 25px;
+					line-height: 25px;
+					padding: 2px 15px;
+					transition: all .2s ease 0s;
+				}
+				.dateSelection  li:hover{
+					color: #333;
+					font-size: 16px;
+				}
+				.dateSelection .red-select{					
+					color: #fff;
+					background-color: #F44975;
+					
+				}
+				.widthBtn{
+					width: 108px;
+					height: 25px;
+					line-height: 25px;
+					text-align: center;				
+					border-radius:3px ;
+					
+				}
+				select.widthBtn{
+					border: 0;	
+					color: #999;			
+				}
+				#dt {
+					margin: 30px auto;
+					height: 28px;
+					width: 200px;
+					padding: 0 6px;
+					border: 1px solid #ccc;
+					outline: none;
+				}									
+				/*investRecord end*/	
+				
+
+			.privilegeBid{
+				box-sizing: border-box;
+				border: 3px solid #bee4f2;
+				height: 234px;
+				margin-top: 15px;
+			}
+			.iconOut{
+				width: 106px;
+				height: 106px;
+				border-radius:5px ;
+				margin-top: 60px;
+    			margin-left: 30px;
+			}
+			.iconOut img{
+				margin-top: 20px;
+			}
+			.buy-privilege{
+				padding: 10px 35px;
+				border-radius:5px ;
+				margin: 105px 35px 0 0;
+			}
+			.privilegeExpress{
+				box-sizing: border-box;
+				border: 1.5px solid #E6E6E6;
+				text-align: left;
+				/*padding-left: 35px;*/
+				margin-top: 15px;
+			}
+			.h-70{
+				height: 70px;
+				line-height: 70px;
+			}
+			.privilegeIcon1,.privilegeIcon2,.privilegeIcon3{
+				width:317px ;
+				height: 150px;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/bid2017222.png) no-repeat ;
+				cursor: pointer;
+				margin:8px 1px ;
+			}
+			.privilegeIcon1{
+				background-position:0 0 ;
+			}
+			.privilegeIcon2{
+				background-position:0 -156px ;
+			}
+			.privilegeIcon3{
+				background-position:0 -311px ;
+			}
+			.h-166{
+				height: 166px;
+				border: 1.5px solid #E6E6E6;
+			}
+			
+			/*coupon ---start*/
+			.two-page-coupon {
+				margin-top: 15px;
+			}
+			
+			.one-page-coupon {
+				height: 200px;
+			}
+			
+			.originally {
+				color: #333;
+				font-size: 18px;
+				cursor: pointer;
+			}
+			
+			.originally i {
+				height: 35px;
+			}
+			
+			.curr-coupon {
+				color: #F44975;
+				border-bottom: 3px solid #F44975;
+			}
+			
+			.h-50 {
+				height: 50px;
+				line-height: 50px;
+				padding: 0 30px 0 15px;
+			}
+			
+			.send-coupons {
+				width: 23px;
+				height: 15px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/send-coupons2017222.png) no-repeat;
+				margin-top: 18px;
+				margin-right: 5px;
+			}
+			
+			.w-245 {
+				float: left;
+				display: inline-block;
+				width: 240px;
+				text-align: center;
+				margin-top: 25px;
+				padding: 15px 0;
+				border-right: 1px dotted #ededed;
+			}
+			
+			#coupon .w-245 p {
+				padding-bottom: 10px;
+			}
+			
+			#coupon .w-245 span i:first-child {
+				padding-right: 5px;
+			}
+			
+			.send-coupons {
+				transition: All .3s ease-in-out;
+				-webkit-transition: All .3s ease-in-out;
+				-moz-transition: All .3s ease-in-out;
+				-o-transition: All .3s ease-in-out;
+			}
+			
+			.rotate:hover .send-coupons {
+				transform: scale(1.5);
+				-webkit-transform: scale(1.5);
+				-moz-transform: scale(1.5);
+				-o-transform: scale(1.5);
+				-ms-transform: scale(1.5);
+			}
+			
+			.vertical-line {
+				float: left;
+				width: 1px;
+				height: 149px;
+				border-right: 1px solid #ededed;
+			}
+			
+			.bgColor_f5f5f5 {
+				background-color: #f5f5f5;
+			}
+			
+			.originally i:hover {
+				color: #F44975;
+			}
+			
+			.originally i:first-child {
+				margin-right: 120px;
+			}
+			
+			.using-state {
+				margin: 0 0 18px 0;
+				padding: 15px 10px;
+			}
+			
+			.using-state i {
+				margin-right: 40px;
+				cursor: pointer;
+			}
+			
+			[textChange="expand"] {
+				color: #666;
+				transition: all .2s ease 0s;
+				font-size: 14px;
+			}
+			
+			[textChange="expand"]:hover {
+				font-size: 16px;
+				color: #F44975;
+			}
+			
+			.text-active {
+				color: #F44975;
+				font-size: 16px;
+			}
+			
+			.color_eea738 {
+				color: #eea738;
+			}
+			
+			.color_2590b7 {
+				color: #2590b7;
+			}
+			
+			.single-coupon {
+				width: ;
+				height: 148px;
+				background-color: #f9f9f9;
+				margin-bottom: 16px;
+			}
+			
+			.buleCoupon {
+				position: relative;
+				width: 284px;
+				height: 148px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/coupons-notUsed2017722.png) no-repeat;
+			}
+			
+			.grayCoupon {
+				position: relative;
+				width: 284px;
+				height: 148px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/coupons-used2017722.png) no-repeat;
+			}
+			
+			.use-rightAway,
+			.use-have {
+				width: 140px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				border-radius: 20px;
+				float: right;
+				margin-right: 30px;
+				margin-top: 45px;
+			}
+			
+			.use-rightAway {
+				color: #7dcae6;
+				border: 1px solid #7dcae6;
+			}
+			
+			.use-have {
+				color: #eea738;
+				border: 1px solid #eea738;
+			}
+			
+			.use-rightAway:hover {
+				background-color: #eea738;
+				border: 0;
+				color: #fff;
+			}
+			
+			.overdueIcon {
+				width: 71px;
+				height: 70px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/overdue2017722.png) no-repeat;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+				/*coupon ---end*/
+				
+
+			.menu-bg {
+				position: relative;
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+				background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_menu_bg_20160419.png);
+				background-repeat: no-repeat;
+			}
+			
+			.menu-bg1 {
+				background-position: 0px 0px;
+			}
+			
+			.menu-bg2 {
+				background-position: -138px 0px;
+			}
+			
+			.menu-bg3 {
+				background-position: -271px 0px;
+			}
+			
+			.menu-bg4 {
+				background-position: -401px 0px;
+			}
+			
+			.menu-bg5 {
+				background-position: -534px 0px;
+			}
+			
+			.menu-bg6 {
+				background-position: -664px 0px;
+			}
+			
+			.menu-bg7 {
+				background-position: -797px 0px;
+			}
+			
+			.menu-bg8 {
+				background-position: -928px 0px;
+			}
+			
+			.menu-bg9 {
+				background-position: -1060px 0px;
+			}
+			.product-head-wrap {
+				width: 100%;
+				height: 130px;
+				z-index: 1000;
+			}
+			
+			.product-head-wrap .product-head-box {
+				width: 1200px;
+				min-width: 1200px;
+				height: 130px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.product-head-wrap .product-head-box .left-logo {
+				width: 226px;
+				height: 88px;
+				position: absolute;
+				top: 22px;
+				left: 16px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/logo_write_20160415.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap {
+				position: absolute;
+				right: 0px;
+				top: 42px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box {
+				margin-right: 20px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box a {
+				font: normal 16px/30px "Microsoft YaHei";
+				text-align: center;
+				margin: 0 10px;
+				padding: 4px 10px;
+				border-radius: 5px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .user-operation {
+				width: 194px;
+				height: 32px;
+				padding-left: 10px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .user-operation .opera-btns {
+				width: 194px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .user-operation .opera-btns a {
+				display: inline-block;
+				width: 70px;
+				height: 30px;
+				font: normal 16px/30px "Microsoft YaHei";
+				text-align: center;
+				margin: 0 10px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .user-operation .personal-btn {
+				width: 194px;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .user-operation .personal-btn a {
+				position: relative;
+				padding: 4px 10px;
+				margin-left: 40px;
+				font: normal 16px/30px "Microsoft YaHei";
+				text-align: center;
+			}
+			
+			.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box a {
+				font: normal 16px/30px "Microsoft YaHei";
+				text-align: center;
+				margin: 0 10px;
+				padding: 4px 10px;
+				border-radius: 5px;
+			}
+			
+			.fl {
+				float: left;
+				display: inline;
+			}
+			
+			.product-nav-box a {
+				color: #FFFFFF;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.product-nav-box a:hover,
+			.product-nav-box a.active {
+				color: #f44975;
+				background-color: #FFFFFF;
+			}
+			
+			.opera-btns .regis-btn {
+				border: 1px solid #FFFFFF;
+			}
+			
+			.opera-btns a {
+				color: #FFFFFF;
+			}
+			.header-accountSum {
+				width: 100%;
+				height: 304px;
+			}
+			
+			.tableImg {
+				width: 424px;
+				height: 304px;
+				opacity: .4;
+				filter: alpha(opacity=40);
+			}
+			
+			.tableRedLeft {				
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/tableRedLeft20170321.jpg) no-repeat;
+			}			
+			.tableRedRight {
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/tableRedRight20170321.jpg) no-repeat;
+			}
+			
+			.tableGreenLeft {				
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/tableGreenLeft20170321.jpg) no-repeat;
+			}
+			.tableGreenRight {
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/tableGreenRight20170321.jpg) no-repeat;
+			}
+			
+			.tableYellowLeft {				
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/tableYellowLeft20170321.jpg) no-repeat;
+			}			
+			.tableYellowRight {
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/tableYellowRight20170321.jpg) no-repeat;
+			}
+			
+			.myAsset {
+				position: absolute;
+			    bottom: 5px;
+			    right: 20px;
+			    border: 1px solid #fff;
+			    border-radius: 5px;
+			    padding: 5px 15px;
+			}
+			
+			.offset-top {
+				position: relative;
+				/*top: -130px;*/
+				margin-top: -130px;
+			}
+			
+			.common-smallImg {
+				width: 33px;
+				height: 33px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/smallIconH20170321.png) no-repeat;
+			}
+			
+			.smallImg1 {
+				background-position: 0 -40px;
+			}
+			
+			.smallImg2 {
+				background-position: -53px -40px;
+			}
+			
+			.smallImg3 {
+				background-position: -106px -40px;
+			}
+			
+			.smallImg4 {
+				background-position: -159px -40px;
+			}
+			
+			.redActive .redActiveImg1 {
+				background-position: 0 0;
+			}
+			
+			.redActive .redActiveImg2 {
+				background-position: -53px 0;
+			}
+			
+			.redActive .redActiveImg3 {
+				background-position: -106px 0;
+			}
+			
+			.redActive .redActiveImg4 {
+				background-position: -159px 0;
+			}
+			
+			.certified-case {
+				margin: 22px 0;
+			}
+			
+			.certified-case li {
+				float: left;
+				margin-right: 15px;
+			}
+			
+			.certified-case li:last-child {
+				margin-right: 0;
+			}
+			
+			.bgColor_e7e7e7 {
+				background-color: #e7e7e7;
+			}
+			
+			.head-person-info {
+				padding: 30px 15px 25px;
+			}
+			
+			.person-name {
+				margin-left: 40px;
+			}
+			
+			.person-name p {
+				padding-top: 5px;
+			}
+			.text-left{
+				text-align: left;
+				float: right;
+				width: 55%;
+			}
+			.block{
+				display: block;
+			}
+			.coupon-number{
+				height: 14px;
+				line-height: 14px;
+				color: #fff;
+				font-size: 12px;
+				border-radius:7px ;
+				background-color:#F44975 ;
+				padding: 0 8px;
+				float: right;
+				margin-top: 15px;
+    			margin-right: 10px;
+			}
+			
+			.error-hint{
+				position: absolute;
+				top: 0;
+				box-sizing: border-box;
+				width: 100%;
+				height: 36px;
+    			line-height: 36px;
+    			padding: 0 10px;
+    			border: 1.5px solid #ff9900;
+			    background-color: #fffdf1;
+			    color: #000;
+			    font-size: 12px;
+			    box-shadow: 1px 1px 5px #d1d1d1;
+				-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+				-moz-box-shadow: 1px 1px 5px #d1d1d1;
+				-o-box-shadow: 1px 1px 5px #d1d1d1;
+			    z-index: 1;
+			}
+			.hintImg {
+			    width: 14px;
+			    height: 14px;
+			    background-color: #ff9900;
+			    border-radius: 7px;
+			    color: #fff!important;
+			    font-size: 10px;
+			    margin-top: 10px;
+			}
+			.color_2438cd{
+				color: #2438cd;
+			}
+			.yellowmenu{
+				position: absolute;				
+			    width: 250px;			    
+				border: 1px solid #ff9900;
+			    background-color: #fffdf1;
+			    color: #000;
+			    font-size: 12px;
+			    padding: 10px;				
+				box-sizing: border-box;
+				border-radius:5px ;
+				box-shadow: 1px 1px 5px #d1d1d1;
+				-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+				-moz-box-shadow: 1px 1px 5px #d1d1d1;
+				-o-box-shadow: 1px 1px 5px #d1d1d1;
+				z-index: 1;
+			}
+			.yellowmenu1{
+				top: 70px;
+				left: 80px;
+			}
+			.yellowmenu2{
+				top: 200px;
+				left: 250px;
+			}
+			.yellowmenu3{
+				top: 300px;
+				right: 50px;
+			}
+			.questionHover{
+				cursor: pointer;
+			}
+			.usermenu1 {
+				position: absolute;
+				top: 175px;
+				left: -22px;
+			}
+			
+			.usermenu2 {
+				position: absolute;
+				top: 175px;
+				left: 25px
+			}
+			
+			.usermenu3 {
+				position: absolute;
+				top: 175px;
+				left: 75px;
+			}
+			
+			.usermenu4 {
+				position: absolute;
+				top: 175px;
+				right: -155px;
+			}
+			
+			.usermenu {
+				width: 254px;
+				border: 1px solid #d1d1d1;
+				background-color: #fff;
+				box-shadow: 1px 1px 5px #d1d1d1;
+				-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+				-moz-box-shadow: 1px 1px 5px #d1d1d1;
+				-o-box-shadow: 1px 1px 5px #d1d1d1;
+				z-index: 1;
+			}
+			
+			.arrow-up-bd {
+				width: 0;
+				height: 0;
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				position: absolute;
+				top: -9px;
+				left: 50%;
+				margin-left: -80px;
+			}
+			
+			.arrow-up-bd em,
+			.arrow-up-bd i {
+				width: 0;
+				height: 0;
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				position: absolute;
+				border: 5px solid transparent;
+				border-style: dashed dashed solid;
+			}
+			
+			.arrow-up-bd i {
+				border-bottom-color: #fff;
+				top: 0;
+			}
+			
+			.arrow-up-bd em {
+				border-bottom-color: #d8d8d8;
+				top: -1px;
+			}
+			
+			.usermenu span {
+				display: block;
+				text-align: left;
+				margin: 0!important;
+				padding: 15px 10px;
+				text-decoration: none;
+			}
+			.w-480{
+				width: 480px;
+    			border-right: 1px solid #e6e6e6;
+			}
+			.myAssetIcon{
+				width:17px ;
+				height: 23px;
+				background:url(http://images-web.oss-cn-hangzhou.aliyuncs.com/assets20170322.png) no-repeat;
+				float: left;
+				margin-right: 5px;
+			}
+			.bgColor_50a7bc{
+				background-color: #50a7bc;
+			}
+			.bgColor_ed9d23{
+				background-color: #ed9d23;
+			}
+			.closeDelete{
+				width: 20px;
+				height: 20px;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/circle-close_03.png) no-repeat ;
+				background-size:cover ;
+				margin: 8px;
+				cursor: pointer;
+			}
+			.closeEye{
+				width: 46px;
+				height: 18px;
+				margin-top: 20px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/claseEye2070331.png) no-repeat;
+			}
+			.h-pre100{
+				height: 100%;
+			}
+			.h-pre100:hover{
+				border-bottom:1px solid #F44975 ;
+			}
+			.digital-show{
+				display: none;
+				font-size: 14px;
+				color: #666;
+			}
+			.tableRedLeft,.tableYellowLeft,.tableGreenLeft{
+				position: absolute;
+				left: 0;
+				top:0;
+			}
+			.tableRedRight,.tableYellowRight,.tableGreenRight{
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.font_22{
+				font-size: 22px;
+			}
+			.arial{
+				font-family: arial;
+			}
+			.h-235 {
+				height: 235px;
+			}
+			
+			.sprite-account-creditor {
+				width: 26px;
+				height: 26px;
+				float: left;
+				margin: 10px 0 0 20px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/loan20170407.png) no-repeat;
+			}
+			
+			.sprite-account13 {
+				background-position: 0px -31px;
+			}
+			
+			.active-account .sprite-account-red13 {
+				background-position: -26px -31px;
+			}
+			
+			.transferableBtn {
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				color: #fff;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+			
+			.bgColor_eea738 {
+				background-color: #eea738;
+			}
+			
+			.bgColor_ccc {
+				background-color: #ccc;
+			}
+			.assetTransfer{
+				padding-top: 80px;
+			}
+			.assetTransfer li{
+				width: 240px;
+				box-sizing: border-box;
+				padding: 20px 0 20px 45px;
+				float: left;
+				border-right:1px solid #efefef ;
+			}
+			.assetTransfer li:last-child{
+				border-right:none ;
+			}
+			/*弹框 start*/
+			.cover,.showdowBox{
+				width:100% ;
+				height:100% ;							
+				position: fixed;
+				top: 0;
+				right: 0;
+				z-index:2000;			
+			}
+			.cover{					
+				background-color:rgba(0,0,0,0.8) ;
+			}
+			.showdowBox{
+				background-color:rgba(0,0,0,0.8) ;
+			}			
+			.w-955{
+				width: 955px;
+				z-index: 2000;
+				position: fixed;
+				top: 20%;
+				left: 50%;
+				margin-left:-480px ;
+			}
+			.h-80{
+				height: 80px;
+				line-height: 80px;
+			}
+			.border-radius-5{
+				border-radius: 5px;
+			}
+			.red-border-top{
+				border-top:5px solid #F44975 ;
+			}
+			.bgColor_efefef{
+				background-color: #efefef;
+			}
+			.out-border{
+				padding: 6px;
+				border: 1px solid #eee;
+				border-radius:5px ;
+			}
+			.border-radius{
+				padding: 2px 10px;
+				border:1px solid #eee ;
+				border-radius:3px ;
+			}
+			.common-borderBtn{
+				padding:10px 20px ;
+				border-radius:5px ;
+			}
+			.look-Btn{
+				padding:10px 40px ;
+			}
+			.title-item{
+				border: 1px solid #F44975;
+				padding: 2px 20px;
+				border-radius: 20px;
+			}
+			.bgColor_d8eff8{
+				background-color: #d8eff8;
+			}
+			.color_eea738{
+				color: #eea738;
+			}
+			.zhuanrangIcon,.shenkeIcon,.zhuanrangEdIcon{
+				width: 108px;
+				height: 95px;				
+			}
+			.zhuanrangIcon{
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/chapter20170411.png) no-repeat -120px 0;
+				margin: 40px 220px 0 0;
+			}
+			.shenkeIcon{				
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/chapter20170411.png) no-repeat 0 0;
+				margin: 20px 140px 0 0;
+			}
+			.zhuanrangEdIcon{
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/chapter20170411.png) no-repeat -233px 0;
+				margin: 40px 220px 0 0;
+			}
+			.color_57bde2{
+				color:#57bde2;
+			}
+			.bgColor_e5f4fa{
+				background-color: #e5f4fa;
+			}			
+			.textureIcon{				
+				width: 955px;
+				height: 16px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/texture20170411.jpg) no-repeat ;				
+			}
+			a.previous:hover,a.next:hover{
+				background-color:#ccc;
+			}

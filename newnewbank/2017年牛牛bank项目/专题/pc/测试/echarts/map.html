@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.map-table {
+				width: 1000px;
+				height: 800px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="clearfloat padding-bottom-60 relative bgColor_fff">
+			<div id="map-data" class=" map-table"></div>
+		</div>
+		<script src="js/echarts.min.js"></script>
+		<script src="http://echarts.baidu.com/asset/map/js/china.js"></script>
+		<script type="text/javascript">
+			// 用户分布数据图表
+			var mapData = echarts.init(document.getElementById('map-data'));
+			option = {
+				
+				backgroundColor:'rgba(0,0,0,.1)',
+
+				title:{
+//					show:false,
+					text:'china地图\n换行',
+					link:'https://www.baidu.com',
+					x:'center',
+					y:'top',
+					textStyle:{
+					    fontSize: 12,
+//					    fontWeight: 'bolder',
+					    color: '#f44975'
+					}  
+				},
+				
+				//工具箱
+				toolbox: {
+			        show : true,
+			        feature : {
+			            mark : {show: true},
+			            dataZoom : {show: true},
+			            dataView : {show: true, readOnly: false},
+			            magicType: {show: true, type: ['line', 'bar']},
+			            restore : {show: true},
+			            saveAsImage : {show: true}
+			        }
+			    },
+			   
+				//
+				tooltip: {
+					trigger: 'item'
+				},
+				
+				//
+				legend: {
+					show:true,
+					backgroundColor:'red',
+					orient: 'vertical',
+					left: 'left',
+					data: ['数据分布']
+				},
+				
+				//值域选择
+				dataRange:{
+					show:true,
+//					backgroundColor:'rgba(0,0,0,.1)'
+					
+					
+				},
+				
+				
+				
+				//
+				visualMap: {
+					show:true,
+					min: 0,
+					max: 8000,
+					left: 'left',
+					top: 'bottom',
+					text: ['高', '低'], // 文本，默认为数值文本
+					calculable: true
+				},
+
+				//
+				series: [{
+					name: '人数',
+					type: 'map',
+					mapType: 'china',
+					selectedMode: 'single',
+					roam: false,
+					showLegendSymbol: true,
+					itemStyle: {
+						normal: {
+							label: {
+								show: true
+							},
+							areaStyle: {//设置地图背景色的颜色设置  
+								color: 'red'
+							},
+							color: '#f44975' //刚才说的图例颜色设置  
+						},
+						emphasis: {
+							label: {
+								show: true
+							}
+						}
+					},
+					label: {
+						normal: {
+							show: true
+						},
+						emphasis: {
+							show: true
+						}
+					},
+
+					data: [{
+							name: '广东',
+							value: 5500
+						},
+						{
+							name: '广西',
+							value: 3500
+						},
+						{
+							name: '湖南',
+							value: 2000
+						},
+						{
+							name: '北京',
+							value: 100
+						},
+						{
+							name: '天津',
+							value: 300
+						},
+						{
+							name: '上海',
+							value: 300
+						},
+						{
+							name: '香港',
+							value: 2002
+						},
+						{
+							name: '澳门',
+							value: 20
+						}
+					]
+				}]
+			};
+			mapData.setOption(option);
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,553 @@
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}
+			input[type=button], input[type=submit], input[type=file], button { 
+				 -webkit-appearance: none;
+			}	
+			a:hover{
+				text-decoration: none;
+			}		
+			#root {
+				min-height: 12rem;
+				width: 10.0rem;
+				background-color: #f3f3f3;
+				/*padding-bottom: 2.5rem;*/
+			}
+			#cover {
+				width: 10.0rem;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .8);
+				z-index:10 ;
+				display: none;
+			}
+			/*--弹框  start--*/			
+			.popup {			
+				position: fixed;
+				top: 15%;				
+				z-index:20 ;
+				background-color:#fff ;
+				border-radius:5px ;				
+			}
+			.bombBox{
+				left: 9%;
+				width: 8.28125rem;
+				height:4.53125rem ;
+				text-align: center;
+				font-size: 0.40625rem;
+				display: none;
+			}
+			.notice{
+				margin-top:0.9375rem ;
+				color: #f54a43;
+			}
+			.forConfirmation{
+				margin: 0.3125rem 0 0.46875rem;
+				color: #000;
+			}
+			.wait{				
+				width:3.125rem ;
+				height: 0.84375rem;
+				line-height:0.84375rem ;
+				border:1px solid #999 ;
+				border-radius:5px ;
+				color: #999;
+				margin: 0 auto;
+			}
+			
+			.bombBox2{
+				width:9.375rem;
+				left: 3%;
+				display: none;
+			}
+			.lineTop{
+				border-top:1px solid #eee ;
+				border-bottom:1px solid #eee ;
+			}
+			.marLeft{
+				margin-left: 0.3125rem;
+			}
+			.bombRight{
+				width: 85%;
+   				height: 2.40625rem;
+   				padding-bottom:0;
+			}
+			.lastLine{
+				color: #f54a43;
+				font-size: 0.28125rem;
+				height: 1.171875rem;
+				line-height: 1.171875rem;
+				padding-left: 0.46875rem;
+			}
+			.peer{
+				float: right;
+			    border: 1px solid #f54a43;
+			    color: #f54a43;
+			    margin-top: 0.28125rem;
+			    margin-right: 0.46875rem;
+			    width: 2.1875rem;
+			    height: 0.625rem;
+			    text-align: center;
+			    line-height: 0.625rem;			    
+			    border-radius: 0.078125rem;
+			}
+			.rightTel{
+				float: right;
+			    border-left: 1px solid #eee;
+			    width: 2.34375rem;
+			    line-height: 2.65625rem;
+			    text-align: center;
+			    height: 100%;
+			}
+			.rightTel img{
+				width: 0.625rem;
+				height: 0.625rem;
+			}
+			.bombBox3{
+				display: none;
+				left: 9%;
+				width: 8.28125rem;
+				height:5.46875rem ;
+				text-align: center;
+			}
+			.noticeArgee{
+				margin-top: 0.9375rem;
+				color: #f54a43;
+				font-size: 0.4375rem;
+			}
+			.fs_22{
+				font-size: 0.34375rem;
+				color: #666;
+			}
+			.realNameAuthenticate{
+				width:4.6875rem;
+				height: 0.9375rem;
+				line-height:0.9375rem ;
+				background-color:#f54a43 ;
+				border-radius:5px ;
+				font-size: 0.375rem;
+				color: #fff;
+				margin: 0 auto;
+			}
+			/*--弹框  end*/
+			.headerText{
+				height: 1.09375rem;
+				line-height: 1.09375rem;
+				padding-left: 0.546875rem;
+				background-color: #fff;
+			}			
+			.headerText p{
+				display: inline-block;
+				font-size: 0.375rem;
+				color: #999;
+			}
+			.editIcon{
+				display: inline-block;
+			    width: 0.53125rem;
+			    height: 0.4375rem;
+			    float: right;
+			    margin-right: 0.6rem;
+			    margin-top: 0.3125rem;
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/edit20161212.png) no-repeat;
+			    background-size: 0.53125rem 0.4375rem;
+			}
+			.headRed{
+				width: 10.0rem;
+				height: 4.84375rem;
+				background: #f54a43;
+				overflow: hidden;
+			}
+			.headRed .fontS_24{
+				font-size: 0.375rem;
+				padding-left: 0.546875rem;
+				color: #fff;
+				margin: 0.4375rem 0 0.703125rem;
+			}
+			.headRed .trip{
+				width:7.8125rem ;
+				height: 1.34375rem;
+				margin:0 auto ;				
+			}
+			.headRed .trip span:first-child,.trip span:last-child{
+				display: inline-block;
+				width:1.34375rem ;
+				height: 1.34375rem;				
+			}
+			.headRed .trip span:first-child{
+				float: left;
+				background:url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/setOut20161213.png) no-repeat ;
+				background-size:1.34375rem 1.34375rem;
+			}
+			.headRed .trip span:last-child{
+				float: right;
+				background:url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/destination20161213.png) no-repeat ;
+				background-size:1.34375rem  1.34375rem;
+			}			
+			.date{
+				display: inline-block;
+			    text-align: center;
+			    font-size: 0.28125rem;
+			    color: #fff;
+			    margin-top: 0.15625rem;
+			    margin-left: 0.28125rem;
+			}
+			.date p:first-child{
+				padding-bottom:0.078125rem ;
+			}
+			.date p:last-child{
+				padding-top:0.078125rem ;
+			}
+			.date .rectangularLine{
+				width: 4.59375rem;
+				height: 0.078125rem;
+				background-color:#cb3630 ;
+			}
+			.place{
+				margin-top: 0.3125rem;  
+			}
+			.place .placeText{
+				font-size: 0.3125rem;
+				color: #fff;
+				display: inline-block;
+				text-align: center; 				
+			}
+			.place .placeText1{
+				float: left;
+				margin-left: 0.9375rem;
+			}
+			.place .placeText2{
+				float: right;
+				margin-right: 0.9375rem;
+			}
+			.onePage{
+				margin-top:0.25rem;
+				background-color: #fff;
+			}
+			.tieleLine{
+				height: 1.21875rem;
+				line-height:1.21875rem ;
+				border-bottom: 1px #eee solid;
+			}
+			.arrow{
+				display: inline-block;
+			    width: 0.234375rem;
+			    height: 0.234375rem;
+			    border-top: 2px solid #999;
+			    border-left: 2px solid #999;
+			    margin-right: 0.859375rem;
+			    margin-top: 0.546875rem;
+			    float: right;
+			}
+			.arrowLeft{				
+			    moz-transform: rotate(135deg);
+			    -webkit-transform: rotate(135deg);
+			    -o-transform: rotate(135deg);
+			    transform: rotate(135deg);
+			}
+			.arrowUp{
+				moz-transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+			.fs24_c9{
+				font-size: 0.375rem;
+				color: #999;
+				padding-left:0.46875rem ;
+			}
+			.fs18_cf6a84e{
+				font-size: 0.28125rem;
+				color: #f6a84e;
+			}
+			.personInfo{
+				position: relative;
+				width: 60%;
+				display: inline-block;
+				font-size: 0.375rem;
+			}
+			.sex{
+				margin-top: 0.390625rem;
+				color: #000;
+				
+			}
+			.tel{
+				color: #999;
+				padding-top: 0.15625rem;
+			}
+			
+			.rightBox{
+				margin-left: 1.40625rem;
+			    padding-bottom: 0.390625rem;
+			    border-bottom: 1px #eee solid;
+			}
+			.rightBoxNot{
+				margin-left: 1.40625rem;
+			    padding-bottom: 0.390625rem;
+			}
+			.line .editIcon{
+				margin-top: 0.78125rem;
+				float: left;
+				margin-left: 0.46875rem;
+			}
+			.fL {
+				display: inline-block;
+   				width: 1.25rem;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			}
+			.maleIcon, .famaleIcon {
+			    display: inline-block;
+			    width: 0.359375rem;
+			    height: 23px;
+			    position: absolute;
+			    top: .5rem;
+			    /*float: right;*/
+			    /*margin-right: 200px;*/
+			    /*margin-top: 5px;*/
+			}
+			.maleIcon {
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/male20161209.jpg) no-repeat;
+			    background-size: 0.359375rem 0.359375rem;
+			}
+			.famaleIcon {
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/female20161209.png) no-repeat;
+			    background-size: 0.359375rem 0.359375rem;
+			}
+			.notCertified{
+				display: inline-block;
+				width:1.5625rem;
+				height: 0.53125rem;
+				text-align: center;
+				line-height: 0.53125rem;
+				color: #f7af65;
+				border:1px solid #f7af65 ;
+				font-size: 0.28125rem;
+				border-radius:5px ;
+				float: right;
+				margin-top: 0.703125rem;
+    			margin-right: 0.625rem;
+			}
+			.already {
+				float: right;
+			    margin-top: 1.09375rem;
+			    margin-right: 0.625rem;
+			    display: inline-block;
+			    color: #63b1ee;
+			    font-size: 0.28125rem;
+			}
+			.alreadyUploaded {
+			    display: inline-block;
+			    width: 0.375rem;
+			    height: 0.375rem;
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/certified20161209.png) no-repeat;
+			    background-size: 0.375rem 0.375rem;
+			    float: right;
+			    /*margin-top: 30px;*/
+			    margin-left: 0.15625rem;
+			}
+			.identityCard{
+				color: #999;
+				padding-top: 0.15625rem;
+			}
+			
+			.twoPage{
+				background: #fff;
+				margin-top:0.15625rem ;
+			}
+			.red{
+				font-size: 0.375rem;
+				color: #f54a43;
+			}
+			.page{
+				float: right;
+			    margin-right: 0.625rem;
+			    display: inline-block;
+			    font-size: 0.3125rem;
+			    color: #999;
+			}
+			.together{
+				float: right;
+			    margin-right:0.625rem;
+			    margin-top: 0.078125rem;
+			    font-size: 0.3125rem;
+			    color: #f54a43;
+			}
+			.invitation{
+				 
+			}
+			.twoPageLine{
+				margin-left: 0.46875rem;
+			    border-bottom: 1px #eee solid;
+			    margin-right: 0.3125rem;				
+			}
+			.rightBtn{
+				float: right;
+				margin-top: 0.390625rem;
+    			margin-right: 0.15625rem;
+    			display: inline-block;
+			}
+			.commomBox{
+				width:2.34375rem;
+				height: 0.78125rem;
+				text-align: center;
+				line-height: 0.78125rem;
+				font-size: 0.375rem;
+				border-radius:5px ;
+			}
+			.agree{								
+				color: #fff;
+				background-color:#f54a43 ;		
+			}
+			.link{
+				border:1px solid #f54a43 ;				
+				color: #f54a43;	
+				margin-top: 0.15625rem;					
+			}
+			.phoneNumber,.licenseNumber{
+				padding-top:0.15625rem ;
+				font-size: 0.28125rem;
+				color: #999;
+			}
+			.carPhoto{
+				display: inline-block;
+			    width: 1.53125rem;
+			    height: 1.53125rem;
+			    margin-top: 0.46875rem;
+			    margin-right: 0.3125rem;
+			    float: left;
+			    border-radius: 50%;
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/smallCar20161213.jpg) no-repeat;
+			    background-size: 1.53125rem 1.53125rem;
+			}
+			.personPhoto{
+				background:url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/smallPerson20161213.jpg) no-repeat ;
+				background-size: 1.53125rem 1.53125rem;
+			}
+			
+			.nullSeat{
+				width: 70%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				display: inline-block;
+				margin-left: 0.46875rem;
+			    padding-bottom: 0.390625rem;
+			    font-size: 0.3125rem;
+			}
+			.horizontalLine{
+				display: inline-block;
+				width:0.78125rem ;
+				height: 1px;
+				background: #666;
+				margin: 0.078125rem 0.125rem;
+			}			
+			.placeBlack{
+				color: #000;
+				padding-top: 0.15625rem;
+			}
+			.gray{
+				margin-left: 0.15625rem;
+				color: #999;
+			}		
+			.threePage{
+				background: #fff;
+				margin-top:0.15625rem ;
+			}
+			.threePage .horizontalLine{
+				background: #999;
+			}
+			.place_gray{
+				color: #999;
+			}
+			.goToeach{
+				float: right;
+			    border: 1px solid #f54a43;
+			    color: #f54a43;
+			    margin-top: 0.625rem;
+				margin-right: 0.46875rem;
+			    width: 1.71875rem;
+			    height: 0.625rem;
+			    text-align: center;
+			    line-height: 0.625rem;
+			    font-size: 0.3125rem;
+			    border-radius: 5px;
+			}
+			.line{
+				border-bottom: 1px #eee solid;
+			}
+			.seek{
+				margin-left:0.15625rem ;
+			}
+			.toggle {
+				padding: 0.15625rem 0;
+			}
+			
+			.lineOfInfo {
+				padding: 0.15625rem 0.3125rem;
+			}
+			
+			.lineOfInfo span {
+				display: inline-block;
+			}
+			
+			.passenger {
+				width: 1.015625rem;
+				height: 0.390625rem;
+				text-align: center;
+				line-height: 0.390625rem;
+				color: #fff;
+				font-size: 0.28125rem;
+				border-radius: 0.1875rem;
+				margin-right: 0.3125rem;
+			}
+			
+			.passenger1 {
+				background-color: #f54a43;
+			}
+			
+			.passenger2 {
+				background-color: #999;
+			}
+			
+			.passInfo,
+			.certified {
+				color: #999;
+				font-size: 0.34375rem;
+			}
+			
+			.passInfo {
+				padding-right: 0.234375rem;
+			}
+			
+			.whether {
+				height: 0.46875rem;
+				text-align: center;
+				line-height: 0.46875rem;
+				font-size: 0.28125rem;
+				border-radius: 5px;
+				margin-right: 0.3125rem;
+				float: right;
+			}
+			
+			.confirm {
+				color: #ffb141;
+				border: 1px solid #ffb141;
+			}
+			
+			.toBeSure {
+				color: #999;
+			}
+			.alreadyOwner{
+				margin-top:0 ;
+				margin-right: 0.325rem;
+			}
+			.none{
+				display: none;
+			}
+			

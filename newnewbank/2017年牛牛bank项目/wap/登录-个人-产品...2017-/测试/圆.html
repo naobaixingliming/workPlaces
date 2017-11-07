@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>移动端 css实现自适应正圆 ( 宽高随着手机屏幕宽度自适应 ) 博客园(杨君华)</title>
+	</head>
+
+	<style>
+		.adaptive-circle {
+			margin: 50px auto 0;
+			width: 80%;
+			height: 0;
+			padding-top: 80%;
+			border-radius: 100%;
+			border: 1px solid #000;
+			box-sizing: border-box;
+			position: relative;
+		}
+		
+		.adaptive-circle .layout {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			text-align: center;
+		}
+		
+		.adaptive-circle .layout.middle:before {
+			display: inline-block;
+			vertical-align: middle;
+			content: '';
+			height: 100%;
+			width: 0;
+			overflow: hidden;
+		}
+		
+		.adaptive-circle .layout.middle div:first-child {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	</style>
+
+	<body>
+		<div class="adaptive-circle">
+			<div class="layout middle">
+				<div>
+					<h2>自适应标题</h2>
+					<p>自适应介绍</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

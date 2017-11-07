@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>资金明细</title>
+		<link rel="stylesheet" type="text/css" href="css/Reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />		
+		<link rel="stylesheet" type="text/css" href="css/fundDetails.css"/>
+	</head>
+  
+	<body>
+		<div id="fundDetail-root">
+			<div class="bgColor_fff one-page">
+				<div class="insurance inline_block">
+					<span class="font_24 color_333">账户安全险</span>
+					<p class="color_999 font_16">亚太财产保险承保</p>
+				</div>
+				<i class="float_right font_16 color_fff text_center inProtection">保障中</i>
+			</div>
+
+			<div class="bgColor_fff two-page">
+				<div class="font_24 h-80 padding-left margin_center underLine">
+					<i class="color_333">总资产</i><i class="float_right color_333 padding-right">0.00</i>
+				</div>
+				<div class="padding-30">
+					<div class="inline_block relative wh-200">
+						<div class="circle"></div>
+						
+						
+						<canvas id="can1" width="400" height="400"></canvas>
+						
+						
+					</div>
+
+					<div class="float_right padding-right fundType">
+						<div class="single-line1">
+							<i class="dot bgColor_f44975"></i>
+							<i class="color_666 font_18">可用余额</i>
+							<i class="color_333 font_20 float_right">1000</i>
+						</div>
+						<div class="single-line1">
+							<i class="dot bgColor_7dbdd0"></i>
+							<i class="color_666 font_18">待收本金</i>
+							<i class="color_333 font_20 float_right">20.00</i>
+						</div>
+						<div class="single-line1">
+							<i class="dot bgColor_19baaa"></i>
+							<i class="color_666 font_18">募集期资金</i>
+							<i class="color_333 font_20 float_right">9000.00</i>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="bgColor_fff three-page">
+				<p class="padding-left font_24 h-80 color_333 underLine">资金明细</p>
+
+				<div class="single-line ">
+					<div class="inline_block  dt-line common-border float_right">
+						<i class="font_24 color_333">充值</i>
+						<i class="arrow  float_right"></i>
+					</div>
+					<i class="spriteIcon spriteIcon1 float_right"></i>
+				</div>
+				<div class="single-line ">
+					<div class="inline_block  dt-line common-border float_right">
+						<i class="font_24 color_333">提现</i>
+						<i class="arrow  float_right"></i>
+					</div>
+					<i class="spriteIcon spriteIcon2 float_right"></i>
+				</div>
+				<div class="single-line ">
+					<div class="inline_block  dt-line common-border float_right">
+						<i class="font_24 color_333">回款</i>
+						<i class="arrow  float_right"></i>
+					</div>
+					<i class="spriteIcon spriteIcon3 float_right"></i>
+				</div>
+				<div class="single-line ">
+					<div class="inline_block  dt-line common-border float_right">
+						<i class="font_24 color_333">投资</i>
+						<i class="arrow  float_right"></i>
+					</div>
+					<i class="spriteIcon spriteIcon4 float_right"></i>
+				</div>
+				<div class="single-line ">
+					<div class="inline_block  dt-line common-border float_right">
+						<i class="font_24 color_333">推荐收益</i>
+						<i class="arrow  float_right"></i>
+					</div>
+					<i class="spriteIcon spriteIcon5 float_right"></i>
+				</div>
+				<div class="single-line ">
+					<div class="inline_block  dt-line float_right">
+						<i class="font_24 color_333">其他</i>
+						<i class="arrow  float_right"></i>
+					</div>
+					<i class="spriteIcon spriteIcon6 float_right"></i>
+				</div>
+
+			</div>
+			<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li class="currentf">
+							<a href="index.html">
+								<div class="icon home"></div>首页</a>
+						</li>
+						<li>
+							<a href="productList.html">
+								<div class="icon money"></div>投资理财</a>
+						</li>
+						<li>
+							<a href="userCenter.htm">
+								<div class="icon fdj"></div>个人中心</a>
+						</li>
+						<li>
+							<a href="myPartner.htm">
+								<div class="icon partnerBtImg"></div>合伙人</a>
+						</li>
+						<li>
+							<a href="kefu.html">
+								<div class="icon kehu"></div>客服</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var canv = document.getElementById("can1");
+				var ctx = canv.getContext("2d");
+				
+				var num = [1000, 300, 5000];
+				var color = ["#f44975", "#7dbdd0", "#19baaa"]
+				var j = 0,
+					j1 = 0,
+					j2 = 0,
+					jiao = 0;
+				var sun = 0;
+				for(var i = 0; i < num.length; i++) {
+					sun = sun + num[i];					
+				}			
+				for(var i = 0; i < num.length; i++) {
+					j = 2 * Math.PI * num[i] / sun;
+					j2 = j1 + j;
+					ctx.beginPath();
+					ctx.fillStyle = color[i];
+					ctx.arc(canv.width / 2, canv.height / 2, canv.width / 2, j1, j2, false);
+					ctx.lineTo(canv.width / 2, canv.height / 2);
+					ctx.closePath();
+					ctx.fill();
+					jiao = j1 + j / 2;
+					ctx.font = "20px Arial";
+					ctx.fillStyle = "#000";
+					j1 = j1 + j;
+				}
+			
+
+			})
+		</script>
+	</body>
+
+</html>

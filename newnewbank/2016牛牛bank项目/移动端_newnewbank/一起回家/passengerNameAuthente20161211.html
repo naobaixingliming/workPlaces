@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>乘客实名认证</title>
+		<link rel="stylesheet" type="text/css" href="css/passengerNameAuthente20161211.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/footer.css"/>-->
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<!--<div id="cover"></div>-->
+			<!--覆盖层  end-->
+			<!--弹框  行驶证 start-->
+			<!--<div class="popup">-->
+			<!--</div>-->
+			<!--弹框 行驶证  end-->				
+			<div class="headerinfo">				
+				<span>本次实名认证服务由牛牛bank平台提供</span>
+				<img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/newnewbankIcon20161211_01.png"/>				
+			</div>
+			<div class="onePage commonPage">				
+				<div class="line">
+					<p class="fontS_24">真实姓名</p><input type="text" placeholder="请输入乘车人的真实姓名">
+				</div>
+				<div class="line">
+					<p class="fontS_24">身份证号</p><input type="text" placeholder="请输入您的身份证号码">
+				</div>
+				
+			</div>
+			<div class="bottomBox">
+				<!--红色状态    bgRedColor 隐藏-->
+				<div class="uploadImmediately">完成</div>
+			</div>								
+			<!--<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="icon home"></div>一起回家</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="icon money"></div>我的预约</a>
+						</li>
+						<li class="currentf">
+							<a href="proposal20161212.html">
+								<div class="icon fdj"></div>倡议书</a>
+						</li>
+					</ul>
+				</div>
+			</footer>-->			
+		</div>
+		
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//完成按钮--跳转界面
+			$('.bgRedColor').on('click',function(){
+				location.href='completeAuthentication20161212.html';
+			});
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,261 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "microsoft yahei"
+}
+
+#root .stageOne {
+	width: 100%;
+	height: 381px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_headerIcon20161123.jpg) no-repeat
+}
+
+.w_1200 {
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto
+}
+
+.w_1200One img {
+	width: 705px;
+	margin: 100px 250px 0
+}
+
+.w_1200One p {
+	text-align: center;
+	font-size: 30px;
+	color: #fff
+}
+
+.stageTwo {
+	width: 100%;
+	height: 1168px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_gradient20161123.jpg) repeat-x
+}
+
+.w_1200Two {
+	border-bottom: 1.5px #f3cbc3 solid;
+	height: 1020px
+}
+
+.stageTwo .iconTwo {
+	width: 1098px;
+	height: 372px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_thankBg_20161123.png) no-repeat;
+	text-align: left;
+	color: #959595;
+	font-size: 16px
+}
+
+.textTwo {
+	width: 546px;
+	line-height: 30px;
+	margin: 100px 340px
+}
+
+.textTwo p:last-child {
+	text-align: center
+}
+
+.stageTwo .marT90 {
+	margin-top: 90px
+}
+
+.stageTwo .iconTwoBottom {
+	width: 880px;
+	height: 456px;
+	top: -50px;
+	position: relative;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_time_20161123.png) no-repeat
+}
+
+.wbText {
+	width: 85%;
+	position: absolute;
+	font-size: 13px;
+	color: #000;
+	left: 450px
+}
+
+.wbText span {
+	color: #666
+}
+
+.wbText p {
+	margin-bottom: 25px
+}
+
+@-moz-document url-prefix(){.wbText p {
+	margin-bottom: 23px
+}} 
+
+.wbText .textLeft2 {
+	margin-left: 40px
+}
+
+.wbText .textLeft3 {
+	margin-left: 80px
+}
+
+.wbText .textLeft4 {
+	margin-left: 130px
+}
+
+.wbText .textLeft5 {
+	margin-left: 180px
+}
+
+.wbText .textLeft6 {
+	margin-top: 30px;
+	margin-left: 220px
+}
+
+.wbText .textLeft7 {
+	margin-left: 270px
+}
+
+.wbText .textLeft8 {
+	margin-left: 310px
+}
+
+.wbText .textLeft9 {
+	margin-left: 360px
+}
+
+.wbText .textLeft10 {
+	margin-left: 410px
+}
+
+.wbText .textLeft11 {
+	margin-left: 450px;
+	margin-bottom: 0
+}
+
+.wbText span {
+	margin-left: 10px
+}
+
+.wbText .lastS {
+	margin-left: 550px
+}
+
+.stageThree {
+	background-color: #fff;
+	width: 100%;
+	height: 900px;
+	color: #666;
+	overflow: hidden;
+	font-size: 16px
+}
+
+.stageThree .iconThreeT {
+	width: 262px;
+	height: 56px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_thanksgivingHaoLi20161123.png) no-repeat;
+	margin: 55px auto 0
+}
+
+.size16 {
+	width: 990px;
+	margin: 65px auto
+}
+
+.stageThree .iconThreeB {
+	width: 802px;
+	height: 493px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_gift_20161123.png) no-repeat;
+	margin: 0 auto
+}
+
+.stageFour {
+	width: 100%;
+	height: 920px;
+	background-color: #fef7ee
+}
+
+.mainFour {
+	width: 1190px;
+	margin: 0 auto
+}
+
+.stageFour .iconFourT {
+	width: 278px;
+	height: 45px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_wonderfulscene20161123.png) no-repeat;
+	margin: 55px auto
+}
+
+.mainFour ul li {
+	list-style: none;
+	float: left;
+	width: 262px;
+	margin-left: 35px;
+	margin-bottom: 50px
+}
+
+.mainFour .imageIcon {
+	width: 262px;
+	height: 197px
+}
+
+.imageIcon1 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person1_20161123.png) no-repeat
+}
+
+.imageIcon2 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person2_20161123.png) no-repeat
+}
+
+.imageIcon3 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person3_20161123.png) no-repeat
+}
+
+.imageIcon4 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person4_20161123.png) no-repeat
+}
+
+.imageIcon5 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person5_20161123.png) no-repeat
+}
+
+.imageIcon6 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person6_20161123.png) no-repeat
+}
+
+.imageIcon7 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person7_20161123.png) no-repeat
+}
+
+.imageIcon8 {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person8_20161123.png) no-repeat
+}
+
+.mainFour ul li p {
+	font-size: 20px;
+	color: #666;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #666
+}
+
+.mainFour ul li .lineText {
+	font-size: 14px;
+	color: #959595
+}
+
+.stageFive {
+	overflow: hidden;
+	height: 90px;
+	background-color: #fff;
+	color: #999;
+	font-size: 12px;
+	text-align: center
+}
+
+.w_1200Five {
+	line-height: 20px;
+	margin-top: 30px
+}

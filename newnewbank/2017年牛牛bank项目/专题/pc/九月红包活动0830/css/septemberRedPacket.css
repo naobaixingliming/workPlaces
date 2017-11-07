@@ -1,0 +1,462 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.rootNode {
+	width: 100%;
+	background-color: #02164b;
+}
+
+.bgInfo,
+.headBgImg,
+.footBgImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.headBgImg,
+.footBgImg {
+	z-index: 0;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.headBgImg {
+	background-image: url(https://images-web.newnewbank.com/headerBg20170830.jpg)
+}
+
+.footBgImg {
+	background-image: url(https://images-web.newnewbank.com/bottomShadom20170830.png)
+}
+
+.headShow {
+	margin: 100px 0 200px;
+}
+
+.twoPage {
+	width: 100%;
+	z-index: 2;
+	height: 701px;
+	margin-top: -130px;
+	min-width: 1600px;
+}
+
+.bottomShadom {
+	width: 100%;
+	height: 220px;
+	min-width: 1600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.circleBox {
+	position: absolute;
+	top: -650px;
+	left: -194px;
+	width: 1648px;
+	height: 1591px;
+	background: url(https://images-web.newnewbank.com/adornCircular20170830.png) no-repeat;
+	z-index: 3;
+}
+
+.inset-red-box {
+	display: inline-block;
+	margin-left: 300px;
+	margin-top: 80px;
+}
+
+.small-box {
+	float: left;
+	width: 305px;
+	height: 254px;
+	border-radius: 10px;
+	margin-left: 21px;
+}
+
+.getBoxIcon {
+	width: 276px;
+	height: 227px;
+	background: url(https://images-web.newnewbank.com/getBox20170831.png) no-repeat;
+	margin: 15px auto 0;
+}
+
+.color_f25447 {
+	color: #bf2233;
+}
+
+.getBtn {
+	width: 124px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 22px;
+}
+
+.hasReceived .active {
+	background-color: #f57e3c;
+	color: #fff;
+}
+
+.receivedBtn .active {
+	background-color: #ffdf08;
+	color: #f24f49;
+	cursor: pointer;
+}
+
+.receivedBtn2 .active {
+	background-color: #d63649;
+	color: #ff8594;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.h-112 {
+	height: 112px;
+}
+
+.padding-top-25 {
+	padding-top: 20px;
+}
+
+.padding-top-35 {
+	padding-top: 35px;
+}
+
+.loginBox {
+	padding: 280px 0 0 0;
+}
+
+.color_f25447 {
+	color: #f25447;
+}
+
+
+/*.mar-top-20 {
+				margin-top: 20px;
+			}*/
+
+.color_b6b6b6 {
+	color: #b6b6b6;
+}
+
+.color_e13b49 {
+	color: #e13b49;
+}
+
+.color_6c5403 {
+	color: #6c5403;
+}
+
+.circle-small {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #6c5403;
+	border-radius: 100%;
+	position: absolute;
+	left: -60px;
+	color: #6c5403;
+	text-align: center;
+}
+
+.circle-small-1 {
+	top: 0px;
+}
+
+.circle-small-2 {
+	top: 45px;
+}
+
+.circle-small-3 {
+	top: 90px;
+}
+
+.circle-small-4 {
+	top: 135px;
+}
+
+.text-script {
+	margin-left: 550px;
+	margin-top: 40px;
+}
+
+.color_e13b49 {
+	color: #e13b49;
+}

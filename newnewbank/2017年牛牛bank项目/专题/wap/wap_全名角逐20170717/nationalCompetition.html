@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="wap-font-scale" content="no">
+		<script type="text/javascript" charset="utf-8">
+			! function() {
+				setRem();
+				window.addEventListener('orientation' in window ? "deviceorientation" : "resize", setRem);
+				function setRem() {
+					var html = document.documentElement;
+					var width = html.clientWidth;
+					html.style.fontSize = width / 16 + 'px'
+				}
+			}();
+		</script>
+		<title>全民角逐·上榜有奖</title>
+		<link rel="stylesheet" type="text/css" href="css/nationalCompetition.css" />
+		<style type="text/css">
+			.logo_cc3 p {
+				font-size: .7rem!important;
+			}
+			
+			.logo_cc3 span a {
+				font-size: .6rem!important;
+			}
+			
+			.innerBox {
+				width: 7.5rem;
+				height: 1rem;
+				background-color: #fff;
+				border-radius: .5rem;
+				position: absolute;
+				top: .4rem;
+				left: 5rem;
+			}
+			
+			.search {
+				outline: none;
+				border: none;
+				position: absolute;
+				top: .25rem;
+				width: 4.5rem;
+				height: .5rem;
+				left: 1.25rem;
+			}
+			
+			.searBtn {
+				outline: none;
+				border: none;
+				position: absolute;
+				top: .125rem;
+				right: .125rem;
+				width: 1.5rem;
+				height: .75rem;
+				/*line-height:0;*/
+				background-color: #ccc;
+				border-radius: .375rem;
+				display:-webkit-flex;
+				justify-content:center;
+				align-items:center;
+				/*display: table-cell;
+				text-align: center;
+				vertical-align: middle;*/
+			}
+			
+			.flex_center {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="rootNode">
+			<!--popup start-->
+			<div class="popup-project none">
+				<div class="cover"></div>
+				<div class="popup-box overflow">
+					<div class="h-72">
+						<i class="font_28 color_fff float_left" style="padding-left: 1.0rem;">好友列表</i>
+						<div class="innerBox" style="margin-left: -0.56rem;">
+							<input style="height:0.7rem;margin-top:-0.1rem;margin-left:-0.55rem" class="search" />
+							<button id="search" class="searBtn text_center font_16 color_fff pointer">搜索</button>
+						</div>
+						<i class="deleteBtn" style="margin: 0.375rem 0.7rem 0 0;"></i>
+					</div>
+					<div class="text_center">
+						<ul class="flex-parent text_center color_000 font_22" style="padding-top: .5rem;">
+							<li class="flex-child">序号</li>
+							<li class="flex-child">我推荐的好友</li>
+							<li class="flex-child" style="padding: 0 .8rem;">邀请助力</li>
+						</ul>
+						<!--<p class="under_line " style="background-color: #bfd9e4;"></p>-->
+						<div class="data-display font_20">
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center"><i class="red-circle ">1</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333" style="padding: 0 .8rem;"><i class="bindBtn">助我上榜</i></li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">2</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 " style="padding: 0 .8rem;"><i class="hasInvest">已邀请</i></li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">3</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333  " style="padding: 0 .8rem;"><i class="bindBtn">助我上榜</i></li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">4</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 " style="padding: 0 .8rem;"><i class="bindBtn">助我上榜</i></li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">4</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 " style="padding: 0 .8rem;"><i class="bindBtn">助我上榜</i></li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">4</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 " style="padding: 0 .8rem;"><i class="bindBtn">助我上榜</i></li>
+							</ul>
+						</div>
+						<div class="text_center" style="padding-top: .4rem;">
+							<div class="inline_block font_20 color_7fb3c9 mar">
+								<i class="prev-btn ">&lt;</i>
+								<i class="slect-active ">1</i>
+								<i class="">2</i>
+								<i class="">3</i>
+								<i class="">4</i>
+								<i class="">5</i>
+								<i class="next-btn active-bule">&gt;</i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--popup end-->
+			<header class="relative">
+				<p class="color_fff text_center textPos">
+					<i class="font_22 ">全民角逐·上榜有奖</i></br>
+					<i class="font_20 ">07.21-08.04</i>
+				</p>
+			</header>
+			<div class="two-page text_center">
+				<ul class="clearfloat inline_block one-line">
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥2888</p>
+						<p class="font_18">第一名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥2288</p>
+						<p class="font_18">第二名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥1888</p>
+						<p class="font_18">第三名</p>
+					</li>
+				</ul>
+				<ul class="clearfloat inline_block one-line" style="padding:0.45rem 0;">
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥1688</p>
+						<p class="font_18">第四名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥1488</p>
+						<p class="font_18">第五名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥1288</p>
+						<p class="font_18">第六名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥1088</p>
+						<p class="font_18">第七名</p>
+					</li>
+				</ul>
+				<ul class="clearfloat inline_block one-line">
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥888</p>
+						<p class="font_18">第八名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥688</p>
+						<p class="font_18">第九名</p>
+					</li>
+					<li class="color_b52a2b">
+						<p class="font_24" style="padding: .4rem 0 .8rem;">￥588</p>
+						<p class="font_18">第十名</p>
+					</li>
+				</ul>
+			</div>
+			<div class="three-page" style="padding-top: 1.75rem;">
+				<p class="title-text margin_center" style="margin-bottom: 2rem;"></p>
+				<div class="text_center ">
+					<div class="inline_block clearfloat">
+						<span class="btn-icon1 float_left color_fff ">
+						<p class="font_18 " style="padding-top: 0.5rem;">我的排名</p>
+						<p class="font_30 bold">10</p>
+					</span>
+						<span class="btn-icon2 float_left color_fff ">
+						<p class="font_18 " style="padding-top: 0.5rem;">我的新增推荐金额</p>
+						<p class="font_22 bold">￥12234567.36</p>
+					</span>
+						<a class="btn-icon3 float_left color_fff font_24 bold" href="javascript:;">
+							我要邀请
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="four-page relative">
+				<div class="bottomBg">
+					<em class="color_333 font_20 rulePos">活动规则</em>
+					<div class="ruleTextPos">
+						<p class="font_20 color_333 w-440">
+							1）活动时间：2017年7月21日—2017年8月4日；</br>
+							2）参与活动需先成为合伙人；</br>
+							3）活动期间，合伙人推荐用户投资30天及以上产品，合伙人的所有推荐用户累计投资金额排名前10名，合伙人可以获得现金红包；</br>
+							4）当合伙人推荐投资金额，排第50名以后，在“我的排名”中，会显示“暂未入榜”；</br>
+							5）当两位合伙人推荐投资金额一致时，先达到这个推荐金额的合伙人排名靠前；</br>
+							6）现金红包将于活动结束后的3个工作日内，统一发放；</br>
+							7）温馨提示：债权转让不参与此次活动。
+
+							<!--1）活动时间：2017年7月21日-8月04日</br>
+							2）活动期间，合伙人推荐用户投资30天及以上产品，推荐投资金额前10名，可以获得现金红包；</br>
+							3）现金红包将于活动结束后的3个工作日内，统一发放；</br>						
+							4）风云榜展示前50名的客户。-->
+						</p>
+					</div>
+				</div>
+				<div class="reelBox">
+					<i class="reel-top"></i>
+					<div class="reel-innerBox">
+						<ul class="flex-parent text_center color_80b4ca font_24" style="padding: 0.75rem 0 0.4rem 0;">
+							<li class="flex-child">排名</li>
+							<li class="flex-child">用户</li>
+							<li class="flex-child" style="padding: 0 .8rem;">推荐投资金额</li>
+						</ul>
+						<p class="under_line " style="background-color: #bfd9e4;"></p>
+						<div class="data-display">
+							<ul class="flex-parent active color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">1</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥123456789.36</li>
+							</ul>
+							<ul class="flex-parent active color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">2</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥12456789.36</li>
+							</ul>
+							<ul class="flex-parent active color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">3</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">4</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">4</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">4</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">7</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">7</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">7</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+							<ul class="flex-parent  color_666 font_20 paddint-top-bottom-15">
+								<li class="flex-child text_center  "><i class="red-circle">10</i></li>
+								<li class="flex-child">151****1714</li>
+								<li class="flex-child color_333 red-font text_right" style="padding: 0 .8rem;">￥1256789.36</li>
+							</ul>
+						</div>
+						<div class="text_center" style="padding-top: .4rem;">
+							<div class="inline_block font_20 color_7fb3c9 mar flex_center">
+								<i class="prev-btn "><</i>
+								<i class="slect-active flex_center">1</i>
+								<i class="">2</i>
+								<i class="">3</i>
+								<i class="">4</i>
+								<i class="">5</i>
+								<i class="next-btn active-bule ">></i>
+							</div>
+						</div>
+					</div>
+					<i class="reel-bottom"></i>
+				</div>
+			</div>
+			<footer class="text_center font_16 color_1d6760" style="padding:0.5rem 0 0.875rem 0;background-color: #60eae1;">
+				© 2017牛牛bank All Rights Reserved</br>
+				活动最终解释权归深圳市金牛牛互联网金融服务有限公司所有
+			</footer>
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$('.btn-icon3').on('click', function() {
+				$('.popup-project').show();
+			})
+			$('.deleteBtn').on('click', function() {
+				$('.popup-project').hide();
+			});
+			//			$('.search').on('focus',function(){
+			//				$('.popup-box').css('marginTop','0');
+			//				if(){
+			//					$('.popup-box').css('marginTop','-7.25rem');
+			//				}
+			//			})
+			//			$('.search').on('blur',function(){
+			//				
+			//				$('.popup-box').css('marginTop','-7.25rem');
+			//				
+			//				
+			//			})
+		</script>
+	</body>
+
+</html>

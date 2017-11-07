@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+
+	<body>
+		<div>你选中我之后，弹出我！逗你玩</div>
+		<script type="text/javascript">
+			function onmousemove() {
+//				var txt = window.getSelection ? window.getSelection() : document.selection.createRange().text;
+				var txt =window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+				console.log("前面："+ window.getSelection().removeAllRanges());
+				console.log("后面:"+ document.selection.empty());
+				alert(txt)
+			}
+			document.onmouseup = new Function('this.onmousemove=null');
+		</script>
+	</body>
+
+</html>

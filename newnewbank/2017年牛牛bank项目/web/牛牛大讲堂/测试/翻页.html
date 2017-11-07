@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>layPage demo</title>
+		<meta name="keywords" content="分页插件,ajax分页,异步分页">
+		<meta name="description" content="laypage是一款多功能的js分页组件，主要应用于前端页面Ajax普通分页以及信息流加载，并且可无缝迁移至Node.js平台。laypage不依赖于任何第三方库，直接拿来用即可，它的接口继承了layui系列组件的一贯简洁，极易上手。那么，从现在开始，将分页的任务交给laypage吧！">
+	</head>
+	<body>
+		<div id="company_list">
+			
+		</div>
+		<div id="flipBtn"></div>
+		<script src="laypage.js"></script>
+		<script>
+			//测试数据
+			var data = [
+				'北京',
+				'上海',
+				'广州',
+				'深圳',
+				'杭州',
+				'长沙',
+				'合肥',
+				'宁夏',
+				'成都',
+				'西安',
+				'南昌',
+				'上饶',
+				'沈阳',
+				'济南',
+				'厦门',
+				'福州',
+				'九江',
+				'宜春',
+				'赣州',
+				'台北'
+			];
+
+			var nums = 2; //每页出现的数量
+			var pages = Math.ceil(data.length / nums); //得到总页数
+
+			var thisDate = function(curr) {
+				//填充的数据
+				var str = '',
+					last = curr * nums - 1;
+				last = last >= data.length ? (data.length - 1) : last;
+				for(var i = (curr * nums - nums); i <= last; i++) {
+					str += '<div>' + data[i] + '</div>';
+				}
+				return str;
+			};
+
+			//调用分页
+			laypage({
+				groups: 0,
+				first: false,
+				last: false,
+				cont: 'flipBtn', //容器。值支持id名、原生dom对象，jquery对象,
+				pages: pages, //总页数
+				jump: function(obj) {
+					document.getElementById('company_list').innerHTML = thisDate(obj.curr);
+
+				}
+			})
+		</script>
+	</body>
+
+</html>

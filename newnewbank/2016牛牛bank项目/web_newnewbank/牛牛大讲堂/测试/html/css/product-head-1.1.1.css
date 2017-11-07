@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*CSS reset*/
+body, div, table, tr, td, th, h1, h2, h3, h4, h5, h6, form, input, label, select, textarea, p, ul, ol, li, dl, dd, dt, img, dfn {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0 none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+em, i, dfn {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  outline: none;
+}
+
+i {
+  _font-size: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*======清楚浮动======*/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clear {
+  height: 0px;
+  clear: both;
+  font-size: 0px;
+  line-height: 0px;
+  zoom: 1;
+}
+
+/*======透明======*/
+.opacity {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+/*======显示、隐藏======*/
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei","Lucida Sans Unicode","Myriad Pro","Hiragino Sans GB","Heiti SC";
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*======浮动======*/
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap1180 {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*======按钮动画======*/
+[btn-triggle="expandDown"], [btn-triggle="expandUp"], [btn-triggle="expandLeft"], [btn-triggle="expandRight"] {
+  position: relative;
+  z-index: 1;
+}
+
+[btn-triggle="expandDown"] em, [btn-triggle="expandUp"] em, [btn-triggle="expandLeft"] em, [btn-triggle="expandRight"] em {
+  position: relative;
+  z-index: 1;
+}
+
+[btn-triggle="expandDown"]:after, [btn-triggle="expandUp"]:after, [btn-triggle="expandLeft"]:after, [btn-triggle="expandRight"]:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  background: rgba(51, 51, 51, 0.1);
+}
+
+/*动画背景*/
+[btn-triggle="expandDown"]:after, [btn-triggle="expandUp"]:after {
+  width: 100%;
+  height: 0;
+  left: 0;
+}
+
+[btn-triggle="expandUp"]:after {
+  top: 0;
+}
+
+[btn-triggle="expandDown"]:after {
+  bottom: 0;
+}
+
+[btn-triggle="expandDown"]:hover:after, [btn-triggle="expandDown"]:active:after, [btn-triggle="expandUp"]:hover:after, [btn-triggle="expandUp"]:active:after {
+  height: 100%;
+}
+
+[btn-triggle="expandLeft"]:after, [btn-triggle="expandRight"]:after {
+  width: 0;
+  height: 100%;
+  top: 0;
+}
+
+[btn-triggle="expandRight"]:after {
+  right: 0;
+}
+
+[btn-triggle="expandLeft"]:after {
+  left: 0;
+}
+
+[btn-triggle="expandLeft"]:hover:after, [btn-triggle="expandLeft"]:active:after, [btn-triggle="expandRight"]:hover:after, [btn-triggle="expandRight"]:active:after {
+  width: 100%;
+}
+
+/*btn end*/
+body {
+  _background-attachment: fixed;
+  _background-image: url(about:blank);
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000000;
+  opacity: .8;
+  filter: alpha(opacity=80);
+  z-index: 999;
+  display: none;
+}
+
+.product-head-wrap {
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+}
+.product-head-wrap .product-head-box {
+  width: 1200px;
+  min-width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+  position: relative;
+}
+.product-head-wrap .product-head-box .left-logo {
+  width: 226px;
+  height: 88px;
+  position: absolute;
+  top: 22px;
+  left: 16px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/logo_write_20160415.png) no-repeat 50% 50%;
+  background-size: 100% 100%;
+}
+.product-head-wrap .product-head-box .product-nav-wrap {
+  position: absolute;
+  right: 0px;
+  top: 42px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box {
+  margin-right: 20px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box a {
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation {
+  width: 194px;
+  height: 32px;
+  padding-left: 10px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .opera-btns {
+  width: 194px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .opera-btns a {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .personal-btn {
+  width: 194px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .personal-btn a {
+  position: relative;
+  padding: 4px 10px;
+  margin-left: 40px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+}
+
+.fixed-head {
+  width: 100%;
+  height: 74px;
+  position: fixed;
+  top: -100px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 30;
+}
+.fixed-head .fixed-head-box {
+  width: 1200px;
+  height: 74px;
+  position: relative;
+  margin: 0 auto;
+}
+.fixed-head .fixed-head-box .fixed-head-logo {
+  width: 422px;
+  height: 48px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/fixed_logo_20160418.png) no-repeat center center;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-nav-box {
+  margin-right: 20px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-nav-box a {
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation {
+  width: 194px;
+  height: 32px;
+  position: relative;
+  padding-left: 10px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .fixed-opera-btns {
+  width: 194px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .fixed-opera-btns a {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center {
+  width: 150px;
+  height: 74px;
+  position: absolute;
+  left: 30px;
+  top: -20px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center a.user-btn {
+  position: relative;
+  display: block;
+  width: 132px;
+  height: 30px;
+  margin-top: 20px;
+  padding-right: 18px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center a.user-btn span {
+  display: block;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/down_arrow_20160418.png) 0px -20px no-repeat;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center .popup-entry {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  top: 74px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  display: none;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center .popup-entry a {
+  display: block;
+  padding-left: 58px;
+  height: 40px;
+  font: normal 16px/40px "Microsoft YaHei";
+  text-align: left;
+  background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/enrtyIcon_20160418.png);
+  background-repeat: no-repeat;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center .popup-entry a.user-center-btn {
+  background-position: 20px 8px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center .popup-entry a.exit-btn {
+  background-position: 20px -116px;
+  border-top: 1px dashed #dddddd;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center .popup-entry a.user-center-btn:hover {
+  background-position: 20px -54px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center .popup-entry a.exit-btn:hover {
+  background-position: 20px -189px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center:hover .popup-entry {
+  display: block;
+}
+
+/*# sourceMappingURL=product-head-1.1.1.css.map */

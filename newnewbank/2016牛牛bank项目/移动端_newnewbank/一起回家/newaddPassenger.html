@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>新增乘车人</title>
+		<link rel="stylesheet" type="text/css" href="css/newaddPassenger.css"/>
+	</head>
+	<body>
+		<div id="root">
+			
+			
+			<div class="onePage commonPage">				
+				<div class="line">
+					<p class="fontS_24">乘客姓名</p><input type="text" placeholder="请输入乘车人姓名">
+				</div>
+				<div class="line">
+					<p class="fontS_24">联系电话</p><input type="text" placeholder="请输入乘车人电话">
+				</div>
+				<div class="line">
+					<p class="fontS_24">乘客性别</p>
+					<div class="sex male"><span class="circle active"></span><span class="fL">男</span><span class="maleIcon"></span></div>
+					<div class="sex famale"><span class="circle"></span><span class="fL">女</span><span class="famaleIcon"></span></div>
+				</div>		
+			</div>
+			<div class="twoPage commonPage">
+				<div class="line">
+					<p class="fontS_24 arrLine">设为默认联系人</p>
+					<p class="default"><span class="notSelect"></span></p>
+				</div>
+			</div>
+			<!--红色状态    bgRedColor 隐藏-->
+			<div class="sureAdded">
+				  确认增加
+			</div>
+			<div class="newAdded">
+				+ 新增乘车人
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//设为默认联系人 --点击按钮
+			$('.default').on('click',function(){
+				$(this).find('span').toggleClass('select');			
+			});
+			//性别选择器
+			$('.sex').on('click',function(){
+				$(this).find('.circle').addClass('active');
+				$(this).siblings('.sex').find('.circle').removeClass('active');			
+			});
+			//+ 新增乘车人  ---点击事件
+			$('.newAdded').on('click',function(){
+				location.href='passengerInformationRegistration20161209.html';				
+			});
+		</script>		
+	</body>
+</html>

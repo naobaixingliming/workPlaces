@@ -1,0 +1,408 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC"
+}
+
+ul li {
+	list-style: none;
+}
+
+span {
+	display: inline-block;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+/*字体大小 start*/
+
+.font_12 {
+	font-size: 0.1875rem;
+}
+
+.font_13 {
+	font-size: 0.203125rem;
+}
+
+.font_14 {
+	font-size: 0.21875rem;
+}
+
+.font_15 {
+	font-size: 0.234375rem;
+}
+
+.font_16 {
+	font-size: 0.25rem;
+}
+
+.font_18 {
+	font-size: 0.28125rem;
+}
+
+.font_20 {
+	font-size: 0.3125rem;
+}
+
+.font_22 {
+	font-size: 0.34375rem;
+}
+
+.font_24 {
+	font-size: 0.375rem;
+}
+
+.font_26 {
+	font-size: 0.40625rem;
+}
+
+.font_28 {
+	font-size: 0.4375rem;
+}
+
+.font_30 {
+	font-size: 0.46875rem;
+}
+
+.font_32 {
+	font-size: 0.5rem;
+}
+
+.font_36 {
+	font-size: 0.5625rem;
+}
+
+.font_40 {
+	font-size: 0.625rem;
+}
+
+.font_48 {
+	font-size: 0.75rem;
+}
+
+.font_50 {
+	font-size: 0.78125rem;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000;
+}
+
+.color_333 {
+	color: #333;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_fff {
+	color: #fff;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.line_height {
+	/*line-height:0.46875rem;*/
+	line-height: 0.390625rem;
+}
+
+.letter_space {
+	letter-spacing: 0.015625rem;
+}
+
+.under_line {
+	height: 0.015625rem;
+	background-color: #f5f5f5;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.none {
+	display: none;
+}
+
+
+/*1 start*/
+
+body {
+	min-height: 100vh;
+	background-color: #f97255;
+}
+
+#assessment-wind {
+	width: 10rem;
+	height: 17.75rem;
+	/*min-height: 100vh;*/
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_assessment20170314.jpg) no-repeat;
+	background-size: cover;
+}
+
+.color_5c2d27 {
+	color: #5c2d27;
+}
+
+.color_7b4921 {
+	color: #7b4921;
+}
+
+.text-induc {
+	width: 6.75rem;
+	height: 5.71875rem;
+	padding-top: 7.421875rem;
+	text-indent: 2em;
+}
+
+.assessIcon {
+	width: 8.328125rem;
+	height: 1.5625rem;
+	line-height: 1.5625rem;
+	background-color: #ffdc09;
+	border-radius: 0.78125rem;
+	box-shadow: 0 0.15625rem 0 #e5a100;
+	margin-top: 1.09375rem;
+}
+
+
+/*2*/
+
+#financialCondition {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/financialCondition20170314.jpg) no-repeat;
+	background-size: cover;
+}
+
+.w-550 {
+	padding-top: 2.96875rem;
+	padding-left: 1.5rem;
+	height: 1.40625rem;
+	line-height: 1.40625rem;
+}
+
+.question {
+	margin-top: 0.85rem;
+}
+
+.choiceQuestion {
+	width: 8.75rem;
+	height: 1.71875rem;
+	margin: 0 auto;
+	line-height: 1.71875rem;
+	border-radius: 0.859375rem;
+	font-size: 0.375rem;
+	margin-top: 0.390625rem;
+	background-color: #fdf0c6;
+	box-shadow: 0 0.125rem 0 #feb300;
+	padding-left: 1rem;
+	box-sizing: border-box;
+}
+
+.select-yes {
+	width: 0.640625rem;
+	height: 0.640625rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/select20170314_06.png) no-repeat;
+	background-size: cover;
+	margin-top: .5rem;
+	margin-right: .8rem;
+	float: right;
+}
+
+.nextQuestion {
+	width: 5.3125rem;
+	height: 1.09375rem;
+	line-height: 1.09375rem;
+	background-color: #ffdc09;
+	border-radius: 0.78125rem;
+	box-shadow: 0 0.15625rem 0 #e5a100;
+	margin-top: 0.625rem;
+}
+
+.color_6f3922 {
+	color: #6f3922;
+}
+
+
+/*2*/
+
+#financialProTwo {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_bg20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+.w-500 {
+	padding-top: 2.265625rem;
+	width: 8rem;
+	height: 2.03125rem;
+}
+
+
+/*3*/
+
+#financialProThree,
+#financialProFive,
+#eight-investmentRisk,
+#nine-investmentRisk {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/financialThree20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+#investmentExperienceFour {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/investmentProfour20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+/*3*/
+
+#investmentExperience {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/investmentExperience20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+#investmentExperience .question .choiceQuestion,
+#financialProFive .question .choiceQuestion,
+#investmentRisk .question .choiceQuestion {
+	line-height: normal;
+	padding-left: .7rem;
+}
+
+.choiceQuestion p {
+	display: inline-block;
+	width: 6.5rem;
+	height: 100%;
+	padding-top: .35rem;
+	box-sizing: border-box;
+}
+
+#investmentRisk {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/investmentExperience20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+#ten-riskBearingCapacity {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/riskBearingCapacity20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+#completeEvaluation {
+	width: 10rem;
+	height: 17.75rem;
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/completeEvaluation20170315.jpg) no-repeat;
+	background-size: cover;
+}
+
+.text-result {
+	width: 8.5625rem;
+	text-align: center;
+	height: 1.875rem;
+	padding-top: 6.6rem;
+}

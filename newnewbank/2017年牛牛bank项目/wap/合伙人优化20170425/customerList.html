@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>客户列表</title>
+		<link rel="stylesheet" type="text/css" href="css/partner.css" />
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="customerList" class="partner">
+			<!--弹框 start-->
+			<div id="primary-popup" class="none">
+				<div class="cover-left"></div>
+				<div class="popupBox-right bgColor_fff">
+					<div class="h-100 bgColor_e2e2e2 ">
+						<p class="mar-left-right-40">
+							<i class="font_24 color_333 float_left cancalBtn">取消</i>
+							<i class="font_24 color_333 float_right sureBtn">确定</i>
+						</p>
+					</div>
+					<div class="mar-left-right-40">
+						
+						<p class="font_24 color_333 " style="padding: 0.46875rem 0 0.390625rem;">排序</p>
+						<div class="select-item">							
+							<i class="gary-border cur-red-active text_center select-child" style="margin-bottom: 0.15625rem;">全 部</i>
+							<i class="gary-border color_333 float_right text_center select-child" style="margin-bottom: 0.15625rem;">最近回款</i>													
+							<i class="gary-border text_center color_333 select-child">提成金额</i>
+							<i class="gary-border float_right text_center color_333 select-child">回款时间</i>							
+						</div>
+						
+					</div>
+					<div class="mar-left-right-40">
+						
+						<p class="font_24 color_333 " style="padding: 0.46875rem 0 0.390625rem;">筛选</p>
+						<div class="select-item">
+							<p class="allInfo select-child cur-red-active text_center">全 部</p>							
+							<i class="gary-border text_center select-child color_333">0-100元</i>
+							<i class="gary-border float_right select-child text_center color_333">100元以上</i>							
+						</div>
+
+					</div>
+					<div class="mar-left-right-40">
+						<p class="font_24 color_333 " style="padding: 0.46875rem 0 0.390625rem;">查找</p>
+						<p class=" ">
+							<input type="text" class="inputHint" name="" id="" value="" placeholder="输入手机号或姓名"/><i class="color_fff font_24 bgColor_f44975 lookBtn">查找</i>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--弹框 end-->
+			<!--赠送弹框 start-->
+			<div class="givePopup none">
+				<div class="showdowBox"></div>
+				<div class="whiteBox-popup relative">
+					<p class="font_24 text_center" style="padding: 1.171875rem 0 0.546875rem;line-height: 0.546875rem;">赠送一张<i class="color_f44975">10元现金券</i>给用户135***919</br>
+						投资1000元，30天以上产品可用</p>
+					<p class="font_24 color_fff text_center"><i class="bgColor_ccc cancalGrayBtn">取消</i><i class="bgColor_f44975 sureGiveBtn">确认赠送</i></p>	
+					<p class="warmText text_center font_20">温馨提示：此优惠券只能用于未投资的用户首次投资使用。</p>	
+				</div>
+			</div>
+			<!--赠送弹框 end-->
+			<div class="one-page-list ">
+				<div class="bgColor_f44975 h-330 relative padding-left-right">
+					<div class="clearfloat" style="padding: 0.84375rem 0 0.625rem;">
+						<ul class="list-header">
+							<li class="text_center">
+								<p class="circle-out"><span class="circle-in"><i class="listIcon1 alreadyInvited"></i></span></p>								
+							</li>
+							<li class="color_f7809f font_60 equal"><p>=</p></li>
+							<li class="text_center">
+								<p class="circle-out"><span class="circle-in"><i class="listIcon1 alreadyInvested"></i></span></p>								
+							</li>
+							<li class="color_f7809f font_60 equal"><p>+</p></li>
+							<li class="text_center">
+								<p class="circle-out"><span class="circle-in"><i class="listIcon1 notInvest"></i></span></p>								
+							</li>
+						</ul>
+					</div>
+					<div class="clearfloat text_center">
+						<div class="inline_block float_left" style="margin-left: .3rem;">                                     
+							<p class="color_fff op_60">已邀请 </p>
+							<p class="color_fff font_24">43人</p>
+						</div>
+						<div class="inline_block">                                                                            
+							<p class="color_fff op_60">已投资  </p>
+							<p class="color_fff font_24">23人</p>
+						</div>
+						<div class="inline_block float_right" style="margin-right: .3rem;">                                                                             
+							<p class="color_fff op_60">未投资  </p>
+							<p class="color_fff font_24">20人</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class=" ">
+				<p class="bgColor_fff h-80 padding-left-right">				
+					<i class="font_24 color_333 getBankName">排序筛选</i>
+					<i class="listIcon1 selectIcon float_right"></i>
+				</p>
+				<p class="under_line"></p>
+				<!--单条 start-->
+				<div class="one-singele-info bgColor_fff">
+					<div class="padding-left-right h-70">
+						<i class="bgColor_ffc62e common-cicle">金</i>
+						<i class="font_24 color_333">周正未</i>
+						<i class="listIcon1 love float_right"></i>
+					</div>
+					<p class="under_line padding-left-35"></p>					
+					<div class="padding-left-right padding-top-bottom-25">
+						<p>
+							<span class="font_20 w-58">
+								<i class="color_333">投资状态： </i>
+								<i class="color_999">已投资</i>
+							</span>
+							<span class="font_20">
+								<i class="color_333">提成合计： </i>
+								<i class="color_999">7080.56</i>
+							</span>
+						</p>
+						<p style="padding-top: 0.546875rem;">
+							<span class="font_20 w-58">
+								<i class="color_333">注册时间： </i>
+								<i class="color_999">2014-03-20</i>
+							</span>
+							<span class="font_20">								
+								<i class="color_333">最近回款： </i>
+								<i class="color_999">2017-05-06</i>
+							</span>
+						</p>						
+					</div>
+					<p class="under_line"></p>
+				</div>
+				<!--单条 end-->
+				<!--单条 start-->
+				<div class="one-singele-info bgColor_fff mar-top-20">
+					<div class="padding-left-right h-70">
+						<i class="bgColor_7ebcd1 common-cicle">银</i>
+						<i class="font_24 color_333">周正未</i>
+						<i class="float_right"></i>
+					</div>
+					<p class="under_line padding-left-35"></p>					
+					<div class="padding-left-right padding-top-bottom-25">
+						<p>
+							<span class="font_20 w-58">
+								<i class="color_333">投资状态： </i>
+								<i class="color_999">已投资</i>
+							</span>
+							<span class="font_20">
+								<i class="color_333">提成合计： </i>
+								<i class="color_999">7080.56</i>
+							</span>
+						</p>
+						<p style="padding-top: 0.546875rem;">
+							<span class="font_20 w-58">
+								<i class="color_333">注册时间： </i>
+								<i class="color_999">2014-03-20</i>
+							</span>
+							<span class="font_20">								
+								<i class="color_333">最近回款： </i>
+								<i class="color_999">2017-05-06</i>
+							</span>
+						</p>						
+					</div>
+					<p class="under_line"></p>
+				</div>
+				<!--单条 end-->
+				<!--单条 start-->
+				<div class="one-singele-info bgColor_fff mar-top-20">
+					<div class="padding-left-right h-70">
+						<i class="bgColor_19baaa common-cicle">普</i>
+						<i class="font_24 color_333">周正未</i>
+						<i class="float_right"></i>
+					</div>
+					<p class="under_line padding-left-35"></p>					
+					<div class="padding-left-right padding-top-bottom-25">
+						<p>
+							<span class="font_20 w-58">
+								<i class="color_333">投资状态： </i>
+								<i class="color_999">已投资</i>
+							</span>
+							<span class="font_20">
+								<i class="color_333">提成合计： </i>
+								<i class="color_999">7080.56</i>
+							</span>
+						</p>
+						<p style="padding-top: 0.546875rem;">
+							<span class="font_20 w-58">
+								<i class="color_333">注册时间： </i>
+								<i class="color_999">2014-03-20</i>
+							</span>
+							<span class="font_20">								
+								<i class="color_333">最近回款： </i>
+								<i class="color_999">2017-05-06</i>
+							</span>
+						</p>						
+					</div>
+					<p class="under_line"></p>
+				</div>
+				<!--单条 end-->
+				<!--单条 start-->
+				<div class="one-singele-info bgColor_fff mar-top-20">
+					<div class="padding-left-right h-70">						
+						<i class=" bgColor_d2d2d2 common-cicle"><em class="person-p"></em></i>
+						<i class="font_24 color_333">周正未</i>
+						<i class="float_right"></i>
+					</div>
+					<p class="under_line padding-left-35"></p>					
+					<div class="padding-left-right padding-top-bottom-25">
+						<p>
+							<span class="font_20 w-58">
+								<i class="color_333">投资状态： </i>
+								<i class="color_999">已投资</i>
+							</span>
+							<span class="font_20">
+								<i class="color_333">提成合计： </i>
+								<i class="color_999">7080.56</i>
+							</span>
+						</p>
+						<p style="padding-top: 0.546875rem;">
+							<span class="font_20 w-58">
+								<i class="color_333">注册时间： </i>
+								<i class="color_999">2014-03-20</i>
+							</span>
+							<span class="font_20">								
+								<i class="color_333">最近回款： </i>
+								<i class="color_999">2017-05-06</i>
+							</span>
+						</p>						
+					</div>
+					<p class="under_line"></p>
+				</div>
+				<!--单条 end-->
+				<!--单条 start-->
+				<div class="one-singele-info bgColor_fff mar-top-20">
+					<div class="padding-left-right h-70">						
+						<i class=" bgColor_d2d2d2 common-cicle"><em class="person-p"></em></i>
+						<i class="font_24 color_333">151****0201（未实名）</i>
+						<i class="float_right font_20 color_fff coupon mar-top-20">赠券</i>
+					</div>
+					<p class="under_line padding-left-35"></p>					
+					<div class="padding-left-right padding-top-bottom-25">
+						<p>
+							<span class="font_20 w-58">
+								<i class="color_333">投资状态： </i>
+								<i class="color_999">已投资</i>
+							</span>
+							<span class="font_20">
+								<i class="color_333">提成合计： </i>
+								<i class="color_999">7080.56</i>
+							</span>
+						</p>
+						<p style="padding-top: 0.546875rem;">
+							<span class="font_20 w-58">
+								<i class="color_333">注册时间： </i>
+								<i class="color_999">2014-03-20</i>
+							</span>
+							<span class="font_20">								
+								<i class="color_333">最近回款： </i>
+								<i class="color_999">2017-05-06</i>
+							</span>
+						</p>						
+					</div>
+					<p class="under_line"></p>
+				</div>
+				<!--单条 end-->
+			</div>			
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+				(function() {
+					$('.selectIcon').on('click', function() {
+						$('#primary-popup').show();
+					});				
+					$('.cancalBtn').on('click', function() {
+						$(this).parents('#primary-popup').hide();
+					});
+					
+					$('.coupon').on('click', function() {
+						$('.givePopup').show();
+					});	
+					$('.cancalGrayBtn').on('click', function() {
+						$(this).parents('.givePopup').hide();
+					});
+					
+					//
+					$('.select-item .select-child').on('click',function(){
+						$(this).addClass('cur-red-active').siblings('.select-child').removeClass('cur-red-active');						
+					});
+					
+					
+								
+			})()
+		</script>
+	</body>
+
+</html>

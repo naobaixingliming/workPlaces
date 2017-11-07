@@ -1,0 +1,387 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC"
+}
+
+ul li {
+	list-style: none;
+}
+
+span {
+	display: inline-block;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="password"],
+{
+	-webkit-appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+
+
+/*字体大小 start*/
+
+.font_12 {
+	font-size: 0.1875rem;
+}
+
+.font_13 {
+	font-size: 0.203125rem;
+}
+
+.font_14 {
+	font-size: 0.21875rem;
+}
+
+.font_15 {
+	font-size: 0.234375rem;
+}
+
+.font_16 {
+	font-size: 0.25rem;
+}
+
+.font_18 {
+	font-size: 0.28125rem;
+}
+
+.font_20 {
+	font-size: 0.3125rem;
+}
+
+.font_22 {
+	font-size: 0.34375rem;
+}
+
+.font_24 {
+	font-size: 0.375rem;
+}
+
+.font_26 {
+	font-size: 0.40625rem;
+}
+
+.font_28 {
+	font-size: 0.4375rem;
+}
+
+.font_30 {
+	font-size: 0.46875rem;
+}
+
+.font_32 {
+	font-size: 0.5rem;
+}
+
+.font_36 {
+	font-size: 0.5625rem;
+}
+
+.font_40 {
+	font-size: 0.625rem;
+}
+
+.font_48 {
+	font-size: 0.75rem;
+}
+
+.font_50 {
+	font-size: 0.78125rem;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000;
+}
+
+.color_333 {
+	color: #333;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_fff {
+	color: #fff;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.line_height {
+	line-height: 0.390625rem;
+}
+
+.letter_space {
+	letter-spacing: 0.015625rem;
+}
+
+.under_line {
+	height: 0.015625rem;
+	background-color: #f5f5f5;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.none {
+	display: none;
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+body {
+	background-color: #d00e0f;
+	min-height: 100vh;
+}
+
+.allPage {
+	width: 100%;
+	/*height: 15rem;*/
+	background: url(https://images-wap.newnewbank.com/wap-bg20170704.jpg) no-repeat;
+	background-size: 100% 15rem;
+}
+
+.one-page {
+	padding-top: 0.703125rem;
+}
+
+.header-banner {
+	width: 6.84375rem;
+	height: 5.390625rem;
+	background: url(https://images-wap.newnewbank.com/wap-header20170704.png) no-repeat;
+	background-size: cover;
+}
+
+.two-page {
+	padding-top: 0.71875rem;
+}
+
+.flex-parent {
+	display: flex;
+	display: -webkit-flex;
+	display: box;
+	/* OLD - Android 4.4- */
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	/* 09版 */
+	-webkit-box-orient: horizontal;
+	/* 12版 */
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+
+.flex-child {
+	flex: 1;
+	-webkit-flex: 1;
+	-webkit-box-flex: 1;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1;
+	/* OLD - Firefox 19- */
+	/* For old syntax, otherwise collapses. */
+	-webkit-flex: 1;
+	/* Chrome */
+	-ms-flex: 1;
+	/* IE 10 */
+	flex: 1;
+	width: 0%;
+	position: relative;
+}
+
+.interest {
+	width: 3.078125rem;
+	height: 3.578125rem;
+	background: url(https://images-wap.newnewbank.com/wap-circle20170704.png) no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.interestText {
+	width: 2.65625rem;
+	height: 0.828125rem;
+	margin-top: 1rem;
+}
+
+.interestText01 {
+	background: url(https://images-wap.newnewbank.com/wap-text01-20170704.png) no-repeat;
+	background-size: cover;
+}
+
+.interestText02 {
+	background: url(https://images-wap.newnewbank.com/wap-text02-20170704.png) no-repeat;
+	background-size: cover;
+}
+
+.interestText03 {
+	width: 2.40625rem;
+	height: 0.828125rem;
+	margin-top: 1rem;
+	background: url(https://images-wap.newnewbank.com/wap-text03-20170704.png) no-repeat;
+	background-size: cover;
+}
+
+.three-page {
+	padding-top: 0.375rem;
+	padding-bottom: 0.71875rem;
+}
+
+.outBox {
+	display: inline-block;
+	width: 2.6rem;
+	padding: 0.2rem 0 0.10rem;
+	border-radius: 0.125rem;
+	box-shadow: 0.05rem 0.05rem 0 0.05rem #830309;
+}
+
+.fontIcon {
+	width: 1.625rem;
+	height: 0.375rem;
+	background: url(https://images-wap.newnewbank.com/wap-investText20170704.png) no-repeat;
+	background-size: cover;
+}
+
+.modificate {
+	width: 0.5rem;
+	height: 2.90625rem;
+	position: absolute;
+	top: 0;
+}
+
+.modificateLeft {
+	background: url(https://images-wap.newnewbank.com/wap_left0704.png) no-repeat;
+	background-size: cover;
+	left: 0;
+}
+
+.modificateRight {
+	background: url(https://images-wap.newnewbank.com/wap_right0704.png) no-repeat;
+	background-size: cover;
+	right: 0;
+}
+
+.ruleText {
+	position: absolute;
+	top: 0.6rem;
+	left: 0.6rem;
+	width: 0.46875rem;
+	height: 1.71875rem;
+	background: url(https://images-wap.newnewbank.com/wap-rule20170704.png) no-repeat;
+	background-size: cover;
+}

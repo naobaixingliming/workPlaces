@@ -1,0 +1,71 @@
+.floatInco {
+	width: 140px;
+	height: 69px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_thanksgivingInco_01.png) no-repeat;
+	position: absolute;
+	left: -5px;
+	bottom: -5px;
+}
+
+.floatInco p {
+	font-size: 14px;
+	color: #fff;
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	margin-top: 63px;
+}
+
+.floatInco_1 {
+	width: 25px;
+	height: 45px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_thanksgivingInco_02.png) no-repeat;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.floatInco_1 p {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+
+.floatInco_2 {
+	width: 85px;
+	height: 56px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_thanksgivingInco_03.png) no-repeat;
+	position: absolute;
+	left: -5px;
+	bottom: -5px;
+}
+
+.floatInco_2 p {
+	font-size: 14px;
+	color: #fff;
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(35deg);
+	-o-transform: rotate(30deg);
+	margin-top: 38px;
+	margin-left: 15px;
+}
+
+.floatInco_3 {
+	display: inline-block;
+	width: 121px;
+	height: 24px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_thanksgivingInco_04.png) no-repeat;
+	margin-left:10px ;
+}
+
+.floatInco_3 p {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+}
+

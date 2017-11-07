@@ -1,0 +1,463 @@
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}
+			a:hover{text-decoration:none}
+			a {
+				text-decoration: none;
+			}
+			/*  覆盖层  start   */
+			
+			#cover {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 10.0rem;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: none;
+				z-index: 1;
+			}
+			/*弹框  start*/
+			
+			.bombBox {
+				display: none;
+			    width: 9.0625rem;
+			    height: 5.578125rem;
+			    background-color: #fff;
+			    border-radius: 0.15625rem;
+			    position: fixed;
+			    top: 1.875rem;
+			    left: 4%;
+			    color: #333;
+			    z-index: 9999;
+			    font-size: 0.375rem;
+			}
+			
+			.bombBox .redGround {
+				line-height: 0.734375rem;
+				height: 0.734375rem;
+				border-radius: 0.15625rem 0.15625rem 0 0;
+				background-color: #f44975;
+				color: #fff;
+				margin-bottom: 0.68125rem;
+			}
+			
+			.bombBox .redGround span:first-child {
+				margin-left: 3.125rem;
+			}
+			
+			.bombBox .redGround span:last-child {
+				float: right;
+				margin-right: 0.15625rem;
+				font-size: 0.625rem;
+			}
+			
+			.bombBox .left20 {
+				margin-top: 0.46875rem;
+				margin-left: 0.9375rem;
+			}
+			
+			.bombBox .left10 {
+				margin-top: 0.3125rem;
+			}
+			
+			.bombBox .inputBg {
+				width: 5.78125rem;
+				height: 0.9375rem;
+				display: inline-block;
+				background-color: #f1f1f1;
+				border-radius: 0.078125rem;
+				color: #999;
+			}
+			
+			.bombBox input {
+				width: 80%;
+				height:100% ;
+				border-radius: 0.078125rem;
+				border: none;
+				background-color: #F1F1F1;
+			}
+			
+			.bombBox a {
+				font-size: 0.78125rem;
+				color: #f44975;
+			}
+			/*弹框  end*/
+			
+			#root {
+				width: 10.0rem;
+				height: 46.875rem;
+				background-color: #ec2a47;
+				z-index: -1;
+			}
+			
+			.header {
+				width: 10.0rem;
+				height: 6.421875rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_head_bannerContent20161208.png) no-repeat;
+				background-size: 10.0rem 6.421875rem;
+			}
+			
+			.onePage {
+				margin: 0.859375rem 0 0.625rem;
+				line-height: 0.78125rem;
+				color: #fff;
+				text-align: center;
+			}
+			
+			.onePage .fontS_36 {
+				font-size: 0.5625rem;
+			}
+			
+			.onePage .fontS_18 {
+				font-size: 0.28125rem;
+			}
+			
+			.twoPage {
+				width: 90%;
+				height: 2.84375rem;
+				background-color: #fb4c6a;
+				border-radius: 1.421875rem;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			
+			
+			.leftBox,
+			.rightBox {
+				position: absolute;
+				display: inline-block;
+				margin-left: 0.625rem;
+			}
+			
+			.leftBox .noLogin {
+				line-height: 2.84375rem;
+				font-size: 0.46875rem;
+				color: #fff;
+			}
+			.leftBox{
+				left: 0.1rem;
+			}
+			.leftBox a {
+				color: #ffe700;
+			}
+			
+			.rightBox {
+				    top: 0.375rem;
+				    right: 0.3rem;
+				    width: 2.125rem;
+				    height: 2.125rem;
+				    border-radius: 1.0625rem;
+				    background-color: #d5203a;
+			}
+			
+			
+			
+			
+			
+			.rightBox p:first-child {
+				width: 0.765625rem;
+				height: 0.890625rem;
+				margin: 0.3125rem 0.625rem 0.15625rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_calculation20161208.png) no-repeat;
+				background-size: 0.765625rem 0.890625rem;
+			}
+			
+			.consultation {
+				color: #fff;
+				font-size: 0.28125rem;
+				text-align: center;
+			}
+			
+			.login {
+				display: none;
+				float: left;
+			}
+			
+			.login .user {
+				color: #fff;
+				font-size: 0.34375rem;
+			}
+			
+			.login .text_20 {
+				font-size: 0.3125rem;
+				color: #ffe700;
+			}
+			
+			.login .text_24 {
+				color: #FFE700;
+				font-size: 0.375rem;
+				text-align: center;
+			}
+			
+			.login a {
+				color: #FFE700;
+				font-size: 0.546875rem;
+			}
+			
+			.login p:first-child {
+				margin-top: 0.78125rem;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.mainContent {
+				width: 9.765625rem;
+				height: 27.34375rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_curvedLine20161208.png) no-repeat;
+				background-size: 9.765625rem 26.125rem;
+				margin: -0.390625rem auto;
+			}
+			
+			.common {
+				width: 90%;
+			}
+			
+			.twentyCash {
+				position: relative;
+				top: 1.8rem;
+			}
+			
+			.cashIcon {
+				width: 3.390625rem;
+				height: 2.484375rem;
+				margin-left: 0.78125rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_cashCoupon20161208.png) no-repeat;
+				background-size: 3.390625rem 2.484375rem;
+			}
+			
+			.cashIcon,
+			.textExplain {
+				float: left;
+			}
+			
+			.cashIcon p:first-child {
+				margin-top: .05rem;
+				text-align: center;
+			}
+			
+			.cashIcon p:first-child .fontS_33 {
+				font-size: 0.515625rem;
+				color: #c12417;
+				font-weight: bolder;
+			}
+			
+			.cashIcon p:first-child .fontS_28 {
+				font-size: 0.4375rem;
+				color: #c12417;
+				font-weight: bold;
+			}
+			
+			.cashIcon .fontS_24 {
+				color: #c12417;
+				font-size: 0.375rem;
+				text-align: center;
+			}
+			
+			.textExplain {
+				margin-top: 0.3125rem;
+				margin-left: 0.78125rem;
+				font-size: 0.34375rem;
+				line-height: 0.546875rem;
+			}
+			
+			.fs22Cfff {
+				color: #fff;
+			}
+			
+			.fs22Cffe700 {
+				color: #ffe700;
+			}
+			
+			.fiftyCash {
+				position: relative;
+				top: 2.5rem;
+			}
+			
+			.fiftyCash .cashIcon,
+			.fiftyCash .textExplain {
+				float: right;
+			}
+			
+			.coffeeMachine {
+				float: left;
+				width: 3.390625rem;
+				height: 2.96875rem;
+				margin-top: -0.390625rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_coffeeMachine20161208.png) no-repeat;
+				background-size: 3.390625rem 2.96875rem;
+			}
+			
+			.twoHundredCash {
+				position: relative;
+				top: 3.8rem;
+			}
+			
+			.twoHundredCash .cashIcon {
+				margin-left: 1.25rem;
+			}
+			
+			.fontS_24_T {
+				position: absolute;
+				top: 0.3125rem;
+				left: 4.6875rem;
+				font-size: 0.375rem;
+				color: #ffe700;
+			}
+			
+			.textExplain1 {
+				text-align: center;
+				font-size: 0.34375rem;
+				margin-top: 0.234375rem;
+				line-height: 0.625rem;
+			}
+			
+			.fiveHundredCash {
+				position: relative;
+				top: 5.4rem;
+			}
+			
+			.fiveHundredCash .cashIcon {
+				margin-left: 1.25rem;
+			}
+			
+			.fs22Cffe700:hover {
+				text-decoration: none;
+			}
+			
+			.warmer {
+				float: left;
+				width: 3.390625rem;
+				height: 2.890625rem;
+				margin-top: -0.390625rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_warmer20161208.png) no-repeat;
+				background-size: 3.390625rem 2.890625rem;
+			}
+			
+			.oneThousandTwohundredCash {
+				position: relative;
+				top: 6.8rem;
+			}
+			
+			.oneThousandTwohundredCash .cashIcon {
+				margin-left: 1.25rem;
+			}
+			
+			.waterPurifier {
+				float: left;
+				width: 3.375rem;
+				height: 2.640625rem;
+				margin-top: -0.15625rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_waterPurifier20161208.png) no-repeat;
+				background-size: 3.375rem 2.640625rem;
+			}
+			
+			.immediateInvestment {
+				height: 1.40625rem;
+				width: 7.09375rem;
+				background: #ffb235;
+				border-radius: 0.703125rem;
+				box-shadow: 0 0.15625rem 0.046875rem #d5203a;
+				margin-top: 7.96875rem;
+				margin-left: 0.9375rem;
+			}
+			
+			.immediateInvestment a {
+				text-align: center;
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				line-height: 1.40625rem;
+				border-radius: 0.703125rem;
+				color: #d5203a;
+				font-size: 0.5625rem;
+			}
+			
+			.textScript {
+				padding-left: 0.3125rem;
+				margin-top: 0.78125rem;
+				color: #fff;
+			}
+			
+			.textScript .activityIntroduction {
+				font-size: 0.375rem;
+				margin-bottom: 0.546875rem;
+			}
+			
+			.textScript .activityIntroduction span {
+				float: right;
+				margin-right: 0.78125rem;
+				margin-top: 0.3125rem;
+				display: inline-block;
+				width: 7.125rem;
+				height: 1px;
+				background-color: #fff;
+			}
+			
+			
+			
+			.textScript .fontS_20 {
+				font-size: 0.3125rem;
+			    margin-bottom: 0.234375rem;
+			    display: inline-block;
+			    width: 92%;
+			}
+			.textScript p:last-child{
+				line-height: 0.45rem;
+			}
+			
+					
+			.circle{
+				margin-right: 0.15625rem;
+			    display: inline-block;
+			    content: '';
+			    width: 0.25rem;
+			    height: 0.25rem;
+			    border: 1px solid #FFB235;
+			    border-radius: 50%;
+			    float: left;
+			    margin-top: 0.078125rem;
+			}
+			
+			/*.textScript .fontS_20:before {
+				margin-right: 0.15625rem;
+				display: inline-block;
+				content: '';
+				width: 0.25rem;
+				height: 0.25rem;
+				border: 1px solid #FFB235;
+				border-radius: 50%;
+			}*/
+			
+			
+			
+			
+			.footer {
+				line-height: 0.46875rem;
+			    overflow: hidden;
+			    margin-top: 0.859375rem;
+			    width: 10.0rem;
+			    font-size: 0.25rem;
+			    color: #fff;
+			    text-align: center;
+			    height: 1.5rem;
+			    background-color: #d5203a;
+			}			
+			.footer p {
+				margin-top: 0.390625rem;
+			}
+			@media only screen and (max-width:320px ) {
+				 #root {
+					height: 48.875rem;	
+				}
+				.footer {				   
+				    font-size: 0.1875rem;
+				    height: 1.8rem;				  
+				}
+			}

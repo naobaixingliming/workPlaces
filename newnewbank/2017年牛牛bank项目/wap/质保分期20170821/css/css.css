@@ -1,0 +1,1081 @@
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+		max-height: 999999px;
+	}
+	
+	html * {
+		outline: none;
+		-webkit-text-size-adjust: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		/*-webkit-tap-highlight-color: transparent;*/
+	}
+	
+	ul li {
+		list-style: none;
+	}
+	
+	span {
+		display: inline-block;
+	}
+	
+	em {
+		font-style: normal;
+	}
+	
+	i {
+		font-style: normal;
+		display: inline-block;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	:focus {
+		outline: 0
+	}
+	
+	button,
+	input,
+	select,
+	textarea {
+		font-size: 100%;
+		/*vertical-align: middle;*/
+		outline: 0
+	}
+	
+	input:focus:-moz-placeholder,
+	input:focus::-webkit-input-placeholder {
+		color: transparent
+	}
+	
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+		padding: 0;
+		border: 0
+	}
+	
+	input,
+	button,
+	textarea {
+		-webkit-appearance: none;
+	}
+	
+	button,
+	input {
+		border: 0;
+		outline: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		-webkit-tap-highlight-color: transparent;
+	}
+	
+	textarea {
+		resize: none
+	}
+	
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	input[type="text"],
+	input[type="password"],
+	{
+		-webkit-appearance: none;
+	}
+	
+	textarea {
+		-webkit-appearance: none;
+	}
+	/*字体大小 start*/
+	
+	.font_12 {
+		font-size: 0.3rem;
+	}
+	
+	.font_13 {
+		font-size: 0.325rem;
+	}
+	
+	.font_14 {
+		font-size: 0.35rem;
+	}
+	
+	.font_15 {
+		font-size: 0.375rem;
+	}
+	
+	.font_16 {
+		font-size: 0.4rem;
+	}
+	
+	.font_18 {
+		font-size: 0.45rem;
+	}
+	
+	.font_20 {
+		font-size: 0.5rem;
+	}
+	
+	.font_22 {
+		font-size: 0.55rem;
+	}
+	
+	.font_24 {
+		font-size: 0.6rem;
+	}
+	
+	.font_26 {
+		font-size: 0.65rem;
+	}
+	
+	.font_28 {
+		font-size: 0.7rem;
+	}
+	
+	.font_30 {
+		font-size: 0.75rem;
+	}
+	
+	.font_32 {
+		font-size: 0.8rem;
+	}
+	
+	.font_36 {
+		font-size: 0.9rem;
+	}
+	
+	.font_40 {
+		font-size: 1rem;
+	}
+	
+	.font_48 {
+		font-size: 1.2rem;
+	}
+	
+	.font_50 {
+		font-size: 1.25rem;
+	}
+	/*字体大小 end*/
+	/*字体颜色 start*/
+	
+	.color_000 {
+		color: #000;
+	}
+	
+	.color_333 {
+		color: #333;
+	}
+	
+	.color_666 {
+		color: #666;
+	}
+	
+	.color_999 {
+		color: #999;
+	}
+	
+	.color_fff {
+		color: #fff;
+	}
+	
+	.color_f44975 {
+		color: #f44975;
+	}
+	
+	.color_1c7ebe {
+		color: #1c7ebe;
+	}
+	
+	.bgColor_fff {
+		background-color: #fff;
+	}
+	
+	.bgColor_f44975 {
+		background-color: #f44975;
+	}
+	
+	.relative {
+		position: relative;
+	}
+	
+	.margin_center {
+		margin: 0 auto;
+	}
+	
+	.content_center {
+		justify-content: center;
+	}
+	
+	.content_left {
+		justify-content: flex-start;
+	}
+	
+	.content_right {
+		justify-content: flex-end;
+	}
+	
+	.vertical_center {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+	}
+	
+	.all_center {
+		display: flex;
+		display: -webkit-flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.float_left {
+		float: left;
+	}
+	
+	.float_right {
+		float: right;
+	}
+	
+	.pointer {
+		cursor: pointer;
+	}
+	
+	.bold {
+		font-weight: bold;
+	}
+	
+	.overflow {
+		overflow: hidden;
+	}
+	
+	.inline_block {
+		display: inline-block;
+	}
+	
+	.text_center {
+		text-align: center;
+	}
+	
+	.line_height {
+		line-height: 0.6rem;
+	}
+	
+	.letter_space {
+		letter-spacing: 0.025rem;
+	}
+	
+	.under_line {
+		height: 1px;
+		background-color: #f5f5f5;
+	}
+	
+	.clearfloat:after {
+		display: block;
+		clear: both;
+		content: "";
+		visibility: hidden;
+		height: 0
+	}
+	
+	.clearfloat {
+		zoom: 1
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	.none {
+		display: none;
+	}
+	
+	._block {
+		display: block;
+	}
+	
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+		color: #999;
+	}
+	
+	input:-moz-placeholder,
+	textarea:-moz-placeholder {
+		color: #999;
+	}
+	
+	input::-moz-placeholder,
+	textarea::-moz-placeholder {
+		color: #999;
+	}
+	
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+		color: #999;
+	}
+	
+	.color_2dadff {
+		color: #2dadff;
+	}
+	
+	.bgColor_32c190 {
+		background-color: #32c190;
+	}
+	
+	.bgColor_2dadff {
+		background-color: #2dadff;
+	}
+	
+	.mar-side-30 {
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+	}
+	
+	.mar-top-20 {
+		margin-top: 0.5rem
+	}
+	
+	.mar-bottom-14 {
+		margin-bottom: 0.35rem;
+	}
+	
+	.mar-bottom-40 {
+		margin-bottom: 1rem;
+	}
+	
+	.mar-left-20 {
+		margin-left: 0.5rem;
+	}
+	
+	.mar-left-30 {
+		margin-left: 0.75rem;
+	}
+	
+	.mar-left-50 {
+		margin-left: 1.25rem;
+	}
+	
+	.mar-left-60 {
+		margin-left: 1.5rem;
+	}
+	
+	.mar-right-20 {
+		margin-right: 0.5rem;
+	}
+	
+	.mar-right-30 {
+		margin-right: 0.75rem;
+	}
+	
+	.mar-right-40 {
+		margin-right: 1rem;
+	}
+	
+	.mar-right-60 {
+		margin-right: 1.5rem;
+	}
+	
+	.padding-left-10 {
+		padding-left: 0.25rem;
+	}
+	
+	.padding-left-20 {
+		padding-left: 0.5rem;
+	}
+	
+	.pading-left-30 {
+		padding-left: 0.75rem;
+	}
+	
+	.padding-right-20 {
+		padding-right: 0.5rem;
+	}
+	
+	.padding-right-30 {
+		padding-right: 0.75rem;
+	}
+	
+	.padding-top-10 {
+		padding-top: 0.25rem;
+	}
+	
+	.padding-top-20 {
+		padding-top: 0.5rem;
+	}
+	
+	.padding-top-40 {
+		padding-top: 1rem;
+	}
+	
+	.padding-top-60 {
+		padding-top: 1.5rem;
+	}
+	
+	.padding-bottom-30 {
+		padding-bottom: 0.75rem;
+	}
+	
+	.padding-bottom-40 {
+		padding-bottom: 1rem;
+	}
+	
+	.padding-bottom-50 {
+		padding-bottom: 1.25rem;
+	}
+	
+	.padding-bottom-60 {
+		padding-bottom: 1.5rem;
+	}
+	
+	.padding-top-bottom-35 {
+		padding-bottom: 0.875rem;
+		padding-top: .875rem;
+	}
+	
+	.padding-top-bottom-40 {
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+	
+	button {
+		border: none;
+		outline: none;
+	}
+	/*register */
+	
+	.rootNode {
+		min-height: 100vh;
+	}
+	
+	header.register-one-page {
+		width: 100%;
+		height: 7rem;
+		background: url(https://images-wap.newnewbank.com/header-img20470821.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	select {
+		color: #999;
+		border: none;
+	}
+	
+	select option {
+		color: #333;
+	}
+	
+	option[selected="selected"] {
+		color: #999;
+	}
+	
+	.flex-parent {
+		display: flex;
+		display: -webkit-flex;
+	}
+	
+	.flex-child {
+		flex: 1;
+		-webkit-flex: 1;
+	}
+	
+	.register-item input {
+		font-size: 0.6rem;
+		border: none;
+	}
+	
+	.h-80 {
+		height: 2rem;
+	}
+	
+	.send-ver-code {
+		width: 4.15rem;
+		height: 1.35rem;
+		border-radius: .675rem;
+	}
+	
+	.verImg {
+		width: 2.65rem;
+	}
+	
+	.w-80-pre {
+		width: 80%;
+	}
+	
+	.w-100-pre {
+		width: 100%;
+	}
+	
+	.border-radius-5 {
+		border-radius: 0.125rem;
+	}
+	
+	.fa-check-square-o:before {
+		content: "\f046";
+	}
+	
+	.bgColor_efeff4 {
+		background-color: #efeff4;
+	}
+	
+	.padding-side-30 {
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+	}
+	
+	header.apply-one-page {
+		width: 100%;
+		height: 7rem;
+		background: url(https://images-wap.newnewbank.com/head-img-2-20170821.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	.ui-slider {
+		padding: 1.5rem 0 2.5rem 0;
+	}
+	
+	.ui-slider-track {
+		position: relative;
+		height: 0.45rem;
+		background-color: #dcdcdc;
+		border-radius: .225rem;
+		margin: 0 1.6rem;
+	}
+	
+	.ui-slider-track .ui-btn.ui-slider-handle {
+		position: absolute;
+		z-index: 1;
+		top: -.225rem;
+		width: 0.9rem;
+		height: 0.9rem;
+		outline: 0;
+		padding: 0;
+		background-color: #2dadff;
+		border-radius: 50%;
+	}
+	
+	.ui-page-theme-a .ui-slider-track .ui-btn-active {
+		background-color: #2dadff;
+		border-radius: .225rem 0 0 .225rem;
+		padding-left: .1rem;
+	}
+	
+	.ui-slider-track .ui-slider-bg {
+		height: 100%;
+	}
+	
+	.ui-loader {
+		display: none;
+		z-index: 9999999;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		border: 0;
+	}
+	
+	.rmbSymbol {
+		position: absolute;
+		top: 1.5rem;
+		left: 35%;
+		font-size: 1rem;
+		color: #2dadff;
+	}
+	
+	#points {
+		outline: none;
+		border: none;
+		font-size: 1rem;
+		color: #2dadff;
+		padding-bottom: 1.2rem;
+		margin-left: 43%;
+		background-color: #fff;
+	}
+	
+	.w-120 {
+		width: 3rem;
+	}
+	
+	.ui-input-text {
+		width: 100%;
+	}
+	
+	.text_right {
+		text-align: right;
+	}
+	
+	.line-height-80 {
+		line-height: 2rem;
+	}
+	
+	.color_eb5120 {
+		color: #eb5120;
+	}
+	
+	.h-110 {
+		height: 2.75rem;
+	}
+	
+	.sesameCredit {
+		width: 3.075rem;
+		height: 1.025rem;
+		background: url(https://images-wap.newnewbank.com/sesameCredit20170821.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.h-100-pre {
+		height: 100%;
+	}
+	
+	header .realImg {
+		width: 5.55rem;
+		height: 5.55rem;
+		background: url(https://images-wap.newnewbank.com/realNameImg20170821.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	.h-100 {
+		height: 2.5rem;
+	}
+	
+	.w-160 {
+		width: 4rem;
+	}
+	
+	.color_1ab19a {
+		color: #1ab19a;
+	}
+	
+	.bgColor_1ab19a {
+		background-color: #1ab19a;
+	}
+	
+	.h-348 {
+		/*height: 8.7rem;*/
+		background-image: linear-gradient(to top, #0b6cf5 0%, #1fa6fe 100%);
+		background-image: -webkit-linear-gradient(to top, #0b6cf5 0%, #1fa6fe 100%);
+	}
+	
+	.bgColor_eee {
+		background-color: #eee;
+	}
+	
+	.bgColor_29aaff {
+		background-color: #29aaff;
+	}
+	
+	.bgColor_4297fd {
+		background-color: #4297fd;
+	}
+	
+	.bgColor_3e91f8 {
+		background-color: #3e91f8;
+	}
+	
+	.header-borer {
+		border-radius: 0.5rem;
+		padding: .07rem 0.25rem;
+	}
+	
+	.color_dfebff {
+		color: #dfebff;
+	}
+	
+	.vertical-line {
+		width: 1px;
+		height: 3rem;
+		background-color: #3e91f8;
+	}
+	
+	.h-90 {
+		height: 2.25rem;
+	}
+	
+	.color_8cc7fe {
+		color: #8cc7fe;
+	}
+	
+	.overdue {
+		color: #ff534a;
+	}
+	
+	.time-limit {
+		width: 2.5rem;
+		height: 0.75rem;
+		border: 0.025rem solid #ff534a;
+		border-radius: 0.375rem;
+	}
+	
+	.repay {
+		width: 2.5rem;
+		height: 0.75rem;
+		border: 0.025rem solid #999;
+		border-radius: 0.375rem;
+	}
+	
+	.item-p,
+	.navContent {
+		border-bottom: 1px solid #dcdcdc;
+	}
+	
+	.repayment {
+		color: #333;
+	}
+	
+	.repayment p:first-child,
+	.overdue p:first-child,
+	.have-repayment p:first-child {
+		padding-bottom: 0.25rem;
+	}
+	
+	.have-repayment {
+		color: #999;
+	}
+	
+	.h-60 {
+		height: 1.5rem;
+	}
+	
+	.bgColor_1fa7fe {
+		background-color: #1fa7fe;
+	}
+	
+	.bgColor_ff534a {
+		background-color: #ff534a;
+	}
+	
+	.circle-bar canvas {
+		width: 7rem!important;
+		height: 7rem!important;
+		background-color: rgba(53, 189, 254, .9);
+		border-radius: 50%;
+	}
+	
+	.pos-money {
+		position: absolute;
+		top: 2rem;
+		left: 1.2rem;
+	}
+	
+	.rechargeBtn {
+		width: 2.65rem;
+		height: 1rem;
+		border-radius: 0.125rem;
+	}
+	
+	.icon-stage {
+		height: 1.125rem;
+	}
+	
+	.color_93d4fe {
+		color: #93d4fe;
+	}
+	
+	.w-pre-100 {
+		width: 100%;
+	}
+	
+	.padding-top-30 {
+		padding-top: 0.75rem;
+	}
+	
+	.mar-top-15 {
+		margin-top: 0.375rem;
+	}
+	
+	.mar-left-40 {
+		margin-left: 1rem;
+	}
+	
+	.mar-side-40 {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	
+	.approvalIcon {
+		width: 4.325rem;
+		height: 3.6rem;
+		background: url(https://images-wap.newnewbank.com/approval20170822.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.color_eda71f {
+		color: #eda71f;
+	}
+	
+	.border-circle {
+		width: 3.4rem;
+		height: 3.4rem;
+		border-radius: 100%;
+		border: 1px solid #dcdcdc;
+	}
+	
+	.blue-circle .color-text {
+		color: #8cc7fe;
+	}
+	
+	.blue-circle .border-circle {
+		border: 1px solid #8cc7fe;
+	}
+	
+	.blue-circle .bule-have-bg {
+		width: 3rem;
+		height: 3rem;
+		background-color: #8cc7fe;
+		border-radius: 100%;
+		color: #fff;
+	}
+	
+	.blue-circle .bule-have-bg .fa {
+		margin-top: .5rem;
+	}
+	
+	.longBorder {
+		width: 1.65rem;
+		height: 0.3rem;
+		background-color: #dcdcdc;
+		border-radius: 0.15rem;
+		margin-top: 1.5rem;
+	}
+	
+	.blue-circle.longBorder {
+		background-color: #8cc7fe;
+	}
+	
+	.blue-line .border-circle {
+		border: 1px solid #8cc7fe;
+	}
+	
+	.blue-line .bule-have-bg {
+		color: #8cc7fe;
+	}
+	
+	.color_12b7ad {
+		color: #12b7ad;
+	}
+	
+	.line-height-40 {
+		line-height: 1rem;
+	}
+	
+	.bgColor_33c191 {
+		background-color: #33c191;
+	}
+	
+	.deleteIcon {
+		width: 0.53125rem;
+		height: 0.53125rem;
+		background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/loginSprit20170328.png) no-repeat 0 0;
+		background-size: cover;
+	}
+	
+	.mar-top-70 {
+		margin-top: 1.75rem;
+	}
+	
+	.w-90-pre {
+		width: 90%;
+	}
+	
+	.padding-right-60 {
+		padding-right: 1.5rem;
+	}
+	
+	.padding-left-60 {
+		padding-left: 1.5rem;
+	}
+	
+	.home-icon,
+	.cur .home-icon {
+		width: 0.925rem;
+		height: 0.85rem;
+	}
+	
+	.home-icon {
+		background: url(https://images-wap.newnewbank.com/home20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.finance-icon,
+	.cur .finance-icon {
+		width: 0.925rem;
+		height: 0.85rem;
+	}
+	
+	.finance-icon {
+		background: url(https://images-wap.newnewbank.com/moeny20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.user-icon,
+	.cur .user-icon {
+		width: 0.75rem;
+		height: 0.875rem;
+	}
+	
+	.user-icon {
+		background: url(https://images-wap.newnewbank.com/user20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.cur .home-icon {
+		background: url(https://images-wap.newnewbank.com/bule-home20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.cur .finance-icon {
+		background: url(https://images-wap.newnewbank.com/bule-moeny20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.cur .user-icon {
+		background: url(https://images-wap.newnewbank.com/bule-user20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.cur i {
+		color: #1fa7fe;
+	}
+	
+	.h-70 {
+		height: 1.75rem;
+	}
+	
+	.mar-right-10 {
+		margin-right: 0.25rem;
+	}
+	
+	.bgColor_f3fafe {
+		background-color: #f3fafe;
+	}
+	
+	.headsImg {
+		width: 6.05rem;
+		height: 3.85rem;
+		background: url(https://images-wap.newnewbank.com/heads20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.tailsImg {
+		width: 6.025rem;
+		height: 3.825rem;
+		background: url(https://images-wap.newnewbank.com/tails20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.userPhoneImg {
+		width: 5rem;
+		height: 4.4rem;
+		background: url(https://images-wap.newnewbank.com/userPhone20170829.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.color_88cefa {
+		color: #88cefa;
+	}
+	
+	.color_a3d9fb {
+		color: #a3d9fb;
+	}
+	
+	.nextBtn {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.bgColor_dcdcdc {
+		background-color: #dcdcdc;
+	}
+	
+	.bgColor_2dadff {
+		background-color: #2dadff;
+	}
+	
+	.mar-bottom-20 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.login-page {
+		width: 100%;
+		height: 100%;
+		background: url(https://images-wap.newnewbank.com/loginBg20170825.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	.titleIcon {
+		width: 8.2rem;
+		height: 2.8rem;
+		background: url(https://images-wap.newnewbank.com/titleIcon20170825.png) no-repeat;
+		background-size: cover;
+	}
+	
+	.input-box-login .box-input {
+		width: 12.75rem;
+		height: 2.25rem;
+		border-radius: 1.125rem;
+		background-color: rgba(18, 98, 216, .7);
+		overflow: hidden;
+		/*background-color: #1262d8;*/
+	}
+	
+	.input-box-login input {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	
+	.input-box-login input::-webkit-input-placeholder {
+		color: #b6dbff;
+	}
+	
+	.input-box-login input::-moz-placeholder {
+		color: #b6dbff;
+	}
+	
+	.w-110 {
+		width: 4rem;
+	}
+	
+	.color_1262d8 {
+		color: #1262d8;
+	}
+	
+	.color_7fbffe {
+		color: #7fbffe;
+	}
+	
+	.color_1e6fe9 {
+		color: #1e6fe9;
+	}
+	
+	.color_b6dbff {
+		color: #b6dbff;
+	}
+	
+	.padding-top-100 {
+		padding-top: 2.5rem;
+	}
+	
+	.padding-top-120 {
+		padding-top: 3rem;
+	}
+	
+	.padding-bottom-100 {
+		padding-bottom: 2.5rem;
+	}
+	
+	.mar-right-120 {
+		margin-right: 3rem;
+	}
+	
+	.input-box-login .box-btn {
+		width: 12.75rem;
+		height: 2.55rem;
+		background: url(https://images-wap.newnewbank.com/loginBtnIcon20170825.png) no-repeat;
+		background-size: cover;
+		margin: 1.15rem auto;
+	}
+	
+	.h-pre-100 {
+		height: 100%;
+	}

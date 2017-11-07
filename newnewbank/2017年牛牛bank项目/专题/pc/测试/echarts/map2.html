@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.map-table {
+				width: 1000px;
+				height: 800px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<p></p>
+		<div class="clearfloat padding-bottom-60 relative bgColor_fff">
+			<div id="map-data" class=" map-table"></div>
+		</div>
+		<script src="js/echarts.min.js"></script>
+		<script src="http://echarts.baidu.com/asset/map/js/china.js"></script>
+		<script type="text/javascript">
+			var mapData = echarts.init(document.getElementById('map-data'));
+			option = {
+				  tooltip : {
+			        trigger: 'item'
+			    },
+			    dataRange: {
+			        x: 'right',
+			        y: 'center',
+			        itemWidth:30,
+			        itemHeight:20,
+			        splitList: [
+			     	   //{start: 5, end: 5, label: '文字自定义', color: '自定义颜色'},
+			            {start: 5000,label: '>5000人',color:'#3a94e5'},
+			            {start: 2000, end: 5000,label: '2000 - 5000人',color:'#68b1ec'},//5caaeb
+			            {start: 1000, end: 2000,label: '1000 - 2000人',color:'#9cd3f4'},
+			            {start: 500, end: 1000, label: '500 - 1000人',color:'#c7eefb'},//9cd3f4  #c7eefb			           
+			            {end: 500,label: '<500人',color:'#e1f4fc'}			            
+			        ],
+			    },
+			    roamController: {
+			        show: true,
+			        x: 'right',
+			        mapTypeControl: {
+			            'china': true
+			        }
+			    },
+			    series : [
+			        {
+			            name: '用户人数',
+			            type: 'map',
+			            mapType: 'china',
+			            roam: false,
+			            itemStyle:{
+			                normal:{
+			                    label:{
+			                        show:true,
+			                        textStyle: {
+			                        	color:"#333"
+			                        }
+			                    }
+			                },
+			                emphasis:{label:{show:true}}
+			            },
+			            data:[
+			            	{name: '广东',value: 8000},
+			            	{name: '湖南',value: 5020},
+			            	{name: '广西',value: 3560},
+			                {name: '江西',value: 2089},
+			                {name: '湖北',value: 3850},
+			                {name: '上海',value: 400},
+			                {name: '重庆',value: 580},
+			                {name: '河北',value: 1520},
+			                {name: '河南',value: 2100},
+			                {name: '云南',value: 5},
+			                {name: '辽宁',value: 305},
+			                {name: '黑龙江',value: 200},			               
+			                {name: '安徽',value: 789},
+			                {name: '山东',value: 25},
+			                {name: '新疆',value: 2},
+			                {name: '江苏',value: 1502},
+			                {name: '浙江',value: 12},			                
+			                {name: '北京',value: 10},
+			                {name: '天津',value: 200},
+			                {name: '甘肃',value: 5},
+			                {name: '山西',value: 0},			                
+			                {name: '陕西',value: 0},
+			                {name: '吉林',value: 0},
+			                {name: '福建',value: 0},
+			                {name: '贵州',value: 0},			                
+			                {name: '青海',value: 10},
+			                {name: '西藏',value: 8},
+			                {name: '四川',value: 860},
+			                {name: '宁夏',value: 8},
+			                {name: '海南',value: 8},
+			                {name: '内蒙古',value: Math.round(Math.random()*100)},
+			                {name: '台湾',value: Math.round(Math.random()*100)},
+			                {name: '香港',value: Math.round(Math.random()*100)},
+			                {name: '澳门',value: Math.round(Math.random()*100)}
+			            ]
+			        }
+			    ]
+			};
+             mapData.setOption(option);       
+		</script>
+	</body>
+</html>

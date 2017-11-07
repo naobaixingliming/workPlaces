@@ -1,0 +1,676 @@
+.input-box.input-box* {
+	padding: 0;
+	margin: 0;
+	font-family: "microsoft yahei";
+}
+
+i {
+	display: inline-block;
+	font-style: normal;
+}
+
+.w_1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header_new {
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	border-bottom: 1px solid #E9E9E9;
+	z-index: 1;
+}
+
+.titleIcon {
+	display: block;
+	width: 301px;
+	height: 32px;
+	padding-top: 10px;
+}
+
+.main_content {
+	width: 100%;
+	height: 550px;
+	background-color: #ec2544;
+}
+
+.lightPosition {
+	position: relative;
+}
+
+.left_page {
+	overflow: hidden;
+}
+
+.customerService {
+	position: absolute;
+	top: 32px;
+	right: -80px;
+	cursor: pointer;
+}
+
+.serviceIcon {
+	width: 51px;
+	height: 46px;
+	margin-left: 10px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/serviceHead201713.png) no-repeat;
+}
+
+.problem {
+	width: 68px;
+	height: 48px;
+	border: 1px solid #f9bf08;
+	background-color: #fff;
+	border-radius: 25px;
+	text-align: center;
+	font-weight: bold;
+	color: #895312;
+}
+
+.problem span {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.shine {
+	width: 1337px;
+	height: 541px;
+	position: absolute;
+	left: -280px;
+	top: 0;
+	pointer-events: none;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/Shine201713.png) no-repeat;
+}
+
+
+
+.clickJump {
+	/*width: 617px;
+	height: 411px;
+	display: inline-block;
+	margin: 120px 0 0 90px;*/	
+	width: 617px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 411px;
+    display: inline-block;
+}
+
+
+
+
+.right_page {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 350px;
+	height: 483px;
+	background-color: #fff;
+}
+
+.contain_box {
+	width: 306px;
+	margin: 0 auto;
+}
+
+.margin {
+	margin: 20px 0;
+	float: right;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.f44975 {
+	color: #f44975;
+}
+
+.borer_box {
+	width: 100%;
+	height: 240px;
+	border: 1px solid #eee;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.input-box {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	/*text-align: center;*/
+	height: 100%;
+	padding-left: 1em;
+}
+
+.commonIcon {
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.telInco {
+	width: 12px;
+	height: 13px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/passWord201713.png) no-repeat 0 0;
+}
+
+.passIcon {
+	width: 13px;
+	height: 16px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/passWord201713.png) no-repeat -14px 0;
+}
+
+.tel {
+	width: 100%;
+	height: 47px;
+	line-height: 47px;
+	border-bottom: 1px solid #eee;
+}
+
+.telNum {
+	margin-left: 12px;
+}
+
+.verificationCode {
+	width: 90px;
+	height: 34px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/verificationCode201713.jpg) no-repeat;
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.sms {
+	width: 100%;
+	height: 47px;
+}
+
+.sms_input {
+	width: 50%;
+}
+
+.smsNum {
+	line-height: 47px;
+}
+
+.smsCode {
+	color: #000;
+	float: right;
+	height: 44px;
+	line-height: 44px;
+	margin: 2px;
+	background-color: #e5e5e5;
+	padding: 0 13px;
+	cursor: pointer;
+}
+
+.freeRegistration {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	background-color: #F44975;
+	border-radius: 5px;
+	margin-bottom: 28px;
+	cursor: pointer;
+}
+
+.fontS_12 {
+	font-size: 12px;
+	text-align: center;
+}
+
+.agree {
+	margin: 28px 0;
+	/*cursor: pointer;*/
+}
+
+.login:hover,
+.useBar:hover,
+.privacyBar:hover {
+	text-decoration: underline;
+}
+
+.chose {
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	border-radius: 3px;
+	border: 1px solid #d2d2d2;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.check {
+	width: 12px;
+	height: 9px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/select201713.png);
+}
+
+
+/*登录页 2017-1-4 start*/
+
+.content-login {
+	width: 100%;
+	height: 549px;
+	min-width: 1200px;
+	/*background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/bg201714.jpg) center top;*/
+}
+
+.box-login {
+	height: 422px;
+	margin-top: 58px;
+}
+
+.line_block {
+	display: inline-block;
+}
+
+.leftPage-login {
+	float: left;
+	width: 620px;
+	height: 100%;
+	margin-left: 55px;
+}
+
+.title-login {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.personIcon {
+	margin-top: 20px;
+}
+
+.color_fff {
+	color: #fff;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.gatherAndWatch {
+	font-size: 20px;
+	text-decoration: underline;
+	padding-left: 430px;
+}
+
+.rightPage-login {
+	float: right;
+	width: 350px;
+	height: 100%;
+	background-color: #fff;
+}
+
+.none {
+	display: none;
+}
+
+.scanIcon {
+	width: 149px;
+	height: 27px;
+	line-height: 27px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/frame201714.png) no-repeat;
+}
+
+.scanIcon a {
+	color: #e19a00;
+	font-size: 12px;
+	margin-left: 40px;
+}
+
+.spritesIcon {
+	width: 55px;
+	height: 55px;
+}
+
+.windowIcon {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/scanCodeicon201714.png) no-repeat -63px 0;
+}
+
+.qrIcon {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/scanCodeicon201714.png) no-repeat -128px 0;
+}
+
+.QRcode {
+	width: 125px;
+	height: 125px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/QRcode201714.png) no-repeat;
+	margin: 43px auto 33px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.item-login {
+	margin-right: 6px;
+	margin-top: 8px;
+}
+
+.float-right {
+	float: right;
+}
+
+p.text-tel {
+	padding-left: 26px;
+}
+
+.scan {
+	width: 28px;
+	height: 26px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/scan201714.png) no-repeat;
+}
+
+.telWeixin {
+	padding-left: 55px;
+}
+
+.figure {
+	margin-top: 50px;
+	margin-right: 30px;
+}
+
+.pasLogin {
+	margin-right: 15px;
+}
+
+.pasLogin:hover,
+.freeRegist:hover,
+.forget:hover {
+	color: #F44975;
+	text-decoration: underline;
+}
+
+.color_333 {
+	color: #333;
+}
+
+.w_317 {
+	width: 317px;
+	margin: 0 auto;
+}
+
+.common-line {
+	width: 100%;
+	height: 48px;
+}
+
+.table-login {
+	width: 100%;
+	/*height: 96px;*/
+	border: 1px solid #dcdcdc;
+}
+
+.phone-number {
+	border-bottom: 1px solid #dcdcdc;
+	height: 47.5px;
+}
+
+.bg_eee {
+	background-color: #eee;
+	text-align: center;
+	width: 46px;
+	height: 46px;
+	margin: 1px 0 0 1px;
+	float: left;
+}
+
+.phoneIcon {
+	width: 25px;
+	height: 27px;
+	margin-top: 8px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/scanCodeicon201714.png) no-repeat 0 0;
+}
+
+.loginIcon {
+	width: 26px;
+	height: 32px;
+	margin-top: 6px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/scanCodeicon201714.png) no-repeat -28px 0;
+}
+
+.fontS_22 {
+	font-size: 22px;
+}
+
+.loginBtn {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
+	background-color: #f44975;
+	text-align: center;
+}
+
+.text-hint {
+	height: 100%;
+	line-height: 48px;
+	padding: 0 30px 0 20px;
+}
+
+.left-align {
+	text-align: left;
+	width: 50%;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.sample-source {
+	margin: 12px 0 15px 0;
+}
+
+.simple-margin {
+	margin: 21px 0;
+}
+
+.horizontal-line {
+	width: 95%;
+	height: 1px;
+	background-color: #e7e7e7;
+	margin: 35px auto 20px;
+}
+
+.color_234e9e {
+	color: #234e9e;
+}
+
+.oblique {
+	font-style: oblique;
+	text-align: center;
+}
+
+.normal {
+	font-style: normal;
+}
+
+.apiIcon {
+	width: 39px;
+	height: 20px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/api201714.jpg) no-repeat;
+	position: relative;
+	top: 5px;
+}
+
+
+/*登录页 2017-1-4 end*/
+
+
+/*新增 2017-2-8 start*/
+
+.common-hint {
+	width: 180px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/hintIcon201728.png) no-repeat;
+}
+
+
+.common-hint1{
+	width: 330px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/hintIcon2017222.png) no-repeat;
+}
+
+
+.tel-hint {
+	position: absolute;
+	right: 360px;
+	top: 100px;
+}
+
+.pass-hint {
+	position: absolute;
+	right: 360px;
+	top: 150px;
+}
+
+.surePass-hint {
+	position: absolute;
+	right: 360px;
+	top: 200px;
+}
+
+.verificationCode-hint {
+	position: absolute;
+	right: 360px;
+	top: 250px;
+}
+
+.sms-hint {
+	position: absolute;
+	right: 360px;
+	top: 300px;
+}
+
+.agree-hint {
+	position: absolute;
+	right: 360px;
+	top: 350px;
+}
+
+
+/*.common-hint{
+	width: 180px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/hintIcon201728.png) no-repeat;
+  }*/
+
+.tel-hint1 {
+	position: absolute;
+	top: 150px;
+	right: 360px;
+}
+
+.pass-hint1 {
+	position: absolute;
+	top: 200px;
+	right: 360px;
+}
+
+
+/*新增 2017-2-8 end*/
+
+
+/*<!--新增 2017-2-9 start-->*/
+
+#cover {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.common_state_focus {
+	display: none;
+	position: fixed;
+	width: 652px;
+	height: 50%;
+	background: #fff;
+	left: 30%;
+	border-radius: 5px;
+	top: 20%;
+	border: 1px solid #929292;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(255, 200, 200, .5);
+	-moz-transition: -moz-box-shadow linear .2s;
+	-webkit-transition: -webkit-box-shadow linear .2s;
+	transition: -webkit-box-shadow linear .2s;
+	z-index: 100;
+}
+
+.term {
+	height: 100%;
+	margin: 0 2px 0 20px;
+	padding-right: 10px;
+	overflow: auto;
+}
+
+.term h1 {
+	font-size: 24px;
+	color: #444;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.term h3 {
+	color: #444;
+	font-size: 16px;
+	padding: 7px 0;
+}
+
+.term p {
+	text-indent: 1.5em;
+	color: #444;
+	line-height: 20px;
+}
+
+.aui_close {
+	display: none;
+	position: fixed;
+	left: 29%;
+	top: 18%;
+	width: 34px;
+	height: 34px;
+	_font-size: 0;
+	_line-height: 0;
+	text-indent: -9999em;
+	background: url(https://www.newnewbank.com/artDialogImages/idialog/idialog_s.png) no-repeat;
+	background-position: 0 -60px;
+	z-index: 101;
+}

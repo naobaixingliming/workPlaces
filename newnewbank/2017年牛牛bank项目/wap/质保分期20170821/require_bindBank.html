@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/others/adapter.0.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>绑定银行卡</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link href="./css/libs/mui.picker.css" rel="stylesheet" />
+		<link href="./css/libs/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode bgColor_efeff4">			
+			<div class="register-item bgColor_fff">
+				<div class="mar-left-20 ">
+					<div class="flex-parent vertical_center h-110">
+						<i class="color_999 font_24 padding-left-20">银行</i>
+						<i class="flex-child mar-left-60 font_24 color_333" id="timeResult"></i>
+						<span id='showTimePicker'><i class="color_999 font_24 mar-right-20">请选择</i><i class="fa fa-angle-right color_999 font_30  mar-right-40"></i></span>
+					</div>
+					<p class="under_line mar-left-30"></p>
+					<div class="flex-parent vertical_center">
+						<input class="flex-child h-110 padding-left-20" type="text" name="" id="" placeholder="请输入本人储蓄卡卡号">
+						<i class="mar-right-60 color_999 fa fa-times-circle" ></i>
+					</div>
+					<p class="under_line mar-left-30"></p>					
+					<div class="flex-parent vertical_center">
+						<input class="flex-child h-110 padding-left-20" type="text" name="" id="" placeholder="请输入此卡在银行预留手机号码" />
+						<button class="font_24 color_fff mar-right-30 bgColor_32c190 send-ver-code">发送验证码</button>
+					</div>					
+				</div>
+				
+			</div>
+			<div class="text_center mar-top-70">					
+				<a class="_block margin_center w-80-pre" href="javascript:;">
+					<!--bgColor_33c191-->
+					<button class="bgColor_ccc h-80 w-100-pre color_fff font_30 all_center border-radius-5">下一步</button>
+				</a>
+			</div>
+		</div>
+		<!--<script src="js/plugins/fastclick.min.js"></script>
+		<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>				
+		<script src="js/plugins/mui.min.js"></script>
+		<script src="js/plugins/mui.picker.js"></script>
+		<script src="js/plugins/mui.poppicker.js"></script>
+		<script src="js/plugins/bank.data.js" type="text/javascript" charset="utf-8"></script>-->
+		
+		<script src="js/libs/require.js" data-main="js/common/main" data-path="bindBank" id="requirePath" ></script>
+		
+		<!--<script src="js/myDefine.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showTimePickerButton = doc.getElementById('showTimePicker');
+					var timeResult = doc.getElementById('timeResult');
+					showTimePickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							timeResult.innerText = items[1].text;
+						});
+					}, false);
+				});
+			})(mui, document);
+			$('#showTimePicker i:first-child').on('click',function(){
+				if(!$('#timeResult').text()){
+					$(this).hide();
+				}
+			});
+			if($('#timeResult').text()){
+				$('#showTimePicker i:first-child').hide();
+			}
+		</script>-->
+	</body>
+

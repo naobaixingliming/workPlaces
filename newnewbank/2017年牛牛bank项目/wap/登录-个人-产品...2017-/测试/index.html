@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>手势密码</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#gestureLogin{
+				width: 10rem;
+				min-height: 100vh;
+				position: relative;
+				background-color: #ed416d;
+			}
+			#gesturepwd{
+				width: 6.5625rem;
+				height: 6.5625rem;
+				margin: 0 auto;
+			}
+			.main-c{
+				/*width: 10rem;
+				height: 10rem;*/
+				
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="gestureLogin">
+			
+			<!--正确的密码是一个字母“Z”的形状哦！-->
+			<div id="gesturepwd"></div>
+			
+			
+		</div>
+		
+
+	</body>
+	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.gesture.password.js"></script>
+	<script>
+		let width=$('#gesturepwd').width();
+		let height=$('#gesturepwd').height();
+		$("#gesturepwd").GesturePasswd({
+			backgroundColor: "#ed416d", //背景色
+			color: "#FFFFFF", //主要的控件颜色
+			roundRadii: 25, //大圆点的半径
+			pointRadii: 6, //大圆点被选中时显示的圆心的半径
+			space: 35, //大圆点之间的间隙
+			width: width, //整个组件的宽度
+			height: height, //整个组件的高度
+			lineColor: "#00aec7", //用户划出线条的颜色
+			zindex: 100 //整个组件的css z-index属性
+		});
+		$("#gesturepwd").on("hasPasswd", function(e, passwd) {
+			var result;
+			if(passwd == "1235789") {
+				result = true;
+			} else {
+				result = false;
+			}
+			if(result == true) {
+				$("#gesturepwd").trigger("passwdRight");
+				setTimeout(function() {
+					//密码验证正确后的其他操作，打开新的页面等。。。
+					alert("密码正确！")
+				}, 500); //延迟半秒以照顾视觉效果
+			} else {
+				$("#gesturepwd").trigger("passwdWrong");
+
+				//密码验证错误后的其他操作。。。
+
+			}
+		});
+	</script>
+
+</html>

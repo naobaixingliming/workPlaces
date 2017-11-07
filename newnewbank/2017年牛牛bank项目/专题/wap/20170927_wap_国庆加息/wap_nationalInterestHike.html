@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="wap-font-scale" content="no">
+		<script type="text/javascript" charset="utf-8" src="js/adapter.0.6.4.min.js"></script>
+		<title>国庆加息</title>
+		<link rel="stylesheet" type="text/css" href="css/wap_nationalInterestHike.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode relative">
+			<!--popup start-->
+			<div class="box-parent none">
+				<div class="cover "></div>
+				<div class="text_center box-popup ">
+					<i class="deleteBtn "></i>
+					<div class="popBox text_center" >
+						<p class="color_de4557 font_24" style="padding: 1.625rem 0 0.25rem;">恭喜成功领取到加息劵</p>
+						<p class="color_de4557 font_40 bold">+0.8%</p>
+						<a class="color_f4c656 font_24 all_center margin_center investUserBtn" href="javascript:;">投资使用</a>
+						<a class="float_right color_f4c656 font_24" style="margin-right:0.5rem ;" href="javascript:;"> 查看> </a>
+					</div>
+				</div>
+			</div>
+			<!--popup end-->
+			<i class="showBox"></i>
+			<header class="relative"></header>
+			<section class="relative">
+				<div class="mainImg">
+					<p class="float_left color_d63d35  text_center font_36 padding-top-110" style="padding-top: 2.8rem;padding-left: 2.8rem;">
+						<i style="margin-right: 0.4rem;">+</i><i class="bold font_46 arial" style="margin-right: 0.4rem;">0.8</i><i >%</i>
+					</p>
+					<div class="float_right w-280 text_center ">
+						<div class="state-1 " style="padding-top: 1.3rem;">
+							<p class="color_920d10 font_24">限投金额 (元)</p>
+							<p class="color_920d10  font_28">≤10,000元</p>
+							<a class="color_920d10 font_24 all_center margin_center getIn" href="javascript:;">立即领券</a>
+						</div>
+						<div class="state-2 none" style="padding-top: 1rem;">
+							<p class=" text_center"><i class="getIocn"></i></p>
+							<a class="color_920d10 font_24 all_center margin_center getInvest" href="javascript:;" style="margin-top: 0.1rem;">立即投资</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="relative">
+				<p class="text_center"><i class="ruleIcon"></i></p>
+				<p class="font_24 color_edb361" style="margin-left: 0.9rem;line-height: 0.9rem;">
+					1. 活动时间：2017年10月1日-10月8日</br>
+					2. 活动期间内，每名用户可以领取1张加息券</br>
+					3. 加息券需在活动期间内领取并使用，加息限额1万元</br>
+					4. 投资30天及以上产品可使用加息券，债权转让标不可使用</br>
+					5. 本活动最终解释权归牛牛bank所有
+				</p>
+			</div>
+			<footer class="relative"></footer>
+		</div>
+		<script src="js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.7.js"></script>
+		<script type="text/javascript">
+			if('addEventListener' in document) {
+				document.addEventListener('DOMContentLoaded', function() {
+					FastClick.attach(document.body);
+				}, false);
+			}
+
+			$('.deleteBtn').on('click', function() {
+				$(this).parents('.box-parent').hide();
+			});
+			$('.getIn').on('click', function() {
+				$('.box-parent').show();
+			})
+		</script>
+	</body>
+
+</html>

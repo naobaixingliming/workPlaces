@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/confirmDeparture.css"/>
+		<title>确认出发</title>		
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  1  start-->
+			<div class="popup bombBox">
+				<p class="notice">是否成功与乘客汇合，确定出发</p>
+				<p class="wait">确认出发</p>
+			</div>
+			<!--弹框  1  end-->
+			<div class="header">
+				<div class="headerText">
+					<p>您好，周司机  18018018000</p>
+					<!--<span class="editIcon"></span>-->
+				</div>
+				<div class="headRed">
+					<p class="fontS_24">您已申请的行程如下</p>
+					<div class="trip">
+						<span></span>
+						<div class="date">
+							<p>2017/01/23-25日</p>
+							<p class="rectangularLine"></p>
+							<p>行程待确定</p>
+						</div>
+						<span></span>
+					</div>
+					<div class="place">
+						<div class="placeText placeText1">
+							<p>广东省深圳市</p>
+							<p>南山区</p>
+						</div>
+						<div class="placeText placeText2">
+							<p>江西省九江市</p>
+							<p>湖口县</p>							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clickBtn">						
+						<p class="comBtn uploadBtn">上传出发合照</p>
+						<p class="comBtn sureGo">确认出发</p>
+						<!--增加    class="confirmIcon"--显示-->
+						<p ></p>
+					</div>				
+				</div>			
+			</div>
+			
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">完善乘车人信息</span>
+					<span class="arrow arrowUp"></span>
+				</p>
+				<div class="toggle">
+					<div class="lineOfInfo">
+						<span class="passenger passenger1">乘客</span>
+						<span class="passInfo">王**&nbsp;&nbsp;&nbsp;15000001111</span>
+						<span class="certified">已认证  （2人）</span>
+						<span class="whether confirm">已确认</span>
+					</div>
+					<div class="lineOfInfo">
+						<span class="passenger passenger1">乘客</span>
+						<span class="passInfo">王**&nbsp;&nbsp;&nbsp;13299998888</span>
+						<span class="certified">已认证  </span>
+						<span class="whether confirm">已确认</span>
+					</div>
+					<div class="lineOfInfo">
+						<span class="passenger passenger2">乘客</span>
+						<span class="passInfo">周**&nbsp;&nbsp;&nbsp;15188886666</span>
+						<span class="certified">已认证  </span>
+						<span class="whether toBeSure">待确认</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				//确认出发--弹框
+				$('.clickBtn').delegate('.sureGoBtn','click',function(){
+					$('#cover,.bombBox').css('display','block');
+				});		
+				//点击覆盖层和确认出发按钮事件--弹框消失
+				$('#cover,.wait').on('click',function(){
+					$('#cover,.popup').css('display','none');
+				});
+				//箭头--显示与隐藏事件
+				$('.arrow').on('click',function(){
+					$(this).toggleClass('arrowLeft');
+					$(this).toggleClass('arrowUp');
+					$('.toggle').slideToggle('slow');
+				});
+			})();
+		</script>
+	</body>
+</html>

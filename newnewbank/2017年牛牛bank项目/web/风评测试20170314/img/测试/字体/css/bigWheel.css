@@ -1,0 +1,369 @@
+/*-----------------------------------------------------------------------------------------------------------*/
+/* 01 - Main */
+/*-----------------------------------------------------------------------------------------------------------*/
+
+html{
+	font-size: 62.5%;	
+}
+body{
+	height: auto;
+	background-color: #cc0017;
+}
+section{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	text-align: center;
+}
+/*--------------------------------------------------------------------------------------------*/
+/* 02 - header */
+/*--------------------------------------------------------------------------------------------*/
+#header{
+	height: auto;
+	position: relative;
+}
+#header .bg{
+	width: 100%;
+}
+#header .yun1{
+	position: absolute;
+	top: 75%;
+	right: 5%;
+	width: 30%;
+}
+#header .yun2{
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	width: 25%;
+}
+#header .yun3{
+	position: absolute;
+	top: 85%;
+	left: 45%;
+	width: 28%;
+}
+#introduce{
+	position: absolute;
+	top: 27%;
+	left: 8.3%;
+	font-size: 0.6rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	width: 0.5rem;
+	color: #910001;
+}
+#header p{
+	width: 100%;
+	position: absolute;
+	bottom: 2.7rem;
+	text-align: center;
+	color: #FF7F00;
+}
+#header p label{
+	color: yellow;
+}
+#header audio{
+	display: none;	
+}
+.audio{
+	position: fixed;
+	top: 0.5rem;
+	right: 0.5rem;
+	width: 10%;
+	z-index: 999;
+}
+@-webkit-keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+
+.rotation{
+	-webkit-transform: rotate(360deg);
+	animation: rotation 5s linear infinite;
+	-moz-animation: rotation 5s linear infinite;
+	-webkit-animation: rotation 5s linear infinite;
+	-ms-animation: rotation 5s linear infinite;
+}
+/*--------------------------------------------------------------------------------------------*/
+/* 02 - body */
+/*--------------------------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}
+
+p,li,b,span,div,strong,h1,h2,h3,h4,h5,h6,a,ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.box .outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.box .outer img{
+    width: 100%;
+}
+
+.box .inner{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-image: url(../img/lotteryBtn.png);
+    background-size: auto 5rem;
+    background-repeat: no-repeat;
+}
+.box .inner.start:active{
+
+    -webkit-transform: translate(-50%, -50%) scale(.95);
+    -moz-transform: translate(-50%, -50%) scale(.95);
+    -ms-transform: translate(-50%, -50%) scale(.95);
+    -o-transform: translate(-50%, -50%) scale(.95);
+    transform: translate(-50%, -50%) scale(.95);
+}
+
+.box .inner.start{
+    background-position: 0 0;
+}
+.box .inner.no-start{
+    background-position: -4.95rem 0;
+}
+.box .inner.completed{
+    background-position: -9.85rem 0;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 03 -  winners*/
+/*--------------------------------------------------------------------------------------------*/
+
+#winners{
+	margin-top: 1rem;	
+}
+#winners .container img{
+	width: 95%;
+	margin: 0;
+}
+.winner{
+	text-align: center;
+	position: relative;
+	margin-bottom: 1rem;
+}
+#bobao{overflow:hidden; height:6rem; position: absolute; top: 1.9rem; left: 0; right: 0; text-align: center;}
+.abox{display: -webkit-box;font-size: 0.7rem;line-height: 1.2rem; width: 60%; margin: 0 auto;}
+.abox .iphone{-webkit-box-flex: 1;}
+.abox .flow{color: yellow;-webkit-box-flex: 1;}
+.abox .time{-webkit-box-flex: 1;text-align: right;}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 04 -  winners*/
+/*--------------------------------------------------------------------------------------------*/
+
+#record{
+	font-size: 0;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#record img{
+	width: 80%;
+}
+.rocordText{
+	height: 300px;
+	background-color: #b80604;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 05 -  footer*/
+/*--------------------------------------------------------------------------------------------*/
+
+#footer .container{
+	font-size: 0;
+}
+#footer .container img{
+	width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 0x -  alert*/
+/*--------------------------------------------------------------------------------------------*/
+
+#alert{
+	display: none;	
+	position: relative;
+}
+.mask{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+	font-size: 0;
+}
+.alertBg{
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 05 -  share*/
+/*--------------------------------------------------------------------------------------------*/
+
+#share{
+	display: none;
+}
+.div1,.div2,.div3{
+	width: 100%;
+}
+.div1{	
+	margin-top: 0.5rem;
+}
+.div1 img{
+	width: 18%;
+	float: right;
+	margin-right: 2rem;
+}
+.div2{
+	clear: both;
+	padding-top: 2rem;
+}
+.div2 span{
+	font-size: 1.1rem;
+	font-family:'minijianyaya81c028793174e9';
+	color: #FFFFFF;
+}
+.div3 img{
+	width: 30%;
+	margin-top: 1.5rem;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 06 -  introducePage*/
+/*--------------------------------------------------------------------------------------------*/
+#introducePage{
+	display: none;
+}
+.introBg{
+	background: url(../img/introBg.png) top no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.introBg hr{
+	width: 70%;
+	border-color: #F4C320;
+}
+.iKonw{
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+.iKonw img{
+	width: 35%;
+}
+#text{
+	width: 100%;
+	position: absolute;
+	top: 17%;
+	font-size: 0.7rem;
+	text-align: center;
+	font-weight: bold;
+	font-family: "楷体" !important;
+}
+#text span label{
+	display: inline-block;
+	float: left;
+}
+#text span {
+	display: inline-block;
+	width: 70%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: left;
+}
+.introTitle{
+	color: #FFFFFF;
+	font-size: 1rem; 
+}
+.more span{
+	width: calc(100% - 1.4rem) !important;
+}

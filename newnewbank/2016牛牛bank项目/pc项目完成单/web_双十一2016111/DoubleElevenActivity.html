@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>劵从天降 high爆双十一</title>
+		<link rel="stylesheet" type="text/css" href="css/doubleElevenActivity.css" />
+	</head>
+
+	<body>
+		<div id="all">
+			<!--背景覆盖 -->
+			<div id="cover"></div>
+			<div id="coverTop"></div>
+			<!--弹框 1  start-->
+			<div class="popup_1">
+				<p>本次红包
+					<a>已停雨</a>
+				</p>
+				<p class="message">据可靠消息，下一场雨即将来临，不要错过哦！</p>
+				<div class="startTime">
+					<!--05小时00分00秒后继续-->
+				</div>
+			</div>
+			<!--弹框 1  end-->
+			<!--弹框 2 -红包 start-->
+			<div class="popup_2">
+				<a class="delete"></a>
+				<div class="mainIcon">
+					<p class="money">￥
+						<a>10</a>
+					</p>
+					<p class="cashBonus">现金红包</p>
+					<p class="look">已放入您的余额，可去账户查看！</p>
+				</div>
+				<p class="fcc707">投资金额越高，开启红包金额越大哦！</p>
+				<div class="investmentBtn">立即投资</div>
+			</div>
+			<!--弹框 2 -红包 end-->
+			<!--弹框 3  红包 雨  倒计时  start-->
+			<div class="popup_3">
+				<p class="countDown">牛牛bank
+					<a>红包雨</a>倒计时</p>
+				<p class="grabRed">“ 快喊小伙伴们一起来抢红包“</p>
+				<div class="number go"></div>
+				<div class="number one"></div>
+				<div class="number two"></div>
+				<div class="number three"></div>
+			</div>
+			<!--弹框 3 红包 雨  倒计时  end-->
+			<!--弹框 4  红包 雨 -加息劵start-->
+			<div class="popup_4">
+				<a class="delete"></a>
+				<div class="mainIcon">
+					<p class="money">￥
+						<a>10</a>
+					</p>
+					<p class="cashBonus">现金券</p>
+					<p class="look">已放入您的账户，快体验投资吧！</p>
+				</div>
+				<p class="fcc707">您可以在“我的资产”-“我的优惠券”中</p>
+				<p class="fcc707">查看加息券使用详情</p>
+				<div class="investmentBtn">立即投资</div>
+			</div>
+			<!--弹框4  红包 雨 -加息劵 end-->
+			<!--弹框 5  红包 雨 -现金劵start-->
+			<div class="popup_5">
+				<a class="delete"></a>
+				<div class="mainIcon">
+					<p class="money">
+						<a>0.1</a>%</p>
+					<p class="cashBonus">加息劵</p>
+					<p class="look">已放入您的账户，快体验投资吧！</p>
+				</div>
+				<p class="fcc707">您可以在“我的资产”-“我的优惠券”中</p>
+				<p class="fcc707">查看加息券使用详情</p>
+				<div class="investmentBtn">立即投资</div>
+			</div>
+			<!--弹框5  红包 雨 -现金劵 end-->
+			<!--弹框 6 -红包 雨  未抢到start-->
+			<div class="popup_6">
+				<!--<a class="delete"></a>-->
+				<div class="mainIcon6">
+					<p class="look">您与红包只有一步之遥，再接再厉</p>
+				</div>
+				<p class="fcc707">距离本轮红包雨结束还有
+					<a class="getVal">20</a>秒</p>
+				<div class="investmentBtn">继续抢</div>
+			</div>
+			<!--弹框 6 -红包 雨 未抢到 end-->
+			<!--弹框 6 -红包 雨  start-->
+			<div class="popup_7 content-ing">
+				<div class="textBox">
+					<div class="end">
+						<a>
+							<a class="countdown60">60</a>秒</a>后结束
+					</div>
+					<p class="drop">一大波红包雨正在落下</p>
+					<p class="jabbed">“ 猛戳屏幕抢红包吧“</p>
+					<div class="canvas"></div>
+				</div>
+			</div>
+			<!--弹框 6 -红包 雨 end-->
+
+			<!--1200宽主体内容 start -->
+			<div class="content_w1200">
+				<!--头部图片   start-->
+				<div class="headIcon"></div>
+				<!--头部图片  end-->
+
+				<!--红包袋   start-->
+				<div class="redBag">
+					<div class="jump">
+						<a>登录 </a>
+						<a> | </a>
+						<a>注册</a>&nbsp;抢红包快人一步
+					</div>
+					<div class="time">
+						<span id="hour">05</span>
+						<span id="minute">00</span>
+						<span id="second">30</span>
+					</div>
+				</div>
+				<!--红包袋  end-->
+
+				<!--中间文字   start-->
+				<div class="textMiddle">
+					<p>投资满额，开启双十一红包</p>
+					<p>汇集洪荒之力，开启双11现金红包</p>
+				</div>
+				<!--中间文字  end-->
+
+				<!--红包开启   start-->
+				<div class="redPackets">
+					<!--单个红包 start-->
+					<div class="OneBox ">
+						<!--上部图片 start-->
+						<div class="topIcon">
+							<p class="oneMoeny">开启，请先
+								<a>登录</a>
+							</p>
+							<p class="once" style="display: none;">可开启
+								<a>1</a>
+								<a>次</a>
+							</p>
+							<p class="zero" style="display: none;">可开启
+								<a>0</a>
+								<a>次</a>\</p>
+						</div>
+						<!--上部图片 end-->
+						<!--下部图片 start-->
+						<div class="bottomIcon shadow ">
+							<div class="luminescenceBackground"></div>
+							<p class="start">开启</p>
+							<p class="investmentText">单笔投资满1万</p>
+						</div>
+						<!--下部图片 end-->
+					</div>
+					<!--单个红包 end-->
+					<!--单个红包 start-->
+					<div class="OneBox ">
+						<!--上部图片 start-->
+						<div class="topIcon">
+							<p class="fiveMoeny">开启，请先
+								<a>登录</a>
+							</p>
+							<p class="once">可开启
+								<a>1</a>
+								<a>次</a>
+							</p>
+							<p class="zero" style="display: none;">可开启
+								<a>0</a>
+								<a>次</a>
+							</p>
+						</div>
+						<!--上部图片 end-->
+						<!--下部图片 start-->
+						<div class="bottomIcon shadow ">
+							<div class="luminescenceBackground" style="display: block;"></div>
+							<p class="start">开启</p>
+							<p class="investmentText">单笔投资满5万</p>
+						</div>
+						<!--下部图片 end-->
+					</div>
+					<!--单个红包 end-->
+					<!--单个红包 start-->
+					<div class="OneBox ">
+						<!--上部图片 start-->
+						<div class="topIcon">
+							<p class="tenMoeny">开启，请先
+								<a>登录</a>
+							</p>
+							<p class="once" style="display: none;">可开启
+								<a>1</a>
+								<a>次</a>
+							</p>
+							<p class="zero">可开启
+								<a>0</a>
+								<a>次</a>
+							</p>
+						</div>
+						<!--上部图片 end-->
+						<!--下部图片 start-->
+						<div class="bottomIcon shadow ">
+							<div class="luminescenceBackground"></div>
+							<p class="start">开启</p>
+							<p class="investmentText">单笔投资满10万</p>
+						</div>
+						<!--下部图片 end-->
+					</div>
+					<!--单个红包 end-->
+					<div style="height:0 ; clear: both;"></div>
+				</div>
+				<!--红包开启 end-->
+
+				<div class="investmentButton">
+					<p>投资拿红包</p>
+				</div>
+				<div class="textDescription">
+					<p> 活动细则</p>
+					<p>（1） 活动时间：2016年11月9日-11月11日</p>
+					<p>（2） 活动期间，单笔投资90天及以上产品(不含维修宝)满1万、5万、10万可以开启一个双11现金红包；</p>
+					<p>（3） 不同级别的红包金额不相同，投资金额越高，开启红包的金额越大；</p>
+					<p>（4） 多次投资满额，可以开启多个双11红包。</p>
+					<p>（5） 红包金额直接发放到您在牛牛bank账户余额中。</p>
+				</div>
+
+				<div class="longText">
+					<p>投资更长期，红包更丰厚</p>
+					<p>累计投资“维修宝”满2万元，送
+						<a>88.88元</a>现金红包</p>
+				</div>
+
+				<div class="containBox">
+					<div class="getText">
+						您好,王圆圆，恭喜您获得
+						<a>2个</a>现金红包
+					</div>
+					<div class="redCashCoupon">
+						<div class="moneyEight">￥88.88</div>
+						<div class="receive">领取</div>
+						<div class="cashEnvelopes">现金红包</div>
+					</div>
+
+					<div class="from50">
+						<div class="black">维修宝第90期
+							<a class="color999">恒顺名车项目</a>
+						</div>
+						<div class="flex">
+							<div class="flex1">
+								<p>
+									<a>12</a>%</p>
+								<p class="color999">年化收益率</p>
+							</div>
+							<div class="flex2">
+								<p>360天</p>
+								<p class="color999">项目期限</p>
+							</div>
+							<div class="flex3">
+								<p>200万元</p>
+								<p class="color999">融资金额</p>
+							</div>
+						</div>
+						<div id="pageWrap">
+							<div class="meter red">
+								<span style="width: 78.45%"></span>
+								<a class="barVal">78.45%</a>
+							</div>
+						</div>
+						<div class="buy">立即购买</div>
+					</div>
+
+				</div>
+
+				<div class="ruleText">
+					<p> 红包领取规则</p>
+					<p>（1）活动时间：2016年11月9日-11月11日</p>
+					<p>（2）活动期间，投资“维修宝”一年期产品，每累计满2万元，即可获得88.88的现金红包一个；</p>
+					<p>（3）投资的产品必须为“维修宝”一年期产品，才可获得奖励其它产品不参与此活动；</p>
+					<p>（4）红包金额直接发放到您在牛牛bank的账户余额；</p>
+					<p>（5）产品额度有限，先投先得，多投多得。</p>
+				</div>
+				<div class="footerText">
+					<p>© 2015牛牛bank All Rights Reserved</p>
+					<p>活动最终解释权归深圳市金牛牛互联网金融服务有限公司所有</p>
+				</div>
+			</div>
+			<!--1200宽主体内容 end -->
+		</div>
+
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {
+				var acView = {
+					//初始化
+					init: function() {
+						this.bindEvent();
+						this.progressBar();
+					},
+					//事件绑定
+					bindEvent: function() {
+						//开启点击-红包弹框事件
+						$('.start,.receive').on('click', function() {
+							$('#cover,.popup_2').css('display', 'block');
+						});
+						//开启点击-红包弹框事件-删除按钮
+						$('.delete').on('click', function() {
+							$('#cover').css('display', 'none');
+							$(this).parent('div').css('display', 'none');
+						});
+						//开启点击-红包弹框事件-立即投资按钮
+						$('.popup_2 .investmentBtn,.popup_4 .investmentBtn,.popup_5 .investmentBtn').on('click', function() {
+							location.href = "http://wap.newnewbank.com/index.html";
+						});
+						//投资拿红包事件
+						$('.investmentButton').on('click', function() {
+							location.href = "#";
+						});
+						//立即购买 事件
+						$('.buy').on('click', function() {
+							location.href = "#";
+						});
+						
+						var current=new Date();
+						var year=current.getFullYear();
+						var month=current.getMonth()+1;
+						var day=current.getDate();
+						var hour=current.getHours();
+						var minutes=current.getMinutes();
+						var second=current.getSeconds();
+						if(year==2016&&month==11&&day<9){
+							acView.tenCountDown();
+						}else if(year==2016&&month==11&&day==9&&hour<10){
+							acView.tenCountDown();
+						}else if(year==2016&&month==11&&day==9&&hour>=10&&hour<15){	
+//							if(minutes<1&&hour==10){
+							if(minutes<1){
+								acView.redRain();
+								setInterval(function() {
+									$('.startTime').html($('#hour').text() + '小时' + $('#minute').text() + '分' + $('#second').text() + '秒后继续');
+								}, 1000);
+							}
+							acView.fifteenCountDown();						
+						}else if( (year==2016&&month==11&&day==10&&hour<10)||(day==9&&hour>=15)){
+//							if(minutes<1&&hour==15){
+							if(minutes<1&&hour==15){
+								acView.redRain();
+								setInterval(function() {
+									$('.startTime').html($('#hour').text() + '小时' + $('#minute').text() + '分' + $('#second').text() + '秒后继续');
+								}, 1000);
+							}
+							acView.nextTenCountDown10();
+						}else if(year==2016&&month==11&&day==10&&hour>=10&&hour<15){
+//							if(minutes<1&&hour==10){
+							if(minutes<1&&hour==10){
+								acView.redRain();
+								setInterval(function() {
+									$('.startTime').html($('#hour').text() + '小时' + $('#minute').text() + '分' + $('#second').text() + '秒后继续');
+								}, 1000);
+							}
+							acView.fifteenCountDown10();						
+						}else if((year==2016&&month==11&&day==11&&hour<10)||(day==10&&hour>=15)){
+							if(minutes<1&&hour==15){
+								acView.redRain();
+								setInterval(function() {
+									$('.startTime').html($('#hour').text() + '小时' + $('#minute').text() + '分' + $('#second').text() + '秒后继续');
+								}, 1000);
+							}
+							acView.tenCountDown11();
+						}else if(year==2016&&month==11&&day==11&&hour>=10&&hour<=15){
+							if(minutes<1&&(hour==10||hour==15)){
+								acView.redRain();
+								setInterval(function() {
+									$('.startTime').html($('#hour').text() + '小时' + $('#minute').text() + '分' + $('#second').text() + '秒后继续');
+								}, 1000);
+							}
+							acView.fifteenCountDown11();
+						}
+					},						
+
+					//倒计时弹框
+					countDown: function() {
+							//红包雨倒计时弹框事件
+							$('#cover,.popup_3').css('display', 'block');
+							//红包雨倒计时弹框-倒数计时3 2 1
+							setTimeout(function() {
+								$('.go').css('display', 'none');
+								$('.three').css('display', 'block');
+							}, 1000);
+							setTimeout(function() {
+								$('.three').css('display', 'none');
+								$('.two').css('display', 'block');
+							}, 2000);
+							setTimeout(function() {
+								$('.two').css('display', 'none');
+								$('.one').css('display', 'block');
+							}, 3000);
+							setTimeout(function() {
+								$('.one').css('display', 'none');
+								acView.redRain();
+							}, 4000);	
+						},
+
+					//11-9 上午10点倒计时---2016-11-8
+					tenCountDown: function() {
+						//倒计时事件
+						var pauseTime = setInterval(function() {
+							var EndTime = new Date('2016/11/9 10:00:00'); //截止时间 
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							if(s.toString().length < 2) {
+								s = "0" + s;
+							} else {
+								s = s;
+							}
+							if(m.toString().length < 2) {
+								m = "0" + m;
+							} else {
+								m = m;
+							}
+							if(h.toString().length < 2) {
+								h = "0" + h;
+							} else {
+								h = h;
+							}
+							document.getElementById("hour").innerHTML = h;
+							document.getElementById("minute").innerHTML = m;
+							document.getElementById("second").innerHTML = s;
+							if($('#hour').text()=="00"&&$('#minute').text()=="00"&&$('#second').text()=="00") {
+								clearInterval(pauseTime);
+								//下午15点倒计时---2016-11-7
+								acView.fifteenCountDown();
+								setInterval(function() {
+									$('.startTime').html($('#hour').text() + '小时' + $('#minute').text() + '分' + $('#second').text() + '秒后继续');
+								}, 1000);
+								acView.countDown();
+							}
+						}, 1000);
+					},
+
+					//11-9 下午15点倒计时---2016-11-8
+					fifteenCountDown: function() {
+						var pauseTime1 = setInterval(function() {
+							var EndTime = new Date('2016/11/9 15:00:00'); //截止时间 
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							if(s.toString().length < 2) {
+								s = "0" + s;
+							} else {
+								s = s;
+							}
+							if(m.toString().length < 2) {
+								m = "0" + m;
+							} else {
+								m = m;
+							}
+							if(h.toString().length < 2) {
+								h = "0" + h;
+							} else {
+								h = h;
+							}
+							document.getElementById("hour").innerHTML = h;
+							document.getElementById("minute").innerHTML = m;
+							document.getElementById("second").innerHTML = s;
+							if($('#hour').text()=="00"&&$('#minute').text()=="00"&&$('#second').text()=="00") {
+								clearInterval(pauseTime1);
+								acView.countDown();
+								//11-10 上午10点倒计时									
+								acView.nextTenCountDown10();
+							}
+						}, 1000);
+					},
+
+					//11-10 上午10点倒计时---2016-11-8
+					nextTenCountDown10: function() {
+						var pauseTime2 = setInterval(function() {
+							var EndTime = new Date('2016/11/10 10:00:00'); //截止时间 
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							if(s.toString().length < 2) {
+								s = "0" + s;
+							} else {
+								s = s;
+							}
+							if(m.toString().length < 2) {
+								m = "0" + m;
+							} else {
+								m = m;
+							}
+							if(h.toString().length < 2) {
+								h = "0" + h;
+							} else {
+								h = h;
+							}
+							document.getElementById("hour").innerHTML = h;
+							document.getElementById("minute").innerHTML = m;
+							document.getElementById("second").innerHTML = s;
+							if($('#hour').text()=="00"&&$('#minute').text()=="00"&&$('#second').text()=="00") {
+								clearInterval(pauseTime2);
+								acView.countDown();
+								//11-10 下午15点倒计时									
+								acView.fifteenCountDown10();
+							}
+						}, 1000);
+					},
+					//11-10 下午15点倒计时---2016-11-8
+					fifteenCountDown10: function() {
+						var pauseTime3 = setInterval(function() {
+							var EndTime = new Date('2016/11/10 15:00:00'); //截止时间 
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							if(s.toString().length < 2) {
+								s = "0" + s;
+							} else {
+								s = s;
+							}
+							if(m.toString().length < 2) {
+								m = "0" + m;
+							} else {
+								m = m;
+							}
+							if(h.toString().length < 2) {
+								h = "0" + h;
+							} else {
+								h = h;
+							}
+							document.getElementById("hour").innerHTML = h;
+							document.getElementById("minute").innerHTML = m;
+							document.getElementById("second").innerHTML = s;
+							if($('#hour').text()=="00"&&$('#minute').text()=="00"&&$('#second').text()=="00") {
+								clearInterval(pauseTime3);
+								acView.countDown();
+								//11-11 上午10点倒计时									
+								acView.tenCountDown11();
+							}
+						}, 1000);
+					},
+					//11-11 上午10点倒计时---2016-11-8
+					tenCountDown11: function() {
+						var pauseTime4 = setInterval(function() {
+							var EndTime = new Date('2016/11/11 10:00:00'); //截止时间 
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							if(s.toString().length < 2) {
+								s = "0" + s;
+							} else {
+								s = s;
+							}
+							if(m.toString().length < 2) {
+								m = "0" + m;
+							} else {
+								m = m;
+							}
+							if(h.toString().length < 2) {
+								h = "0" + h;
+							} else {
+								h = h;
+							}
+							document.getElementById("hour").innerHTML = h;
+							document.getElementById("minute").innerHTML = m;
+							document.getElementById("second").innerHTML = s;
+							if($('#hour').text()=="00"&&$('#minute').text()=="00"&&$('#second').text()=="00") {
+								clearInterval(pauseTime4);
+								acView.countDown();
+								//上午10点倒计时									
+								acView.fifteenCountDown11();
+							}
+						}, 1000);
+					},
+					//11-11下午15点倒计时---2016-11-8
+					fifteenCountDown11: function() {
+						var pauseTime5 = setInterval(function() {
+							var EndTime = new Date('2016/11/11 15:00:00'); //截止时间 
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var NowTime = new Date();
+							var t = EndTime.getTime() - NowTime.getTime();
+							var h = Math.floor(t / 1000 / 60 / 60 % 24);
+							var m = Math.floor(t / 1000 / 60 % 60);
+							var s = Math.floor(t / 1000 % 60);
+							if(s.toString().length < 2) {
+								s = "0" + s;
+							} else {
+								s = s;
+							}
+							if(m.toString().length < 2) {
+								m = "0" + m;
+							} else {
+								m = m;
+							}
+							if(h.toString().length < 2) {
+								h = "0" + h;
+							} else {
+								h = h;
+							}
+							document.getElementById("hour").innerHTML = h;
+							document.getElementById("minute").innerHTML = m;
+							document.getElementById("second").innerHTML = s;
+							if($('#hour').text()=="00"&&$('#minute').text()=="00"&&$('#second').text()=="00") {
+								clearInterval(pauseTime5);
+								acView.countDown();
+							}
+						}, 1000);
+					},
+
+					//红包雨倒计时弹框-倒数计时3 2 1--红包雨开始
+					redRain: function() {
+						$('.popup_7,#cover').css('display', 'block');
+						$('.popup_3').css('display', 'none');
+						acView.brushRed();
+					},					
+					//抢红包
+					brushRed: function() {
+						'use strict';
+						init();
+						function init() {
+							// 倒计时
+							countdown(0, 'nozero', function() {
+								$('.content-ing').fadeIn();
+								// 抢红包
+								var windowWidth = $(window).width(),
+									windowHeight = $(window).height();
+								var $canvas = $('.canvas');
+								$canvas.css({
+									height: windowHeight
+								});
+								// 添加红包--2016-11-7
+								setInterval(function() {
+									var $item = $('<div class="item">');
+									$item.css({
+										'left': Math.random() * windowWidth-500
+									});
+									$canvas.append($item);
+								}, 10);
+								// 红包动画 定时执行
+								var idx = 0;
+								var moveTimer = setInterval(function() {
+									moveHandler(idx);
+									idx++;
+									if(idx == 6000) {
+										idx = 0;
+									}
+								}, 1000);
+								// 倒计时
+//								var current=new Date();
+//								var second=current.getSeconds();
+								countdown(59, function() {
+									clearInterval(moveTimer);
+								});
+							});
+							// 事件
+							bindEvents();
+						}
+
+						function bindEvents() {
+							setInterval(function() {
+									$('.getVal').text($('.countdown60').text()).text();
+							}, 1000);
+							// 红包被点击--弹框
+							$('.canvas').on('click', '.item', function() {
+								$(this).stop().fadeOut();
+								$('.popup_6,#coverTop').css('display', 'block');																
+							});
+							//继续抢--事件
+							$('.popup_6 .investmentBtn').on('click', function() {
+								$('.popup_6,#coverTop').css('display', 'none');
+							});
+						}
+
+						function countdown(second, demand, callback) {
+							if(typeof demand == 'function') {
+								callback = demand;
+								demand = '';
+							}
+							var i = second;
+							var point = demand == 'nozero' ? 0 : -1;
+							var timer = setInterval(function() {
+								if(i == point) {
+									clearInterval(timer);
+									if(callback) {
+										callback();
+									}
+								} else {
+									var $countdown = $('.countdown' + (second + 1));
+									if($countdown.hasClass('hidden')) {
+										$countdown.removeClass('hidden');
+									}
+									$countdown.text(i);
+									i--;
+								}
+							}, 1000);
+						}
+						// 红包动画 下落效果
+						function moveHandler(idx) {
+							var speed = Math.random() * (8000 - 3000) + 8000; // 下落速度
+							var $item = $('.canvas .item').eq(idx);
+							$item.animate({
+								top: 600
+							}, speed, function() {
+								$(this).css({
+									top: -400
+								})
+							});
+							showPoupo1();
+						}
+						//显示红包事件本轮已完
+						function showPoupo1() {
+							var $count0 = $('.countdown60').text();
+							if($count0 == "0") {
+								$('.popup_7').css('display', 'none');
+								$('.popup_1').css('display', 'block');
+								//2秒后界面消失--2016-11-7
+								setTimeout(function() {
+									$('.popup_1,#cover').css('display', 'none');
+								}, 3000);
+							}
+						}
+					},
+
+					//进度条
+					progressBar: function() {
+						$(".meter > span").each(function() {
+							$(this)
+								.data("origWidth", $(this).width())
+								.width(0)
+								.animate({
+									width: $(this).data("origWidth")
+								}, 1200);
+						});
+					}
+				}
+				acView.init();
+			})();
+		</script>
+
+	</body>
+
+</html>

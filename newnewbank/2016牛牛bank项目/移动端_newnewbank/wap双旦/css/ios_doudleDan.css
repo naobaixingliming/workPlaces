@@ -1,0 +1,51 @@
+	.twoWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 0.15625rem;
+			right: 0.625rem;
+		}
+		.fiveWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 2.5rem;
+			left: 0.9375rem;
+		}
+		
+		.eightWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 4.0425rem;
+			left: 5.625rem;
+		}
+		
+		.tenWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 7.05125rem;
+			left: 1.40625rem;
+		}
+		
+		.twentyWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 9.86375rem;
+			right: 0.859375rem;
+		}
+		
+		.thirtyWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 12.45rem;
+			left: 1.40625rem;
+		}
+		.fiftyWan {
+			position: absolute;
+			width: 3.4375rem;
+			top: 15.204375rem;
+			right: 0.859375rem;
+		}
+		.circle_delete .delete{			
+				line-height:0.825rem ;
+			} 
+
+	

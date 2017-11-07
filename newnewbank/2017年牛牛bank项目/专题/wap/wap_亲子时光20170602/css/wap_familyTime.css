@@ -1,0 +1,460 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC"
+}
+
+ul li {
+	list-style: none;
+}
+
+span {
+	display: inline-block;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="password"],
+{
+	-webkit-appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+
+
+/*字体大小 start*/
+
+.font_12 {
+	font-size: 0.1875rem;
+}
+
+.font_13 {
+	font-size: 0.203125rem;
+}
+
+.font_14 {
+	font-size: 0.21875rem;
+}
+
+.font_15 {
+	font-size: 0.234375rem;
+}
+
+.font_16 {
+	font-size: 0.25rem;
+}
+
+.font_18 {
+	font-size: 0.28125rem;
+}
+
+.font_20 {
+	font-size: 0.3125rem;
+}
+
+.font_22 {
+	font-size: 0.34375rem;
+}
+
+.font_24 {
+	font-size: 0.375rem;
+}
+
+.font_26 {
+	font-size: 0.40625rem;
+}
+
+.font_28 {
+	font-size: 0.4375rem;
+}
+
+.font_30 {
+	font-size: 0.46875rem;
+}
+
+.font_32 {
+	font-size: 0.5rem;
+}
+
+.font_36 {
+	font-size: 0.5625rem;
+}
+
+.font_40 {
+	font-size: 0.625rem;
+}
+
+.font_48 {
+	font-size: 0.75rem;
+}
+
+.font_50 {
+	font-size: 0.78125rem;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000;
+}
+
+.color_333 {
+	color: #333;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_fff {
+	color: #fff;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.line_height {
+	line-height: 0.390625rem;
+}
+
+.letter_space {
+	letter-spacing: 0.015625rem;
+}
+
+.under_line {
+	height: 0.015625rem;
+	background-color: #f5f5f5;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.none {
+	display: none;
+}
+
+#familyTime {
+	background-color: #04469f;
+}
+
+.out {
+	background-image: radial-gradient(circle 248px at center, #076ebe 0%, #076ebe 40%, #04469f 100%);
+}
+
+header {
+	z-index: 10;
+}
+
+header img {
+	width: 100%;
+}
+
+.one-page {
+	width: 100%;
+}
+
+.titleIcon {
+	width: 4.890625rem;
+	height: 1.078125rem;
+	background: url(https://images-wap.newnewbank.com/wap_title20170602.png) no-repeat;
+	background-size: cover;
+}
+
+.ellipse {
+	width: 9.6rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: #062c8b;
+	box-shadow: 0 -0.15625rem 0.078125rem #05226b;
+}
+
+.bigCircle {
+	width: 0.375rem;
+	height: 0.375rem;
+	border-radius: 50%;
+	background-color: #062c8b;
+	position: absolute;
+	right: 0.3125rem;
+	top: 0.2rem;
+}
+
+.w-460 {
+	width: 7.1875rem;
+}
+
+.color_ead408 {
+	color: #ead408;
+}
+
+.mar-top-55 {
+	margin-top: 0.859375rem;
+}
+
+.line-height-40 {
+	line-height: 0.625rem;
+}
+
+.main-page {
+	padding-top: 0.5625rem;
+}
+
+.main-page {
+	background-image: radial-gradient(circle 248px at center, #076ebe 0%, #076ebe 40%, #04469f 100%);
+}
+
+.color_a0d421 {
+	color: #a0d421;
+}
+
+.rec-border {
+	position: relative;
+	width: 94%;
+	height: 5rem;
+	background-color: #062c8b;
+	border-radius: 0.15625rem;
+	margin: 0 auto 0.3125rem;
+	box-shadow: -0.1rem -0.1rem 0 #05226b;
+}
+
+.padding-top-40 {
+	padding-top: 0.6rem;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 0.46875rem;
+}
+
+.flex-parent {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.flex-child {
+	flex: 1;
+	-webkit-flex: 1;
+}
+
+.bgIcon {
+	width: 8.28125rem;
+	height: 2.0625rem;
+	margin: 0.6875rem auto 0.5rem;
+}
+
+.prizeImg1 {
+	width: 3.265625rem;
+	height: 2.0625rem;
+	background: url(https://images-wap.newnewbank.com/wap_img01-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+}
+
+.addImg {
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url(https://images-wap.newnewbank.com/wap_img-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin: .8rem 0.625rem 0;
+}
+
+.prizeImg2 {
+	width: 3.265625rem;
+	height: 2.0625rem;
+	background: url(https://images-wap.newnewbank.com/wap_img02-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+}
+
+.prizeImg3 {
+	width: 1.96875rem;
+	height: 2.21875rem;
+	background: url(https://images-wap.newnewbank.com/wap_img03-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin: -0.1rem 0 0 .2rem;
+}
+
+.prizeImg4 {
+	width: 2.484375rem;
+	height: 2.734375rem;
+	background: url(https://images-wap.newnewbank.com/wap_img04-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin: -0.3125rem 0 0 .2rem;
+}
+
+.prizeImg5 {
+	width: 2.234375rem;
+	height: 2.265625rem;
+	background: url(https://images-wap.newnewbank.com/wap_img05-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0 0 0 .2rem;
+}
+
+.prizeImg6 {
+	width: 2.28125rem;
+	height: 2.09375rem;
+	background: url(https://images-wap.newnewbank.com/wap_img06-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin: 0 0 0 .2rem;
+}
+
+.prizeImg7 {
+	width: 3.15625rem;
+	height: 1.75rem;
+	background: url(https://images-wap.newnewbank.com/wap_img07-20170602.png) no-repeat;
+	background-size: cover;
+	float: left;
+}
+
+.investBtn {
+	display: inline-block;
+	width: 7.1875rem;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	border-radius: 0.9375rem;
+	background-color: #a0d421;
+	box-shadow: 0 0.15625rem 0.03125rem #066ebe;
+	margin: 0.625rem 0;
+}
+
+.star {
+	position: absolute;
+	width: 5rem;
+	height: 5.9375rem;
+	background: url(https://images-wap.newnewbank.com/star01-20170602.png) repeat-x;
+	background-size: cover;
+}
+
+.star01 {
+	left: 0;
+	top: 5.3125rem;
+}
+
+.starB {
+	position: absolute;
+	width: 6.078125rem;
+	height: 5.9375rem;
+	background: url(https://images-wap.newnewbank.com/star02-20170602.png) repeat-x;
+	background-size: cover;
+}
+
+.star02 {
+	right: 0;
+	top: 5.3125rem;
+}
+
+.star03 {
+	width: 100%;
+	left: 0;
+	bottom: -1rem;
+	opacity: .5;
+}
+
+.star04 {
+	right: 5%;
+	bottom: 0;
+}
+
+.star05 {
+	left: 0;
+	bottom: 10rem;
+}

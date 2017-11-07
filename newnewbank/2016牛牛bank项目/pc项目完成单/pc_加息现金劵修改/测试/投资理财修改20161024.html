@@ -1,0 +1,1985 @@
+<!--租赁-->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="牛牛bank（www.newnewbank.com）、牛牛bank、牛牛bankP2P、牛牛银行、牛牛bank理财、牛牛bankP2P理财、投资理财、个人理财、互联网理财、网贷理财、理财网站、P2P理财、网络理财、牛牛理财、票据、保理、租赁、股权、社区宝、豪车宝、装修宝、金珠宝、衣、食、住、行、育、医、娱、寿">
+		<meta name="Description" content="牛牛bank专注于为各个投资者提供安全有保障的投资理财服务，为投资者提供安全、流动性好的创新型互联网投资理财产品，是您的网络借贷、网络理财专家。">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>牛牛bank - 快乐理财,安全投资,互联网新兴银行</title>
+		<link rel="shortcut icon" href="https://www.newnewbank.com/logo.ico" type="image/x-icon">
+		<!-- 新头部样式 -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-head-1.1.1.css">
+		<!-- 新头部样式 end-->
+		<!--  投资理财列表头部样式start  -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-details-1.1.1.css">
+		<link rel="stylesheet" type="text/css" href="css/product-details.css"/>
+		<!--  投资理财列表头部样式end  -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/base.css" />
+		<script src="https://www.newnewbank.com/js/html5media.min.js" type="text/javascript"></script>
+
+		<script src="https://www.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script>
+			window.web_context = 'https://www.newnewbank.com/';
+		</script>
+		<style type="text/css">
+			.popup-btn span.plink {
+				text-decoration: underline;
+				color: #f44975;
+				font-size: 16px;
+			}			
+			#foot {
+				padding-bottom: 28px;
+			}
+			.couponType{
+				display: inline-block;
+			}
+			
+			/*修改20161024 satrt*/
+			.slideBar{
+				width:565px ;
+				height:420px ;
+				overflow-y:auto ;
+			}
+			
+			.cashCoupon,.interestRateSecurities,.front,.back {
+				font-family: "microsoft yahei";
+				width: 179px;
+				height: 72px;
+			}
+			.flipper {
+				width: 179px;
+				height: 72px;
+				position: relative;
+				transition: 0.6s;
+				transform-style: preserve-3d;	
+			}	
+			.flipperCash{
+				top: -10px;
+    			left: 8px;
+    			/*http://images-web.oss-cn-hangzhou.aliyuncs.com/cashCouponImageType20161025.jpg*/
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/cashCoupon20161024_03.png) no-repeat;
+			}
+			.flipperIr{
+				top: -10px;
+    			left: 15px;
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/InterestRateSecurities20161024.png) no-repeat;
+			}		
+			.front,.back {
+				color: #fff;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				backface-visibility: hidden;
+			}	
+			.cashCoupon,.interestRateSecurities {
+				display: inline-block;
+				perspective: 1000;
+				transform-style: preserve-3d;
+			}			
+			.back {
+				text-align: center;
+				color:#886d10 ;
+				-webkit-transform: rotateY(-180deg);
+				-moz-transform: rotateY(-180deg);
+				-ms-transform: rotateY(-180deg);
+				transform: rotateY(-180deg);
+			}			
+			.cashCoupon:hover .flipper {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+			}
+			.interestRateSecurities:hover .flipper {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+			}
+			.front p:first-child {
+				text-align: center;			
+			}
+			.front p:first-child .symbol{
+				font-size: 18px;				
+			}
+			.front .oneHundred{
+				font-size: 30px;
+				font-weight: bold;
+			}
+			.front p:first-child a:last-child{
+				font-size: 14px;
+			    border: solid 1px #fff;
+			    border-radius: 3px;
+			    margin-top: 10px;
+			    margin-right: 15px;
+			    padding: 1px 5px;
+			    float: right;
+			}
+			.front p:last-child{
+				font-size: 14px;
+				text-align: center;
+			}
+			.back p:first-child{
+				padding: 15px 0 5px;
+				font-size: 14px;
+				
+			}
+			.back p:last-child{
+				font-size: 16px;
+				border: solid 1px #886d10;
+			    border-radius: 3px;
+			    padding: 0px 8px;
+			    width:50px ;
+			    margin-left: 60px;
+			    cursor:pointer ;
+			}
+			.backWhite{
+				color: #fff;
+			}
+			.backWhite  p:last-child{
+				border: solid 1px #fff;
+			}
+			
+			.CashCouponBox{
+				
+			}
+			
+			/*弹框动画 start*/					
+			.slipUp {
+				/*opacity: 0.7;*/
+				-webkit-animation-name: dialogFaceSlipToUp;
+				-moz-animation-name: dialogFaceSlipToUp;
+				-o-animation-name: dialogFaceSlipToUp;
+				animation-name: dialogFaceSlipToUp;
+			}
+			.slipBottom {
+				opacity: 0;
+				visibility: hidden;
+				-webkit-animation-name: dialogFaceSlipToBottom;
+				-moz-animation-name: dialogFaceSlipToBottom;
+				-o-animation-name: dialogFaceSlipToBottom;
+				animation-name: dialogFaceSlipToBottom;
+			}
+			
+			.dialog-root {
+				position: fixed;
+				z-index: 2000;
+				left: 50%;
+				-webkit-animation-duration: 500ms;
+				-moz-animation-duration: 500ms;
+				-o-animation-duration: 500ms;
+				animation-duration: 500ms;
+				-webkit-perspective: 1300px;
+				-moz-perspective: 1300px;
+				perspective: 1300px;
+			}
+			
+			.dialog-root.slipUp {
+				top: 50%;
+				opacity: 1;
+				-webkit-animation-name: dialogSlipToUp;
+				-moz-animation-name: dialogSlipToUp;
+				-o-animation-name: dialogSlipToUp;
+				animation-name: dialogSlipToUp;
+				-webkit-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			
+			.dialog-root.slipBottom {
+				top: 100%;
+				opacity: 0.3;
+				-webkit-animation-duration: 500ms;
+				-moz-animation-duration: 500ms;
+				-o-animation-duration: 500ms;
+				animation-duration: 500ms;
+				-webkit-animation-name: dialogSlipToBottom;
+				-moz-animation-name: dialogSlipToBottom;
+				-o-animation-name: dialogSlipToBottom;
+				animation-name: dialogSlipToBottom;
+				-webkit-transform: translate(-50%, 0);
+				-o-transform: translate(-50%, 0);
+				-moz-transform: translate(-50%, 0);
+				-ms-transform: translate(-50%, 0);
+				transform: translate(-50%, 0);
+			}
+			
+			.dialog-wrapper {
+				width: 674px;
+			    height: auto;
+			    padding: 26px 0 36px 0;
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    margin-left: -337px;
+			    margin-top: -277px;
+			    background: #f5f5f5;
+			    border-radius: 4px;
+			    z-index: 1000;
+			    border-top: 4px solid #f44975;
+				overflow: hidden;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-animation-duration: 500ms;
+				-moz-animation-duration: 500ms;
+				-o-animation-duration: 500ms;
+				animation-duration: 500ms;
+				-webkit-transform-origin: 50% 100%;
+				-moz-transform-origin: 50% 100%;
+				-ms-transform-origin: 50% 100%;
+				-o-transform-origin: 50% 100%;
+				transform-origin: 50% 100%;
+			}
+			
+			.dialog-wrapper.slipUp {
+				-webkit-transform: rotateX(0deg);
+				-moz-transform: rotateX(0deg);
+				-ms-transform: rotateX(0deg);
+				-o-transform: rotateX(0deg);
+				transform: rotateX(0deg);
+				-webkit-animation-name: contentSlipToUp;
+				-moz-animation-name: contentSlipToUp;
+				-o-animation-name: contentSlipToUp;
+				animation-name: contentSlipToUp;
+			}
+			
+			.dialog-wrapper.slipBottom {
+				-webkit-transform: rotateX(90deg);
+				-moz-transform: rotateX(90deg);
+				-ms-transform: rotateX(90deg);
+				-o-transform: rotateX(90deg);
+				transform: rotateX(90deg);
+				-webkit-animation-name: contentSlipToBottom;
+				-moz-animation-name: contentSlipToBottom;
+				-o-animation-name: contentSlipToBottom;
+				animation-name: contentSlipToBottom;
+			}
+			
+			/* ---------------------动画关键帧 -------------------*/
+			
+			@keyframes dialogFaceSlipToUp {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 0.7;
+				}
+			}
+			
+			@keyframes dialogFaceSlipToBottom {
+				0% {
+					opacity: 0.7;
+					visibility: visible;
+				}
+				100% {
+					visibility: hidden;
+					opacity: 0;
+				}
+			}
+			
+			@keyframes dialogSlipToUp {
+				0% {
+					top: 100%;
+					opacity: 0.3;
+				}
+				100% {
+					top: 50%;
+					opacity: 1;
+				}
+			}
+			
+			@keyframes dialogSlipToBottom {
+				0% {
+					top: 50%;
+					opacity: 1;
+					-webkit-transform: translate(-50%, -50%);
+					-moz-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					-o-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+				}
+				100% {
+					top: 100%;
+					opacity: 0.3;
+					-webkit-transform: translate(-50%, 0);
+					-moz-transform: translate(-50%, 0);
+					-ms-transform: translate(-50%, 0);
+					-o-transform: translate(-50%, 0);
+					transform: translate(-50%, 0);
+				}
+			}
+			
+			@keyframes contentSlipToUp {
+				0% {
+					-webkit-transform: rotateX(90deg);
+					-moz-transform: rotateX(90deg);
+					-ms-transform: rotateX(90deg);
+					-o-transform: rotateX(90deg);
+					transform: rotateX(90deg);
+				}
+				100% {
+					-webkit-transform: rotateX(0deg);
+					-moz-transform: rotateX(0deg);
+					-ms-transform: rotateX(0deg);
+					-o-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+				}
+			}
+			
+			@keyframes contentSlipToBottom {
+				0% {
+					-webkit-transform: rotateX(0deg);
+					-moz-transform: rotateX(0deg);
+					-ms-transform: rotateX(0deg);
+					-o-transform: rotateX(0deg);
+					transform: rotateX(0deg);
+				}
+				60% {
+					-webkit-transform: rotateX(60deg);
+					-moz-transform: rotateX(60deg);
+					-ms-transform: rotateX(60deg);
+					-o-transform: rotateX(60deg);
+					transform: rotateX(60deg);
+				}
+				100% {
+					-webkit-transform: rotateX(90deg);
+					-moz-transform: rotateX(90deg);
+					-ms-transform: rotateX(90deg);
+					-o-transform: rotateX(90deg);
+					transform: rotateX(90deg);
+				}
+			}
+			/*弹框动画 end*/
+			.cashCoupontext{
+				font-size:16px ;
+				color: #333333;
+				margin:10px 0 ;
+			}
+			.aRowOfPictures{
+				margin:10px auto ;
+			}
+			.aRowOfPictures .MapBackground{
+				position: relative;
+				display: inline-block;
+				width: 174px;
+				height: 180px;
+				margin-right:5px ;
+				cursor:pointer ;				
+			}
+			.MapBackground1{
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/cashCouponImageType20161025.jpg) no-repeat;
+			}
+			 .MapBackground2{
+				background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/theInterestRateCouponPictureType20161025.jpg) no-repeat;
+			}
+			.MapBackground .symbol{
+				font-size:30px ;
+			}
+			.MapBackground .oneHundred{
+				font-size:48px ;
+				font-weight:bold ;
+			}
+			.centerWhite{
+				color: #fff;
+				text-align:center ;
+			}
+			
+			.commonIcon{
+				position:absolute ;
+				top: 0;
+				right:0 ;
+				width:28px ;
+				height:25px ;
+			}
+			.imageVisible{
+				background:url(http://images-web.oss-cn-hangzhou.aliyuncs.com/theCheckedState20161025.png) no-repeat;
+			}
+			.TermOfValidity{
+				color: #c6c6c6;
+			    font-size: 13px;
+			    margin-left: 10px;
+			    line-height: 20px;
+			}
+			.distance{
+				margin-top: 35px;
+			}
+			
+			
+			.closeCashCouponPop{
+				width: 38px;
+			    height: 32px;
+			    position: absolute;
+			    right: 0px;
+			    top: -2px;
+			    font: normal 16px/32px "Microsoft YaHei";
+			    color: #FFFFFF;
+			    display:none ;
+			    text-align: center;
+			    background-color: #f44975;
+			    border-radius: 0 4px 0 0;
+			    text-decoration: none;
+			}
+			
+			.moreLoad{
+				width: 170px;
+				height:40px;
+				line-height:40px ;
+				color: #f44975;
+				border:1px solid #f44975 ;
+				border-radius: 20px;
+				font-size:14px ;
+				text-align: center;
+				margin:20px auto ;
+				cursor:pointer ;
+			}
+			.none{
+				z-index:1000 ;
+				display:none ;
+			}
+			/*修改20161024 end*/
+		</style>
+		
+		
+	</head>
+
+	<body class="pro-details">
+		<!--  头部start  -->
+
+		<!-- 新头部样式 end-->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/common.css">
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/v2/homeIndex/base.css">
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/v2/homeIndex/red3.css">
+
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/common/head20160325.css">
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/common/web-base-color.css">
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-head-1.1.1.css">
+		<style type="text/css">
+			.popup-btn span.plink {
+				text-decoration: underline;
+				color: #f44975;
+				font-size: 16px;
+			}
+			
+			#foot {
+				padding-bottom: 28px;
+			}
+		</style>
+		<div class="product-head-wrap">
+			<div class="product-head-box">
+				<div class="left-logo"></div>
+				<div class="product-nav-wrap clearfix">
+					<div class="product-nav-box fl">
+						<a href="https://www.newnewbank.com/">首页</a>
+						<a href="https://www.newnewbank.com/myMoney/investProjectList.shtml" class="active">投资理财</a>
+						<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+						<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+						<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">关于我们</a>
+					</div>
+					<div class="user-operation fl">
+						<div class="personal-btn">
+							<a href="https://www.newnewbank.com/myAccount/accountInfo.shtml">个人中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  悬浮菜单start  -->
+		<div class="fixed-head" style="display:none;top:-100px;">
+			<div class="fixed-head-box">
+				<div class="fixed-head-logo"></div>
+				<div class="fixed-nav-wrap clearfix">
+					<div class="fixed-nav-box fl">
+						<a href="https://www.newnewbank.com/">首页</a>
+						<a href="https://www.newnewbank.com/myMoney/investProjectList.shtml">投资理财</a>
+						<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+						<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+						<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">关于我们</a>
+					</div>
+					<div class="fixed-user-operation fl">
+						<div class="user-center-new">
+							<a class="user-btn-new" href="javascript:;">王中胜<span></span></a>
+							<div class="popup-entry">
+								<a class="user-center-btn" href="https://www.newnewbank.com/myAccount/accountInfo.shtml">个人中心</a>
+								<a class="exit-btn" href="https://www.newnewbank.com/logout.shtml">退出</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  悬浮菜单end  -->
+		<!--  通用登录框  -->
+		<div class="shadow2"></div>
+		<div class="login-box">
+			<div class="login-title">
+				<h3 class="login-bkdl">登录牛牛bank</h3>
+				<p>没有账号？
+					<a class="free-regis" href="https://www.newnewbank.com/register/view.shtml">免费注册</a>
+				</p>
+			</div>
+			<div class="login-input-box">
+				<div class="error-box">
+					<p class="error-tips" style="display:none;">*手机号码不存在</p>
+				</div>
+				<div class="user-name">
+					<span></span>
+					<input id="userNme" type="text">
+					<em style="display: block;">请输入手机号码</em>
+				</div>
+				<div class="user-pass">
+					<span></span>
+					<input id="userPass" type="password">
+					<em style="display: block;">请输入密码</em>
+				</div>
+				<div style="text-align:right">
+					<a class="forget-pass" href="https://www.newnewbank.com/findPwd/findPwd_one.shtml">忘记密码？</a>
+				</div>
+				<a class="login-btn" href="javascript:;">登录</a>
+			</div>
+			<a class="close-login-box" href="javascript:;">X</a>
+		</div>
+		<!--  通用登录框 end  -->
+		<div id="popup1"></div>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/newWeb/jquery.popup.js"></script>
+		<script>
+			$(function() {
+				$("#login").on('click', function() { //显示登录框
+					$(".shadow2").show();
+					$(".login-box").show();
+				});
+				$("#login1").on('click', function() { //显示登录框
+					$(".shadow2").show();
+					$(".login-box").show();
+				});
+
+				$(".login-input-box input").blur(function() {
+					if(!$(this).val().replace(/^\s+$/, '')) {
+						$(this).siblings("em").show(); //隐藏提示内容
+					}
+					$('.error-tips').hide();
+				}).focus(function() {
+					$(this).siblings("em").hide();
+				}).change(function() {
+					$(this).siblings("em").hide();
+				});
+				$(".login-input-box em").click(function() {
+					$(this).hide().siblings("input").focus()
+				});
+
+				$(".atvCurr").on("click", function() {
+					var login = window.location.href;
+					if(login.indexOf("roadShow/list.shtml") > 0 || login.indexOf("roadShow/roadShowDetails") > 0) {
+						if($("#checkSpan").hasClass("checked")) {
+							$(".shadow2").show();
+							$(".login-box").show();
+						}
+					} else {
+						$(".shadow2").show();
+						$(".login-box").show();
+					}
+				});
+
+				$(".login-btn").click(function() {
+					onSubmit();
+				});
+
+				$(".close-login-box").on("click", function() {
+					$("#userNme").val('');
+					$("#userPass").val('');
+					$(".user-name").find("em").show();
+					$(".user-pass").find("em").show();
+					$(".shadow2").hide();
+					$(".login-box").hide();
+				});
+
+			});
+
+			function onSubmit() {
+				var _loginName = $("#userNme").val();
+				var _loginPass = $("#userPass").val();
+				if(_loginName == '') {
+					$('.error-tips').show().html('*用户名不能为空!');
+					$('#userNme').focus();
+					return false;
+				}
+				if(_loginPass == '') {
+					$('.error-tips').show().html('*密码不能为空!');
+					$('#userPass').focus();
+					return false;
+				}
+				$.post("https://www.newnewbank.com/auth/authSSO.shtml" + "?fresh=" + Math.random(), {
+						loginMobile: $.trim(_loginName),
+						loginPass: $.trim(_loginPass),
+						type: "1"
+					},
+					function(json) {
+						if(json.result) {
+							if(!json.isAuthority) {
+								$(".login-box").hide();
+								$("#popup1").popup({
+									text: '您好，9月1日起，牛牛bank平台支付通道升级为“新浪支付收银台”，用户需设置新浪支付密码，请您设置开通。详情请查看平台公告或联系客服。',
+									aText: "设置",
+									alength: "2",
+									okCallBack: function() {
+										$.ajax({
+											url: "https://www.newnewbank.com/myMoney/setWithoutAuthority.shtml?" + new Date(Math.random() * 10000),
+											context: {},
+											success: function(data) {
+												if(data.result) {
+													$(".shadow").hide();
+													window.open("https://www.newnewbank.com/myMoney/redirectWithoutAuthority.shtml?" + new Date(Math.random() * 10000));
+												}
+											}
+										});
+									},
+									cancelCallback: function() {
+										if(json.url.indexOf("register/view.shtml") > 0 || json.url.indexOf("auth/login.shtml") > 0 || json.url.indexOf("findPwd/findPwd_four.shtml") > 0) {
+											try {
+												window.location.href = getRequestForSource("https://www.newnewbank.com/auth/loginSuccess.shtml");
+											} catch(e) {
+												window.location.href = "https://www.newnewbank.com/auth/loginSuccess.shtml";
+											}
+										} else {
+											try {
+												window.location.href = getRequestForSource(json.url);
+											} catch(e) {
+												window.location.href = json.url;
+											}
+										}
+									}
+								});
+							} else {
+								if(json.url.indexOf("register/view.shtml") > 0 || json.url.indexOf("auth/login.shtml") > 0 || json.url.indexOf("findPwd/findPwd_four.shtml") > 0) {
+									try {
+										window.location.href = getRequestForSource("https://www.newnewbank.com/auth/loginSuccess.shtml");
+									} catch(e) {
+										window.location.href = "https://www.newnewbank.com/auth/loginSuccess.shtml";
+									}
+								} else {
+									try {
+										window.location.href = getRequestForSource(json.url);
+									} catch(e) {
+										window.location.href = json.url;
+									}
+								}
+							}
+						} else {
+							$('.error-tips').show().html(json.resultInfo);
+						}
+					});
+			}
+			$(function() {
+				document.onkeydown = function(e) {
+					if(!e) e = window.event;
+					if((e.keyCode || e.which) == 13) {
+						onSubmit();
+					}
+				}
+			});
+		</script>
+		<!--  头部end  -->
+		<!--  页面内容start  -->
+		<div class="container">
+			<div id="bg" class="pro-top-bg" style="background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_zunin_top_bg_20160425.jpg) no-repeat center top;"></div>
+			<div class="main-box clearfix">
+				<!--  左侧内容start  -->
+				<div class="main-left fl">
+					<div class="left-box1">
+						<!--租赁 -->
+						<div class="pro-head"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/head_zunin_20160425.jpg" /></div>
+						<div class="pro-info">
+							<h3>豪车宝第70期</h3>
+							<p>发布时间：2016-10-21</p>
+							<div class="sm-box01 clearfix">
+								<div class="col col01 fl">
+									<strong><span id="perlv">11</span>%</strong>
+									<p>年化收益率</p>
+								</div>
+								<div class="col col02 fl">
+									<strong>90天</strong>
+									<p>投资周期</p>
+								</div>
+								<div class="col col03 fl">
+									<strong>1,000,000元</strong>
+									<p>融资金额</p>
+								</div>
+							</div>
+						</div>
+						<div class="big-box01">
+							<h4>佳鸿名车租赁项目</h4>
+							<div class="details-progress clearfix">
+								<div class="d-line-progress fl">
+									<div class="d-progress" style="width:28.83%"><i></i></div>
+								</div>
+								<span class="fl">28.83%</span>
+							</div>
+							<div class="sm-box02 clearfix">
+								<p class="remain-money fl">剩余可投金额：<span id="remainMoney">711631</span>元</p>
+								<p class="countdown fl"><i></i> 筹标剩余时间：
+									<em id="restTime2"></em>
+								</p>
+							</div>
+							<div class="sm-box03 clearfix">
+								<p class="fl"><i></i> 购买成功立刻起息 </p>
+								<p class="fl"><i></i>到期一次性还本付息</p>
+								<p class="fl"><i></i> 不支持提前还款
+								</p>
+								<p class="fl"><i></i><span id="endDate">2017-01-23</span>结息</p>
+							</div>
+						</div>
+
+						<!--  项目详情start  -->
+						<div class="details-box">
+							<div class="d-sm-box01 clearfix" id="ids1">
+								<h3 class="fl">项目详情</h3>
+								<p class="fl">（基础交易描述+承租人信息+融资租赁物信息）</p>
+							</div>
+							<div class="d-big-box01">
+								<div class="img-bg-box" style="background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pro_detail_baoli_img01_20160425.jpg) no-repeat center top;">
+									<strong>项目描述</strong>
+								</div>
+								<div class="d-text">
+									<p style="text-indent:32px"><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">承租企业深圳佳鸿贸易发展有限公司是全中国优秀的豪华及超豪华汽车授权经销商集团，拥有一批大量必备的固定资产设备，设备价格昂贵，该资产总价庞大，是公司运营中不可或缺部分。设备过程中寿命周期长，企业为了补充流动资金，更好地发展壮大公司业务，该公司将旗下多家4s店的设备与深圳南海国际融资租赁有限公司以售后回租的形式进行融资租赁业务。</span></p>
+									<p style="text-indent: 32px;"><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">深圳南海国际融资租赁有限公司根据企业运转的实际资金需要，依托牛牛bank平台，向投资者转让部分收益权，还款来源为承租企业支付的设备租金。</span></p>
+								</div>
+								<div class="img-bg-box" style="background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pro_detail_baoli_img02_20160425.jpg) no-repeat center top;">
+									<strong>承租人信息</strong>
+								</div>
+								<div class="d-text">
+									<p style="text-indent:32px"><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">深圳佳鸿贸易发展有限公司成立于2001年，主要经营豪华、超豪华进口车及二手豪华车的销售及售后等汽车业务，是目前全中国最大的豪华及超豪华汽车授权经销商。具体情况：</span></p>
+									<p style="text-indent:32px"><span style="font-size:16px;line-height: 150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">1</span><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">、取得了近20个豪华汽车的品牌授权，超豪华品牌汽车如劳斯莱斯、宾利、法拉利、玛莎拉蒂及豪华品牌如宝马、捷豹、路虎、凯迪拉克、进口大众，MINI、奥迪、英菲尼迪，沃尔沃等。</span></p>
+									<p style="text-indent:32px"><span style="font-size:16px;line-height: 150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">2</span><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">、拥有近50家豪华及超豪华汽车旗舰4S及5S 店，遍布在深圳、东莞、广州、济南、惠州、佛山、厦门、珠海、泉州、昆明、贵阳、重庆、大连、青岛、太原、长沙、柳州、杭州、晋中、成都、郑州、鄂尔多斯、呼和浩特等地。</span></p>
+									<p style="text-indent:32px"><span style="font-size:16px;line-height: 150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">3</span><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">、除了进口汽车的销售及售后模块，公司的业务范畴还伸延到了二手豪车、豪车租赁、保险、物流、文化、矿业、投资等领域。</span></p>
+									<p style="text-indent: 32px;"><span style="font-size:16px;line-height: 150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">4</span><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">、将与银行、企业、保险、商会等机构强强联手，为佳鸿尊贵的“Key Customer”大客户群提供一对一的私人定制服务。</span></p>
+								</div>
+								<div class="img-bg-box" style="background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pro_detail_baoli_img03_20160425.jpg) no-repeat center top;">
+									<strong>融资租赁物信息</strong>
+								</div>
+								<div class="d-text">
+									<p style="text-indent:32px"><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">租赁物类型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 设备、打印机、服务器、电脑、网络设备</span></p>
+									<p style="text-indent:32px"><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">租赁物型号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;MD093CH/A、M4350S、DS-300B-8G等</span></p>
+									<p style="text-indent: 32px;"><span style="font-size:16px;line-height:150%;font-family:&#39;微软雅黑&#39;,&#39;sans-serif&#39;">租赁物总价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7,776,184.00元</span></p>
+								</div>
+							</div>
+						</div>
+						<!--  项目详情end  -->
+						<!--  风险保障start  -->
+						<div class="details-box">
+							<div class="d-sm-box01 clearfix" id="ids2">
+								<h3 class="fl">风控措施</h3>
+								<p class="fl">（尽职调查+债权回购）</p>
+							</div>
+							<div class="d-big-box01">
+								<div class="tit-box">
+									<h4>尽职调查</h4>
+								</div>
+								<div class="d-text">
+									<p class="t-center">
+										<p style="text-indent:2em;">牛牛bank风控团队由多位原银行高管组成，针对此融资租赁产品进行了深入的尽职调查。</p>
+									</p>
+								</div>
+								<div class="img-box02">
+									<ul class="clearfix">
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610181a49f3ed4e05498eb37d06241b66d145.jpg" />
+											<div class="greenShadow"></div>
+										</li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610186d8d2e9ebdbb4a81a4898e4b1f2e25ea.jpg" />
+											<div class="greenShadow"></div>
+										</li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610184eaa35cca459488a815ca3b415c377cc.jpg" />
+											<div class="greenShadow"></div>
+										</li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018b153959b0acb4eec96ced878f5a7ebb2.jpg" />
+											<div class="greenShadow"></div>
+										</li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610181c0543fcffab4c5cba011fd03743dca1.jpg" />
+											<div class="greenShadow"></div>
+										</li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018dff6522a30294a7eb93d70266574b7a1.jpg" />
+											<div class="greenShadow"></div>
+										</li>
+									</ul>
+								</div>
+								<div class="tit-box">
+									<h4>设备投保</h4>
+								</div>
+								<div class="d-text">
+									<p style="text-indent:2em;">深圳南海国际融资租赁对设备进行投保，设备在租赁期间由于自然灾害或者意外及员工操作不当所造成的损失，由民安保险全额承保。</p>
+								</div>
+								<div class="img-box img-box-rp1">
+									<ul class="clearfix">
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018179db7a3558e47fdaccdb0a1ad945d74.png" /></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018b063af771a414f578ca2cfdce6edccb8.png" /></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610187ad09df690804716966003ad793f763d.png" /></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610181a0d8670d4dc458291b2776f29632b0a.png" /></li>
+									</ul>
+								</div>
+								<div class="tit-box">
+									<h4>债权回购</h4>
+								</div>
+								<div class="d-text">
+									<p style="text-indent:2em;">深圳南海国际融资租赁有限公司注册资本26000万港币，系新华社融资租赁信息咨询部专属执行机构，为新华社金融信息交易所系统内唯一一家负责融资租赁业务信息咨询的机构，公司依托于新华社金融信息交易所，开展融资租赁信息咨询服务业务。</p>
+									<p style="text-indent:2em;">深圳南海国际融资租赁在项目到期后对债权进行回购，承担100%的还款责任。</p>
+								</div>
+								<div class="img-box img-box-rp1">
+									<ul class="clearfix">
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610183cf4c35a0fbc4e6194f59ab336fd1eeb.png" /></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610188733d3b9167c4c198185eeacc12848dd.png" /></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610181f78d4c83ce1494586a7679a853fd887.jpg" /></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018cb8e9935abca40408284c8d5a66c4386.jpg" /></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--  风险保障end  -->
+						<!--  投资记录start -->
+						<div class="details-box" id="ids3">
+							<div class="d-sm-box01 clearfix">
+								<h3 class="fl">投资记录</h3>
+								<p class="fl">（20人已投资）</p>
+							</div>
+							<div class="d-big-box02">
+								<div class="tb-box">
+									<span id="investRecords"></span>
+								</div>
+							</div>
+						</div>
+						<!--  投资记录end  -->
+						<!--  你知道吗start  -->
+						<!--  你知道吗start  -->
+
+						<div class="details-box" id="ids4">
+							<div class="d-sm-box01 clearfix">
+								<h3 class="fl">你知道吗？</h3>
+								<p class="fl">（理财问答）</p>
+							</div>
+							<div class="d-big-box01">
+								<div class="img-bg-box" style="background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pro_detail_edc_img07_20160421.jpg) no-repeat center top;">
+									<span>你知道吗？牛牛bank的风控程度达到这种程度了</span>
+								</div>
+								<div class="d-text">
+									<p class="t-indent0">金融风险的控制和处置是金融风险管理的对策范畴，是解决金融风险的途径和方法。一般分为控制法和财务法。(1)控制法。是指在损失发生之前，实施各种控制工具，力求消除各种隐患，减少金融风险发生的因素，将损失的严重后果减少到最低程度的一种方法。主要方式有避免风险、损失控制和分散风险。</p>
+								</div>
+							</div>
+						</div>
+						<!--  你知道吗end  -->
+						<!--  你知道吗end  -->
+					</div>
+				</div>
+				<!--  左侧内容end  -->
+				<!--  右侧内容start  -->
+				<!--  右侧内容start  -->
+				<div class="main-right fl">
+					<!--  购买框start  -->
+					<div class="buy-box">
+						<div class="usable-money">
+							<p>可用金额：
+								<span id="countMoney"><i>5.05</i>元<a style="color:#f44975; margin-left:10px;" href="javascript:;" id="allMoney">全部抢购</a></span>
+						</div>
+						<div class="buy-money">
+							<input type="text" name="" value="" id="moneyNums" />
+							<em>最小投资金额：1元</em>
+							<label>元</label>
+						</div>
+						<div class="earnings"><i></i>预期收益：<span id="getNums">0</span></div>
+						<div class="buy-sm-box01">
+							<p>银行理财：<span id="blv">2.8</span>%</p>
+							<p>银行理财收益：<span id="elseget">0</span>元</p>
+						</div>
+						<p class="protocol clearfix">
+							<input name="" type="checkbox" checked="checked" class="reg" disabled="disabled">
+							<span>
+            		我同意
+            				《<a target="_blank" href="https://www.newnewbank.com/contractDetail/109/2195.shtml">收益权转让及回购协议</a>》
+            </span>
+						</p>
+						<span id="toBuy" style="position: relative;">
+				<a class="d-btn buyNow" id="buyNow" href="javascript:;" btn-triggle="expandUp">立即购买</em></a>
+		</span>
+					</div>
+					<!--  购买框end  -->
+					<!--  合同文件start  -->
+					<div class="myht">
+						<div class="ht">
+							<div class="r-big-box">
+								<h4 id="mytitle">合同协议</h4>
+								<div class="r-box">
+									<div class="contract-wrap">
+										<div class="contract-box">
+											<ul id="ulsmall" class="clearfix">
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018abd76628408842ec8f2c6f22fea5b972.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610181e7f0379779e4f18bf60be84b45ff540.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/2016101863c9aecc7d3040658e37f52dd0c1253e.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610180e769706fbc54213b33061687eef2202.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018bbb912e3284f43abbc4a7d4af1131029.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018625b83900f2c49ffad1f00aa219e4112.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018a77d9ef5097b4161ac63e1377db45abc.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018da281328854f47ba85957319f517ab69.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018729386a9b9cc491bb0b3f90b4e21d8a9.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018f9933cba3dc34bb194cc983251901316.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610187be6d4726ad6491aa45c7b69d116df4a.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018b8e89380fd0444cd8401625f6786a7dc.png"></li>
+												<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610187ccf910664884d5e9ce2d7231227e796.png"></li>
+											</ul>
+										</div>
+										<div class="page-icon"></div>
+									</div>
+									<a class="prev-contract" href="javascript:;"></a>
+									<a class="next-contract" href="javascript:;"></a>
+								</div>
+							</div>
+							<!--  显示放大合同start-->
+							<div class="shadow"></div>
+							<div class="show-big-contract">
+								<h4 class="sbc-tit">合同协议</h4>
+								<div class="sbc-img-box">
+									<ul class="clearfix" id='ulBig'>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018abd76628408842ec8f2c6f22fea5b972.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610181e7f0379779e4f18bf60be84b45ff540.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/2016101863c9aecc7d3040658e37f52dd0c1253e.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610180e769706fbc54213b33061687eef2202.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018bbb912e3284f43abbc4a7d4af1131029.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018625b83900f2c49ffad1f00aa219e4112.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018a77d9ef5097b4161ac63e1377db45abc.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018da281328854f47ba85957319f517ab69.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018729386a9b9cc491bb0b3f90b4e21d8a9.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018f9933cba3dc34bb194cc983251901316.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610187be6d4726ad6491aa45c7b69d116df4a.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/20161018b8e89380fd0444cd8401625f6786a7dc.png"></li>
+										<li><img src="https://images-nnb.oss-cn-shenzhen.aliyuncs.com/201610187ccf910664884d5e9ce2d7231227e796.png"></li>
+									</ul>
+								</div>
+								<a class="sbc-prev" href="javascript:;"></a>
+								<a class="sbc-next" href="javascript:;"></a>
+								<a class="sbc-close" href="javascript:;"></a>
+							</div>
+						</div>
+						<!--  显示放大合同end  -->
+					</div>
+					<!--  合同文件end  -->
+					<!--  还款计划start  -->
+					<div class="r-big-box">
+						<h4>还款计划</h4>
+						<div class="r-box">
+							<div class="r-tb-box tb-hkjh">
+								<table cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td class="tdl">预计还款日期</td>
+											<td class="tdr" id="repaymentime">2017-01-23</td>
+										</tr>
+										<tr>
+											<td class="tdl">应还本金(元)</td>
+											<td class="tdr" id="ben">1,000,000</td>
+										</tr>
+										<tr>
+											<td class="tdl">应还利息(元)</td>
+											<td class="tdr" id="xi">28,328.77</td>
+										</tr>
+										<tr>
+											<td class="tdl">状态</td>
+											<td class="tdr" id="zhuangtai">未还款</td>
+										</tr>
+										<tr class="last-tr">
+											<td class="tdl">实际还款日期</td>
+											<td class="tdr" id="rdtime"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--  还款计划end  -->
+					<!--  回款公告start  -->
+					<div class="r-big-box">
+						<h4>回款公告</h4>
+						<div class="r-box">
+							<div class="r-tb-box tb-hkgg">
+								<table cellspacing="0" cellpadding="0">
+									<thead>
+										<tr>
+											<th>项目名称</th>
+											<th>回款时间</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="odd">
+											<td>
+												<a href="https://www.newnewbank.com/myMoney/2169/investProjectDetail.shtml">牛牛银票第1024期</a>
+											</td>
+											<td>2016/10/24</td>
+										</tr>
+										<tr class="even">
+											<td>
+												<a href="https://www.newnewbank.com/myMoney/2164/investProjectDetail.shtml">牛牛银票第1022期</a>
+											</td>
+											<td>2016/10/24</td>
+										</tr>
+										<tr class="odd">
+											<td>
+												<a href="https://www.newnewbank.com/myMoney/2043/investProjectDetail.shtml">牛牛保理第204期</a>
+											</td>
+											<td>2016/10/24</td>
+										</tr>
+										<tr class="even">
+											<td>
+												<a href="https://www.newnewbank.com/myMoney/2168/investProjectDetail.shtml">牛牛银票第1023期</a>
+											</td>
+											<td>2016/10/24</td>
+										</tr>
+										<tr class="odd">
+											<td>
+												<a href="https://www.newnewbank.com/myMoney/1936/investProjectDetail.shtml">豪车宝第62期</a>
+											</td>
+											<td>2016/10/24</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--  回款公告end  -->
+				</div>
+				<!--  右侧内容end  -->
+				<!--  竞标底部start  -->
+				<div id="bottomBidding"></div>
+				<!--  竞标底部end  -->
+				<script src="https://www.newnewbank.com/js/newWeb/time.js"></script>
+				<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-bidding.css">
+				<!--  竞标底部  -->
+				<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-bottomSilde.css">
+				<script src="https://www.newnewbank.com/js/newWeb/jquery.bottomSilde.js" type="text/javascript"></script>
+				<script src="https://www.newnewbank.com/js/newWeb/jquery.bottomBidding.js" type="text/javascript"></script>
+				<!--  竞标底部  -->
+				<script type="text/javascript">
+					$(function() {
+						var raiseEnd = '2016/10/25 23:30:00';
+						var raiseStart = '2016/10/21 17:32:31';
+						var isCompeteBid = '0' || '0';
+						if(2 == 2) {
+							setTimeout(function() {
+								show_time("restTime2", new Date(raiseEnd).getTime(), new Date().getTime())
+							}, 1000);
+						} else if(1 == 2) {
+							setTimeout(function() {
+								show_time("restTime3", new Date(raiseStart).getTime(), new Date().getTime())
+							}, 1000);
+						}
+
+						//合同
+						for(var i = 0; i < $(".myht").find(".ht").length; i++) {
+							hetong($(".myht").find(".ht").eq(i)); //循环调用合同
+						}
+						if(isCompeteBid == '1') {
+							//底部竞标
+							$("#bottomBidding").bottomBidding({
+								url: 'https://www.newnewbank.com/myMoney/' + 2195 + '/getCompeteBid.shtml',
+								viewMoreUrl: 'https://www.newnewbank.com/competeBidActivity/toView.shtml',
+								viewActivityUrl: 'https://www.newnewbank.com/competeBidActivity/toView.shtml'
+							});
+							//底部插件
+							$("#bottomS").bottomsilde();
+						}
+					});
+				</script>
+				<!--  右侧内容end  -->
+			</div>
+		</div>
+		<!--  页面内容end  -->
+		<!-- 底部插件 -->
+		<div id="bottomS" style="position: fixed; bottom: 0;  width: 100%; height: 74px;z-index: 100;">
+			<!-- 注：更换皮肤 product-css-conc1、product-css-conc2、product-css-conc3、product-css-conc4、product-css-conc5 -->
+			<div class="product-bottom-silde product-css-conc2">
+				<div class="w1200" style="position:relative">
+					<div class="huadong-bg"></div>
+					<ul class="p-b-s fl clearfix">
+						<li class="actived">
+							<a href="javascript:;">项目详情</a>
+						</li>
+						<li>
+							<a href="javascript:;">风险保障</a>
+						</li>
+						<li>
+							<a href="javascript:;">投资记录</a>
+						</li>
+						<li>
+							<a href="javascript:;">你知道吗</a>
+						</li>
+					</ul>
+					<div class="fr p-b-s2">
+						<div class="p-b-buyr">
+							<a href="javascript:;" id="submitBuyNow">立即购买</a>
+						</div>
+						<div class="p-b-s2-img">
+							<div class="p-b-icon1 fa-ic1">
+								<a href="https://www.newnewbank.com/" target="_bank"></a>
+							</div>
+							<div class="p-b-icon2 fa-ic1">
+								<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_bank"></a>
+							</div>
+							<div class="p-b-icon3 fa-ic1">
+								<a href="#" target="_bank"></a>
+							</div>
+							<div class="p-b-icon4 fa-ic1" id="shou-p-b">
+								<a href="javascript:;"></a>
+							</div>
+							<img class="niuka-ic" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pr_bottom3_20160607.png"></div>
+						<div class="p-b-s2-top">
+							<a href="javascript:;"></a>
+						</div>
+						<div class="p-b-s2-btn">
+							<a href="javascript:;" id="submitNow">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部插件 end-->
+
+		<!--  底部  -->
+		<div id="foot">
+			<div class="footLink2 clearfix">
+				<div class="w1200">
+					<div class="ftk1 fl">
+						<dl class="ftkDl">
+							<dt>关于</dt>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">公司介绍</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutTeam.html">管理团队</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="ftk2 fl">
+						<dl class="ftkDl">
+							<dt>安全</dt>
+							<dd>
+								<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutProduct.html">产品介绍</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="ftk3 fl">
+						<dl class="ftkDl">
+							<dt>服务</dt>
+							<dd>
+								<a href="#">会员权益</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/expertplan/index.shtml">礼品商城</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="ftk-ma fl clearfix">
+						<div class="fl ftkm1"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg9_20160513.jpg"><br/>关注微信公众号</div>
+						<div class="fl"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg10_20160513.jpg"><br/>立即领特权金</div>
+					</div>
+					<div class="icon-ft fl">
+						<div class="icon-ft-qq">
+							<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_blank" class="iq1_2"></a>
+							<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8f60c83a3f0e5ff22dd601733965a2a8e4eccbac49f69282a4edb41c3718b6ab" class="iq2_2"></a>
+						</div>
+						<p class="icon-ft-p">客服热线：(工作日9:00~21:00)</p>
+						<div class="icon-ft-tel">400-788-5166</div>
+						<div class="icon-ft-tubiao">
+							<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="ios-ft2"></a>
+							<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="anz-ft2"></a>
+							<a href="http://weibo.com/newnewbank" class="weib-ft2" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="friend-box">
+				<div class="w1200 clearfix">
+					<div class="fl fr-left">
+						<div class="fl">友情链接：</div>
+						<div class="fl fr-list">
+							<a href="https://www.newnewbank.com/financingNews/toView.shtml" target="_blank">投资理财资讯</a>
+							<a href="http://www.p2peye.com/" target="_blank">网贷天眼</a>
+							<a href="http://www.wdzj.com/" target="_blank">网贷之家</a>
+							<a href="https://pay.sina.com.cn/index" target="_blank">新浪支付</a>
+							<a href="https://www.weicaifu.com/" target="_blank">微财富</a>
+							<a href="http://www.wangdaidp.com/" target="_blank">网贷点评网</a>
+							<a href="http://www.p2p001.com/" target="_blank">第一网贷</a>
+							<a href="https://www.newnewbank.com/financingNews/toTagMap.shtml" target="_blank" style="display:none">地图</a>
+							<a href="https://www.newnewbank.com/html/siteMap.html" target="_blank">网站地图</a>
+						</div>
+						<div class="clear"></div>
+						<div class="copy-fr">深圳市金牛牛互联网金融服务有限公司<span>|</span>粤ICP备14051198号<span>|</span>
+							<a href="https://www.newnewbank.com/html/icp.html" target="_blank" style="color: inherit;">增值电信业务经营许可证粤B2-20160396</a>
+						</div>
+						<div class="copy-fr">版权所有 (C) newnewbank.com</div>
+					</div>
+					<div class="fr copy-img">
+						<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg11_20160513.jpg"></a>
+						<a href="https://ss.knet.cn/verifyseal.dll?sn=e150214440300577673clf000000&ct=df&a=1&pa=0.620487422721416" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg12_20160513.jpg"></a>
+						<a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.newnewbank.com&lang=zh_cn" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg13_20160513.jpg"></a>
+						<a href="#"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg14_20160513.jpg"></a>
+						<a style="background: white;" class="record_nav_e" key="547849daefbfb0170ad8c14c" logo_size="83x30" logo_type="business" rel="nofollow" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.newnewbank.com&amp;at=business" target="_blank">
+							<script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script><span id="aqLogoHook" style="display: none;"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--统计-->
+		<div style="display:none;">
+			<script type="text/javascript">
+				try {
+					var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " https://");
+					document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd2e2acd3dca23a5a68c9fdfbcaac24c1' type='text/javascript'%3E%3C/script%3E"));
+				} catch(err) {
+
+				}
+				(function(i, s, o, g, r, a, m) {
+					i['GoogleAnalyticsObject'] = r;
+					i[r] = i[r] || function() {
+						(i[r].q = i[r].q || []).push(arguments)
+					}, i[r].l = 1 * new Date();
+					a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m)
+				})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+				try {
+					ga('create', 'UA-71441885-1', 'auto');
+					ga('send', 'pageview');
+				} catch(e) {}
+			</script>
+		</div>
+		<!--统计 end-->
+		<!--  底部 end  -->
+		<script>
+			window.web_context = 'https://www.newnewbank.com/';
+		</script>
+		<script src="https://www.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="https://www.newnewbank.com/js/jquery-ui.js" type="text/javascript"></script>
+		<!-- 	<script src="https://www.newnewbank.com/js/userAccount/head.js" type="text/javascript"></script> -->
+		<script src="https://www.newnewbank.com/js/comm.js" type="text/javascript"></script>
+		<script src="https://www.newnewbank.com/js/jquery.artDialog.js" type="text/javascript"></script>
+		<!-- 	<span id="actFoot"></span>
+ -->
+		<script src="https://www.newnewbank.com/js/urlSource.js" type="text/javascript"></script>
+		<!--  购买弹框end  -->
+		<!-- 弹窗控件 -->
+		<div id="popup"></div>
+		<!-- 弹窗控件 end-->
+		<div id="buyprs"></div>
+		
+		
+		<!--修改20161024 start-->
+		<!--  购买弹框start  -->
+		<div class="shadow4"></div>
+		<div class="buy-popup">
+			<div class="buy-form-box">
+				<form>								
+					<div class="form-item" style="height:90px!important ;">
+						<div class="selectContainer xjq-select buy-info">
+							<span class="selectOption gray">已使用优惠</span>
+							<ul class="selectMenu">
+							</ul>
+						</div>
+						
+						
+						<!--修改20161024 start-->
+						<div class="couponType">
+							<div class="cashCoupon">
+								<div class="flipper flipperCash">
+									 <div class="front">
+									 	<p><a class="symbol">￥</a><a class="oneHundred">100</a> <a>现金券</a></p>
+										<p>投资满100,000,000元可用</p>
+									</div>
+									<div class="back">
+		                                <p>有效期至：2016.09.09</p>
+										<p class="changeOne" onclick="toggleDialog1(true)">换一张</p>
+		                            </div>
+								</div>
+							</div>
+							
+							<div class="interestRateSecurities">
+								<div class="flipper flipperIr">
+									 <div class="front">
+									 	<p><a class="oneHundred">0.2</a><a class="symbol">%</a> <a>加息券</a></p>
+										<p>最高可投100,000,000元</p>
+									</div>
+									<div class="back backWhite">
+		                                <p>有效期至：2016.09.09</p>
+										<p class="changeOne" onclick="toggleDialog2(true)">换一张</p>
+		                            </div>
+								</div>
+							</div>							
+						</div>
+						<!--修改20161024 start-->
+						
+						
+					</div>
+					<div class="form-item">
+						<div class="buy-info clearfix">
+							<span>项目名称</span>
+							<p>豪车宝第70期</p>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="buy-info clearfix">
+							<span>投资金额</span>
+							<p><strong class="tz" id="tNums">10000</strong>元<i id="xjM1"></i></p>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="buy-info clearfix">
+							<span>投资预期收益</span>
+							<p><strong class="sy" id="syNums"></strong>元<i id="jxM1"></i></p>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="trading-pass">
+							<input type="password" value="" />
+							<em>请输入交易密码</em>
+						</div>
+						<p id="pwerror" style="color:#f44975; padding-top:5px;"></p>
+					</div>
+				</form>
+				<div class="buy-btn-box">
+					<a class="buy-btn" href="javascript:;" btn-triggle="expandUp" id="subEnter">确定</a>
+					<a class="forgetPass" target="bank" href="https://www.newnewbank.com/findSinaPwd/findPwd_one.shtml">忘记交易密码？</a>
+				</div>
+			</div>
+			<a class="close-buy-pop" href="javascript:;">X</a>
+			<div class="buy-loding">
+				<div class="b-loading01"></div>
+				<div class="b-loading02"></div>
+			</div>
+			<span id="pageToken" style="display:none"></span>
+		</div>		
+		
+			
+		<!--现金劵弹框 start-->
+		<div id="dialog-face"></div>
+		<div id="dialog">
+			<div id="dialog-wrapper" class="CashCouponBox">								
+				<div class="buy-form-box">
+					<p class="cashCoupontext">请选择您要使用的现金券</p>
+					<div class="slideBar">
+						<!--一行图片 satrt-->
+						<div class="aRowOfPictures">
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon imageVisible"/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">88</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">5</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">100</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+						</div>
+						<!--一行图片 end-->
+						<!--一行图片 satrt-->
+						<div class="aRowOfPictures">
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">88</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">5</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">100</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+						</div>
+						<!--一行图片 end-->
+						<!--一行图片 satrt-->
+						<div class="aRowOfPictures none">
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">88</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">88</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground1">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="symbol">￥</a><a class="oneHundred">88</a></p>
+								<p class="centerWhite">投资满100,000,000元可用</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">限品类：30天及以上产品</p>
+							</div>
+							<!--单个图片 start-->						
+						</div>					
+						<!--一行图片 end-->
+					</div>
+					<div class="moreLoad">
+						点击加载更多优惠券
+					</div>
+				</div>
+
+				<a class="closeCashCouponPop" onclick="toggleDialog1(false)" href="javascript:;">X</a>
+				<div class="buy-loding">
+					<div class="b-loading01"></div>
+					<div class="b-loading02"></div>
+				</div>
+				<span id="pageToken" style="display:none"></span>
+			</div>
+		</div>
+		
+		<!--加息劵弹框 start-->
+		<div id="dialog-face2"></div>
+		<div id="dialog2">
+			<div id="dialog-wrapper2" class="CashCouponBox">								
+				<div class="buy-form-box">
+					<p class="cashCoupontext">请选择您要使用的现金券</p>
+					<div class="slideBar">
+						<!--一行图片 satrt-->
+						<div class="aRowOfPictures">
+							<!--单个图片 start-->
+							 <div class="MapBackground MapBackground2">
+							 	<div class="commonIcon imageVisible"/></div>
+							 	<p class="centerWhite"><a class="oneHundred ">1</a><a class="symbol">%</a></p>
+								<p class="centerWhite">最高可投1,000,000,000元</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">用   途：加息</p>
+							</div>
+							<!--单个图片 end-->						
+							 <!--单个图片 start-->
+							 <div class="MapBackground MapBackground2">
+							 	<div class="commonIcon "/></div>
+							 	<p class="centerWhite"><a class="oneHundred ">1</a><a class="symbol">%</a></p>
+								<p class="centerWhite">最高可投1,000,000,000元</p>							
+	                            <p class="TermOfValidity distance">有效期至：2016.09.09</p>
+								<p class="TermOfValidity">用   途：加息</p>
+							</div>
+							<!--单个图片 end-->
+						</div>
+						<!--一行图片 end-->
+					</div>
+				</div>
+				<a class="closeCashCouponPop" onclick="toggleDialog2(false)" href="javascript:;">X</a>
+				<div class="buy-loding">
+					<div class="b-loading01"></div>
+					<div class="b-loading02"></div>
+				</div>
+				<span id="pageToken" style="display:none"></span>
+			</div>
+		</div>
+		<!--加息劵弹框 end-->
+		<!--修改20161024 end-->
+				
+		
+		
+		<div id="sinaForm">
+		</div>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/newWeb/jquery.public.js"></script>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/newWeb/jquery.contract.js"></script>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/newWeb/jquery.popup.js"></script>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/newWeb/jquery.select.js"></script>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/jquery.easing.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#moneyNums").val("");
+			});
+
+			$(document).ready(function() {
+				//立即购买
+				var bool = true; //已登录
+				if(bool == true) {
+					$("#allMoney").on("click", function() { //全部抢购
+						//计算
+						var remainMoney = parseFloat($("#remainMoney").text()); //产品剩余金额
+						var allnums = parseInt($("#countMoney").find("i").text(), 10); //余额
+						var lv = Number($("#perlv").text(), 10) / 100; //利率
+						var endDate = new Date("2017/01/23");
+						var timedate = new Date();
+						timedate.setFullYear(endDates.getFullYear());
+						timedate.setMonth(endDates.getMonth()); //月份是+1算的，这里是6月
+						timedate.setDate(endDates.getDate());
+						var endTime = timedate.getTime(); //结息时间
+						//获取当前时间
+						var mytime = Date.parse(new Date());
+						var times = GetDateDiff(endTime, mytime); //结息时间-当前天数
+						if(remainMoney < allnums) {
+							var myget = profit(remainMoney, lv, times).toFixed(2);
+						} else {
+							var myget = profit(allnums, lv, times).toFixed(2);
+						}
+						$("#getNums").text(myget); //预期收益
+						//银行理财 
+						var blv = parseInt($("#blv").text(), 10) / 100; //利率
+						if(remainMoney < allnums) {
+							var bank = profit(remainMoney, blv, times).toFixed(2);
+						} else {
+							var bank = profit(allnums, blv, times).toFixed(2);
+						}
+						$("#elseget").text(bank); //银行理财收益
+						//
+						$(".buy-money").find("em").hide();
+						if(remainMoney < allnums) {
+							$("#popup").popup({
+								text: "您的余额大于该产品剩余金额<span></span>,确定要全部抢购吗？",
+								alength: "2"
+							});
+							$(".popup-p").find("span").text(remainMoney);
+							$("#moneyNums").val(remainMoney);
+						} else {
+							//弹窗控件
+							$("#popup").popup({
+								text: "您的投资金额<span></span>,确定要全部抢购吗？",
+								alength: "2"
+							});
+							$(".popup-p").find("span").text(allnums);
+							$("#moneyNums").val(allnums);
+						}
+					});
+				} else {
+					$("#countMoney").hide();
+				}
+
+				//检测用户是否被锁定
+				function checkUserIsLock() {
+					$.post("https://www.newnewbank.com/auth/checkUserEnable.shtml", function(json) {
+						if(!json.userEnable) {
+							$("#popup").popup({
+								text: "该用户已经被锁定,请联系客服",
+								alength: "1"
+							});
+						}
+					});
+				}
+
+				function buyNowFunc() {
+					$.post("https://www.newnewbank.com/myMoney/queryHasPayPwd.shtml", function(data) {
+						if(data.result == "success") {
+							checkUserIsLock(); //检测用户是否被锁定
+						} else {
+							location.href = getRequestForSource("https://www.newnewbank.com/" + data.result);
+						}
+					});
+					createBuyToken(); //创建
+					var texts = $("#moneyNums").val();
+					if(bool == true) {
+						if(texts == "") {
+							//弹窗控件
+							$("#popup").popup({
+								text: "请输入投资金额",
+								alength: "1"
+							});
+						} else if(parseInt(texts, 10) < 1) {
+							//弹窗控件
+							$("#popup").popup({
+								text: "投资金额大于1",
+								alength: "1"
+							});
+						} else {
+							if(parseFloat(texts) % 1 !== 0) {
+								//弹窗控件
+								$("#popup").popup({
+									text: "请输入1的整数倍",
+									alength: "1"
+								});
+							} else {
+								//成功
+								$(".buy-popup").show();
+								$(".shadow4").show();
+								// 第一种状态，无现金劵和加息劵
+								var jxqLi = $(".jxq-select").find("ul li").length;
+								var xjqLi = $(".xjq-select").find("ul li").length;
+								if(jxqLi == 0) {
+									$(".jxq-select").find(".selectOption").text("您无加息券可使用");
+								}
+								if(xjqLi == 0) {
+									$(".xjq-select").find(".selectOption").text("您无现金劵可使用");
+								}
+								$("#syNums").text($("#getNums").text());
+								$("#tNums").text(parseInt($("#moneyNums").val(), 10));
+								//第二种状态,现金劵
+								var getXjq = 0; //现金券金额
+								if(xjqLi > 0) {
+									selectCashCoupon();
+								}
+								//第三种状态,加息劵
+								if(jxqLi > 0) {
+									selectInterestCoupon();
+								}
+								//下拉框 
+								$(".jxq-select").select();
+								$(".xjq-select").select();
+								inputText($(".form-item"));
+								$(".close-buy-pop").on("click", function() { //关闭购买框
+									$(".buy-popup").hide();
+									$(".shadow4").hide();
+									$(".trading-pass").find("input").val(""); //清空交易密码
+									$("#subEnter").unbind("click");
+								});
+
+								$(document).keydown(function(event) {
+									if(event.keyCode == 13) { //绑定回车 
+										$("#subEnter").click();
+										return false;
+									}
+								});
+
+								//提交
+								$("#subEnter").on("click", function() {
+									var pageToken = $("#pageToken").attr("value"); //获取pageToken
+									var password = $(".trading-pass").find("input").val();
+									var cashCouponId = $(".xjq-select").find("#selected").attr("value") || 0; //获取现金券Id
+									var interestUserId = $(".jxq-select").find("#jxqSelected").attr("value") || 0; //获取加息券Id
+									var promoteRate = parseFloat($(".jxq-select").find("#jxqSelected").attr("interestrate")) || 0;
+									$(".buy-loding").show();
+									if(password == "") {
+										$("#pwerror").text("交易密码不能为空");
+										$(".buy-loding").hide();
+									} else {
+										//执行代码
+										$.ajax({
+											url: "https://www.newnewbank.com/buy/validPayPwd.shtml",
+											data: {
+												payPwd: password,
+												detailId: 2195
+											},
+											type: "POST",
+											async: false,
+											success: function(data) {
+												if(data.result == "success") {
+													$.ajax({
+														url: "https://www.newnewbank.com/buy/newBuyBid.shtml?pageToken=" + pageToken,
+														data: {
+															payPwd: password,
+															detailId: 2195,
+															cashCouponId: cashCouponId,
+															interestUserId: interestUserId,
+															transAmt: texts,
+															cashCouponMoney: getXjq,
+															promoteRate: promoteRate
+														},
+														type: "POST",
+														async: true,
+														success: function(data) {
+															if(data.result == "success") {
+																$(".buy-loding").hide();
+																$(".buy-popup").hide();
+																$(".shadow4").hide();
+																$("#popup").popup({
+																	text: "投资成功",
+																	alength: "1",
+																	url: "https://www.newnewbank.com/myMoney/2195/investProjectDetail.shtml",
+																	spantext: "投资记录",
+																	spantextSelf: "https://www.newnewbank.com/myAccount/expenseManage/investLog.shtml"
+																});
+																$("#subEnter").unbind("click");
+															} else { //投资失败
+																$(".buy-loding").hide();
+																$(".buy-popup").hide();
+																$(".shadow4").hide();
+																$("#popup").popup({
+																	text: '当前投资人数过多，请稍后重试<br/>可能是您所设置的支付限额小于投资金额，<br/>请点击我的资产-账户设置出修改新浪委托限额',
+																	alength: "1"
+																});
+																$(".trading-pass").find("input").val(""); //清空交易密码
+																$("#subEnter").unbind("click");
+															}
+														}
+													});
+												} else { //密码错误
+													$("#pwerror").text(data.message);
+													$(".trading-pass").find("input").val(""); //清空交易密码
+													$(".buy-loding").hide();
+												}
+											}
+										});
+									}
+								})
+							}
+						}
+					} else {
+						inputText($(".login-input-box"));
+						$(".shadow2").show();
+						$(".login-box").show();
+					}
+				}
+				$("#buyNow").on("click", buyNowFunc);
+				$("#submitNow").on("click", function() {
+					if($.trim($("#moneyNums").val()) != '') {
+						buyNowFunc();
+					} else {
+						$("html,body").animate({
+							scrollTop: 0
+						}, 300);
+					}
+				});
+				$("#submitBuyNow").on("click", buyNowFunc);
+				$(".close-login-box").on("click", function() { //关闭登录框
+					$(".shadow2").hide();
+					$(".login-box").hide();
+				});
+				//点击登录
+				$("#loginLeave").find("a").on("click", function() {
+					inputText($(".login-input-box"));
+					$(".shadow2").show();
+					$(".login-box").show();
+				});
+			})
+
+			function selectInterestCoupon() { //选择加息券
+				var getXjq = parseInt($(".xjq-select").find("#selected").attr("cashmoney"), 10) || 0; //获取现金券金额
+				var jxqLi = $(".jxq-select").find("li"); //获取加息券列表
+				if(jxqLi.length > 0) {
+					$(".jxq-select").find(".selectOption").text("不使用"); //默认不使用
+				}
+				$("#jxM1").hide();
+				for(var i = 0; i < jxqLi.length; i++) {
+					jxqLi.eq(i).removeClass(); //移除已选中的样式
+					jxqLi.eq(i).siblings().attr("id", "");
+					if(getXjq > 0) {
+						var jxqMoney = parseInt($("#moneyNums").val(), 10) + getXjq;
+					} else {
+						var jxqMoney = parseInt($("#moneyNums").val(), 10);
+					}
+					if(jxqMoney <= parseInt(jxqLi.eq(i).attr("useamt"), 10)) {
+						jxqLi.eq(i).attr("class", "yesClass");
+					}
+				}
+				$(".jxq-select").on("click", ".yesClass", function() {
+					$(this).attr("id", "jxqSelected").siblings().attr("id", ""); //加息劵点击添加id
+					var jiaxijuan = parseFloat($(this).attr("interestrate")) / 100;
+
+					//计算
+					var txtmoneys = parseInt($("#moneyNums").val(), 10) + getXjq;
+					var endDates = '2017-01-23'; //结息时间
+					endDates = new Date(Date.parse(endDates.replace(/-/g, '/')));
+					var timedate = new Date();
+					timedate.setFullYear(endDates.getFullYear());
+					timedate.setMonth(endDates.getMonth()); //月份是+1算的，这里是6月
+					timedate.setDate(endDates.getDate());
+					var endTime = timedate.getTime();
+					//获取当前时间
+					var mytime = Date.parse(new Date());
+					var times = GetDateDiff(endTime, mytime); //结息时间-当前天数
+					var myget4 = profit(txtmoneys, jiaxijuan, times).toFixed(2);
+					$("#jxM1").show();
+					$("#jxM1").html('+<strong style="color:#f44975;font-size: 18px;"><i id="jxM">' + myget4 + '</i>元(使用加息券)</strong>');
+					//判断是否有现金券，有的话，把现金券先加入....
+				});
+			}
+
+			function selectCashCoupon() { //选择现金券
+				var emoney = parseInt($("#moneyNums").val(), 10);
+				var eli = $(".xjq-select").find("ul li");
+				var arry = [];
+				for(var i = 0; i < eli.length; i++) {
+					eli.eq(i).siblings().attr("id", ""); //每次去除已选择的状态
+					eli.eq(i).removeClass(); //移除已选中的样式
+					if(emoney >= parseInt(eli.eq(i).attr("useamtconditions"), 10)) {
+						eli.eq(i).attr("class", "yesClass");
+						arry.push(eli.eq(i).attr("useamtconditions"));
+					}
+				}
+				for(var i = 0; i < eli.length; i++) { //默认选择现金券
+					var maxMoney = Math.max.apply(null, arry); //获取最大值
+					if(parseInt(eli.eq(i).attr("useamtconditions"), 10) == maxMoney) {
+						$(".xjq-select").find(".selectOption").text(eli.eq(i).text()); //默认选中最大
+						eli.eq(i).attr("id", "selected").siblings().attr("id", ""); //默认选中最大 添加id
+						getXjq = parseInt(eli.eq(i).attr("cashmoney"), 10) //获取现金券	
+						break;
+					}
+				}
+				$(".xjq-select").on("click", ".yesClass", function() { //选择现金券
+					$(this).attr("id", "selected").siblings().attr("id", ""); //点击选中当前，删除其它id
+					getXjq = parseInt($(this).attr("cashmoney"), 10); //点击获取现金券金额
+					$("#tNums").text(parseInt($("#moneyNums").val(), 10)); //重新计算
+					var newtNums = parseInt($("#tNums").text(), 10) + getXjq;
+					//计算
+					var allnums = parseInt($("#countMoney").find("i").text(), 10);
+					var lv = parseInt($("#perlv").text(), 10) / 100; //利率
+					var endDates = '2017-01-23'; //结息时间
+					endDates = new Date(Date.parse(endDates.replace(/-/g, '/')));
+					var timedate = new Date();
+					timedate.setFullYear(endDates.getFullYear());
+					timedate.setMonth(endDates.getMonth()); //月份是+1算的，这里是6月
+					timedate.setDate(endDates.getDate());
+					var endTime = timedate.getTime();
+					//获取当前时间
+					var mytime = Date.parse(new Date());
+					var times = GetDateDiff(endTime, mytime); //结息时间-当前天数
+					var myget2 = profit(newtNums, lv, times).toFixed(2);
+					$("#syNums").text(myget2);
+					$("#xjM1").html('+<strong style="color:#f44975;font-size: 18px;"><i id="jxM">' + getXjq + '</i>元(使用现金券)</strong>');
+					selectInterestCoupon()
+				})
+				var jiaxjq = parseInt($("#moneyNums").val(), 10) + getXjq;
+				$("#tNums").text(parseInt($("#moneyNums").val(), 10));
+				$("#xjM1").html('+<strong style="color:#f44975;font-size: 18px;"><i id="jxM">' + getXjq + '</i>元(使用现金券)</strong>');
+				//计算
+				var allnums = parseInt($("#countMoney").find("i").text(), 10);
+				var lv = parseInt($("#perlv").text(), 10) / 100; //利率
+				var endDates = '2017-01-23'; //结息时间
+				endDates = new Date(Date.parse(endDates.replace(/-/g, '/')));
+				var timedate = new Date();
+				timedate.setFullYear(endDates.getFullYear());
+				timedate.setMonth(endDates.getMonth()); //月份是+1算的，这里是6月
+				timedate.setDate(endDates.getDate());
+				var endTime = timedate.getTime();
+				//获取当前时间
+				var mytime = Date.parse(new Date());
+				var times = GetDateDiff(endTime, mytime); //结息时间-当前天数
+				var myget = profit(jiaxjq, lv, times).toFixed(2);
+				$("#syNums").text(myget);
+			}
+
+			//创建Token
+			function createBuyToken() {
+				$.ajax({
+					url: "https://www.newnewbank.com/buy/createBuyToken.shtml?" + new Date(Math.random() * 10000),
+					context: {},
+					success: function(data) {
+						$("#pageToken").attr("value", data.token);
+					}
+				});
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/guide/buyok.css">
+		<script type="text/javascript" src="https://www.newnewbank.com/js/guide/jquery.buyok.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/product-bottomSilde.css">
+		<script src="https://www.newnewbank.com/js/jquery.bottomSilde.js" type="text/javascript"></script>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/cookie.js"></script>
+		<script type="text/javascript">
+			var isFirstbuy = '';
+			$(function() {
+				var raiseEnd = '2016/10/25 23:30:00';
+				var raiseStart = '2016/10/21 17:32:31';
+				if(2 == 2) {
+					setTimeout(function() {
+						show_time("restTime2", new Date(raiseEnd).getTime(), new Date().getTime())
+					}, 1000);
+				} else if(1 == 2) {
+					setTimeout(function() {
+						show_time("restTime3", new Date(raiseStart).getTime(), new Date().getTime())
+					}, 1000);
+				}
+
+				$('.details-tab li').click(function() {
+					var index = $(this).index();
+					$(this).addClass('active').siblings('li').removeClass('active');
+					$('.details-box').find('.box').eq(index).show().siblings('div').hide();
+				})
+
+				$("#investRecords").load("https://www.newnewbank.com/myMoney/investRecordList/1.shtml", {
+					detailId: 2195
+				});
+				//底部插件
+				$("#bottomS").bottomsilde();
+			});
+		</script>
+		
+		<!--修改20161024 start-->
+		<script type="text/javascript">
+			function toggleDialog1( show) {
+				$('.closeCashCouponPop').css('display',"block");
+				$('.buy-popup').css('display',"none");
+				var animationClass = show ? "slipUp" : "slipBottom";
+				var animation = function() {
+					var ele = document.getElementById("dialog-face");
+					ele.className = "dialog-face " + animationClass;
+					ele = document.getElementById("dialog");
+					ele.className = "dialog-root " + animationClass;
+					ele = document.getElementById("dialog-wrapper");
+					ele.className = "dialog-wrapper " + animationClass;
+				};
+				setTimeout(animation, 100);
+			}			
+			function toggleDialog2(show ) {
+				$('.closeCashCouponPop').css('display',"block");
+				$('.buy-popup').css('display',"none");
+				var animationClass = show ? "slipUp" : "slipBottom";
+				var animation = function() {
+					var ele = document.getElementById("dialog-face2");
+					ele.className = "dialog-face " + animationClass;
+					ele = document.getElementById("dialog2");
+					ele.className = "dialog-root " + animationClass;
+					ele = document.getElementById("dialog-wrapper2");
+					ele.className = "dialog-wrapper " + animationClass;
+				};
+				setTimeout(animation, 100);
+			}
+			$('.moreLoad').on('click',function(){
+				$('.moreLoad').css('display',"none");
+				$('.none').css('display','block');
+			});
+			
+			$('.closeCashCouponPop').on('click',function(){
+				$('.moreLoad').css('display',"block");
+				$('.none,.closeCashCouponPop').css('display','none');
+				$('.buy-popup').css('display',"block");				
+			});		
+		</script>
+		<!--修改20161024 start-->
+	</body>
+
+</html>

@@ -1,0 +1,213 @@
+* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}
+			#root{
+				width: 640px;
+				background-color:#f3f3f3 ;				
+			}
+			.header img{
+				width:640px;
+				height:199px ;
+			}
+			.reservationTable{
+				line-height:67px ;
+				height: 67px;
+				background-color:#fff ;
+				border-bottom: 1px #eee solid;
+			}
+			.reservationTable p:first-child{
+				display: inline-block;
+				font-size: 24px;
+				color: #999;
+				padding-left:28px ;
+			}
+			.reservationTable p:last-child{
+				font-size: 20px;
+				color: #eaa213;
+				float: right;
+				margin-right: 30px;
+			}
+			.commonPage{
+				width:640px ;
+				background-color:#fff ;
+				margin-top:12px ;
+			}
+			.onePage{
+				/*height:396px ;*/
+				
+			}
+			.line{
+				padding-left:28px ;
+				height: 80px;
+				border-bottom: 1px #eee solid;
+				font-size: 24px;
+				line-height: 80px;
+			}
+			.commonPage .line:last-child{
+				border-bottom: 0;
+			}
+			.fontS_24{
+				display: inline-block;
+			    color: #000;
+			    width: 170px;
+			    float: left;
+			}
+			input[type='text']{
+				outline: none;
+				border: 0;
+				background-color:#fff ;
+			}
+			.color999{
+				font-size: 24px;
+				color: #999;
+			}
+			
+			.inBlock{
+				display: inline-block;
+				float: right;
+    			margin-right: 40px;
+			}
+			.arrow{
+				display: inline-block;
+				width:15px ;
+				height: 15px;
+				border-top:2px solid #999;
+				border-left:2px solid #999;
+				margin-left: 20px;
+				moz-transform:rotate(135deg);
+				-webkit-transform:rotate(135deg);
+				-o-transform:rotate(135deg);
+				transform:rotate(135deg); 
+			}
+			.hidden{
+				display: none;
+				color: #999;
+				font-size: 24px;
+			}
+			.textScp{
+				display: inline-block;
+				color: #999;
+				font-size: 24px;
+			}
+			.fourPage{
+				margin-bottom: 30px;
+			}
+			.fivePage{
+				height: 90px;
+				line-height: 90px;
+				font-size: 35px;
+				text-align: center;
+				color: #fff;
+				background-color:#999;
+			}
+			.bgRedColor{
+				background-color:#f54a43;
+			}
+			
+			.already{				
+				margin-right: 30px;
+				color: #63b1ee;
+			}
+			.alreadyUploaded{
+			    display: inline-block;
+			    width: 24px;
+			    height: 24px;
+			    background: url(img/certified20161209.png) no-repeat;
+			    background-size: 24px 24px;
+			    float: right;
+			    margin-top: 30px;
+			    margin-left: 10px;
+			}
+			.sex{
+				float: left;
+				display: inline-block;
+				width: 110px;
+			}
+			.male{
+				margin-right:100px ;
+			}
+			.circle{
+				display: inline-block;
+				width:25px ;
+				height: 25px;
+				border:1px #9f9f9f solid;
+				border-radius: 50%;
+				float: left;
+				margin-top: 28px;
+			}
+			.active{
+				background-color:#f54a43 ;
+				border:0;
+			}
+			.maleIcon,.famaleIcon{
+				display: inline-block;
+				width:23px ;
+				height: 23px;
+				float: left;
+				margin-top: 28px;
+			}
+			.maleIcon{
+				background:url(img/male20161209.jpg) no-repeat ;
+				background-size:23px 23px ;
+			}
+			.famaleIcon{
+				background:url(img/female20161209.png) no-repeat ;
+				background-size:23px 23px ;
+			}
+			.fL{
+				float: left;
+				margin: 0 10px 0 15px;
+			}			
+			.seatBox{
+				display: inline-block;
+				width:168px;
+				height:52px;
+				border:1px #eee solid;
+				border-radius: 5px;
+				margin-top: 13px;
+				float: right;
+				margin-right: 25px;
+			}
+			.seatBox p{
+				height: 100%;
+			    display: inline-block;
+			    width: 55px;
+			    float: left;
+			    font-size: 24px;
+			    text-align: center;
+			    line-height: 52px;
+			}
+			.reduce span{
+				display: block;
+			    width: 60%;
+			    height: 4px;
+			    background-color: #ccc;
+			    margin: 24px auto;
+			}
+			.number{
+				border-left:1px #eee solid;
+				border-right:1px #eee solid;
+			}
+			.add span{
+				display: inline-block;
+			    font-size: 40px;
+			    line-height: 45px;
+			    color: #f54a43;
+			}
+			
+			.notUploadedName,.notUploadedSeat,.notUploadedTravelCard,
+			.notUploadedTravelCard,.notUploadedDriveLicense,.notUploadedCard{
+				display: none;
+			}
+			.notUploadedDriveLicense{
+				display: block;
+			}
+			.notUploadedDate,.notUploadedDestinate,.notUploadedStart{
+				
+			}
+			.none{
+				display: none;
+			}

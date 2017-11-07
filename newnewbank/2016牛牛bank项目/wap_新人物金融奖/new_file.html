@@ -1,0 +1,174 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+		<title>新金融人物奖</title>
+   		<link rel="stylesheet" href="css/global.css">
+    	<link rel="stylesheet" href="css/zepto.fullpage.css">
+	</head>
+
+	<body>
+		
+    <div class="wp">
+        <div class="wp-inner">
+            <div class="page page1"></div>
+            <div class="page page2"></div>
+            <div class="page page3"></div>
+            <div class="page page4"></div>
+            <div class="page page5"></div>
+            <div class="page page6"></div>
+            <div class="page page7"></div>
+        </div>
+        <ul class="indicator">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+		<!--效果html结束-->		
+	    <script src="js/zepto.min.js"></script>
+		 <script src="js/zepto.fullpage.js"></script>
+		 <script src="js/js.fullpage.js"></script>
+	    <script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/myJs/myTool.js"></script>
+		<script src="js/myJs/apiAddress.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+		//add daima
+		$(function(){
+			 try{
+					var _in=$.getUrlParam("in");
+					if(_in!=null&&_in!=""){
+						$.cookie("in",_in,{expires: 1});
+					}
+				}catch(e){	}
+				
+				$.extend({
+					isWeiXin:function (){
+					    var ua = window.navigator.userAgent.toLowerCase();
+					    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+					        return true;
+					    }else{
+					        return false;
+					    }
+					},
+					isDomain:function(){
+						if(!$.cookie("weixin_domain")){
+							$.apiPost("getWeixinDomain","",function(data){
+								$.cookie("weixin_domain",JSON.stringify(data));
+							},null,false);
+						}
+						var weixin_domain=JSON.parse($.cookie("weixin_domain"));
+						var host = window.location.host;
+						var isDomain=false;
+						for(var i=0; i<weixin_domain.length;i++){
+							if(host.indexOf(weixin_domain[i])>=0){
+								isDomain=true;
+								break;			
+							}
+						}
+						return isDomain;
+					},
+					isIos:function(){
+						 var ua = window.navigator.userAgent.toLowerCase();
+						 if(ua.match(/AppIos/i) == 'appios'){
+					        return true;
+					    }else{
+					        return false;
+					    }
+					},
+					isAndroid:function(){
+						var ua = window.navigator.userAgent.toLowerCase();
+						 if(ua.match(/AppAndroid/i) == 'appandroid'){
+					        return true;
+					    }else{
+					        return false;
+					    }
+					},
+					isAPICloud:function(){
+						var ua = window.navigator.userAgent.toLowerCase();
+						 if(ua.match(/APICloud/i) == 'apicloud'){
+					        return true;
+					    }else{
+					        return false;
+					    }
+					},
+					isApp:function(){
+						return $.isIos()||$.isAndroid()||$.isAPICloud();
+					}
+				});
+				
+				try{
+					//如果是微信浏览器
+					if($.isWeiXin()&&$.isDomain()){
+						$(function(){
+							if($.isWeiXin()){
+									//获取微信 js接口的权限
+									var t=Math.random();
+									$.ajax({
+										url:window.wxbase+"signJsConfig.shtml?t="+t,
+										type:"POST", 
+										cache: false,
+										data:location.href,
+										success:function(data){
+											data['debug']=false;
+											data['jsApiList']=["onMenuShareTimeline","onMenuShareAppMessage","imagePreview","hideToolbar","hideOptionMenu"];
+											wx.config(data);
+											//全局分享
+											var shareInfo={
+															title: "牛牛bank荣获“中国（深港）十大创新金融人物”奖", // 分享标题
+														    desc: "香港特首梁振英先生为香港特首梁振英先生为牛牛bank颁发“中国（深港）十大创新金融人物”奖",
+														    link: $.absolute_url("2016111001.html")+"?in="+$.cookie("referral"), // 分享链接
+														    imgUrl: "https://images-wap.oss-cn-hangzhou.aliyuncs.com/show_Newfinancialfigures_banner.jpg", // 分享图标
+														    success:function(){
+														    	$.shareLog(shInfo);
+														    	try{window.shareSuccess()}catch(e){};
+														    },
+														    cancel:function(){
+														    	try{window.shareCancel()}catch(e){};
+														    }
+														};
+											wx.ready(function(){
+												wx.onMenuShareTimeline(shareInfo);
+												wx.onMenuShareAppMessage(shareInfo);
+												initShare();
+											});
+										}
+									});
+							}
+						});
+					}
+					
+				}catch(e){
+					
+				}  
+		});
+		</script>
+	   
+		
+	</body>
+
+</html>

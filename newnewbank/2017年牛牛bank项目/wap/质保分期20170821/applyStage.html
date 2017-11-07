@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/adapter.0.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>申请分期</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<style type="text/css">
+			.firstMoney,.lastMoney{
+				position: absolute;
+				top: 3.8rem;
+			}
+			.firstMoney{
+				left: 0;
+			}
+			.lastMoney{
+				right: 0;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="rootNode bgColor_efeff4">
+			<div class="bgColor_fff">
+				<header class="apply-one-page"></header>
+				<div class="padding-side-30">
+					<p class="clearfloat padding-top-40 ">
+						<span class="float_left font_24 color_333">分期金额<i class="font_20 color_999">(最高分期50000元）</i></span>
+						<i class="float_right font_22 color_2dadff" id='go'>全部分期</i>
+					</p>
+					<!--拖拽进度条-->
+					<div class="relative">
+						<i class="rmbSymbol">￥</i>
+						<i class="font_22 color_000 firstMoney">0元</i>
+						<i class="font_22 color_000 lastMoney">5万</i>
+						<input type="range" name="points" id="points"  value="10000" min="0" max="50000" step="1000" data-highlight="true">
+					</div>
+					<!--拖拽进度条-->
+				</div>
+			</div>
+			<div class="bgColor_fff mar-top-20">
+				<div class="">
+					<div class="flex-parent font_24 padding-side-30">
+						<i class="color_000 w-120 vertical_center">分期期数</i>
+						<input class="w-100-pre h-80 padding-left-20 text_right" type="text" name="" id="" placeholder="1期/月（共12期）">
+					</div>
+					<p class="under_line mar-left-30"></p>
+					<div class="flex-parent font_24  padding-side-30">
+						<i class="color_000 w-120 vertical_center">分期期数</i>
+						<span class="flex-child h-80 color_666 padding-left-20 ">
+							<i class="vertical_center h-80 content_right" >4146元</i>
+						</span>
+					</div>
+					<p class="under_line mar-left-30"></p>
+					<div class="flex-parent font_24  padding-side-30">
+						<i class="color_000 w-120 vertical_center">总利息</i>
+						<span class="flex-child h-80 color_666 padding-left-20 ">
+							<i class="vertical_center h-80 content_right" >0元</i>
+						</span>
+					</div>
+					<p class="under_line mar-left-30"></p>
+					<div class="flex-parent font_24  padding-side-30">
+						<span class="vertical_center h-110"><i class="sesameCredit "></i></span>
+						<span class="flex-child h-110 color_999 font_20 padding-left-20 ">
+							<i class="vertical_center h-110 content_left" >通过芝麻授信完成真实身份认证</i>
+						</span>
+						<a class="color_eb5120 vertical_center" href="javascript:;"> 去认证 > </a>
+					</div>
+					<p class="under_line"></p>
+				</div>
+			</div>
+			<div class="text_center padding-bottom-60">
+				<p class="font_22 color_666 inline_block padding-top-40 mar-bottom-40">
+					<i class="float_left mar-right-20 font_30 color_999 fa check-item fa-square-o fa-check-square-o"></i>授权<a class="color_2dadff" href="">恒顺</a>上传个人资料
+				</p>
+				<a class="_block margin_center w-80-pre" href="https://tinypng.com">
+					<button class="bgColor_2dadff  h-80 w-100-pre color_fff font_30 all_center border-radius-5">立即申请</button>
+				</a>
+			</div>
+		</div>
+		<!--<script src="js/fastclick.min.js"></script>-->
+		<script src="js/libs/jquery-1.10.2.min.js"></script>
+		<script src="js/libs/jquery.mobile-1.4.5.min.js"></script>
+		<!--<script src="js/myDefine.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+			$('#go').on('click',function(){
+				$('#points').val(20000);
+				$('.ui-bar-inherit .ui-btn-active').css('width','100%');
+				$('.ui-slider-handle.ui-btn.ui-shadow').css('left','100%');  
+			})
+				
+		</script>
+	</body>
+
+</html>

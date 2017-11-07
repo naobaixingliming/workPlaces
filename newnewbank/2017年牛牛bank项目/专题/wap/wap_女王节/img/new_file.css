@@ -1,0 +1,188 @@
+#queenDay {
+				padding: 0;
+				margin: 0;
+				font-family: "microsoft yahei";				
+			}
+			.queenDay_bg{
+				width: 640px;
+				height: 2849px;
+				position: relative;
+				background: url(img/wap_bg201733.jpg) no-repeat;
+				background-size:640px 2849px ;
+			}
+			.receive {
+				position: absolute;
+			    top: 665px;
+			    right: 125px;
+			    width: 160px;
+			    height: 55px;
+			    border: 1px solid red;
+			}
+			
+			.textScript {
+				position: absolute;
+				top: 2175px;
+				left: 0px;
+				padding-left: 0.3125rem;
+				margin-top: 0.78125rem;
+				color: #666;
+				line-height: 0.45rem;
+			}
+			
+			.textScript .activityIntroduction {
+				font-size: 0.375rem;
+			}
+			
+			.textScript .font_18 {
+				font-size: 0.3125rem;
+				display: inline-block;
+			}
+			
+			.textScript .padding-left {
+				padding-left:80px ;
+			}
+			
+			.circle {
+				margin-right: 0.15625rem;
+				display: inline-block;
+				content: '';
+				width: 0.25rem;
+				height: 0.25rem;
+				border-radius: 50%;
+				background-color:#666 ;
+				float: left;
+				margin-top: 0.078125rem;
+			}
+			
+			.queen_text_one {
+				position: absolute;
+				top: 760px;
+				left: 30px;
+				font-size: 22px;
+			}
+			
+			.color_fff {
+				color: #fff;
+			}
+			
+			.color_935728 {
+				color: #935728;
+			}
+			.loginBox{
+				position: absolute;
+			    top: 1000px;
+			    right: 30px;
+			    font-size: 24px;
+			}
+			.login {
+				color: #456526;
+			}
+			
+			.clearfloat:after {
+				display: block;
+				clear: both;
+				content: "";
+				visibility: hidden;
+				height: 0
+			}
+			
+			.clearfloat {
+				zoom: 1
+			}
+			
+			.font_24 {
+				font-size: 24px;
+			}
+			.bob{
+				position: absolute;
+				top: 1125px;
+				right: 10px;
+			}
+			.bob-animation {
+				-webkit-animation: bounce-down 3s linear infinite;
+				animation: bounce-down 3s linear infinite;
+			}
+			
+			@-webkit-keyframes bounce-down {
+				25% {
+					-webkit-transform: translateY(-30px);
+				}
+				50%,
+				100% {
+					-webkit-transform: translateY(0);
+				}
+				75% {
+					-webkit-transform: translateY(30px);
+				}
+			}
+			
+			@keyframes bounce-down {
+				25% {
+					transform: translateY(-30px);
+				}
+				50%,
+				100% {
+					transform: translateY(0);
+				}
+				75% {
+					transform: translateY(30px);
+				}
+			}
+			.text_center{
+				text-align: center;
+			}
+			.list{
+				position: absolute;
+				top: 1590px;
+				left: 38px;
+			}
+			
+			
+			.table {
+				line-height: 32px;
+			}
+			
+			.table tr th {
+				text-align: center;
+				color: #664a27;
+				font-size: 20px;
+			}
+			
+			.table tr td {
+				color: #666;
+				text-align: center;
+				font-size: 22px;
+			}
+			
+			.color_f44975 td {
+				color: #f44975!important;
+			}
+			.immediate_investment{
+				display: block;
+			    width: 146px;
+			    height: 55px;
+			    line-height: 55px;
+			    position: absolute;
+			    bottom:710px;
+			    left: 180px;
+			    text-align: center;
+			    color: #fff;
+			    font-size: 24px;
+			    text-decoration: none;
+			}
+			.w-60 {
+				width: 65px;
+			}
+			
+			.w-145 {
+				width: 160px;
+			}
+			
+			.w-160 {
+				width: 170px;
+			}
+			.explainText{
+				position: absolute;
+			    bottom: 180px;
+			    left: 65px;
+			}

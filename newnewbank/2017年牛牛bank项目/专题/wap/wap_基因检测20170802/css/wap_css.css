@@ -1,0 +1,1400 @@
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+			max-height: 999999px;
+		}
+		
+		html * {
+			outline: none;
+			-webkit-text-size-adjust: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			/*-webkit-tap-highlight-color: transparent;*/
+		}
+		
+		ul li {
+			list-style: none;
+		}
+		
+		span {
+			display: inline-block;
+		}
+		
+		em {
+			font-style: normal;
+		}
+		
+		i {
+			font-style: normal;
+			display: inline-block;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		
+		a:hover {
+			text-decoration: none;
+		}
+		
+		:focus {
+			outline: 0
+		}
+		
+		button,
+		input,
+		select,
+		textarea {
+			font-size: 100%;
+			/*vertical-align: middle;*/
+			outline: 0
+		}
+		
+		input:focus:-moz-placeholder,
+		input:focus::-webkit-input-placeholder {
+			color: transparent
+		}
+		
+		button::-moz-focus-inner,
+		input::-moz-focus-inner {
+			padding: 0;
+			border: 0
+		}
+		
+		input,
+		button,
+		textarea {
+			-webkit-appearance: none;
+		}
+		
+		button,
+		input {
+			border: 0;
+			outline: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-tap-highlight-color: transparent;
+			/* For some Androids */
+		}
+		
+		textarea {
+			resize: none
+		}
+		
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		input[type="text"],
+		input[type="password"],
+		{
+			-webkit-appearance: none;
+		}
+		
+		textarea {
+			-webkit-appearance: none;
+		}
+		/*字体大小 start*/
+		/*.font_12 {
+				font-size: 0.24rem;
+			}
+			
+			.font_13 {
+				font-size: 0.26rem;
+			}*/
+		/*.font_14 {
+				font-size: 0.28rem;
+			}
+			
+			.font_15 {
+				font-size:0.3rem;
+			}*/
+		
+		.font_16 {
+			font-size: 0.32rem;
+		}
+		
+		.font_18 {
+			font-size: 0.36rem;
+		}
+		
+		.font_20 {
+			font-size: 0.4rem;
+		}
+		
+		.font_22 {
+			font-size: 0.44rem;
+		}
+		
+		.font_24 {
+			font-size: 0.48rem;
+		}
+		
+		.font_26 {
+			font-size: 0.52rem;
+		}
+		
+		.font_28 {
+			font-size: 0.56rem;
+		}
+		
+		.font_30 {
+			font-size: 0.6rem;
+		}
+		
+		.font_32 {
+			font-size: 0.64rem;
+		}
+		
+		.font_36 {
+			font-size: 0.72rem;
+		}
+		
+		.font_40 {
+			font-size: 0.8rem;
+		}
+		
+		.font_46 {
+			font-size: 0.92rem;
+		}
+		
+		.font_48 {
+			font-size: 0.96rem;
+		}
+		
+		.font_50 {
+			font-size: 1rem;
+		}
+		
+		.font_60 {
+			font-size: 1.2rem;
+		}
+		
+		.font_72 {
+			font-size: 1.44rem;
+		}
+		/*字体大小 end*/
+		/*字体颜色 start*/
+		
+		.color_000 {
+			color: #000;
+		}
+		
+		.color_333 {
+			color: #333;
+		}
+		
+		.color_666 {
+			color: #666;
+		}
+		
+		.color_999 {
+			color: #999;
+		}
+		
+		.color_fff {
+			color: #fff;
+		}
+		
+		.color_f44975 {
+			color: #f44975;
+		}
+		
+		.color_1c7ebe {
+			color: #1c7ebe;
+		}
+		
+		.bgColor_fff {
+			background-color: #fff;
+		}
+		
+		.bgColor_f44975 {
+			background-color: #f44975;
+		}
+		
+		.relative {
+			position: relative;
+		}
+		
+		.margin_center {
+			margin: 0 auto;
+		}
+		
+		.cell_center {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		.content_center {
+			justify-content: center;
+		}
+		
+		.vertical_center {
+			display: flex;
+			display: -webkit-flex;
+			align-items: center;
+		}
+		
+		.all_center {
+			display: flex;
+			display: -webkit-flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.float_left {
+			float: left;
+		}
+		
+		.float_right {
+			float: right;
+		}
+		
+		.pointer {
+			cursor: pointer;
+		}
+		
+		.bold {
+			font-weight: bold;
+		}
+		
+		.overflow {
+			overflow: hidden;
+		}
+		
+		.inline_block {
+			display: inline-block;
+		}
+		
+		.text_center {
+			text-align: center;
+		}
+		
+		.line_height {
+			line-height: 0.7rem;
+		}
+		
+		.letter_space {
+			letter-spacing: 0.02rem;
+		}
+		
+		.under_line {
+			height: 0.04rem;
+			background-color: #f5f5f5;
+		}
+		
+		.clearfloat:after {
+			display: block;
+			clear: both;
+			content: "";
+			visibility: hidden;
+			height: 0
+		}
+		
+		.clearfloat {
+			zoom: 1
+		}
+		
+		.clear {
+			clear: both;
+		}
+		
+		.none {
+			display: none;
+		}
+		/*gene-discovery.html*/
+		
+		.mar-top-28 {
+			margin-top: 0.56rem;
+		}
+		
+		.padding-top-30 {
+			padding-top: 0.6rem;
+		}
+		
+		.padding-top-60 {
+			padding-top: 1.2rem;
+		}
+		
+		.padding-bottom-60 {
+			padding-bottom: 1.2rem;
+		}
+		
+		.padding-bottom-20 {
+			padding-bottom: .4rem;
+		}
+		
+		.mar-right-30 {
+			margin-right: 0.6rem;
+		}
+		
+		.mar-right-36 {
+			margin-right: 0.72rem;
+		}
+		.color_4aaffb{
+			color: #4aaffb;
+		}
+		.h-100 {
+			height: 2rem;
+		}
+		
+		.h-300 {
+			height: 6rem;
+		}
+		
+		.h-330 {
+			height: 6.6rem;
+		}
+		
+		.h-380 {
+			height: 7.6rem;
+		}
+		
+		.line-height-100 {
+			line-height: 2rem;
+		}
+		
+		.flex-parent {
+			display: flex;
+			display: -webkit-flex;
+		}
+		
+		.flex-child {
+			flex: 1;
+			-webkit-flex: 1;
+		}
+		
+		.bg-cfeafd {
+			background-color: #cfeafd;
+		}
+		
+		.bg-e6f4fe {
+			background-color: #e6f4fe;
+		}
+		
+		.bg-op-4 {
+			background: url(https://images-wap.newnewbank.com/beautyMap-1-20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.bg-op-5 {
+			background: url(https://images-wap.newnewbank.com/beautyMap-2-20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.rootNode {
+			background-color: #f5f5f5;
+		}
+		
+		header.gene-discover {
+			height: 5.72rem;
+			background: url(https://images-wap.newnewbank.com/head-show20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.circle-quarter-out {
+			width: 12rem;
+			height: 12rem;
+			border-radius: 100%;
+			position: absolute;
+			left: -5rem;
+			bottom: -6rem;
+		}
+		
+		.circle-quarter {
+			width: 9.6rem;
+			height: 9.6rem;
+			border-radius: 100%;
+		}
+		
+		.w-280 {
+			width: 5.6rem;
+		}
+		
+		.beautyIcon,
+		.motionIcon,
+		.traitIcon,
+		.geneChain {
+			width: 1.34rem;
+			height: 1.1rem;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.beautyIcon {
+			background: url(https://images-wap.newnewbank.com/avatar20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.motionIcon {
+			background: url(https://images-wap.newnewbank.com/motion20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.traitIcon {
+			background: url(https://images-wap.newnewbank.com/trait20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.geneChain {
+			background: url(https://images-wap.newnewbank.com/geneChain20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.icon-motion-bule {
+			width: 3.28rem;
+			height: 3.22rem;
+			background: url(https://images-wap.newnewbank.com/motion-bule20170802.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 1.0rem;
+			right: 2.2rem;
+		}
+		
+		.icon-trait-bule {
+			width: 3.28rem;
+			height: 3.22rem;
+			background: url(https://images-wap.newnewbank.com/trait-bule20170802.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 1.0rem;
+			right: 2.2rem;
+		}
+		
+		.icon-geneChain-bule {
+			width: 3.28rem;
+			height: 3.22rem;
+			background: url(https://images-wap.newnewbank.com/geneChain-blue20170802.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 1.0rem;
+			right: 2.2rem;
+		}
+		
+		.bg-icon-1 {
+			background: url(https://images-wap.newnewbank.com/geneChain20170731.jpg) no-repeat;
+			background-size: .9rem 1.14rem;
+		}
+		/* anti-wrinkle.html  */
+		
+		.h-90 {
+			height: 1.8rem;
+		}
+		
+		.padding-bottom-10 {
+			padding-bottom: 0.2rem;
+		}
+		
+		.padding-top-25 {
+			padding-top: 0.5rem;
+		}
+		
+		.mar-left--25 {
+			margin-left: -0.5rem;
+		}
+		
+		.mar-left-right-30 {
+			margin-left: 0.6rem;
+			margin-right: 0.6rem;
+		}
+		
+		.mar-left-right-60 {
+			margin-left: 1.2rem;
+			margin-right: 1.2rem;
+		}
+		
+		.color_7ee56d {
+			color: #7ee56d;
+		}
+		
+		.line-height-36 {
+			line-height: 0.72rem;
+		}
+		
+		.mar-50 {
+			padding: 1rem;
+			padding-bottom: 0.6rem;
+		}
+		
+		.text-indent {
+			text-indent: 2em;
+		}
+		
+		.abti-wrintle {
+			height: 5.72rem;
+			background: url(https://images-wap.newnewbank.com/head-antiwrinkle20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.with-grease {
+			height: 5.72rem;
+			background: url(https://images-wap.newnewbank.com/bgImage-fat20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.splash {
+			height: 5.72rem;
+			background: url(https://images-wap.newnewbank.com/head-antiwrinkle20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.longevity {
+			height: 5.72rem;
+			background: url(https://images-wap.newnewbank.com/bgImage-detail20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.soldier {
+			height: 5.72rem;
+			background: url(https://images-wap.newnewbank.com/bgImage-soldier20170802.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.openIndus {
+			width: 100%;
+			background: rgba(0, 0, 0, .1);
+		}
+		
+		.detectionResultIcon {
+			width: 0.88rem;
+			height: 0.88rem;
+			background: url(https://images-wap.newnewbank.com/detectionResult20170731.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.populationDistributionIcon {
+			width: 0.88rem;
+			height: 0.88rem;
+			background: url(https://images-wap.newnewbank.com/populationDistribution20170731.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.lifeTipsIcon {
+			width: 0.88rem;
+			height: 0.88rem;
+			background: url(https://images-wap.newnewbank.com/lifeTips20170731.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.crowdComparisonIcon {
+			width: 0.96rem;
+			height: 0.72rem;
+			background: url(https://images-wap.newnewbank.com/crowdComparison20170731.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.circle-small {
+			width: 5.8rem;
+			height: 5.8rem;
+			border-radius: 50%;
+			background-color: #ebebeb;
+		}
+		
+		.bg_f2fcf0 {
+			background-color: #f2fcf0;
+		}
+		
+		.table {
+			width: 100%;
+		}
+		
+		/*.table td {
+			border-left: 1px solid #dbf7d6;
+			border-top: 1px solid #dbf7d6;
+		}
+		
+		.table td:last-child {
+			border-right: 1px solid #dbf7d6;
+		}
+		
+		.bg-linear-1 {
+			background-image: linear-gradient(to right, #7de56d 0%, #8ee877 100%);
+		}
+		
+		.bg-linear-2 {
+			background-image: linear-gradient(to right, #8ee877 0%, #a8ec87 100%);
+		}
+		*/
+		.arrow-up,
+		.arrow-down {
+			width: 0.56rem;
+			height: 0.48rem;
+			background: url(https://images-wap.newnewbank.com/arrow20170731.png) no-repeat;
+			background-size: cover;
+			margin-right: 0.2rem;
+		}
+		
+		.arrow-up {
+			background-position: 0 0;
+		}
+		
+		.arrow-down {
+			background-position: -0.72rem 0;
+		}
+		
+		.circleChart {
+			display: inline-block;
+			padding: 1.2rem 0 0 .8rem;
+		}
+		
+		.circleChart_canvas {
+			width: 6.4rem;
+			height: 6.4rem;
+		}
+		
+		.circleChart_text {
+			position: absolute;
+			top: 3rem;
+			right: -6.0rem;
+			color: #7ee56d;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+		
+		.text-pos-1 {
+			position: absolute;
+			top: 5rem;
+			right: -6.0rem;
+			text-align: right;
+		}
+		/* with-grease.html */
+		
+		.mar-left-right-40 {
+			margin-left: 0.8rem;
+			margin-right: 0.8rem;
+		}
+		
+		.color_ff6868 {
+			color: #ff6868;
+		}
+		
+		.h-670 {
+			height: 13.4rem;
+		}
+		
+		.w-pre-70 {
+			width: 70%;
+		}
+		.pos-cir1-1,
+		.pos-cir1-2 {
+			position: absolute;
+			top: 1.2rem;
+		}
+		
+		.pos-cir1-1 {
+			left: 0;
+		}
+		
+		.pos-cir1-2 {
+			right: 0;
+		}
+		/* expertAvatar.html */
+		
+		.mar-30 {
+			margin: 0.6rem;
+		}
+		
+		.introduceIcon {
+			width: 0.76rem;
+			height: 0.84rem;
+			background: url(https://images-wap.newnewbank.com/introduce20170801.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.black-border {
+			margin: 0.6rem;
+			border: 1px solid #333;
+		}
+		
+		.expertHead {
+			width: 4.4rem;
+			height: 4.4rem;
+			background: url(https://images-wap.newnewbank.com/expertAvatar20170801.jpg) no-repeat;
+			background-size: cover;
+			margin-right: 0.6rem;
+		}
+		
+		.rank {
+			margin-top: 0.2rem;
+		}
+		
+		.rank button {
+			outline: none;
+			border: none;
+			background-color: #e4f3fe;
+			border-radius: 0.1rem;
+			padding: 0.16rem 0.2rem;
+			color: #4aaffb;
+		}
+		
+		.rank button:first-child {
+			margin-right: 0.2rem;
+		}
+		
+		.w-370 {
+			width: 7.4rem;
+		}
+		
+		.gray-bg-border {
+			width: 5rem;
+			height: 0.2rem;
+			background-color: #ebebeb;
+			border-radius: 0.1rem;
+			margin-top: 0.4rem;
+		}
+		
+		.pathFollow {
+			position: absolute;
+			height: 100%;
+		}
+		
+		.pathFollow1 {
+			width: 100%;
+		}
+		
+		.pathFollow2 {
+			width: 0;
+		}
+		
+		.color_fd91a8 {
+			color: #fd91a8;
+		}
+		
+		.color_fd79a0 {
+			color: #fd79a0;
+		}
+		
+		.color_55b4fb {
+			color: #55b4fb;
+		}
+		
+		.ver-border-1,
+		.ver-border-2,
+		.ver-border-3 {
+			position: absolute;
+			bottom: 0;
+			width: 0.2rem;
+			background-color: #f5f5f5;
+			border-radius: .1rem .1rem 0 0;
+		}
+		
+		.ver-border-1 {
+			left: 2rem;
+			height: 1.6rem;
+		}
+		
+		.ver-border-2 {
+			left: 5.8rem;
+			height: 3rem;
+		}
+		
+		.ver-border-3 {
+			right: 2rem;
+			height: 5.4rem;
+		}
+		
+		.h-350 {
+			height: 7rem;
+		}
+		
+		.line-ver {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 1px;
+			height: 6.6rem;
+			background-color: #dcdcdc;
+		}
+		
+		.colorFull {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0.2rem;
+			border-radius: 0 .1rem .1rem 0;
+			background-image: linear-gradient(-225deg, #3994f7 0%, #75e578 50%, #f17a6a 100%);
+		}
+		
+		.pathFollow-bule,
+		.pathFollow-green,
+		.pathFollow-pink {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: .1rem .1rem 0 0;
+		}
+		
+		.active .pathFollow-bule {
+			background-color: #42a5e0;
+		}
+		
+		.active .pathFollow-green {
+			background-color: #75e578;
+		}
+		
+		.active .pathFollow-pink {
+			background-color: #de906a;
+		}
+		
+		.active .puppet {
+			width: 0.42rem;
+			height: 1rem;
+			background: url(https://images-wap.newnewbank.com/puppet20170801.jpg) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: -1.2rem;
+			left: -.1rem;
+		}
+		
+		.gary-border-1 {
+			width: 100%;
+			height: 0.2rem;
+			border-radius: .1rem;
+			background-color: #f5f5f5;
+			margin-top: 3rem;
+		}
+		
+		.red-border,
+		.red-border-g {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			border-radius: .1rem 0 0 .1rem;
+		}
+		
+		.red-border {
+			width: 15%;
+			background-color: #fc6d8e;
+		}
+		
+		.red-border-g {
+			width: 7%;
+			background-color: #dcdcdc;
+		}
+		
+		.red-circle-dot,
+		.red-circle-dot-g {
+			width: 0.4rem;
+			height: 0.4rem;
+			border-radius: 100%;
+			position: absolute;
+			right: -.2rem;
+			top: -.3rem;
+		}
+		
+		.red-circle-dot {
+			background-color: #fc6d8e;
+			border: 0.2rem solid #fdb6c6;
+		}
+		
+		.red-circle-dot-g {
+			background-color: #dcdcdc;
+			border: 0.2rem solid #f7f7f7;
+		}
+		
+		.pinkFold {
+			width: 5.26rem;
+			height: 0.38rem;
+			background: url(https://images-wap.newnewbank.com/pinkFold20170801.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			bottom: .5rem;
+			left: .4rem;
+		}
+		
+		.garyFold {
+			width: 4rem;
+			height: 0.36rem;
+			background: url(https://images-wap.newnewbank.com/garyFold20170801.png) no-repeat;
+			background-size: cover;
+			position: absolute;
+			bottom: .5rem;
+			left: .4rem;
+		}
+		
+		.color_fc6d8e {
+			color: #fc6d8e;
+		}
+		
+		.color_6b6b6b {
+			color: #6b6b6b;
+		}
+		
+		.scriptIcon {
+			width: 0.76rem;
+			height: 0.72rem;
+			background: url(https://images-wap.newnewbank.com/explain20170801.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.resultIcon {
+			width: 0.8rem;
+			height: 0.8rem;
+			background: url(https://images-wap.newnewbank.com/result20170801.jpg) no-repeat;
+			background-size: cover;
+			margin-left: 0.8rem;
+			margin-right: 0.6rem;
+		}
+		
+		.line-box {
+			border: 1px solid #f5f5f5;
+		}
+		
+		.flex-child-2 {
+			flex: 2;
+			-webkit-flex: 2;
+		}
+		
+		.flex-child-3 {
+			flex: 3;
+			-webkit-flex: 3;
+		}
+		
+		.black-line-box {
+			width: 3rem;
+			height: 3rem;
+			border: 1px solid #000;
+			margin-top: .6rem;
+		}
+		
+		.erCodeIcon {
+			width: 2.58rem;
+			height: 2.58rem;
+			background: url(https://images-wap.newnewbank.com/erCode20170801.jpg) no-repeat;
+			background-size: cover;
+		}
+		
+		.tellIcon {
+			width: 1.2rem;
+			height: 1.2rem;
+			background: url(https://images-wap.newnewbank.com/tell20170802.jpg) no-repeat;
+			background-size: cover;
+			margin-bottom: .5rem;
+		}
+		
+		.jumpBtn {
+			width: 0.48rem;
+			height: 0.48rem;
+			background: url(https://images-wap.newnewbank.com/jumpBtn20170802.jpg) no-repeat;
+			background-size: cover;
+			margin-right: .2rem;
+		}
+		
+		.active-text-p p {
+			text-align: center;
+			height: 1rem;
+			padding-top: 1rem;
+		}
+		
+		.active-text-p .active-text {
+			border-bottom: .06rem solid #122e43;
+		}
+		
+		.active-text-p .active-text .nav-result {
+			color: #122e43;
+		}
+		
+		.bule-circleDot,
+		.green-circleDot,
+		.red-circleDot {
+			width: 0.2rem;
+			height: 0.2rem;
+			border-radius: .1rem;
+			margin-right: 0.24rem;
+		}
+		
+		.bule-circleDot {
+			background-color: #3890fe;
+		}
+		
+		.green-circleDot {
+			background-color: #84e570;
+		}
+		
+		.red-circleDot {
+			background-color: #fd7272;
+		}
+		
+		.mar-li li {
+			margin: 0 0.5rem;
+		}
+		
+		.pink-circle-dot {
+			width: 0.88rem;
+			height: 0.88rem;
+			border-radius: 100%;
+			position: absolute;
+			/*right: -.2rem;*/
+			top: -.3rem;
+			background-color: #fc6d8e;
+		}
+		
+		.red-border-pink {
+			width: 50%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			border-radius: .1rem;
+		}
+		
+		.show {
+			display: block;
+		}
+		
+		.cover-onePage {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, .8);
+		}
+		
+		.lockIcon {
+			width: 1.82rem;
+			height: 2.48rem;
+			background: url(https://images-wap.newnewbank.com/lock20170802.png) no-repeat;
+			background-size: cover;
+		}
+		
+		.black-op-2 {
+			background-color: rgba(0, 0, 0, .2);
+			margin-top: -1.6rem;
+		}
+		/*template start*/
+		
+		.mask-lg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.mask-green {
+			background-image: linear-gradient(to right, rgba(112, 206, 98, .8) 0%, rgba(112, 206, 98, .4) 100%);
+		}
+		
+		.mask-pink {
+			background-image: linear-gradient(to right, rgba(252, 110, 145, .8) 0%, rgba(252, 110, 145, .4) 100%);
+		}
+		
+		.mask-red {
+			background-image: linear-gradient(to right, rgba(255, 111, 111, .8) 0%, rgba(255, 111, 111, .4) 100%);
+		}
+		
+		.circle-big {
+			width: 6.6rem;
+			height: 6.6rem;
+			border-radius: 50%;
+		}
+		
+		.table-bule,
+		.table-red {
+			width: 100%;
+		}
+		
+		.table-red td {
+			border-left: 1px solid #ffd5d5;
+			border-top: 1px solid #ffd5d5;
+		}
+		
+		.table-red td:last-child {
+			border-right: 1px solid #ffd5d5;
+		}
+		
+		.bg_fff0f0 {
+			background-color: #fff0f0;
+		}
+		
+		.bg-linearBule-1 {
+			background-image: linear-gradient(to right, #4aaffb 0%, #49c7fb 100%);
+		}
+		
+		.bg-linearBule-2 {
+			background-image: linear-gradient(to right, #49c7fb 0%, #48e3fa 100%);
+		}
+		
+		.pos-cir-5 {
+			background-image: linear-gradient(to right, #4ab3fb 0%, #49e0fa 100%);
+		}
+		
+		.pos-cir-6 {
+			position: absolute;
+			right: .5rem;
+		}
+		
+		.pos-cir-1 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -2.9rem;
+		}
+		
+		.pos-cir-2,
+		.pos-cir-3 {
+			position: absolute;
+			bottom: 0;
+		}
+		
+		.pos-cir-2 {
+			left: 0;
+		}
+		
+		.pos-cir-3 {
+			right: 0;
+		}
+		
+		.pos-cir-4 {
+			position: absolute;
+			top: 4.6rem;
+			left: 50%;
+			margin-left: -3.3rem;
+		}
+		/*低：template-deepBule*/
+		
+		.template-deepBule .circleChart_text {
+			color: #3991fe;
+		}
+		
+		.template-deepBule .mask-bgColor {
+			background-image: linear-gradient(to right, rgba(57, 145, 254, .8) 0%, rgba(57, 145, 254, .4) 100%);
+		}
+		
+		.template-deepBule .text-color {
+			color: #3991fe;
+		}
+		
+		.template-deepBule .circle-gradient {
+			background-image: linear-gradient(to right, #3891fe 0%, #63aafa 100%);
+		}
+		
+		.template-deepBule .table td {
+			border-left: 1px solid #cce9fe;
+			border-top: 1px solid #cce9fe;
+		}
+		
+		.template-deepBule .table td:last-child {
+			border-right: 1px solid #cce9fe;
+		}
+		
+		.template-deepBule .bg-color {
+			background-color: #edf7ff;
+		}
+		
+		.template-deepBule .bg-linearLeft {
+			background-image: linear-gradient(to right, #358efe 0%, #499cfe 100%);
+		}
+		
+		.template-deepBule .bg-linearRight {
+			background-image: linear-gradient(to right, #358efe 0%, #5ca9fe 100%);
+		}
+		/*较低：template-bule*/
+		
+		.template-bule .circleChart_text {
+			color: #4ab5fa;
+		}
+		
+		.template-bule .mask-bgColor {
+			background-image: linear-gradient(to right, rgba(74, 183, 251, .8) 0%, rgba(74, 183, 251, .4) 100%);
+		}
+		
+		.template-bule .text-color {
+			color: #4ab5fa;
+		}
+		
+		.template-bule .circle-gradient {
+			background-image: linear-gradient(to right, #4ab3fb 0%, #49ddfa 100%);
+		}
+		
+		.template-bule .table td {
+			border-left: 1px solid #cce9fe;
+			border-top: 1px solid #cce9fe;
+		}
+		
+		.template-bule .table td:last-child {
+			border-right: 1px solid #cce9fe;
+		}
+		
+		.template-bule .bg-color {
+			background-color: #edf7ff;
+		}
+		
+		.template-bule .bg-linearLeft {
+			background-image: linear-gradient(to right, #4aaffb 0%, #49c7fb 100%);
+		}
+		
+		.template-bule .bg-linearRight {
+			background-image: linear-gradient(to right, #49c7fb 0%, #48e3fa 100%);
+		}
+		/*正常：template-green*/
+		
+		.template-green .circleChart_text {
+			color: #7ee56d;
+		}
+		
+		.template-green .mask-bgColor {
+			background-image: linear-gradient(to right, rgba(112, 206, 98, .8) 0%, rgba(112, 206, 98, .4) 100%);
+		}
+		
+		.template-green .text-color {
+			color: #7ee56d;
+		}
+		
+		.template-green .circle-gradient {
+			background-image: linear-gradient(to right, #80e56e 0%, #a4eb84 100%);
+		}
+		
+		.template-green .table td {
+			border-left: 1px solid #dbf7d6;
+			border-top: 1px solid #dbf7d6;
+		}
+		
+		.template-green .table td:last-child {
+			border-right: 1px solid #dbf7d6;
+		}
+		
+		.template-green .bg-color {
+			background-color: #f2fcf0;
+		}
+		
+		.template-green .bg-linearLeft {
+			background-image: linear-gradient(to right, #7de56d 0%, #8ee877 100%);
+		}
+		
+		.template-green .bg-linearRight {
+			background-image: linear-gradient(to right, #8ee877 0%, #a8ec87 100%);
+		}
+		/*较高：template-pink*/
+		
+		.template-pink .circleChart_text {
+			color: #fc6f91;
+		}
+		
+		.template-pink .mask-bgColor {
+			background-image: linear-gradient(to right, rgba(252, 112, 146, .8) 0%, rgba(252, 112, 146, .4) 100%);
+		}
+		
+		.template-pink .text-color {
+			color: #fc6f92;
+		}
+		
+		.template-pink .circle-gradient {
+			background-image: linear-gradient(to right, #fc6e90 0%, #fd7ea7 100%);
+		}
+		
+		.template-pink .table td {
+			border-left: 1px solid #ffd5d5;
+			border-top: 1px solid #ffd5d5;
+		}
+		
+		.template-pink .table td:last-child {
+			border-right: 1px solid #ffd5d5;
+		}
+		
+		.template-pink .bg-color {
+			background-color: #fff0f0;
+		}
+		
+		.template-pink .bg-linearLeft {
+			background-image: linear-gradient(to right, #fc6e91 0%, #fb7695 100%);
+		}
+		
+		.template-pink .bg-linearRight {
+			background-image: linear-gradient(to right, #fb7695 0%, #fd7da6 100%);
+		}
+		/*高 ：template-red*/
+		
+		.template-red .circleChart_text {
+			color: #ff6c6c;
+		}
+		
+		.template-red .mask-bgColor {
+			background-image: linear-gradient(to right, rgba(255, 111, 111, .8) 0%, rgba(255, 111, 111, .4) 100%);
+		}
+		
+		.template-red .text-color {
+			color: #ff6c6c;
+		}
+		
+		.template-red .circle-gradient {
+			background-image: linear-gradient(to right, #ff6969 0%, #ff8a8b 100%);
+		}
+		
+		.template-red .table td {
+			border-left: 1px solid #ffd5d5;
+			border-top: 1px solid #ffd5d5;
+		}
+		
+		.template-red .table td:last-child {
+			border-right: 1px solid #ffd5d5;
+		}
+		
+		.template-red .bg-color {
+			background-color: #fff0f0;
+		}
+		
+		.template-red .bg-linearLeft {
+			background-image: linear-gradient(to right, #ff6868 0%, #ff7c7c 100%);
+		}
+		
+		.template-red .bg-linearRight {
+			background-image: linear-gradient(to right, #ff7c7c 0%, #ff8d8e 100%);
+		}
+		/*difference ...*/
+		
+		.template-deepBule .barColor {
+			background-color: #3991fe;
+		}
+		
+		.template-bule .barColor {
+			background-color: #4ab3fb;
+		}
+		
+		.template-green .barColor {
+			background-color: #82e670;
+		}
+		
+		.template-pink .barColor {
+			background-color: #fc6d8e;
+		}
+		
+		.template-red .barColor {
+			background-color: #ff6d6d;
+		}
+		
+		.template-deepBule .border-bar,.template-deepBule .pink-circle-dot {
+			background-color: #3991fe;
+		}
+		
+		.template-bule .border-bar,.template-bule .pink-circle-dot {
+			background-color: #4ab3fb;
+		}
+		
+		.template-green .border-bar,.template-green .pink-circle-dot {
+			background-color: #82e670;
+		}
+		
+		.template-pink .border-bar,.template-pink .pink-circle-dot {
+			background-color: #fc6d8e;
+		}
+		
+		.template-red .border-bar,.template-red .pink-circle-dot {
+			background-color: #ff6d6d;
+		}

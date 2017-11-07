@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			.paging-box {
+				width: 100%;
+				text-align: center;
+				font-size: 0;
+			}
+			
+			.paging-btns {
+				color: #999999;
+			}
+			
+			.paging-btns {
+				padding-top: 20px;
+				padding-bottom: 30px;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 16px;
+				line-height: 1.6;
+			}
+			
+			.paging-btns a {
+				background: #f5f5f5;
+				color: #666666;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.paging-btns a {
+				display: inline-block;
+				height: 35px;
+				width: 35px;
+				text-align: center;
+				line-height: 35px;
+				position: relative;
+				text-decoration: none;
+				border-radius: 4px;
+				font-size: 16px;
+				font-weight: normal;
+				margin: 0 5px;
+			}
+			
+			.paging-btns a.selected,
+			a.selected:hover {
+				background: #f44975;
+				color: #ffffff;
+				border: 1px solid #f44975;
+			}
+			
+			.paging-btns a.selected,
+			.paging-btns a.selected:hover {
+				cursor: default;
+			}
+			
+			.jumpIpt {
+				display: inline-block;
+				width: 30px;
+				height: 34px;
+				line-height: 34px;
+				border: 1px solid #CCCCCC;
+				padding: 0 5px;
+				color: #333333;
+				border-radius: 4px;
+				margin-left: 4px;
+				vertical-align: top;
+			}
+			
+			.prev-page b {
+				cursor: pointer;
+				width: 0;
+				height: 0;
+				border-width: 6px;
+				border-style: solid;
+				font-size: 0;
+				line-height: 0;
+				border-color: #f5f5f5 #666666 #f5f5f5 #f5f5f5;
+				position: absolute;
+				left: 9px;
+				top: 12px;
+			}
+			
+			.next-page b {
+				cursor: pointer;
+				width: 0;
+				height: 0;
+				border-width: 6px;
+				border-style: solid;
+				font-size: 0;
+				line-height: 0;
+				border-color: #f5f5f5 #f5f5f5 #f5f5f5 #666666;
+				position: absolute;
+				left: 16px;
+				top: 12px;
+			}
+			
+			input {
+				outline: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		!-- 产品列表主体内容start -->
+		<div class="pro-main-box clearfix">
+			<!--  左侧盒子start  -->
+			<div class="pro-left-box fl" id="productList">
+				<div class="sorting-way">
+					<span>排序：</span>
+					<a class="active" href="http://tp.newnewbank.com/myMoney/investProjectList.shtml" orderType="0">不限</a>
+					<a href="http://tp.newnewbank.com/myMoney/investProjectList.shtml?orderType=3" orderType="3">全部</a>
+					<a href="http://tp.newnewbank.com/myMoney/investProjectList.shtml?orderType=1">发布时间</a>
+					<a href="http://tp.newnewbank.com/myMoney/investProjectList.shtml?orderType=2">可购买产品</a>
+				</div>
+				<!--  产品列表start  -->
+				<div class="pro-list-box">
+					<ul class="pro-list">
+						<li style="position: relative;">
+							<div class="floatInco">
+								<p>感恩节</p>
+							</div>
+							<a href='http://tp.newnewbank.com/myMoney/2195/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>牛牛保理第14期</h4><span>12.27</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+										<span>现金券</span>
+										<span>加息券</span>
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>11.5%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>183天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 5,000元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:0%'><i></i></div>
+											</div>
+											<span class='fl'>0%</span>
+										</div>
+										<p>剩余可投金额：<span>5000</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-now'>立即购买</span> </div>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;">
+							<a href='http://tp.newnewbank.com/myMoney/2194/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>牛牛租赁第520期</h4><span>12.27</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+										<span>现金券</span>
+										<span>加息券</span>
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>8%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>30天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 10,000元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:0%'><i></i></div>
+											</div>
+											<span class='fl'>0%</span>
+										</div>
+										<p>剩余可投金额：<span>10000</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-now'>立即购买</span> </div>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;">
+							<a href='http://tp.newnewbank.com/myMoney/2169/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>牛牛租赁第511期</h4><span>10</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+										<span>现金券</span>
+										<span>加息券</span>
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>12%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>202天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 20,000元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:25.44%'><i></i></div>
+											</div>
+											<span class='fl'>25.44%</span>
+										</div>
+										<p>剩余可投金额：<span>14910</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-now'>立即购买</span> </div>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;">
+							<a href='http://tp.newnewbank.com/myMoney/2140/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>我们家项目</h4><span>10.26</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>1%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>7天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 5元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:100%'><i></i></div>
+											</div>
+											<span class='fl'>100%</span>
+										</div>
+										<p>剩余可投金额：<span>0</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-over'>已还款</span> </div>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;">
+							<a href='http://tp.newnewbank.com/myMoney/2115/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>牛牛银票第32期（审批测试App）</h4><span>牛牛银票第32期（审批测试App）</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>6.9%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>1天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 1,000元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:100%'><i></i></div>
+											</div>
+											<span class='fl'>100%</span>
+										</div>
+										<p>剩余可投金额：<span>0</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-over'>已还款</span> </div>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;">
+							<a href='http://tp.newnewbank.com/myMoney/2113/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>测试按月到期付息牛牛租赁第5期</h4><span>测试按月到期付息牛牛租赁第5期</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>11.7%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>61天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 2,500元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:100%'><i></i></div>
+											</div>
+											<span class='fl'>100%</span>
+										</div>
+										<p>剩余可投金额：<span>0</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-over'>已还款</span> </div>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;">
+							<a href='http://tp.newnewbank.com/myMoney/2080/investProjectDetail.shtml'>
+								<div class='pro-box-top'>
+									<h4>国庆竞标</h4><span>9.28</span>
+									<div class='coupon-tips'>
+										<!--
+												-->
+										<span>竞标活动</span>
+										<span>现金券</span>
+										<span>加息券</span>
+									</div>
+								</div>
+								<div class='pro-info clearfix'>
+									<div class='column01 fl'>
+										<p>8%</p><span>年化收益率</span></div>
+									<div class='column02 fl'>
+										<p>30天</p><span>投资周期</span></div>
+									<div class='column03 fl'>
+										<p> 20,000元</p><span>融资金额</span></div>
+									<div class='column04 fl'>
+										<div class='progress-wrap clearfix'>
+											<div class='line-progress fl'>
+												<div class='progress-finished' style='width:100%'><i></i></div>
+											</div>
+											<span class='fl'>100%</span>
+										</div>
+										<p>剩余可投金额：<span>0</span>元</p>
+									</div>
+									<div class='column05 fl timeDowns'>
+										<span class='pro-btn pro-buy-over'>已还款</span> </div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--  产品列表end  -->
+				<!--<script>
+							$('.timeDowns span').each(function(i) {
+								var i = $(this).attr('id');
+								var j = $(this).attr('timeId');
+								var mark = $(this).attr('mrakId');
+								var statusPro = $(this).attr('status');
+
+								if(1 == statusPro) {
+									setTimeout(function() {
+										show_time(mark, i, new Date(j).getTime(), new Date().getTime(), statusPro);
+									}, 1000);
+								}
+							});
+						</script>-->
+				<!--  分页器start  -->
+				<div class="paging-box">
+					<div class="paging-btns">
+						<a href="javascript:;" class="prev-page">&nbsp;<b></b></a>
+						<a href="javascript:;" class="selected">1</a>
+						<!-- 当前页 -->
+						<a href="javascript:;" p="2">2</a>
+						<a href="javascript:;" p="3">3</a>
+						<a href="javascript:;" p="4">4</a>
+						<a href="javascript:;" p="5">5</a>
+						<a href="javascript:;" p="6">6</a>
+						<a href="javascript:;" p="7">7</a>
+						<a href="javascript:;" class="next-page" p="2">&nbsp;<b></b></a>
+						<!-- 下一页 -->
+						<input class="jumpIpt" type="text" value="">
+						<a href="javascript:;" onclick="jumpPage()">GO</a>
+					</div>
+				</div>
+				<!--  分页器end  -->
+			</div>
+			<!--  左侧盒子end  -->
+			<!--  右侧盒子start  -->
+			<div class="pro-right-box fl">
+				<!--  推荐产品start  -->
+				<div id="recommend">
+					<div class='r-con-wrap'>
+						<h4>推荐产品</h4>
+						<div class='r-con-box recommend-box'>
+							<h2>牛牛租赁第520期</h2>
+							<div class='yield-box'>
+								<p><strong>8</strong>%</p>
+								<span>年化收益率</span>
+							</div>
+							<div class='cycle'>
+								<span>投资周期：<i>30天</i></span>
+								<a href='http://tp.newnewbank.com/myMoney/2194/investProjectDetail.shtml'>详情</a>
+							</div>
+							<a class='recommend-buy-now' href='http://tp.newnewbank.com/myMoney/2194/investProjectDetail.shtml'>立即购买</a>
+						</div>
+					</div>
+					<!--  推荐产品end  -->
+					<!--  本周风云榜start  -->
+					<div id="week">
+						<div class='r-con-wrap'>
+							<h4>本周风云榜</h4>
+							<div class='r-con-box prominent-box'>
+								<table cellpadding='0' cellspacing='0'>
+									<thead>
+										<tr>
+											<th>排名</th>
+											<th>用户</th>
+											<th>成交金额</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>暂无数据！</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--  本周风云榜end  -->
+					<!--  回款公告start  -->
+					<div id="notice">
+						<div class='r-con-wrap'>
+							<h4>回款公告</h4>
+							<div class='r-con-box notice-box'>
+								<table cellspacing='0' cellpadding='0'>
+									<thead>
+										<tr>
+											<th>项目名称</th>
+											<th>回款时间</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="http://tp.newnewbank.com/myMoney/1477/investProjectDetail.shtml">牛牛租赁第326期</a>
+											</td>
+											<td>2016/12/27</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://tp.newnewbank.com/myMoney/1752/investProjectDetail.shtml">牛牛租赁第327期(牛人计划专属)</a>
+											</td>
+											<td>2016/12/26</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://tp.newnewbank.com/myMoney/1757/investProjectDetail.shtml">社区宝第615期(niurenjihua)</a>
+											</td>
+											<td>2016/12/26</td>
+										</tr>
+										<tr>
+											<td>
+												<a href="http://tp.newnewbank.com/myMoney/2062/investProjectDetail.shtml">牛牛租赁第451期</a>
+											</td>
+											<td>2016/12/24</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--  回款公告end  -->
+					<!--  新手标start  -->
+					<div class="novice-box">
+						<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/novice_product_20160419.png" />
+					</div>
+					<!--  新手标end  -->
+				</div>
+				<!--  右侧盒子end  -->
+			</div>
+			<!--  产品列表主体内容end  -->
+		</div>
+		</div>
+		<div id="investmentC"></div>
+		<input type="hidden" id="productInfoType" value="" />
+		<!--  投资理财列表内容end  -->
+
+		<script src="http://tp.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="http://tp.newnewbank.com/js/urlSource.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var nowPage;
+			$(".paging-btns").find("a").each(function() {
+				if($(this).attr("class") == 'selected') {
+					nowPage = $(this).html();
+					return false;
+				}
+			});
+
+			$(".paging-btns a[p]").click(function(event) { //分页
+				var type = $("#productInfoType").val();
+				var orderType = $(".sorting-way a.active").attr("orderType");
+				var _page = $(this).attr("p");
+				if(type == "") {
+					var lVal = 0; //$(".active[lVal]").attr("lVal");
+					var sVal = 0; //$(".active[sVal]").attr("sVal");
+					var rVal = 0; //$(".active[rVal]").attr("rVal");
+					url = "http://tp.newnewbank.com/myMoney/7/" + lVal + "/" + sVal + "/" + rVal + "/" + _page + "/investProjectList.shtml?orderType=" + orderType;
+				} else {
+					url = "http://tp.newnewbank.com/myMoney/queryPruductList/" + type + "/" + _page + ".shtml?orderType=" + orderType;
+				}
+				location.href = getRequestForSource(url);
+				event.preventDefault();
+			});
+
+			function jumpPage() {
+				var _jumpPage = $(".jumpIpt").val();
+				if(_jumpPage == "" || typeof(_jumpPage) == 'undefind') {
+					_jumpPage = 0;
+				}
+				var orderType = $(".sorting-way a.active").attr("orderType");
+				var type = $("#productInfoType").val();
+				if(type == "") {
+					url = "http://tp.newnewbank.com/myMoney/7/0/0/0/" + _jumpPage + "/investProjectList.shtml?orderType=" + orderType;
+				} else {
+					url = "http://tp.newnewbank.com/myMoney/queryPruductList/" + type + "/" + _jumpPage + ".shtml?orderType=" + orderType;
+				}
+				location.href = getRequestForSource(url);
+				event.preventDefault();
+			}
+		</script>
+	</body>
+
+</html>

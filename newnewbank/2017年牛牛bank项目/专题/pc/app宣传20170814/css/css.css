@@ -1,0 +1,576 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+.active{
+	display: block;
+}
+     html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+        .rootNode{
+        	min-width: 1200px;
+        }
+        #container,
+        .sections,
+        .section ,.rootNode{           
+            position: relative; /*必须，兼容，在浏览器不支持transform属性时，通过改变top/left完成滑动动画*/          
+            height: 100%;/*必须，关系到单个page能否全屏显示*/
+        }
+        .section {
+            /*有背景图时必须，关系到背景图能够全屏显示*/
+            background-color: #000;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+      
+        /*以下样式用来设置slider样式，可自行修改*/
+        .pages {
+            position:fixed;
+            right: 10px;
+            top: 50%;
+            list-style: none;
+        }
+        .pages li {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 15px 0 0 7px;
+            cursor: pointer;
+        }
+        .pages li.active {
+            margin-left: 0;
+            width: 14px;
+            height: 14px;
+            border: 4px solid #FFFFFF;
+            background: none;
+        }
+        
+           
+        .h-pre-100{
+        	height: 100%;
+        }
+        .one-page{        	
+        	background-color:#bbe1ee ;
+        }
+        .mountain{
+        	position: absolute;
+        	bottom: 0;
+        	width: 100%;
+        	min-width: 1600px;
+        }
+        .main-one{
+        	width: 100%;
+        	height: 536px;
+        	position: absolute;
+        	top: 50%;
+        	left: 20px;
+        	margin-top:-268px ;
+        	/*border: 1px solid red;*/
+        }
+        .ornament{
+        	width: 638px;   
+        	height: 536px;    	
+        	background:  url(https://images-web.newnewbank.com/ornament20170814.png) no-repeat;        	
+        }
+        
+        .color_333745{
+        	color: #333745;
+        }
+        .font_45{
+        	font-size: 45px;
+        }
+        .erCode-x{
+        	width:167px ;
+        	height: 193px;
+        	background:  url(https://images-web.newnewbank.com/erconde20170814.png) no-repeat;
+        	margin-right: 20px;
+        }
+        .ios-load,.ios-android{
+        	width: 208px;
+        	height: 52px;
+        	line-height: 52px;
+        	border: 1px solid #333745;
+        	border-radius: 26px;
+        }
+        .ios-load:hover,.ios-android:hover{
+        	background-color: #a4d4e3;
+        }
+        .ios-load .ios-icon{
+        	width:31px ;
+        	height: 38px;
+        	background:  url(https://images-web.newnewbank.com/icon-iosand20170814.png) no-repeat 0 0;
+        	margin-left: 0 ;
+        } 
+        .ios-android .ios-icon{
+        	width:34px ;
+        	height: 38px;
+        	background:  url(https://images-web.newnewbank.com/icon-iosand20170814.png) no-repeat -42px 0;
+        	margin-left: 0 ;
+        }
+        .w-65{
+        	width: 65px;
+        }
+        .mar-top-5{
+        	margin-top: 5px;
+        }
+        .mar-top-18{
+        	margin-top: 18px;
+        }
+        .mar-top-50{
+        	margin-top: 50px;
+        }
+        .mar-bottom-18{
+        	margin-bottom: 18px;
+        }
+        .mar-bottom-25{
+        	margin-bottom: 25px;
+        }
+        .mar-left-65{
+        	margin-left: 65px;
+        }        
+        .padding-bottom-15{
+        	padding-bottom: 15px;
+        }
+        .padding-top-70{
+        	padding-top: 70px;
+        }
+        .two-page{
+        	background-color: #fcead7;
+        }
+        .leftImg{
+        	width: 210px;
+        	height: 240px;
+        	background:  url(https://images-web.newnewbank.com/leftImg20170814.png) no-repeat;
+        	position: absolute;
+        	left: 0;
+        	bottom: 0;
+        }
+        .rightImg{
+        	width: 343px;
+        	height: 276px;
+        	background:  url(https://images-web.newnewbank.com/rightImg20170814.png) no-repeat;
+        	position: absolute;
+        	right: 0;
+        	top: 0;
+        }
+        .fluent{
+        	width: 1151px;
+        	height: 448px;
+        	position: absolute;
+        	top: 50%;
+        	background:  url(https://images-web.newnewbank.com/fluent20170814.png) no-repeat;
+        	margin-top:-224px ;
+        }
+        .three-page{
+        	background-color: #18b3a4;
+        }
+        .appIocn{
+        	width:1032px ;
+        	height: 576px;
+        	background:  url(https://images-web.newnewbank.com/appImg20170814.jpg) no-repeat;
+        	position: absolute;
+        	top: 50%;
+        	left: 0;
+        	margin-top: -288px;
+        	
+        }
+        .color_fff8f0{
+        	color: #fff8f0;
+        }
+        .text-pos{
+        	position: absolute;
+        	top: 228px;
+        	left: 490px;
+        }
+        .four-page{
+        	background-color:#ddeef8 ;
+        }
+        
+        
+        
+        .five-page{
+        	background-color:#f9d7a2
+        }
+        .securityIocn{
+        	width:743px ;
+        	height:652px;
+        	background:  url(https://images-web.newnewbank.com/securityIocn20170814.jpg) no-repeat;
+        	position: absolute;
+        	top: 50%;
+        	right: 0;
+        	margin-top:-326px ;
+        }
+        .color_04574f{
+        	color: #04574f;
+        }
+        .six-page{
+        	background:#b7e4cd ;/* url(https://images-web.newnewbank.com/bgImg20170814.jpg)*/
+        	
+        }
+        .h-pre-80{
+        	height: 80%;
+        }
+        .bgColor_333745{
+        	background-color: #333745;
+        }
+        .h-210{
+        	height: 210px;
+        }
+        .w-pre-100{
+        	width: 100%;
+        }
+        .pos-bottom{
+        	position: absolute;
+        	bottom: 0;
+        	left: 0;
+        }
+        .text-pos-1{
+        	position: absolute;
+        	top: 230px;
+        	left: -280px;
+        }
+        .textIocn{
+        	width:365px ;
+        	height: 44px;
+        	background:  url(https://images-web.newnewbank.com/appText20170814.jpg) no-repeat;
+        	margin: 90px 120px 0 100px;
+        }
+        .color_fcfcfc{
+        	color: #fcfcfc;
+        }
+        .bg-bule .ios-load,.bg-bule .ios-android{
+        	border: 1px solid #555863;
+        }
+        .bg-bule .ios-load:hover,.bg-bule .ios-android:hover{
+        	background-color: #2c303d;
+        	border: 0px;
+        	color: #555863;
+        }
+        .bg-bule .ios-load .ios-icon {
+		    width: 31px;
+		    height: 38px;
+		    background:  url(https://images-web.newnewbank.com/ios-andicon20170814.png) no-repeat 0 0;
+		    margin-left: 0;
+		}
+		.bg-bule .ios-android .ios-icon {
+		    width: 34px;
+		    height: 38px;
+		    background:  url(https://images-web.newnewbank.com/ios-andicon20170814.png) no-repeat -56px 0;
+		    margin-left: 0;
+		}
+		.app-ercodeIcon{
+			overflow: hidden;
+			border: 1px solid #6b6e78;
+        	margin: 25px 0 0 80px;
+		}
+        .app-ercodeIcon i{
+        	width: 130px;
+        	height: 130px;
+        	background:  url(https://images-web.newnewbank.com/iosErcode20170814.jpg) no-repeat; 
+        	margin: 10px;      	
+        }
+        .easyIocn{
+        	width: 982px;
+        	height: 428px;
+        	background:  url(https://images-web.newnewbank.com/easyIcon20170814.jpg) no-repeat;
+        	position: absolute;
+        	bottom: 0;
+        	left: 148px;
+        }
+        .h-pre-40{
+        	height: 40%;
+        }
+        .four-page img{
+        	width: 100%;
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        }
+        .color_7c4f08{
+        	color: #7c4f08;
+        }
+        .themeIocn{
+        	width:912px ;
+        	height: 631px;
+        	background:  url(https://images-web.newnewbank.com/app-theme20170815.png) no-repeat;
+        	position: absolute;
+        	top: 50%;
+        	left: 100px;
+        	margin-top: -316px;
+        }
+        .text-pos-5{
+        	position: absolute;
+        	top: 200px;
+        	right: -55px;
+        }

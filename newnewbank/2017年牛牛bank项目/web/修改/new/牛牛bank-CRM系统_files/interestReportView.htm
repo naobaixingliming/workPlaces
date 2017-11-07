@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>恒顺质保分期后台管理系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+		<meta name="author" content="Muhammad Usman">
+
+		<link href="bootstrap.css" rel="stylesheet">
+		<link href="font-awesome.css" rel="stylesheet">
+		<link href="font-awesome_002.css" rel="stylesheet">
+		<link href="animate.css" rel="stylesheet">
+		<link href="style_002.css" rel="stylesheet">
+		<link href="custom.css" rel="stylesheet">
+
+		<link href="dataTables.css" rel="stylesheet">
+		<link href="dataTables_002.css" rel="stylesheet">
+		<link href="dataTables_003.css" rel="stylesheet">
+
+		<link href="datepicker3.css" rel="stylesheet">
+
+		<link href="jquery-ui.css" rel="stylesheet">
+		<link href="jquery-ui-1.css" rel="stylesheet">
+		<link href="zTreeStyle.css" type="text/css" rel="stylesheet">
+		<link href="myCss.css" rel="stylesheet">
+		<link href="myFonts.css" rel="stylesheet">
+		<link href="datepicker3.css" rel="stylesheet">
+
+		<link href="bootstrap-datetimepicker.css" rel="stylesheet">
+
+		<link href="fullcalendar.css" rel="stylesheet" type="text/css">
+		<!-- 日历样式 -->
+		<link href="chosen.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<!--上传组件CSS-->
+		<link href="webuploader.css" rel="stylesheet">
+		<link href="diyUpload.css" rel="stylesheet">
+
+		<link href="footable.css" rel="stylesheet">
+		<script>
+			window.web_context = 'http://tpr.newnewbank.com/';
+		</script>
+		<style type="text/css">
+			.input-daterange .input-group-addon.empty {
+				background-color: #18a689;
+				color: #FFFFFF;
+				text-shadow: 0 0 0 #FFFFFF;
+				border-radius: 0 2px 2px 0;
+			}
+			
+			.input-daterange .input-group-addon.empty:hover {
+				background-color: #1dc5a3;
+			}
+			
+			.table.dataTable thead th {
+				background: transparent;
+			}
+		</style>
+		<style type="text/css">
+			.mar-right-5{
+				margin-right: 5px!important;
+			}
+			.mar-right-30{
+				margin-right: 30px;
+			}
+			.inline_block{
+				display: inline-block;
+			}
+			
+		</style>
+	</head>
+
+	<body style="background-color:#f3f3f4" class=" pace-done">
+		<div style="position: absolute; left: -9999em; top: 285px; width: auto; z-index: 1987;" class="aui_state_focus">
+			<div class="aui_outer">
+				<table class="aui_border">
+					<tbody>
+						<tr>
+							<td class="aui_nw"></td>
+							<td class="aui_n"></td>
+							<td class="aui_ne"></td>
+						</tr>
+						<tr>
+							<td class="aui_w"></td>
+							<td class="aui_c">
+								<div class="aui_inner">
+									<table class="aui_dialog">
+										<tbody>
+											<tr>
+												<td colspan="2" class="aui_header">
+													<div class="aui_titleBar">
+														<div class="aui_title" style="cursor: move;">消息</div>
+														<a class="aui_close" href="javascript:/*artDialog*/;">×</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="aui_icon" style="display: none;">
+													<div class="aui_iconBg" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></div>
+												</td>
+												<td class="aui_main" style="width: auto; height: auto;">
+													<div class="aui_content" style="padding: 20px 25px;">
+														<div class="aui_loading"><span>loading..</span></div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="aui_footer">
+													<div class="aui_buttons" style="display: none;"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td class="aui_e"></td>
+						</tr>
+						<tr>
+							<td class="aui_sw"></td>
+							<td class="aui_s"></td>
+							<td class="aui_se" style="cursor: se-resize;"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="pace  pace-inactive">
+			<div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+				<div class="pace-progress-inner"></div>
+			</div>
+			<div class="pace-activity"></div>
+		</div>
+		<div id="project">
+			<script src="jquery-2.js"></script>
+			<script src="bootstrap.js"></script>
+			<script src="jquery_003.js"></script>
+			<script src="jquery_002.js"></script>
+			<script src="footable.js"></script>
+
+			<!-- Custom and plugin javascript -->
+
+			<!--上传控件-->
+			<script src="webuploader.js"></script>
+			<script src="diyUpload.js"></script>
+
+			<script src="inspinia.js"></script>
+			<script src="pace.js"></script>
+			<script src="icheck.js"></script>
+
+			<script src="jquery.js"></script>
+			<script src="dataTables.js"></script>
+			<script src="dataTables_002.js"></script>
+
+			<script src="charisma.js"></script>
+			<script src="jquery_006.js"></script>
+
+			<script src="GlobalProvinces_main.js"></script>
+			<script src="personalCentre.js"></script>
+
+			<script src="jquery_005.js"></script>
+
+			<link rel="stylesheet" href="simple.css">
+			<script src="jquery_004.js"></script>
+			<script src="bootstrap-datepicker.js"></script>
+
+			<script src="bootstrap-datepicker_002.js"></script>
+
+			<script src="echarts.js"></script>
+
+			<script src="bootstrap-datetimepicker.js"></script>
+			<script src="bootstrap-datetimepicker_002.js"></script>
+
+			<script src="jsonReqMonitoring.js"></script>
+			<!-- 日历控件 -->
+			<script src="fullcalendar.js"></script>
+
+			<script src="tabPage.js"></script>
+
+			<script src="tools.js"></script>
+
+			<script src="ajaxfileupload.js"></script>
+			<!--
+<script src='http://tpr.newnewbank.com/js/diyUpload/webuploader.js'></script>
+-->
+			<div class="gray-bg">
+				<div id="content">
+					<div class="wrapper wrapper-content animated fadeInRightBig">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="ibox float-e-margins">
+									<div class="ibox-title">
+										<div class="ibox-tools">
+											<h5>利息报表</h5>
+											<a class="collapse-link">
+												<i class="fa fa-chevron-up"></i>
+											</a>
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+												<i class="fa fa-wrench"></i>
+											</a>
+											<ul class="dropdown-menu dropdown-user">
+												<li>
+													<a href="#">Config option 1</a>
+												</li>
+												<li>
+													<a href="#">Config option 2</a>
+												</li>
+											</ul>
+											<a class="close-link">
+												<i class="fa fa-times"></i>
+											</a>
+										</div>
+									</div>
+									<div class="ibox-content">
+										<div class="row">
+											<div class="col-sm-4">
+												
+												<div class="form-group" id="data_5">
+													<label style="width:auto;margin-top: 8px;" class="col-sm-2 control-label">日期</label>
+													
+													
+													<div class="input-daterange input-group" id="datepicker" style="min-width: 270px;">
+														<input class="form-control" name="start" id="start" value="2017-09-01" type="text">
+														<span class="input-group-addon">至</span>
+														<input class="form-control" name="end" id="end" value="2017-09-30" type="text">
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label style="width:auto;margin-top: 8px;" class="col-sm-2 control-label">查询</label>
+													
+													
+													<div class="input-group" style="max-width: 416px;min-width: 270px;">
+														<select class="form-control" id="typeValue" style="width:50%">
+															<option value="0" selected="selected">请选择</option>
+															<option value="1">姓名</option>
+															<option value="2">手机号</option>
+														</select>
+														<input class="form-control" placeholder="请输入条件" id="queryCriteria" style="width:50%" type="text">
+														<span class="input-group-btn"> 
+														<button type="button" class="btn btn-primary" id="queryBtn">查询</button> 
+													</span>
+													</div>
+												</div>
+												
+												<div class="form-group">
+													
+													
+													
+													<label class="col-sm-3 control-label" >合计：</label>
+													<a id="totalCustomer">10</a>人
+												</div>
+											</div>
+											
+											
+											<div class="col-sm-8">
+												<div class="form-group" id="data_5">
+													<label class="col-sm-2 control-label">门店：</label>
+													<div class="col-sm-12">
+														<div class="input-group">
+															
+															
+															<p class="mar-right-30 inline_block" >
+																<input class="mar-right-5" name="checkBox" value="1" type="checkBox"><span>南山海岸城店</span>
+															</p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="2" type="checkBox"><span>南山亿利达店</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>福田香蜜湖店</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>宝安西乡港隆城店</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>南山亿利达店2</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>北京朝阳店</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>广州天河岗顶店</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>珠海吉大店</span></p>
+															<p class="mar-right-30 inline_block" ><input class="mar-right-5" name="checkBox" value="3" type="checkBox"><span>南山京基百纳店</span></p>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12" id="d_meeting">
+												<style>
+													.trcenter th {
+														text-align: center;
+													}
+													
+													.ovhide {
+														white-space: nowrap;
+														overflow: hidden;
+														text-overflow: ellipsis;
+														width: 100px
+													}
+												</style>
+												<table class="table table-bordered table-stripped dataTable">
+													<thead>
+														<tr class="trcenter" style="background: rgb(245, 245, 246);">
+															<th>客户姓名</th>
+															<th>手机号</th>
+															<th>门店</th>
+															<th class="text-center sort sorting" num="1" id="1">申请日期</th>
+															<th class="text-center sort sorting" num="2" id="2">分期金额</th>
+															<th>分期利息</th>
+														</tr>
+													</thead>
+													<tbody id="tbody_tab">
+														<tr class="text-center">
+															<td>魏浩丹</td>
+															<td>13414031171</td>
+															<td></td>
+															<td>2017-09-21</td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td>潘冰巧</td>
+															<td>13414031325</td>
+															<td>福田香蜜湖店</td>
+															<td>2017-09-21</td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td>孔令学</td>
+															<td>13414031169</td>
+															<td></td>
+															<td>2017-09-20</td>
+															<td>50000</td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>15595683809</td>
+															<td>南山亿利达店</td>
+															<td>2017-09-08</td>
+															<td>100000</td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>15595683809</td>
+															<td>南山亿利达店</td>
+															<td>2017-09-08</td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>15897170273</td>
+															<td>南山亿利达店</td>
+															<td>2017-09-07</td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>15383616304</td>
+															<td>南山亿利达店</td>
+															<td>2017-09-05</td>
+															<td>100</td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>15595683809</td>
+															<td>南山亿利达店</td>
+															<td>2017-09-05</td>
+															<td>100000</td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>13750354362</td>
+															<td>南山海岸城店</td>
+															<td>2017-08-31</td>
+															<td>100000</td>
+															<td></td>
+														</tr>
+														<tr class="text-center">
+															<td></td>
+															<td>13414566561</td>
+															<td>南山海岸城店</td>
+															<td>2017-08-31</td>
+															<td>100000</td>
+															<td></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div class="row" style="margin-top: 20px;">
+													<div class="col-sm-5">
+														<div id="editable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 10 entries</div>
+													</div>
+													<div class="col-sm-7">
+														<div id="editable_paginate" class="dataTables_paginate paging_simple_numbers">
+															<ul class="pagination" style="margin: 2px 0;float: right;">
+																<li id="DataTables_Table_0_previous" class="paginate_button previous active">
+																	<a class="active">上一页</a>
+																</li>
+																<li id="DataTables_Table_0_previous" class="paginate_button previous">
+																	<a>首页</a>
+																</li>
+																<li class="paginate_button active">
+																	<a href="javascript:;" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" onclick="submitForm(1)">1</a>
+																</li>
+																<li id="DataTables_Table_0_previous" class="paginate_button previous">
+																	<a>尾页</a>
+																</li>
+																<li id="DataTables_Table_0_next" class="paginate_button active">
+																	<a>下一页</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+												<script>
+													$(".dataTable th.sort").click(function() {
+														$(this).css("background", "#f5f5f6").siblings().css("background", "transparent");
+														var _num = $(this).attr("num");
+														var _type = 'desc';
+														if($(this).hasClass("sorting_asc")) {
+															_type = 'desc';
+														} else if($(this).hasClass("sorting_desc")) {
+															_type = 'asc';
+														}
+														sortTable(_num, _type);
+													})
+												</script>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				var checked = new Array(); //复选框选中门店
+				$(document).ready(function() {
+					$("#d_meeting").load(web_context + 'qualityReport/interestReportList/1.shtml', function() {});
+					checked = [];
+					getTotalCustomer();
+					$('#data_5 .input-daterange').datepicker({ //日历控件
+						keyboardNavigation: false,
+						forceParse: false,
+						autoclose: true,
+						format: "yyyy-mm-dd",
+						todayBtn: 'linked',
+						todayHighlight: true //  加两个属性，给个选择今天的按钮
+					});
+				});
+
+				$('#queryBtn').click(function() { //查询
+					var type = $('#typeValue option:selected').val();
+					var content = $.trim($('#queryCriteria').val());
+					if(content == '' && type > 0) {
+						$.dialog({
+							content: '请输入查询条件!',
+							lock: true,
+							ok: function() {
+								$('#queryCriteria').focus();
+							}
+						});
+					}
+					getTotalCustomer();
+					$("#d_meeting").load(web_context + 'qualityReport/interestReportList/1.shtml', getParams(), function() {});
+					checked = [];
+				});
+
+				function getParams() {
+					var params = {};
+					var type = $('#typeValue option:selected').val();
+					var content = $.trim($('#queryCriteria').val());
+					if(type != '' && type == 1) {
+						params['certName'] = $.trim($('#queryCriteria').val());
+					} else if(type != '' && type == 2) {
+						params['mobilePhone'] = $.trim($('#queryCriteria').val());
+					} else if(type != '' && type == 3) {
+						params['storeName'] = $.trim($('#queryCriteria').val());
+					}
+					$('input:checkbox:checked').each(function() {
+						checked.push($(this).val());
+						params['storeId'] = checked.toString();
+					});
+					params['startDate'] = $.trim($('#start').val());
+					params['endDate'] = $.trim($('#end').val());
+					return params;
+				}
+
+				function sortTable(_num, _type) {
+					var params = getParams();
+					params.sortId = getOrderBy(_num, _type);
+					$("#d_meeting").load(web_context + "qualityReport/interestReportList/1.shtml", params, function() {
+						var obj = $(".dataTable #" + _num);
+						if($(obj).hasClass("sorting")) {
+							$(obj).removeClass("sorting");
+						}
+						if(_type == 'asc') {
+							$(obj).removeClass("sorting_desc").addClass("sorting_asc");
+						} else if(_type == 'desc') {
+							$(obj).removeClass("sorting_asc").addClass("sorting_desc");
+						}
+					});
+				}
+
+				function submitForm(page) {
+					var _type = "asc";
+					var params = getParams();
+					if($(".dataTable th.sorting_asc").length == 1) {
+						var _num = $(".dataTable th.sorting_asc").attr("num");
+						params.orderBy = getOrderBy(_num);
+						params.type = "asc";
+						_type = "asc";
+					}
+					if($(".dataTable th.sorting_desc").length == 1) {
+						var _num = $(".dataTable th.sorting_desc").attr("num");
+						params.orderBy = getOrderBy(_num);
+						params.type = "desc";
+						_type = "desc";
+					}
+					$("#d_meeting").load(web_context + 'qualityReport/interestReportList/' + page + '.shtml', params, function() {});
+					var obj = $(".dataTable #" + _num);
+					if($(obj).hasClass("sorting")) {
+						$(obj).removeClass("sorting");
+					}
+					if(_type == 'asc') {
+						$(obj).removeClass("sorting_desc").addClass("sorting_asc");
+					} else if(_type == 'desc') {
+						$(obj).removeClass("sorting_asc").addClass("sorting_desc");
+					}
+				}
+
+				function getOrderBy(_num, _type) {
+					if(_num == 2) {
+						if(_type == 'desc') {
+							return 3;
+						} else {
+							return 2;
+						}
+					} else if(_num == 1) {
+						if(_type == 'asc') {
+							return 1;
+						} else {
+							return 0;
+						}
+					}
+				}
+
+				function getTotalCustomer() {
+					/*$('input:checkbox:checked').each(function(){
+	        checked.push($(this).val());
+	    });*/
+					var params = getParams();
+					$.ajax({
+						url: web_context + 'qualityReport/getCarStoreCustomerCount.shtml',
+						data: params,
+						async: false,
+						type: 'POST',
+						success: function(data) {
+							if(typeof(data) != 'undefined' && data != null) {
+								$('#totalCustomer').text(data.totalCustomer);
+							}
+						}
+					})
+				}
+			</script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,456 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 30px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+	html,
+			body {
+				height: 100%;
+				position: relative;
+			}
+			.rootNode {
+				width: 100%;
+				/*min-height: 100%;*/
+				overflow: hidden;
+				background-color: #bc2629;
+				/*background-image: linear-gradient(to top, #f51c32 0%, #f04f45 100%);*/
+			}
+			
+			.ellipse{
+				width: 1000px;
+				height: 300px;
+				border-radius:50% ;
+				background-color: #da3d34;
+				box-shadow: 10px 10px 30px 10px #a72a28;
+				position: absolute;
+				top: -210px;
+				left:100px;				
+			}
+			.circle{
+				background-color: #d73d33;	
+				box-shadow: 10px 10px 30px 10px #a72a28;			
+			}
+			.left-circle-1{
+				position: absolute;
+				top: -350px;
+				left:-600px ;
+				width: 640px;
+				height: 640px;
+				border-radius:50% ;
+			}
+			.left-circle-2{
+				    position: absolute;
+			    top: -250px;
+			    left: -850px;
+			    width: 740px;
+			    height: 740px;
+			    border-radius: 50%;
+			    opacity: .8;
+			}
+			.right-circle-1{
+				position: absolute;
+				top: -400px;
+				right:-750px ;
+				width: 800px;
+				height: 800px;
+				border-radius:50% ;
+			}
+			.right-circle-2{
+				position: absolute;
+			    top: 80px;
+			    right: -750px;
+			    width: 540px;
+			    height: 540px;
+			    border-radius: 50%;
+			    opacity: .8;
+			}
+			.titleImg{
+				width: 733px;
+				height: 320px;
+				background:url(https://images-web.newnewbank.com/title20170926.png) no-repeat;				
+			}
+			.padding-top-140{
+				padding-top: 140px;
+			}
+			.showBox{
+				width: 1100px;
+			    height: 900px;
+			    position: absolute;
+			    top: 150px;
+			    background-color: rgba(221, 75, 52, 1);
+			    filter: url(blur.svg#blur);
+			    -webkit-filter: blur(100px);
+			    -moz-filter: blur(100px);
+			    -ms-filter: blur(100px);
+			    filter: blur(100px);
+			    border-radius: 100%;
+			    /*z-index: 2;*/
+			}
+			.star{
+				width:930px ;
+				height: 719px;
+				background:url(https://images-web.newnewbank.com/star20170926.png) no-repeat;
+				position: absolute;
+				top: 155px;
+				left: 75px;
+			}
+			.mainImg{
+				width: 707px;
+				height: 246px;
+				background:url(https://images-web.newnewbank.com/mianImg20170926.png) no-repeat;
+				margin-top:30px;
+			}
+			.color_d63d35{
+				color: #d63d35;
+			}
+			.color_920d10{
+				color: #920d10;
+			}
+			.color_fdb62d{
+				color: #fdb62d;
+			}
+			.color_de4557{
+				color:#de4557;
+			}
+			.color_f4c656{
+				color: #f4c656;
+			}
+			.font_60{
+				font-size: 60px;
+			}
+			.padding-top-110{
+				padding-top: 110px;
+			}
+			.w-450{
+				width: 450px;
+			}
+			.getIn,.getInvest,.investUserBtn{
+				width: 126px;
+				height: 38px;
+				line-height: 38px;
+				border: 1px solid #920d10;
+				border-radius: 19px;
+				margin-top: 30px;
+			}
+			.investUserBtn{
+				width: 150px;
+				border: 1px solid #f4c656;
+				color: #f4c656;
+				margin-top:70px;
+			}
+			.getIn:hover{
+				border: 0;
+				background-color:#920d10 ;
+				color: #f9c231;
+			}
+			.w-240{
+				width: 240px;
+			}
+			.footer{
+				height: 279px;
+				background:url(https://images-web.newnewbank.com/footerimgh20170926.png) bottom center;
+				margin-top: 10px;
+			}
+			.getIocn{
+				width: 99px;
+				height: 97px;
+				background:url(https://images-web.newnewbank.com/hasGet.png) no-repeat;
+			}
+			.cover{
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.8);
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 1000;
+			}
+			.box-popup{
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				width:501px ;
+				height: 328px;
+				background:url(https://images-web.newnewbank.com/boxRed20170926.png) no-repeat;
+				margin-top: -164px;
+				margin-left:-250px ;
+				z-index: 1001;
+			}
+			.deleteBtn{
+				width:38px;
+				height: 37px;
+				background:url(https://images-web.newnewbank.com/deleteBtn20170926.png) no-repeat;
+				position: absolute;
+				top: -45px;
+				right: 0;
+				cursor: pointer;
+			}
+
+
+

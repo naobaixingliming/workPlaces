@@ -1,0 +1,1142 @@
+<html lang="zh-CN"><head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>牛牛bank-CRM系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+		<meta name="author" content="Muhammad Usman">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/font-awesome.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/font-awesome_002.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/animate.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/style_002.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/custom.css" rel="stylesheet">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/dataTables.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/dataTables_002.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/dataTables_003.css" rel="stylesheet">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/datepicker3.css" rel="stylesheet">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery-ui.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery-ui-1.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/zTreeStyle.css" type="text/css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/myCss.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/myFonts.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/datepicker3.css" rel="stylesheet">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap-datetimepicker.css" rel="stylesheet">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/fullcalendar.css" rel="stylesheet" type="text/css">
+		<!-- 日历样式 -->
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/chosen.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/style.css" rel="stylesheet">
+		<!--上传组件CSS-->
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/webuploader.css" rel="stylesheet">
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/diyUpload.css" rel="stylesheet">
+
+		<link href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/footable.css" rel="stylesheet">
+		<script>
+			window.web_context = 'http://tpr.newnewbank.com/';
+		</script>
+		<style type="text/css">
+			.fc-border-separate td {
+				cursor: pointer;
+			}
+			
+			.fc-border-separate th,
+			.fc-border-separate td {
+				background: #fff;
+			}
+			
+			.input-daterange .input-group-addon.empty {
+				background-color: #18a689;
+				color: #FFFFFF;
+				text-shadow: 0 0 0 #FFFFFF;
+				border-radius: 0 2px 2px 0;
+			}
+			
+			.input-daterange .input-group-addon.empty:hover {
+				background-color: #1dc5a3;
+			}
+			
+			.datepicker.dropdown-menu {
+				top: 270px!important;
+			}
+			
+			.table.dataTable thead th {
+				background: transparent;
+			}
+			
+			.reportTabNav a {
+				border-radius: 0;
+				border: 1px solid #e5e6e7;
+			}
+			
+			.btn-dates {
+				width: 1100px;
+				margin: 0 auto;
+			}
+			
+			.btn-dates a {
+				display: inline-block;
+				height: 25px;
+				line-height: 25px;
+				color: #333;
+				border-radius: 5px;
+				padding: 0 15px;
+				background: #fff;
+				margin: 0 5px;
+			}
+			/* 右侧tab菜单样式 */
+			
+			.nav-tabs li a {
+				float: left;
+			}
+			
+			.nav-tabs li .close {
+				position: relative;
+				right: 20px;
+			}
+		</style>
+	</head>
+
+	<body class="pace-done"><div style="display: none; position: absolute;" class=""><div class="aui_outer"><table class="aui_border"><tbody><tr><td class="aui_nw"></td><td class="aui_n"></td><td class="aui_ne"></td></tr><tr><td class="aui_w"></td><td class="aui_c"><div class="aui_inner"><table class="aui_dialog"><tbody><tr><td colspan="2" class="aui_header"><div class="aui_titleBar"><div class="aui_title" style="cursor: move;"></div><a class="aui_close" href="javascript:/*artDialog*/;">×</a></div></td></tr><tr><td class="aui_icon" style="display: none;"><div class="aui_iconBg" style="background: none;"></div></td><td class="aui_main" style="width: auto; height: auto;"><div class="aui_content" style="padding: 20px 25px;"></div></td></tr><tr><td colspan="2" class="aui_footer"><div class="aui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="aui_e"></td></tr><tr><td class="aui_sw"></td><td class="aui_s"></td><td class="aui_se" style="cursor: se-resize;"></td></tr></tbody></table></div></div><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+		<div style="display: none; position: absolute;" class="">
+			<div class="aui_outer">
+				<table class="aui_border">
+					<tbody>
+						<tr>
+							<td class="aui_nw"></td>
+							<td class="aui_n"></td>
+							<td class="aui_ne"></td>
+						</tr>
+						<tr>
+							<td class="aui_w"></td>
+							<td class="aui_c">
+								<div class="aui_inner">
+									<table class="aui_dialog">
+										<tbody>
+											<tr>
+												<td colspan="2" class="aui_header">
+													<div class="aui_titleBar">
+														<div class="aui_title" style="cursor: move;"></div>
+														<a class="aui_close" href="javascript:/*artDialog*/;">×</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="aui_icon" style="display: none;">
+													<div class="aui_iconBg" style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;"></div>
+												</td>
+												<td class="aui_main" style="width: auto; height: auto;">
+													<div class="aui_content" style="padding: 20px 25px;"></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="aui_footer">
+													<div class="aui_buttons" style="display: none;"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td class="aui_e"></td>
+						</tr>
+						<tr>
+							<td class="aui_sw"></td>
+							<td class="aui_s"></td>
+							<td class="aui_se" style="cursor: se-resize;"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="pace  pace-inactive">
+			<div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+				<div class="pace-progress-inner"></div>
+			</div>
+			<div class="pace-activity"></div>
+		</div>
+		<div>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery-2.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery_003.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery_002.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/footable.js"></script>
+
+			<!-- Custom and plugin javascript -->
+
+			<!--上传控件-->
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/webuploader.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/diyUpload.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/inspinia.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/pace.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/icheck.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/dataTables.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/dataTables_002.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/charisma.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery_006.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/GlobalProvinces_main.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/personalCentre.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery_005.js"></script>
+
+			<link rel="stylesheet" href="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/simple.css">
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jquery_004.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap-datepicker.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap-datepicker_002.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/echarts.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap-datetimepicker.js"></script>
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/bootstrap-datetimepicker_002.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/jsonReqMonitoring.js"></script>
+			<!-- 日历控件 -->
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/fullcalendar.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/tabPage.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/tools.js"></script>
+
+			<script src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/ajaxfileupload.js"></script>
+			<!--
+<script src='http://tpr.newnewbank.com/js/diyUpload/webuploader.js'></script>
+-->
+			<nav class="navbar-default navbar-static-side" role="navigation">
+				<div class="sidebar-collapse">
+					<ul class="nav metismenu" id="side-menu">
+						<li class="nav-header">
+							<div class="dropdown profile-element"> <span>
+                        <img alt="image" class="img-circle" src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/profile_small.jpg">
+                         </span>
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+									<span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">admins</strong>
+                         </span> <span class="text-muted text-xs block">技术 <b class="caret"></b></span> </span>
+								</a>
+								<ul class="dropdown-menu animated fadeInRight m-t-xs">
+									<!--<li><a href="contacts.html">联系人</a></li>
+                        <li><a href="mailbox.html">邮箱</a></li>-->
+									<li>
+										<a href="javascript:void(0);" onclick="gopwd();">修改密码</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="javascript:;" id="getKeyVal">获取密钥</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="http://tpr.newnewbank.com/logout.shtml">注销</a>
+									</li>
+								</ul>
+							</div>
+							<div class="logo-element" style="font-size: 14px;">
+								NNBANK
+							</div>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">合同管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(68)">
+									<a pagename="menu00" href="http://tpr.newnewbank.com/contractManagement/contractIndex.shtml">合同申请</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">统计报表</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(19)">
+									<a pagename="menu10" href="http://tpr.newnewbank.com/personRef/personRefIndex.shtml">个人推荐</a>
+								</li>
+
+								<li onclick="visit(21)">
+									<a pagename="menu11" href="http://tpr.newnewbank.com/teamRecomMt/teamRecomMtIndex.shtml">团队推荐</a>
+								</li>
+
+								<li onclick="visit(25)">
+									<a pagename="menu12" href="http://tpr.newnewbank.com/depRef/depRefIndex.shtml">部门推荐</a>
+								</li>
+
+								<li onclick="visit(26)">
+									<a pagename="menu13" href="http://tpr.newnewbank.com/personMt/personMtIndex.shtml">个人维护</a>
+								</li>
+
+								<li onclick="visit(29)">
+									<a pagename="menu14" href="http://tpr.newnewbank.com/teamMt/teamMtIndex.shtml">团队维护</a>
+								</li>
+
+								<li onclick="visit(30)">
+									<a pagename="menu15" href="http://tpr.newnewbank.com/sourceMt/sourceMtIndex.shtml">渠道业绩</a>
+								</li>
+
+								<li onclick="visit(69)">
+									<a pagename="menu16" href="http://tpr.newnewbank.com/statisticsReport/statisticsReportIndex.shtml">运营统计报表</a>
+								</li>
+
+								<li onclick="visit(70)">
+									<a pagename="menu17" href="http://tpr.newnewbank.com/statisticsReport/statisticsPayPlanDetailIndex.shtml">回款明细</a>
+								</li>
+
+								<li onclick="visit(71)">
+									<a pagename="menu18" href="http://tpr.newnewbank.com/statisticsReport/statisticsInvestmentDetailIndex.shtml">投资明细</a>
+								</li>
+
+								<li onclick="visit(34)">
+									<a pagename="menu19" href="http://tpr.newnewbank.com/teamSellRecomm/getTeamRecommIndex.shtml?queryType=recomm">团队推荐业绩</a>
+								</li>
+
+								<li onclick="visit(35)">
+									<a pagename="menu110" href="http://tpr.newnewbank.com/teamSellRecomm/getTeamRecommIndex.shtml?queryType=maintain">团队维护业绩</a>
+								</li>
+
+								<li onclick="visit(36)">
+									<a pagename="menu111" href="http://tpr.newnewbank.com/teamSellRecomm/getTeamRecommIndex.shtml?queryType=recomm&amp;department=department">部门推荐业绩</a>
+								</li>
+
+								<li onclick="visit(37)">
+									<a pagename="menu112" href="http://tpr.newnewbank.com/sourceMt/getChannelIndex.shtml">渠道业绩</a>
+								</li>
+
+								<li onclick="visit(42)">
+									<a pagename="menu113" href="http://tpr.newnewbank.com/calendar/getPlatformIndex.shtml">平台运营日历</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-home"></i> <span class="nav-label">个人面板</span>
+
+							</a>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">运营维护</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(3)">
+									<a pagename="menu30" href="http://tpr.newnewbank.com/personPerform/index.shtml">个人业绩</a>
+								</li>
+
+								<li onclick="visit(4)">
+									<a pagename="menu31" href="http://tpr.newnewbank.com/maintainPerfor/index.shtml">维护业绩</a>
+								</li>
+
+								<li onclick="visit(33)">
+									<a pagename="menu32" href="http://tpr.newnewbank.com/nPersonPerform/getRecommPerson.shtml">推荐业绩</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-users"></i> <span class="nav-label">客户管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(6)">
+									<a pagename="menu40" href="http://tpr.newnewbank.com/customInfo/index.shtml">客户查询</a>
+								</li>
+
+								<li onclick="visit(7)">
+									<a pagename="menu41" href="http://tpr.newnewbank.com/customMaintain/index.shtml">客户分配</a>
+								</li>
+
+								<li onclick="visit(8)">
+									<a pagename="menu42" href="http://tpr.newnewbank.com/warn/bankIndex.shtml">绑卡预警</a>
+								</li>
+
+								<li onclick="visit(9)">
+									<a pagename="menu43" href="http://tpr.newnewbank.com/warn/rechargeIndex.shtml">充值预警</a>
+								</li>
+
+								<li onclick="visit(10)">
+									<a pagename="menu44" href="http://tpr.newnewbank.com/warn/cashIndex.shtml">提现跟进</a>
+								</li>
+
+								<li onclick="visit(11)">
+									<a pagename="menu45" href="http://tpr.newnewbank.com/warn/repayIndex.shtml">回款跟进</a>
+								</li>
+
+								<li onclick="visit(44)">
+									<a pagename="menu46" href="http://tpr.newnewbank.com/workJob/workJobIndex.shtml">工单管理</a>
+								</li>
+
+								<li onclick="visit(46)">
+									<a pagename="menu47" href="http://tpr.newnewbank.com/signInManage/index.shtml">签到管理</a>
+								</li>
+
+								<li onclick="visit(59)">
+									<a pagename="menu48" href="http://tpr.newnewbank.com/partner/applyList.shtml">合伙人审核</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">系统设置</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(13)">
+									<a pagename="menu50" href="http://tpr.newnewbank.com/userManage/list.shtml">用户管理</a>
+								</li>
+
+								<li onclick="visit(14)">
+									<a pagename="menu51" href="http://tpr.newnewbank.com/role/roleList.shtml">角色管理</a>
+								</li>
+
+								<li onclick="visit(15)">
+									<a pagename="menu52" href="http://tpr.newnewbank.com/privilege/privilegeIndex.shtml">权限管理</a>
+								</li>
+
+								<li onclick="visit(16)">
+									<a pagename="menu53" href="http://tpr.newnewbank.com/userManage/organizationIndex.shtml">部门管理</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">运营数据</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(49)">
+									<a pagename="menu60" href="http://tpr.newnewbank.com/signInReport/querySignInNumDayIndex.shtml">签到数据管理</a>
+								</li>
+
+								<li onclick="visit(50)">
+									<a pagename="menu61" href="http://tpr.newnewbank.com/operator/dataPublishIndex.shtml">运营数据披露</a>
+								</li>
+
+								<li onclick="visit(65)">
+									<a pagename="menu62" href="http://tpr.newnewbank.com/platformData/toBusinessIndex.shtml">平台运营总体情况</a>
+								</li>
+
+								<li onclick="visit(66)">
+									<a pagename="menu63" href="http://tpr.newnewbank.com/platformData/product.shtml">平台产品情况</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">企业管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(52)">
+									<a pagename="menu70" href="http://tpr.newnewbank.com/companyManage/toCompanyApplyList.shtml">企业开户</a>
+								</li>
+
+								<li onclick="visit(63)">
+									<a pagename="menu71" href="http://tpr.newnewbank.com/companyManage/toCompanyLoginApplyRelInfoList.shtml">登录管理</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">债权转让管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(55)">
+									<a pagename="menu80" href="http://tpr.newnewbank.com/transfer/toTransfer.shtml">债权转让审核</a>
+								</li>
+
+								<li onclick="visit(56)">
+									<a pagename="menu81" href="http://tpr.newnewbank.com/transfer/toRelease.shtml">债权转让发布</a>
+								</li>
+
+								<li onclick="visit(57)">
+									<a pagename="menu82" href="http://tpr.newnewbank.com/transfer/toRaiseEnd.shtml">放款列表</a>
+								</li>
+
+								<li onclick="visit(58)">
+									<a pagename="menu83" href="http://tpr.newnewbank.com/transfer/toCompletedLoan.shtml">完成放款信息</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">净值标管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse">
+
+								<li onclick="visit(60)">
+									<a pagename="menu90" href="http://tpr.newnewbank.com/netvalue/netvalueAuditIndex.shtml">净值标审核</a>
+								</li>
+
+								<li onclick="visit(61)">
+									<a pagename="menu91" href="http://tpr.newnewbank.com/netvalue/netvalueReleaseIndex.shtml">净值标发布</a>
+								</li>
+							</ul>
+						</li>
+						<li class="active">
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">恒顺后台</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse in" style="">
+
+								<li onclick="visit(73)">
+									<a pagename="menu100" href="http://tpr.newnewbank.com/quality/customerIndex.shtml">客户列表</a>
+								</li>
+
+								<li onclick="visit(74)">
+									<a pagename="menu101" href="http://tpr.newnewbank.com/qualityReport/interestReportView.shtml">报表统计</a>
+								</li>
+
+								<li onclick="visit(81)">
+									<a pagename="menu102" href="http://tpr.newnewbank.com/qualityManagement/storeManagementIndex.shtml">门店管理</a>
+								</li>
+
+								<li onclick="visit(82)">
+									<a pagename="menu103" href="http://tpr.newnewbank.com/managerManagement/managerListIndex.shtml">客户经理管理</a>
+								</li>
+							</ul>
+						</li>
+						<li class="">
+							<a pagename="tab-1" href="http://tpr.newnewbank.com/index.shtml"><i class="fa fa-cog"></i> <span class="nav-label">质保分期管理</span>
+								<span class="fa arrow"></span>
+							</a>
+							<ul class="nav nav-second-level collapse" style="height: 0px;">
+
+								<li onclick="visit(77)">
+									<a pagename="menu110" href="http://tpr.newnewbank.com/instance/instanceIndex.shtml">质保初审</a>
+								</li>
+
+								<li onclick="visit(76)">
+									<a pagename="menu111" href="http://tpr.newnewbank.com/telecheck/telecheckIndex.shtml">电联审核</a>
+								</li>
+
+								<li onclick="visit(80)">
+									<a pagename="menu112" href="http://tpr.newnewbank.com/instance/finalAuditIndex.shtml">质保终审</a>
+								</li>
+
+								<li onclick="visit(79)">
+									<a pagename="menu113" href="http://tpr.newnewbank.com/qualityData/cusLtDataIndex.shtml">借款数据</a>
+								</li>
+
+								<li onclick="visit(78)">
+									<a pagename="menu114" href="http://tpr.newnewbank.com/template/templateIndex.shtml">表单配置</a>
+								</li>
+
+								<li onclick="visit(83)">
+									<a pagename="menu115" href="http://tpr.newnewbank.com/question/questionIndex.shtml">电核模板配置</a>
+								</li>
+
+								<li onclick="visit(84)">
+									<a pagename="menu116" href="http://tpr.newnewbank.com/category/categoryIndex.shtml">分组信息管理</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<!--  密钥 start  -->
+
+				<!--  密钥 end  -->
+			</nav>
+			<script>
+				$("#getKeyVal").click(function() {
+					$.post('http://tpr.newnewbank.com/CrmManageSecret/getSecretkey.shtml', function(data) {
+						//$("#getBarcodeCodeVal").val(data.secretKey);
+						$("#getSecretkey").modal('show');
+						$("#getBarcodeCode").attr('src', 'http://tpr.newnewbank.com/' + 'CrmManageSecret/getBarcodeCode.shtml?rnd=' + Math.random());
+					});
+
+				});
+
+				$(document).ready(function() {
+					//调用表格
+					$('.dataTables-gryj').DataTable({
+						language: {
+							url: 'js/plugins/dataTables/Chinese.json'
+						},
+						"lengthChange": false, //是否允许用户改变表格每页显示的记录数
+						"ordering": true, //是否允许Datatables开启排序
+						"dom": 'lTtip' //l-改变每页显示多少条数据的控件,f-即时搜索框控件,t-表格本身,i-表格相关信息控件,p-分页控件,r-加载等待显示信息
+					});
+
+					//选择下拉框
+					function checkDropdown() {
+						if($(".dropdown-menu").size() > 0) {
+							for(var m = 0; m < $(".dropdown-menu").length; m++) {
+								checkDropdownBox(m);
+							}
+						}
+					}
+
+					function checkDropdownBox(mm) {
+						var aCheckNav = $(".dropdown-menu").eq(mm).find("li");
+						aCheckNav.on("click", function() {
+							$(this).parent().prev("button[data-toggle='dropdown']").html($(this).find("a").html() + "<span class='caret'></span>");
+						});
+					}
+					checkDropdown();
+
+				});
+
+				function gopwd() {
+					loadContentBySrch("http://tpr.newnewbank.com/userManage/toPwd.shtml");
+				}
+				//菜单访问日志
+				function visit(menuId) {
+					//console.info("url="+url+" menuName="+menuName);
+					$.ajax({
+						url: web_context + "role/visitLog.shtml?t=" + Math.random(),
+						data: {
+							menuId: menuId
+						},
+						type: "POST",
+						success: function(data) {}
+					});
+				}
+			</script>
+			<div id="page-wrapper" class="gray-bg" style="min-height: 1310px;">
+				<div class="row border-bottom">
+					<nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+						<div class="navbar-header">
+							<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+							<form role="search" class="navbar-form-custom" action="search_results.html">
+								<div class="form-group">
+									<input placeholder="Search for something..." class="form-control" name="top-search" id="top-search" type="text">
+								</div>
+							</form>
+						</div>
+						<ul class="nav navbar-top-links navbar-right">
+							<li>
+								<span class="m-r-sm text-muted welcome-message">欢迎来到牛牛bank-CRM系统</span>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" onclick="markOut()">
+									<i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+								</a>
+								<ul class="dropdown-menu dropdown-messages">
+									<li>
+										<div class="dropdown-messages-box">
+											<a href="http://tpr.newnewbank.com/profile.html" class="pull-left">
+												<img alt="image" class="img-circle" src="">
+											</a>
+											<div class="media-body">
+												<small class="pull-right">46h ago</small>
+												<strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+												<small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+											</div>
+										</div>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<div class="text-center link-block">
+											<a href="http://tpr.newnewbank.com/mailbox.html">
+												<i class="fa fa-envelope"></i>
+												<strong>Read All Messages</strong>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle count-info" data-toggle="dropdown" href="javascript:void(0);" onclick="workJobOut()">
+									<i class="fa fa-bell"></i> <span class="label label-primary" id="workJobNum">17</span>
+								</a>
+
+							</li>
+							<li>
+								<a href="http://tpr.newnewbank.com/logout.shtml">
+									<i class="fa fa-sign-out"></i> 注销
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div id="markOut">
+				</div>
+				<div id="workJobOut">
+				</div>
+				<script>
+					$(function() {
+						//查询提醒数量
+						//queryWorkJobNum();
+					});
+					var showWorkJob = 1;
+
+					function markOut() {
+						$("#markOut").load(web_context + 'teamMt/1/queryMangeMarkLogList.shtml', function() {
+							queryDetailCals("markOut");
+						});
+					}
+
+					function workJobOut() {
+						queryWorkJobNum();
+						var noteNum = $('#workJobNum').html();
+						if(showWorkJob % 2 == 1 && noteNum != '') {
+							$("#workJobOut").load(web_context + 'workJob/1/workJobNoticeList.shtml', function() {
+								//queryDetailCals("markOut");
+							});
+						} else {
+							$('#workJobOut').empty();
+						}
+						showWorkJob++;
+					}
+
+					function queryDetailCals(v) {
+						$("#" + v).find(".popup-table-rp-bg").css({
+							"display": "block"
+						});
+						$("#" + v).find(".popup-table-rp").css({
+							"display": "block"
+						});
+						$("#" + v).find(".clickClose").on("click", function() {
+							$("#" + v).find("#caleTbody").html("");
+							$("#" + v).find(".popup-table-rp-bg").css({
+								"display": "none"
+							});
+							$("#" + v).find(".popup-table-rp").css({
+								"display": "none"
+							});
+						})
+						$("#" + v).find(".popup-table-rp-bg").on("click", function() {
+							$("#" + v).find("#caleTbody").html("");
+							$(this).css({
+								"display": "none"
+							});
+							$("#" + v).find(".popup-table-rp").css({
+								"display": "none"
+							});
+						});
+					}
+
+					function queryWorkJobNum() {
+						$.ajax({
+							url: web_context + 'workJob/queryWorkJobNum.shtml',
+							data: {},
+							success: function(data) {
+								if(data != 0) {
+									$('#workJobNum').html(data);
+								} else {
+									$('#workJobNum').html('');
+								}
+							}
+						});
+					}
+				</script>
+
+				<div id="content">
+					<div class="wrapper wrapper-content animated fadeInRight">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="tabs-container">
+									<ul class="nav nav-tabs">
+										<li class="">
+											<a data-toggle="tab" href="#tab-1">个人面板</a>
+										</li>
+										<li class="active">
+											<a data-toggle="tab" href="#menu101">报表统计</a><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button></li>
+									</ul>
+									<div class="tab-content">
+										<div id="tab-1" class="tab-pane">
+											<div class="panel-body">
+												<div class="btn-dates">
+													<a id="queryRecomm" href="javascript:;" style="background:#ccc">推荐业绩</a>
+													<a id="queryMaintain" href="javascript:;">维护业绩</a>
+												</div>
+												<!--日历插件 -->
+												<div id="calendar" class="fc fc-ltr"><table class="fc-header" style="width:100%"><tbody><tr><td class="fc-header-left"><span class="fc-button fc-button-prev fc-state-default fc-corner-left" unselectable="on"><span class="fc-text-arrow">‹</span></span><span class="fc-button fc-button-next fc-state-default fc-corner-right" unselectable="on"><span class="fc-text-arrow">›</span></span><span class="fc-header-space"></span><span class="fc-button fc-button-today fc-state-default fc-corner-left fc-corner-right" unselectable="on">today</span></td><td class="fc-header-center"><span class="fc-header-title"><h2>&nbsp;</h2></span></td><td class="fc-header-right"></td></tr></tbody></table><div class="fc-content" style="position:relative"><div class="fc-view fc-view-month fc-grid" style="position:relative" unselectable="on"></div></div></div>
+												<div id="outWin">
+													<div class="popup-table-rp-bg" style="display: none;"></div>
+													<div class="inmodal popup-table-rp" style="display: none;" id="divId">
+														<div class="modal-content">
+															<div class="modal-header">
+																<button type="button" class="close clickClose"><span>×</span><span class="sr-only">Close</span></button>
+															</div>
+															<div class="modal-body">
+																<div class="row">
+																	<div class="col-lg-12">
+																		<div class="ibox float-e-margins">
+																			<div class="ibox-content" style="height: 500px;overflow-y: scroll;">
+																				<table class="table table-bordered table-hover">
+																					<tbody id="caleTbody"></tbody>
+																				</table>
+
+																				<table class="table table-bordered table-hover footable table-stripped toggle-arrow-tiny" id="dayPayBark" data-page-size="7">
+																					<thead>
+																						<tr style="text-align: center;">
+																							<td colspan="4">用户回款记录</td>
+																						</tr>
+																						<tr class="active" align="center">
+																							<td>用户名</td>
+																							<td>手机号</td>
+																							<td>标名</td>
+																							<td>回款金额</td>
+																						</tr>
+																					</thead>
+																					<tbody id="dayPayBarktb">
+
+																					</tbody>
+																					<tfoot>
+																						<tr>
+																							<td colspan="5">
+																								<ul class="pagination pull-right"></ul>
+																							</td>
+																						</tr>
+																					</tfoot>
+																				</table>
+
+																				<table class="table table-bordered table-hover footable table-stripped toggle-arrow-tiny" id="dayInvest" data-page-size="7" data-filter="#filter">
+																					<thead>
+																						<tr style="text-align: center;">
+																							<td colspan="4">用户购标记录</td>
+																						</tr>
+																						<tr class="active" align="center">
+																							<td>用户名</td>
+																							<td>手机号</td>
+																							<td>标名</td>
+																							<td>购标金额</td>
+																						</tr>
+																					</thead>
+																					<tbody id="dayInvesttb"></tbody>
+																					<tfoot>
+																						<tr>
+																							<td colspan="5">
+																								<ul class="pagination pull-right"></ul>
+																							</td>
+																						</tr>
+																					</tfoot>
+																				</table>
+
+																				<table class="table table-bordered table-hover footable table-stripped toggle-arrow-tiny" id="dayRecharge" data-page-size="7" data-filter="#filter">
+																					<thead>
+																						<tr class="active" align="center">
+																							<td colspan="3">用户充值记录</td>
+																						</tr>
+																						<tr class="active" align="center">
+																							<td>用户名</td>
+																							<td>手机号</td>
+																							<td>充值金额</td>
+																						</tr>
+																					</thead>
+																					<tbody id="dayRechargetb"></tbody>
+																					<tfoot>
+																						<tr>
+																							<td colspan="5">
+																								<ul class="pagination pull-right"></ul>
+																							</td>
+																						</tr>
+																					</tfoot>
+																				</table>
+
+																				<table class="table table-bordered table-hover footable table-stripped toggle-arrow-tiny" id="dayOutCash" data-page-size="7" data-filter="#filters">
+																					<thead>
+																						<tr class="active" align="center">
+																							<td colspan="4">用户提现记录</td>
+																						</tr>
+																						<tr class="active" align="center">
+																							<td>用户名</td>
+																							<td>手机号</td>
+																							<td>提现金额</td>
+																							<td>状态</td>
+																						</tr>
+																					</thead>
+																					<tbody id="dayOutCashtb"></tbody>
+																					<tfoot>
+																						<tr>
+																							<td colspan="5">
+																								<ul class="pagination pull-right"></ul>
+																							</td>
+																						</tr>
+																					</tfoot>
+																				</table>
+
+																			</div>
+																			<div class="ibox-title clearfix">
+																				<div class="text-right">
+																					<button type="button" class="btn btn-primary sure-checked btn-marign-lr clickClose">确定</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- 弹窗end -->
+												</div>
+												<!--日历插件end -->
+											</div>
+										</div>
+										<div id="menu101" class="tab-pane active">
+											<div class="panel-body"><iframe name="menu101" style="min-height:828px;" src="%E7%89%9B%E7%89%9Bbank-CRM%E7%B3%BB%E7%BB%9F_files/interestReportView.htm" width="100%" frameborder="0"></iframe></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			var queryType = '';
+			$("#queryRecomm").click(function() {
+				queryType = 'recomm';
+				$("#queryMaintain").css("background", "#fff");
+				$("#queryRecomm").css("background", "#ccc");
+				inintDate();
+			});
+			$("#queryMaintain").click(function() {
+				$("#queryRecomm").css("background", "#fff");
+				$("#queryMaintain").css("background", "#ccc");
+				queryType = 'maintain';
+				inintDate();
+			});
+
+			function clearTable() {
+				$("#caleTbody").html("");
+				$("#dayPayBarktb").html("");
+				$("#dayInvesttb").html("");
+				$("#dayRechargetb").html("");
+				$("#dayOutCashtb").html("");
+			}
+
+			function inintDate() {
+				$('#calendar').html("");
+				if(queryType == '') {
+					queryType = 'recomm';
+				}
+				$('#calendar').fullCalendar({
+					header: {
+						left: 'prev,next today',
+						center: 'title',
+						right: '',
+					},
+					viewDisplay: function(view) { //获取当月
+						viewGetTime = $.fullCalendar.formatDate(view.start, "yyyy-MM-dd");
+					},
+					events: function(start, end, callback) {
+						$.ajax({
+							type: "post",
+							url: web_context + "calendar/getMonthDate.shtml?dateStr=" + viewGetTime + "&type=" + queryType,
+							dataType: "json",
+							success: function(json) {
+								var event = [];
+								$.each(json, function(i) {
+									event.push({
+										title: json[i].title,
+										start: json[i].start,
+										color: '#f5f5f5',
+										url: json[i].url,
+										editable: false
+									});
+								});
+								callback(event);
+							}
+						});
+					},
+					dayClick: function(date, allDay, jsEvent, view) {
+						var clickDate = $.fullCalendar.formatDate(date, 'yyyy-MM-dd'); //格式化日期
+						clearTable();
+						$.ajax({
+							type: 'get',
+							async: false,
+							url: web_context + "calendar/getDayDate.shtml?dateStr=" + clickDate + "&type=" + queryType, //传个年月日 
+							dataType: "json",
+							success: function(json) {
+								$("#outWin").find(".popup-table-rp-bg").css({
+									"display": "block"
+								});
+								$("#outWin").find(".popup-table-rp").css({
+									"display": "block"
+								});
+								$("#outWin").find(".clickClose").on("click", function() {
+									$("#outWin").find("#caleTbody").html("");
+									$("#outWin").find(".popup-table-rp-bg").css({
+										"display": "none"
+									});
+									$("#outWin").find(".popup-table-rp").css({
+										"display": "none"
+									});
+								})
+								$("#outWin").find(".popup-table-rp-bg").on("click", function() {
+									$("#outWin").find("#caleTbody").html("");
+									$(this).css({
+										"display": "none"
+									});
+									$("#outWin").find(".popup-table-rp").css({
+										"display": "none"
+									});
+								})
+								var con = "";
+
+								var dayPayBark = json["dayPayBark"];
+
+								if(dayPayBark != null && dayPayBark.length > 0) {
+									$("#dayPayBark").show();
+									$.each(dayPayBark, function(i) {
+										getDetail("dayPayBarktb", dayPayBark[i]);
+									});
+								} else {
+									$("#dayPayBark").hide();
+								}
+
+								var dayInvest = json["dayInvest"];
+								if(dayInvest != null && dayInvest.length > 0) {
+									$("#dayInvest").show();
+									$.each(dayInvest, function(i) {
+										getDetail("dayInvesttb", dayInvest[i]);
+									});
+								} else {
+									$("#dayInvest").hide();
+								}
+
+								var dayOutCash = json["dayOutCash"];
+								if(dayOutCash != null && dayOutCash.length > 0) {
+									$("#dayOutCash").show();
+									$.each(dayOutCash, function(i) {
+										getOutDetail("dayOutCashtb", dayOutCash[i]);
+									});
+								} else {
+									$("#dayOutCash").hide();
+								}
+
+								var dayRecharge = json["dayRecharge"];
+								if(dayRecharge != null && dayRecharge.length > 0) {
+									$("#dayRecharge").show();
+									$.each(dayRecharge, function(i) {
+										getDealDetail("dayRechargetb", dayRecharge[i]);
+									});
+								} else {
+									$("#dayRecharge").hide();
+								}
+
+								try {
+									if(dayRecharge.length < 1 && dayOutCash < 1 && dayInvest < 1 && dayPayBark < 1) {
+										$("#outWin").hide();
+									} else {
+										$("#outWin").show();
+									}
+								} catch(e) {}
+								$("#calendar").find("#caleTbody").html(con);
+								$('.footable').footable();
+								$('.footable').trigger('footable_redraw');
+							}
+						})
+					},
+				});
+			}
+
+			$(function() {
+				inintDate();
+			});
+
+			function getDealDetail(id, data) {
+				$("#" + id).append("<tr align=center><td>" + data.userName + "</td>" +
+					"<td><a childPageName=user" + data.nid + " href=http://tpr.newnewbank.com/cusDetailInfo/index.shtml?nid=" + data.nid + ">" + data.mobilePhone + "</a></td>" +
+					"<td>" + data.transAmt + "</td></tr>");
+			}
+
+			function getDetail(id, data) {
+				$("#" + id).append("<tr align=center><td>" + data.userName + "</td>" +
+					"<td><a  childPageName=user" + data.nid + "  href=http://tpr.newnewbank.com/cusDetailInfo/index.shtml?nid=" + data.nid + ">" + data.mobilePhone + "</a></td>" +
+					"<td>" + data.detailName + "</td>" +
+					"<td>" + data.transAmt + "</td></tr>");
+			}
+
+			function getOutDetail(id, data) {
+				var status = data.status;
+				if(status == 2) {
+					$("#" + id).append("<tr align=center><td>" + data.userName + "</td>" +
+						"<td>" + data.mobilePhone + "</td>" +
+						"<td>" + data.transAmt + "</td>" +
+						"<td><a style='color:#f44975;' onclick=checkCashSchedule('" + data.orderId + "'," + data.userId + ")>取消</a></td></tr>");
+				} else {
+					$("#" + id).append("<tr align=center><td>" + data.userName + "</td>" +
+						"<td>" + data.mobilePhone + "</td>" +
+						"<td>" + data.transAmt + "</td>" +
+						"<td>成功</td></tr>");
+				}
+			}
+
+			function checkCashSchedule(orderId, userId) {
+				$.ajax({
+					url: web_context + "return/checkCashSchedule.shtml?t=" + Math.random(),
+					data: {
+						orderId: orderId,
+						userId: userId
+					},
+					type: "POST",
+					success: function(data) {
+						if(data.result) {
+							if(data.operate == "no") {
+								alert(data.msg);
+							} else if(data.operate == "yes") {
+								if(confirm("您是否确定要取消该提现操作")) {
+									$.ajax({
+										url: web_context + "return/returnCashOrder.shtml?t=" + Math.random(),
+										data: {
+											orderId: orderId
+										},
+										type: "POST",
+										success: function(json) {
+											if(json.result) {
+												alert("取消提现操作成功");
+												location.reload();
+											} else {
+												alert("取消提现操作失败");
+											}
+										}
+									});
+								}
+							} else {
+								alert("该提现正在处理中，请稍后。");
+							}
+						} else {
+							alert(data.msg);
+						}
+					}
+				});
+			}
+		</script>
+		
+	
+
+<div class="modal inmodal" id="getSecretkey" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content animated bounceInRight">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title">我的密钥</h4>
+						<div style="color:red">(请用手机身份验证器记录,下次登录直接使用密钥验证码)</div>
+
+					</div>
+					<div class="modal-body">
+
+						<div class="row">
+							<div class="form-group">
+								<div class="col-sm-12" style="text-align:center">
+									<!--<div class="col-sm-12"><input id="getBarcodeCodeVal" type="text" class="form-control" disabled></div>-->
+									<img id="getBarcodeCode" width="150" height="150">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer"><button type="button" class="btn btn-white" data-dismiss="modal">确定</button></div>
+				</div>
+			</div>
+		</div></body></html>

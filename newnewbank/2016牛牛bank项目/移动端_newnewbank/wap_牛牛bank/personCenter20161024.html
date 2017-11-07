@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>&nbsp;牛牛bank-个人中心</title>
+		<!--<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/Master.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />-->
+		<link href="http://wap.newnewbank.com/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://wap.newnewbank.com/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="http://wap.newnewbank.com/css/Master.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="http://wap.newnewbank.com/css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<!--修改20161024 start-->
+		<style type="text/css">
+			.bodyBg .cover {
+				display: none;
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				background-color: #000000;
+				opacity: 0.9;
+				z-index: 1000;
+			}
+			
+			.delete {
+				width: 100%;
+				height: 6%;
+				line-height: 170%;				
+				background-color: #eb849b;
+				border-radius: 5px 5px 0 0;
+			}
+			
+			.delete .deleteA {
+				color: #fff!important;
+				font-size: 3.6rem;
+				cursor: pointer;
+				float: right;
+			}
+			
+			.bodyBg .perponPopup {
+				display: none;
+				z-index: 2000;
+				width: 80%;
+				height: 80%;
+				position: fixed;
+				top: 10%;
+				right: 10%;
+				background-color: #fff;
+				border-radius: 5px;				
+			}
+			.user_name{
+				color: #000;
+			    font-size: 1.6rem;
+			    margin-left: 5%;
+			    margin-top: 10%;
+			}
+			.vipLevelChange {
+				display: inline-block;
+				padding: .4rem 1.6rem;
+				font-size: 1.4rem;
+				text-align: center;
+				color: #c1c1c1;
+				 margin-top: 10%;
+			}
+			.perponPopup .redFont {
+				margin: 5% 0 2%;
+				color: #eb849b;
+				text-align: center;
+				font-size: 1.6rem;
+				font-family: "microsoft yahei";
+			}
+			
+			.perponPopup .blackFont {
+				color: #000;
+				text-align: center;
+				font-size: 1.4rem;
+				font-family: "microsoft yahei";
+			}
+			
+			#qrCode {
+				width: 80%;
+				height: 35%;
+				text-align: center;
+				margin: 5% 0;
+				margin-left: 10%;
+			}
+			
+			.qrCodeInco img {
+				width: 60%;
+			}
+			
+			.grayFont {
+				display: block;
+				color: #999999!important;
+				width: 90%;
+				margin: 0 auto;
+			}
+		</style>
+		<!--修改20161024 start-->
+
+	</head>
+
+	<body class="bodyBg" style="position:relative">
+
+		<!--修改20161021 strat-->
+		<div class="cover"></div>
+		<div class="perponPopup">
+			<p class="delete">
+				<span class="deleteA">×</span>
+			</p>
+			<div class="personal_box clearfix">
+				<div class="head_box fl" style="margin-left:5% ;"><img style="width:60% ;" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/user_head_20160526.png"></div>
+				<p class="user_name fl">小王</p>
+				<a class="vipLevelChange fl" href="javascript:;"><i class="icon-1-02">&nbsp;</i><span>会员</span></a>
+			</div>
+			<p class="redFont">恭喜，您的专属二维码已生成！</p>
+			<p class="blackFont">快邀请您的小伙伴一起赚钱吧！</p>
+			<div id="qrCode">
+				<!--<img id="qrCode"  src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCodeBig20161021.jpg"/>-->
+			</div>
+			<span class="blackFont grayFont">将专属二维码发送给客户，客户扫描进入并成功注册，
+			不用填写推荐码，即可建立客户关系。</span>
+		</div>
+		<!--修改20161021 end-->
+
+
+		<!--header-->
+		<div class="huiyuanSpan">
+
+
+			<!--修改20161021 strat-->
+			<img src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCode20161021.png" class="qrCode" style="position: absolute;right: 10%;width: 6%;top: 2%;" />
+			<!--修改20161021 end-->
+
+
+			<div class="hyLeft1 fl"><img src="images/nnBank23.jpg"></div>
+			<div class="hyLeft2 fl">
+				<div class="textName fl">
+					<span id="displayName" class="yellow"></span>
+					<script>
+						now = new Date(), hour = now.getHours()
+						if(hour < 6) {
+							document.write("凌晨好！")
+						} else if(hour < 9) {
+							document.write("早上好！")
+						} else if(hour < 12) {
+							document.write("上午好！")
+						} else if(hour < 14) {
+							document.write("中午好！")
+						} else if(hour < 17) {
+							document.write("下午好！")
+						} else if(hour < 19) {
+							document.write("傍晚好！")
+						} else if(hour < 22) {
+							document.write("晚上好！")
+						} else {
+							document.write("夜里好！")
+						}
+					</script>
+				</div>
+
+				<div class="tixianBtn fl">
+					<a href="javascript:;" id="cash" class="jdBtn">提现</a>
+				</div>
+				<div class="chongzhiB fl">
+					<a href="javascript:;" id="recharge" class="jdBtn">充值</a>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!---->
+		<!--content-->
+		<div class="contentBox" style="padding:0; padding-bottom:15px;">
+			<table width="100%" border="0" class="messList">
+				<!-- 2015/7/14位置对调 -->
+				<tr>
+					<td width="50%" class="tbtex1">
+						<div>可用余额</div>
+						<div class="tbSpan1 money"></div>
+					</td>
+					<td colspan="2" width="50%" class="tbtex1">
+						<div class="acceAll">账户总资产&nbsp;<img src="images/nnBank18.jpg"></div>
+						<div class="tbSpan1 money"></div>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" class="messList messList2">
+				<tr>
+					<td class="tbtex2" width="33%">
+						<div>现投资总额</div>
+						<div class="tbSpan2 money"></div>
+					</td>
+					<td class="tbtex2" width="33%">
+						<div>累计收益</div>
+						<div class="tbSpan2 money"></div>
+					</td>
+					<td class="tbtex2" width="33%">
+						<div>待收收益</div>
+						<div class="tbSpan2 money"></div>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" class="mytqjTable">
+				<tr>
+					<td>
+						<a href="privilege.html"><span><img src="images/nnBank19.jpg"></span>我的特权金</a>
+					</td>
+					<td>
+						<a href="investedList.html"><span><img src="images/nnBank20.jpg"></span>投资记录</a>
+					</td>
+				</tr>
+				<tr>
+					<!-- <td><a href="share.html"><span><img src="images/nnBank21.jpg"></span>推荐收益<em style="visibility:hidden; color:#fff;">益</em></a></td> -->
+					<td>
+						<a href="myPartner.html"><span><img src="images/nnBank21.jpg"></span>牛牛合伙人</a>
+					</td>
+					<td>
+						<a href="dailySurprise.html"><span><img src="images/nnBank21xj.jpg"></span>每日惊喜</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="piggyBank.html"><span><img src="images/nnBank21a.jpg"></span>我的存钱罐</a>
+					</td>
+					<td>
+						<a href="accountManage.html"><span><img src="images/nnBank22.jpg"></span>账户设置</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="coupon.html"><span><img src="images/nnBank20151214.jpg"></span>我的优惠券</a>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<!-- 账户总资产-弹窗begin -->
+			<div class="tqjtcy">
+				<div class="contentc" style="height:auto">
+					<div class="closed"><img src="images/closed.png"></div>
+					<div class="tequanjText">账户总资产=可用余额+现投资总额 </div>
+					<div class="tanchuanAn1 baseTOp1">
+						<input type="button" value="关闭" class="lookBtn" />
+					</div>
+				</div>
+			</div>
+			<div class="content_mark tqjmrk"></div>
+			<!-- 账户总资产-弹窗end -->
+		</div>
+		<!--footer-->
+		<footer class="menu">
+			<script>
+				window.navIndex = 3;
+			</script>
+		</footer>
+	</body>
+	<!--<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>-->
+	<script type="text/javascript" src="http://wap.newnewbank.com/js/jquery-1.8.0.min.js"></script>
+
+
+
+	<!--//修改 20161021 start-->
+	<script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//点击二维码生成事件
+		$(".qrCode").on('click', function() {
+			$(".cover,.perponPopup").show();
+		});
+		$(".delete").on('click', function() {
+			$(".cover,.perponPopup").hide();
+		});
+		//使用canvas生成二维码
+		jQuery('#qrCode').qrcode({
+			render: "canvas",
+			correctLevel: 0,
+			width: 150,
+			height: 150,
+			text: utf16to8("http://blog.csdn.net/mr_smile2014/article/details/51782122")
+		});
+
+		function utf16to8(str) {
+			var out, i, len, c;
+			out = "";
+			len = str.length;
+			for(i = 0; i < len; i++) {
+				c = str.charCodeAt(i);
+				if((c >= 0x0001) && (c <= 0x007F)) {
+					out += str.charAt(i);
+				} else if(c > 0x07FF) {
+					out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));
+					out += String.fromCharCode(0x80 | ((c >> 6) & 0x3F));
+					out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+				} else {
+					out += String.fromCharCode(0xC0 | ((c >> 6) & 0x1F));
+					out += String.fromCharCode(0x80 | ((c >> 0) & 0x3F));
+				}
+			}
+			return out;
+		}
+	</script>
+	<!--//修改 20161021 end-->
+
+
+
+	<script type="text/javascript" src="js/init.js"></script>
+	<script>
+		$(function() {
+			if($.isDomain() && $.isWeiXin()) {
+				$("#zhongqiu").show();
+				$.apiPost("getMidAuUrl", {
+					redirectUrl: $.absolute_url("midautumn.html")
+				}, function(data) {
+					$("#zhongqiu a").eq(0).attr("href", data);
+				});
+			}
+			$("#displayName").text($.cookie("displayName") + ","); //设置展示名
+			$.apiPost("userBalance", "", function(data) {
+				$(".money").eq(1).text("￥" + data.total);
+				$(".money").eq(0).text("￥" + data.availableFund);
+				$(".money").eq(2).text("￥" + (data.lendCapital * 1.0 + data.frozenFund * 1.0));
+				$(".money").eq(3).text("￥" + data.totalIncome);
+				$(".money").eq(4).text("￥" + data.lendIncome);
+			});
+
+			$("#recharge").click(function() {
+				location.href = "recharge.html";
+			});
+
+			$("#cash").click(function() {
+				location.href = "cash.html";
+			});
+			$(function() {
+				$('.acceAll').click(function() {
+					$('.tqjtcy').show(0);
+					$('.tqjmrk').show(0);
+					$('.tqjtcy').css("overflow", "inherit");
+				});
+				$('.content_mark').click(function() {
+					$('.tqjtcy').hide(0);
+					$('.tqjmrk').hide(0);
+				});
+				$(".closed").click(function() {
+					$('.tqjtcy').hide(0);
+					$('.tqjmrk').hide(0);
+				})
+				$(".tanchuanAn1 .lookBtn").click(function() {
+					$('.tqjtcy').hide(0);
+					$('.tqjmrk').hide(0);
+				})
+			});
+		})
+	</script>
+
+</html>

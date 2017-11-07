@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;">
+		<title>个人中心——债权转让</title>
+		<!--尾部引用样式  start-->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/v2/homeIndex/base.css" />
+		<!--尾部引用样式  end-->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/jquery.datetimepicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/individual-centers.css" />
+		
+	</head>
+
+	<body>
+		<div id="investRecord">
+			<!--债权转让 弹框  start-->
+			<div id="transferBombBox" class="com-popupBox none">	
+				<div class="showdowBox"></div>
+				<div class="w-955 bgColor_fff border-radius-5  red-border-top">				
+					<p class="h-80 bgColor_efefef" style="padding-left: 35px;">
+						<i class="font_22 color_999">债权转让</i><i class="color_f44975 font_14"> &nbsp;&nbsp;&nbsp;(债权转让的产品如有使用优惠，则转让成功后优惠将被取消）</i>
+					</p>
+					<div class="" style="margin: 0 40px;">
+						<div class="">
+							<div class="clearfloat" style="padding: 25px 0;">
+								<img class="float_left out-border" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/head_baoli_20160425.jpg"/>
+								<div class="inline_block " style="padding-left: 50px;">
+									<p style="padding: 5px 0 35px;">
+										<i class="font_18 color_333 text_center" style="padding-left: 25px;">豪车宝第29期</i>
+										<i class="font_14 color_999 text_center" style="width: 170px;">佳鸿名车租赁项目</i>
+									</p>
+									<table border="0" class="text_center">
+										<tr>
+											<td class="color_f44975 font_18 arial" style="width: 160px;"><i>1,000,000元</i></td>
+											<td class="color_f44975 font_18" style="width: 160px;"><i class="font_18">360天</i></td>
+											<td class="color_f44975 font_18 arial" style="width: 200px;text-align: center;">11%</td>
+											<td class="color_333 font_18 arial" style="width: 135px;text-align: center;">2017.09.20</td>
+										</tr>
+										<tr class="">
+											<td class="font_12" ><a class="color_f44975" style="text-decoration: line-through;">(使用50元现金券)</a></td>
+											<td class="font_12" ></td>
+											<td class="font_12" ><a class="color_f44975" style="text-decoration: line-through;">(使用0.5%加息券)</a></td>
+											<td class="font_12" ></td>
+										</tr>
+										<tr class="color_999" >
+											<td class="font_14" style="padding-top: 25px;">投资金额</td>
+											<td class="font_14" style="padding-top: 25px;">投资期限</td>
+											<td class="font_14" style="padding-top: 25px;">年化收益率</td>
+											<td class="font_14" style="padding-top: 25px;">到期日期</td>
+										</tr>
+									</table>
+								</div>								
+							</div>
+							<p class="under_line"></p>
+							<div class="inline_block font_14 color_999" style="padding: 20px 0 50px;">
+								<p>购标日期：2016.09.20</p>
+								<p style="padding: 20px 0;">偿还方式：到期一次性还本付息</p>
+								<p><i class="float_left">使用优惠：</i><a class="float_left border-radius">现金券</a><a class="float_left border-radius" style="margin-left: 10px;">加息券</a></p>								
+							</div>	
+							<p class="float_right inline_block" style="margin-top: 60px;">
+								<a class="bgColor_ccc color_fff font_20 common-borderBtn cancel-Btn" btn-triggle="expandUp" href="javascript:;">取消</a>
+								<a class="bgColor_f44975 color_fff font_20 common-borderBtn apply-Btn" btn-triggle="expandUp" href="javascript:;">申请转让</a>
+							</p>
+						</div>						
+					</div>					
+				</div>
+			</div>
+			<!--债权转让 弹框  end-->
+			<!--确认申请转让   弹框  start-->
+			<div id="applySureBomb" class="com-popupBox none">	
+				<div class="cover"></div>
+				<div class="w-955 bgColor_fff border-radius-5 red-border-top" style="top: 25%;">				
+					<p style="padding:30px 35px"><i class="title-item font_22 color_f44975">转让后本金+利息</i></p>
+					<div class="bgColor_d8eff8" >
+						<div class="" style="margin: 0 40px;">
+							<div class="clearfloat" style="padding: 30px 0;">																
+								<table border="0" class="text_center" style="width: 100%;">
+									<tr class="color_333" >                                                  
+										<td class="font_14" style="padding-bottom: 25px;">投资金额</td>
+										<td class="font_14" style="padding-bottom: 25px;"> 持有期限(天)</td>
+										<td class="font_14" style="padding-bottom: 25px;"> 剩余期限(天)  </td>
+										<td class="font_14" style="padding-bottom: 25px;">年化收益率 </td>
+										<td class="font_14" style="padding-bottom: 25px;">预计收益 </td>
+										<td class="font_14" style="padding-bottom: 25px;">预计转让费用 </td>
+									</tr>
+									<tr class="arial">                                                        
+										<td class="color_f44975 font_18 ">100000</td>
+										<td class="color_999 font_18" >60 </td>
+										<td class="color_999 font_18 " >300 </td>
+										<td class="color_999 font_18 "> 7% </td>
+										<td class="color_f44975 font_18 ">256.00元 </td>
+										<td class="color_f44975 font_18 ">  30</td>
+									</tr>									
+								</table>																
+							</div>							
+						</div>						
+					</div>	
+					<div class="text_center" style="padding: 40px 0 45px;">
+						<span class="font_18 color_333">合计：10000000+256-30= <i class="color_f44975">10000226</i></span>
+					</div>
+					<p class="text_center" style="padding-bottom: 40px;">
+						<a class="bgColor_ccc color_fff font_20 common-borderBtn cancel-Btn" btn-triggle="expandUp" href="javascript:;" style="width:90px">取消</a>
+						<a class="bgColor_f44975 color_fff font_20 common-borderBtn apply-Btn" btn-triggle="expandUp" href="javascript:;">确认申请</a>
+					</p>					
+				</div>
+			</div>
+			<!--确认申请转让   弹框  end-->
+			<!--转让中-弹窗  start-->
+			<div id="inTransferBombBox" class="com-popupBox none">	
+				<div class="showdowBox"></div>
+				<div class="w-955 bgColor_fff border-radius-5  red-border-top" style="border-top:5px solid #eea738 ;">				
+					<p class="h-80 bgColor_efefef" style="padding-left: 35px;">
+						<i class="font_22 color_333">已转让债权详情如下</i>
+					</p>
+					<div class="" style="margin: 0 40px;">
+						<div class="">
+							<div class="clearfloat" style="padding: 25px 0;">
+								<img class="float_left out-border" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/head_baoli_20160425.jpg"/>
+								<div class="inline_block " style="padding-left: 75px;">
+									<p style="padding: 5px 0 35px;">
+										<i class="font_18 color_333 text_center" >豪车宝第29期</i>
+										<i class="font_14 color_999 text_center" style="width: 170px;">佳鸿名车租赁项目</i>
+									</p>
+									<table border="0" class="text_center">
+										<tr>
+											<td class="color_f44975 text_center font_20 arial" ><i>11%</i></td>
+											<td class="color_f44975 text_center font_20" style="padding: 0 50px;"><i class="">360天</i></td>
+											<td class="color_333 text_center font_20" style="padding: 0 30px;"><i class="">200万元</i></td>
+											<td class="color_999 text_center font_20 arial" style="padding: 0 30px;">11%</td>
+											<td class="color_333 text_center font_20 arial" style="padding: 0 30px;">2017.09.20</td>
+										</tr>
+										<tr class="color_999 " >
+											<td class="font_14 text_center" style="padding-top: 35px;">到期净收益率</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">转让期限</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">转让金额</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">原始利率</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">项目到期日</td>
+										</tr>
+									</table>
+								</div>								
+							</div>
+							<p class="under_line"></p>
+							<div class="inline_block font_14 color_999" style="padding: 20px 0 50px;">
+								<p>转让日期：2017.06.20</p>
+								<p style="padding: 20px 0;">偿还方式：到期一次性还本付息</p>
+								<p>购标日期：2016.09.20</p>								
+							</div>							
+							<p class="float_right inline_block" style="margin-top: 60px;">
+								<a class="bgColor_eea738 color_fff font_20 common-borderBtn look-Btn" btn-triggle="expandUp" href="javascript:;">查看</a>
+							</p>
+							<i class="float_right zhuanrangIcon"></i>
+						</div>						
+					</div>					
+				</div>
+			</div>
+			<!--转让中-弹窗 end-->
+			<!--申请中-弹窗  start-->
+			<div id="applyTransferBombBox" class="com-popupBox none">	
+				<div class="showdowBox"></div>
+				<div class="w-955 bgColor_fff border-radius-5  red-border-top" style="border-top:5px solid #7dcae6 ;top:5%">				
+					<p class="h-80 bgColor_e5f4fa text_center" >
+						<i class="font_22 color_57bde2 bold">您申请“豪车宝第29期”债权转让正在审核中</i>
+					</p>
+					<div class="" style="margin: 0 40px;">
+						<div class="">
+							<div class="clearfloat" style="padding: 25px 0;">
+								<img class="float_left out-border" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/head_baoli_20160425.jpg"/>
+								<div class="inline_block " style="padding-left: 50px;">
+									<p style="padding: 5px 0 35px;">
+										<i class="font_18 color_333 text_center" style="padding-left: 25px;">豪车宝第29期</i>
+										<i class="font_14 color_999 text_center" style="width: 170px;">佳鸿名车租赁项目</i>
+									</p>
+									<table border="0" class="text_center">
+										<tr>
+											<td class="color_f44975 font_18 arial" style="width: 160px;"><i>1,000,000元</i></td>
+											<td class="color_f44975 font_18" style="width: 160px;"><i class="font_18">360天</i></td>
+											<td class="color_f44975 font_18 arial" style="width: 200px;text-align: center;">11%</td>
+											<td class="color_333 font_18 arial" style="width: 135px;text-align: center;">2017.09.20</td>
+										</tr>
+										<tr class="">
+											<td class="font_12" ><a class="color_f44975" style="text-decoration: line-through;">(使用50元现金券)</a></td>
+											<td class="font_12" ></td>
+											<td class="font_12" ><a class="color_f44975" style="text-decoration: line-through;">(使用0.5%加息券)</a></td>
+											<td class="font_12" ></td>
+										</tr>
+										<tr class="color_999" >
+											<td class="font_14" style="padding-top: 25px;">投资金额</td>
+											<td class="font_14" style="padding-top: 25px;">投资期限</td>
+											<td class="font_14" style="padding-top: 25px;">年化收益率</td>
+											<td class="font_14" style="padding-top: 25px;">到期日期</td>
+										</tr>
+									</table>
+								</div>								
+							</div>
+							<div class="relative">
+								<p class="under_line" style="margin-right:200px ;"></p>
+								<i class="font_14 color_999" style="position: absolute;right: 0;top: -10px;">预计1-3个工作日内完成审核</i>
+							</div>
+							
+							<div class="inline_block font_14 color_999" style="padding: 20px 0 30px;">
+								<p>购标日期：2016.09.20</p>
+								<p style="padding: 15px 0;">偿还方式：到期一次性还本付息</p>
+								<p><i class="float_left">使用优惠：</i><a class="float_left border-radius">现金券</a><a class="float_left border-radius" style="margin-left: 10px;">加息券</a></p>								
+							</div>	
+							<p class="float_right inline_block" style="margin-top: 40px;">
+								<a class="bgColor_ccc color_fff font_20 common-borderBtn " btn-triggle="expandUp" href="javascript:;">确定</a>
+								<a class="bgColor_7dcae6 color_fff font_20 common-borderBtn cancel-Btn" btn-triggle="expandUp" href="javascript:;">取消转让申请</a>
+							</p>
+							<i class="float_right shenkeIcon"></i>
+						</div>						
+					</div>
+					<div class="textureIcon"></div>
+					<div class="bgColor_d8eff8" style="border-bottom-right-radius:5px ;border-bottom-left-radius:5px ;">
+						<p style="padding:20px 40px"><i class="title-item font_16 bgColor_fff color_f44975">转让后本金+利息</i></p>
+						<div class="bgColor_d8eff8" >
+							<!--<div class="" style="margin: 0 40px;">-->
+								<div class="clearfloat" style="padding-bottom: 20px;">																
+									<table border="0" class="text_center" style="width: 100%;">
+										<tr class="color_333" >                                                  
+											<td class="font_14" style="padding-bottom: 15px;">投资金额</td>
+											<td class="font_14" style="padding-bottom: 15px;"> 持有期限(天)</td>
+											<td class="font_14" style="padding-bottom: 15px;"> 剩余期限(天)  </td>
+											<td class="font_14" style="padding-bottom: 15px;">年化收益率 </td>
+											<td class="font_14" style="padding-bottom: 15px;">预计收益(元)   </td>
+											<td class="font_14" style="padding-bottom: 15px;">预计转让费</td>
+										</tr>
+										<tr class="arial">  
+											<td class="color_f44975 font_18 ">100000</td>
+											<td class="color_999 font_18" >60 </td>
+											<td class="color_999 font_18 " >300 </td>
+											<td class="color_999 font_18 "> 7% </td>
+											<td class="color_f44975 font_18 ">256.00 </td>
+											<td class="color_f44975 font_18 ">30</td>
+										</tr>									
+									</table>																
+								</div>	
+								<p class="under_line" style="background-color: #fff;margin: 0 40px;"></p>
+							<!--</div>-->								
+						</div>	
+						<div class="" style="padding: 30px 0 30px 40px;">
+							<span class="font_18 color_333">合计：10000000+256-30= <i class="color_f44975">10000226</i></span>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<!--申请中-弹窗  end-->
+			<!--已转让-弹窗  start-->
+			<div id="edTransferBombBox" class="com-popupBox none">	
+				<div class="showdowBox"></div>
+				<div class="w-955 bgColor_fff border-radius-5  red-border-top" style="border-top:5px solid #ccc ;">				
+					<p class="h-80 bgColor_f5f5f5 text_center" style="padding-left: 35px;">
+						<i class="font_22 color_333">您的转让的“豪车宝第29期”债权已成功转让</i>
+					</p>
+					<div class="" style="margin: 0 40px;">
+						<div class="">
+							<div class="clearfloat" style="padding: 25px 0;">
+								<img class="float_left out-border" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/head_baoli_20160425.jpg"/>
+								<div class="inline_block " style="padding-left: 75px;">
+									<p style="padding: 5px 0 35px;">
+										<i class="font_18 color_333 text_center" >豪车宝第29期</i>
+										<i class="font_14 color_999 text_center" style="width: 170px;">佳鸿名车租赁项目</i>
+									</p>
+									<table border="0" class="text_center">
+										<tr>
+											<td class="color_f44975 text_center font_18 arial" ><i>11%</i></td>
+											<td class="color_f44975 text_center font_18" style="padding: 0 50px;"><i class="">360天</i></td>
+											<td class="color_333 text_center font_18" style="padding: 0 30px;"><i class="">200万元</i></td>
+											<td class="color_999 text_center font_18 arial" style="padding: 0 30px;">11%</td>
+											<td class="color_333 text_center font_18 arial" style="padding: 0 30px;">2017.09.20</td>
+										</tr>
+										<tr class="color_999 " >
+											<td class="font_14 text_center" style="padding-top: 35px;">到期净收益率</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">转让期限</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">转让金额</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">原始利率</td>
+											<td class="font_14 text_center" style="padding-top: 35px;">项目到期日</td>
+										</tr>
+									</table>
+								</div>								
+							</div>
+							<p class="under_line"></p>
+							<div class="inline_block font_14 color_999" style="padding: 20px 0 50px;">
+								<p>转让日期：2017.06.20</p>
+								<p style="padding: 20px 0;">偿还方式：到期一次性还本付息</p>
+								<p>购标日期：2016.09.20</p>								
+							</div>							
+							<p class="float_right inline_block" style="margin-top: 60px;">
+								<a class="bgColor_ccc color_fff font_20 common-borderBtn look-Btn" btn-triggle="expandUp" href="javascript:;">查看</a>
+							</p>
+							<i class="float_right zhuanrangEdIcon"></i>
+						</div>						
+					</div>					
+				</div>
+			</div>
+			<!--已转让-弹窗 end-->
+			<!--头部 start-->
+			<div class="bgColor_f44975 header-accountSum">
+				<i class="tableImg tableRedLeft float_left"></i>
+				<i class="tableImg tableRedRight float_right"></i>
+				<div class="product-head-wrap">
+					<div class="product-head-box">
+						<div class="left-logo"></div>
+						<div class="product-nav-wrap clearfix">
+							<div class="product-nav-box fl">
+								<a href="https://www.newnewbank.com/">首页</a>
+								<a href="https://www.newnewbank.com/myMoney/investProjectList.shtml">投资理财</a>
+								<a href="https://www.newnewbank.com/bankCenter/bankCenterIndex.shtml">银行专区</a>
+								<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+								<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">关于我们</a>
+							</div>
+							<div class="user-operation fl">
+								<div class="opera-btns">
+									<a href="javascript:;" id="login">登录</a>
+									<a class="regis-btn" href="https://www.newnewbank.com/register/view.shtml">注册</a>
+								</div>
+							</div>
+						</div>
+						<a class="font_16 color_fff myAsset" href="">
+							<i class="myAssetIcon"></i><i>我的资产</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--头部 end-->
+			<!--内容 start-->
+			<div class="w_1200 margin_center clearfloat offset-top">
+				<!--左侧导航栏 start-->
+				<div class="w-210 bgColor_fff float_left leftHigh" style="min-height: 1000px;">
+					<div class="head-person-info relative">
+						<div class="clearfloat">
+							<p class="text_center inline_block float_left circle-shadow-box">
+								<i class="sprite-account-photo"></i>
+							</p>
+							<div class="font_12 color_666 inline_block person-name">
+								<p>王圆圆</p>
+								<p>VIP3会员</p>
+								<p>金牌合伙人</p>
+							</div>
+						</div>
+						<ul class="clearfloat certified-case ">
+							<!--li 增加redActive --红色-->
+							<li class="redActive pointer">
+								<i class="common-smallImg smallImg1 redActiveImg1"></i>
+								<div class="usermenu usermenu1 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您已完成实名认证。<a class="color_fbb03b" href="">查看详情</a></span>
+								</div>
+							</li>
+							<li class="redActive pointer">
+								<i class="common-smallImg smallImg2 redActiveImg2"></i>
+								<div class="usermenu usermenu2 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您未完成绑卡设置。<a class="color_fbb03b" href="">立即绑卡</a></span>
+								</div>
+							</li>
+							<li class="pointer">
+								<i class="common-smallImg smallImg3 redActiveImg3"></i>
+								<div class="usermenu usermenu3 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您已完成交易密码设置。<a class="color_fbb03b" href="">点击修改</a></span>
+								</div>
+							</li>
+							<li class="pointer">
+								<i class="common-smallImg smallImg4 redActiveImg4"></i>
+								<div class="usermenu usermenu4 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您未参与投资风险承受能力评估。<a class="color_fbb03b" href="">立即评估</a></span>
+								</div>
+							</li>
+						</ul>
+
+						<p>
+							<span class="relative bgColor_e7e7e7 safety-grade"><i class="bgColor_f44975 grade-coefficient"></i></span>
+							<i class="font_12 color_999" style="margin:0 10px ;">中</i>
+							<a class="color_f44975 font_12" href="">提升</a>
+						</p>
+					</div>
+					<!--单个 nav start-->
+					<p class="under_line" style="margin-left: 6px;"></p>
+					<a class="block  " href="" style="width: 100%;">
+						<div class="side-navigation rainbow-light">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account1 sprite-account-red1"></i>
+									<i class="font_14 text_center text-left">账户概况</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account2 sprite-account-red2"></i>
+									<i class="font_14 text_center text-left">资金明细</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block" href="" style="width: 100%;">
+						<div class=" rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account3 sprite-account-red3"></i>
+									<i class="font_14 text_center text-left">投资记录</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account4 sprite-account-red4"></i>
+									<i class="font_14 text_center text-left">我的优惠券<em class="text_center coupon-number">5</em></i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account5 sprite-account-red5"></i>
+									<i class="font_14 text_center text-left">牛牛合伙人</i>
+								</p>
+								<!--<p class="font_14 text_center " ></p>-->
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account6 sprite-account-red6"></i>
+									<i class="font_14 text_center text-left">会员俱乐部</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account7 sprite-account-red7"></i>
+									<i class="font_14 text_center text-left">风险评估</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account8 sprite-account-red8"></i>
+									<i class="font_14 text_center text-left">银行专区</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account9 sprite-account-red9"></i>
+									<i class="font_14 text_center text-left">VIP 专区</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account10 sprite-account-red10"></i>
+									<i class="font_14 text_center text-left">我的特权金</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="active-account rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-creditor sprite-account13 sprite-account-red13"></i>
+									<i class="font_14 text_center text-left">债权转让</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account11 sprite-account-red11"></i>
+									<i class="font_14 text_center text-left">账户设置</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+
+					<div class="relative side-navigation-bottom">
+						<div style="padding-top: 40px;">
+							<p class="text_center margin_center"><i class="sprite-account-vcode"></i></p>
+							<p class="font_12 text_center color_999">APP掌上理财,随时随地</p>
+						</div>
+						<!--<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/incompleteFooter2017217.png" />-->
+					</div>
+				</div>
+				<!--左侧导航栏 end-->
+				<!--右侧内容 start-->
+				<div class="float_right w-966 rightHigh">
+					<div class="h-235 bgColor_fff">
+						<ul class="assetTransfer">
+							<li><p class="color_999 font_14">已转让债权</p><i class="bold arial font_24 color_666">5</i></li>
+							<li><p class="color_999 font_14">可转让债权</p><i class="bold arial font_24 color_f44975">5</i></li>
+							<li><p class="color_999 font_14">转让中</p><i class="bold arial font_24 color_eea738">5</i></li>
+							<li><p class="color_999 font_14">申请中</p><i class="bold arial font_24 color_7dcae6">1</i></li>
+						</ul>
+					</div>
+					<div class="dataStatistics clearfloat">
+						<div class="bgColor_fff h-76">
+
+							<div class="inline_block float_left" style="margin-left: 30px;">
+								<div>
+									<i class="font_14 color_333">时间</i>
+									<input class="datetimepicker1" id="begin" type="text" value="">--<input class="datetimepicker2" id="end" type="text" value="">
+									<a class="bgColor_f44975 color_fff font_14" href="javascript:;" btn-triggle="expandUp" id="queryTime" style="line-height: 20px;">查询</a>
+								</div>
+							</div>
+
+							<ul class="float_right inline_block dateSelection ">
+								<li class="red-select">所有</li>
+								<li>今天 </li>
+								<li>一周</li>
+								<li>一个月</li>
+								<li>三个月</li>
+								<li>六个月</li>
+							</ul>
+						</div>
+						<p class="under_line"></p>
+						<div class="table_nav bgColor_fff">
+							<ul class="inline_block clearfloat" style="margin-left: 30px;">
+								<li class="current nav-term" style="margin-right: 40px;">全部<i class="navUnderline"></i></li>
+								<li class="nav-term" style="margin-right: 40px;">已转让 <i class="navUnderline"></i></li>
+								<li class="nav-term" style="margin-right: 40px;">可转让<i class="navUnderline"></i></li>
+								<li class="nav-term" style="margin-right: 40px;">转让中<i class="navUnderline"></i></li>
+								<li class="nav-term" style="margin-right: 40px;">申请中<i class="navUnderline"></i></li>
+								<!--<li class="nav-term">推荐收益<i class="navUnderline"></i></li>-->
+							</ul>
+
+						</div>
+						<div class="contain">
+							<!--全部  start-->
+							<div class="table active none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>项目名称</td>
+										<td>投资金额(元)</td>
+										<td>年化收益率</td>
+										<td>投资期限 (日)</td>
+										<td>到期日期 </td>
+										<td style="padding: 30px 60px;">状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_f44975 color_7dcae6 transferableBtn transferable-go" btn-triggle="expandUp">可转让</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_f44975 color_7dcae6 transferableBtn transferable-go" btn-triggle="expandUp">可转让</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td>牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_7dcae6 color_fff transferableBtn transferable-middle" btn-triggle="expandUp">申请中</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_eea738 color_7dcae6 transferableBtn transferable-ing" btn-triggle="expandUp">转让中</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_eea738 color_7dcae6 transferableBtn transferable-ing" btn-triggle="expandUp">转让中</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_ccc color_7dcae6 transferableBtn transferable-ed" btn-triggle="expandUp">已转让</a>
+										</td>
+									</tr>
+									
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+
+								</div>
+								<div class="bgColor_fff" style="height: 100px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 35px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_f44975 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+							</div>
+							<!--全部  end-->
+
+							<!--已转让  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>项目名称</td>
+										<td>投资金额(元）</td>
+										<td>年化收益率</td>
+										<td>投资期限 (日)</td>
+										<td>到期日期 </td>
+										<td style="padding: 30px 60px;">状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_ccc color_7dcae6 transferableBtn transferable-ed" btn-triggle="expandUp">已转让</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_ccc color_7dcae6 transferableBtn transferable-ed" btn-triggle="expandUp">已转让</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_ccc color_7dcae6 transferableBtn transferable-ed" btn-triggle="expandUp">已转让</a>
+										</td>
+									</tr>
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+
+								</div>
+								<div class="bgColor_fff" style="height: 100px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 35px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_f44975 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								
+							</div>						
+							<!--已转让  end-->
+
+							<!--可转让  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>项目名称</td>
+										<td>投资金额(元）</td>
+										<td>年化收益率</td>
+										<td>投资期限 (日)</td>
+										<td>到期日期 </td>
+										<td style="padding: 30px 60px;">状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_f44975 color_7dcae6 transferableBtn transferable-go" btn-triggle="expandUp">可转让</a>
+										</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_f44975 color_7dcae6 transferableBtn transferable-go" btn-triggle="expandUp">可转让</a>
+										</td>
+									</tr>
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+
+								</div>
+								<div class="bgColor_fff" style="height: 100px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 35px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_f44975 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								
+							</div>						
+							<!--可转让  end-->
+							
+							<!--转让中  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>项目名称</td>
+										<td>投资金额(元）</td>
+										<td>年化收益率</td>
+										<td>投资期限 (日)</td>
+										<td>到期日期 </td>
+										<td style="padding: 30px 60px;">状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td class="color_333">牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_eea738 color_7dcae6 transferableBtn" btn-triggle="expandUp">转让中</a>
+										</td>
+									</tr>
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+
+								</div>
+								<div class="bgColor_fff" style="height: 100px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 35px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_f44975 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								
+							</div>						
+							<!--转让中  end-->
+							
+							<!--申请中  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>项目名称</td>
+										<td>投资金额(元）</td>
+										<td>年化收益率</td>
+										<td>投资期限 (日)</td>
+										<td>到期日期 </td>
+										<td style="padding: 30px 60px;">状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td>牛牛保理第174期</td>
+										<td class="color_999">111,111,111</td>
+										<td class="color_999">11%</td>
+										<td class="color_333">180</td>
+										<td class="color_333">2017.09.20</td>
+										<td>
+											<a href="#" class="bgColor_7dcae6 color_fff transferableBtn transferable-middle" btn-triggle="expandUp">申请中</a>
+										</td>
+									</tr>
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+
+								</div>
+								<div class="bgColor_fff" style="height: 100px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 35px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_f44975 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								
+							</div>						
+							<!--申请中  end-->
+					
+					</div>
+				</div>
+
+			</div>
+			<!--右侧右侧内容 end-->
+		</div>
+			<!--内容 end-->
+			<!--  底部  start-->
+			<div id="foot">
+				<div class="footLink2 clearfix" style="background-color: #fff;">
+					<div class="w1200">
+						<div class="ftk1 fl">
+							<dl class="ftkDl">
+								<dt>关于</dt>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">公司介绍</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/aboutTeam.html">管理团队</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="ftk2 fl">
+							<dl class="ftkDl">
+								<dt>安全</dt>
+								<dd>
+									<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/aboutProduct.html">产品介绍</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="ftk3 fl">
+							<dl class="ftkDl">
+								<dt>服务</dt>
+								<dd>
+									<a href="#">会员权益</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/expertplan/index.shtml">礼品商城</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="ftk-ma fl clearfix">
+							<div class="fl ftkm1"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg9_20160513.jpg"><br/>关注微信公众号</div>
+							<div class="fl"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg10_20160513.jpg"><br/>立即领特权金</div>
+						</div>
+						<div class="icon-ft fl">
+							<div class="icon-ft-qq">
+								<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_blank" class="iq1_2"></a>
+								<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8f60c83a3f0e5ff22dd601733965a2a8e4eccbac49f69282a4edb41c3718b6ab" class="iq2_2"></a>
+							</div>
+							<p class="icon-ft-p">客服热线：(工作日9:00~21:00)</p>
+							<div class="icon-ft-tel">400-788-5166</div>
+							<div class="icon-ft-tubiao">
+								<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="ios-ft2"></a>
+								<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="anz-ft2"></a>
+								<a href="http://weibo.com/newnewbank" class="weib-ft2" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="friend-box">
+					<div class="w1200 clearfix">
+						<div class="fl fr-left">
+							<div class="fl">友情链接：</div>
+							<div class="fl fr-list">
+								<a href="https://www.newnewbank.com/financingNews/toView.shtml" target="_blank">投资理财资讯</a>
+								<a href="http://www.p2peye.com/" target="_blank">网贷天眼</a>
+								<a href="http://www.wdzj.com/" target="_blank">网贷之家</a>
+								<a href="https://pay.sina.com.cn/index" target="_blank">新浪支付</a>
+								<a href="https://www.weicaifu.com/" target="_blank">微财富</a>
+								<a href="http://www.wangdaidp.com/" target="_blank">网贷点评网</a>
+								<a href="http://www.p2p001.com/" target="_blank">第一网贷</a>
+								<a href="${webpath}financingNews/toTagMap.shtml" target="_blank" style="display:none">地图</a>
+								<a href="${webpath}html/siteMap.html" target="_blank">网站地图</a>
+							</div>
+							<div class="clear"></div>
+							<div class="copy-fr">深圳市金牛牛互联网金融服务有限公司<span>|</span>
+								<a href="http://www.miibeian.gov.cn/" target="_blank" style="color: inherit;">粤ICP备14051198号</a><span>|</span>
+								<a href="${webpath}html/icp.html" target="_blank" style="color: inherit;">增值电信业务经营许可证粤B2-20160396</a>
+							</div>
+							<div class="copy-fr">版权所有 (C) newnewbank.com</div>
+						</div>
+						<div class="fr copy-img">
+							<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg11_20160513.jpg"></a>
+							<a href="https://ss.knet.cn/verifyseal.dll?sn=e150214440300577673clf000000&ct=df&a=1&pa=0.620487422721416" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg12_20160513.jpg"></a>
+							<a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.newnewbank.com&lang=zh_cn" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg13_20160513.jpg"></a>
+							<a href="#"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg14_20160513.jpg"></a>
+							<a style="background: white;" class="record_nav_e" key="547849daefbfb0170ad8c14c" logo_size="83x30" logo_type="business" rel="nofollow" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.newnewbank.com&amp;at=business" target="_blank">
+								<script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script><span id="aqLogoHook" style="display: none;"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  底部  end-->
+
+		</div>
+		<script type="text/javascript" src="https://www.newnewbank.com/js/jquery-1.8.0.min.js"></script>
+		<script src="https://www.newnewbank.com/js/jquery.datetimepicker.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var investRecord = {
+					init: function() {
+						this.bindEvent();
+					},
+					bindEvent: function() {
+						//增加左右同高
+						var $rightHigh = $('.rightHigh').height();
+						var $leftHigh = $('.leftHigh').height();
+						if($rightHigh > $leftHigh && $rightHigh > 1000) {
+							$('.leftHigh').css('height', $rightHigh);
+						}
+						//日历弹框事件
+						$('.datetimepicker1').datetimepicker({
+							format: 'Y-m-d',
+							timepicker: false
+						});
+						$('.datetimepicker2').datetimepicker({
+							format: 'Y-m-d',
+							timepicker: false
+						});
+						//所有   今天   一周    一个月   三个月   6个月  :切换
+						$('.dateSelection li').on('click', function() {
+							$(this).addClass('red-select').siblings('li').removeClass('red-select');
+						});
+						//导航切换
+						$('.nav-term').on('click', function() {
+							var i = $(this).index();
+							$(this).addClass('current').siblings('.nav-term').removeClass('current');
+							$('.contain .none').eq(i).addClass('active').siblings('.none').removeClass('active');
+						});
+						//弹框 --可转让事件
+						$('.transferable-go').on('click',function(){
+							$('#transferBombBox').show();							
+						});						
+						//确认申请--弹框
+						$('.apply-Btn').on('click',function(){
+							console.log("1");
+							$('#applySureBomb').show();							
+						});
+						//转让中-弹窗
+						$('.transferable-ing').on('click',function(){
+							$('#inTransferBombBox').show();							
+						});	
+						//申请中-弹窗
+						$('.transferable-middle').on('click',function(){
+							$('#applyTransferBombBox').show();							
+						});
+						//已转让-弹窗
+						$('.transferable-ed').on('click',function(){
+							$('#edTransferBombBox').show();							
+						});
+						//弹框 --取消
+						$('.cancel-Btn').on('click',function(){
+							$(this).parents('.com-popupBox').hide();
+						});
+						$('.showdowBox').on('click',function(){
+							$(this).parents('.com-popupBox').hide();
+						});
+												
+					}
+
+				}
+				investRecord.init();
+			})();
+		</script>
+		
+	</body>
+
+</html>

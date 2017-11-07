@@ -1,0 +1,76 @@
+.wp {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+}
+
+.page1 {
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_huaxin1_20161226.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.page2 {
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_huaxin2_20161226.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.page3 {
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_huaxin3_20161226.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.page4 {
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_huaxin4_20161226.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.page5 {
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_huaxin5_20161226.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.page6 {
+	background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_huaxin6_20161226.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.start {
+	position: fixed;
+	left: 50%;
+	margin-left: -17px;
+	top: 95%;
+	margin-top: -34px;
+	width: 34px;
+	height: 34px;
+}
+
+
+
+.indicator {
+	position: fixed;
+	right: 1%;
+	top: 35%;
+	/* margin-top: -40px;*/
+}
+
+.indicator li {
+	margin-top: 10px;
+	width: 7px;
+	height: 7px;
+	border-radius: 100px;
+	background: rgba(0, 0, 0, 0.5);
+	text-indent: -9999px;
+	list-style: none;
+}
+
+.indicator li.cur {
+	background: rgba(255, 255, 255, 0.5);
+}

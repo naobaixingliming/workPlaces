@@ -1,0 +1,28 @@
+.h-145 {
+	height: 145px;
+}
+
+.line-height-145 {
+	line-height: 145px;
+}
+
+.mar-left-100 {
+	margin-left: 100px;
+}
+
+.mar-right-130 {
+	margin-right: 130px;
+}
+
+.mar-top-10 {
+	margin-top: 10px;
+}
+
+.mar-left-right-50 {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.hoverEle div.h-80:hover {
+	background-color: #fafafa;
+}

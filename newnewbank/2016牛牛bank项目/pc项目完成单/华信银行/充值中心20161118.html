@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="投资理财、个人理财、互联网理财、网贷理财、理财网站、P2P理财、网络理财、牛牛理财">
+		<meta name="Description" content="牛牛bank专注于为各个投资者提供安全有保障的投资理财服务，为投资者提供安全、流动性好的创新型互联网投资理财产品，是您的网络借贷、网络理财专家。">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>牛牛bank - 快乐理财,安全投资,互联网新兴银行</title>
+		<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+		<!-- 新头部样式 -->
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/common.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/common/head20160325.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/common/web-base-color.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/v2/homeIndex/red3.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/newWeb1.1.1/product-list-1.1.1.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/v2/homeIndex/base.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/newWeb1.1.1/product-head-1.1.1.css">
+		<!-- 新头部样式 end-->
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/newWeb1.1.1/recharge20160612.css">
+		<link href="http://tp.newnewbank.com/css/layout-pay.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/idialog.css" />
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/guide/rechargeOkv2.css">
+		<style type="text/css">
+			.popup-btn span.plink {
+				text-decoration: underline;
+				color: #f44975;
+				font-size: 16px;
+			}
+			
+			.td-box {
+				display: block;
+				width: 100%;
+				height: 244px;
+				position: relative;
+			}
+			
+			.rech-tb-box .td-box img.rech-bank-img2 {
+				top: 85px;
+			}
+			
+			.rech-tb-box .td-box span.rech-bank-tt {
+				margin-top: 134px;
+			}
+			/*  覆盖层  start   */
+			
+			.cover {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.6);
+				display: none;
+				z-index: 10000;
+			}
+			/*  覆盖层  end   */
+			/**  弹框  start   */
+			
+			.popupNew {
+				z-index: 20000;
+				position: fixed;
+				top: 300px;
+				right: 34%;
+				width: 625px;
+				margin-left: -283px;
+				height: 300px;
+				border-radius: 5px;
+				border-top: 6px solid #f44975;
+				background: #fff;
+				display: none;
+			}
+			/*  删除按钮 start   */
+			
+			.popupNew .deleteBtn {
+				width: 35px;
+				height: 35px;
+				background-color: #f44975;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			
+			.popupNew .mdiv {
+				height: 30px;
+				width: 2px;
+				margin-left: 15px;
+				background-color: #fff;
+				transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-webkit-transform: rotate(45deg);
+				z-index: 1;
+			}
+			
+			.popupNew .md {
+				height: 30px;
+				width: 2px;
+				background-color: #fff;
+				transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-webkit-transform: rotate(90deg);
+				z-index: 2;
+			}
+			/*  删除按钮 end   */
+			
+			.rechargeTitle {
+				font-family: "microsoft yahei";
+				font-size: 25px;
+				text-align: center;
+				margin-top: 50px;
+				margin-bottom: 40px;
+			}
+			
+			.popupNew .popupText img {
+				margin-left: 80px;
+				float: left;
+			}
+			
+			.popupNew .popupText p {
+				display: inline-block;
+				margin-left: 10px;
+				font-size: 14px;
+				font-family: "microsoft yahei";
+				margin-bottom: 15px;
+			}
+			
+			.popupNew .popupText p:last-child {
+				margin-left: 110px;
+			}
+			
+			.popupNew .popupText p span {
+				color: #c6c6c6;
+			}
+			
+			.popupNew .popupText p a {
+				color: #4ec4b7;
+				text-decoration: underline;
+			}
+			
+			.popupInput {
+				width: 100%;
+			}
+			
+			.popupInput .popupCenter {
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.popupInput input {
+				width: 230px;
+				height: 50px;
+				border: 1.5px #f44975 solid;
+				border-radius: 5px;
+				font-size: 18px;
+				font-family: "microsoft yahei";
+			}
+			
+			.popupInput .rechargeBtn {
+				color: #fff;
+				background-color: #F44975;
+				cursor: pointer;
+			}
+			
+			.popupInput .orderBtn {
+				color: #f44975;
+				cursor: pointer;
+				border: 1px solid #F44975;
+				background-color: #fff;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+
+	<body class="help-bg">
+		<!--  公用头部  -->
+
+		<!-- 新头部样式 end-->
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/common.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/v2/homeIndex/index-1.1.1.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/v2/homeIndex/base.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/v2/homeIndex/red3.css">
+
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/common/head20160325.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/common/web-base-color.css">
+		<link rel="stylesheet" type="text/css" href="http://tp.newnewbank.com/css/newWeb1.1.1/product-head-1.1.1.css">
+		<style type="text/css">
+			.popup-btn span.plink {
+				text-decoration: underline;
+				color: #f44975;
+				font-size: 16px;
+			}
+			
+			#foot {
+				padding-bottom: 28px;
+			}
+		</style>
+
+		<script src="http://tp.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="http://tp.newnewbank.com/js/indexhref.js" type="text/javascript"></script>
+		<script src="http://tp.newnewbank.com/js/jquery-ui.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://tp.newnewbank.com/js/newWeb/jquery.popup.js"></script>
+
+		<div id="outer">
+			<div class="head-news-hd">
+				<!-- headlink -->
+				<div class="head-nav-hd">
+					<div class="head-w1200-hd">
+						<div class="fl head-text1-hd"><i class="head-wel-hd">欢迎致电：400-788-5166   服务时间：9:00-21:00</i>
+							<a class="head-link1-hd"><span><em>点击关注牛牛bank微博</em><br/><em class="head-em1-hd uniformColor" style="cursor:pointer" onclick="window.open('http://weibo.com/newnewbank')">@ 牛牛bank</em></span></a>
+							<a class="head-link2-hd"><span><em>扫码关注微信公众号</em><br/><em><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/index_wxerweima_20160325.png"></em></span></a>
+						</div>
+						<div class="fr">
+							<div class="fl head-text2-hd">您好，欢迎来到牛牛bank！</div>
+							<div class="fl head-text3-hd">
+								<a class="head-link3-hd uniformColor">下载客户端
+									<span>
+						<p class="head-textp1-hd"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/index_ios_20160325.png"></p>
+						<p class="head-textp2-hd">IOS版下载</p>
+						<p class="head-textp3-hd"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/index_and_20160325.png"></p>
+						<p>Android版下载</p>	
+					</span></a>
+								<a href="http://tp.newnewbank.com/myAccount/accountInfo.shtml" class="head-link5-hd">王小萌</a>
+								<a href="http://tp.newnewbank.com/logout.shtml" class="head-link4-hd">退出</a>
+
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!-- headlink end -->
+				<div class="head-logNav-hd clearfix">
+					<div class="head-w1200-hd">
+						<div class="head-logo-hd fl">
+							<a href="http://tp.newnewbank.com/"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/index_logo_20160325.png"></a>
+						</div>
+						<div class="head-navs-hd fl">
+							<ul class="clearfix">
+								<li>
+									<a href="http://tp.newnewbank.com/">首页</a>
+								</li>
+								<li>
+									<a href="http://tp.newnewbank.com/myMoney/investProjectList.shtml">投资理财</a>
+								</li>
+								<li>
+									<a href="http://tp.newnewbank.com/html/safety_control.html">安全保障</a>
+								</li>
+								<li>
+									<a href="http://tp.newnewbank.com/html/help.html">帮助中心</a>
+								</li>
+								<li>
+									<a href="http://tp.newnewbank.com/html/newAboutUs/aboutCompany.html">关于我们</a>
+								</li>
+							</ul>
+						</div>
+						<div class="head-money-hd fr">
+							<a href="http://tp.newnewbank.com/myAccount/accountInfo.shtml"><i></i>我的资产</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup1"></div>
+		<!--  通用登录框  -->
+		<div class="shadow"></div>
+		<div class="login-box">
+			<div class="login-title">
+				<h3 class="login-bkdl">登录牛牛bank</h3>
+				<p>没有账号？
+					<a class="free-regis" href="http://tp.newnewbank.com/register/view.shtml">免费注册</a>
+				</p>
+			</div>
+			<div class="login-input-box">
+				<div class="error-box">
+					<p class="error-tips" style="display:none;">*手机号码不存在</p>
+				</div>
+				<div class="user-name">
+					<span></span>
+					<input id="userNme" type="text">
+					<em style="display: block;">请输入手机号码</em>
+				</div>
+				<div class="user-pass">
+					<span></span>
+					<input id="userPass" type="password">
+					<em style="display: block;">请输入密码</em>
+				</div>
+				<div style="text-align:right">
+					<a class="forget-pass" href="http://tp.newnewbank.com/findPwd/findPwd_one.shtml">忘记密码？</a>
+				</div>
+				<a class="login-btn" href="javascript:;">登录</a>
+			</div>
+			<a class="close-login-box" href="javascript:;">X</a>
+		</div>
+		<!--  通用登录框 end  -->
+		<script>
+			$(function() {
+				$(".login-input-box input").blur(function() {
+					if(!$(this).val().replace(/^\s+$/, '')) {
+						$(this).siblings("em").show(); //隐藏提示内容
+					}
+					$('.error-tips').hide();
+				}).focus(function() {
+					$(this).siblings("em").hide();
+				}).change(function() {
+					$(this).siblings("em").hide();
+				});
+				$(".login-input-box em").click(function() {
+					$(this).hide().siblings("input").focus()
+				});
+
+				$(".atvCurr").on("click", function() {
+					var login = window.location.href;
+					if(login.indexOf("roadShow/list.shtml") > 0 || login.indexOf("roadShow/roadShowDetails") > 0) {
+						if($("#checkSpan").hasClass("checked")) {
+							$(".shadow").show();
+							$(".login-box").show();
+						}
+					} else {
+						$(".shadow").show();
+						$(".login-box").show();
+					}
+				});
+
+				$(".login-btn").click(function() {
+					onSubmit();
+				});
+
+				$(".close-login-box").on("click", function() {
+					$("#userNme").val('');
+					$("#userPass").val('');
+					$(".user-name").find("em").show();
+					$(".user-pass").find("em").show();
+					$(".shadow").hide();
+					$(".login-box").hide();
+				});
+			});
+
+			function onSubmit() {
+				var _loginName = $("#userNme").val();
+				var _loginPass = $("#userPass").val();
+				if(_loginName == '') {
+					$('.error-tips').show().html('*用户名不能为空!');
+					$('#userNme').focus();
+					return false;
+				}
+				if(_loginPass == '') {
+					$('.error-tips').show().html('*密码不能为空!');
+					$('#userPass').focus();
+					return false;
+				}
+				$.post("http://tp.newnewbank.com/auth/authSSO.shtml" + "?fresh=" + Math.random(), {
+						loginMobile: $.trim(_loginName),
+						loginPass: $.trim(_loginPass),
+						type: "1"
+					},
+					function(json) {
+						if(json.result) {
+							if(!json.isAuthority) {
+								$(".login-box").hide();
+								$("#popup1").popup({
+									text: '您好，9月1日起，牛牛bank平台支付通道升级为“新浪支付收银台”，用户需设置新浪支付密码，请您设置开通。详情请查看平台公告或联系客服。',
+									aText: "设置",
+									alength: "2",
+									okCallBack: function() {
+										$.ajax({
+											url: "http://tp.newnewbank.com/myMoney/setWithoutAuthority.shtml?" + new Date(Math.random() * 10000),
+											context: {},
+											success: function(data) {
+												if(data.result) {
+													$(".shadow").hide();
+													window.open("http://tp.newnewbank.com/myMoney/redirectWithoutAuthority.shtml?" + new Date(Math.random() * 10000));
+												}
+											}
+										});
+									},
+									cancelCallback: function() {
+										if(json.url.indexOf("register/view.shtml") > 0 || json.url.indexOf("auth/login.shtml") > 0 || json.url.indexOf("findPwd/findPwd_four.shtml") > 0) {
+											try {
+												window.location.href = getRequestForSource("http://tp.newnewbank.com/auth/loginSuccess.shtml");
+											} catch(e) {
+												window.location.href = "http://tp.newnewbank.com/auth/loginSuccess.shtml";
+											}
+										} else {
+											try {
+												window.location.href = getRequestForSource(json.url);
+											} catch(e) {
+												window.location.href = json.url;
+											}
+										}
+									}
+								});
+							} else {
+								if(json.url.indexOf("register/view.shtml") > 0 || json.url.indexOf("auth/login.shtml") > 0 || json.url.indexOf("findPwd/findPwd_four.shtml") > 0) {
+									try {
+										window.location.href = getRequestForSource("http://tp.newnewbank.com/auth/loginSuccess.shtml");
+									} catch(e) {
+										window.location.href = "http://tp.newnewbank.com/auth/loginSuccess.shtml";
+									}
+								} else {
+									try {
+										window.location.href = getRequestForSource(json.url);
+									} catch(e) {
+										window.location.href = json.url;
+									}
+								}
+							}
+						} else {
+							$('.error-tips').show().html(json.resultInfo);
+						}
+					});
+			}
+
+			$(function() {
+				document.onkeydown = function(e) {
+					if(!e) e = window.event;
+					if((e.keyCode || e.which) == 13) {
+						onSubmit();
+					}
+				}
+			});
+
+			$(function() {
+				var abc = false;
+				$(window).scroll(function() {
+					if($(document).scrollTop() > 110) {
+						if(abc == false) {
+							$(".head-logNav-hd").css({
+								"position": "fixed",
+								"top": "-100px"
+							});
+							$(".head-logNav-hd").addClass("scrolled");
+							setTimeout(function() {
+								$(".head-logNav-hd").animate({
+									"top": "0px"
+								}, 500);
+							}, 30);
+							abc = true;
+						}
+					} else {
+						$(".head-logNav-hd").css("position", "relative");
+						$(".head-logNav-hd").removeClass("scrolled");
+						abc = false;
+					}
+				});
+			});
+		</script>
+		<!--  公用头部 end  -->
+		<!-- 修改提示框20160928 -->
+		<!--背景覆盖 -->
+		<div class="cover"></div>
+		<!--弹框  start-->
+		<div class="popupNew">
+			<div class="deleteBtn">
+				<div class="mdiv">
+					<div class="md"></div>
+				</div>
+			</div>
+			<div class="rechargeTitle">跳转到新浪充值</div>
+			<div class="popupText">
+				<img src="http://images-web.oss-cn-hangzhou.aliyuncs.com/pc_exclamatoryMark20160928.png" />
+				<p>充值完成前请不要关闭此窗口，完成后请根据您的情况点击下面按钮：</p>
+				<p>请在新开页面完成付款后再选择，<span>如您支付遇到问题可咨询</span>
+					<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_blank">在线客服</a>
+				</p>
+			</div>
+			<div class="popupInput">
+				<div class="popupCenter">
+					<a href="http://tp.newnewbank.com/myAccount/accountInfo.shtml"><input type="button" class="rechargeBtn" value="已完成充值" /></a>
+					<a href="http://tp.newnewbank.com/newRecahrge/toView.shtml"><input type="button" class="orderBtn" value="充值遇到问题，重新充值" /></a>
+				</div>
+			</div>
+		</div>
+		<!--弹框  end-->
+		<!-- 修改提示框20160928-->
+		<!--  页面内容start  -->
+		<div class="rech-cent1">
+			<div class="w1200 clearfix">
+				<div class="rech-cent2 fl">
+					<i></i>
+					<div class="rech-cent2-text">充值中心<br/><span>请选择充值方式</span></div>
+				</div>
+				<div class="rech-cent3 fl">
+					<ul class="clearfix">
+						<li class="actived"><em></em>
+							<a href="javascript:;">快捷支付</a>
+						</li>
+						<li><em></em>
+							<a href="javascript:;">网上银行支付</a>
+						</li>
+						<!--<li><em></em>
+					<a href="javascript:;">银联在线支付</a>
+				</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="w1200">
+			<div class="rech-cent4">
+				<div class="rech-cent4-top"></div>
+
+				<div class="rech-big-box">
+					<div class="rech-list" style="display:block">
+						<form method="post" target="_blank" id="rechargeSubmit" action="http://tp.newnewbank.com/newRecahrge/sinaPayRecharge.shtml?pageToken=pj04ajtf19">
+							<div class="fr rech-cent5 clearfix" style="min-width:484px;">
+								<div class="rech-cent4-b1 clearfix">
+									<div class="rech-cent4-b2 fl">真实姓名：</div>
+									<div class="rech-cent4-b3 fl">王小萌</div>
+								</div>
+								<div class="rech-cent4-b1 clearfix">
+									<div class="rech-cent4-b2 fl">身份证号：</div>
+									<div class="rech-cent4-b3 fl">
+										440402******038
+										<i class="rech-sou"></i>
+									</div>
+								</div>
+								<div class="rech-cent4-b1 clearfix" style="margin-bottom:45px;">
+									<div class="rech-cent4-b2 fl">银行卡号：</div>
+									<input name="bankCardId" type="text" style="display:none;" value="2191" alt="CMB">
+									<div class="rech-cent4-b3 fl">
+										6154****6564
+										<span>
+															<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1_20160612.jpg" class="rech-bank-img">
+													</span>
+									</div>
+								</div>
+								<div class="rech-cent4-b1 clearfix">
+									<div class="rech-cent4-b2 fl">充值金额：</div>
+									<div class="rech-cent4-b3 fl rech-you-input" style="position:relative; top:-7px;">
+										<em>2.01元起</em>
+										<span class="rech-cent4-b3-yuan">元</span>
+										<input type="text" id="qpMoney" name="rechargeAmt" class="rech-cent4-b3-i1" onkeyup="clearNoNum(this)" />
+									</div>
+								</div>
+
+								<div class="rech-cent-tips wsts-rech" style="display:none;margin-Left:0px;margin-top:-28px;" id="isOnline"><span>温馨提示：</span>如快捷支付限额不能满足您的需求，可选择&nbsp
+									<a id="wangyin-rech" href="javascript:;">网上银行支付</a>。</div>
+								<div class="rech-cent-btn">
+									<!--<a id="qpSubmit" href="javascript:;" btn-triggle="expandUp">提交充值</a>-->
+									<input type="submit" id="qpSubmit" value="提交充值" style="border:0;cursor: pointer;" />
+								</div>
+							</div>
+							<div class="rechargeIcon">
+								<img  style="height: 445px;" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/web_rechargeIcon20161118_03.jpg"/>
+							</div>
+							<span id="isOnlinePay" style="display:none"></span>
+							<span id="isNoCardPay" style="display:none"></span>
+							<div class="clear"></div>
+
+						</form>
+					</div>
+
+					<div class="rech-list">
+						<form method="post" target="_blank" id="autoSubmit" action="http://tp.newnewbank.com/newRecahrge/sinaPayRecharge.shtml?pageToken=pj04ajtf19">
+							<p class="rech-title-p">牛牛现支持以下网上银行，<span>请选择：</span></p>
+							<ul class="rech-bk-im1 clearfix">
+								<li class="actived"><i></i><img src="http://tp.newnewbank.com/images/banner_icon_test.jpg" />
+									<input name="bankCode" type="radio" checked="checked" value="TESTBANK" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a_20160612.jpg">
+									<input name="bankCode" type="radio" value="ICBC" id="bank1" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a3_20160612.jpg">
+									<input name="bankCode" type="radio" value="ABC" id="bank2" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a1_20160612.jpg">
+									<input name="bankCode" type="radio" value="BOC" id="bank3" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a2_20160612.jpg">
+									<input name="bankCode" type="radio" value="CCB" id="bank4" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1_20160612.jpg">
+									<input name="bankCode" type="radio" value="CMB" id="bank5" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a10_20160612.jpg">
+									<input name="bankCode" type="radio" value="CMBC" id="bank7" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a6_20160612.jpg">
+									<input name="bankCode" type="radio" value="SZPAB" id="bank6" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a7_20160612.jpg">
+									<input name="bankCode" type="radio" value="CITIC" id="bank8" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a5_20160612.jpg">
+									<input name="bankCode" type="radio" value="CIB" id="bank9" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a4_20160612.jpg">
+									<input name="bankCode" type="radio" value="GDB" id="bank10" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a8_20160612.jpg">
+									<input name="bankCode" type="radio" value="CEB" id="bank11" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a9_20160612.jpg">
+									<input name="bankCode" type="radio" value="SPDB" id="bank12" style="display:none" />
+								</li>
+								<li><i></i><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg1a11_20160612.jpg">
+									<input name="bankCode" type="radio" value="PSBC" id="bank13" style="display:none" />
+								</li>
+
+							</ul>
+							<div class="tab2-box-rech">
+								<span id="bankNature"></span>
+							</div>
+							<div class="rech-cent4-b1 clearfix" style="margin:26px 0 0 40px">
+								<div class="rech-cent4-b2 fl">充值金额：</div>
+								<div class="rech-cent4-b3 fl" style="position:relative; top:-7px;">
+									<em id="rechinput">1元起</em><span class="rech-cent4-b3-yuan">元</span>
+									<input type="text" id="money" name="rechargeAmt" class="rech-cent4-b3-i1" onkeyup="clearNoNum(this)">
+								</div>
+								<div class="fl">
+									<div class="rech-cent-btn2 rech-cent-btn_ie7">
+										<input type="submit" value="确认充值" style="border:0;cursor: pointer;" />
+									</div>
+								</div>
+							</div>
+						</form>
+						<div class="go_bgerboxcc" id="recharge_bgerboxcc" style="display:none;">
+							<div class="go_bger recharge99">
+								<div class=menugtab2 id=menutab_1_1>
+									<div class="recharge33 recharge8 recharge88"><span id="payMethod">跳转到网银支付</span></div>
+									<div class="recharge666">请在新打开的页面完成操作<strong>如果您支付遇到问题可资询<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_blank">在线客服</a></strong></div>
+									<a href="http://tp.newnewbank.com/myAccount/assetDetail.shtml" class="recharge2222" style="text-decoration:none; background:#f44975; padding-left:50px; width:170px;">
+										<img src="http://tp.newnewbank.com/images/icon_cce_03.jpg" style="vertical-align:middle; float:left; margin-top:5px; padding-right:20px;" />已完成充值</a>
+									<a href="http://tp.newnewbank.com/newRecahrge/toView.shtml" class="recharge22222" style="text-decoration:none; text-align:left; margin-left:15px; background:#19baaa; padding-left:15px; width:225px;">
+										<img src="http://tp.newnewbank.com/images/icon_cce_05.jpg" style="vertical-align:middle; float:left; margin-top:5px; padding-right:10px;" />充值遇到问题，重新支付</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<script>
+						$('#autoSubmit').submit(function() {
+							var sinapay = "0";
+							if(sinapay == "1") {
+								$("#popup").popup({
+									text: '您尚未设置委托扣款,请先设置！',
+									alength: "1",
+									okCallBack: function() {
+										$.ajax({
+											url: "http://tp.newnewbank.com/myMoney/setWithoutAuthority.shtml?" + new Date(Math.random() * 10000),
+											context: {},
+											success: function(data) {
+												if(data.result) {
+													window.open("http://tp.newnewbank.com/myMoney/redirectWithoutAuthority.shtml?" + new Date(Math.random() * 10000));
+												}
+											}
+										});
+									},
+								});
+								return false;
+							}
+							var money = $("#money").val();
+							if(money == '') {
+								$("#popup").popup({
+									text: "请输入金额",
+									alength: "1"
+								});
+								$("#money").focus();
+								return false;
+							}
+
+							/* $.dialog({
+								id:'recharge',
+								lock:true,
+								content:$('#recharge_bgerboxcc')[0]
+							})*/
+							$(".cover").css("display", "block");
+							$(".popupNew").css("display", "block");
+							return true;
+						});
+
+						$(function() {
+							getBankNature();
+						});
+
+						$(".rech-bk-im1 li").click(function() {
+							$(".rech-bk-im1 li.actived").css({
+								"border": "1px solid #f44975"
+							}).siblings().css({
+								"border": "1px solid #eee"
+							});
+							var bankCode = $(this).find("input").val();
+							$(this).find("input[type=radio]").click();
+							$('.rech-tb2-rrt').hide();
+							$("#" + bankCode).show();
+						});
+
+						$(document).ready(function() {
+							$(".rech-bk-im1 li").click(function() {
+								$(this).find("input[type='radio']").attr("checked", true);
+							})
+						});
+
+						function getBankNature() {
+							$.post("http://tp.newnewbank.com/newRecahrge/queryOnlineNature.shtml", function(data) {
+								var str = "";
+								if(data != '') {
+									for(var i = 0; i < data.length; i++) {
+										if(i > 0 && data[i].bankCode != data[i - 1].bankCode) {
+											str += "<tr><td>信用卡</td><td colspan='3'>不支持</td></tr></table>";
+										}
+										if(i == 0 || (i > 0 && data[i].bankCode != data[i - 1].bankCode)) {
+											str += "<table width='100%' id='" + data[i].bankCode + "' border='0' class='rech-tb2-rrt' style='display:none'><tr><td width='22%' rowspan='6'><img src='" + data[i].imageUrl + "' class='ka-huan-img'>" +
+												"</td><td width='15%'>卡种</td><td width='36%'>用户类型</td><td width='14%'>单笔限额</td><td width='13%'>每日限额</td></tr>";
+										}
+										str += "<tr><td>" + data[i].cardType + "</td><td>" + data[i].userType + "</td>";
+										if(data[i].singleLimit == 0) {
+											str += "<td>无限额</td>";
+										} else {
+											str += "<td>" + data[i].singleLimit + "元</td>";
+										}
+										if(data[i].dayLimit == 0) {
+											str += "<td>无限额</td></tr>";
+										} else {
+											str += "<td>" + data[i].dayLimit + "元</td></tr>";
+										}
+										if(i == data.length - 1) {
+											str += "<tr><td>信用卡</td><td colspan='3'>不支持</td></tr></table>";
+										}
+									}
+									$("#bankNature").append(str);
+									var bankCode = $(".rech-bk-im1 li.actived").find("input").val();
+									$(".rech-bk-im1 li.actived").css({
+										"border": "1px solid #f44975"
+									});
+									$("#" + bankCode).show();
+								}
+							});
+						}
+					</script>
+					<!--<div class="rech-list">
+	<div class="rech-cent-bgr">
+	<ul>
+		<li>单笔限额：<span class="rech-num-y">2000元</span></li>
+		<li>每日限额：<span class="rech-num-y">5000元</span></li>
+		<li>温馨提示：<span><em>单笔限额、每日限额</em>只针对一张银行卡。超过5000元的投资，可使用<em>多张银行卡</em>进行充值。</span></li>
+			</ul>
+</div>
+<div class="rech-cent5" style="margin-left:30px;">
+<form method="post" target="_blank" id="cashSubmit" action="http://tp.newnewbank.com/newRecahrge/onlineBankReq.shtml?pageToken=pj04ajtf19">
+ 		<input type="hidden" name="bankCode" value="UPOP" />
+		<div class="rech-cent4-b1 clearfix">
+			<div class="rech-cent4-b2 fl">真实姓名：</div>
+			<div class="rech-cent4-b3 fl">王小萌</div>
+		</div>
+		<div class="rech-cent4-b1 clearfix">
+			<div class="rech-cent4-b2 fl">身份证号：</div>
+			<div class="rech-cent4-b3 fl">
+				440402******038
+				<i class="rech-sou"></i>
+			</div>
+		</div>
+		<div class="rech-cent4-b1 clearfix">
+			<div class="rech-cent4-b2 fl">充值金额：</div>
+			<div class="rech-cent4-b3 fl rech-you-input" style="position:relative; top:-7px;">
+				<em>0.01元起</em><span class="rech-cent4-b3-yuan">元</span>
+				<input type="text" id="cash" name= "rechargeAmt" class="rech-cent4-b3-i1" onkeyup="clearNoNum(this)"/>
+			</div>
+		</div>
+		<div class="rech-cent-btn" style="margin-left:100px;">
+			<input type="submit" value="确认充值" style="border:0;cursor: pointer;"/>
+		</div>
+ </form>
+</div>
+
+<script>
+	$('#cashSubmit').submit(function(){
+		var cash = $("#cash").val();
+		if(cash==''){
+			$("#popup").popup({
+					text:"请输入金额",
+					alength:"1"
+				});
+			$("#cash").focus();
+			return false;
+		}
+		if(cash > 2000){
+			$("#popup").popup({
+				text:"单笔充值金额不能大于2000",
+				alength:"1"
+			});
+			$("#cash").focus();
+			return false;
+		}
+		$.dialog({
+			id:'recharge',
+			lock:true,
+			content:$('#recharge_bgerboxcc')[0]
+		})
+		$("#payMethod").text("跳转到银联在线支付");
+	    return true;
+	});
+</script>-->
+				</div>
+			</div>
+			<div class="rech-cent6"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/rech_jpg2_20160612.jpg"></div>
+		</div>
+		</div>
+		<!--  页面内容end  -->
+		<!--  底部  -->
+
+		<!--  底部  -->
+		<div id="foot">
+			<div class="footLink2 clearfix">
+				<div class="w1200">
+					<div class="ftk1 fl">
+						<dl class="ftkDl">
+							<dt>关于</dt>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">公司介绍</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutTeam.html">管理团队</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="ftk2 fl">
+						<dl class="ftkDl">
+							<dt>安全</dt>
+							<dd>
+								<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutProduct.html">产品介绍</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="ftk3 fl">
+						<dl class="ftkDl">
+							<dt>服务</dt>
+							<dd>
+								<a href="#">会员权益</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+							</dd>
+							<dd>
+								<a href="https://www.newnewbank.com/expertplan/index.shtml">礼品商城</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="ftk-ma fl clearfix">
+						<div class="fl ftkm1"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg9_20160513.jpg"><br/>关注微信公众号</div>
+						<div class="fl"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg10_20160513.jpg"><br/>立即领特权金</div>
+					</div>
+					<div class="icon-ft fl">
+						<div class="icon-ft-qq">
+							<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_blank" class="iq1_2"></a>
+							<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8f60c83a3f0e5ff22dd601733965a2a8e4eccbac49f69282a4edb41c3718b6ab" class="iq2_2"></a>
+						</div>
+						<p class="icon-ft-p">客服热线：(工作日9:00~21:00)</p>
+						<div class="icon-ft-tel">400-788-5166</div>
+						<div class="icon-ft-tubiao">
+							<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="ios-ft2"></a>
+							<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="anz-ft2"></a>
+							<a href="http://weibo.com/newnewbank" class="weib-ft2" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="friend-box">
+				<div class="w1200 clearfix">
+					<div class="fl fr-left">
+						<div class="fl">友情链接：</div>
+						<div class="fl fr-list">
+							<a href="https://www.newnewbank.com/financingNews/toView.shtml" target="_blank">投资理财资讯</a>
+							<a href="http://www.p2peye.com/" target="_blank">网贷天眼</a>
+							<a href="http://www.wdzj.com/" target="_blank">网贷之家</a>
+							<a href="https://pay.sina.com.cn/index" target="_blank">新浪支付</a>
+							<a href="https://www.weicaifu.com/" target="_blank">微财富</a>
+							<a href="http://www.wangdaidp.com/" target="_blank">网贷点评网</a>
+							<a href="http://www.p2p001.com/" target="_blank">第一网贷</a>
+							<a href="http://tp.newnewbank.com/financingNews/toTagMap.shtml" target="_blank" style="display:none">地图</a>
+							<a href="http://tp.newnewbank.com/html/siteMap.html" target="_blank">网站地图</a>
+						</div>
+						<div class="clear"></div>
+						<div class="copy-fr">深圳市金牛牛互联网金融服务有限公司<span>|</span>粤ICP备14051198号<span>|</span>
+							<a href="http://tp.newnewbank.com/html/icp.html" target="_blank" style="color: inherit;">增值电信业务经营许可证粤B2-20160396</a>
+						</div>
+						<div class="copy-fr">版权所有 (C) newnewbank.com</div>
+					</div>
+					<div class="fr copy-img">
+						<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg11_20160513.jpg"></a>
+						<a href="https://ss.knet.cn/verifyseal.dll?sn=e150214440300577673clf000000&ct=df&a=1&pa=0.620487422721416" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg12_20160513.jpg"></a>
+						<a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.newnewbank.com&lang=zh_cn" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg13_20160513.jpg"></a>
+						<a href="#"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg14_20160513.jpg"></a>
+						<a style="background: white;" class="record_nav_e" key="547849daefbfb0170ad8c14c" logo_size="83x30" logo_type="business" rel="nofollow" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.newnewbank.com&amp;at=business" target="_blank">
+							<script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script><span id="aqLogoHook" style="display: none;"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--统计-->
+		<div style="display:none;">
+			<script type="text/javascript">
+				try {
+					var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " https://");
+					document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd2e2acd3dca23a5a68c9fdfbcaac24c1' type='text/javascript'%3E%3C/script%3E"));
+				} catch(err) {
+
+				}
+				(function(i, s, o, g, r, a, m) {
+					i['GoogleAnalyticsObject'] = r;
+					i[r] = i[r] || function() {
+						(i[r].q = i[r].q || []).push(arguments)
+					}, i[r].l = 1 * new Date();
+					a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m)
+				})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+				try {
+					ga('create', 'UA-71441885-1', 'auto');
+					ga('send', 'pageview');
+				} catch(e) {}
+			</script>
+		</div>
+		<!--统计 end-->
+		<!--  底部 end  -->
+		<!--  底部 end  -->
+		<!--  提示框  -->
+		<div id="popup"></div>
+		<!--  loading start  -->
+		<div id="reloading" style="width:100%; height:100%; background:#FFFFFF url(https://images-web.oss-cn-hangzhou.aliyuncs.com/loading_20160517.gif) no-repeat center center; position:fixed; top:0; left:0; z-index:1002; opacity:.8; filter:alpha(opacity=80);display:none;">
+		</div>
+		<!--  loading end  -->
+		<div id="rechargeok"></div>
+	</body>
+
+</html>
+<!-- js -->
+<!-- 弹框提示 -->
+<script src="http://tp.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="http://tp.newnewbank.com/js/jquery.artDialog.js" type="text/javascript"></script>
+<script src="http://tp.newnewbank.com/js/iframeTools.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://tp.newnewbank.com/js/newWeb/jquery.popup.js"></script>
+<script src="http://tp.newnewbank.com/js/CheckKey.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://tp.newnewbank.com/js/guide/jquery.recharge.okv2.js"></script>
+<script type="text/javascript" src="http://tp.newnewbank.com/js/cookie.js"></script>
+<script type="text/javascript">
+	var _onclick = 0;
+	var _pageToken = "";
+	$(function() {
+		/*
+		var isRechare='true';
+		if(!isRechare) {
+			
+			var comeAlready=getCookie('comeAlready');
+			if(comeAlready==null||comeAlready=='undefined'){
+				SetCookie('comeAlready','come',60*24*12);
+				$("#rechargeok").rechargeok({
+					times:"2"
+				});
+			}
+		//	$("#rechargeok").rechargeok({
+		//		times:"2"
+		//	});
+		}*/
+
+		var _isOnline = "" || '0';
+		if(_isOnline == '1') {
+			$("#isOnline").show();
+		}
+
+		//文字消息循环滚动
+		function scrollAd() {
+			var speed = 30; //数字越大速度越慢
+			var tab = document.getElementById("gundong");
+			var tab1 = document.getElementById("gundongAreaMain2");
+			var tab2 = document.getElementById("gundongAreaMain3");
+			tab2.innerHTML = tab1.innerHTML;
+
+			function Marquee() {
+				if(tab2.offsetWidth - tab.scrollLeft <= 0)
+					tab.scrollLeft -= tab1.offsetWidth
+				else {
+					tab.scrollLeft++;
+				}
+			}
+			var MyMar = setInterval(Marquee, speed);
+			tab.onmouseover = function() {
+				clearInterval(MyMar)
+			};
+			tab.onmouseout = function() {
+				MyMar = setInterval(Marquee, speed)
+			};
+		}
+		if($("#gundongAreaMain2 li").length > 1) {
+			scrollAd();
+		}
+
+		//头部滚动
+		var abc = false;
+		$(window).scroll(function() {
+			if($(document).scrollTop() > 110) {
+				if(abc == false) {
+					$(".head-logNav-hd").css({
+						"position": "fixed",
+						"top": "-100px"
+					});
+					$(".head-logNav-hd").addClass("scrolled");
+					setTimeout(function() {
+						$(".head-logNav-hd").animate({
+							"top": "0px"
+						}, 500);
+					}, 30);
+					abc = true;
+				}
+			} else {
+				$(".head-logNav-hd").css("position", "relative");
+				$(".head-logNav-hd").removeClass("scrolled");
+				abc = false;
+			}
+		});
+		//选项卡
+		$(".rech-cent3 ul").on("click", "li", function() {
+				var index = $(this).index();
+				$(this).addClass("actived").siblings().removeClass("actived");
+				$(".rech-big-box>div").eq(index).show().siblings().hide();
+			})
+			//文字点击
+		$("#yinlian-rech").on("click", function() {
+			$(".rech-cent3 ul li").eq(2).addClass("actived").siblings().removeClass("actived");
+			$(".rech-big-box>div").eq(2).show().siblings().hide();
+		})
+		$("#wangyin-rech").on("click", function() {
+				$(".rech-cent3 ul li").eq(1).addClass("actived").siblings().removeClass("actived");
+				$(".rech-big-box>div").eq(1).show().siblings().hide();
+			})
+			//文本框
+		$(".rech-cent4-b3 input").blur(function() {
+			if(!$(this).val().replace(/^\s+$/, '')) {
+				$(this).siblings("em").show(); //隐藏提示内容
+				$(this).css({
+					"border": "1px solid #eee"
+				});
+			}
+		}).focus(function() {
+			$(this).siblings("em").hide();
+			$(this).css({
+				"border": "1px solid #83afe0"
+			});
+		}).change(function() {
+			$(this).siblings("em").hide();
+			$(this).css({
+				"border": "1px solid #eee"
+			});
+		});
+		$(".rech-you-input em").click(function() {
+			$(this).hide();
+			$(this).hide().siblings("input").focus();
+		});
+		$("#rechinput").click(function() {
+			$(this).hide();
+			$(this).hide().siblings("input").focus();
+		});
+	});
+
+	//银行卡图片
+	$(".rech-bk-im1").on("click", "li", function() {
+		$(this).addClass("actived").siblings().removeClass("actived");
+		var newsrc = $(this).find("img").attr("src");
+		$(".ka-huan-img").attr("src", newsrc);
+	});
+
+	$(function() {
+		$('#rechargeSubmit').submit(function() {
+			var sinapay = 0;
+			if(sinapay == 1) {
+				$("#popup").popup({
+					text: '您尚未设置委托扣款,请先设置！',
+					alength: "1",
+					okCallBack: function() {
+						$.ajax({
+							url: "http://tp.newnewbank.com/myMoney/setWithoutAuthority.shtml?" + new Date(Math.random() * 10000),
+							context: {},
+							success: function(data) {
+								if(data.result) {
+									window.open("http://tp.newnewbank.com/myMoney/redirectWithoutAuthority.shtml?" + new Date(Math.random() * 10000));
+								}
+							}
+						});
+					},
+				});
+				return false;
+			}
+			var isMaintenance = "0" || '0'; //银行是否在维护
+			if(Number(isMaintenance) > 0) {
+				$("#popup").popup({
+					text: "该银行快捷充值正在维护中",
+					alength: "1"
+				});
+				return false;
+			}
+			var money = $("#qpMoney").val();
+			var totalRechargeAmt = "0"; //当日充值总额
+			var id = $('input[name="bankCardId"]').val();
+			if(money == '' || typeof(money) == 'undefined') {
+				$("#popup").popup({
+					text: "请输入金额",
+					alength: "1"
+				});
+				$("#qpMoney").focus();
+				return false;
+			}
+			var singleAmt = $('#qpsingle').text(); //单笔限额
+			var qplowestAmt = $('#qplowest').text(); //最低充值金额
+			var qpday = $('#qpday').text(); //今日限额
+			var surplusAmt = parseInt(qpday) - parseInt(totalRechargeAmt);
+			if(Number(money) > Number(singleAmt)) {
+				$("#popup").popup({
+					text: "单笔充值最大金额为" + singleAmt + "元,请输入正确数字",
+					alength: "1"
+				});
+				$("#qpMoney").focus();
+				return false;
+			}
+
+			if(Number(money) < Number(qplowestAmt)) {
+				$("#popup").popup({
+					text: "最小充值金额为" + qplowestAmt + "元，请重新输入!",
+					alength: "1"
+				});
+				$("#money").focus();
+				return false;
+			}
+			/*
+			$.dialog({
+				id:'recharge',
+				lock:true,
+				content:$('#recharge_bgerboxcc')[0]
+			})
+			$("#payMethod").text("跳转到新浪充值");
+			*/
+			$(".cover").css("display", "block");
+			$(".popupNew").css("display", "block");
+			return true;
+		});
+
+		$(".deleteBtn").click(function() {
+			$(".cover").css("display", "none");
+			$(".popupNew").css("display", "none");
+		});
+	});
+
+	function getMobileCodeRecharge() {
+		_onclick = _onclick + 1;
+		var isMaintenance = "0" || '0';
+		if(Number(isMaintenance) > 0) {
+			$("#popup").popup({
+				text: "该银行快捷充值正在维护中",
+				alength: "1"
+			});
+			_onclick = 0;
+			return;
+		}
+		if(_onclick > 1) {
+			$("#popup").popup({
+				text: "请勿重复获取验证码",
+				alength: "1"
+			});
+			return;
+		}
+		var bkCode = "CMB";
+		var money = $("#qpMoney").val();
+		var totalRechargeAmt = "0"; //当日充值总额
+		var id = $('input[name="bankCardId"]').val();
+		if(money == '' || typeof(money) == 'undefined') {
+			$("#popup").popup({
+				text: "请输入金额",
+				alength: "1"
+			});
+			_onclick = 0;
+			$("#qpMoney").focus();
+			return false;
+		}
+		var singleAmt = $('#qpsingle').text(); //单笔限额
+		var qplowestAmt = $('#qplowest').text(); //最低充值金额
+		var qpday = $('#qpday').text(); //今日限额
+		var surplusAmt = parseInt(qpday) - parseInt(totalRechargeAmt);
+		if(Number(money) > Number(singleAmt)) {
+			$("#popup").popup({
+				text: "单笔充值最大金额为" + singleAmt + "元,请输入正确数字",
+				alength: "1"
+			});
+			_onclick = 0;
+			$("#qpMoney").focus();
+			return false;
+		}
+
+		if(Number(money) < Number(qplowestAmt)) {
+			$("#popup").popup({
+				text: "最小充值金额为" + qplowestAmt + "元，请重新输入!",
+				alength: "1"
+			});
+			_onclick = 0;
+			$("#money").focus();
+			return false;
+		}
+
+		if(_pageToken == '') {
+			_pageToken = 'pj04ajtf19';
+		}
+		$.post("http://tp.newnewbank.com/newRecahrge/bindingPayReq.shtml?pageToken=" + _pageToken, {
+			rechargeAmt: money,
+			bankCardId: id
+		}, function(data) {
+			if(data.result == "success") {
+				var i = 120;
+				var timer = null;
+				if(i > 0) {
+					timer = setInterval(function() {
+							var str = i-- + '秒后重新获取';
+							$("#noteBtn").html(str).unbind('click').css({
+								cursor: 'default'
+							});
+							if(i < 0) {
+								_onclick = 0;
+								$("#noteBtn").bind('click', getMobileCodeRecharge);
+								$("#noteBtn").css({
+									cursor: 'pointer'
+								});
+								$("#noteBtn").html('重新获取');
+								clearInterval(timer);
+							}
+						},
+						1000);
+				}
+
+			} else {
+				if(data.msg) {
+					$("#popup").popup({
+						text: data.msg,
+						alength: "1"
+					});
+					_onclick = 0;
+				} else {
+					var isOnlinePay = "2.01" || '0';
+					var isNoCardPay = "" || '0';
+					if(isNoCardPay == '1') {
+						$("#popup").popup({
+							text: "绑卡支付前需要用户本人前往银行柜台开通银联无卡支付",
+							alength: "1"
+						});
+						_onclick = 0;
+					}
+					if(isOnlinePay == '1') {
+						$("#popup").popup({
+							text: "绑卡支付前需要用户开通银联在线支付",
+							alength: "1"
+						});
+						_onclick = 0;
+					}
+					$("#popup").popup({
+						text: "充值失败",
+						alength: "1"
+					});
+					_onclick = 0;
+				}
+			}
+			$.post("http://tp.newnewbank.com/newRecahrge/getToken.shtml", function(data) {
+				if(data) {
+					_pageToken = data;
+				}
+			});
+		});
+	}
+</script>

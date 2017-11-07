@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/product-bottomSilde.css">
+	</head>
+	<body>
+		<!-- 底部插件 -->
+		<div id="bottomS" style="position: fixed; bottom: 0;  width: 100%; height: 74px;z-index: 100;">
+			<!-- 注：更换皮肤 product-css-conc1、product-css-conc2、product-css-conc3、product-css-conc4、product-css-conc5 -->
+			<div class="product-bottom-silde product-css-conc2">
+				<div class="w1200" style="position:relative">
+					<div class="huadong-bg"></div>
+					<ul class="p-b-s fl clearfix">
+						<li class="actived">
+							<a href="javascript:;">项目详情</a>
+						</li>
+						<li>
+							<a href="javascript:;">风险保障</a>
+						</li>
+						<li>
+							<a href="javascript:;">投资记录</a>
+						</li>
+						<li>
+							<a href="javascript:;">你知道吗</a>
+						</li>
+					</ul>
+					<div class="fr p-b-s2">
+						<div class="p-b-buyr">
+							<a href="javascript:;" id="submitBuyNow">立即购买</a>
+						</div>
+						<div class="p-b-s2-img">
+							<div class="p-b-icon1 fa-ic1">
+								<a href="https://www.newnewbank.com/" target="_bank"></a>
+							</div>
+							<div class="p-b-icon2 fa-ic1">
+								<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_bank"></a>
+							</div>
+							<div class="p-b-icon3 fa-ic1">
+								<a href="#" target="_bank"></a>
+							</div>
+							<div class="p-b-icon4 fa-ic1" id="shou-p-b">
+								<a href="javascript:;"></a>
+							</div>
+							<img class="niuka-ic" src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pr_bottom3_20160607.png"></div>
+						<div class="p-b-s2-top">
+							<a href="javascript:;"></a>
+						</div>
+						<div class="p-b-s2-btn">
+							<a href="javascript:;" id="submitNow">立即购买</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var isFirstbuy = '';
+			$(function() {
+				var raiseEnd = '2016/10/25 23:30:00';
+				var raiseStart = '2016/10/21 17:32:31';
+				if(2 == 2) {
+					setTimeout(function() {
+						show_time("restTime2", new Date(raiseEnd).getTime(), new Date().getTime())
+					}, 1000);
+				} else if(1 == 2) {
+					setTimeout(function() {
+						show_time("restTime3", new Date(raiseStart).getTime(), new Date().getTime())
+					}, 1000);
+				}
+
+				$('.details-tab li').click(function() {
+					var index = $(this).index();
+					$(this).addClass('active').siblings('li').removeClass('active');
+					$('.details-box').find('.box').eq(index).show().siblings('div').hide();
+				})
+
+				$("#investRecords").load("https://www.newnewbank.com/myMoney/investRecordList/1.shtml", {
+					detailId: 2195
+				});
+				//底部插件
+				$("#bottomS").bottomsilde();
+			});
+		</script>
+		<!-- 底部插件 end-->		
+		<script src="https://www.newnewbank.com/js/jquery.bottomSilde.js" type="text/javascript"></script>
+	</body>
+</html>

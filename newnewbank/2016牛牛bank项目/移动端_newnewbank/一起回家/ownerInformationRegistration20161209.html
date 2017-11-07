@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>车主信息登记</title>
+		<link rel="stylesheet" type="text/css" href="css/ownerInformationRegistration20161209.css"/>
+		<link href="./css/libs/mui.picker.css" rel="stylesheet" />
+		<link href="./css/libs/mui.poppicker.css" rel="stylesheet" />	
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  实名认证  start-->
+			<div class="popup bombBox">
+				<p class="icon"><img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/newnewbankIcon20161212.png"/></p>
+				<p class="congrat">本次实名认证服务由牛牛bank平台提供</p>
+				<p class="booking"><a href="passengerNameAuthente20161211.html">确认认证</a></p>					
+			</div>
+			<!--弹框  实名认证  end-->
+			<!--弹框  行驶证 start-->
+			<div class="popup bombBox1">
+				<div class="drivieLicenseInco">
+					<img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/drivingPermit20161211.jpg" />
+				</div>
+				<div class="popupText">
+					<p>请按照示例图片上传，四角对齐</p>
+					<p>如照片模糊、反光、太暗、有遮挡，则不予认证。</p>
+				</div>
+				<div class="upBox">
+					<p>请上传行驶证</p>					
+					<div class="upload">
+						<!--相册-->
+						<div class="album">
+							<!--<a class="jump" href="ownersOfPhotos20161211.html">-->
+								<i class="inco albumInco"></i>							
+								<span class="nameText">相册</span>
+							<!--</a>-->
+						</div>
+						<!--<input type="file" id="file" />-->
+						<!--相册-->
+						<!--拍照-->
+						<div class="takePhotos">
+							<i class="inco photoInco"></i>							
+							<span class="nameText">拍照</span>							
+						</div>
+						<!--拍照-->
+					</div>
+					<div class="cancel">取消</div>
+				</div>
+			</div>
+			<!--弹框 行驶证  end-->
+			<!--弹框  驾驶证 start-->
+			<div class="popup bombBox2">
+				<div class="drivieLicenseInco">
+					<img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/driversLicense20161210.png" />
+				</div>
+				<div class="popupText">
+					<p>请按照示例图片上传，四角对齐</p>
+					<p>如照片模糊、反光、太暗、有遮挡，则不予认证。</p>
+				</div>
+				<div class="upBox">
+					<p>请上传驾驶证</p>					
+					<div class="upload">
+						<!--相册-->
+						<div class="album">
+							<i class="inco albumInco"></i>							
+							<span class="nameText">相册</span>							
+						</div>
+						<input type="file" id="file" />
+						<!--相册-->
+						<!--拍照-->
+						<div class="takePhotos">
+							<i class="inco photoInco"></i>							
+							<span class="nameText">拍照</span>							
+						</div>
+						<!--拍照-->
+					</div>
+					<div class="cancel">取消</div>
+				</div>
+			</div>
+			<!--弹框 驾驶证  end-->
+			<!--弹框  汽车近照 start-->
+			<div class="popup bombBox3">
+				<div class="drivieLicenseInco">
+					<img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/car20161210.png" />
+				</div>
+				<div class="popupText">
+					<p>请按照示例图片上传爱车45度全车实景照片，</p>
+					<p>如车牌有遮挡或不清晰则不予认证。</p>
+				</div>
+				<div class="upBox">
+					<p>请上传爱车靓照</p>					
+					<div class="upload">
+						<!--相册-->
+						<div class="album">
+							<i class="inco albumInco"></i>							
+							<span class="nameText">相册</span>							
+						</div>
+						<input type="file" id="file" />
+						<!--相册-->
+						<!--拍照-->
+						<div class="takePhotos">
+							<i class="inco photoInco"></i>							
+							<span class="nameText">拍照</span>							
+						</div>
+						<!--拍照-->
+					</div>
+					<div class="cancel">取消</div>
+				</div>
+			</div>
+			<!--弹框  汽车近照  end-->
+			<div class="header">
+				<img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/passengerRegistration20161209.jpg"/>
+				<div class="reservationTable">
+					<p >预约表</p><p>车辆信息全部填写后就能申请认证车主了</p>
+				</div>
+			</div>
+			<div class="onePage commonPage">				
+				<div class="line">
+					<p class="fontS_24">车主姓名</p><input type="text"  placeholder="请输入您的姓名" />
+				</div>
+				<div class="line">
+					<p class="fontS_24">联系电话</p><input type="text"  placeholder="请输入您的联系电话" />
+				</div>
+				<div class="line">
+					<p class="fontS_24">车主性别</p>
+					<div class="sex male"><span class="circle active"></span><span class="fL" >男</span><span class="maleIcon"></span></div>
+					<div class="sex famale"><span class="circle"></span><span class="fL" >女</span><span class="famaleIcon"></span></div>
+				</div>
+				<div class="line">
+					<p class="fontS_24">身份证号</p><input type="text"  placeholder="请输入您的身份证号码" />
+				</div>
+				<div class="line">
+					<p class="fontS_24 arrLine">实名认证</p>
+					<div class="inBlock">
+						<p class="color999 notUploadedName">未认证<span class="arrow"></span></p>
+						<p class="already uploadedName none">已认证<span class="alreadyUploaded"></span></p>
+					</div> 
+				</div>
+			</div>
+			
+	
+			<div class="twoPage commonPage">
+				
+				
+				
+				<!--修改 20161213 start-->
+				<div class="line">
+					<p class="fontS_24 arrLine">出行日期</p>
+					<p class="hidden">2017年1月<span class="region" id='timeResult'></span></p>
+					<div class="inBlock bombCover" id='showTimePicker'>
+						<p class="color999 notUploadedDate"><span class="choose">请选择</span><span class="arrow"></span></p>
+					</div>
+				</div>
+				<div class="line">	
+					<!--增加   id='cityResult3'-->
+					<p class="fontS_24 arrLine">目的地点</p>
+					<p class="hidden region" id='cityResult3'></p>
+					<!--增加    class="inBlock bombCover"  id='showCityPicker3'-->
+					<div class="inBlock bombCover" id='showCityPicker3' >
+						<!--增加   <span class="choose">请选择</span>-->
+						<p class="color999 notUploadedDestinate"><span class="choose">请选择</span><span class="arrow"></span></p>
+					</div>
+				</div>
+				<div class="line">
+					<p class="fontS_24 arrLine">出发地点</p>
+					<p class="hidden">广东省      深圳市     <span class="region" id="userResult"></span></p>
+					<div class="inBlock bombCover" id='showUserPicker'>
+						<p class="color999 notUploadedStart"><span class="choose">请选择</span><span class="arrow"></span></p>
+					</div>
+				</div>
+				<!--修改 20161213 start-->			
+			</div>
+			
+			
+			
+			<div class="threePage commonPage">
+				<div class="line">
+					<p class="fontS_24 arrLine">空余座位</p>
+					<div class="seatBox">
+						<p class="reduce"><span></span></p>
+						<p class="number">1</p>
+						<p class="add"><span>+</span></p>
+					</div>
+				</div>
+				<div class="line">
+					<p class="fontS_24">车牌号</p><input type="text"  placeholder="请输入您的车牌号码" />
+				</div>
+				<div class="line">
+					
+					<p class="fontS_24 arrLine">行驶证</p>
+					<div class="inBlock">
+						<p class="color999 notUploadedTravelCard ">未上传<span class="arrow"></span></p>
+						<p class="already uploadedTravelCard none">已上传<span class="alreadyUploaded"></span></p>
+					</div>
+				</div>
+				<div class="line">
+					<p class="fontS_24 arrLine">驾驶证</p>
+					<div class="inBlock">
+						<p class="color999 notUploadedDriveLicense ">未上传<span class="arrow"></span></p>
+						<p class="already uploadedDriveLicense none ">已上传<span class="alreadyUploaded"></span></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="fourPage commonPage">
+				<div class="line">
+					<p class="fontS_24 arrLine">爱车靓照</p><p class="textScp">请上传爱车清晰近照</p>
+					<div class="inBlock">
+						<p class="color999 notUploadedCard">未上传<span class="arrow"></span></p>
+						<p class="already uploadedCard">已上传<span class="alreadyUploaded"></span></p>
+					</div>
+				</div>
+			</div>
+			<!--红色状态    bgRedColor 隐藏-->
+			<div class="fivePage">
+				提交申请
+			</div>
+		</div>
+				
+		<!--目的地点   start -->
+		<script src="./js/mui.min.js"></script>
+		<script src="./js/mui.picker.js"></script>
+		<script src="./js/mui.poppicker.js"></script>
+		<script src="./js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/city.data-3.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($, doc) {
+				$.init();			
+				$.ready(function() {
+					//--------------------深圳区域联动---------------------
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'lh',
+						text: '罗湖区'
+					}, {
+						value: 'ft',
+						text: '福田区'
+					}, {
+						value: 'ns',
+						text: '南山区'
+					}, {
+						value: 'ba',
+						text: '宝安区'
+					}, {
+						value: 'lg',
+						text: '龙岗区'
+					}, {
+						value: 'yt',
+						text: '盐田区'
+					},{
+						value: 'qt', 
+						text: '其他区'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+//							userResult.innerText = JSON.stringify(items[0]);
+							userResult.innerText =''+(items[0] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					
+					//-------------------日期选择联动----------------------
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showTimePickerButton = doc.getElementById('showTimePicker');
+					var timeResult = doc.getElementById('timeResult');
+					showTimePickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							timeResult.innerText =items[0].text+ "日-1月 "+items[1].text+'日';
+						});
+					}, false);
+					
+					//--------------------城市三级联动---------------------
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					
+				});				
+			})(mui, document);
+		</script>
+		<!--目的地点   end -->
+				
+		<script type="text/javascript">
+			(function(){
+				//性别选择器
+				$('.sex').on('click',function(){
+					$(this).find('.circle').addClass('active');
+					$(this).siblings('.sex').find('.circle').removeClass('active');			
+				});
+				//弹框--取消    按钮事件
+				$('.cancel').on('click',function(){
+					$('#cover,.popup').hide();
+				});
+				//未上传--行驶证-点击弹框
+				$('.notUploadedTravelCard').on('click',function(){
+					$('#cover,.bombBox1').css('display','block');
+				});
+				//未上传--驾驶证-点击弹框
+				$('.notUploadedDriveLicense').on('click',function(){
+					$('#cover,.bombBox2').css('display','block');
+				});
+				//未上传--爱车靓照-点击弹框
+				$('.notUploadedCard').on('click',function(){
+					$('#cover,.bombBox3').css('display','block');
+				});
+				//未认证--实名认证-点击弹框
+				$('.notUploadedName').on('click',function(){
+					$('#cover,.bombBox').css('display','block');
+				});				
+				//空余座位--加+
+				var num=Number($('.seatBox .number').text());
+				$('.seatBox .add').on('click',function(){					
+					if(num<50){
+						num++;
+					}	
+					$('.seatBox .number').text(num)
+				});
+				//空余座位--减—
+				$('.seatBox .reduce').on('click',function(){					
+					if(num>1){
+						num--;
+					}	
+					$('.seatBox .number').text(num);
+				});				
+			})();
+
+		</script>
+		
+	</body>
+</html>

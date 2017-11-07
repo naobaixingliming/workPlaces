@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">-->
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.grayPage{
+				width:100% ;
+				background-color: #f6f6f6;
+				height: 648px;
+				overflow: hidden;
+			}
+			.editorial {
+				display: block;
+				width: 100%;
+				min-width: 1200px;
+				height: 480px;
+				margin-top:50px;
+			}
+			.parallax>use {
+				animation: move-forever 12s linear infinite;
+				transform-origin: 50% 50%;
+			}
+			
+			.parallax>use:nth-child(1) {
+				animation-delay: -2s;
+			}
+			
+			.parallax>use:nth-child(2) {
+				animation-delay: -2s;
+				animation-duration: 5s;
+			}
+			
+			.parallax>use:nth-child(3) {
+				animation-delay: -4s;
+				animation-duration: 6s;
+			}
+			
+			.parallax>use:nth-child(4) {
+				animation-delay: -6s;
+				animation-duration: 10s;
+			}
+			
+			.parallax>use:nth-child(5) {
+				animation-delay: 0;
+				animation-duration: 6s;
+			}
+			
+			.parallax>use:nth-child(6) {
+				animation-delay: -6s;
+				animation-duration: 8s;
+			}
+			
+			@keyframes move-forever {
+				0% {
+					transform: translate(-90px, 0%);
+				}
+				100% {
+					transform: translate(85px, 0%);
+				}
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+
+		<div class="grayPage">
+			<svg class="editorial" viewBox="0 24 150 28" preserveAspectRatio="none">
+				<defs>
+					<path id="gentle-wave" d="m -160,44.4 c 30,0 58,-18 87.7,-18 30.3,0 58.3,18 87.3,18 30,0 58,-18 88,-18 30,0 58,18 88,18 l 0,34.5 -351,0 z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="50" y="0" fill="rgba(255,255,255,0)" stroke="#f57d9c" stroke-width=".1" />
+					<use xlink:href="#gentle-wave" x="50" y="3" fill="rgba(255,255,255,0)" stroke="#82d4c4" stroke-width=".1" />
+					<use xlink:href="#gentle-wave" x="50" y="6" fill="rgba(255,255,255,0)" stroke="#a1cbf7" stroke-width=".1" />
+					<use xlink:href="#gentle-wave" x="50" y="4" fill="rgba(255,255,255,0)" stroke="#ffb000" stroke-width=".1" />
+					<use xlink:href="#gentle-wave" x="50" y="6" fill="rgba(255,255,255,0)" stroke="#f485a2" stroke-width=".1" />
+					<use xlink:href="#gentle-wave" x="50" y="3" fill="rgba(255,255,255,0)" stroke="#7bb6f3" stroke-width=".1" />
+				</g>
+			</svg>
+			
+			
+		</div>
+	</body>
+
+</html>

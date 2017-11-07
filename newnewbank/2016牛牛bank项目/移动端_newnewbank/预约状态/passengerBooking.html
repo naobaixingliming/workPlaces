@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>我的预约状态</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/passengerBooking.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover" style="display: block;"></div>
+			<!--覆盖层  end-->
+			<!--弹框  1  start-->
+			<div class="popup bombBox">
+				<p class="notice">您的一起回家申请已通知车主</p>
+				<p class="forConfirmation">正在等待车主确认</p>
+				<p class="wait">请耐心等候</p>
+			</div>
+			<!--弹框  1  end-->
+			<!--弹框  2  start-->
+			<div class="popup bombBox2">
+				<span class="carPhoto marLeft"></span>
+				<div class="rightBoxNot bombRight">
+					<div class="personInfo">
+						<div class="sex male">
+							<span class="fL">刘小牛</span>
+							<span class="maleIcon invitation"></span>
+						</div>
+						<div class="phoneNumber">电   话：180****1234</div>
+						<div class="licenseNumber">车牌号：赣A123***</div>
+					</div>
+					<div class="rightTel">
+						<img  src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/telphone20161214.png"/>	
+					</div>	
+				</div>
+				
+				<div class="lineTop">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">余2座</span></div>
+						<div class="placeBlack"><span>深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县</span></div>							
+					</div>
+				</div>
+				<div class="lastLine"><span>正在寻找一起回家乘客</span><span class="peer">邀TA同行</span></div>
+			</div>
+			<!--弹框  2  end-->
+			<!--弹框  3  start-->
+			<div class="popup bombBox3">
+				<p class="noticeArgee">您好，您已同意车主刘生的邀请</p>
+				<div class="forConfirmation fs_22">
+					<p class="">为了保障安全出行，确保您的行程成功匹配，</p>
+					<p class="">如24小时内未完成实名认证</p>
+					<p class="">则行程取消或错过最佳匹配时间</p>
+				</div>				
+				<p class="realNameAuthenticate">实名认证</p>
+			</div>
+			<!--弹框  3  end-->
+			
+			<style type="text/css">
+				.popup {			
+					position: fixed;
+					top: 15%;				
+					z-index:20 ;
+					background-color:#fff ;
+					border-radius:5px ;				
+				}
+				.bombBox4{
+					width: 10rem;
+					height:8.0625rem;
+					background:url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/passengerCertificate20161230.jpg) no-repeat center center;
+					background-size:9.6875rem 8.0625rem ;
+				}
+				.input_name{
+					border: 0;
+					outline: 0;
+					background-color:transparent!important;
+					border-bottom:1.5px solid #000!important;
+					width:2rem ;
+					text-align: center;
+					color:#bd1d1a ;
+				}
+			</style>
+			<!--弹框  4  start-->
+			<div class="popup bombBox4">
+				<p class="" style="font-size: 0.375rem;margin-top: 3rem;padding-left: .5rem;">
+					尊敬的 <input type="text"  class="input_name" value="倪明" /> 先生/女士
+				</p>
+				<p style="font-size: 0.34375rem;padding: 0 .8rem 0 .5rem; text-indent: 2em;margin-top: .3rem;">
+				    感谢您无私地参与2017年“大爱深圳 一起回家”公益活动。对您积极参与
+					公益活动，表示衷心的感谢！您在此次活动中，爱心泛滥，运气爆棚。	
+				</p>
+				<p style="position: absolute;bottom: .1rem;font-size: 0.1875rem;color: #fff;padding:0 .3rem ;text-align: center;"><span style="padding-left:.2rem ;">公益活动组委会咨询热线：0755-8232 0169  回家报名微信公众号：yqhj567或搜索“一起回家”</span></p>
+			</div>
+			<!--弹框  4  end-->
+			
+			
+			
+			<div  style="background: #f54a43;position: fixed;top:0;width:100% ;z-index:1;">
+				<span style="width: .425rem;margin-left: .2rem;float: left; height: .425rem;margin-top: .3rem; display: inline-block;background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/prompt20161227.svg) no-repeat;background-size: .425rem .425rem; "></span>
+				<p style="color: #fff;font-size: 0.3125rem;padding: .3rem;">一起回家组委会提醒您：严禁乘客私下以任何方式向车主打款</p>					
+			</div>
+			<!--1 start -->
+			<!--修改20161230-->
+			<div class="header" style="padding-top:1.09375rem">	
+							
+				<div class="headerText">
+					<p>您好，王圈圈  18018018000</p>
+					<span class="editIcon"></span>
+				</div>
+				<div class="headRed">
+					<p class="fontS_24">您已申请的行程如下</p>
+					<div class="trip">
+						<span></span>
+						<div class="date">
+							<p>2017/01/23-25日</p>
+							<p class="rectangularLine"></p>
+							<p>行程待确定</p>
+						</div>
+						<span></span>
+					</div>
+					<div class="place">
+						<div class="placeText placeText1">
+							<p>广东省深圳市</p>
+							<p>南山区</p>
+						</div>
+						<div class="placeText placeText2">
+							<p>江西省九江市</p>
+							<p>湖口县</p>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--1 end -->
+			<div class="newAdded" style="">
+					实名认证
+			</div>			
+			<!--onePage start -->
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">完善乘车人信息</span>
+					<span class="fs18_cf6a84e">（完成实名认证后确定行程）</span>
+					<span class="arrow arrowUp"></span>
+				</p>
+				<div class="toggle">
+					<div class="line ">					
+						<span class="editIcon"></span>
+						<div class="rightBox">
+							<div class="personInfo">
+								<div class="sex male"><span class="fL">王圈圈</span><span class="famaleIcon"></span></div>
+								<div class="tel">手机号 &nbsp;&nbsp;18018188000</div>
+							</div>
+							<div class="notCertified">
+								未认证
+							</div>
+							<div class="already uploadedName none">已认证<span class="alreadyUploaded"></span></div>
+						</div>
+					</div>	
+					<div class="line">					
+						<span class="editIcon"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male"><span class="fL">刘小牛</span><span class="maleIcon"></span></div>
+								<div class="tel">手机号 &nbsp;&nbsp;18018188000</div>
+								<div class="identityCard">身份证  &nbsp;&nbsp;3600001999****</div>
+							</div>
+							<div class="notCertified none">
+								未认证
+							</div>
+							<div class="already uploadedName ">已认证<span class="alreadyUploaded"></span></div>
+						</div>
+					</div>			
+				</div>				
+			</div>
+			<!--onePage end -->
+			<!--twoPage start -->
+			<div class="twoPage">
+				<div class="tieleLine">
+					<span class="fs24_c9">邀请通知</span>
+					<span class="red">（3条）</span>
+					<p class="page"><span class="lastOne">上一条 </span>  |  <span class="nextOne">下一条</span></p>
+				</div>
+				<div class="pageBlock">					
+					<div class="line twoPageLine">					
+						<span class="carPhoto"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male">
+									<span class="fL">刘小牛</span>
+									<span class="maleIcon invitation"></span>
+									<span class="together">邀您一起回家</span>	
+								</div>
+								<div class="phoneNumber">电   话：180****1234</div>
+								<div class="licenseNumber">车牌号：赣A123***</div>
+							</div>
+							<div class="rightBtn">
+								<div class="agree commomBox">同意</div>
+								<div class="link commomBox">联系TA</div>
+							</div>
+							
+						</div>
+					</div>	
+					<div class="line">					
+						<div class="nullSeat">							
+							<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">余2座</span></div>
+							<div class="placeBlack"><span>深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县</span></div>							
+						</div>
+					</div>
+					
+				</div>				
+		
+			</div>
+			<!--twoPage end -->
+			<!--threePage start -->
+			<div class="threePage">
+					<div class="tieleLine">
+					<span class="fs24_c9">与您匹配的车主</span>					
+				</div>
+				<div class="line">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">2017/1/24出发   </span> <span class="seek">  空2座位</span></div>
+						<div class="placeBlack place_gray"><span>（深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县）</span></div>							
+					</div>
+					<div class="goToeach">一起回家</div>
+				</div>
+				<div class="line">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">2017/1/24出发   </span> <span class="seek">  找乘客2名</span></div>
+						<div class="placeBlack place_gray"><span>（深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县）</span></div>							
+					</div>
+					<div class="goToeach">一起回家</div>
+				</div>	
+				<div class="line">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">2017/1/24出发   </span> <span class="seek">  找乘客1名</span></div>
+						<div class="placeBlack place_gray"><span>（深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县）</span></div>							
+					</div>
+					<div class="goToeach">一起回家</div>
+				</div>	
+			</div>
+			<!--threePage end -->
+			
+			<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="icon home"></div>一起回家</a>
+						</li>
+						<li class="currentf">
+							<a href="#">
+								<div class="icon money"></div>我的预约</a>
+						</li>
+						<li >
+							<a href="proposal20161212.html">
+								<div class="icon fdj"></div>倡议书</a>
+						</li>
+					</ul>
+				</div>
+			</footer>			
+			
+		</div>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function(){
+			//未认证--弹框
+			$('.notCertified').on('click',function(){
+				$('#cover,.bombBox3').css('display','block');
+			});			
+			//车主联系TA--弹框
+			$('.link').on('click',function(){
+				$('#cover,.bombBox2').css('display','block');
+			});			
+			//一起回家--弹框
+			$('.goToeach').on('click',function(){
+				$('#cover,.bombBox').css('display','block');
+			});		
+			//点击覆盖层--弹框消失
+			$('#cover').on('click',function(){
+				$('#cover,.popup').css('display','none');
+			});
+			//箭头--显示与隐藏事件
+			$('.arrow').on('click',function(){
+				$(this).toggleClass('arrowLeft');
+				$(this).toggleClass('arrowUp');
+				$('.toggle').slideToggle(500);
+			});
+			
+			
+			
+		})();
+		
+	</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.parallax {
+				animation: move-forever 12s linear infinite;
+				transform-origin: 50% 50%;
+			}
+			
+			.parallax {
+				animation-delay: -2s;
+			}
+			/*.parallax>use:nth-child(2) {
+				animation-delay: -2s;
+				animation-duration: 5s;
+			}
+			
+			.parallax>use:nth-child(3) {
+				animation-delay: -4s;
+				animation-duration: 3s;
+			}*/
+			
+			@keyframes move-forever {
+				0% {
+					transform: translate(-90px, 0%);
+				}
+				100% {
+					transform: translate(85px, 0%);
+				}
+			}
+			
+			.editorial {
+				display: block;
+				width: 100%;
+				height: 10em;
+				margin: 0;
+			}
+			/*body {
+				background-color: #323232;
+				margin: 0;
+				padding: 9em 0 0 0;
+			}*/
+		</style>
+	</head>
+
+	<body>
+
+		<img class="parallax" src="bolang.png" />
+		<!--进度条 start-->
+		<div class="">
+			<div class="pro-bar margin_center">
+				<p class="text_center" style="padding-bottom: 25px;">
+					<i class="font_16 color_999">选择借款金额</i>
+					<i class="color_00a987 font_24" id="title" style="margin: 0 20px;">9000</i>
+					<i class="font_16 color_999">元<i/>	
+				</p>
+				<div class="scale_panel  margin_center">
+					<div class="scale grayBg" id="bar">
+							<p>
+								<span><i></i></span>
+							</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="pro-bar margin_center">
+
+			<p class="text_center" style="padding-bottom: 25px;">
+				<i class="font_16 color_999">选择借款金额</i>
+					<i class="color_00a987 font_24" id="title" style="margin: 0 20px;">9000</i>
+					<i class="font_16 color_999">元<i/>										
+				</p>	
+				
+				<div class="scale_panel  margin_center">
+					<div class="scale grayBg" id="bar">
+						<p class="red-pro-bar relative">
+							<span id="btn" class="circle-red">
+								<i class="circle-red-border"></i>
+					</span>
+				</p>
+			</div>
+		</div>
+
+		<p class="font_14 color_999" style="padding-top: 35px;">
+			<i class="float_left">0</i>
+			<i class="float_right">100,000</i>
+		</p>
+
+		</div>-->
+
+		<!--进度条 end-->
+
+	</body>
+
+</html>

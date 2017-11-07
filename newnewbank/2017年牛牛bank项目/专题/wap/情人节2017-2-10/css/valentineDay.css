@@ -1,0 +1,585 @@
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: "microsoft yahei";
+		}
+		
+		i {
+			font-style: normal;  
+			display: inline-block;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		/*字体大小 start*/
+		
+		.font_12 {
+			font-size: 12px;
+		}
+		
+		.font_13 {
+			font-size: 13px;
+		}
+		
+		.font_14 {
+			font-size: 14px;
+		}
+		
+		.font_15 {
+			font-size: 15px;
+		}
+		
+		.font_16 {
+			font-size: 16px;
+		}
+		
+		.font_18 {
+			font-size: 18px;
+		}
+		
+		.font_20 {
+			font-size: 20px;
+		}
+		
+		.font_24 {
+			font-size: 24px;
+		}
+		
+		.font_25 {
+			font-size: 25px;
+		}
+		
+		.font_26 {
+			font-size: 26px;
+		}
+		
+		.font_30 {
+			font-size: 30px;
+		}
+		
+		.font_32 {
+			font-size: 32px;
+		}
+		
+		.font_40 {
+			font-size: 40px;
+		}
+		
+		.font_44 {
+			font-size: 44px;
+		}
+		
+		.font_48 {
+			font-size: 48px;
+		}
+		
+		.font_50 {
+			font-size: 50px;
+		}
+		/*字体大小 end*/
+		/*字体颜色 start*/
+		
+		.color_000 {
+			color: #000;
+		}
+		
+		.color_fff {
+			color: #fff;
+		}
+		
+		.color_666 {
+			color: #666;
+		}
+		
+		.color_999 {
+			color: #999;
+		}
+		
+		.color_f44975 {
+			color: #f44975;
+		}
+		
+		.color_1c7ebe {
+			color: #1c7ebe;
+		}
+		
+		.color_c12417 {
+			color: #c12417;
+		}
+		/*字体颜色 end*/
+		/*背景颜色 start*/
+		
+		.bgColor_fff {
+			background-color: #fff;
+		}
+		
+		.bgColor_f44975 {
+			background-color: #f44975;
+		}
+		/*背景颜色 end*/
+		
+		.relative {
+			position: relative;
+		}
+		
+		.w_1200 {
+			width: 1200px;
+		}
+		
+		.margin_center {
+			margin: 0 auto;
+		}
+		
+		.float_left {
+			float: left;
+		}
+		
+		.float_right {
+			float: right;
+		}
+		
+		.clear {
+			clear: both;
+		}
+		
+		.pointer {
+			cursor: pointer;
+		}
+		
+		.bold {
+			font-weight: bold;
+		}
+		
+		.overflow {
+			overflow: hidden;
+		}
+		
+		.inline_block {
+			display: inline-block;
+		}
+		
+		.none {
+			display: none;
+		}
+		
+		.text_center {
+			text-align: center;
+		}
+		
+		.letter-space {
+			letter-spacing: 1px;
+		}
+		
+		#valentine-root {
+			width: 100%;
+			max-width: 1920px;
+			/*height: 3460px;*/
+			background-color: #d13451;
+		}
+		
+		#cover {
+			width: 100%;
+			height: 100%;
+			display: none;
+			background-color: rgba(0, 0, 0, 0.8);
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 6000;
+		}
+		
+		.bombBox {
+			display: none;
+			width: 590px;
+			height: 340px;
+			background-color: #fff;
+			border-radius: 10px;
+			position: fixed;
+			top: 30%;
+			left: 30%;
+			color: #adadad;
+			z-index: 90000;
+			font-size: 24px;
+		}
+		
+		.bombBox .redGround {
+			line-height: 47px;
+			height: 47px;
+			border-radius: 10px 10px 0 0;
+			background-color: #f44975;
+			color: #fff;
+			margin-bottom: 50px;
+		}
+		
+		.bombBox .redGround span:first-child {
+			margin-left: 200px;
+		}
+		
+		.bombBox .redGround span:last-child {
+			cursor: pointer;
+			float: right;
+			margin-right: 10px;
+			font-size: 40px;
+		}
+		
+		.bombBox .left20 {
+			margin-top: 30px;
+			margin-left: 60px;
+		}
+		
+		.bombBox .left10 {
+			margin-top: 20px;
+		}
+		
+		.bombBox .inputBg {
+			width: 370px;
+			display: inline-block;
+			background-color: #f1f1f1;
+		}
+		
+		.bombBox input {
+			width: 80%;
+			padding: 15px;
+			outline: none;
+			border: none;
+			background-color: #F1F1F1;
+		}
+		
+		.bombBox a {
+			font-size: 50px;
+			color: #f9a4ba;
+		}
+		
+		.head-banner {
+			width: 100%;
+			max-width: 1920px;
+			height: 932px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/banner2017210.jpg) no-repeat center center;
+		}
+		
+		.electrocardiogram {
+			width: 100%;
+			max-width: 1920px;
+			height: 144px;
+			margin-top: -105px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/electrocardiogram2017210.png) no-repeat center center;
+		}
+		/*.w_1200{
+				border: 1px solid white;
+			}*/
+		
+		.star {
+			width: 1638px;
+			height: 1650px;
+			position: absolute;
+			top: 520px;
+			left: -200px;
+			opacity: .3;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/star2017210.png) no-repeat;
+			pointer-events: none;
+		}
+		
+		.light {
+			width: 1378px;
+			height: 1034px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/light2017210.png) no-repeat;
+			position: absolute;
+			top: 120px;
+			left: -100px;
+		}
+		
+		.purse {
+			width: 955px;
+			height: 904px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/purse2017210.png) no-repeat;
+			position: absolute;
+			top: 250px;
+			left: 185px;
+		}
+		
+		.line-height {
+			line-height: 30px;
+		}
+		
+		.table {
+			padding-top: 455px;
+			margin-left: 180px;
+		}
+		
+		.w-120 {
+			width: 120px;
+		}
+		
+		.w-136 {
+			width: 136px;
+		}
+		
+		.w-142 {
+			width: 142px;
+		}
+		
+		.w-186 {
+			width: 186px;
+		}
+		
+		.h-50 {
+			height: 50px;
+		}
+		
+		.h-40 {
+			height: 40px;
+		}
+		
+		table td {
+			text-align: center;
+		}
+		
+		.immediate-recharge {
+			width: 270px;
+			height: 60px;
+			line-height: 60px;
+			background-color: #f93854;
+			border: 1px solid #cca500;
+			border-radius: 8px;
+		}
+		
+		.buleIcon {
+			width: 286px;
+			height: 269px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/casket2017210.png) no-repeat 0 0;
+		}
+		
+		.violetIcon {
+			width: 285px;
+			height: 269px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/casket2017210.png) no-repeat -305px 0;
+		}
+		
+		.yellowIcon {
+			width: 285px;
+			height: 269px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/casket2017210.png) no-repeat -603px 0;
+		}
+		
+		.w-920 {
+			width: 920px;
+		}
+		
+		.margin-left {
+			margin-left: 15px;
+		}
+		
+		.twoPage {
+			margin-top: 75px;
+			width: 932px;
+			height: 164px;
+			background-color: #c82745;
+			border: 2px solid #c51c2d;
+			border-radius: 70px;
+		}
+		
+		.twoPage .leftBox {
+			width: 140px;
+			height: 100px;
+			/*border-radius:70px 0 0 70px ;*/
+			border-right: 1px solid #d3526a;
+			margin-left: 70px;
+			margin-top: 30px;
+			padding-right: 30px;
+		}
+		
+		.leftBox .login {
+			line-height: 25px;
+			/*margin-top: 50px;*/
+		}
+		
+		.user {
+			color: #fff;
+			text-align: center;
+			line-height: 160px;
+		}
+		
+		.leftBox .ffe700 {
+			color: #ffe700;
+		}
+		
+		.login a {
+			color: #ffe700;
+			cursor: pointer;
+		}
+		
+		.login a:hover {
+			text-decoration: underline;
+		}
+		
+		.twoPage .middleBox {
+			width: 380px;
+			height: 100px;
+			margin-top: 30px;
+			line-height: 45px;
+			border-right: 1px solid #d3526a;
+		}
+		
+		.twoPage .rightBox {
+			width: 210px;
+			margin-right: 50px;
+		}
+		
+		.middleBox {
+			color: #FFE700;
+		}
+		
+		.middleBox p:first-child {
+			text-align: center;
+			font-size: 18px;
+		}
+		
+		.middleBox p:last-child {
+			text-align: center;
+			font-size: 24px;
+		}
+		
+		.middleBox p:last-child a {
+			font-size: 35px;
+		}
+		
+		.rightBox> .consultation,
+		.income,
+		.income2 {
+			width: 163px;
+			height: 40px;
+			border-radius: 20px;
+			line-height: 40px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		
+		.rightBox .consultation a {
+			color: #ffe700;
+		}
+		
+		.rightBox .income a,
+		.rightBox .income2 a {
+			color: #fff;
+		}
+		
+		.rightBox .consultation {
+			margin: 8px 20px 8px;
+			border: 1px #FFE700 solid;
+		}
+		
+		.rightBox .consultation .smallIcon {
+			margin: 10px 10px 10px 25px;
+			width: 29px;
+			height: 25px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_smallIcon20161208.png) no-repeat 0 0;
+			float: left;
+		}
+		
+		.rightBox .income{
+			border: 1px #fff solid;
+			margin: 0px 20px 15px;
+		}
+		.rightBox .income2{
+			background-color: #fccb00;
+			margin: 0px 20px 15px;
+			color: #cc2745;
+		}
+		.rightBox .income .smallIcon1 {
+			margin: 10px 10px 10px 25px;
+			display: inline-block;
+			width: 23px;
+			height: 25px;
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_smallIcon20161208.png) no-repeat -29px 0;
+			float: left;
+		}
+		.redColor2{
+			color: #cc2745!important;
+		}
+		.rightBox .income2 .smallIcon2 {
+			margin: 10px 10px 10px 25px;
+			display: inline-block;
+			width: 26px;
+			height: 25px;
+			background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/money2017210.png) no-repeat;
+			float: left;
+		}
+		
+		.rightBox .consultation:hover {
+			background-color: #FFE700;
+			color: #ec2544;
+		}
+		
+		.rightBox .consultation:hover .redColor {
+			color: #ec2544;
+		}
+		
+		.rightBox .income:hover .redColor {
+			color: #ec2544;
+		}
+		
+		.rightBox .consultation:hover .smallIcon {
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_smallIcon20161208.png) no-repeat 0 -25px;
+		}
+		
+		.rightBox .income:hover {
+			background-color: #ffffff;
+			color: #ec2544;
+		}
+		
+		.rightBox .income:hover .smallIcon1 {
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_smallIcon20161208.png) no-repeat -29px -25px;
+		}
+		
+		.textScript .activityIntroduction span {
+			float: right;
+			margin-right: 200px;
+			margin-top: 20px;
+			display: inline-block;
+			width: 690px;
+			height: 1px;
+			background-color: #fff;
+		}
+		
+		
+		.textScript {
+			padding-left: 200px;
+			margin-top: 60px;
+			color: #fff;
+		}
+		
+		.textScript .activityIntroduction {
+			font-size: 24px;
+			margin: 30px 0;
+		}
+		
+		.textScript .fontS_20 {
+			font-size: 20px;
+			width: 900px;
+			margin-bottom: 8px;
+		}
+		
+		.textScript .fontS_20:before {
+			margin-right: 10px;
+			display: inline-block;
+			content: '';
+			background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/love2017210.png) no-repeat;
+			width: 27px;
+			height: 26px;
+			float: left;
+		}
+		
+		.footer {
+			line-height: 30px;
+			width: 100%;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			height: 150px;
+			overflow: hidden;
+		}
+		
+		.footer p {
+			margin-top: 50px;
+		}

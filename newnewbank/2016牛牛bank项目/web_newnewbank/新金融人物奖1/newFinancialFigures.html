@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>新金融人物奖</title>
+		<link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css" />	
+	</head>
+	<body>
+		<div id="root">
+			<div class="icon1">
+				<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/newfinancialFigures_1_2016118.jpg"/>
+			</div>
+			<div class="bgIcon">
+				<!--轮播图 start-->
+				<div id="carousel" class="slideBox">
+				    <ul class="items">
+					    <li><a href="#" title=""><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person2016119_1.jpg"></a></li>
+					    <li><a href="#" title=""><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person2016119_2.jpg"></a></li>
+					    <li><a href="#" title=""><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/web_person2016119_3.jpg"></a></li>
+				    </ul>
+				</div>
+				<!--轮播图 end-->
+			</div>
+
+			<div class="icon3">
+				<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/newfinancialFigures_3_2016118.jpg"/>
+			</div>
+
+		</div>
+		<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery.slideBox.js" type="text/javascript"></script>
+		<script>
+			jQuery(function($){	
+				//banner切换
+				function tabBanner() {
+					var bannerSwiper = new Swiper('.banner_container', {
+						autoplay: 5000, //可选选项，自动滑动
+						loop: true,
+						pagination: '.swiper-pagination'
+					});
+				}
+				tabBanner();
+				
+				
+				$('#carousel').slideBox({
+					duration : 0.5,//滚动持续时间，单位：秒
+					easing : 'linear',//swing,linear//滚动特效
+					delay : 4,//滚动延迟时间，单位：秒
+					hideClickBar : false,//不自动隐藏点选按键
+					clickBarRadius : 10
+				});		
+			});
+		</script>
+	</body>
+</html>

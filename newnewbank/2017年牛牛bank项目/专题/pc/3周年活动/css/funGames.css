@@ -1,0 +1,520 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000!important;
+}
+
+.color_fff {
+	color: #fff!important;
+}
+
+.color_333 {
+	color: #333!important;
+}
+
+.color_666 {
+	color: #666!important;
+}
+
+.color_999 {
+	color: #999!important;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9!important;
+}
+
+.color_f44975 {
+	color: #f44975!important;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe!important;
+}
+
+.color_fbb03b {
+	color: #fbb03b!important;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+/*.content.bglogin {
+    background: #1f233e url(/css/pc/../../img/pc/login.jpg) no-repeat center center;
+    background-size: 100%;
+}
+.content {
+    min-height: 700px;
+}*/
+/*.head {	
+	min-height: 483px;
+	background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_a-20170505.png) no-repeat center top;
+	background-size: 100%;
+}*/
+.head {
+	width: 100%;
+	height: 483px;
+	min-width: 1200px;
+	background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_a-20170505.png) no-repeat center top;
+}
+.title-text {
+	width: 1120px;
+	height: 272px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_text_20170505.png) no-repeat;
+	margin-top: 80px;
+	margin-left: 25px;
+}
+
+.personalInvestment {
+	padding-left: 90px;
+}
+
+.gray-bar {
+	width: 1000px;
+	height: 6px;
+	background-color: #d2d2d2;
+	border-radius: 3px;
+}
+
+.red-bar {
+	width: 120px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 3px;
+	background-color: #F44975;
+}
+
+.posBox {
+	position: absolute;
+	top: -5px;
+	text-align: center;
+}
+
+.posBox1 {
+	left: 80px;
+}
+
+.posBox2 {
+	left: 240px;
+}
+
+.posBox3 {
+	left: 400px;
+}
+
+.posBox4 {
+	left: 560px;
+}
+
+.posBox5 {
+	left: 720px;
+}
+
+.posBox6 {
+	left: 880px;
+}
+
+.gray-circle-dot {
+	width: 15px;
+	height: 15px;
+	background-color: #d2d2d2;
+	border-radius: 50%;
+	margin-bottom: 35px;
+	margin-left: 7px;
+}
+
+.current .red-circle-dot {
+	background-color: #F44975;
+}
+
+.equipment-a1 {
+	width: 358px;
+	height: 353px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_a1_20170505.png) no-repeat;
+}
+
+.equipment-a2 {
+	width: 280px;
+	height: 169px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_a2_20170505.png) no-repeat;
+}
+
+.equipment-a3 {
+	width: 311px;
+	height: 170px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_a3_20170505.png) no-repeat;
+}
+
+.equipment-b1 {
+	width: 336px;
+	height: 362px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_b1_20170505.png) no-repeat;
+}
+
+.equipment-b2 {
+	width: 245px;
+	height: 243px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_b2_20170505.png) no-repeat;
+}
+
+.equipment-b3 {
+	width: 284px;
+	height: 240px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_b3_20170505.png) no-repeat;
+}
+
+.equipment-c1 {
+	width: 386px;
+	height: 355px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_c1_20170505.png) no-repeat;
+}
+
+.equipment-c2 {
+	width: 301px;
+	height: 282px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_c2_20170505.png) no-repeat;
+}
+
+.equipment-c3 {
+	width: 302px;
+	height: 286px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_c3_20170505.png) no-repeat;
+}
+
+.equipment-d1 {
+	width: 438px;
+	height: 309px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_d1_20170505.png) no-repeat;
+}
+
+.equipment-d2 {
+	width: 282px;
+	height: 328px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_d2_20170505.png) no-repeat;
+}
+
+.equipment-d3 {
+	width: 246px;
+	height: 324px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_d3_20170505.png) no-repeat;
+}
+
+.equipment-e1 {
+	width: 299px;
+	height: 357px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_e1_20170505.png) no-repeat;
+}
+
+.equipment-e2 {
+	width: 329px;
+	height: 317px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_e2_20170505.png) no-repeat;
+}
+
+.equipment-e3 {
+	width: 284px;
+	height: 357px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_e3_20170505.png) no-repeat;
+}
+
+.equipment-z {
+	width: 713px;
+	height: 445px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/equipment_z_20170505.png) no-repeat;
+}
+
+.investBtn {
+	width: 400px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 8px;
+	background-color: #f44975;
+	font-size: 24px;
+	color: #fff;
+}
+
+.one-page,
+.two-page,
+.three-page,
+.four-page,
+.five-page,
+.six-page {
+	margin-bottom: 140px;
+}
+
+.footer {
+	width: 100%;
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+	min-width: 1200px;
+	background-color: #e6e6e6;
+}
+
+.footer p {
+	padding: 40px 0;
+}
+
+.loginBtn {
+	transition: all .2s;
+}
+
+.loginBtn:hover {
+	transform: scale(1.5);
+}
+
+.rainbow-1,
+.rainbow-2,
+.rainbow-3,
+.rainbow-4,
+.rainbow-5 {
+	width: 100%;
+	height: 252px;
+	position: absolute;
+	left: 0;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.rainbow-1 {
+	top: 680px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_1-20170505.png) no-repeat center center;
+}
+
+.rainbow-2 {
+	top: 1300px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_2-20170505.png) no-repeat center center;
+}
+
+.rainbow-3 {
+	top: 1950px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_3-20170505.png) no-repeat center center;
+}
+
+.rainbow-4 {
+	top: 2600px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_4-20170505.png) no-repeat center center;
+}
+
+.rainbow-5 {
+	top: 3300px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_2-20170505.png) no-repeat center center;
+}

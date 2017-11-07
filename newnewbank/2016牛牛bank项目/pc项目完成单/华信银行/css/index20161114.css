@@ -1,0 +1,32 @@
+.icon-tu4{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_smallIcons20161114.png) no-repeat;
+	width: 300px;
+	height: 96px;
+}
+
+.xing,
+.shi,
+.yi {
+	width: 40px;
+	height: 41px;
+	position: relative;
+	top: 14px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.xing {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_home4_20160513.png) no-repeat 0 -91px;
+}
+
+.shi {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_home4_20160513.png) no-repeat -50px -91px;
+}
+
+.yi {
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_home4_20160513.png) no-repeat -50px -45px;
+}

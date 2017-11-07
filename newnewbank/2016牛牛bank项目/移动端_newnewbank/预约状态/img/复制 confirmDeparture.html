@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>确认出发</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}	
+			a:hover{
+				text-decoration: none;
+			}
+			.clear{
+				clear: both;
+			}		
+			#root {
+				min-height: 1028px;
+				width: 640px;
+				background-color: #f3f3f3;
+				/*padding-bottom: 2.5rem;*/
+			}
+			.headerText{
+				height: 70px;
+				line-height: 70px;
+				padding-left: 35px;
+				background-color: #fff;
+			}			
+			.headerText p{
+				display: inline-block;
+				font-size: 24px;
+				color: #999;
+			}
+			.headRed{
+				width: 640px;
+				height: 438px;
+				background: #f54a43;
+				overflow: hidden;
+			}
+			.headRed .fontS_24{
+				font-size: 24px;
+				padding-left: 35px;
+				color: #fff;
+				margin: 28px 0 45px;
+			}
+			.headRed .trip{
+				width:500px ;
+				height: 86px;
+				margin:0 auto ;				
+			}
+			.headRed .trip span:first-child,.trip span:last-child{
+				display: inline-block;
+				width:86px ;
+				height: 86px;				
+			}
+			.headRed .trip span:first-child{
+				float: left;
+				background:url(img/setOut20161213.png) no-repeat ;
+				background-size:86px  86px;
+			}
+			.headRed .trip span:last-child{
+				float: right;
+				background:url(img/destination20161213.png) no-repeat ;
+				background-size:86px  86px;
+			}			
+			.date{
+				display: inline-block;
+			    text-align: center;
+			    font-size: 18px;
+			    color: #fff;
+			    margin-top: 10px;
+			    margin-left: 18px;
+			}
+			.date p:first-child{
+				padding-bottom:5px ;
+			}
+			.date p:last-child{
+				padding-top:5px ;
+			}
+			.date .rectangularLine{
+				width: 294px;
+				height: 5px;
+				background-color:#cb3630 ;
+			}
+			.place{
+				margin-top: 20px;  
+			}
+			.place .placeText{
+				font-size: 20px;
+				color: #fff;
+				display: inline-block;
+				text-align: center; 				
+			}
+			.place .placeText1{
+				float: left;
+				margin-left: 60px;
+			}
+			.place .placeText2{
+				float: right;
+				margin-right: 60px;
+			}
+			
+			.clickBtn{
+				font-size: 24px;
+				margin-top:60px ;
+				height: 68px;
+				text-align: center;
+			}
+			.clickBtn .comBtn{
+				display: inline-block;
+				width: 300px;
+				line-height:68px ;
+				text-align: center;
+				border-radius: 5px;
+			}
+			.uploadBtn{
+				color: #f54a43;
+				background-color:#fff ;
+			}
+			.sureGo{
+				color: #fff;
+				background-color:#c2c2c2 ;
+			}
+			.sureGoBtn{
+				color: #f54a43;
+				background-color:#f9df06;
+			}
+			.onePage{
+				margin-top:16px;
+				background-color: #fff;
+			}
+			.tieleLine{
+				height: 78px;
+				line-height:78px ;
+				border-bottom: 1px #eee solid;
+			}
+			.arrow{
+				display: inline-block;
+			    width: 15px;
+			    height: 15px;
+			    border-top: 2px solid #999;
+			    border-left: 2px solid #999;
+			    margin-right: 55px;
+			    margin-top: 35px;
+			    float: right;
+			}
+			.arrowLeft{				
+			    moz-transform: rotate(135deg);
+			    -webkit-transform: rotate(135deg);
+			    -o-transform: rotate(135deg);
+			    transform: rotate(135deg);
+			}
+			.arrowUp{
+				moz-transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+			.fs24_c9{
+				font-size: 24px;
+				color: #999;
+				padding-left:30px ;
+			}
+			.toggle{
+				padding:10px 0;
+			}
+			.lineOfInfo{
+				padding:10px 20px;
+			}
+			.lineOfInfo span{
+				display: inline-block;
+			}
+			.passenger{
+				width:65px ;
+				height: 25px;
+				text-align: center;
+				line-height: 25px;
+				color: #fff;				
+				font-size: 18px;
+				border-radius:12px ;
+				margin-right:20px ;
+			}
+			.passenger1{
+				background-color:#f54a43 ;
+			}
+			.passenger2{
+				background-color:#999 ;
+			}
+			.passInfo,.certified{
+				color: #999;
+				font-size: 22px;
+			}
+			.passInfo{
+				padding-right:15px ;
+			}
+			.whether{
+				width: 85px;
+			    height: 30px;
+			    text-align: center;
+			    line-height: 30px;			   
+			    font-size: 18px;
+			    border-radius: 5px;
+			    margin-right: 20px;
+			    float: right;
+			}
+			.confirm{
+				 color: #ffb141;
+				border:1px solid #ffb141 ;
+			}
+			.toBeSure{
+				 color: #999;
+				border:1px solid #999 ;
+			}
+		</style>
+		<style type="text/css">
+			#cover {
+				width: 640px;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .8);
+				z-index:10 ;
+				display: none;
+			}
+			/*--弹框  start--*/			
+			.popup {			
+				position: fixed;
+				top: 15%;				
+				z-index:20 ;
+				background-color:#fff ;
+				border-radius:5px ;				
+			}
+			.bombBox{
+				left: 6%;
+				width: 530px;
+				height:290px ;
+				text-align: center;
+				font-size: 26px;
+				display: none;
+			}
+			.notice{
+				margin-top:90px ;
+				margin-bottom:30px ;
+				color: #f54a43;
+			}
+			.wait{				
+				width:200px ;
+				height: 54px;
+				line-height:54px ;
+				border:1px solid #999 ;
+				border-radius:5px ;
+				color: #999;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  1  start-->
+			<div class="popup bombBox">
+				<p class="notice">是否成功与车主汇合，确定出发</p>
+				<p class="wait">确认出发</p>
+			</div>
+			<!--弹框  1  end-->
+			<div class="header">
+				<div class="headerText">
+					<p>您好，王圈圈  18018018000</p>
+					<!--<span class="editIcon"></span>-->
+				</div>
+				<div class="headRed">
+					<p class="fontS_24">您已申请的行程如下</p>
+					<div class="trip">
+						<span></span>
+						<div class="date">
+							<p>2017/01/23-25日</p>
+							<p class="rectangularLine"></p>
+							<p>行程待确定</p>
+						</div>
+						<span></span>
+					</div>
+					<div class="place">
+						<div class="placeText placeText1">
+							<p>广东省深圳市</p>
+							<p>南山区</p>
+						</div>
+						<div class="placeText placeText2">
+							<p>江西省九江市</p>
+							<p>湖口县</p>							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clickBtn">
+						<p class="comBtn uploadBtn">上传出发合照</p>
+						<p class="comBtn sureGo">确认出发</p>
+					</div>				
+				</div>			
+			</div>
+			
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">完善乘车人信息</span>
+					<span class="arrow arrowUp"></span>
+				</p>
+				<div class="toggle">
+					<div class="lineOfInfo">
+						<span class="passenger passenger1">乘客</span>
+						<span class="passInfo">王**   	15000001111</span>
+						<span class="certified">已认证  （2人）</span>
+						<span class="whether confirm">已确认</span>
+					</div>
+					<div class="lineOfInfo">
+						<span class="passenger passenger1">乘客</span>
+						<span class="passInfo">王**   	15000001111</span>
+						<span class="certified">已认证  </span>
+						<span class="whether confirm">已确认</span>
+					</div>
+					<div class="lineOfInfo">
+						<span class="passenger passenger2">乘客</span>
+						<span class="passInfo">王**   	15000001111</span>
+						<span class="certified">已认证  </span>
+						<span class="whether toBeSure">待确认</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//确认出发--弹框
+			$('.clickBtn').delegate('.sureGoBtn','click',function(){
+				$('#cover,.bombBox').css('display','block');
+			});		
+			//点击覆盖层和确认出发按钮事件--弹框消失
+			$('#cover,.wait').on('click',function(){
+				$('#cover,.popup').css('display','none');
+			});
+			//箭头--显示与隐藏事件
+			$('.arrow').on('click',function(){
+				$(this).toggleClass('arrowLeft');
+				$(this).toggleClass('arrowUp');
+				$('.toggle').slideToggle('slow');
+			});			
+		</script>
+	</body>
+</html>

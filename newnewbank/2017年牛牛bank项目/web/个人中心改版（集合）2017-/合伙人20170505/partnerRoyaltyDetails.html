@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心——资金明细</title>
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/jquery.datetimepicker.css" />
+		<link rel="stylesheet" type="text/css" href="../css/individual-centers.css" />
+		<style type="text/css">
+			.w-200 {
+				width: 200px;
+				border-right: 1px solid #eee;
+			}
+			
+			.table table tr:nth-child(odd) {
+				background-color: #f8f8f8;
+			}
+			
+			.table table tr:nth-child(even) {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="listOfFund">
+			<div class="bgColor_f44975 header-accountSum">
+				<i class="tableImg tableRedLeft float_left"></i>
+				<i class="tableImg tableRedRight float_right"></i>
+				<div class="product-head-wrap">
+					<div class="product-head-box">
+						<div class="left-logo"></div>
+						<div class="product-nav-wrap clearfix">
+							<div class="product-nav-box fl">
+								<a href="https://www.newnewbank.com/">首页</a>
+								<a href="https://www.newnewbank.com/myMoney/investProjectList.shtml">投资理财</a>
+								<a href="https://www.newnewbank.com/bankCenter/bankCenterIndex.shtml">银行专区</a>
+								<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+								<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+								<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">关于我们</a>
+							</div>
+							<div class="user-operation fl">
+								<div class="opera-btns">
+									<a href="javascript:;" id="login">登录</a>
+									<a class="regis-btn" href="https://www.newnewbank.com/register/view.shtml">注册</a>
+								</div>
+							</div>
+						</div>
+						<a class="font_16 color_fff myAsset" href="">
+							<i class="myAssetIcon"></i><i>我的资产</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--修改2017-03-21 end-->
+
+			<div class="w_1200 margin_center clearfloat" style="margin-top: 6px;">
+				<!--左侧导航栏 start-->
+				<div class="w-210 bgColor_fff float_left leftHigh" style="min-height: 1000px;">
+					<div class="head-person-info relative">
+						<div class="clearfloat">
+							<p class="text_center inline_block float_left circle-shadow-box">
+								<i class="sprite-account-photo"></i>
+							</p>
+							<div class="font_12 color_666 inline_block person-name">
+								<p>王圆圆</p>
+								<p>VIP3会员</p>
+								<p>金牌合伙人</p>
+							</div>
+						</div>
+						<ul class="clearfloat certified-case ">
+							<!--li 增加redActive --红色-->
+							<li class="redActive pointer">
+								<i class="common-smallImg smallImg1 redActiveImg1"></i>
+								<div class="usermenu usermenu1 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您已完成实名认证。<a class="color_fbb03b" href="">查看详情</a></span>
+								</div>
+							</li>
+							<li class="redActive pointer">
+								<i class="common-smallImg smallImg2 redActiveImg2"></i>
+								<div class="usermenu usermenu2 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您未完成绑卡设置。<a class="color_fbb03b" href="">立即绑卡</a></span>
+								</div>
+							</li>
+							<li class="pointer">
+								<i class="common-smallImg smallImg3 redActiveImg3"></i>
+								<div class="usermenu usermenu3 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您已完成交易密码设置。<a class="color_fbb03b" href="">点击修改</a></span>
+								</div>
+							</li>
+							<li class="pointer">
+								<i class="common-smallImg smallImg4 redActiveImg4"></i>
+								<div class="usermenu usermenu4 none">
+									<div class="arrow-up-bd">
+										<em></em>
+										<i></i>
+									</div>
+									<span class="font_12 color_333">您未参与投资风险承受能力评估。<a class="color_fbb03b" href="">立即评估</a></span>
+								</div>
+							</li>
+						</ul>
+
+						<p>
+							<span class="relative bgColor_e7e7e7 safety-grade"><i class="bgColor_f44975 grade-coefficient"></i></span>
+							<i class="font_12 color_999" style="margin:0 10px ;">中</i>
+							<a class="color_f44975 font_12" href="">提升</a>
+						</p>
+					</div>
+					<!--单个 nav start-->
+					<p class="under_line" style="margin-left: 6px;"></p>
+					<a class="block  " href="" style="width: 100%;">
+						<div class="active-account side-navigation rainbow-light">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account1 sprite-account-red1"></i>
+									<i class="font_14 text_center text-left">账户概况</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account2 sprite-account-red2"></i>
+									<i class="font_14 text_center text-left">资金明细</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block" href="" style="width: 100%;">
+						<div class=" rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account3 sprite-account-red3"></i>
+									<i class="font_14 text_center text-left">投资记录</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account4 sprite-account-red4"></i>
+									<i class="font_14 text_center text-left">我的优惠券<em class="text_center coupon-number">5</em></i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account5 sprite-account-red5"></i>
+									<i class="font_14 text_center text-left">牛牛合伙人</i>
+								</p>
+								<!--<p class="font_14 text_center " ></p>-->
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account6 sprite-account-red6"></i>
+									<i class="font_14 text_center text-left">会员俱乐部</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account7 sprite-account-red7"></i>
+									<i class="font_14 text_center text-left">风险评估</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account8 sprite-account-red8"></i>
+									<i class="font_14 text_center text-left">银行专区</i>
+								</p>
+
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account9 sprite-account-red9"></i>
+									<i class="font_14 text_center text-left">VIP 专区</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account10 sprite-account-red10"></i>
+									<i class="font_14 text_center text-left">我的特权金</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<!--单个 nav start-->
+					<a class="block " href="" style="width: 100%;">
+						<div class="rainbow-light side-navigation">
+							<div>
+								<p class="text_center margin_center circle-shadow1">
+									<i class="sprite-account-all sprite-account11 sprite-account-red11"></i>
+									<i class="font_14 text_center text-left">账户设置</i>
+								</p>
+							</div>
+						</div>
+						<p class="under_line" style="margin-left: 6px;"></p>
+					</a>
+					<!--单个 nav end-->
+					<div class="relative side-navigation-bottom">
+						<div style="padding-top: 40px;">
+							<p class="text_center margin_center"><i class="sprite-account-vcode"></i></p>
+							<p class="font_12 text_center color_999">APP掌上理财,随时随地</p>
+						</div>
+						<!--<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/incompleteFooter2017217.png" />-->
+					</div>
+				</div>
+				<!--左侧导航栏 end-->
+				<!--右侧内容 start-->
+				<div class="float_right w-966 rightHigh">
+					<div class="subsidiaryLedger bgColor_fff h-288">
+						<div class="inline_block w-600">
+							<div class="topPage-box h-156">
+								<p>
+									<i class=" font_14 color_a9a9a9" style="margin-right: 20px;">可用余额 (元)</i>
+									<i class=" pointer closeEye none" style="margin-top: 0;"></i>
+								</p>
+								<div class="clearfloat">
+									<i class="font_50 color_f44975 digital-hide" style="padding-top: 10px;">10.36</i>
+									<p class="inline_block float_right" style="margin-top: 25px;">
+										<a class="color_fff text_center bgColor_f44975 pointer recharge" btn-triggle="expandUp" href="#">提取到余额</a>
+									</p>
+								</div>
+							</div>
+							<p class="under_line" style="margin: 0 10px 0 35px;"></p>
+							<div class="bottomPage-box" style="margin-top:25px ;">
+								<div class="inline_block float_left w-200">
+									<div style="padding: 15px 0 0 40px;">
+										<p class="font_14 color_a9a9a9" style="padding-bottom: 10px;">累计提取(元):</p>
+										<p class="font_14 color_666" style="padding-bottom: 5px;">1020.52</p>
+									</div>
+								</div>
+								<div class="inline_block float_left w-200">
+									<div style="padding: 15px 0 0 40px;">
+										<p class="font_14 color_a9a9a9" style="padding-bottom: 10px;">预计待收提成(元):</p>
+										<p class="font_14 color_f44975" style="padding-bottom: 5px;">20.52</p>
+									</div>
+								</div>
+								<div class="inline_block ">
+									<div style="padding: 15px 0 0 40px;">
+										<p class="font_14 color_a9a9a9" style="padding-bottom: 10px;">累计到账提成(元):</p>
+										<p class="font_14 color_666 ">1320.52</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="inline_block text_center mirror-effect float_right" style="height: 100%;width: 362px;">
+							<img class="pointer" src="http://images-web.oss-cn-hangzhou.aliyuncs.com/preferredProduct20.jpg" style="width:343px;height: 267px;margin-top:10px ;" />
+						</div>
+					</div>
+
+					<div class="dataStatistics clearfloat">
+						<div class="bgColor_fff " style="height: 76px;">
+							<i class="font_20 color_333" style="line-height: 76px;padding-left: 30px;">提成明细 </i>
+							<div class="inline_block float_right" style="margin: 25px 25px 0 0;">
+								<div class="">
+									<i class="font_14 color_333">时间</i>
+									<input class="datetimepicker1" id="begin" type="text" value="">--<input class="datetimepicker2" id="end" type="text" value="">
+									<a class="bgColor_f44975 color_fff font_14" href="javascript:;" btn-triggle="expandUp" id="queryTime">查询</a>
+								</div>
+							</div>
+						</div>
+						<p class="under_line"></p>
+						<div class="table_nav bgColor_fff">
+							<ul class="inline_block clearfloat">
+								<li class="current nav-term">提取记录<i class="navUnderline"></i></li>
+								<li class="nav-term">待收提成<i class="navUnderline"></i></li>
+								<li class="nav-term">到账记录<i class="navUnderline"></i></li>
+							</ul>
+						</div>
+						<div class="contain">
+							<!--全部  start-->
+							<div class="table active none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="">
+										<td>交易号</td>
+										<td style="padding-right: 10px;">提取时间</td>
+										<td style="padding:0 10px;">交易类型</td>
+										<td>交易金额（元）</td>
+										<td style="padding: 0 20px;">交易状态</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+								</table>
+								<div class="bgColor_fff" style="height: 75px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 27px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_7dcae6 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								<div class="bgColor_f8f8f8" style="height: 100px;line-height: 100px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr class="font_16">
+											<th>&nbsp;合 计&nbsp;</th>
+											<th>&nbsp;&nbsp;&nbsp;&nbsp;共172次&nbsp;</th>
+											<th>381,764,1</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!--全部  end-->
+
+							<!--充值  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="">
+										<td>交易号</td>
+										<td style="padding-right: 10px;">提取时间</td>
+										<td style="padding:0 10px;">交易类型</td>
+										<td>交易金额（元）</td>
+										<td style="padding: 0 20px;">交易状态</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+									<tr>
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>提取到余额</td>
+										<td>5</td>
+										<td>提取成功</td>
+									</tr>
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 27px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_7dcae6 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								<div class="bgColor_fff" style="height: 100px;line-height: 100px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr class="font_16">
+											<th>&nbsp;合 计&nbsp;</th>
+											<th>&nbsp;&nbsp;&nbsp;&nbsp;共172次&nbsp;</th>
+											<th>381,764,1</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!--充值  end-->
+							<!--提现  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<tr class="">
+											<td>交易号</td>
+											<td style="padding-right: 10px;">提取时间</td>
+											<td style="padding:0 10px;">交易类型</td>
+											<td>交易金额（元）</td>
+											<td style="padding: 0 20px;">交易状态</td>
+										</tr>
+										<tr>
+											<td>1588201602050000000000407784</td>
+											<td>2016-08-05 15:17:24</td>
+											<td>提取到余额</td>
+											<td>5</td>
+											<td>提取成功</td>
+										</tr>
+										<tr>
+											<td>1588201602050000000000407784</td>
+											<td>2016-08-05 15:17:24</td>
+											<td>提取到余额</td>
+											<td>5</td>
+											<td>提取成功</td>
+										</tr>
+								</table>
+								<div class="bgColor_fff" style="height: 75px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 27px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_7dcae6 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								<div class="bgColor_f8f8f8" style="height: 100px;line-height: 100px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr class="font_16">
+											<th>&nbsp;合 计&nbsp;</th>
+											<th>&nbsp;&nbsp;&nbsp;&nbsp;共172次&nbsp;</th>
+											<th>381,764,1</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!--提现  end-->
+							<!--回款  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>交易号</td>
+										<td>交易/统计时间</td>
+										<td>交易类型</td>
+										<td>交易金额（元）</td>
+										<td>交易状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>偿还本金和利息</td>
+										<td>5</td>
+										<td>成功</td>
+									</tr>
+									<tr class="bgColor_f8f8f8 ">
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>偿还本金和利息</td>
+										<td>10,000</td>
+										<td>成功</td>
+									</tr>
+								</table>
+								<div class="bgColor_fff" style="height: 75px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 27px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_7dcae6 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								<div class="bgColor_f8f8f8" style="height: 100px;line-height: 100px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr class="font_16">
+											<th>&nbsp;合 计&nbsp;</th>
+											<th>&nbsp;&nbsp;&nbsp;&nbsp;共172次&nbsp;</th>
+											<th>381,764,1</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!--回款  end-->
+							<!--投资  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>交易号</td>
+										<td>交易/统计时间</td>
+										<td>交易类型</td>
+										<td>交易金额（元）</td>
+										<td>交易状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>使用现金券</td>
+										<td>5</td>
+										<td>成功</td>
+									</tr>
+									<tr class="bgColor_f8f8f8 ">
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>使用现金券</td>
+										<td>10,000</td>
+										<td>成功</td>
+									</tr>
+								</table>
+								<div class="bgColor_fff" style="height: 75px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 27px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_7dcae6 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								<div class="bgColor_f8f8f8" style="height: 100px;line-height: 100px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr class="font_16">
+											<th>&nbsp;合 计&nbsp;</th>
+											<th>&nbsp;&nbsp;&nbsp;&nbsp;共172次&nbsp;</th>
+											<th>381,764,1</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!--投资  end-->
+							<!-- 推荐收益  start-->
+							<div class="table none">
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr class="bgColor_f8f8f8">
+										<td>交易号</td>
+										<td>交易/统计时间</td>
+										<td>交易类型</td>
+										<td>交易金额（元）</td>
+										<td>交易状态</td>
+									</tr>
+									<tr class="bgColor_fff ">
+										<td>1588201602050000000000407784</td>
+										<td>2016-08-05 15:17:24</td>
+										<td>使用现金券</td>
+										<td>5</td>
+										<td>成功</td>
+									</tr>
+								</table>
+								<div class="bgColor_f8f8f8" style="height: 75px;">
+									<p class="inline_block float_right" style="margin-right: 30px;margin-top: 27px;">
+										<a class="font_14 previous"><i class="arrow-list arrow-previous"></i><i>上一页</i></a>
+										<a class="font_14 color_fff bgColor_7dcae6 pageNum">10</a>
+										<a class="font_14 next"><i>下一页</i><i class="arrow-list arrow-next"></i></a>
+										<i class="font_12 color_666">12/12 页</i>
+										<input type="text" style="width: 35px;text-align: center;" />
+										<button class="color_666 jumpBtn">跳转</button>
+									</p>
+								</div>
+								<div class="bgColor_fff" style="height: 100px;line-height: 100px;">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr class="font_16">
+											<th>&nbsp;合 计&nbsp;</th>
+											<th>&nbsp;&nbsp;&nbsp;&nbsp;共172次&nbsp;</th>
+											<th>381,764,1</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<!-- 推荐收益  end-->
+						</div>
+					</div>
+				</div>
+				<!--右侧右侧内容 end-->
+			</div>
+			<script type="text/javascript" src="https://www.newnewbank.com/js/jquery-1.8.0.min.js"></script>
+			<script src="https://www.newnewbank.com/js/jquery.datetimepicker.js"></script>
+			<script type="text/javascript">
+				(function() {
+					var listOfFund = {
+						init: function() {
+							this.bindEvent();
+						},
+						bindEvent: function() {
+							//日历弹框事件
+							$('.datetimepicker1').datetimepicker({
+								format: 'Y-m-d',
+								timepicker: false
+							});
+							$('.datetimepicker2').datetimepicker({
+								format: 'Y-m-d',
+								timepicker: false
+							});
+							//全部        充值          提现          回款         投资        推荐收益   导航切换
+							$('.nav-term').on('click', function() {
+								var i = $(this).index();
+								$(this).addClass('current').siblings('.nav-term').removeClass('current');
+								$('.contain .none').eq(i).addClass('active').siblings('.none').removeClass('active');
+							});
+
+						}
+
+					}
+					listOfFund.init();
+				})();
+			</script>
+			<script type="text/javascript">
+				(function() {
+					//修改20170331
+					$('.certified-case li').hover(function() {
+						$(this).children('.usermenu').show();
+					}, function() {
+						$(this).children('.usermenu').hide();
+					});
+
+					$('.questionHover').hover(function() {
+						$(this).children('.yellowmenu').slideDown(200);
+					}, function() {
+						$(this).children('.yellowmenu').slideUp(100);
+					});
+				})()
+				//删除评估栏
+				$('.closeDelete').on('click', function() {
+					$('.error-hint').hide(200);
+				});
+
+				//增加左右同高
+				var $rightHigh = $('.rightHigh').height();
+				var $leftHigh = $('.leftHigh').height();
+				if($rightHigh > $leftHigh && $rightHigh > 1000) {
+					$('.leftHigh').css('height', $rightHigh);
+				}
+			</script>
+	</body>
+
+</html>

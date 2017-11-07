@@ -1,0 +1,394 @@
+* {
+				margin: 0;
+				padding: 0;
+				font-family: "microsoft yahei";
+			}
+			
+			ul,
+			ol,
+			li {
+				list-style: none;
+			}
+			
+			i {
+				font-style: normal;
+				display: inline-block;
+			}
+			
+			a {
+				text-decoration: none;
+				display: inline-block;
+			}
+			
+			span {
+				display: inline-block;
+			}
+			/*字体大小 start*/
+			
+			.arial {
+				font-family: arial;
+			}
+			
+			.font_12 {
+				font-size: 12px;
+			}
+			
+			.font_13 {
+				font-size: 13px;
+			}
+			
+			.font_14 {
+				font-size: 14px;
+			}
+			
+			.font_15 {
+				font-size: 15px;
+			}
+			
+			.font_16 {
+				font-size: 16px;
+			}
+			
+			.font_18 {
+				font-size: 18px;
+			}
+			
+			.font_20 {
+				font-size: 20px;
+			}
+			
+			.font_22 {
+				font-size: 22px;
+			}
+			
+			.font_24 {
+				font-size: 24px;
+			}
+			
+			.font_26 {
+				font-size: 26px;
+			}
+			
+			.font_28 {
+				font-size: 28px;
+			}
+			
+			.font_30 {
+				font-size: 30px;
+			}
+			
+			.font_32 {
+				font-size: 32px;
+			}
+			
+			.font_36 {
+				font-size: 36px;
+			}
+			
+			.font_40 {
+				font-size: 40px;
+			}
+			
+			.font_48 {
+				font-size: 48px;
+			}
+			
+			.font_50 {
+				font-size: 50px;
+			}
+			
+			.font_70 {
+				font-size: 70px;
+			}
+			/*字体大小 end*/
+			/*字体颜色 start*/
+			
+			.color_000 {
+				color: #000!important;
+			}
+			
+			.color_fff {
+				color: #fff!important;
+			}
+			
+			.color_333 {
+				color: #333!important;
+			}
+			
+			.color_666 {
+				color: #666!important;
+			}
+			
+			.color_999 {
+				color: #999!important;
+			}
+			
+			.color_a9a9a9 {
+				color: #a9a9a9!important;
+			}
+			
+			.color_f44975 {
+				color: #f44975!important;
+			}
+			
+			.color_1c7ebe {
+				color: #1c7ebe!important;
+			}
+			
+			.color_fbb03b {
+				color: #fbb03b!important;
+			}
+			/*字体颜色 end*/
+			/*背景颜色 start*/
+			
+			.bgColor_fff {
+				background-color: #fff;
+			}
+			
+			.bgColor_f44975 {
+				background-color: #f44975;
+			}
+			
+			.bgColor_fbb03b {
+				background-color: #fbb03b;
+			}
+			
+			.bgColor_7fcbe5 {
+				background-color: #7fcbe5;
+			}
+			/*背景颜色 end*/
+			
+			.relative {
+				position: relative;
+			}
+			
+			.w_1200 {
+				width: 1200px;
+			}
+			
+			.margin_center {
+				margin: 0 auto;
+			}
+			
+			.float_left {
+				float: left;
+			}
+			
+			.float_right {
+				float: right;
+			}
+			
+			.pointer {
+				cursor: pointer;
+			}
+			
+			.bold {
+				font-weight: bold;
+			}
+			
+			.overflow {
+				overflow: hidden;
+			}
+			
+			.inline_block {
+				display: inline-block;
+			}
+			
+			.none {
+				display: none;
+			}
+			
+			.text_center {
+				text-align: center;
+			}
+			
+			.text_left {
+				text-align: left;
+			}
+			
+			.text_right {
+				text-align: right;
+			}
+			
+			.line_height {
+				line-height: 25px;
+			}
+			
+			.letter_space {
+				letter-spacing: 1px;
+			}
+			
+			.under_line {
+				height: 1px;
+				background-color: #eee;
+			}
+			
+			.dotted_line {
+				border: 1px dotted #eee;
+			}
+			
+			.clearfloat:after {
+				display: block;
+				clear: both;
+				content: "";
+				visibility: hidden;
+				height: 0
+			}
+			
+			.clearfloat {
+				zoom: 1
+			}
+			
+			.clear {
+				clear: both;
+			}
+				.out-one{
+				width: 100%;
+				min-width: 1200px;
+				height: 380px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/outingA20170412.png) no-repeat;
+			}
+			.out-two{
+				width: 100%;
+				min-width: 1200px;
+				height: 355px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/outingB20170412.jpg) no-repeat;
+			}
+			.out-three{
+				width: 100%;
+				min-width: 1200px;
+				height: 1365px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/outingC20170412.jpg) no-repeat;
+			}
+			.color_0e4d6b{
+				color: #0e4d6b;
+			}
+			.vertical-line{
+				width: 6px;
+				height: 1200px;
+				margin-left: 475px;
+				background-color: rgba(255,255,255,.5);
+			}
+			.red-vertical-line{
+				width: 2px;
+				/*height:42% ;*/
+				position: absolute ;
+				top: 0;
+				left: 2px;
+				background-color: #F44975;
+			}
+			.circleBig{
+				width: 15px;
+				height: 15px;
+				border-radius:50% ;
+				position: absolute;
+				top:-5px;
+				left: -5px;
+			}
+			.single-dotBox{
+				position: absolute;
+			}
+			.circle{
+				width: 10px;
+				height: 10px;
+				border-radius:50% ;
+				position: absolute;
+				top:-5px;
+			}
+			.circle-before{
+				left: 0;
+				
+			}
+			.circle-after{
+				right: 0;
+			}
+			.currentInvest .red-circle{
+				background-color: #F44975;
+			}
+			.white-line{
+				width: 200px;
+				height: 1px;
+				background-color: #fff;
+			}
+			.loginText{
+				position: absolute;
+				top: 50px;
+				left: 10px;
+			}
+			.border-box,.border-box-right{
+				width: 266px;
+				height: 134px;
+				border-radius:10px ;
+				border: 1px solid  #fff;
+				position: absolute;
+				top: -65px;				
+			}
+			.border-box{
+				right: -268px;
+			}
+			.border-box-right{
+				left: -268px;
+			}
+			.currentInvest .gary-bg{
+				width: 266px;
+				height: 134px;
+				border-radius:10px ;
+				background-color: rgba(255,255,255,.4);
+				position: absolute;
+				top: 15px;
+				left: 15px;
+			}
+			.cardText{
+				width: 100%;
+				position: absolute;
+				top: 35px;
+				left: 0;
+			}
+			.yiwang,.wuwang,.shiwuwang,.wushiwang{
+				position: absolute;				
+				left: -1px;
+			}
+			.yiwang{
+				top: 160px;
+			}
+			.wuwang{
+				top: 430px;
+			}
+			.shiwuwang{
+				top:690px;
+			}
+			.wushiwang{
+				top:950px;
+			}
+			.numMoney{
+				position: absolute;
+				top: -35px;
+				left: 75px;
+			}
+			.liangwang,.shiwang,.ershiwang,.yibaiwang{
+				position: absolute;				
+				right: -2px;
+			}
+			.liangwang{
+				top: 300px;
+			}
+			.shiwang{
+				top: 560px;
+			}
+			.ershiwang{
+				top:820px
+			}
+			.yibaiwang{
+				top:1080px
+			}
+			.footer {
+				width: 100%;
+				font-size: 14px;
+				color: #999;
+				text-align: center;
+				min-width: 1200px;
+				background-color: #e6e6e6;
+			}				
+			.footer p {
+				padding: 40px 0;
+			}

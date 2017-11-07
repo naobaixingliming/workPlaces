@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin:0 ;
+				font-family: "microsoft yahei";
+			}
+			ul li{
+				list-style: none;
+			}
+			#cover {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.8);
+				/*display: none;*/
+				z-index: 1000;
+			}
+			.popup_common{
+				width: 770px;
+				/*height: 396px;*/
+				position: fixed;
+				left:30% ;
+				top: 30%;
+				border-top:5px solid #f44975 ;
+				/*display: none;*/
+				background-color: #fff;
+				border-radius: 5px;
+				z-index: 1001;
+				overflow: hidden;
+			}
+			.popup_common .delele{
+				width: 32px;
+				height: 32px;
+				line-height:32px ;
+				text-align: center;
+				color: #fff;
+				background-color:#f44975 ;
+				position: absolute;
+				top: 0;
+				right: 0;
+				font-size: 32px;
+			}
+			.title_table{
+				display: -webkit-box;
+				display: flex;
+				height: 80px;
+				border-bottom:1px #dcdcdc solid ;
+			}
+			.title_table p{
+				width:180px ;
+				display: inline-block;
+				float: left;
+				line-height: 100px;
+				flex: 1;
+				-webkit-box-flex: 1;
+				font-size: 20px;
+				color: #333;
+				text-align: center;
+			}
+			.data_list{
+				height:308px ;
+				margin-top:20px ;
+				overflow: auto;
+				
+			}
+			.data_list li{
+				display: -webkit-box;
+				display: flex;
+				padding: 15px 0;			
+			}
+			.data_list li p{
+				width:180px ;
+				display: inline-block;
+				float: left;
+				flex: 1;
+				-webkit-box-flex: 1;
+				text-align: center;
+				font-size: 16px;
+				color: #666;
+			}
+			.redFont{
+				color: #f5567f!important;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="cover"></div>
+		<div class="popup_capital popup_common">
+			<div class="delele">
+				×
+			</div>
+			<div class="title_table">
+				<p>还款日期   </p>
+				<p>应还本金   </p>
+				<p>应还利息    </p>
+				<p>操作   </p>
+			</div>
+			<ul class="data_list">
+				<li><p>2016/9/28</p> <p>0元</p> 		<p>100元</p> 	<p><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>100元</p>	 <p>100元</p> 	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>100元</p> 	<p>100元</p> 	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>100元</p> 	<p>1000元</p>	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>0元</p> 		<p>1000元</p> 	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>0元</p> 		<p>100元</p> 	<p><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>100元</p>	 <p>100元</p> 	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>100元</p> 	<p>100元</p> 	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>100元</p> 	<p>1000元</p>	<p ><a href="#" class="redFont">还款>></a></p></li>
+				<li><p>2016/9/28</p> <p>0元</p> 		<p>1000元</p> 	<p ><a href="#" class="redFont">还款>></a></p></li>
+			</ul>
+		</div>
+		
+	</body>
+</html>

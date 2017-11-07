@@ -1,0 +1,88 @@
+.h-145 {
+	height: 145px;
+}
+
+.line-height-145 {
+	line-height: 145px;
+}
+
+.mar-left-100 {
+	margin-left: 100px;
+}
+
+.mar-right-130 {
+	margin-right: 130px;
+}
+
+.mar-top-10 {
+	margin-top: 10px;
+}
+
+.mar-left-right-50 {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.hoverEle div.h-80:hover {
+	background-color: #fafafa;
+}
+
+.titleText {
+	color: #333;
+	font-size: 18px;
+	margin-left: 40px;
+	padding: 55px 0;
+}
+
+.guideImg {
+	width: 734px;
+	height: auto;
+}
+
+.titleText1 {
+	padding: 30px 0;
+	line-height: 30px;
+	color: #333;
+	font-size: 18px;
+	margin-left: 40px;
+}
+.titleText2{
+	padding: 20px 0;
+	line-height: 30px;
+	color: #333;
+	font-size: 18px;
+	margin-left: 70px;
+}
+
+.backCom{
+	border: 1px solid #F44975;
+	padding: 5px 10px;
+	border-radius:20px ;
+	font-size: 16px;
+	color: #F44975;
+	position: absolute;
+	bottom: 10px;
+	right: 50px;
+}
+.h-100{
+	height: 100px;
+}
+.line-height-100{
+	line-height: 100px;
+}
+.newbieGuideImg{
+	width: 100%;
+	height: 280px;
+	background: url(https://images-web.newnewbank.com/web_investorEducation20170520.jpg) no-repeat;
+}
+.newbieGuideImg2{
+	width: 100%;
+	height: 280px;
+	background: url(https://images-web.newnewbank.com/web_newbieGuide20170520.jpg) no-repeat;
+}
+.font_36{
+	font-size: 36px;
+}
+.color_7fd5e6{
+	color: #7fd5e6;
+}

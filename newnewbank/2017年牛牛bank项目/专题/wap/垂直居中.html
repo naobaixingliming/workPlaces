@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>垂直水平居中</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.red-circle-border {
+				width: 60px;
+				height: 60px;
+				border: 1px solid #F44975;
+				border-radius: 50%;
+				color: #F44975;
+				/*text-align: center;*/
+				float: left;
+			}
+			
+			.flex_center {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.lifeIcon {
+				width: 35px;
+				height: 32px;
+				background: url(img/1.png) no-repeat;
+			}
+			
+			.flex-parent {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.flex-child {
+				flex: 1;
+				-webkit-flex: 1;
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			.red-circle {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: #e14b4a;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<span class="red-circle-border flex_center">
+		        <i class=""><em>2</em></i>
+		    </span>
+			<span class="red-circle-border flex_center">
+		        <i class="lifeIcon"></i>
+		    </span>
+		</div>
+
+		<ul class="flex-parent  flex_center color_666 font_20 paddint-top-bottom-15">
+			<li class="flex-child text_center"><i class="red-circle">1</i></li>
+			<li class="flex-child">151****1714</li>
+			<li class="flex-child color_333" style="padding: 0 .8rem;"><i class="bindBtn">助我上榜</i></li>
+		</ul>
+
+	</body>
+
+</html>

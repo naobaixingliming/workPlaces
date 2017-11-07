@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>加息福利大派送</title>
+		<link rel="stylesheet" type="text/css" href="css/interestRateHike.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode relative">
+			<!--popup start-->
+			<div class="">
+				<div class="cover "></div>
+				<div class="text_center box-popup box-popup-1 none">
+					<i class="protrait"></i>
+					<p class="color_333 font_24 ">您未符合领取资格</p>
+					<i class="deleteBtn delete-red"></i>
+				</div>
+				<div class="text_center box-popup box-popup-2 none">					
+					<i class="deleteBtn delete-black"></i>
+					<p class="color_694602 font_30 padding-top-80">您已领取加息福利</p>
+					<p class="color_694602" style="margin: 10px auto;"><i class="font_24">+</i><i class="font_60 arial">1</i><i class="font_36">％</i></p>
+					<i class="font_20 titltText color_694602 bgColor_faa208" style="border: 0;">加息券</i>
+					<a class="lookBtn font_24 color_ffcf6d" href="">查看</a>
+					<p class="font_12 color_694602" style="padding-top: 20px;">可前往“个人中心”-“我的优惠券”-“加息券”中查询</p>
+				</div>
+				<div class="text_center box-popup box-popup-3 ">					
+					<i class="deleteBtn delete-black"></i>
+					<p class="color_694602 font_30 padding-top-80">恭喜您成功领取</p>
+					<p class="color_694602" style="margin: 10px auto;"><i class="font_24">+</i><i class="font_60 arial">1</i><i class="font_36">％</i></p>
+					<i class="font_20 titltText color_694602 bgColor_faa208" style="border: 0;">加息券</i>
+					<a class="lookBtn font_24 color_ffcf6d" href="">立即使用</a>
+					<p class="font_12 color_694602" style="padding-top: 20px;">可前往“个人中心”-“我的优惠券”-“加息券”中查询</p>
+				</div>
+				
+			</div>
+			<!--popup end-->
+			<i class="yellow-bottom"></i>
+			<i class="yellow-top-left"></i>
+			<i class="yellow-top-right"></i>
+			<div class="w_1200 margin_center relative min-h-1250">
+				<i class="showdomImg"></i>
+				<i class="starImg"></i>					
+				<i class="yellow-circle circle-1"></i>
+				<i class="yellow-circle circle-2"></i>
+				<i class="yellow-circle circle-3"></i>
+				<i class="yellow-circle circle-4"></i>
+				<i class="yellow-circle circle-5"></i>
+				<div class="relative z-index-4">
+					<p class="text_center padding-top-60"><i class=" titleIcon"></i></p>
+					<p class="text_center" style="margin-top: -80px;"><i class="font_24 color_fff border-yellow">满足条件 领加息券</i></p>
+					<div class="mainImg relative">
+						<i class="starImg-1"></i>
+						<i style="font-size: 140px;font-family: impact;color:#fbdeb0;padding: 170px 0 0 310px;" >1  %</i>
+						<a class="getBtn font_30" href="javascript:;">点击领取</a>
+						<p class="font_20 color_d08707 text_center" style="position: absolute;width: 90%;bottom: 80px;">2017年9月18日-9月30日</p>
+					</div>	
+					<div class="color_fff inline_block" style="margin-left: 320px;margin-top: -20px;padding-bottom: 138px;">
+						<i class="font_22 titltText">活动内容</i>
+						<p class="font_18 line_height">
+						1.    活动时间：2017年9月18日-9月30日；</br>
+						2.   满足条件的客户在活动期间可以领取一张1%加息券；</br>
+						3.   领取条件：</br>
+							<span class="padding-left-80">
+			                     1）活动期间新注册的用户；</br>
+			                     2）活动开始前，在牛牛bank平台注册未投资的用户；</br>
+			                     3）截止9月1日00:00之前，账户总资产少于5000元的用户；
+		                     </span></br>
+						4.   加息券投资上限1万元，投资期限30天以上；
+						
+						</p>												
+					</div>
+				</div>
+			</div>
+						
+			<div class="footer" style="background-color: #f88d1a;padding: 35px 0;">
+				<div class="w_1200 margin_center text_center ">
+					<p class="font_14 color_c05504">
+						2017牛牛bank All Rights Reserved</br>
+						活动最终解释权归深圳市金牛牛互联网金融服务有限公司所有
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript">
+			$('.deleteBtn').on('click',function(){
+				$(this).parent('.box-popup').hide();
+				$('.cover').hide();
+			});
+			$('.getBtn').on('click',function(){
+				$('.cover,.box-popup-1').show();
+			})
+						
+		</script>
+	</body>
+
+</html>

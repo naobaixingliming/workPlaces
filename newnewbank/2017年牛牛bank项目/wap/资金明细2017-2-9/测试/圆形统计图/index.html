@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		
+	</head>
+
+	<body>
+		<div id="chart">
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="jquery.piegraph.js"></script>
+		<script>
+			$("#chart").chart({
+				data: new Array(200, 400, 450),
+				labels: new Array("可用余额", "待收本金", "募集期资金"),
+				width: 400
+			});
+		</script>
+
+	</body>
+
+</html>

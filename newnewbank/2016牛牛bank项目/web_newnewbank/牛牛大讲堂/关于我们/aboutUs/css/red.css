@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*  关于我们  */
+.aboutUs .au-left-menu{border-top: 2px solid #f44975;}
+.aboutUs .menu-title{color: #f44975;}
+.aboutUs .au-left-menu a{color: #333333;}
+.aboutUs .au-left-menu a:hover,.aboutUs .au-left-menu a.active{color:#FFFFFF; background-color:#f44975;}
+.aboutUs .au-title h3{color:#FFFFFF; background-color:#f44975;}
+.aboutUs .au-big-box01 p a{color:#f44975;}
+.aboutUs .leader-name span{color: #FFFFFF; background-color: #7dbdd0;}
+.aboutUs .jobs-name a.active{color:#f44975; border-left: 2px solid #f44975; border-right:1px solid #FFFFFF;}
+.aboutUs .jobs-name a.active:hover{background:#FFFFFF;}
+.aboutUs .star-pro-list .col03 a.btn-a1{color: #FFFFFF; background-color: #f44975;}
+.aboutUs .star-pro-list .col03 a.btn-a1:hover{background-color: #de3c66;}
+.aboutUs .star-pro-list .col03 a.btn-a2{color: #999999; background-color: #FFFFFF;}
+.aboutUs .star-pro-list .col03 a.btn-a2:hover{border:1px solid #f44975; color: #f44975;}
+.aboutUs .col02 p strong{color: #f44975;}
+.aboutUs .col02 p span{color: #f44975;}

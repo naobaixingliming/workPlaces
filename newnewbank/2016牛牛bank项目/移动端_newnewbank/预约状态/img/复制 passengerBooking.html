@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>我的预约状态</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}	
+			a:hover{
+				text-decoration: none;
+			}		
+			#root {
+				min-height: 1600px;
+				width: 640px;
+				background-color: #f3f3f3;
+				/*padding-bottom: 2.5rem;*/
+			}
+			.headerText{
+				height: 70px;
+				line-height: 70px;
+				padding-left: 35px;
+				background-color: #fff;
+			}			
+			.headerText p{
+				display: inline-block;
+				font-size: 24px;
+				color: #999;
+			}
+			.editIcon{
+				display: inline-block;
+			    width: 34px;
+			    height: 28px;
+			    float: right;
+			    margin-right: 38.4px;
+			    margin-top: 20px;
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/edit20161212.png) no-repeat;
+			    background-size: 34px 28px;
+			}
+			.headRed{
+				width: 640px;
+				height: 310px;
+				background: #f54a43;
+				overflow: hidden;
+			}
+			.headRed .fontS_24{
+				font-size: 24px;
+				padding-left: 35px;
+				color: #fff;
+				margin: 28px 0 45px;
+			}
+			.headRed .trip{
+				width:500px ;
+				height: 86px;
+				margin:0 auto ;				
+			}
+			.headRed .trip span:first-child,.trip span:last-child{
+				display: inline-block;
+				width:86px ;
+				height: 86px;				
+			}
+			.headRed .trip span:first-child{
+				float: left;
+				background:url(img/setOut20161213.png) no-repeat ;
+				background-size:86px  86px;
+			}
+			.headRed .trip span:last-child{
+				float: right;
+				background:url(img/destination20161213.png) no-repeat ;
+				background-size:86px  86px;
+			}			
+			.date{
+				display: inline-block;
+			    text-align: center;
+			    font-size: 18px;
+			    color: #fff;
+			    margin-top: 10px;
+			    margin-left: 18px;
+			}
+			.date p:first-child{
+				padding-bottom:5px ;
+			}
+			.date p:last-child{
+				padding-top:5px ;
+			}
+			.date .rectangularLine{
+				width: 294px;
+				height: 5px;
+				background-color:#cb3630 ;
+			}
+			.place{
+				margin-top: 20px;  
+			}
+			.place .placeText{
+				font-size: 20px;
+				color: #fff;
+				display: inline-block;
+				text-align: center; 				
+			}
+			.place .placeText1{
+				float: left;
+				margin-left: 60px;
+			}
+			.place .placeText2{
+				float: right;
+				margin-right: 60px;
+			}
+			
+			.onePage{
+				margin-top:16px;
+				background-color: #fff;
+			}
+			.tieleLine{
+				height: 78px;
+				line-height:78px ;
+				border-bottom: 1px #eee solid;
+			}
+			.arrow{
+				display: inline-block;
+			    width: 15px;
+			    height: 15px;
+			    border-top: 2px solid #999;
+			    border-left: 2px solid #999;
+			    margin-right: 55px;
+			    margin-top: 35px;
+			    float: right;
+			}
+			.arrowLeft{				
+			    moz-transform: rotate(135deg);
+			    -webkit-transform: rotate(135deg);
+			    -o-transform: rotate(135deg);
+			    transform: rotate(135deg);
+			}
+			.arrowUp{
+				moz-transform: rotate(45deg);
+			    -webkit-transform: rotate(45deg);
+			    -o-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+			.fs24_c9{
+				font-size: 24px;
+				color: #999;
+				padding-left:30px ;
+			}
+			.fs18_cf6a84e{
+				font-size: 18px;
+				color: #f6a84e;
+			}
+			.personInfo{
+				width: 60%;
+				display: inline-block;
+				font-size: 24px;
+			}
+			.sex{
+				margin-top: 25px;
+				color: #000;
+				
+			}
+			.tel{
+				color: #999;
+				padding-top: 10px;
+			}
+			
+			.rightBox{
+				margin-left: 90px;
+			    padding-bottom: 25px;
+			    border-bottom: 1px #eee solid;
+			}
+			.rightBoxNot{
+				margin-left: 90px;
+			    padding-bottom: 25px;
+			}
+			.line .editIcon{
+				margin-top: 50px;
+				float: left;
+				margin-left: 30px;
+			}
+			.fL {
+				display: inline-block;
+   				width: 80px;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			}
+			.maleIcon, .famaleIcon {
+			    display: inline-block;
+			    width: 23px;
+			    height: 23px;
+			    /*float: right;*/
+			    /*margin-right: 200px;*/
+			    /*margin-top: 5px;*/
+			}
+			.maleIcon {
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/male20161209.jpg) no-repeat;
+			    background-size: 23px 23px;
+			}
+			.famaleIcon {
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/female20161209.png) no-repeat;
+			    background-size: 23px 23px;
+			}
+			.notCertified{
+				display: inline-block;
+				width:100px ;
+				height: 34px;
+				text-align: center;
+				line-height: 34px;
+				color: #f7af65;
+				border:1px solid #f7af65 ;
+				font-size: 18px;
+				border-radius:5px ;
+				float: right;
+				margin-top: 45px;
+    			margin-right: 40px;
+			}
+			.already {
+				float: right;
+			    margin-top: 70px;
+			    margin-right: 40px;
+			    display: inline-block;
+			    color: #63b1ee;
+			    font-size: 18px;
+			}
+			.alreadyUploaded {
+			    display: inline-block;
+			    width: 24px;
+			    height: 24px;
+			    background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/certified20161209.png) no-repeat;
+			    background-size: 24px 24px;
+			    float: right;
+			    /*margin-top: 30px;*/
+			    margin-left: 10px;
+			}
+			.identityCard{
+				color: #999;
+				padding-top: 10px;
+			}
+			
+			.twoPage{
+				background: #fff;
+				margin-top:10px ;
+			}
+			.red{
+				font-size: 24px;
+				color: #f54a43;
+			}
+			.page{
+				float: right;
+			    margin-right: 40px;
+			    display: inline-block;
+			    font-size: 20px;
+			    color: #999;
+			}
+			.together{
+				float: right;
+			    margin-right:40px;
+			    margin-top: 5px;
+			    font-size: 20px;
+			    color: #f54a43;
+			}
+			.invitation{
+				 
+			}
+			.twoPageLine{
+				margin-left: 30px;
+			    border-bottom: 1px #eee solid;
+			    margin-right: 20px;				
+			}
+			.rightBtn{
+				float: right;
+				margin-top: 25px;
+    			margin-right: 10px;
+    			display: inline-block;
+			}
+			.commomBox{
+				width:150px ;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 24px;
+				border-radius:5px ;
+			}
+			.agree{								
+				color: #fff;
+				background-color:#f54a43 ;		
+			}
+			.link{
+				border:1px solid #f54a43 ;				
+				color: #f54a43;	
+				margin-top: 10px;					
+			}
+			.phoneNumber,.licenseNumber{
+				padding-top:10px ;
+				font-size: 18px;
+				color: #999;
+			}
+			.carPhoto{
+				display: inline-block;
+			    width: 98px;
+			    height: 98px;
+			    margin-top: 30px;
+			    margin-right: 20px;
+			    float: left;
+			    border-radius: 50%;
+			    background: url(img/smallCar20161213.jpg) no-repeat;
+			    background-size: 98px 98px;
+			}
+			.nullSeat{
+				width: 70%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				display: inline-block;
+				margin-left: 30px;
+			    padding-bottom: 25px;
+			    font-size: 20px;
+			}
+			.horizontalLine{
+				display: inline-block;
+				width:50px ;
+				height: 1px;
+				background: #666;
+				margin: 5px 8px;
+			}			
+			.placeBlack{
+				color: #000;
+				padding-top: 10px;
+			}
+			.gray{
+				margin-left: 10px;
+				color: #999;
+			}		
+			.threePage{
+				background: #fff;
+				margin-top:10px ;
+			}
+			.threePage .horizontalLine{
+				background: #999;
+			}
+			.place_gray{
+				color: #999;
+			}
+			.goToeach{
+				float: right;
+			    border: 1px solid #f54a43;
+			    color: #f54a43;
+			    margin-top: 40px;
+				margin-right: 30px;
+			    width: 110px;
+			    height: 40px;
+			    text-align: center;
+			    line-height: 40px;
+			    font-size: 20px;
+			    border-radius: 5px;
+			}
+			.line{
+				border-bottom: 1px #eee solid;
+			}
+			.seek{
+				margin-left:10px ;
+			}
+			.none{
+				display: none;
+			}
+		</style>
+		<style type="text/css">
+			#cover {
+				width: 640px;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .8);
+				z-index:10 ;
+				display: none;
+			}
+			/*--弹框  start--*/			
+			.popup {			
+				position: fixed;
+				top: 15%;				
+				z-index:20 ;
+				background-color:#fff ;
+				border-radius:5px ;				
+			}
+			.bombBox{
+				left: 6%;
+				width: 530px;
+				height:290px ;
+				text-align: center;
+				font-size: 26px;
+				display: none;
+			}
+			.notice{
+				margin-top:60px ;
+				color: #f54a43;
+			}
+			.forConfirmation{
+				margin: 20px 0 30px;
+				color: #000;
+			}
+			.wait{				
+				width:200px ;
+				height: 54px;
+				line-height:54px ;
+				border:1px solid #999 ;
+				border-radius:5px ;
+				color: #999;
+				margin: 0 auto;
+			}
+			
+			.bombBox2{
+				width:600px;
+				left: 2%;
+				display: none;
+			}
+			.lineTop{
+				border-top:1px solid #eee ;
+				border-bottom:1px solid #eee ;
+			}
+			.marLeft{
+				margin-left: 20px;
+			}
+			.bombRight{
+				width: 85%;
+   				height: 154px;
+   				padding-bottom:0;
+			}
+			.lastLine{
+				color: #f54a43;
+				font-size: 18px;
+				height: 75px;
+				line-height: 75px;
+				padding-left: 30px;
+			}
+			.peer{
+				float: right;
+			    border: 1px solid #f54a43;
+			    color: #f54a43;
+			    margin-top: 18px;
+			    margin-right: 30px;
+			    width: 140px;
+			    height: 40px;
+			    text-align: center;
+			    line-height: 40px;			    
+			    border-radius: 5px;
+			}
+			.rightTel{
+				float: right;
+			    border-left: 1px solid #eee;
+			    width: 150px;
+			    line-height: 170px;
+			    text-align: center;
+			    height: 100%;
+			}
+			.rightTel img{
+				width: 40px;
+				height: 40px;
+			}
+			.bombBox3{
+				display: none;
+				left: 6%;
+				width: 530px;
+				height:350px ;
+				text-align: center;
+			}
+			.noticeArgee{
+				margin-top: 60px;
+				color: #f54a43;
+				font-size: 28px;
+			}
+			.fs_22{
+				font-size: 22px;
+				color: #666;
+			}
+			.realNameAuthenticate{
+				width:300px ;
+				height: 60px;
+				line-height:60px ;
+				background-color:#f54a43 ;
+				border-radius:5px ;
+				font-size: 24px;
+				color: #fff;
+				margin: 0 auto;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="../一起回家/css/footer.css"/>
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  1  start-->
+			<div class="popup bombBox">
+				<p class="notice">您的一起回家申请已通知车主</p>
+				<p class="forConfirmation">正在等待车主确认</p>
+				<p class="wait">请耐心等候</p>
+			</div>
+			<!--弹框  1  end-->
+			<!--弹框  2  start-->
+			<div class="popup bombBox2">
+				<span class="carPhoto marLeft"></span>
+				<div class="rightBoxNot bombRight">
+					<div class="personInfo">
+						<div class="sex male">
+							<span class="fL">刘小牛</span>
+							<span class="maleIcon invitation"></span>
+						</div>
+						<div class="phoneNumber">电   话：180****1234</div>
+						<div class="licenseNumber">车牌号：赣A123***</div>
+					</div>
+					<div class="rightTel">
+						<img  src="img/telphone20161214.png"/>	
+					</div>	
+				</div>
+				
+				<div class="lineTop">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">余2座</span></div>
+						<div class="placeBlack"><span>深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县</span></div>							
+					</div>
+				</div>
+				<div class="lastLine"><span>正在寻找一起回家乘客</span><span class="peer">邀TA同行</span></div>
+			</div>
+			<!--弹框  2  end-->
+			<!--弹框  3  start-->
+			<div class="popup bombBox3">
+				<p class="noticeArgee">您好，您已同意车主刘生的邀请</p>
+				<div class="forConfirmation fs_22">
+					<p class="">为了保障安全出行，确保您的行程成功匹配，</p>
+					<p class="">如24小时内未完成实名认证</p>
+					<p class="">则行程取消或错过最佳匹配时间</p>
+				</div>				
+				<p class="realNameAuthenticate">实名认证</p>
+			</div>
+			<!--弹框  3  end-->
+			<!--1 start -->
+			<div class="header">
+				<div class="headerText">
+					<p>您好，王圈圈  18018018000</p>
+					<span class="editIcon"></span>
+				</div>
+				<div class="headRed">
+					<p class="fontS_24">您已申请的行程如下</p>
+					<div class="trip">
+						<span></span>
+						<div class="date">
+							<p>2017/01/23-25日</p>
+							<p class="rectangularLine"></p>
+							<p>行程待确定</p>
+						</div>
+						<span></span>
+					</div>
+					<div class="place">
+						<div class="placeText placeText1">
+							<p>广东省深圳市</p>
+							<p>南山区</p>
+						</div>
+						<div class="placeText placeText2">
+							<p>江西省九江市</p>
+							<p>湖口县</p>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--1 end -->
+			<!--onePage start -->
+			<div class="onePage">
+				<p class="tieleLine">
+					<span class="fs24_c9">完善乘车人信息</span>
+					<span class="fs18_cf6a84e">（完成实名认证后确定行程）</span>
+					<span class="arrow arrowUp"></span>
+				</p>
+				<div class="toggle">
+					<div class="line ">					
+						<span class="editIcon"></span>
+						<div class="rightBox">
+							<div class="personInfo">
+								<div class="sex male"><span class="fL">王圈圈</span><span class="famaleIcon"></span></div>
+								<div class="tel">手机号 &nbsp;&nbsp;18018188000</div>
+							</div>
+							<div class="notCertified">
+								未认证
+							</div>
+							<div class="already uploadedName none">已认证<span class="alreadyUploaded"></span></div>
+						</div>
+					</div>	
+					<div class="line">					
+						<span class="editIcon"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male"><span class="fL">刘小牛</span><span class="maleIcon"></span></div>
+								<div class="tel">手机号 &nbsp;&nbsp;18018188000</div>
+								<div class="identityCard">身份证  &nbsp;&nbsp;3600001999****</div>
+							</div>
+							<div class="notCertified none">
+								未认证
+							</div>
+							<div class="already uploadedName ">已认证<span class="alreadyUploaded"></span></div>
+						</div>
+					</div>			
+				</div>				
+			</div>
+			<!--onePage end -->
+			<!--twoPage start -->
+			<div class="twoPage">
+				<div class="tieleLine">
+					<span class="fs24_c9">邀请通知</span>
+					<span class="red">（3条）</span>
+					<p class="page"><span class="lastOne">上一条 </span>  |  <span class="nextOne">下一条</span></p>
+				</div>
+				<div class="pageBlock">					
+					<div class="line twoPageLine">					
+						<span class="carPhoto"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male">
+									<span class="fL">刘小牛</span>
+									<span class="maleIcon invitation"></span>
+									<span class="together">邀您一起回家</span>	
+								</div>
+								<div class="phoneNumber">电   话：180****1234</div>
+								<div class="licenseNumber">车牌号：赣A123***</div>
+							</div>
+							<div class="rightBtn">
+								<div class="agree commomBox">同意</div>
+								<div class="link commomBox">联系TA</div>
+							</div>
+							
+						</div>
+					</div>	
+					<div class="line">					
+						<div class="nullSeat">							
+							<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">余2座</span></div>
+							<div class="placeBlack"><span>深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县</span></div>							
+						</div>
+					</div>
+					
+				</div>				
+		
+			</div>
+			<!--twoPage end -->
+			<!--threePage start -->
+			<div class="threePage">
+					<div class="tieleLine">
+					<span class="fs24_c9">与您匹配的车主</span>					
+				</div>
+				<div class="line">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">2017/1/24出发   </span> <span class="seek">  空2座位</span></div>
+						<div class="placeBlack place_gray"><span>（深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县）</span></div>							
+					</div>
+					<div class="goToeach">一起回家</div>
+				</div>
+				<div class="line">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">2017/1/24出发   </span> <span class="seek">  找乘客2名</span></div>
+						<div class="placeBlack place_gray"><span>（深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县）</span></div>							
+					</div>
+					<div class="goToeach">一起回家</div>
+				</div>	
+				<div class="line">					
+					<div class="nullSeat">							
+						<div class="sex male"><span class="goDate">2017年1月24日  </span><span class="gray">2017/1/24出发   </span> <span class="seek">  找乘客1名</span></div>
+						<div class="placeBlack place_gray"><span>（深圳南山区  </span><span class="horizontalLine"></span>  <span>江西省九江市彭泽县）</span></div>							
+					</div>
+					<div class="goToeach">一起回家</div>
+				</div>	
+			</div>
+			<!--threePage end -->
+			
+			<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="icon home"></div>一起回家</a>
+						</li>
+						<li class="currentf">
+							<a href="#">
+								<div class="icon money"></div>我的预约</a>
+						</li>
+						<li >
+							<a href="proposal20161212.html">
+								<div class="icon fdj"></div>倡议书</a>
+						</li>
+					</ul>
+				</div>
+			</footer>			
+			
+		</div>
+	<script src="../一起回家/js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function(){
+			//未认证--弹框
+			$('.notCertified').on('click',function(){
+				$('#cover,.bombBox3').css('display','block');
+			});			
+			//车主联系TA--弹框
+			$('.link').on('click',function(){
+				$('#cover,.bombBox2').css('display','block');
+			});			
+			//一起回家--弹框
+			$('.goToeach').on('click',function(){
+				$('#cover,.bombBox').css('display','block');
+			});		
+			//点击覆盖层--弹框消失
+			$('#cover').on('click',function(){
+				$('#cover,.popup').css('display','none');
+			});
+			//箭头--显示与隐藏事件
+			$('.arrow').on('click',function(){
+				$(this).toggleClass('arrowLeft');
+				$(this).toggleClass('arrowUp');
+				$('.toggle').slideToggle(500);
+			});
+			
+			
+			
+		})();
+		
+	</script>
+	</body>
+</html>

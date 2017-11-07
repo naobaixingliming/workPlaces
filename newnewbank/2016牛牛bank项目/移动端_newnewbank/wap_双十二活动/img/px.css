@@ -1,0 +1,421 @@
+* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			/*  覆盖层  start   */
+			
+			#cover {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 640px;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: none;
+				z-index: 1;
+			}
+			/*弹框  start*/
+			
+			.bombBox {
+				display: none;
+			    width: 580px;
+			    height: 357px;
+			    background-color: #fff;
+			    border-radius: 10px;
+			    position: fixed;
+			    top: 120px;
+			    left: 4%;
+			    color: #333;
+			    z-index: 9999;
+			    font-size: 24px;
+			}
+			
+			.bombBox .redGround {
+				line-height: 47px;
+				height: 47px;
+				border-radius: 10px 10px 0 0;
+				background-color: #f44975;
+				color: #fff;
+				margin-bottom: 50px;
+			}
+			
+			.bombBox .redGround span:first-child {
+				margin-left: 200px;
+			}
+			
+			.bombBox .redGround span:last-child {
+				float: right;
+				margin-right: 10px;
+				font-size: 40px;
+			}
+			
+			.bombBox .left20 {
+				margin-top: 30px;
+				margin-left: 60px;
+			}
+			
+			.bombBox .left10 {
+				margin-top: 20px;
+			}
+			
+			.bombBox .inputBg {
+				width: 370px;
+				display: inline-block;
+				background-color: #f1f1f1;
+				border-radius: 5px;
+				color: #999;
+			}
+			
+			.bombBox input {
+				width: 80%;
+				padding: 15px;
+				border-radius: 5px;
+				border: none;
+				background-color: #F1F1F1;
+			}
+			
+			.bombBox a {
+				font-size: 50px;
+				color: #f9a4ba;
+			}
+			/*弹框  end*/
+			
+			#root {
+				width: 640px;
+				height: 3000px;
+				background-color: #ec2a47;
+				z-index: -1;
+			}
+			
+			.header {
+				width: 640px;
+				height: 411px;
+				background: url(img/wap_压缩/wap_head_bannerContent20161208.png) no-repeat;
+				background-size: 640px 411px;
+			}
+			
+			.onePage {
+				margin: 55px 0 40px;
+				line-height: 50px;
+				color: #fff;
+				text-align: center;
+			}
+			
+			.onePage .fontS_36 {
+				font-size: 36px;
+			}
+			
+			.onePage .fontS_18 {
+				font-size: 18px;
+			}
+			
+			.twoPage {
+				width: 90%;
+				height: 182px;
+				background-color: #fb4c6a;
+				border-radius: 91px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.leftBox,
+			.rightBox {
+				display: inline-block;
+				float: left;
+				margin-left: 40px;
+			}
+			
+			.leftBox .noLogin {
+				line-height: 182px;
+				font-size: 30px;
+				color: #fff;
+			}
+			
+			.leftBox a {
+				color: #ffe700;
+			}
+			
+			.rightBox {
+				margin-left: 50px;
+				margin-top: 24px;
+				width: 136px;
+				height: 136px;
+				border-radius: 68px;
+				background-color: #d5203a;
+			}
+			
+			.rightBox p:first-child {
+				width: 49px;
+				height: 57px;
+				margin: 20px 40px 10px;
+				background: url(img/wap_压缩/wap_calculation20161208.png) no-repeat;
+				background-size: 49px 57px;
+			}
+			
+			.consultation {
+				color: #fff;
+				font-size: 18px;
+				text-align: center;
+			}
+			
+			.login {
+				display: none;
+				float: left;
+			}
+			
+			.login .user {
+				color: #fff;
+				font-size: 22px;
+			}
+			
+			.login .text_20 {
+				font-size: 20px;
+				color: #ffe700;
+			}
+			
+			.login .text_24 {
+				color: #FFE700;
+				font-size: 24px;
+				text-align: center;
+			}
+			
+			.login a {
+				color: #FFE700;
+				font-size: 35px;
+			}
+			
+			.login p:first-child {
+				margin-top: 50px;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.mainContent {
+				width: 625px;
+				height: 1750px;
+				background: url(img/wap_压缩/wap_curvedLine20161208.png) no-repeat;
+				background-size: 625px 1672px;
+				margin: -25px auto;
+			}
+			
+			.common {
+				width: 90%;
+			}
+			
+			.twentyCash {
+				position: relative;
+				top: 80px;
+			}
+			
+			.cashIcon {
+				width: 217px;
+				height: 159px;
+				margin-left: 50px;
+				background: url(img/wap_压缩/wap_cashCoupon20161208.png) no-repeat;
+				background-size: 217px 159px;
+			}
+			
+			.cashIcon,
+			.textExplain {
+				float: left;
+			}
+			
+			.cashIcon p:first-child {
+				text-align: center;
+			}
+			
+			.cashIcon p:first-child .fontS_33 {
+				font-size: 33px;
+				color: #c12417;
+				font-weight: bolder;
+			}
+			
+			.cashIcon p:first-child .fontS_28 {
+				font-size: 28px;
+				color: #c12417;
+				font-weight: bold;
+			}
+			
+			.cashIcon .fontS_24 {
+				color: #c12417;
+				font-size: 24px;
+				text-align: center;
+			}
+			
+			.textExplain {
+				margin-top: 20px;
+				margin-left: 50px;
+				font-size: 22px;
+				line-height: 35px;
+			}
+			
+			.fs22Cfff {
+				color: #fff;
+			}
+			
+			.fs22Cffe700 {
+				color: #ffe700;
+			}
+			
+			.fiftyCash {
+				position: relative;
+				top: 140px;
+			}
+			
+			.fiftyCash .cashIcon,
+			.fiftyCash .textExplain {
+				float: right;
+			}
+			
+			.coffeeMachine {
+				float: left;
+				width: 217px;
+				height: 190px;
+				margin-top: -25px;
+				background: url(img/wap_压缩/wap_coffeeMachine20161208.png) no-repeat;
+				background-size: 217px 190px;
+			}
+			
+			.twoHundredCash {
+				position: relative;
+				top: 210px;
+			}
+			
+			.twoHundredCash .cashIcon {
+				margin-left: 80px;
+			}
+			
+			.fontS_24_T {
+				position: absolute;
+				top: 20px;
+				left: 300px;
+				font-size: 24px;
+				color: #ffe700;
+			}
+			
+			.textExplain1 {
+				text-align: center;
+				font-size: 22px;
+				margin-top: 15px;
+				line-height: 40px;
+			}
+			
+			.fiveHundredCash {
+				position: relative;
+				top: 310px;
+			}
+			
+			.fiveHundredCash .cashIcon {
+				margin-left: 80px;
+			}
+			
+			.fs22Cffe700:hover {
+				text-decoration: none;
+			}
+			
+			.warmer {
+				float: left;
+				width: 217px;
+				height: 185px;
+				margin-top: -25px;
+				background: url(img/wap_压缩/wap_warmer20161208.png) no-repeat;
+				background-size: 217px 185px;
+			}
+			
+			.oneThousandTwohundredCash {
+				position: relative;
+				top: 395px;
+			}
+			
+			.oneThousandTwohundredCash .cashIcon {
+				margin-left: 80px;
+			}
+			
+			.waterPurifier {
+				float: left;
+				width: 216px;
+				height: 169px;
+				margin-top: -10px;
+				background: url(img/wap_压缩/wap_waterPurifier20161208.png) no-repeat;
+				background-size: 216px 169px;
+			}
+			
+			.immediateInvestment {
+				height: 90px;
+				width: 454px;
+				background: #ffb235;
+				border-radius: 45px;
+				box-shadow: 0 10px 3px #d5203a;
+				margin-top: 510px;
+				margin-left: 60px;
+			}
+			
+			.immediateInvestment a {
+				text-align: center;
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				line-height: 90px;
+				border-radius: 45px;
+				color: #d5203a;
+				font-size: 36px;
+			}
+			
+			.textScript {
+				padding-left: 20px;
+				margin-top: 50px;
+				color: #fff;
+			}
+			
+			.textScript .activityIntroduction {
+				font-size: 24px;
+				margin-bottom: 35px;
+			}
+			
+			.textScript .activityIntroduction span {
+				float: right;
+				margin-right: 50px;
+				margin-top: 20px;
+				display: inline-block;
+				width: 456px;
+				height: 1px;
+				background-color: #fff;
+			}
+			
+			.textScript .fontS_20 {
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+			
+			.textScript .fontS_20:before {
+				margin-right: 10px;
+				display: inline-block;
+				content: '';
+				width: 16px;
+				height: 16px;
+				border: 1.5px solid #FFB235;
+				border-radius: 8px;
+			}
+			
+			.footer {
+				line-height: 30px;
+			    overflow: hidden;
+			    margin-top: 55px;
+			    width: 640px;
+			    font-size: 16px;
+			    color: #fff;
+			    text-align: center;
+			    height: 96px;
+			    background-color: #d5203a;
+			}			
+			.footer p {
+				margin-top: 25px;
+			}

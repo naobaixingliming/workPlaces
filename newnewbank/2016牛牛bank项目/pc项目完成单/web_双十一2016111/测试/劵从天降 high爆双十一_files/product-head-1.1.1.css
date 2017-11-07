@@ -1,0 +1,541 @@
+@charset "UTF-8";
+/*CSS reset*/
+body, div, table, tr, td, th, h1, h2, h3, h4, h5, h6, form, input, label, select, textarea, p, ul, ol, li, dl, dd, dt, img, dfn {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0 none;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+em, i, dfn {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  outline: none;
+}
+
+i {
+  _font-size: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*======清楚浮动======*/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clear {
+  height: 0px;
+  clear: both;
+  font-size: 0px;
+  line-height: 0px;
+  zoom: 1;
+}
+
+/*======透明======*/
+.opacity {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+/*======显示、隐藏======*/
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei","Lucida Sans Unicode","Myriad Pro","Hiragino Sans GB","Heiti SC";
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*======浮动======*/
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap1180 {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*======按钮动画======*/
+[btn-triggle="expandDown"], [btn-triggle="expandUp"], [btn-triggle="expandLeft"], [btn-triggle="expandRight"] {
+  position: relative;
+  z-index: 1;
+}
+
+[btn-triggle="expandDown"] em, [btn-triggle="expandUp"] em, [btn-triggle="expandLeft"] em, [btn-triggle="expandRight"] em {
+  position: relative;
+  z-index: 1;
+}
+
+[btn-triggle="expandDown"]:after, [btn-triggle="expandUp"]:after, [btn-triggle="expandLeft"]:after, [btn-triggle="expandRight"]:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  background: rgba(51, 51, 51, 0.1);
+}
+
+/*动画背景*/
+[btn-triggle="expandDown"]:after, [btn-triggle="expandUp"]:after {
+  width: 100%;
+  height: 0;
+  left: 0;
+}
+
+[btn-triggle="expandUp"]:after {
+  top: 0;
+}
+
+[btn-triggle="expandDown"]:after {
+  bottom: 0;
+}
+
+[btn-triggle="expandDown"]:hover:after, [btn-triggle="expandDown"]:active:after, [btn-triggle="expandUp"]:hover:after, [btn-triggle="expandUp"]:active:after {
+  height: 100%;
+}
+
+[btn-triggle="expandLeft"]:after, [btn-triggle="expandRight"]:after {
+  width: 0;
+  height: 100%;
+  top: 0;
+}
+
+[btn-triggle="expandRight"]:after {
+  right: 0;
+}
+
+[btn-triggle="expandLeft"]:after {
+  left: 0;
+}
+
+[btn-triggle="expandLeft"]:hover:after, [btn-triggle="expandLeft"]:active:after, [btn-triggle="expandRight"]:hover:after, [btn-triggle="expandRight"]:active:after {
+  width: 100%;
+}
+
+/*btn end*/
+body {
+  _background-attachment: fixed;
+  _background-image: url(about:blank);
+}
+
+.shadow,.shadow4 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000000;
+  opacity: .8;
+  filter: alpha(opacity=80);
+  z-index: 999;
+  display: none;
+}
+
+.product-head-wrap {
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  top: 0px;
+  z-index: 20;
+}
+.product-head-wrap .product-head-box {
+  width: 1200px;
+  min-width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+  position: relative;
+}
+.product-head-wrap .product-head-box .left-logo {
+  width: 226px;
+  height: 88px;
+  position: absolute;
+  top: 22px;
+  left: 16px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/logo_write_20160415.png) no-repeat 50% 50%;
+  background-size: 100% 100%;
+}
+.product-head-wrap .product-head-box .product-nav-wrap {
+  position: absolute;
+  right: 0px;
+  top: 42px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box {
+  margin-right: 20px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .product-nav-box a {
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation {
+  width: 194px;
+  height: 32px;
+  padding-left: 10px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .opera-btns {
+  width: 194px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .opera-btns a {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .personal-btn {
+  width: 194px;
+}
+.product-head-wrap .product-head-box .product-nav-wrap .user-operation .personal-btn a {
+  position: relative;
+  padding: 4px 10px;
+  margin-left: 40px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+}
+
+.fixed-head {
+  width: 100%;
+  height: 54px;
+  position: fixed;
+  top: -100px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 200;
+}
+.fixed-head .fixed-head-box {
+  width: 1200px;
+  height: 54px;
+  position: relative;
+  margin: 0 auto;
+}
+.fixed-head .fixed-head-box .fixed-head-logo {
+  width: 422px;
+  height: 48px;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/index_logo_20160325.png) no-repeat center center;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap {
+  position: absolute;
+  right: 0px;
+  top: 14px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-nav-box {
+  margin-right: 20px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-nav-box a {
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation {
+  width: 194px;
+  height: 30px;
+  position: relative;
+  padding-left: 10px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .fixed-opera-btns {
+  width: 194px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .fixed-opera-btns a {
+  display: inline-block;
+  width: 70px;
+  height: 28px;
+  font: normal 16px/28px "Microsoft YaHei";
+  text-align: center;
+  margin: 0 10px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new {
+  width: 150px;
+  height: 54px;
+  position: absolute;
+  left: 30px;
+  top: -14px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new a.user-btn-new {
+  position: relative;
+  display: block;
+  width: 132px;
+  height: 30px;
+  margin-top: 14px;
+  padding-right: 18px;
+  font: normal 16px/30px "Microsoft YaHei";
+  text-align: center;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new a.user-btn-new span {
+  display: block;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/down_arrow_20160418.png) 0px -20px no-repeat;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new .popup-entry {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  top: 54px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  display: none;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new .popup-entry a {
+  display: block;
+  padding-left: 58px;
+  height: 40px;
+  font: normal 16px/40px "Microsoft YaHei";
+  text-align: left;
+  background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/enrtyIcon_20160418.png);
+  background-repeat: no-repeat;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new .popup-entry a.user-center-btn {
+  background-position: 20px 8px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new .popup-entry a.exit-btn {
+  background-position: 20px -116px;
+  border-top: 1px dashed #dddddd;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new .popup-entry a.user-center-btn:hover {
+  background-position: 20px -54px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new .popup-entry a.exit-btn:hover {
+  background-position: 20px -189px;
+}
+.fixed-head .fixed-head-box .fixed-nav-wrap .fixed-user-operation .user-center-new:hover .popup-entry {
+  display: block;
+}
+
+ 
+
+/*登录弹框*/
+.shadow2{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left:0px; 
+  background-color: #000000;
+  opacity:.5;
+  filter:alpha(opacity=50);
+  z-index: 999;
+  display: none;
+}
+.login-box{
+  width: 514px;
+  height: 403px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -201px;
+  margin-left: -257px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+}
+.login-box .login-title{
+  width: 100%;
+  background-color: #f44975;
+}
+.login-box .login-title h3{
+  height: 80px;
+  padding-left: 35px;
+  font: normal 24px/80px "Microsoft YaHei";
+  color: #FFFFFF;
+  text-align: left;
+}
+.close-login-box{
+  width: 38px;
+  height: 32px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font: normal 16px/32px "Microsoft YaHei";
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #ba254c;
+}
+.login-title p{
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  font: normal 14px/24px "Microsoft YaHei";
+  color: #FFFFFF;
+}
+.login-title p .free-regis{
+  display: inline-block;
+  width: 78px;
+  height: 22px;
+  font-size: 14px;
+  color: #f44975;
+  text-align: center;
+  margin-left: 4px;
+  border: 1px solid #FFFFFF;
+  border-radius:4px;
+  background-color: #FFFFFF; 
+}
+.login-input-box{
+  width: 423px;
+  padding:14px 45px 0 45px; 
+}
+.login-input-box .error-box{
+  width: 423px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+.login-input-box .error-tips{
+  font: normal 14px/24px "Microsoft YaHei";
+  color: #f44975;
+}
+.login-input-box .user-name,.login-input-box .user-pass{
+  width: 360px;
+  height: 60px;
+  position: relative;
+  padding-left: 63px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+.login-input-box .user-name span{
+  display: block;
+  width: 63px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  background:#e9e9e9 url(http://www.newnewbank.com/images/login_icons.png) center 10px no-repeat; 
+}
+.login-input-box .user-pass{
+  margin-top: 24px;
+}
+.login-input-box .user-pass span{
+  display: block;
+  width: 63px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  background:#e9e9e9 url(http://www.newnewbank.com/images/login_icons.png) center -72px no-repeat; 
+}
+.login-input-box input{
+  padding: 12px;
+  width: 336px;
+  height: 36px;
+  font: normal 20px/36px "Microsoft YaHei";
+  color: #000000;
+  background-color: #f5f5f5;
+  float: left;
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
+.login-input-box em {
+  position: absolute;
+  left: 75px;
+  top: 12px;
+  font: normal 20px/36px "Microsoft YaHei";
+  color: #CCCCCC;
+}
+.forget-pass{
+  display: inline-block;
+  width: 18%;
+  font: normal 14px/24px "Microsoft YaHei";
+  color: #f44975;
+  text-align: right;
+  margin-top: 18px;
+}
+.login-input-box .login-btn{
+  display:block;
+  width: 425px;
+  height: 54px;
+  background-color: #f44975;
+  font: normal 22px/54px "Microsoft YaHei";
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+/*登录弹框 end*/
+/*提示弹窗 start*/
+.popup{ z-index:1000; position:fixed; top: 50%; left: 50%;min-width: 567px; margin-left:-283px; min-height: 243px; margin-top: -121px; border-radius: 5px; border-top:3px solid #f44975; background: #f5f5f5; }
+.popup-p{ font-size: 24px; color: #333333; text-align: center; padding: 0 40px; padding-top: 55px;}
+.popup-btn{ text-align: center; padding-top: 60px;}
+.popup-btn a{ display: inline-block; height: 45px; line-height: 45px; text-align: center; font-size: 18px; color: #fff; width: 30%; border-radius: 5px; background: #f44975; margin:0 20px;}
+.popup-btn a.popup-gay{ background: #ccc}
+.shadow3 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000000;
+  opacity: .8;
+  filter: alpha(opacity=80);
+  z-index: 999;
+}
+.popup-btn span.plink{ position: relative; top: 8px; color: #666; cursor: pointer;}
+/*提示弹窗 end*/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}					
+			a:hover {
+				text-decoration: none;
+			}			
+			#cover_different {
+				width: 10.0rem;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .8);
+				z-index: 10;
+				display: block;
+			}			
+			.popup_different {
+				position: fixed;
+				top: 15%;
+				left: 6%;				
+				background-color: #fff;
+				border-radius: 5px;				
+				width: 8.28125rem;
+				text-align: center;
+				font-size: 0.40625rem;
+				display: block;
+				padding-bottom: 1rem;
+				z-index: 20;
+			}					
+			.forConfirmation_different {
+				margin: 1rem auto .5rem;
+				width:80% ;
+			}
+			.center_different{
+				text-align: center;
+			}
+			.commonPopup {
+				display: inline-block;
+				width: 3.5rem;
+				height: 1.15625rem;
+				line-height: 1.15625rem;				
+				border-radius: 0.078125rem;				
+			}
+			.cancel_popup{
+				margin-right: .5rem;
+			    border: 1px solid #f54a43;
+			    color: #f54a43;
+			}
+			.determine_popup{
+				background-color: #f54a43;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<!--覆盖层  start-->
+		<div id="cover_different"></div>
+		<!--覆盖层  end-->
+		<!--弹框  1  start-->
+		<div class="popup_different ">
+			<p class="forConfirmation_different">已到达目的地并下车</p>
+				<div class="center_different">
+					<p class="cancel_popup commonPopup">取消</p><p class="determine_popup commonPopup">确认</p>
+				</div>			
+		</div>
+		<!--弹框  1  end-->
+	</body>
+
+</html>

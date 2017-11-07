@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>乘客信息登记</title>
+		<link rel="stylesheet" type="text/css" href="css/passengerInformationRegistration20161209.css"/>
+		<link href="./css/libs/mui.picker.css" rel="stylesheet" />
+		<link href="./css/libs/mui.poppicker.css" rel="stylesheet" />		
+	</head>
+
+	<body>
+		<div id="root">
+			<div class="header">
+				<img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/passengerRegistration20161209.jpg" />
+				<div class="reservationTable">
+					<p>预约表</p>
+					<p>车辆信息全部填写后就能申请认证车主了</p>
+				</div>
+			</div>
+			<div class="twoPage commonPage">				
+				<!--修改 20161213 start-->
+				<div class="line">
+					<p class="fontS_24 arrLine">出行日期</p>
+					<p class="hidden">2017年1月<span class="region" id='timeResult'></span></p>
+					<div class="inBlock bombCover" id='showTimePicker'>
+						<p class="color999 notUploadedDate"><span class="choose">请选择</span><span class="arrow"></span></p>
+					</div>
+				</div>
+				<div class="line">	
+					<!--增加   id='cityResult3'-->
+					<p class="fontS_24 arrLine">目的地点</p>
+					<p class="hidden region" id='cityResult3'></p>
+					<!--增加    class="inBlock bombCover"  id='showCityPicker3'-->
+					<div class="inBlock bombCover" id='showCityPicker3' >
+						<!--增加   <span class="choose">请选择</span>-->
+						<p class="color999 notUploadedDestinate"><span class="choose">请选择</span><span class="arrow"></span></p>
+					</div>
+				</div>
+				<div class="line">
+					<p class="fontS_24 arrLine">出发地点</p>
+					<p class="hidden">广东省      深圳市     <span class="region" id="userResult"></span></p>
+					<div class="inBlock bombCover" id='showUserPicker'>
+						<p class="color999 notUploadedStart"><span class="choose">请选择</span><span class="arrow"></span></p>
+					</div>
+				</div>
+				<!--修改 20161213 start-->				
+			</div>
+
+			<!--状态1-基本信息 start-->
+			<div class="newAdded">
+				+ 新增乘车人
+			</div>
+			<!--状态1-基本信息 end-->
+			<!--状态2-基本信息 start-->
+			<div class="fourPage commonPage">
+				<div class="line">
+					<p class="fontS_24 arrLine">乘车人</p>
+					<div class="inBlock">
+						<!--<p class="color999 notUploadedCard">未上传<span class="arrow"></span></p>-->
+						<span class="alreadyUploaded"></span>
+					</div>
+				</div>
+				<div class="line_H122">
+					<span class="deleteLine"></span>
+					<div class="personInfo">
+						<div class="personName">
+							<span class="name">王圈圈</span><span class="famaleIcon"></span><span class="dialTelephone"></span>
+						</div>
+						<div style="clear: both;"></div>
+						<div class="tellPhone"><span>手机号</span> <span class="phoneNumber">18018188000</span> </div>
+					</div>
+					<span class="editIcon"></span>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="line_H122">
+					<span class="deleteLine"></span>
+					<div class="personInfo">
+						<div class="personName">
+							<span class="name">刘牛</span><span class="maleIcon"></span><span class="dialTelephone"></span>
+						</div>
+						<div style="clear: both;"></div>
+						<div class="tellPhone"><span>手机号</span> <span class="phoneNumber">18018188000</span> </div>
+					</div>
+					<span class="editIcon"></span>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
+			<!--状态2-基本信息 end-->
+			<!--红色状态    bgRedColor 隐藏-->
+			<div class="fivePage">
+				提交申请
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script type="text/javascript">
+			//+ 新增乘车人  ---点击事件	
+			$('.newAdded').on('click',function(){
+				location.href='newaddPassenger.html';				
+			});		
+		</script>
+		
+		<!--目的地点   start -->		
+		<script src="./js/mui.min.js"></script>
+		<script src="./js/mui.picker.js"></script>
+		<script src="./js/mui.poppicker.js"></script>
+		<script src="./js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/city.data-3.js" type="text/javascript" charset="utf-8"></script>	
+		<script>
+			(function($, doc) {
+				$.init();			
+				$.ready(function() {
+					//--------------------深圳区域联动---------------------
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'lh',
+						text: '罗湖区'
+					}, {
+						value: 'ft',
+						text: '福田区'
+					}, {
+						value: 'ns',
+						text: '南山区'
+					}, {
+						value: 'ba',
+						text: '宝安区'
+					}, {
+						value: 'lg',
+						text: '龙岗区'
+					}, {
+						value: 'yt',
+						text: '盐田区'
+					},{
+						value: 'qt', 
+						text: '其他区'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+//							userResult.innerText = JSON.stringify(items[0]);
+							userResult.innerText =''+(items[0] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					
+					//-------------------日期选择联动----------------------
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showTimePickerButton = doc.getElementById('showTimePicker');
+					var timeResult = doc.getElementById('timeResult');
+					showTimePickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							timeResult.innerText =items[0].text+ "日-1月 "+items[1].text+'日';
+						});
+					}, false);
+					
+					//--------------------城市三级联动---------------------
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);					
+				});				
+			})(mui, document);
+		</script>
+		<!--目的地点   end -->
+
+	</body>
+
+</html>

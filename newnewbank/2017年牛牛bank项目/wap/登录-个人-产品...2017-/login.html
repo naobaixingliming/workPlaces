@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/loginRegister.css"/>
+		
+	</head>
+
+	<body>
+		<div id="login">
+			<div class="bgColor_fff top-page">
+				<div class="siggle-line">
+					<i class="font_24 color_999 w-190">手机号码</i>
+					<input type="text" class="inputEle telPhone" placeholder="请输入手机号码" />
+					<i class="float_right deleteIcon"></i>
+				</div>
+				<p class="under_line"></p>
+				<div class="siggle-line">
+					<i class="font_24 color_999 w-190">密码</i>
+					<input type="password" class="inputEle passWord" placeholder="请输入密码" />
+					<i class="float_right eyeIcon eyeCloseIcon eyeOpenIcon"></i>
+				</div>
+				<p class="under_line"></p>
+				<p class="font_30 color_fff text_center loginBtn bgColor_f44975">登录</p>
+				<p class="text_center"><span class=" font_24 "><a href="" class="color_666">忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="color_666">立即注册</a></span></p>
+
+			</div>
+			<div class="bottom-page relative">
+				<span class="color_fff font_18 text-des1">
+					2016.01.14</br>
+					加入"深圳市金融商会"
+				</span>
+				<span class="color_fff font_18 text-des2">
+					2016.01.19</br>
+					赞助2016大爱深圳 一起回家
+				</span>
+				<span class="color_fff font_18 text-des3">
+					2016.03.19</br>
+					百公里公益施粥
+				</span>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var loginVm = {
+					tag : true,
+					init: function() {
+						this.bindEvent();
+					},
+					bindEvent: function() {
+						//删除输入的手机号码
+						$('.deleteIcon').on('click', function() {
+							$('.telPhone').val('');
+						});
+						//密码可见							
+						$('.eyeIcon').on('click', function() {								
+							if($('.passWord').val()=='') {
+								return;
+							} else {								
+								if(loginVm.tag) {
+									$(".passWord[type='password']").attr('type', 'text');
+									$(this).addClass('eyeOpenIcon')
+											.removeClass('eyeCloseIcon');
+									loginVm.tag = false;
+								} else {
+									$(".passWord[type='text']").attr('type', 'password');
+									$(this).addClass('eyeCloseIcon')
+										   .removeClass('eyeOpenIcon');
+									loginVm.tag = true;
+								}
+							}
+						});
+						
+					}
+				}
+				loginVm.init();
+			})()
+		</script>
+	</body>
+
+</html>

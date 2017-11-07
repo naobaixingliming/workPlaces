@@ -1,0 +1,502 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000!important;
+}
+
+.color_fff {
+	color: #fff!important;
+}
+
+.color_333 {
+	color: #333!important;
+}
+
+.color_666 {
+	color: #666!important;
+}
+
+.color_999 {
+	color: #999!important;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9!important;
+}
+
+.color_f44975 {
+	color: #f44975!important;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe!important;
+}
+
+.color_fbb03b {
+	color: #fbb03b!important;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+#familyTime {
+	background-color: #1b2c9d;
+}
+
+.head-banner img {
+	width: 100%;
+	min-width: 1200px;
+	z-index: 2;
+}
+
+.one-page {
+	height: 3200px;
+}
+
+.spread1,
+.spread2 {
+	width: 100%;
+	height: 1500px;
+	position: absolute;
+	left: 0;
+}
+
+.spread1 {
+	top: 0;
+	background-image: radial-gradient(circle 248px at center, #076ebe 0%, #076ebe 0%, #1b2c9d 300%);
+}
+
+.spread2 {
+	top: 1700px;
+	background-image: radial-gradient(circle 248px at center, #076ebe 0%, #076ebe 0%, #1b2c9d 300%);
+}
+
+.titleIcon {
+	width: 396px;
+	height: 86px;
+	background: url(https://images-web.newnewbank.com/titleIcon20170601.png) no-repeat;
+}
+
+.padding-bottom-35 {
+	padding-bottom: 35px;
+}
+
+.padding-top-60 {
+	padding-top: 60px;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px;
+}
+
+.ellipse {
+	width: 1020px;
+	height: 400px;
+	border-radius: 50%;
+	background-color: #062c8b;
+	box-shadow: 0 -10px 5px #05226b;
+}
+
+.line-height-35 {
+	line-height: 35px;
+}
+
+.mar-left-75 {
+	margin-left: 75px;
+}
+
+.color_ead408 {
+	color: #ead408;
+}
+
+.bigCircle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #062c8b;
+	position: absolute;
+	right: 10px;
+	top: 40px;
+}
+
+.smallCircle {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background-color: #062c8b;
+	position: absolute;
+	left: -50px;
+	top: 200px;
+}
+
+.rec-left {
+	display: inline-block;
+	width: 740px;
+	height: 290px;
+	background-color: #062c8b;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+}
+
+.rec-right {
+	width: 740px;
+	height: 290px;
+	background-color: #062c8b;
+	border-radius: 5px;
+	position: absolute;
+	right: 60px;
+	top: 0;
+	z-index: 1;
+}
+
+.halfElli {
+	display: inline-block;
+	width: 100px;
+	height: 180px;
+	background-color: #062c8b;
+	border-radius: 50%;
+	position: absolute;
+	top: 50px;
+	left: 680px;
+}
+
+.halfElli2 {
+	top: 50px;
+	left: 280px;
+}
+
+.crossRec {
+	width: 160px;
+	height: 26px;
+	background-color: #062c8b;
+	position: absolute;
+	top: 130px;
+	left: 750px;
+}
+
+.crossRec2 {
+	top: 130px;
+	left: 150px;
+}
+
+.hRec1 {
+	width: 26px;
+	height: 390px;
+	background-color: #062c8b;
+	position: absolute;
+	top: 450px;
+	right: 180px;
+}
+
+.hRec2 {
+	width: 26px;
+	height: 240px;
+	background-color: #062c8b;
+	position: absolute;
+	top: -100px;
+	left: 120px;
+}
+
+.hRec3 {
+	width: 26px;
+	height: 240px;
+	background-color: #062c8b;
+	position: absolute;
+	top: -100px;
+	right: 180px;
+}
+
+.indexValue {
+	text-align: center;
+	font-size: 14px;
+	width: 106px;
+	height: 106px;
+	background-color: #a0d421;
+	border-radius: 50%;
+	position: absolute;
+	top: 80px;
+	left: 880px;
+	border: 2px solid #0a3a99;
+	color: #1934a1;
+	line-height: 25px;
+}
+
+.indexValue2 {
+	top: 80px;
+	left: 80px;
+}
+
+.rec-left .firstImg {
+	margin: 40px 0 20px 40px;
+}
+
+.addImg {
+	margin: 110px 25px 0;
+}
+
+.rec-left .lastImg {
+	margin: 40px 0 20px 0;
+}
+
+.mar-right-75 {
+	margin-right: 75px;
+}
+
+.investBtn {
+	width: 460px;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 60px;
+	background-color: #a0d421;
+	box-shadow: 0 10px 2px #066ebe;
+}
+
+.star {
+	width: 1145px;
+	height: 1409px;
+	background: url(https://images-web.newnewbank.com/star20170601.png) no-repeat;
+	opacity: .6;
+	filter: alpha(opacity==80);
+	position: absolute;
+}
+
+.star1 {
+	top: 0;
+	left: -100px;
+	transform: rotateX(180deg);
+}
+
+.star2 {
+	top: 1600px;
+	right: 0;
+}
+
+.footer {
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	min-width: 1200px;
+	background-color: #1d279a;
+}
+
+.footer p {
+	padding: 40px 0;
+}

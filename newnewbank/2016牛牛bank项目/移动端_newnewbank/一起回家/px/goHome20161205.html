@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>一起回家</title>
+		<link rel="stylesheet" type="text/css" href="css/goHome20161205.css"/>
+	</head>
+
+	<body >
+		<div id="root">
+			<div class="contain">
+				<div class="main">
+					<form action="">
+						<!--单选框 start-->
+						<div class="people">
+							<div class="person theOwner">
+								<input type="radio" name="people" id="theOwner">
+								<div class="user-defined">
+									<span class="circle active"></span>
+								</div>
+								<label for="theOwner">我是车主</label>
+							</div>
+							<div class="person passenger">
+								<input type="radio" name="people" id="passenger">
+								<div class="user-defined">
+									<span class="circle"></span>
+								</div>
+								<label for="passenger">我是乘客</label>
+							</div>
+						</div>
+						<!--单选框 end-->
+						<div class="inputBox nameBox">
+							<input type="text"  placeholder="请输入您的姓名" />
+						</div>
+						<div class="inputBox tellBox">
+							<input type="text"  placeholder="请输入您的手机号码" />
+						</div>
+						<div class="submit">
+							我要报名
+						</div>
+					</form>
+					<div class="textInfo">
+						<p>已有<a>30名</a>车主 | <a>25名</a>乘客报名</p>
+					</div>
+				</div>
+				<div class="activityDescription">
+					<a>*</a> 
+					<p class="redText">活动说明</p>
+					<p>(1)活动说明活动说明活动说明活动说明</p>
+					<p>(2)活动说明活动说明活动说明活动说明</p>
+					<p>(3)活动说明活动说明活动说明活动说明</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+
+			$("input").click(function() {
+				$(this).siblings(".user-defined").children(".circle").addClass("active");
+				$(this).parents(".person").siblings(".person").find(".circle").removeClass("active");
+			});
+		</script>
+	</body>
+
+</html>

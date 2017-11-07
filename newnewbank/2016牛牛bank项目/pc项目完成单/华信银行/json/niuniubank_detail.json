@@ -1,0 +1,79 @@
+{
+	"resMsg": "success",
+	"availableBalance": "18,000.00",
+	"principal": "127,000",
+	"profit": "536.36",
+	"bankProducts": [
+		{
+			"prdName": "维修宝10期",
+			"yield": "11.00",
+			"projectDuration": "92天"
+		}, {
+			"prdName": "维修宝15期",
+			"yield": "11.50",
+			"projectDuration": "92天"
+		}
+	],
+	"recommendProducts": [
+		{
+			"prdName": "菜篮宝第18期",
+			"projectManufacturer": "嘉庭新鲜街市项目",
+			"yield": "11.00%",
+			"projectDuration": "92天",
+			"financingAmount": " 200万元",
+			"cashCoupon": "Y",
+			"interestRateSecurities": "Y",
+			"residualAmountInvestment": "826888"
+		}, {
+			"prdName": "维修宝115期",
+			"projectManufacturer": "嘉庭新鲜街市项目",
+			"yield": "11.50%",
+			"projectDuration": "92天",
+			"financingAmount": " 500万元",
+			"cashCoupon": "Y",
+			"interestRateSecurities": "N",
+			"residualAmountInvestment": "205865"
+		}
+	],
+	"yieldList": [
+		{
+			"prdName": "牛牛银票第1066期",
+			"paymentTime": "2016/11/14"
+		}, {
+			"prdName": "豪车宝第59期",
+			"paymentTime": "2016/11/14"
+		}, {
+			"prdName": "牛牛保理第229期",
+			"paymentTime": "2016/11/14"
+		}, {
+			"prdName": "牛牛保理第319期",
+			"paymentTime": "2016/11/14"
+		}, {
+			"prdName": "牛牛保理第329期",
+			"paymentTime": "2016/11/14"
+		}, {
+			"prdName": "牛牛银票第1069期",
+			"paymentTime": "2016/11/14"
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

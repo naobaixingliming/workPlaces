@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>国庆高息标</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/pc_nationalDay20160926.css" />-->
+		<style type="text/css">
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="all">
+			<div class="header_text">
+				<span id="cloudBig"></span>
+				<span id="cloudSmall"></span>
+				<p>短期产品同步来袭 国庆资金不闲置</p>
+			</div>
+			<div class="income">
+				<!--单个盒子 start-->
+				<div class="box_income">
+					<div class="control">
+						<!--年收益率  start-->
+						<div class="annualYield">
+							<div id="yellowRegion">
+								<span class="ten">10</span><span>天</span>
+							</div>
+							<div class="seven">7</div>
+							<div class="percentage">
+								<p class="percentageIcon"></p>
+								<p>年化收益率</p>
+							</div>
+						</div>
+						<!--年收益率  end-->
+						<div class="slogan">您的国庆放长假，闲置资金不放假</div>
+						<div class="activityTime activityTimeTop">活动时间：09/29-09/30</div>
+						<div class="startIcon">即将开始</div>
+					</div>
+				</div>
+				<!--单个盒子 end-->
+				<!--单个盒子 start-->
+				<div class="box_income2">
+					<div class="control">
+						<!--年收益率  start-->
+						<div class="annualYield annualYield2">
+							<div id="yellowRegion">
+								<span class="ten">90</span><span>天</span>
+							</div>
+							<div class="seven">11.5</div>
+							<div class="percentage">
+								<p class="percentageIcon"></p>
+								<p>年化收益率</p>
+							</div>
+						</div>
+						<!--年收益率  end-->
+						<div class="slogan slogan2">12月31日前回款，让您的资金在2016年增值到底</div>
+						<div class="activityTime activityTimeTop">活动时间：09/28-09/30</div>
+						<div class="startIcon">立即开始</div>
+					</div>
+				</div>
+				<!--单个盒子 end-->
+			</div>
+			<div class="accrual">
+				<div class="bg_icon">
+					<!--单个盒子 start-->
+					<div class="box_accrual">
+						<div class="revenueTitle">
+							<p>半年</p>加息
+						</div>
+						<div class="activityTime activityTimeBom">活动时间：09/28-09/30</div>
+						<div class="annualYieldBom">
+							<div class="infomation">
+								<p>投资180天</p>
+								<p>年化收益率：</p>
+							</div>
+							<span id="twelve">12</span>
+							<span id="percentSign">%</span>
+							<div class="startIcon startIconBom">立即开始</div>
+						</div>
+
+					</div>
+					<!--单个盒子 end-->
+					<!--单个盒子 start-->
+					<div class="box_accrual box_accrual2">
+						<div class="revenueTitle">
+							<p>新客</p>专享
+						</div>
+						<!--<div class="activityTime activityTimeBom">活动时间：09/29-09/30</div>-->
+						<div class="annualYieldBom">
+							<div class="infomation">
+								<p>投资5天</p>
+								<p>年化收益率：</p>
+							</div>
+							<span id="twelve">15</span>
+							<span id="percentSign">%</span>
+							<div class="startIcon startIconBom">注册投资</div>
+						</div>
+
+					</div>
+					<!--单个盒子 end-->
+				</div>
+			</div>
+			<div class="prompt">
+				<!--温馨提示 start-->
+				<div class="warmPrompt">
+					<p>温馨提示</p>
+					<p>① 本次加息活动产品不参与牛人计划;</p>
+					<p>② 活动时间内,每天固定时间发布加息产品;</p>
+					<p>③ 加息产品额度有限,先到先得!</p>
+				</div>
+				<!--温馨提示 end-->
+				<div class="table">
+					<p class="productTitle">
+						<span>投资期限</span>
+						<span class="date">日期</span>
+						<span class="outOfTime">发标时间</span>
+					</p>
+					<p class="time">
+						<span id='tenDay'>10天</span>
+						<span id="September">2016-(9/29-9/30)</span>
+						<span id="tenOclick">10:00</span>
+						<span id="eleOclick">11:00</span>
+						<span id="fitOclick">15:00</span>
+						<span id="sixOclick">16:00</span>
+						<span id="sevOclick">17:00</span>
+					</p>
+					<p class="time2">
+						<span id='nineDay2'>90/180天</span>
+						<span id='September2'>2016-(9/28-9/29)</span>
+						<span id="tenOclick2">10:00</span>
+						<span id="sevOclick2">15:00</span>
+					</p>
+					<p class="time3">
+						<span id="nineDay3">90/180天</span>
+						<span id='September3'>2016/9/30</span>
+						<span id='tenOclick3'>10:00</span>
+						<span id='nothing'>无</span>
+					</p>
+				</div>
+				<div class="footer">
+					<p>© 2015牛牛bank All Rights Reserved | 活动最终解释权归深圳市金牛牛互联网金融服务有限公司所有</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var $main = $cloud = mainwidth = null;
+			var offset1 = 450;
+			var offset2 = 0;
+			//			var offsetbg = 0;
+			$(document).ready(
+				function() {
+					$main = $(".header_text");
+					$cloud1 = $("#cloudBig");
+					$cloud2 = $("#cloudSmall");
+					mainwidth = $main.outerWidth();
+				}
+			);
+			/// 飘动
+			setInterval(function() {
+				if(offset1 >= mainwidth) {
+					offset1 = 0;
+				}
+				offset1 += 1;
+				$cloud1.css("background-position", offset1 + "px 30px")
+			}, 90);
+			setInterval(function() {
+				if(offset2 >= mainwidth) {
+					offset2 = 0;
+				}
+				offset2 += 0.5;
+				$cloud2.css("background-position", offset2 + "px 0px")
+			}, 20);
+		</script>
+	</body>
+
+</html>

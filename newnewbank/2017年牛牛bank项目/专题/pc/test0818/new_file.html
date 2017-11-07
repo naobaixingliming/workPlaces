@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#productData {
+				width: 60%;
+				height: 800px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="productData"></div>
+		
+		<script src="js/jquery-1.7.js" charset="utf-8"></script>
+		<script src="js/echarts.min.js"></script>
+		<script type="text/javascript">
+			var arrData1=[];
+			var arrDate=[];			
+						
+			var seriesData=[
+					    {name: 'withDrawAmt',type: 'bar',stack: '2',barWidth: 20,data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6]},
+						{name: 'firstInvestNum',type: 'bar',stack: '2',data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7]},
+						{name: 'loginNum',type: 'bar',stack: '2',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'payment',type: 'bar',stack: '2',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'investNum',type: 'bar',stack: '2',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'firstInvestAmt',type: 'bar',stack: '2',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'yearPayment',type: 'bar',stack: '2',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'dayTime',type: 'bar',stack: '2',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'rechargeNum',type: 'bar',stack: '1',barWidth: 20,data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'yearInvest',type: 'bar',stack: '1',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'investAmt',type: 'bar',stack: '1',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},	
+						{name: 'withDrawNum',type: 'bar',stack: '1',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'authNum',type: 'bar',stack: '1',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'rechargeAmt',type: 'bar',stack: '1',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]},
+						{name: 'registerNum',type: 'bar',stack: '1',data: [26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]}	
+					];
+					
+			var sData=[];
+			
+			var serverJson = [
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":1,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-17","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":0,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":9,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-11","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":1,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":8,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-10","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":2,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":20,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-09","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":2,"rechargeAmt":0,"registerNum":2},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":17,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-08","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":0,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":3,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-07","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":0,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":14,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-04","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":0,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":8,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-02","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":0,"rechargeAmt":0,"registerNum":0},
+						{"withDrawAmt":0,"firstInvestNum":0,"loginNum":1,"payment":0,"investNum":0,"firstInvestAmt":0,"yearPayment":0,"dayTime":"2017-08-01","rechargeNum":0,"investAmt":0,"yearInvest":0,"withDrawNum":0,"authNum":0,"rechargeAmt":0,"registerNum":0}];
+			
+			var stack='1';
+			var seriesItem={};
+			
+			for(var key in serverJson[0]) {					
+					seriesItem = {
+	                    name: key	                    
+	                };								
+				}
+			
+			for(var i = 0, len = serverJson.length; i < len; i++) {
+				//for(var key in serverJson[i]) {
+					//console.log(key + ':' + serverJson[i][key]);
+					//console.log(key);
+					//console.log(json[i]['dayTime'])					
+				//}	
+				//console.log(serverJson[i]);
+                seriesItem = {
+//                  name: n,
+                    type: 'bar',
+                    stack: stack,
+                    barWidth:20,	                   
+                    data:serverJson[i]
+                };
+                sData.push(seriesItem); //循环一次，将组装好的单元推入series数组	
+												
+				arrDate.push(serverJson[i]['dayTime']);
+			}
+								
+//			$.each(serverJson,function (i,n) {				
+//	                seriesItem = {
+//	                    name: n,
+//	                    type: 'bar',
+//	                    //stack: '2',
+//	                    barWidth:40,	                   
+//	                    data:seriesData.data[i]
+//	                };
+//	                seriesPush.push(seriesItem); //循环一次，将组装好的单元推入series数组	               
+//           });					
+				
+			getTable();
+			function getTable(){							
+				var productData = echarts.init(document.getElementById('productData'));
+				option = {	
+					tooltip: {
+						trigger: 'axis'
+					},
+					calculable: true,
+					xAxis: [{
+						type: 'category',
+						data: arrDate
+					}],
+					yAxis: [{
+						type: 'value'
+					}],
+					series: seriesData
+				};
+				productData.setOption(option);
+			}
+		</script>
+	</body>
+
+</html>

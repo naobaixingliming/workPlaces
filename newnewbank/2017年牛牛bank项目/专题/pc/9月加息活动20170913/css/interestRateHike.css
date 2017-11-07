@@ -1,0 +1,563 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 30px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+.rootNode {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	background-color: #f04f45;
+	background-image: linear-gradient(to top, #f51c32 0%, #f04f45 100%);
+}
+
+.yellow-bottom {
+	width: 100%;
+	height: 490px;
+	/*background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));*/
+	/*FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#AC07BD, endColorStr=#f6f6f8); /*IE 6 7 8
+                background: -ms-linear-gradient(top, #AC07BD, #f6f6f8);        IE 10 
+                background:-moz-linear-gradient(top, #AC07BD, #f6f6f8);火狐
+                background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#AC07BD), to(#f140f8));  Safari 4-5, Chrome 1-9
+                background: -webkit-linear-gradient(top, #AC07BD, #f140f8);   Safari5.1 Chrome 10+*
+                background: -o-linear-gradient(top, #AC07BD, #f140f8);  Opera 11.10+*/
+	background-image: linear-gradient(to top, rgba(243, 178, 38, .7) 0%, rgba(243, 178, 38, 0) 100%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.yellow-top-left,
+.yellow-top-right {
+	width: 900px;
+	height: 900px;
+	position: absolute;
+	top: -450px;
+	background-color: rgba(247, 147, 38, .7);
+	filter: url(blur.svg#blur);
+	/* FireFox, Chrome, Opera */
+	-webkit-filter: blur(100px);
+	/* Chrome, Opera */
+	-moz-filter: blur(100px);
+	-ms-filter: blur(100px);
+	filter: blur(100px);
+	border-radius: 100%;
+	z-index: 2;
+}
+
+.yellow-top-left {
+	left: -450px;
+}
+
+.yellow-top-right {
+	right: -450px;
+}
+
+.min-h-1250 {
+	min-height: 1250px;
+}
+
+.showdomImg {
+	width: 1633px;
+	height: 1249px;
+	position: absolute;
+	left: -200px;
+	top: 0;
+	background: url(https://images-web.newnewbank.com/showdom20170913.png) no-repeat;
+}
+
+.starImg {
+	width: 1552px;
+	height: 1222px;
+	position: absolute;
+	left: -160px;
+	top: -50px;
+	background: url(https://images-web.newnewbank.com/star20190913.png) no-repeat;
+	z-index: 3;
+}
+
+.starImg-1 {
+	width: 154px;
+	height: 81px;
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+	background: url(https://images-web.newnewbank.com/star20190913_03.png) no-repeat;
+	z-index: 5;
+}
+
+.yellow-circle {
+	position: absolute;
+	border-radius: 100%;
+	background-color: rgba(249, 184, 114, .1);
+}
+
+.circle-1 {
+	width: 230px;
+	height: 230px;
+	top: -88px;
+	right: -260px;
+}
+
+.circle-2 {
+	width: 130px;
+	height: 130px;
+	top: 48px;
+	right: -310px;
+}
+
+.circle-3 {
+	width: 80px;
+	height: 80px;
+	bottom: 320px;
+	left: -140px;
+}
+
+.circle-4 {
+	width: 200px;
+	height: 200px;
+	bottom: 100px;
+	left: -200px;
+}
+
+.circle-5 {
+	width: 60px;
+	height: 60px;
+	bottom: 80px;
+	right: 10px;
+}
+
+.z-index-4 {
+	z-index: 4;
+}
+
+.titleIcon {
+	width: 796px;
+	height: 217px;
+	background: url(https://images-web.newnewbank.com/title20170913.png) no-repeat;
+}
+
+.padding-top-60 {
+	padding-top: 60px;
+}
+
+.border-yellow {
+	width: 230px;
+	height: 44px;
+	line-height: 44px;
+	border: 2px solid #ffa201;
+	border-radius: 22px;
+}
+
+.mainImg {
+	width: 764px;
+	height: 668px;
+	background: url(https://images-web.newnewbank.com/main20170913.png) no-repeat;
+	margin-left: 280px;
+}
+
+.getBtn {
+	text-align: center;
+	width: 266px;
+	height: 73px;
+	line-height: 73px;
+	position: absolute;
+	bottom: 130px;
+	left: 200px;
+	color: #d42d1a;
+}
+
+.titltText {
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+.protrait {
+	width: 95px;
+	height: 147px;
+	background: url(https://images-web.newnewbank.com/portrait20170913.png) no-repeat;
+	margin-top: 36px;
+	margin-bottom: 10px;
+}
+
+.box-popup-1 {
+	width: 490px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	border-top: 8px solid #F44975;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -245px;
+	margin-top: -150px;
+	z-index: 101;
+}
+
+.cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 100;
+}
+
+.deleteBtn {
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.delete-red {
+	background: url(https://images-web.newnewbank.com/delete20170913.png) no-repeat;
+}
+
+.delete-black {
+	top: 40px;
+	right: 30px;
+	background: url(https://images-web.newnewbank.com/delete_black20170913.png) no-repeat;
+}
+
+.box-popup-2,
+.box-popup-3 {
+	width: 342px;
+	height: 405px;
+	background: url(https://images-web.newnewbank.com/coupon20170913.png) no-repeat;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -171px;
+	margin-top: -202px;
+	z-index: 101;
+}
+
+.padding-top-80 {
+	padding-top: 80px;
+}
+
+.padding-left-80 {
+	padding-left: 80px;
+}
+
+.color_d08707 {
+	color: #d08707;
+}
+
+.color_694602 {
+	color: #694602;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.color_c05504 {
+	color: #c05504;
+}
+
+.color_ffcf6d {
+	color: #ffcf6d;
+}
+
+.font_60 {
+	font-size: 60px;
+}
+
+.bgColor_faa208 {
+	background-color: #faa208;
+}
+
+.lookBtn {
+	width: 254px;
+	height: 56px;
+	line-height: 56px;
+	margin: auto;
+	border-radius: 5px;
+	background-color: #f94240;
+	background-image: linear-gradient(to top, #f94240 0%, #fb5222 100%);
+}

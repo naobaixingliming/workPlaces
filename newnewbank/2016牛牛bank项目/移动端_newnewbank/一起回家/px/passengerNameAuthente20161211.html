@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>乘客实名认证</title>
+		<style type="text/css">			
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: "microsoft yahei";
+				box-sizing: border-box;
+			}
+			#root{
+				width:10.0rem;
+				/*height: 17.75rem;*/
+				background-color: #FFFFFF;
+			}
+			.headerinfo{
+				width:10.0rem ;
+				height: 1.015625rem;
+				line-height:1.015625rem ;
+				background-color:#f0bd44 ;
+				border-bottom:0.1rem solid #f3f3f3 ;
+			}
+			.headerinfo img{
+				width:1.8125rem ;
+			    height: 0.359375rem;
+			    float: left;
+			    margin-top: 0.3125rem;
+			    margin-left: 0.3125rem;
+			}
+			.headerinfo span{
+				font-size: 0.3125rem;
+				color: #fff;
+				margin-left: 1.40625rem;
+			}
+			.identityDocument{
+				width:100% ;
+				height: 1.21875rem;
+				line-height:1.21875rem;
+				background-color:#fff ;
+				border-bottom:0.1rem solid #f3f3f3 ;
+				color: #000;
+				font-size:0.375rem ;
+				padding-left:0.525rem ;
+			}
+			.identityDocument span{
+				padding-right:0.825rem ;
+			}
+			.identityDocument input[type='text']{
+				outline: none;
+				border: none;
+				height:80% ;
+				width: 68%;
+			}
+			.contain_90{
+				width:90% ;
+				margin:0 auto ;
+			}
+			.contain_90 p:first-child{
+				font-size: 0.34375rem;
+				color: #999;
+				margin:0.46875rem 0 ;
+			}
+			.grayBg{
+				height: 4.609375rem;
+				background-color:#f3f3f3 ;
+				position: relative;
+				border-radius: 0.125rem;
+				margin-bottom:0.625rem;
+			}
+			.uploadPhoto{
+				width:1.734375rem ;
+				height: 1.734375rem;
+				position: absolute;
+				top: 1.515625rem;
+				left: 3.59375rem;
+			}
+			.bottomBox{
+				width:100% ;
+				height:8.359375rem ;
+				background-color:#f3f3f3 ;
+				overflow: hidden;
+			}
+			.uploadImmediately{
+				height: 1.09375rem;
+				line-height: 1.09375rem;
+				width:90% ;
+				background-color:#ccc ;
+				font-size: 0.4375rem;
+				text-align: center;
+				color: #fff;
+				margin:0.390625rem auto ;
+				border-radius:0.125rem ;
+			}
+			.bgRedColor{
+				background-color:#f54a43;
+			}
+		</style>
+		<style type="text/css">
+			#cover {
+				width: 10.0rem;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .8);
+				z-index:10 ;
+				display: none;
+			}
+			/*--弹框  start--*/			
+			.popup {
+				width: 10rem;
+				position: fixed;
+				top: 15%;
+				z-index:20 ;
+				display: none;
+			}
+			
+			.drivieLicenseInco img {	
+				width: 7.546875rem;
+				height: 5.875rem;
+				margin-left: 0.859375rem;
+			}
+			
+			.popupText {
+				margin-top: 0.9375rem;
+			}
+			
+			.popupText,
+			.upBox p:first-child {
+				text-align: center;
+				font-size: 0.375rem;
+				color: #fff;
+			}
+			
+			.upBox{
+				margin-top: 1.25rem;
+				margin-left: 0.46875rem;
+			}
+			.upload,
+			.cancel {
+				width: 9.0625rem;
+				background-color: #fff;
+				border-radius: 0.078125rem;
+				color: #999;
+			}			
+			.upload {
+				height: 1.5625rem;
+				font-size: 0.375rem;
+				color: #999;
+				position: relative;
+				margin:0.390625rem  0 0.1875rem;
+			}			
+			.cancel {
+				height: 1.25rem;
+				font-size: 0.4375rem;
+				line-height: 1.25rem;
+				text-align: center;
+			}
+			
+			#file {
+				outline: none;
+				border: none;
+				width:48% ;
+				height:100% ;
+			}			
+			#file {
+				opacity: 0;
+				z-index: 3;
+				display: inline-block;
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.upload .album {
+				display: inline-block;
+			    width: 50%;
+			    height: 80%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    border-right: 1px solid #eee;
+			    margin-top: 0.15625rem;
+			}	
+			.album .jump{
+				display: block; 
+				width:100% ;
+				height: 100%;
+			}					
+			.upload .takePhotos {
+				display: inline-block;
+				height: 80%;
+				width: 50%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin-top: 0.15625rem;
+			}			
+			.inco {
+				display: inline-block;
+				float: left;
+				margin:0.234375rem 0.3125rem 0 1.40625rem ;
+			}
+			
+			.albumInco {				
+			    width: 0.78125rem;
+			    height: 0.71875rem;
+			    background: url(img/camera20161210_01.png) no-repeat ;
+			    background-size: 0.78125rem 0.71875rem;
+			}			
+			.photoInco {
+				width: 0.9375rem;
+				height: 0.75rem;
+				background: url(img/camera20161210_02.png) no-repeat ;
+				background-size: 0.9375rem 0.75rem;
+			}
+			.nameText{
+				margin-top: 0.390625rem;
+    			float: left;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  行驶证 start-->
+			<div class="popup bombBox1">
+				<div class="drivieLicenseInco">
+					<img src="img/identityPhoto20161211.png" />
+				</div>
+				<div class="popupText">
+					<p>请按照示例图片上传乘车人手持身份证照片，</p>
+					<p>如姓名，身份证号码不清晰，证件信息与乘车人不一致，</p>
+					<p>则不予认证。</p>
+				</div>
+				<div class="upBox">
+					<p>请上传身份证照片</p>					
+					<div class="upload">
+						<!--相册-->
+						<div class="album">
+							<!--<a class="jump" href="ownersOfPhotos20161211.html">-->
+								<i class="inco albumInco"></i>							
+								<span class="nameText">相册</span>
+							<!--</a>-->
+						</div>
+						<input type="file" id="file" />
+						<!--相册-->
+						<!--拍照-->
+						<div class="takePhotos">
+							<i class="inco photoInco"></i>							
+							<span class="nameText">拍照</span>							
+						</div>
+						<!--拍照-->
+					</div>
+					<div class="cancel">取消</div>
+				</div>
+			</div>
+			<!--弹框 行驶证  end-->			
+			<div class="headerinfo">
+				<img src="img/newnewbankIcon20161211_01.png"/>
+				<span>实名认证信息由牛牛bank协助安全保密服务</span>
+			</div>
+			<div class="identityDocument">
+				<span>身份证号</span>
+				<input type="text"  id="" placeholder="请输入乘车人的身份证编号" />
+			</div>
+			<div class="contain_90">
+				<p> 请上传一张手持身份证照片</p>
+				<div class="grayBg">
+					<img class="uploadPhoto" src="img/uploadPhotos20161211.png"/>
+				</div>
+			</div>
+			<div class="bottomBox">
+				<!--红色状态    bgRedColor 隐藏-->
+				<div class="uploadImmediately">立即上传</div>
+			</div>	
+			
+			<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="icon home"></div>一起回家</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="icon money"></div>我的预约</a>
+						</li>
+						<li class="currentf">
+							<a href="proposal20161212.html">
+								<div class="icon fdj"></div>倡议书</a>
+						</li>
+					</ul>
+				</div>
+			</footer>			
+		</div>
+		
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//上传身份证-点击弹框
+			$('.uploadPhoto').on('click',function(){
+				$('#cover,.bombBox1').css('display','block');
+			});
+			//弹框--取消    按钮事件
+			$('.cancel').on('click',function(){
+				$('#cover,.popup').hide();
+			});
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/confirmDeparture.css"/>
+		<title>我的预约状态</title>
+		<style type="text/css">
+			#cover{
+				display: block;
+			}
+			.bombBox2{
+				width:10rem ;
+				display: block;
+				bottom: 0;
+				position: fixed;
+			    z-index: 20;
+			    background-color: #fff;
+			}
+			.delete{
+				left: 9.3rem;
+			    position: absolute;
+			    font-size: 0.625rem;
+			    color: #d1d1d1;
+			}
+			.evaluateText{
+				text-align: center;
+				color: #000;
+   				padding: 0.18rem 0;
+			}
+			.evaluateBox{
+				margin-left: 1.4rem;
+			}
+			.evaluateIcon{
+				width: 0.78125rem;
+			    height: 0.703125rem;
+			    display: inline-block;
+			    position: relative;
+			    margin: 0.3125rem;
+			}
+			.star{			
+				width:0.78125rem ;
+				height: 0.703125rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/evaluateIcon.png) no-repeat;
+				background-size:0.78125rem  0.703125rem ;
+				position: absolute;
+				
+			}
+			.activeStar{
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/evaluateImg.png) no-repeat;
+				background-size:0.78125rem  0.703125rem ;
+			}
+			.evaluationWords{
+				text-align: center;
+				font-size: 0.34375rem;
+				color: #f9b706;
+			}
+			.praise{
+				text-align: center;
+				font-size: 0.28125rem;
+				color: #999;
+				margin:0.703125rem 0 0.390625rem ;
+			}
+			.bottomFrame{
+				padding: 0 .8rem;
+			}
+			.lineBtn{
+				text-align: center;
+			}
+			.lineBtn p{
+				display: inline-block;
+				width:3.9375rem ;
+				height: 0.68rem;
+				font-size: 0.28125rem;
+				line-height:0.68rem ;				
+				text-align: center;				
+				margin: .1rem;
+			}
+			.defaultState{
+				color: #999;
+				border: 1px solid #d2d2d2;
+			}
+			.changeState{
+				color: #f9a006;
+				border: 1px solid #f9a006;
+				background-color:#fdedd9 ;
+			}
+			.inputText{
+				color: #000;
+			    margin: .1rem;
+			    height: 2rem;
+			    width: 100%;
+			    background-color: #f5f5f5;
+			    outline: none;
+			    border: none;
+			    padding: .3rem;
+			    resize: none;
+			}
+			.lattice{
+				width: 100%;
+			    position: absolute;
+			    bottom: 1.40625rem;
+			    background: #fff;
+			    padding-bottom: .5rem;
+			}
+			.submit{
+				width:100% ;
+				height: 1.40625rem;
+				line-height:1.40625rem ;
+				color: #fff;
+				text-align: center;
+				font-size: 0.4375rem;
+				background-color:#f54a43 ;
+				position: absolute;
+				bottom: 0;
+				outline: none;
+				border:none ;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  2  start-->
+			<div class="bombBox2">
+				
+				<div class="lattice">
+					<div class="line twoPageLine">
+						<div class="delete">×</div>
+						<span class="carPhoto"></span>
+						<div class="rightBoxNot">
+							<div class="personInfo">
+								<div class="sex male">
+									<span class="fL">刘小牛</span>
+									<span class="maleIcon invitation"></span>
+								</div>
+								<div class="phoneNumber">电 话：180****1234</div>
+								<div class="licenseNumber">车牌号：赣A123***</div>
+							</div>
+						</div>
+					</div>
+					<div class="twoPageLine">
+						<div class="evaluateText">对爱心车主的评价，以及整体行程的感受</div>
+					</div>
+					<div class="evaluateBox">
+						<div class="evaluateIcon">
+							<span class="star activeStar"></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star activeStar"></span>
+						</div>					
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>
+						<div class="evaluateIcon">
+							<span class="star "></span>
+						</div>					
+					</div>
+					<p class="evaluationWords">非常满意，无可挑剔</p>
+					<p class="praise">夸夸司机吧</p>
+					<div class="bottomFrame">
+						<div class="lineBtn">
+							<p class="defaultState">车内整洁</p>
+							<p class="defaultState">活地图认路准</p>
+						</div>
+						<div class="lineBtn">
+							<p class="defaultState">车内整洁</p>
+							<p class="defaultState">活地图认路准</p>
+						</div>
+						<textarea class="inputText" name="" rows="" cols="" placeholder="说说您对整体行程的感受吧"></textarea>
+					</div>
+				</div>
+				<button class="submit">确认提交</button>
+			</div>
+			<!--弹框2  end-->
+	
+	</body>
+</html>

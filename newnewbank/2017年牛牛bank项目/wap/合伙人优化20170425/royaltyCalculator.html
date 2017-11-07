@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>提成计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/partner.css" />
+		
+	</head>
+
+	<body>
+		<div class="partner">
+			<!--客户等级弹框 start-->
+			<div class="givePopup none">
+				<div class="showdowBox"></div>
+				<div class="customerType relative eleCommon">
+					<div class="padding-left-right choiceItem h-70">
+						<span class="gradeText">
+							<i class="bgColor_ffc62e common-cicle">金</i>
+							<i class="font_24 color_333 ">金牌合伙人</i>
+						</span>
+						<i class="float_right choiceChild"></i>
+					</div>
+					<p class="under_line mar-left-35"></p>
+					<div class="padding-left-right h-70 choiceItem">
+						<span class="gradeText">
+							<i class="bgColor_7ebcd1 common-cicle">银</i>
+							<i class="font_24 color_333 ">银牌合伙人</i>
+						</span>
+						<i class="float_right choiceChild"></i>
+					</div>
+					<p class="under_line mar-left-35"></p>
+					<div class="padding-left-right h-70 choiceItem">
+						<span class="gradeText">
+							<i class="bgColor_19baaa common-cicle">普</i>
+							<i class="font_24 color_333 ">普通合伙人</i>
+						</span>
+						<i class="float_right choiceChild"></i>
+					</div>
+				</div>
+			</div>
+			<!--客户等级弹框 end-->
+			<!--客户类别选择  弹框 start-->
+			<div class="givePopup1 none">
+				<div class="showdowBox1"></div>
+				<div class="customerGrade relative eleCommon">
+					<div class="padding-left-right choiceItem h-70">
+						<span class="typeText">
+							<i class="font_24 color_333 ">一级客户</i>
+						</span>
+						<i class="float_right choiceChild"></i>
+					</div>
+					<p class="under_line mar-left-35"></p>
+					<div class="padding-left-right h-70 choiceItem">
+						<span class="typeText">
+							<i class="font_24 color_333 ">二级客户</i>
+						</span>
+						<i class="float_right choiceChild"></i>
+					</div>
+				</div>
+			</div>
+			<!--客户类别弹框 end-->
+			<p class="grayBg"></p>
+			<p class="header-royalty"></p>
+			<p class="under_line "></p>
+			<div class="bgColor_fff">
+				<div class="single-line ">
+					<div class="inline_block font_26 color_333 dt-line-95  float_right padding-right-35">
+						<i class="w-150">客户类别</i>
+						<!--<i class="w-250 none">一级客户</i>-->
+						<p class="w-250 inline_block typeValue"></p>
+						<span class="float_right text_center typeSelect">							
+							<i class="font_24 color_ccc pleaseChoose">请选择</i>
+							<i class="arrow "></i>
+						</span>
+					</div>
+				</div>
+				<p class="under_line mar-left-35"></p>
+				<div class="single-line ">
+					<div class="inline_block font_26 color_333 dt-line-95  float_right padding-right-35">
+						<i class="w-150">投资金额</i>
+						<input class="inputEle" type="text" name="" id="" value="" placeholder="请输入投资金额"/>
+						<span class="float_right text_center">														
+							<i class="font_24 color_999 ">元</i>
+						</span>
+					</div>
+				</div>
+				<p class="under_line mar-left-35"></p>
+				<div class="single-line ">
+					<div class="inline_block font_26 color_333 dt-line-95  float_right padding-right-35">
+						<i class="w-150">投资期限</i>
+						<input class="inputEle" type="text" name="" id="" value="" placeholder="请输入投资金额"/>
+						<span class="float_right text_center">														
+							<i class="font_24 color_999 ">天</i>
+						</span>
+					</div>
+				</div>
+				<p class="under_line mar-left-35"></p>
+				<div class="single-line ">
+					<div class="inline_block font_26 color_333 dt-line-95  float_right padding-right-35">
+						<i class="w-150">我的等级</i>
+						<p class="w-250 inline_block gradeValue"></p>
+						<span class="float_right text_center gradeSelect">							
+							<i class="font_24 color_ccc pleaseChoose">请选择</i>
+							<i class="arrow "></i>
+						</span>
+					</div>
+				</div>
+				<p class="under_line "></p>
+			</div>
+			<div class="font_30 text_center">
+				<span class="color_999 bgColor_fff fix-bottom"><i>0.00 </i><i class="" style="margin-left: .5rem;">元</i> </span>
+				<span class="calculateRoyalty color_fff bgColor_f44975">计算提成</span>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			//客户等级弹框 遮罩点击
+//			$('.showdowBox').on('click', function() {
+//				var $selectOk = $(this).siblings('.eleCommon').find('.select-ok ').siblings('.gradeText');
+//				$(this).parents('.givePopup').hide();
+//				$('.gradeValue').html($selectOk.html());
+//				if($('.gradeValue').html() != '') {
+//					$('.gradeSelect .pleaseChoose').hide();
+//				}
+//			});
+			//客户类别弹框 遮罩点击
+//			$('.showdowBox1').on('click', function() {
+//				var $selectOk = $(this).siblings('.eleCommon').find('.select-ok ').siblings('.typeText');
+//				$(this).parents('.givePopup1').hide();
+//				$('.typeValue').html($selectOk.html());
+//				if($('.typeValue').html() != '') {
+//					$('.typeSelect .pleaseChoose').hide();
+//				}
+//			});
+			//客户等级-- 请选择--事件
+			$('.gradeSelect').on('click', function() {
+				$('.givePopup').slideDown();			
+			});
+			//客户类别-- 请选择--事件			
+			$(' .typeSelect').on('click', function() {
+				$('.givePopup1').slideDown();
+			});
+			
+			//客户等级--勾选
+			$('.customerType div.choiceItem').on('click', function() {
+				$(this).find('.choiceChild').addClass('select-ok');
+				$(this).siblings('.choiceItem').find('.choiceChild').removeClass('select-ok');				
+				var $selectOk = $(this).find('.select-ok ').siblings('.gradeText');
+				$(this).parents('.givePopup').hide();
+				$('.gradeValue').html($selectOk.html());
+				if($('.gradeValue').html() != '') {
+					$('.gradeSelect .pleaseChoose').hide();
+				}				
+			});
+			//客户类别--勾选			
+			$('.customerGrade  div.choiceItem').on('click', function() {
+				$(this).find('.choiceChild').addClass('select-ok');
+				$(this).siblings('.choiceItem').find('.choiceChild').removeClass('select-ok');
+				var $selectOk = $(this).find('.select-ok ').siblings('.typeText');
+				$(this).parents('.givePopup1').hide();
+				$('.typeValue').html($selectOk.html());			
+				if($('.typeValue').html() != '') {	
+					$('.typeSelect .pleaseChoose').hide();
+				}				
+			});
+						
+			//
+			$('.inputEle').keydown(function(){
+				$(this).css('text-align','center');
+			});
+			$('.inputEle').keyup(function(){
+				if($(this).val()==''){
+					$(this).css('text-align','right');
+				}
+			});			
+		</script>
+		<script type="text/javascript">
+			window.onresize = function() {
+				var h = $(window).height();
+				//console.log(h+','+window.screen.availHeight)
+				var u = navigator.userAgent;
+				if(u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
+					if(h <= window.screen.availHeight / 2) {
+						$('.fix-bottom,.calculateRoyalty').css({
+							'position': 'absoult',
+							"margin-top": "-.5rem",
+							'display': 'none'
+						});
+					} else {
+						$('.fix-bottom,.calculateRoyalty').css({
+							'position': 'fixed',
+							'display': 'block'
+						});
+					}
+				}
+			}
+			$('input').on('focus', function() {
+				$('.fix-bottom,.calculateRoyalty').hide();
+			})
+			$('input').on('blur', function() {
+				$('.fix-bottom,.calculateRoyalty').show();
+			})
+		</script>
+	</body>
+
+</html>

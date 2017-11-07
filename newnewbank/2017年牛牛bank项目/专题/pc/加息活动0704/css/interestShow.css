@@ -1,0 +1,473 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000!important;
+}
+
+.color_fff {
+	color: #fff!important;
+}
+
+.color_333 {
+	color: #333!important;
+}
+
+.color_666 {
+	color: #666!important;
+}
+
+.color_999 {
+	color: #999!important;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9!important;
+}
+
+.color_f44975 {
+	color: #f44975!important;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe!important;
+}
+
+.color_fbb03b {
+	color: #fbb03b!important;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*.content.bglogin {
+    background: #1f233e url(/css/pc/../../img/pc/login.jpg) no-repeat center center;
+    background-size: 100%;
+}
+.content {
+    min-height: 700px;
+}*/
+
+
+/*.head {	
+	min-height: 483px;
+	background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/rainbow_a-20170505.png) no-repeat center top;
+	background-size: 100%;
+}
+
+.headImg {
+	width: 100%;
+	height: 650px;
+	min-width: 1200px;
+	background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/headShine20170509.jpg) no-repeat center top;
+}
+*/
+
+
+/*.headerBanner {
+	width: 100%;
+	min-width: 1200px;
+	height: 696px;
+	background: url(https://images-wap.newnewbank.com/header_banner201070614.png) no-repeat top center;
+}*/
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.padding-top-25 {
+	padding-top: 20px;
+}
+
+.padding-top-30 {
+	padding-top: 30px;
+}
+
+.padding-top-35 {
+	padding-top: 35px;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px;
+}
+
+.padding-bottom-65 {
+	padding-bottom: 65px;
+}
+
+.mar-top-20 {
+	margin-top: 20px;
+}
+
+.footer {
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	min-width: 1200px;
+}
+
+.footer p {
+	padding: 40px 0;
+}
+
+.one-page {
+	width: 100%;
+	height: 775px;
+	background: url(https://images-web.newnewbank.com/bg01-20170704.jpg) no-repeat top center;
+}
+
+.star {}
+
+.star-1 {
+	position: absolute;
+	top: 245px;
+	left: -120px;
+	width: 69px;
+	height: 96px;
+	background: url(https://images-web.newnewbank.com/star01-20170704.png) no-repeat;
+}
+
+.star-2 {
+	position: absolute;
+	bottom: 110px;
+	right: -90px;
+	width: 56px;
+	height: 72px;
+	background: url(https://images-web.newnewbank.com/star02-20170704.png) no-repeat;
+}
+
+.star-3 {
+	position: absolute;
+	bottom: -40px;
+	left: -95px;
+	width: 197px;
+	height: 178px;
+	background: url(https://images-web.newnewbank.com/star03-20170704.png) no-repeat;
+}
+
+.two-page {
+	width: 100%;
+	height: 461px;
+	background: url(https://images-web.newnewbank.com/bg02-20170704.jpg) no-repeat top center;
+}
+
+.three-page {
+	width: 100%;
+	height: 471px;
+	background: url(https://images-web.newnewbank.com/bg03-20170704.jpg) no-repeat top center;
+}
+
+.interest {
+	position: absolute;
+	top: 45px;
+	width: 374px;
+	height: 421px;
+	background: url(https://images-web.newnewbank.com/circle20170704.png) no-repeat;
+}
+
+.interest01 {
+	left: 0;
+}
+
+.interest02 {
+	left: 415px;
+}
+
+.interest03 {
+	left: 830px;
+}
+
+.interestText {
+	width: 296px;
+	height: 71px;
+	margin-top: 135px;
+}
+
+.interestText01 {
+	background: url(https://images-web.newnewbank.com/interest01-20170704.png) no-repeat;
+}
+
+.interestText02 {
+	background: url(https://images-web.newnewbank.com/interest02-20170704.png) no-repeat;
+}
+
+.interestText03 {
+	width: 263px;
+	height: 72px;
+	margin-top: 135px;
+	background: url(https://images-web.newnewbank.com/interest03-20170704.png) no-repeat;
+}
+
+.outBox {
+	display: inline-block;
+	width: 286px;
+	padding: 15px 0;
+	border-radius: 8px;
+	box-shadow: 5px 5px 0 5px #830309;
+}
+
+.fontIcon {
+	width: 189px;
+	height: 44px;
+	background: url(https://images-web.newnewbank.com/font20170704.png) no-repeat;
+}
+
+.modificate {
+	position: absolute;
+	top: 116px;
+	width: 60px;
+	height: 274px;
+}
+
+.modificateLeft {
+	background: url(https://images-web.newnewbank.com/modificateLeft20170704.png) no-repeat;
+	left: 216px;
+}
+
+.modificateRight {
+	background: url(https://images-web.newnewbank.com/modificateRight20170704.png) no-repeat;
+	right: 216px;
+}
+
+.ruleText {
+	position: absolute;
+	top: 155px;
+	width: 48px;
+	height: 198px;
+	background: url(https://images-web.newnewbank.com/ruleText20170704.png) no-repeat;
+	left: 278px;
+}
+
+.textScript {
+	width: 580px;
+	position: absolute;
+	top: 160px;
+	left: 376px;
+	line-height: 35px;
+	letter-spacing: 1px;
+}

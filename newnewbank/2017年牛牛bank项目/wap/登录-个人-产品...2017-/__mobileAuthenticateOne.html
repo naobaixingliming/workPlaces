@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>手机认证--第一步</title>
+		<link rel="stylesheet" type="text/css" href="css/loginRegister.css"/>
+		<style type="text/css">
+			.tellNum{
+				padding-right: 0.9375rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="mobileAuthenticateOne" class="wholeInterface">
+			<div class="bgColor_fff top-page">				
+				<div class="siggle-line">	
+					<i class="font_24 color_999 w-190">已绑手机号</i>
+					<!--<input type="text" class="inputEle telPhone" placeholder="" />-->
+					<i class="float_right tellNum font_20 color_999">151****1714</i>
+				</div>				
+			</div>
+			<!--红色   增加   ：bgColor_f44975 -->
+			<p class="font_30 color_fff text_center bgColor_f44975 loginBtn" style="margin-bottom: 0.46875rem;">更换手机号码</p>
+			<p class="font_18" style="margin:0 0.546875rem;line-height: 0.546875rem;">一个手机号只能绑定一个账户，是平台身份认证、账户操作、接收信息的重要凭证和途径。</p>
+			
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var realNameVm = {
+					init: function() {
+						this.bindEvent();
+					},
+					bindEvent: function() {
+						//删除输入
+						$('.deleteIcon').on('click', function() {
+							$('.telPhone').val('');
+						});
+											
+						
+						
+					}
+				}
+				realNameVm.init();
+			})()
+		</script>
+	</body>
+
+</html>

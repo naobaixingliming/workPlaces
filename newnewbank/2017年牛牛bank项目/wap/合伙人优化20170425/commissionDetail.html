@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>提成明细</title>
+		<!--<link rel="stylesheet" type="text/css" href="css/Reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/partner.css" />
+		
+	</head>
+
+	<body>
+		<div id="fundDetail" class="partner">
+			<!--弹框 start-->
+			<div id="contain-popup">
+				<div class="showdowBox"></div>
+				<div class="popupBox margin_center">
+					<p class="text_center" style="padding-bottom: 1.40625rem;"><i class="font_30 royaltyRule text_center color_fff">提成规则</i></p>
+					<div style="line-height: 0.625rem;padding-bottom: 1.25rem;">
+						<p class="font_24 color_fff"><i class="float_left w-40 text_center">1.</i><span class="w-500">推荐客户投资30天以上产品，合伙人可以获得提成；</span></p>
+						<p class="font_24 color_fff"><i class="float_left w-40 text_center">2.</i><span class="w-500">客户投资后50%的提成及时到账，另外50%提成客户投资到期后到账；</span></p>
+						<p class="font_24 color_fff"><i class="float_left w-40 text_center">3.</i><span class="w-500">提成金额以客户投资时合伙人所在级别不准，不受月度考核影响；</span></p>
+						<p class="font_24 color_f44975"><i class="float_left w-40 color_fff text_center">4.</i><span class="w-500"><i class="color_fff">[ 一级推荐提成 ]</i>=客户投资金额*投资期限 /365*一级提成系数
+							</br><i class="color_fff">[ 二级推荐提成 ]</i>=客户投资金额*投资期限  /365*二级提成系数</span></p>
+					</div>
+					<p class="text_center"><i class="deleteIcon"></i></p>
+				</div>
+			</div>
+			<!--弹框 end-->
+			<div class="bgColor_fff two-page">
+				<div class="font_24 h-80 padding-left margin_center">
+					<i class="color_333">提成合计</i><i class="float_right color_333 padding-right-35">￥3000.36</i>
+				</div>
+				<p class="under_line mar-left-right-10"></p>
+				<div class="padding-top-bottom-65  padding-left-right">
+					<div class="inline_block relative wh-200">
+						<div class="circle"></div>
+						<canvas id="can1" width="400" height="400"></canvas>
+					</div>
+					<div class="float_right">
+						<div class="single-line1">
+							<i class="dot bgColor_ffc62e"></i>
+							<i class="color_666 font_18">一级客户到账:</i>
+							<i class="color_333 font_20 float_right">￥2000.36</i>
+						</div>
+						<div class="single-line1">
+							<i class="dot bgColor_f44975"></i>
+							<i class="color_666 font_18">一级客户待收:</i>
+							<i class="color_333 font_20 float_right">￥856</i>
+						</div>
+						<div class="single-line1">
+							<i class="dot bgColor_7dbdd0"></i>
+							<i class="color_666 font_18">二级客户到账:</i>
+							<i class="color_333 font_20 float_right">￥100</i>
+						</div>
+						<div class="single-line1">
+							<i class="dot bgColor_19baaa"></i>
+							<i class="color_666 font_18">二级客户待收:</i>
+							<i class="color_333 font_20 float_right">￥44</i>
+						</div>
+					</div>
+				</div>
+			</div>			
+			<div class="three-page-homePge bgColor_fff h-80  mar-top-20 padding-left-right">
+				<i class="font_24 color_333 getBankName">提成规则</i>
+				<i class="hintIcon float_right mar-top-25"></i>
+			</div>		
+			<div class="bgColor_fff three-page">
+				<p class="padding-left font_24 h-80 color_333">提成明细</p>
+				<p class="under_line mar-left-right-10"></p>
+				<div class="single-line ">
+					<div class="inline_block  dt-line  float_right">
+						<i class="font_20 color_666">一级客户到账</i>
+						<i class="arrow float_right mar-top-30 mar-right-50"></i>
+					</div>
+				</div>
+				<p class="under_line mar-left-55"></p>
+				<div class="single-line ">
+					<div class="inline_block  dt-line  float_right">
+						<i class="font_20 color_666">一级客户待收</i>
+						<i class="arrow  float_right mar-top-30 mar-right-50"></i>
+					</div>
+				</div>
+				<p class="under_line mar-left-55"></p>
+				<div class="single-line ">
+					<div class="inline_block  dt-line  float_right">
+						<i class="font_20 color_666">二级客户到账</i>
+						<i class="arrow  float_right mar-top-30 mar-right-50"></i>
+					</div>
+				</div>
+				<p class="under_line mar-left-55"></p>
+				<div class="single-line ">
+					<div class="inline_block  dt-line float_right">
+						<i class="font_20 color_666">二级客户待收</i>
+						<i class="arrow  float_right mar-top-30 mar-right-50"></i>
+					</div>
+				</div>
+			</div>
+			<!--<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li class="currentf">
+							<a href="index.html">
+								<div class="icon home"></div>首页</a>
+						</li>
+						<li>
+							<a href="productList.html">
+								<div class="icon money"></div>投资理财</a>
+						</li>
+						<li>
+							<a href="userCenter.htm">
+								<div class="icon fdj"></div>个人中心</a>
+						</li>
+						<li>
+							<a href="myPartner.htm">
+								<div class="icon partnerBtImg"></div>合伙人</a>
+						</li>
+						<li>
+							<a href="kefu.html">
+								<div class="icon kehu"></div>客服</a>
+						</li>
+					</ul>
+				</div>
+			</footer>-->
+
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var canv = document.getElementById("can1");
+				var ctx = canv.getContext("2d");
+				var num = [2.29, 2.29, 0.89, 1.4];
+				var color = ["#ffc62e", "#f44975", "#7dbdd0", "#19baaa"]
+				var j = 0,
+					j1 = 0,
+					j2 = 0,
+					jiao = 0;
+				var sun = 0;
+				for(var i = 0; i < num.length; i++) {
+					sun = sun + num[i];
+				}
+				for(var i = 0; i < num.length; i++) {
+					j = 2 * Math.PI * num[i] / sun;
+					j2 = j1 + j;
+					ctx.beginPath();
+					ctx.fillStyle = color[i];
+					ctx.arc(canv.width / 2, canv.height / 2, canv.width / 2, j1, j2, false);
+					ctx.lineTo(canv.width / 2, canv.height / 2);
+					ctx.closePath();
+					ctx.fill();
+					jiao = j1 + j / 2;
+					ctx.font = "20px Arial";
+					ctx.fillStyle = "#000";
+					j1 = j1 + j;
+				}
+
+			})
+		</script>
+		<script type="text/javascript">
+			(function() {
+				$('.hintIcon').on('click', function() {
+					$('#contain-popup').show();
+				});
+				
+				$('.deleteIcon').on('click', function() {
+					$(this).parents('#contain-popup').hide();
+				});
+
+			})()
+		</script>
+
+	</body>
+
+</html>

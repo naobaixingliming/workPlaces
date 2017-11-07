@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../../js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>双旦狂欢</title>
+		<style type="text/css">
+			#cover {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 10.0rem;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.9);
+				display: block;
+				z-index: 1;
+			}
+			
+			.bombBox_giftList {
+				display: block;
+				position: fixed;
+				width: 8.9375rem;
+				top: 10%;
+				left: 5%;
+				z-index: 20000;
+			}
+			
+			.bombBox_eight {
+				color: #333;
+			}
+			
+			.topIcon {
+				width: 8.9375rem;
+				height: 1.453125rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_receiveSuccess20161222.png) no-repeat;
+				background-size: 8.9375rem 1.453125rem;
+			}
+			
+			.bottomBoxEight {
+				width: 8.9375rem;
+				height: 6.25rem;
+				background-color: #fff;
+				border-radius: 0 0 0.15625rem 0.15625rem;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.bottomBoxTen,
+			.bottomBoxFifty {
+				width: 8.9375rem;
+				background-color: #fff;
+				border-radius: 0 0 0.15625rem 0.15625rem;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.metaItem20 {
+				color: #333;
+				font-size: 0.3125rem;
+				text-align: center;
+			}
+			
+			.mataRed {
+				color: #f44975;
+			}
+			
+			.metaItemMar {
+				margin-top: 0.625rem;
+			}
+			
+			.giftEightIcon {
+				width: 8.34375rem;
+				height: 3.4375rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_passwordBox20161222.jpg) no-repeat;
+				background-size: 8.34375rem 3.4375rem;
+				margin: 0.46875rem auto;
+			}
+			
+			.bottomBoxTwenty {
+				width: 8.9375rem;
+				height: 7.34375rem;
+				background-color: #fff;
+				border-radius: 0 0 .15625rem .15625rem;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.giftTwentyIcon {
+				width: 8.9375rem;
+				height: 5.1875rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_giftTwenty_20161222.jpg) no-repeat;
+				background-size: 8.9375rem 5.1875rem;
+				margin: 0.36875rem auto;
+			}
+			
+			.bottomBoxThirty {
+				width: 8.9375rem;
+				height: 9.5625rem;
+				background-color: #fff;
+				border-radius: 0 0 .15625rem .15625rem;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			.giftThirtyIcon {
+				width: 8.9375rem;
+				height: 7.34375rem;
+				background: url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_giftThirty21161222.jpg) no-repeat;
+				background-size: 8.9375rem 7.34375rem;
+				margin: 0.36875rem auto;
+			}
+			
+			.bombBox_ten {
+				/*position: absolute!important;*/
+				top: 0%;
+				z-index:20000 ;
+			}
+			
+			.bombBox_fifty {
+				/*position: absolute!important;*/
+				top: 0%;
+				z-index:20000 ;
+			}
+			
+			.hidden {
+				display: none;
+			}
+			
+			.lanren,
+			.lanren1 {
+				width: 100%;
+				height: auto;
+				margin: 0 auto;
+				overflow: hidden;
+				text-align: left;
+				background: #fff;
+				padding: 5px;
+			}
+			
+			.lanren ul.list,
+			.lanren1 ul.list {
+				overflow: hidden;
+			}
+			
+			.lanren ul.list li,
+			.lanren1 ul.list li {
+				float: left;
+				overflow: hidden;
+			}
+			
+			.lanren ul.list p,
+			.lanren1 ul.list p {
+				text-align: center;
+				padding: 0.15625rem;
+			}
+			
+			.lanren .more,
+			.lanren1 .more {
+				overflow: hidden;
+				padding: 0.15625rem;
+				text-align: center;
+			}
+			
+			.lanren .more a,
+			.lanren1 .more a {
+				display: block;
+				width: 2rem;
+				padding: 0.125rem 0;
+				color: #fff;
+				margin: 0 auto;
+				background: #333;
+				text-align: center;
+				border-radius: 3px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="cover"></div>
+		<!--弹框  礼品清单 10万 start-->
+		<div class="popup bombBox_giftList bombBox_ten">
+			<div class="trans">
+				<p class="circle_delete"><span class="delete">×</span></p>
+				<p class="verticalLine"></p>
+			</div>
+			<div class="topIcon"></div>
+			<div class="bottomBoxTen">
+				<p class="metaItem20 metaItemMar">累计年化投资额<i class="mataRed">10万</i>元，送中粮春节礼品卡</p>
+				<p class="metaItem20 mataRed">（礼品20选1）可选礼品如下</p>
+				<!--点击加载更多-->
+				<div class="lanren">
+					<div class="hidden">
+						<li><img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_giftTen_one_20161222.jpg" style="width:8.9375rem;height:5.578125rem; " /></li>
+						<li><img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_giftTen_two_20161222.jpg" style="width:8.9375rem;height:5.578125rem; " /></li>
+						<li><img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_giftTen_three_20161222.jpg" style="width:8.9375rem;height:5.578125rem; " /></li>
+						<li><img src="https://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_giftTen_four_20161222.jpg" style="width:8.9375rem;height:3.390625rem; " /></li>
+					</div>
+					<ul class="list">数据加载中，请稍后...</ul>
+					<div class="more">
+						<a href="javascript:;" onClick="lanren.loadMore();">显示更多</a>
+					</div>
+				</div>
+				<!--点击加载更多-->
+			</div>
+		</div>
+		<!--弹框  礼品清单 10万  end-->
+		<script src="../../js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		var _content = []; //临时存储li循环内容
+		var lanren = {
+			_default:1, //默认显示图片个数
+			_loading:1,  //每次点击按钮后加载的个数
+			init:function(){
+				var lis = $(".lanren .hidden li");
+				$(".lanren ul.list").html("");
+				for(var n=0;n<lanren._default;n++){
+					lis.eq(n).appendTo(".lanren ul.list");
+				}
+				$(".lanren ul.list img").each(function(){
+					$(this).attr('src',$(this).attr('realSrc'));
+				})
+				for(var i=lanren._default;i<lis.length;i++){
+					_content.push(lis.eq(i));
+				}
+				$(".lanren .hidden").html("");
+			},
+			loadMore:function(){
+				var mLis = $(".lanren ul.list li").length;
+				for(var i =0;i<lanren._loading;i++){
+					var target = _content.shift();
+					if(!target){
+						$('.lanren .more').html("<p>全部加载完毕...</p>");
+						break;
+					}
+					$(".lanren ul.list").append(target);
+					$(".lanren ul.list img").eq(mLis+i).each(function(){
+						$(this).attr('src',$(this).attr('realSrc'));
+					});
+				}
+			}
+		}
+		lanren.init();
+	</script>
+	<script>
+		var _content1 = []; 
+		var lanren1 = {
+			_default:1, 
+			_loading:1, 
+			init:function(){
+				var lis = $(".lanren1 .hidden li");
+				$(".lanren1 ul.list").html("");
+				for(var n=0;n<lanren1._default;n++){
+					lis.eq(n).appendTo(".lanren1 ul.list");
+				}
+				$(".lanren1 ul.list img").each(function(){
+					$(this).attr('src',$(this).attr('realSrc'));
+				})
+				for(var i=lanren1._default;i<lis.length;i++){
+					_content1.push(lis.eq(i));
+				}
+				$(".lanren1 .hidden").html("");
+			},
+			loadMore:function(){
+				var mLis = $(".lanren1 ul.list li").length;
+				for(var i =0;i<lanren1._loading;i++){
+					var target = _content1.shift();
+					if(!target){
+						$('.lanren1 .more').html("<p>全部加载完毕...</p>");
+						break;
+					}
+					$(".lanren1 ul.list").append(target);
+					$(".lanren1 ul.list img").eq(mLis+i).each(function(){
+						$(this).attr('src',$(this).attr('realSrc'));
+					});
+				}
+			}
+		}
+		lanren1.init();
+	</script>
+	</body>
+
+</html>

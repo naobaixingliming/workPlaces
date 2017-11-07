@@ -1,0 +1,271 @@
+	* {
+				margin: 0;
+				padding: 0;
+				font-family: "microsoft yahei";
+			}
+			
+			i {
+				font-style: normal;
+				display: inline-block;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.font_12 {
+				font-size: 12px;
+			}
+			
+			.font_13 {
+				font-size: 13px;
+			}
+			
+			.font_14 {
+				font-size: 14px;
+			}
+			
+			.font_15 {
+				font-size: 15px;
+			}
+			
+			.font_16 {
+				font-size: 16px;
+			}
+			
+			.font_18 {
+				font-size: 18px;
+			}
+			
+			.font_20 {
+				font-size: 20px;
+			}
+			
+			.font_24 {
+				font-size: 24px;
+			}
+			
+			.font_26 {
+				font-size: 26px;
+			}
+			
+			.font_30 {
+				font-size: 30px;
+			}
+			
+			.font_32 {
+				font-size: 32px;
+			}
+			
+			.font_40 {
+				font-size: 40px;
+			}
+			
+			.font_48 {
+				font-size: 48px;
+			}
+			
+			.font_50 {
+				font-size: 50px;
+			}
+			
+			.color_fff {
+				color: #fff;
+			}
+			
+			.color_999 {
+				color: #999;
+			}
+			
+			.color_333 {
+				color: #333;
+			}
+			
+			.color_666 {
+				color: #666;
+			}
+			
+			.bgColor_fff {
+				background-color: #fff;
+			}
+			
+			.bgColor_f44975 {
+				background-color: #f44975;
+			}
+			
+			.bgColor_7dbdd0 {
+				background-color: #7dbdd0;
+			}
+			
+			.bgColor_19baaa {
+				background-color: #19baaa;
+			}
+			
+			.float_right {
+				float: right;
+			}
+			
+			.margin_center {
+				margin: 0 auto;
+			}
+			
+			.inline_block {
+				display: inline-block;
+			}
+			
+			.relative {
+				position: relative;
+			}
+			
+			.text_center {
+				text-align: center;
+			}
+			#fundDetail-root {
+				background-color: #efeff4;
+				width: 640px;
+				padding-bottom: 30px;
+			}
+			
+			#fundDetail-root .one-page {
+				margin-bottom: 20px;
+			}
+			
+			#fundDetail-root .two-page {
+				margin-bottom: 22px;
+			}
+			
+			.padding-left {
+				padding-left: 40px;
+			}
+			.wh-200{
+				width: 200px;
+				height: 200px;
+			}
+			.padding-right {
+				padding-right: 35px;
+			}
+			
+			.insurance {
+				padding: 24px 35px;
+			}
+			
+			.inProtection {
+				width: 64px;
+				height: 25px;
+				line-height: 25px;
+				background-color: #19baaa;
+				border-radius: 5px;
+				margin-right: 35px;
+				margin-top: 24px;
+			}
+			
+			.circle {
+				width: 90px;
+				height: 90px;
+				position: absolute;
+				left: 55px;
+				top: 55px;
+				background-color: #fff;
+				border-radius: 50%;
+			}
+			
+			.underLine {
+				border-bottom: 1px solid #dcdcdc;
+			}
+			
+			.dot {
+				float: left;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin-right: 10px;
+				margin-top: 20px;
+			}
+			
+			.padding-30 {
+				padding: 30px 0 30px 30px;
+			}
+			
+			.three-page {
+				margin-top: 23px;
+			}
+			
+			.single-line {
+				height: 80px;
+			}
+			
+			.arrow {
+				width: 15px;
+				height: 15px;
+				border-top: 2px solid #a7a7a7;
+				border-left: 2px solid #a7a7a7;
+				moz-transform: rotate(135deg);
+				-webkit-transform: rotate(135deg);
+				-o-transform: rotate(135deg);
+				transform: rotate(135deg);
+				margin-right: 40px;
+				margin-top: 30px;
+			}
+			
+			.spriteIcon {
+				width: 36px;
+				height: 34px;
+				background: url(../img/spritesIcon201729.png) no-repeat;
+				margin-top: 25px;
+				margin-right: 15px;
+				background-size: cover;
+			}
+			
+			.spriteIcon1 {
+				background-position: 0 0;
+			}
+			
+			.spriteIcon2 {
+				background-position: -73px 0;
+			}
+			
+			.spriteIcon3 {
+				background-position: -140px 0;
+			}
+			
+			.spriteIcon4 {
+				background-position: -200px 0;
+			}
+			
+			.spriteIcon5 {
+				background-position: -264px 0;
+			}
+			
+			.spriteIcon6 {
+				background-position: -318px 0;
+			}
+			
+			.common-border {
+				border-bottom: 1px solid #dcdcdc;
+			}
+			
+			.dt-line {
+				width: 85%;
+				height: 100%;
+				line-height: 80px;
+			}
+			
+			.h-80 {
+				height: 80px;
+				line-height: 80px;
+			}
+			
+			#can1 {
+				width: 200px;
+				height: 200px;
+			}
+			
+			.single-line1 {
+				width: 280px;
+				height: 60px;
+				line-height: 60px;
+			}
+			
+			.fundType {
+				margin-top: 10px;
+			}

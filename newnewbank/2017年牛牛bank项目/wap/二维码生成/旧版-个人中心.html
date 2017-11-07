@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>&nbsp;牛牛bank-个人中心</title>
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<link href="http://wap.newnewbank.com/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://wap.newnewbank.com/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="http://wap.newnewbank.com/css/Master.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="http://wap.newnewbank.com/css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+
+		<style type="text/css">
+			/*修改20170315 start*/
+			
+			.bodyBg {
+				min-height: 100vh;
+			}
+			
+			.bodyBg .cover {
+				display: none;
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				background-color: #000000;
+				opacity: 0.9;
+				z-index: 1000;
+			}
+			
+			i {
+				font-style: normal;
+			}
+			
+			.bodyBg .perponPopup {
+				display: none;
+				z-index: 2000;
+				width: 8.625rem;
+				position: fixed;
+				top: 8%;
+				right: 7%;
+				background-color: #fff;
+				border-radius: 5px;
+				padding-bottom: 6%;
+			}
+			
+			.personal_box {
+				margin-top: 0.4375rem;
+			}
+			
+			.headPortrait {
+				width: 1.5625rem;
+				height: 1.5625rem;
+				float: left;
+			}
+			
+			.user_name {
+				color: #000;
+				font-size: 0.375rem;
+				margin-left: 0.3125rem;
+				float: left;
+				margin-top: 5%;
+			}
+			
+			.vipLevelChange {
+				display: inline-block;
+				font-size: 0.3125rem;
+				text-align: center;
+				float: left;
+				color: #999;
+				margin-left: 2%;
+				margin-top: 5%;
+			}
+			
+			
+			.qrCodeInco img {
+				width: 60%;
+			}
+			
+			.grayFont {
+				display: block;
+				font-size: 0.28125rem;
+				color: #999999!important;
+				text-align: center;
+				width: 6.8125rem;
+				margin: 0 auto;
+			}
+			
+			.blackFont {
+				font-size: 0.28125rem;
+				color: #000;
+				text-align: center;
+			}
+		
+			#qrCode img {
+				width: 5.546875rem;
+				height: 5.546875rem;
+				margin: 0 auto;
+			}
+			
+			.clearfloat:after {
+				display: block;
+				clear: both;
+				content: "";
+				visibility: hidden;
+				height: 0
+			}
+			
+			.clearfloat {
+				zoom: 1
+			}
+			
+			.perponPopup .redFont {
+				margin: 5% 0 1%;
+				color: #e4476f;
+				text-align: center;
+				font-size: 0.390625rem;
+				font-family: "microsoft yahei";
+			}
+			#qrCode {
+				width: 100%;
+				text-align: center;
+				margin: 0.3rem 0;
+			}
+			
+			/*修改20173-1 end*/
+		</style>
+		<style type="text/css">	
+			.qrCode{
+				width: 0.484375rem;
+				height: 0.484375rem;
+				position: absolute;
+				top: .2rem;
+				right: .2rem;
+			}		
+			.error-hint {				
+			    box-sizing: border-box;
+			    width: 100%;			   
+			    padding:.2rem 0.15625rem;
+			    border: 0.023437rem solid #ff9900;
+			    background-color: #fffdf1;
+			    color: #000;
+			    font-size: 0.3125rem;
+			    box-shadow: 1px 1px 0.078125rem #d1d1d1;
+			    -webkit-box-shadow: 1px 1px 0.078125rem #d1d1d1;
+			    -moz-box-shadow: 1px 1px 0.078125rem #d1d1d1;
+			    -o-box-shadow: 1px 1px 0.078125rem #d1d1d1;
+				}
+				
+				.notCertified {	
+					width: 0.6rem;
+					height: 0.6rem;
+					background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/sprites-hint20170323.png) no-repeat;	
+					margin: 0.15rem 0.4rem 0 0;
+					background-size:cover;															
+				}
+								
+				.float_left {
+					float: left;
+				}
+				.color_ff7908{
+					color: #ff7908;
+					text-align: left;
+				}
+		</style>
+
+
+	</head>
+
+	<body class="bodyBg">
+		
+		
+		
+		<div class="cover"></div>
+		<div class="perponPopup">
+			<div class="personal_box clearfloat">
+				<div class="head_box fl" style="margin-left:8% ;">
+					<!--修改20170315-->
+					<img class="headPortrait" src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/head20170315.png">
+				</div>
+				<i class="user_name">小王</i>
+				<a class="vipLevelChange" href="javascript:;">
+					<i class="icon-1-02">&nbsp;</i>
+					<span>会员</span></a>
+			</div>
+			<p class="redFont">恭喜，您的专属二维码已生成！</p>
+			<p class="blackFont">快邀请您的小伙伴一起赚钱吧！</p>
+			<div id="qrCode"></div>
+			<span class="grayFont">将专属二维码发送给客户，客户扫描进入并成功注册，不用填写推荐码，即可建立客户关系。</span>
+		</div>
+		<!--header-->
+		<div class="error-hint">
+				<i class="notCertified float_left"></i>
+				<i style="padding-right: 15px;">您未进行风险承受能力评估，为不影响投资请立即评估。</i>
+				<i><a class="color_ff7908"  href="javascript:void">立即评估</a></i>
+		</div>
+		<div class="huiyuanSpan" style="position: relative;" >
+			
+			<div class="hyLeft1 fl"><img src="http://wap.newnewbank.com/huiyuanSpanimages/nnBank23.jpg"></div>
+			<div class="hyLeft2 fl">
+				<div class="textName fl">
+					<span id="displayName" class="yellow">一幕滑到</span>
+					<script>
+						now = new Date(), hour = now.getHours()
+						if(hour < 6) {
+							document.write("凌晨好！")
+						} else if(hour < 9) {
+							document.write("早上好！")
+						} else if(hour < 12) {
+							document.write("上午好！")
+						} else if(hour < 14) {
+							document.write("中午好！")
+						} else if(hour < 17) {
+							document.write("下午好！")
+						} else if(hour < 19) {
+							document.write("傍晚好！")
+						} else if(hour < 22) {
+							document.write("晚上好！")
+						} else {
+							document.write("夜里好！")
+						}
+					</script>
+				</div>
+
+				<div class="tixianBtn fl">
+					<a href="javascript:;" id="cash" class="jdBtn">提现</a>
+				</div>
+				<div class="chongzhiB fl">
+					<a href="javascript:;" id="recharge" class="jdBtn">充值</a>
+				</div>
+				
+				
+				<img src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCode20161021.png" class="qrCode" />
+				
+				
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!---->
+		<!--content-->
+		<div class="contentBox" style="padding:0; padding-bottom:15px;">
+			<table width="100%" border="0" class="messList">
+				<!-- 2015/7/14位置对调 -->
+				<tr>
+					<td width="50%" class="tbtex1">
+						<div>可用余额</div>
+						<div class="tbSpan1 money"></div>
+					</td>
+					<td colspan="2" width="50%" class="tbtex1">
+						<div class="acceAll">账户总资产&nbsp;<img src="http://wap.newnewbank.com/images/nnBank18.jpg"></div>
+						<div class="tbSpan1 money"></div>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" class="messList messList2">
+				<tr>
+					<td class="tbtex2" width="33%">
+						<div>现投资总额</div>
+						<div class="tbSpan2 money"></div>
+					</td>
+					<td class="tbtex2" width="33%">
+						<div>累计收益</div>
+						<div class="tbSpan2 money"></div>
+					</td>
+					<td class="tbtex2" width="33%">
+						<div>待收收益</div>
+						<div class="tbSpan2 money"></div>
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" class="mytqjTable">
+				<tr>
+					<td>
+						<a href="privilege.html"><span><img src="http://wap.newnewbank.com/images/nnBank19.jpg"></span>我的特权金</a>
+					</td>
+					<td>
+						<a href="investedList.html"><span><img src="http://wap.newnewbank.com/images/nnBank20.jpg"></span>投资记录</a>
+					</td>
+				</tr>
+				<tr>
+					<!-- <td><a href="share.html"><span><img src="images/nnBank21.jpg"></span>推荐收益<em style="visibility:hidden; color:#fff;">益</em></a></td> -->
+					<td>
+						<a href="myPartner.html"><span><img src="http://wap.newnewbank.com/images/nnBank21.jpg"></span>牛牛合伙人</a>
+					</td>
+					<td>
+						<a href="dailySurprise.html"><span><img src="http://wap.newnewbank.com/images/nnBank21xj.jpg"></span>每日惊喜</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="piggyBank.html"><span><img src="http://wap.newnewbank.com/images/nnBank21a.jpg"></span>我的存钱罐</a>
+					</td>
+					<td>
+						<a href="accountManage.html"><span><img src="http://wap.newnewbank.com/images/nnBank22.jpg"></span>账户设置</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="coupon.html"><span><img src="http://wap.newnewbank.com/images/nnBank20151214.jpg"></span>我的优惠券</a>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<!-- 账户总资产-弹窗begin -->
+			<div class="tqjtcy">
+				<div class="contentc" style="height:auto">
+					<div class="closed"><img src="images/closed.png"></div>
+					<div class="tequanjText">账户总资产=可用余额+现投资总额 </div>
+					<div class="tanchuanAn1 baseTOp1">
+						<input type="button" value="关闭" class="lookBtn" />
+					</div>
+				</div>
+			</div>
+			<div class="content_mark tqjmrk"></div>
+			<!-- 账户总资产-弹窗end -->
+		</div>
+		<!--footer-->
+		<footer class="menu">
+			<script>
+				window.navIndex = 3;
+			</script>
+		</footer>
+	</body>
+	<!--<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>-->
+	<script type="text/javascript" src="http://wap.newnewbank.com/js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/qrcode.min.js"></script>
+	<script type="text/javascript">
+		//点击二维码生成事件
+		$(".qrCode").on('click', function() {
+			$(".cover,.perponPopup").show();
+		});
+		//修改20170315 start
+		$(".cover").on('click', function() {
+			$(".cover,.perponPopup").hide();
+		});
+		//生成二维码 20170315
+		var ele = document.getElementById("qrCode");
+		var qrcode = new QRCode(ele, {
+			width: 100,
+			height: 100
+		});
+		qrcode.makeCode("http://blog.csdn.net/mr_smile2014/article/details/51782122");
+		//修改20170315 end
+	</script>
+	<!--//修改 20161021 end-->
+
+	<script type="text/javascript" src="js/init.js"></script>
+	<script>
+		$(function() {
+			if($.isDomain() && $.isWeiXin()) {
+				$("#zhongqiu").show();
+				$.apiPost("getMidAuUrl", {
+					redirectUrl: $.absolute_url("midautumn.html")
+				}, function(data) {
+					$("#zhongqiu a").eq(0).attr("href", data);
+				});
+			}
+			$("#displayName").text($.cookie("displayName") + ","); //设置展示名
+			$.apiPost("userBalance", "", function(data) {
+				$(".money").eq(1).text("￥" + data.total);
+				$(".money").eq(0).text("￥" + data.availableFund);
+				$(".money").eq(2).text("￥" + (data.lendCapital * 1.0 + data.frozenFund * 1.0));
+				$(".money").eq(3).text("￥" + data.totalIncome);
+				$(".money").eq(4).text("￥" + data.lendIncome);
+			});
+
+			$("#recharge").click(function() {
+				location.href = "recharge.html";
+			});
+
+			$("#cash").click(function() {
+				location.href = "cash.html";
+			});
+			$(function() {
+				$('.acceAll').click(function() {
+					$('.tqjtcy').show(0);
+					$('.tqjmrk').show(0);
+					$('.tqjtcy').css("overflow", "inherit");
+				});
+				$('.content_mark').click(function() {
+					$('.tqjtcy').hide(0);
+					$('.tqjmrk').hide(0);
+				});
+				$(".closed").click(function() {
+					$('.tqjtcy').hide(0);
+					$('.tqjmrk').hide(0);
+				})
+				$(".tanchuanAn1 .lookBtn").click(function() {
+					$('.tqjtcy').hide(0);
+					$('.tqjmrk').hide(0);
+				})
+			});
+		})
+	</script>
+
+</html>

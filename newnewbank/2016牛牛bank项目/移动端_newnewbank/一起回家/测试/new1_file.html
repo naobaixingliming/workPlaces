@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			#root{
+				width:640px ;
+			}
+			#cover {
+				width: 640px;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .8);
+				/*display: none;*/
+			}
+			/*--弹框  start--*/
+			
+			.popup {
+				width: 600px;
+				position: fixed;
+				/*top: 20%;*/
+				/*left: 5%;*/
+				/*display: none;*/
+			}
+			
+			.drivieLicenseInco img {
+				width: 518px;
+				height: 340px;
+				margin-left: 55px;
+				background: url(img/driversLicense20161210.png) no-repeat;
+				background-size: 518px 340px;
+			}
+			
+			.popupText {
+				margin-top: 60px;
+			}
+			
+			.popupText,
+			.upBox p:first-child {
+				text-align: center;
+				font-size: 24px;
+				color: #fff;
+			}
+			
+			.upBox{
+				margin-top: 80px;
+				margin-left: 30px;
+			}
+			.upload,
+			.cancel {
+				width: 580px;
+				background-color: #fff;
+				border-radius: 5px;
+				color: #999;
+			}			
+			.upload {
+				height: 100px;
+				font-size: 24px;
+				color: #999;
+				position: relative;
+				margin-bottom: 12px;
+			}			
+			.cancel {
+				height: 80px;
+				font-size: 28px;
+				line-height: 80px;
+				text-align: center;
+			}
+			
+			#file {
+				outline: none;
+				border: none;
+				width:48% ;
+				height:100% ;
+			}			
+			#file {
+				opacity: 0;
+				z-index: 3;
+				display: inline-block;
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.upload .album {
+				display: inline-block;
+			    width: 50%;
+			    height: 80%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    border-right: 1px solid #eee;
+			    margin-top: 10px;
+			}						
+			.upload .takePhotos {
+				display: inline-block;
+				height: 80%;
+				width: 50%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin-top: 10px;
+			}			
+			.inco {
+				display: inline-block;
+				float: left;
+				margin:15px 20px 0 90px ;
+			}
+			
+			.albumInco {				
+			    width: 50px;
+			    height: 46px;
+			    background: url(img/camera20161210.png) no-repeat 0 0;
+				/*background-size: 50px 46px;*/
+			}
+			
+			.photoInco {
+				width: 60px;
+				height: 48px;
+				background: url(img/camera20161210.png) no-repeat -50px 0;
+				/*background-size: 60px 48px;*/
+			}
+			.nameText{
+				margin-top: 25px;
+    			float: left;
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="root">
+			<!--覆盖层  start-->
+			<div id="cover"></div>
+			<!--覆盖层  end-->
+			<!--弹框  行驶证 start-->
+			<div class="popup BombBox1">
+				<div class="drivieLicenseInco">
+					<img src="img/driversLicense20161210.png" />
+				</div>
+				<div class="popupText">
+					<p>请按照示例图片上传，四角对齐</p>
+					<p>如照片模糊、反光、太暗、有遮挡，则不予认证。</p>
+				</div>
+				<div class="upBox">
+					<p>请上传行驶证</p>
+					
+					<div class="upload">
+						<!--相册-->
+						<div class="album">
+							<i class="inco albumInco"></i>							
+							<span class="nameText">相册</span>							
+						</div>
+						<input type="file" id="file" />
+						<!--相册-->
+						<!--拍照-->
+						<div class="takePhotos">
+							<i class="inco photoInco"></i>							
+							<span class="nameText">拍照</span>							
+						</div>
+						<!--拍照-->
+					</div>
+					<div class="cancel">取消</div>
+				</div>
+			</div>
+			<!--弹框 行驶证  end-->
+		</div>
+	</body>
+
+</html>

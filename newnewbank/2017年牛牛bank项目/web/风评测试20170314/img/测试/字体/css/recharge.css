@@ -1,0 +1,210 @@
+/*-----------------------------------------------------------------------------------------------------------*/
+/* 01 - Main */
+/*-----------------------------------------------------------------------------------------------------------*/
+html{
+	font-size: 62.5%;	
+}
+body{
+	height: auto;
+	background-color: #E6EAED;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #40C454; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #40C454; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #40C454; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #40C454; 
+} 
+
+/*--------------------------------------------------------------------------------------------*/
+/* 02 - header */
+/*--------------------------------------------------------------------------------------------*/
+#header{
+	height: 6rem;
+	background-color: #fff;
+	margin-top: 1.6rem;
+	position: relative;
+}
+#typeIn{
+	position: absolute;
+	height: 4rem;
+	top: 1rem;
+	padding-left: 1.7rem;
+	font-size: 1.9rem;
+	font-family:  "微软雅黑";
+	font-weight: 200;
+	background:no-repeat 0 0 scroll #fff;
+    border:none;
+    outline:medium;
+    letter-spacing: 0.06rem;
+}
+#header span{
+	float: right !important;
+	height: 6rem !important;
+	line-height: 6rem !important;
+	margin-right: 1rem;
+	display: none;
+}
+#x{
+ 	width: 1.6rem; 
+ 	height: 1.6rem; 
+ 	line-height: 1.6rem;
+ 	border: 0.1rem solid #CDCDCD; 
+ 	background: #CDCDCD; 
+ 	border-radius: 50%; 
+ 	text-align: center;
+ 	display: inline-block; 
+}
+.x{ 
+	display: inline-block; 
+	width: 10px;height:1px; 
+	background: white;
+	line-height: 0;
+	font-size:0;
+	vertical-align: middle;
+	-webkit-transform: rotate(45deg);
+}
+.x:after{
+	content:'/';
+  	display:block;
+  	width: 10px;
+  	height:1px; 
+  	background: white;
+  	-webkit-transform: rotate(-90deg);
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 02 - nav */
+/*--------------------------------------------------------------------------------------------*/
+#nav{
+	display: none;
+}
+#nav ul{
+	padding: 0;
+	margin: 1rem auto 0rem 2rem;
+}
+
+#nav ul li{
+	display: inline-block;
+	color: #ADADAD;
+	font-size: 1.3rem;
+}
+#line{
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100% !important;
+	height: 1px !important;
+	background-color: #E6EAED !important;
+	overflow: hidden !important;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 03 - body */
+/*--------------------------------------------------------------------------------------------*/
+
+#ibody{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 2rem;
+}
+#top span{
+	width: calc(33.3%);
+	/*margin: 0 5%;*/
+	height: 3.8rem;
+	line-height: 3.8rem;
+	float: left;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.tap{
+	font-weight: 500;
+}
+.color{
+	color: #0FBA06;
+	border-bottom: 0.3rem solid #0FBA06;
+}
+#lists{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#lists li{
+	padding: 0 1.5rem;
+	position: relative;
+}
+#lists li div{
+	box-sizing: border-box;
+	width: 70%;
+	height: 6rem;
+	line-height: 6rem;	
+	float: left;
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-family: "微软雅黑";
+	color: #AAAAAA;
+}
+.iFrame{
+	height: 6rem;
+    line-height: 6rem;
+    float: right !important;
+}
+.price{	
+	border: 0.1rem solid #DADADA;
+	border-radius: 5px;		 /*2016.12.19*/
+	display: inline-block;   
+	width: 6rem;
+	line-height: 2.6rem;     /*2016.12.19*/
+	text-align: center;
+	font-size: 1.4rem;
+	color: #AAAAAA;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/* 04 - footer */
+/*--------------------------------------------------------------------------------------------*/
+
+#footer{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	color: #46659E;	
+}
+#footer span{
+	float: right;
+	margin-right: 1rem;
+	font-family: "微软雅黑";
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+
+
+/*2016.12.19===============================*/
+
+#lists li div:first-child>div{
+	width: 100% !important;
+	height: 6rem;
+	line-height: 6rem;
+}
+
+
+.alertInfo{
+	display: none;
+	color: #BBBBBB;
+	position: absolute;
+	margin-top: 1.7rem;
+	left: 1.5rem;
+	font-weight: lighter !important;
+	font-size: 1.3rem;
+	font-family: "copperplate gothic light";
+	/*width: 100% !important;
+	background-color: red;*/
+}

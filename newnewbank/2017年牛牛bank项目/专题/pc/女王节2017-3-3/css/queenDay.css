@@ -1,0 +1,218 @@
+*{
+				padding: 0;
+				margin: 0;
+				font-family: "microsoft yahei";
+			}
+			i {
+				font-style: normal;  
+				display: inline-block;
+			}
+			a,a:hover {
+			    text-decoration: none;
+			}
+			.inline_block{
+				display: inline-block;
+			}
+			.font_14{
+				font-size: 14px;
+			}
+			.font_18{
+				font-size: 18px;
+			}
+			.font_24{
+				font-size: 24px;
+			}
+			#queenDay{
+				width: 100%;
+			}
+			.w-1200{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.text_center{
+				text-align: center;
+			}
+			.relative{
+				position: relative;
+			}
+			#queenDay .one,#queenDay .two,#queenDay .three,#queenDay .four{
+				width:100% ;
+				max-width: 1920px;
+				min-width: 1200px;
+				margin: 0 auto;
+			}
+			#queenDay .one{				
+				height: 380px;
+				background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_one201733.png) no-repeat center center;
+			}
+			#queenDay .two{
+				height: 678px;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_two201733.png) no-repeat center center ;
+			}
+			#queenDay .three{
+				height: 1331px;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_three201733.png) no-repeat center center ;
+			}
+			#queenDay .four{
+				height: 505px;
+				background:url(https://images-web.oss-cn-hangzhou.aliyuncs.com/web_four201733.png) no-repeat center center ;
+			}
+			.welfareIcon{
+				position: absolute;
+				top: 120px;
+    			right: 420px;
+			}
+			.increaseInterestIcon{
+				position: absolute;
+				top: 280px;
+    			right: 410px;
+			}
+			.buy_now{
+				display: inline-block;
+				position: absolute;
+				top: 400px;
+    			right: 390px;
+				width: 146px;
+				height: 54px;
+				text-decoration: none;
+			}
+			.webreceive{
+				/*position: absolute;
+				top: 405px;
+   				right: 395px;*/
+   				margin-top:5px;
+			}
+			
+			.queen_text_one{
+				display: inline-block;
+			    position: absolute;
+			    top: 420px;
+			    left: 150px;
+			    line-height: 30px;
+			}
+			.queen_text_one p{				
+				color: #935728;
+				font-size: 16px;
+				
+			}
+			.color_935728{
+				color: #935728;
+			}
+			.color_456526{
+				color: #F44975;
+			}
+			.loginText{
+				display: inline-block;
+			    line-height: 30px;
+			    position: absolute;
+			    top: 820px;
+			    left: 120px;
+			    text-align: center;
+			}
+			.windChart{
+				position: absolute;
+				right: 565px;
+    			top: 110px;
+			}
+			.ip-pos{
+				text-align: center;
+				position: absolute;
+			    right: 100px;
+			    top: 270px;
+			}
+			.balloon{
+				position: absolute;
+				left: 20px;
+				top: 50px;
+			}
+			.bob-animation{
+				-webkit-animation: bounce-down 3s linear infinite;
+				animation: bounce-down 3s linear infinite;
+			}
+			@-webkit-keyframes bounce-down {
+				25% {
+					-webkit-transform: translateY(-30px);
+				}
+				50%,
+				100% {
+					-webkit-transform: translateY(0);
+				}
+				75% {
+					-webkit-transform: translateY(30px);
+				}
+			}
+			
+			@keyframes bounce-down {
+				25% {
+					transform: translateY(-30px);
+				}
+				50%,
+				100% {
+					transform: translateY(0);
+				}
+				75% {
+					transform: translateY(30px);
+				}
+			}	
+			.color_f44975{
+				color: #f44975!important;
+			}
+			.color_f44975 td{
+				color: #f44975!important;
+			}
+			.table{
+				line-height: 32px;
+			}
+			.table tr th{
+				text-align: center;
+				 color: #664a27;
+			}
+			.table tr td{
+				color: #666;
+				text-align: center;
+			}
+			#queenDay .list{
+				position: absolute;
+				top: 590px;
+				left: 380px;
+			}
+			.immediate_investment{
+			    display: block;
+			    width: 146px;
+			    height: 55px;
+			    line-height: 55px;
+			    position: absolute;
+			    top: 1105px;
+			    left: 510px;
+			    text-align: center;
+			    color: #fff;
+			    font-size: 24px;
+			    text-decoration: none;
+			}
+			.text-bottom{
+				position: absolute;
+				top: 1080px;
+			    left: 20px;
+			    line-height: 30px;
+			}
+			.circle{
+				float: left;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				margin-top: 10px;
+    			margin-right: 6px;
+				background-color: #666;
+			}
+			.footer {
+				line-height: 30px;
+				width: 100%;
+				font-size: 16px;
+				color: #999;
+				text-align: center;
+				height: 108px;
+				min-width: 1200px;
+			}				
+			.footer p {
+				margin-top: 50px;
+			}

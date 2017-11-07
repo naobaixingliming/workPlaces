@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/loginRegister.css" />
+		<style type="text/css">
+			.Six-goName,.Six-goBank,.Six-coupon{
+				width: 80%;
+				position: fixed;
+				top: 30%;
+				left: 10%;
+				z-index: 2000;		
+			}
+			.Six-top-border{
+				border-radius:0.15625rem 0.15625rem 0 0;
+			}
+			.Six-bottom-border{
+				border-radius:0 0 0.15625rem 0.15625rem;
+			}
+			.Six-head{
+				width: 1.359375rem;
+				height: 1.453125rem;
+				background: url(https://images-wap.newnewbank.com/phone20170629.png) no-repeat;
+				background-size:cover ;				
+			}
+			.Six-bank{
+				width: 2.171875rem;
+				height: 1.5625rem;
+				background: url(https://images-wap.newnewbank.com/bank20170629.png) no-repeat;
+				background-size:cover ;	
+			}
+			.Six-circle{
+				width: 2.5rem;
+				height: 2.5rem;
+				border-radius: 50%;
+				padding: 0.15625rem;
+				margin: -1.40625rem auto 0;
+			}
+			.Six-couponIcon{
+				width: 2.5rem;
+				height: 2.5rem;
+				background: #fff url(https://images-wap.newnewbank.com/coupon20170630.png) no-repeat .3rem .2rem;
+				background-size:1.765625rem 1.75rem ;
+				border-radius: 50%;
+				box-shadow: 5px 8px 10px rgba(0,0,0,.2);
+			}
+			.font-pos{
+				position: absolute;
+			    top: 1.2rem;
+			    left: 30%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="setUp">
+			
+			<!--未实名认证  popup start-->
+			<div class="Six-noRealName none">
+				<div class="shadow" style="z-index: 1000;"></div>
+				<div class="Six-goName">
+					<div class="bgColor_f44975 color_fff text_center Six-top-border" style="padding-bottom: 0.78125rem;">
+						<p style="padding: 0.46875rem 0;"><i class="Six-head"></i></p>
+						<i class="font_30">未实名认证</i></br>
+						<i class="font_24">为保障个人账户资金安全需先实名</i>
+					</div>
+					<div class="bgColor_fff flex-parent font_24 text_center h-90 line-height-90 Six-bottom-border">
+						<a class="color_f44975 flex-child border-right" href="javascript:;">取消</a>
+						<a class="color_f44975 flex-child" href="javascript:;">去实名</a>
+					</div>
+				</div>
+			</div>			 
+			<!--未实名认证  popup end-->
+			<!--未实名认证  popup start-->
+			<div class="Six-noBank none">
+				<div class="shadow" style="z-index: 1000;"></div>
+				<div class="Six-goBank">
+					<div class="bgColor_f44975 color_fff text_center Six-top-border" style="padding-bottom: 0.78125rem;">
+						<p style="padding: 0.625rem 0 0.375rem;"><i class="Six-bank"></i></p>
+						<i class="font_24">开通快捷支付</i></br>
+						<i class="font_24">充值、提现、资金快速到位</i>
+					</div>
+					<div class="bgColor_fff flex-parent font_24 text_center h-90 line-height-90 Six-bottom-border">
+						<a class="color_f44975 flex-child border-right" href="javascript:;">取消</a>
+						<a class="color_f44975 flex-child" href="javascript:;">去绑卡</a>
+					</div>
+				</div>
+			</div>			
+			<!--未实名认证  popup end-->
+			<!--有优惠券  popup start-->
+			<div class="Six-hasCoupon ">
+				<div class="shadow" style="z-index: 1000;"></div>
+				<div class="Six-coupon">
+					<div class="bgColor_f44975 color_fff text_center Six-top-border" style="padding-bottom: 0.78125rem;">
+						<p style="padding-bottom: .2rem;">
+							<span class="Six-circle bgColor_f44975 relative">
+								<i class="Six-couponIcon"></i><i class="color_fff font_20 font-pos ">优惠券</i>
+							</span>
+						</p>
+						<i class="font_24">您有1张优惠券即将到期</i></br>
+						<i class="font_24">请尽快使用</i>
+					</div>
+					<div class="bgColor_fff flex-parent font_24 text_center h-90 line-height-90 Six-bottom-border">
+						<a class="color_f44975 flex-child border-right" href="javascript:;">取消</a>
+						<a class="color_f44975 flex-child" href="javascript:;">充值投资</a>
+					</div>
+				</div>
+			</div>			
+			<!--有优惠券  popup end-->
+			
+			
+			<div class="one-page-homePge ">
+				<div class="bgColor_f44975 h-300 relative padding-left-right">
+					<img src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCode20161021.png" class="qrCode">
+					<div class="" style="padding-top: 0.546875rem;">
+						<p class="text_center inline_block float_left circle-shadow-box overflow">
+							<i class="sprite-account-photo"></i>
+						</p>
+						<div class="inline_block" style="margin-left: 0.46875rem;">
+							<p class="color_fff font_24">下午好，王圈圈</p>
+							<i class="bgColor_dd305c font_24 color_fdedf0 relative circle-red"><em class="yellow-circle font_22">Ⅴ<sub class="font_10">1</sub></em>&nbsp;&nbsp;&nbsp;&nbsp;会员&nbsp;>&nbsp;</i>
+							<i class="bgColor_dd305c font_24 color_fdedf0 circle-red">银牌合伙人</i>
+						</div>						
+					</div>				
+					<div class="accountInfo clearfloat">
+						<div class="inline-block text_center float_left w-49">
+							<p class="color_fdedf0 font_18">总资产(元)</p>
+							<p class="font_28 color_fff">￥3,000,050.56</p>
+						</div>
+						<i class="verticalLine"></i>
+						<div class="inline-block text_center float_right w-49">
+							<p class="color_fdedf0 font_18">累计收益(元)</p>
+							<p class="font_28 color_fff">￥1,000,050.56</p>
+						</div>
+					</div>
+				</div>
+				<div class="bgColor_fff  font_18 color_333" >						
+					<div class="wrap text_center" id="wrap">
+						<!--<ul class="list">
+							<li>-->
+								<div class="flex-parent" style="padding: 0.625rem 0 .1rem;">
+									<a class="flex-child">
+										<p class="s-icon s-ic-01"></p>
+										<i class="font_20 color_333">优惠券</i>
+									</a>
+									<a class="flex-child">
+										<p class="s-icon s-ic-02"></p>
+										<i class="font_20 color_333">每日惊喜</i>
+									</a>
+									<a class="flex-child">
+										<p class="s-icon s-ic-03"></p>
+										<i class="font_20 color_333">存钱罐</i>
+									</a>
+									<a class="flex-child">
+										<p class="s-icon s-ic-04"></p>
+										<i class="font_20 color_333">充值</i>
+									</a>
+								</div>
+							<!--</li>
+							<li>-->
+								<div class="flex-parent" style="padding: 0.5rem 0 0.625rem;">
+									<a class="flex-child">
+										<p class="s-icon s-ic-05"></p>
+										<i class="font_20 color_333">提现</i>
+									</a>
+									<a class="flex-child">
+										<p class="s-icon s-ic-06"></p>
+										<i class="font_20 color_333">回款日历</i>
+									</a>
+									<a class="flex-child">
+										<!--<p class="s-icon s-ic-07"></p>
+										<i class="font_20 color_333">特权金</i>-->
+									</a>
+									<a class="flex-child">
+										<!--<p class="s-icon s-ic-08"></p>
+										<i class="font_20 color_333">风险评估</i>-->
+									</a>
+								</div>
+							<!--</li>
+						</ul>-->
+						<!--<div class="nav">
+							<a class="active-red" href="javascript: ;"></a>
+							<a   href="javascript: ;"></a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="" style="margin-top: 0.3125rem;">
+				<div class="bgColor_fff">
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left  sprites sp1"></i>
+						<i class="font_24 color_666 ">账户余额</i>
+						<span class="">
+							<i class="infotext font_24 color_666">0.00 元</i>
+							<i class="arrow"></i>
+						</span>
+					</a>
+					<p class="under_line  mar-under_line"></p>
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp2"></i>
+						<i class="font_24 color_666 ">待收收益</i>
+						<span class="">
+								<i class="infotext font_24 color_666">2354.89元</i>
+								<i class="arrow"></i>
+							</span>
+					</a>
+					<p class="under_line  mar-under_line"></p>
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp3"></i>
+						<i class="font_24 color_333 ">资金明细</i>
+						<span class="">
+							<i class="arrow"></i>
+						</span>
+					</a>
+					<p class="under_line"></p>
+				</div>
+				<div class="bgColor_fff" style="margin-top: 0.3125rem;">
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp4"></i>
+						<i class="font_24 color_666 ">牛牛合伙人</i>
+						<span class="">
+								<i class="arrow"></i>
+							</span>
+					</a>
+					<p class="under_line  mar-under_line"></p>
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp5"></i>
+						<i class="font_24 color_666 ">邀请好友</i>
+						<span class="">
+								<i class="arrow"></i>
+							</span>
+					</a>
+					<p class="under_line mar-under_line"></p>
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp6"></i>
+						<i class="font_24 color_666 ">银行专区</i>
+						<span class="">
+							<i class="arrow"></i>
+						</span>
+					</a>
+					<p class="under_line  mar-under_line"></p>
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp7"></i>
+						<i class="font_24 color_666 ">VIP专区</i>
+						<span class="">
+							<i class="arrow"></i>
+						</span>
+					</a>
+					<p class="under_line "></p>
+				</div>
+				<div class="bgColor_fff" style="margin-top: 0.3125rem;">
+					<a class="siggle-line relative" href="javascript:;" style="display: block;">
+						<i class="float_left sprites sp8"></i>
+						<i class="font_24 color_333 ">账户设置</i>
+						<span class="">
+							<i class="arrow"></i>
+						</span>
+					</a>
+					<p class="under_line"></p>
+				</div>
+				
+			</div>
+			<footer class="menu">
+				<div class="fixedB">
+					<ul>
+						<li>
+							<a href="index.html">
+								<div class="icon home"></div>首页</a>
+						</li>
+						<li>
+							<a href="productList.html">
+								<div class="icon money"></div>投资理财</a>
+						</li>
+						<li>
+							<a href="userCenter.htm">
+								<div class="icon fdj"></div>个人中心</a>
+						</li>
+						<li class="currentf">
+							<a href="myPartner.htm">
+								<div class="icon partnerBtImg"></div>合伙人</a>
+						</li>
+						<li>
+							<a href="kefu.html">
+								<div class="icon kehu"></div>客服</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+				
+		
+	</body>
+
+</html>

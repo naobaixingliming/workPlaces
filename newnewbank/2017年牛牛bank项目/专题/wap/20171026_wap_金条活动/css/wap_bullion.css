@@ -1,0 +1,523 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+	max-height: 999999px;
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul li {
+	list-style: none;
+}
+
+span {
+	display: inline-block;
+}
+
+em {
+	font-style: normal;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0
+}
+
+button,
+input,
+select,
+textarea {
+	/*font-size: 100%;*/
+	/*vertical-align: middle;*/
+	outline: 0
+}
+
+input:focus:-moz-placeholder,
+input:focus::-webkit-input-placeholder {
+	color: transparent
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+input,
+button,
+textarea {
+	-webkit-appearance: none;
+}
+
+button,
+input {
+	border: 0;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+textarea {
+	resize: none
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="password"],
+{
+	-webkit-appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+
+
+/*字体大小 start*/
+
+.font_12 {
+	font-size: 0.3rem;
+}
+
+.font_13 {
+	font-size: 0.325rem;
+}
+
+.font_14 {
+	font-size: 0.35rem;
+}
+
+.font_15 {
+	font-size: 0.375rem;
+}
+
+.font_16 {
+	font-size: 0.4rem;
+}
+
+.font_18 {
+	font-size: 0.45rem;
+}
+
+.font_20 {
+	font-size: 0.5rem;
+}
+
+.font_22 {
+	font-size: 0.55rem;
+}
+
+.font_24 {
+	font-size: 0.6rem;
+}
+
+.font_26 {
+	font-size: 0.65rem;
+}
+
+.font_28 {
+	font-size: 0.7rem;
+}
+
+.font_30 {
+	font-size: 0.75rem;
+}
+
+.font_32 {
+	font-size: 0.8rem;
+}
+
+.font_36 {
+	font-size: 0.9rem;
+}
+
+.font_40 {
+	font-size: 1rem;
+}
+
+.font_48 {
+	font-size: 1.2rem;
+}
+
+.font_50 {
+	font-size: 1.25rem;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000;
+}
+
+.color_333 {
+	color: #333;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_fff {
+	color: #fff;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.relative {
+	position: relative;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.content_center {
+	justify-content: center;
+}
+
+.content_left {
+	justify-content: flex-start;
+}
+
+.content_right {
+	justify-content: flex-end;
+}
+
+.vertical_center {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+
+.all_center {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_indent {
+	text-indent: 2em;
+}
+
+.line_height {
+	line-height: 0.6rem;
+}
+
+.letter_space {
+	letter-spacing: 0.025rem;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #f5f5f5;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.none {
+	display: none;
+}
+
+._block {
+	display: block;
+}
+
+/*input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #ccc;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #ccc;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #ccc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #ccc;
+}*/
+
+.showdowBox {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+.showBox {
+	width: 13.5rem;
+	height: 15rem;
+	position: absolute;
+	top: 4.5rem;
+	left: 1.2rem;
+	background-color: rgba(221, 75, 52, 1);
+	filter: url(blur.svg#blur);
+	-webkit-filter: blur(1.5rem);
+	-moz-filter: blur(1.5rem);
+	-ms-filter: blur(1.5rem);
+	filter: blur(1.5rem);
+	border-radius: 100%;
+}
+
+	.rootNode {
+				min-height: 100vh;
+				background-color: #9f211c;
+			}
+			
+			header {
+				width: 100%;
+				height: 12rem;
+				background: url(https://images-wap.newnewbank.com/wap_head20171016.png) no-repeat;
+				background-size: cover;
+			}
+			
+			.color_9f211c {
+				color: #9f211c;
+			}
+			
+			.coloe_e9e9e9 {
+				color: #e9e9e9;
+			}
+			
+			.color_f9dc5a {
+				color: #f9dc5a;
+			}
+			
+			.color_770702 {
+				color: #770702;
+			}
+			
+			.color_a0211c {
+				color: #a0211c;
+			}
+			
+			.color_6d0906 {
+				color: #6d0906;
+			}
+			
+			.color_faa500 {
+				color: #faa500;
+			}
+			.color_fa8100{
+				color:#fa8100
+			}
+			.rotateFont {
+				position: absolute;
+				top: 7rem;
+				left: 6.4rem;
+				transform: rotate(-13deg);
+			}
+			
+			.twoPage {
+				width: 100%;
+				/*height: 24.05rem;*/
+				padding-top: .5rem;
+				background-image: linear-gradient(to top, #bc2a25 0%, #e94744 100%);
+			}
+			
+			.paint {
+				width: 100%;
+				height: 4.175rem;
+				background: url(https://images-wap.newnewbank.com/wap_painting20171016.png) no-repeat;
+				background-size: cover;
+			}
+			
+			.padding-top-70 {
+				padding-top: 1.75rem;
+			}
+			
+			.padding-top-40 {
+				padding-top: 1rem;
+			}
+			
+			.padding-bottom-45 {
+				padding-bottom: 1.125rem;
+			}
+			
+			.yellowBorder {
+				width: 4.5rem;
+				height: 1.5rem;
+				background-color: #faa500;
+				border-radius: 0.75rem;
+				line-height:.6rem ;
+			}
+			
+			.bullion-1 {
+				width: 5.025rem;
+				height: 4.175rem;
+				background: url(https://images-wap.newnewbank.com/wap_bullion1-20171016.png) no-repeat;
+				background-size: cover;
+				margin-top: 0.9rem;
+			}
+			
+			.bullion-2 {
+				width: 4.9rem;
+				height: 4.125rem;
+				background: url(https://images-wap.newnewbank.com/wap_bullion2-20171016.png) no-repeat;
+				background-size: cover;
+				margin-top: 0.9rem;
+			}
+			
+			.arrDown {
+				width: 0;
+				height: 0;
+				border-left: 0.5rem solid transparent;
+				border-right: 0.5rem solid transparent;
+				border-top: 0.5rem solid #faa500;
+				position: absolute;
+				bottom: -.4rem;
+				left: 42%;
+			}
+			
+			.investBtn {
+				width: 8.5rem;
+				height: 1.75rem;
+				border: 1px solid #faa500;
+				border-radius: 0.875rem;
+			}
+			
+			.bendIcon {
+				width: 100%;
+				height: 1.375rem;
+				background: url(https://images-wap.newnewbank.com/wap_bend20171016.png) no-repeat;
+				background-size: cover;
+			}
+			
+			.mar-side-36 {
+				margin-left: 0.9rem;
+				margin-right: 0.9rem;
+			}
+			p.circle span {
+				margin-right: 0.15rem;
+			}
+			p.circle span i {
+				width: 0.8rem;
+				height: 0.8rem;
+				border-radius: 50%;
+				background-color: #f1af2f;
+			}
+			.mar-top-32{
+				margin-top: 0.8rem;
+			}
+			.bgColor_4e0c09{
+				background-color: #4e0c09;
+			}
+			.h-120{
+				height: 3rem;
+				border: 0.125rem solid #b62923;
+			}
+			.inputAdr{
+				width: 100%;
+				height: 100%;
+				background: transparent;
+			}
+			.inputAdr::-webkit-input-placeholder{
+				color: #9f211c;
+			}
+			
+			.inputAdr:-moz-placeholder{
+				color: #9f211c;
+			}
+			
+			.inputAdr::-moz-placeholder{
+				color: #9f211c;
+			}
+			
+			.inputAdr:-ms-input-placeholder{
+				color: #9f211c;
+			}

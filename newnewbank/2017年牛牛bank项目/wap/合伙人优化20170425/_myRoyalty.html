@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>我的提成</title>
+		<link rel="stylesheet" type="text/css" href="css/partner.css" + new Date().getTime() />
+		
+	</head>
+
+	<body>
+		<div class="partner">
+			<!--弹框    start-->
+			<div class="invoking invoking1 none">
+				<div class="shadow"></div>
+				<div class="popupWhite font_20 color_999 ">
+					<div class="padding-left-right-40 font_22 color_999 line-height-35">
+						<p class="padding-bottom-30">
+							<i class="color_333">如何获得：</i>推荐客户投资30天以上产品，合伙人可以获得提成。</br>
+							<i class="color_333">提成到账：</i>客户投资后50%的提成及时到账，另外50%的提成客户投资到期后到账；</br>
+							<i class="color_333">提成领取：</i>提成到账后可在“合伙人”-“我的提成”将提成领取至个人账户余额中 </br>
+							<i class="color_333">提成金额：</i>提成金额以客户投资时合伙人所在级别为准，不受月度考核影响</br>
+							<i class="color_333">提成计算：</i>(1)一级推荐提成=客户投资金额*投资期限/365*一级提成系数 (2)二级推荐提成=客户投资金额*投资期限/365*二级提成系数</br>
+							<i class="color_333">温馨提示：</i>本活动最终解释权归牛牛bank所有
+						</p>
+					</div>					
+				</div>
+			</div>
+			<!--弹框     end-->
+			<header class="relative">
+				<div class="bgColor_f44975 h-346 relative" style="padding-bottom: 0.3125rem;">
+					<em class="float_right  problemNumber bgColor_fbc4cf color_f44975">?</em>
+					<p class="font_24 color_fbc4cf text_center" style="padding: 0.75rem 0 0.4rem;">当前可用额度（元）</p>
+					<p class="font_72 color_fff text_center">3500.06</p>
+					<p class="text_center padding-top-30">
+						<a class="color_fff font_36 lightBtn">提现</a>
+					</p>
+				</div>
+				<div class="bgColor_fff">
+					<div class="flex-parent" style="padding: 0.46875rem 0;">
+						<p class="flex-child  border-right">
+							<span class=" font_30 color_555 relative" style="margin-left: 1rem;">
+								<i class="font_20 color_999">累计领取(元)</i></br>
+								<i class="font_30 color_333">3.6386</i>
+							</span>
+						</p>
+						<p class="flex-child border-right">
+							<span class=" font_30 color_555 relative" style="margin-left: 1rem;">
+								<i class="font_20 color_999">累计到账(元)</i></br>
+								<i class="font_30 color_333">40.00</i>
+							</span>
+						</p>
+						<p class="flex-child ">
+							<span class=" font_30 color_555 relative" style="margin-left: 1rem;">
+								<i class="font_20 color_999">待收提成(元)</i></br>
+								<i class="font_30 color_333">40.00</i>
+							</span>
+						</p>
+					</div>
+				</div>
+			</header>
+			<a class="h-100 line-height-100 relative padding-left-right-35 bgColor_fff mar-top-20 href clickPo1" style="display: block;" href="">
+				<i class="font_24 color_333">领取记录</i>
+				<span>
+					<i class="arrow arrowPos"></i>
+				</span>
+			</a>
+			<a class="h-100 line-height-100 relative padding-left-right-35 bgColor_fff mar-top-10 href clickPo2" style="display: block;" href="">
+				<i class="font_24 color_333">提成明细</i>
+				<span>
+					<i class="arrow arrowPos"></i>
+				</span>
+			</a>
+
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				$('.problemNumber').on('click', function() {
+					$('.invoking1').show();
+				});
+				$('.clickPo2').on('click', function() {
+					$('.invoking2').show();
+				});
+				$('.shadow,.deleteBtn').on('click', function() {
+					$('.invoking').hide();
+				});
+
+			})()
+		</script>
+
+	</body>
+
+</html>

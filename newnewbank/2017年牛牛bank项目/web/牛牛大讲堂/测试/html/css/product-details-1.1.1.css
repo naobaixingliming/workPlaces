@@ -1,0 +1,816 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  margin: 0 auto;
+}
+
+.container .pro-top-bg {
+  width: 100%;
+  height: 302px;
+  margin: 0 auto;
+}
+
+.main-box {
+  width: 1200px;
+  height: auto;
+  position: relative;
+  margin: -148px auto 54px auto;
+}
+
+.main-left {
+  padding-top: 38px;
+  width: 840px;
+}
+
+.left-box1 {
+  width: 100%;
+  height: auto;
+}
+
+.pro-head {
+  width: 148px;
+  height: 166px;
+  float: left;
+  overflow: hidden;
+}
+.pro-head img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.pro-info {
+  margin-left: 168px;
+  padding-top: 20px;
+}
+.pro-info h3 {
+  font: bold 30px/42px "Microsoft YaHei";
+  padding-bottom: 4px;
+  position: relative;
+}
+.pro-info h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 3px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/line_20160420.png) no-repeat left center;
+}
+
+.pro-info > p {
+  font: normal 14px/32px "Microsoft YaHei";
+}
+
+.sm-box01 {
+  margin-top: 28px;
+  text-align: center;
+}
+.sm-box01 .col {
+  padding: 0 10px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.sm-box01 .col p {
+  font: normal 14px/24px "Microsoft YaHei";
+}
+.sm-box01 .col01 strong {
+  font: bold 30px/32px "Microsoft YaHei";
+}
+.sm-box01 .col02 strong {
+  font: bold 20px/32px "Microsoft YaHei";
+}
+.sm-box01 .col03 strong {
+  font: bold 20px/32px "Microsoft YaHei";
+}
+
+.big-box01 {
+  padding-left: 34px;
+  margin-top: 24px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid #dddddd;
+}
+.big-box01 h4 {
+  font: normal 20px/32px "Microsoft YaHei";
+}
+
+.details-progress {
+  margin-top: 10px;
+}
+.details-progress .d-line-progress {
+  width: 686px;
+  height: 10px;
+  position: relative;
+  top: 6px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+.details-progress .d-line-progress .d-progress {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+}
+.details-progress .d-line-progress .d-progress i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/line_progress_20160420.png) repeat-x;
+  animation: progress 50s infinite linear;
+  -webkit-animation: progress 50s infinite linear;
+}
+.details-progress span {
+  display: block;
+  margin-left: 10px;
+  font: normal 16px/24px "Microsoft YaHei";
+}
+
+@keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+@-webkit-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+.sm-box02 {
+  width: 676px;
+  height: 24px;
+  margin-top: 4px;
+  margin-left: 6px;
+  position: relative;
+}
+.sm-box02 p {
+  font: normal 14px/24px "Microsoft YaHei";
+  position: absolute;
+}
+.sm-box02 .remain-money {
+  left: 0px;
+}
+.sm-box02 .countdown {
+  position: absolute;
+  right: 0px;
+  padding-left: 30px;
+  text-align: right;
+}
+.sm-box02 .countdown i {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_icon_20160420.png) no-repeat 0px 0px;
+}
+
+.sm-box03 {
+  margin-top: 18px;
+}
+.sm-box03 p {
+  padding-left: 32px;
+  padding-right: 12px;
+  position: relative;
+  margin-right: 40px;
+  height: 30px;
+  border-radius: 4px;
+  font: normal 14px/30px "Microsoft YaHei";
+}
+.sm-box03 p i {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_icon_20160420.png) no-repeat 0px -30px;
+}
+
+.details-box {
+  width: 840px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.d-sm-box01 h3 {
+  height: 44px;
+  margin-left: 20px;
+  font: normal 18px/44px "Microsoft YaHei";
+  text-align: center;
+  padding: 0 40px;
+  border-radius: 22px;
+}
+.d-sm-box01 p {
+  font: normal 16px/24px "Microsoft YaHei";
+  margin-left: 20px;
+  margin-top: 14px;
+}
+
+.d-big-box01 {
+  width: 798px;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+}
+.d-big-box01 .img-bg-box {
+  width: 798px;
+  height: 162px;
+  line-height: 162px;
+  text-align: center;
+}
+.d-big-box01 .img-bg-box strong {
+  display: block;
+  width: 100%;
+  height: 162px;
+  font: normal 36px/162px "Microsoft YaHei";
+  color: #FFFFFF;
+  text-align: center;
+}
+.d-big-box01 .img-bg-box span {
+  display: inline-block;
+  padding: 0 36px;
+  text-align: center;
+  font: normal 24px/56px "Microsoft Yahei";
+  color: #FFFFFF;
+  background: #45b3ec;
+}
+.d-big-box01 .img-box {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto 20px auto;
+}
+.d-big-box01 .img-box img {
+  margin: 0 auto;
+}
+.d-big-box01 .img-box02 {
+  width: 804px;
+  position: relative;
+  left: -3px;
+}
+.d-big-box01 .img-box02 ul {
+  width: 100%;
+}
+.d-big-box01 .img-box02 ul li {
+  width: 252px;
+  height: 252px;
+  float: left;
+  margin: 10px 8px;
+}
+.d-big-box01 .tit-box {
+  width: 94%;
+  border-bottom: 1px solid #dddddd;
+  margin: 20px auto;
+  text-align: center;
+}
+.d-big-box01 .tit-box h4 {
+  display: inline-block;
+  *max-width: 160px;
+  font: normal 20px/40px "Microsoft Yahei";
+  text-align: center;
+  color: #333333;
+}
+.d-big-box01 .d-text {
+  width: 100%;
+  margin: 10px auto;
+}
+.d-big-box01 .d-text p {
+  text-indent: 2em;
+  font: normal 14px/30px "Microsoft YaHei";
+}
+.d-big-box01 .d-text p.t-indent0 {
+  text-indent: 0;
+}
+.d-big-box01 .d-text p.t-center {
+  text-align: center;
+}
+
+.d-big-box02 {
+  width: 838px;
+  padding-bottom: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+}
+
+.tb-box {
+  width: 100%;
+  height: 660px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.tb-box table {
+  width: 100%;
+}
+.tb-box table th {
+  height: 60px;
+  background-color: #eeeeee;
+  text-align: center;
+  font: normal 16px/60px "Microsoft YaHei";
+  color: #333333;
+}
+.tb-box table td {
+  height: 60px;
+  text-align: center;
+  font: normal 15px/60px "Microsoft YaHei";
+  color: #999999;
+}
+.tb-box table .odd td {
+  background-color: #ffffff;
+}
+.tb-box table .even td {
+  background-color: #f5f5f5;
+}
+
+/*  分页器start  */
+.paging-box {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+
+.paging-btns {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.paging-btns a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 5px;
+}
+.paging-btns a.selected, .paging-btns a.selected:hover {
+  cursor: default;
+}
+
+.prev-page b {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  font-size: 0;
+  line-height: 0;
+  border-color: #f5f5f5 #666666 #f5f5f5 #f5f5f5;
+  position: absolute;
+  left: 9px;
+  top: 12px;
+}
+
+.next-page b {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  font-size: 0;
+  line-height: 0;
+  border-color: #f5f5f5 #f5f5f5 #f5f5f5 #666666;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+/*  分页器end  */
+.main-right {
+  width: 310px;
+  margin-left: 50px;
+}
+
+.buy-box {
+  width: 276px;
+  height: 382px;
+  padding: 0 16px;
+  border-top: 3px solid #f44975;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.usable-money {
+  margin-top: 24px;
+  padding-left: 8px;
+}
+.usable-money p {
+  font: normal 14px/24px "Microsoft Yahei";
+  color: #333333;
+}
+
+.buy-money {
+  width: 266px;
+  height: 44px;
+  position: relative;
+  margin: 14px auto 0 auto;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+.buy-money input {
+  width: 222px;
+  height: 20px;
+  padding: 12px 30px 12px 14px;
+  border: none;
+  border-radius: 4px;
+  font: normal 14px/20px "Microsoft Yahei";
+  color: #333333;
+}
+.buy-money em {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 18px;
+  font: normal 14px/44px "Microsoft Yahei";
+  color: #c4c4c4;
+}
+.buy-money label {
+  display: block;
+  font: normal 14px/44px "Microsoft Yahei";
+  color: #333333;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+.earnings {
+  margin-top: 16px;
+  padding-left: 30px;
+  position: relative;
+  font: normal 14px/24px "Microsoft Yahei";
+  color: #666666;
+}
+.earnings i {
+  display: block;
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_icon_20160420.png) no-repeat 0px -64px;
+}
+
+.buy-sm-box01 {
+  width: 234px;
+  height: 64px;
+  padding: 20px 14px 0 14px;
+  margin: 14px auto 0 auto;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/buy_small_box01_bg_20160421.png) no-repeat center top;
+}
+.buy-sm-box01 p {
+  font: normal 14px/26px "Microsoft Yahei";
+  color: #999999;
+}
+
+.protocol {
+  margin-top: 18px;
+  padding-left: 12px;
+  font: normal 13px/24px "Microsoft Yahei";
+  color: #666666;
+}
+.protocol input {
+  float: left;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+.d-btn {
+  display: block;
+  width: 278px;
+  height: 42px;
+  margin: 16px auto 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  font: normal 18px/42px "Microsoft Yahei";
+}
+
+.r-big-box {
+  width: 308px;
+  height: auto;
+  margin-top: 40px;
+}
+.r-big-box h4 {
+  font: normal 18px/36px "Microsoft Yahei";
+  color: #111111;
+  padding-left: 8px;
+}
+.r-big-box .r-box {
+  width: 306px;
+  margin-top: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+.contract-wrap {
+  width: 230px;
+  height: auto;
+  margin: 22px auto 0 auto;
+  padding: 8px 0 0 9px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/contract_bg_20160421.png) no-repeat center top;
+}
+
+.contract-box {
+  width: 229px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+.contract-box ul {
+  height: 294px;
+  position: relative;
+}
+.contract-box ul li {
+  width: 229px;
+  height: 294px;
+  float: left;
+  vertical-align: middle;
+  overflow: hidden;
+  cursor: pointer;
+}
+.contract-box ul li img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.contract-wrap .page-icon {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contract-wrap .page-icon a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.prev-contract, .next-contract {
+  width: 14px;
+  height: 24px;
+  position: absolute;
+  top: 160px;
+  background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_icon_20160420.png);
+  background-repeat: no-repeat;
+}
+
+.prev-contract {
+  left: 10px;
+  background-position: -36px 1px;
+}
+
+.prev-contract:hover {
+  background-position: -36px -40px;
+}
+
+.next-contract {
+  right: 10px;
+  background-position: -78px 1px;
+}
+
+.next-contract:hover {
+  background-position: -78px -40px;
+}
+
+.r-tb-box {
+  width: 100%;
+}
+.r-tb-box table {
+  width: 100%;
+}
+
+.tb-hkjh td {
+  height: 56px;
+  font: normal 14px/56px "Microsoft Yahei";
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+.tb-hkjh .last-tr td {
+  border-bottom: none;
+}
+.tb-hkjh td.tdl {
+  background: #f5f5f5;
+  color: #333333;
+}
+.tb-hkjh td.tdr {
+  background: #FFFFFF;
+  color: #666666;
+}
+
+.tb-hkgg th {
+  height: 58px;
+  font: normal 14px/58px "Microsoft Yahei";
+  text-align: center;
+  color: #333333;
+  background: #f5f5f5;
+}
+.tb-hkgg td {
+  height: 54px;
+  font: normal 14px/54px "Microsoft Yahei";
+  color: #666666;
+  text-align: center;
+}
+.tb-hkgg .odd td {
+  background-color: #FFFFFF;
+}
+.tb-hkgg .even td {
+  background-color: #f5f5f5;
+}
+
+/*  右侧浮动导航  */
+.float-menu-box {
+  position: absolute;
+  top: 496px;
+  right: 8%;
+  z-index: 99;
+  width: auto;
+  *max-width: 130px;
+  height: auto;
+}
+
+.kefu-icon {
+  display: block;
+  width: 110px;
+  height: 105px;
+  margin: 0 auto;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/kefu_icon_20160421.png) no-repeat center top;
+}
+
+.float-menu-list {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+.float-menu-list a {
+  display: block;
+  height: 34px;
+  padding: 0 24px;
+  font: normal 16px/34px "Microsoft Yahei";
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 17px;
+}
+.float-menu-list span {
+  display: block;
+  width: 1px;
+  height: 24px;
+  background-color: #666666;
+  margin: 8px auto;
+}
+
+.back-top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 16px auto 0 auto;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_icon_20160420.png) no-repeat -26px -79px;
+}
+
+.back-top:hover {
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_details_icon_20160420.png) no-repeat -77px -79px;
+}
+
+.show-big-contract {
+  width: 396px;
+  height: 580px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -198px;
+  margin-top: -290px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  z-index: 1000;
+  display: none;
+}
+.show-big-contract h4 {
+  font: normal 18px/32px "Microsoft Yahei";
+  color: #999999;
+  padding-left: 34px;
+  padding-top: 4px;
+}
+
+.sbc-img-box {
+  width: 374px;
+  height: 530px;
+  overflow: hidden;
+  position: relative;
+  margin: 6px auto 0 auto;
+}
+.sbc-img-box ul {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.sbc-img-box ul li {
+  float: left;
+  width: 374px;
+  height: 530px;
+  overflow: hidden;
+}
+.sbc-img-box ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+.sbc-prev, .sbc-next {
+  display: block;
+  width: 30px;
+  height: 58px;
+  position: absolute;
+  top: 267px;
+  background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/contract_tab_icon_20160422.png);
+  background-repeat: no-repeat;
+}
+
+.sbc-prev {
+  left: -29px;
+  background-position: 1px 0px;
+}
+
+.sbc-next {
+  right: -29px;
+  background-position: -63px 0px;
+}
+
+.sbc-prev:hover {
+  background-position: 1px -99px;
+}
+
+.sbc-next:hover {
+  background-position: -63px -99px;
+}
+
+.sbc-close {
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/close_20160422.png) no-repeat center top;
+}
+
+@media screen and (min-width: 1440px) {
+  .show-big-contract {
+    width: 504px;
+    height: 742px;
+    margin-left: -252px;
+    margin-top: -371px;
+  }
+  .show-big-contract h4 {
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+
+  .sbc-img-box {
+    width: 475px;
+    height: 672px;
+    margin: 12px auto 0 auto;
+  }
+  .sbc-img-box ul li {
+    width: 475px;
+    height: 672px;
+  }
+  .sbc-img-box ul li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sbc-prev, .sbc-next {
+    top: 342px;
+  }
+
+  .sbc-close {
+    top: 14px;
+    right: 16px;
+  }
+}
+
+/*# sourceMappingURL=product-details-1.1.1.css.map */

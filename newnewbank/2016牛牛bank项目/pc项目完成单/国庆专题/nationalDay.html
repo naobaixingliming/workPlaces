@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>国庆加息标</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				font-family: arial;
+			}
+			#all{
+				width: 100%;
+				height: auto;
+				background:url(img/bg_nationalday20160922.png) no-repeat ;
+				background-size: 100% 100%;
+			}
+			.header_text{
+				text-align: center;
+				width: 100%;
+				padding:16.5% 0 33%;
+				font-size: 2vh;
+				color: #dbaeae;
+			}
+			.income{
+				width: 100%;
+				text-align: center;	
+				margin-top: 13% ;
+				padding-bottom: 25%;
+			}
+			.income .box_text{
+				width: 65%;
+			    margin: 0 auto;
+				font-size: 2vh;
+			}
+			.income .box_text1{
+				padding: 10% 0 10%;
+			    background: url(img/bg_back20160923.png) no-repeat;
+			    background-size: 100%;
+			}
+			.box_text .annualYield{
+				width:100% ;
+				position: relative;
+				padding: 10% 0;
+			}
+			.box_text .annualYield .tenDay{
+				display: inline-block;
+				position: absolute;
+				top:8%;
+    			left: 30%;
+    			text-align: left;
+			}
+			.box_text .annualYield .tenDay p:first-child{
+				color: #b33a38;
+			}
+			.box_text .annualYield .tenDay p:last-child{
+				
+			}
+			.box_text .annualYield .tenDay p span:first-child{
+				color: #b33a38;
+				font-size:4vh ;
+				margin-right: 5%;
+			}
+			.box_text .annualYield .tenDay p span:last-child{
+				position: absolute;
+    			top: 10%;
+			}
+			.box_text .seven{
+				color: #b33a38;
+				font-size:8vh ;
+				position: absolute;
+				top: 0;
+    			left: 54%;
+			}
+			.box_text .percentageIcon{
+				display: inline-block;
+				width: 10%;
+				padding:5% 0 ;
+				background: url(img/thePercentage20160922.png) no-repeat;
+				background-size:cover ;
+				position: absolute;
+				position: absolute;
+			    top: 8%;
+			    left: 65%;
+			}
+			.box_text .slogan{
+				width:100% ;
+				color: #d3b6b6;
+				margin-top:13.5%;
+			}
+			.box_text .activityTime{
+				width:60% ;
+				color:#f19a21 ;
+				background-color:#792522 ;
+				border: 1px #561c18 solid;
+				margin: 0 auto;
+				padding: 1% 2%;
+    			border-radius: 5rem;
+    			margin-top: 1.5%;
+			}
+			.box_text .startIcon{
+				    width: 45%;
+				    margin: 0 auto;
+				    padding: 7% 0;
+				    background: url(img/startBtn20160922.png) no-repeat;
+				    background-size: cover;
+				    margin-top: 1.5%;
+			}
+			.income .box_text2{
+				background: url(img/bg_backBig20160923.png) no-repeat;
+			    background-size: 100%;
+			    padding: 0 0 10%;
+			    margin-top: 10%;
+			}
+			.box_text .annualYield2{
+				right: 10%;
+				
+			}
+			.box_text .percentageIcon2{
+				left: 78.5%;
+			}
+			.income .box_text3{
+				margin-top: 16%;
+			}
+			.box_text .annualYield3{
+				right: 5%;
+				
+			}
+			.box_text .percentageIcon3{
+				left: 68%;
+			}
+			.warmPrompt{
+				width: 100%;
+				font-size:2.5vh ;
+			}
+			.warmPrompt p{
+				color: #6e3d2d;
+				margin-left:5% ;
+				padding-top: 1%;
+			}
+			.warmPrompt p:first-child{
+				font-family: "microsoft yahei";
+				font-size:2.5vh ;
+				color: #902b29;
+				text-align: center;
+				font-weight: 700;
+			}
+			.productData{
+				width: 95%;
+			    margin-top: 4%;
+			    font-size: 1.6vh;
+			    background: url(img/table20160923.png) no-repeat;
+			    background-size:100%;
+			    padding-bottom: 40%;
+			    margin-left: 2.5%;
+			    position: relative;
+			}
+			/*@media only screen and (max-width: 320px) {
+				.box_text .slogan{
+					width:100% ;
+					color: #d3b6b6;
+					margin-top: 4%;
+				}
+				.income .box_text3{
+					margin-top: 16.5%;
+				}
+				.income{
+					margin-top: 25% ;
+				}
+			}*/
+			.productData .productTitle{
+				width: 100%;
+				color: #6e3d2d;
+				font-weight: 700;
+				position: absolute;
+				top: 8%;
+    			left: 2%;
+			}
+			.date{
+				padding-left:8% ;
+			}
+			.outOfTime{
+				margin-left:25% ;
+			}
+			.productData #timePosition{
+				position: absolute;
+				top: 25%;
+    			left: 3%;
+			}
+			#termOfInvestment{
+				
+			}
+			.time{
+				margin-top:5% ;
+			}
+			.time2{
+				margin-top:8% ;
+			}
+			.time3{
+				margin-top:10% ;
+			}
+			.footer{
+				width:100% ;
+				padding: 5.4% 0 1.4%;
+				text-align: center;
+				color: #a56937;
+				font-size: 1.5vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all">
+			<!--头部文字 start-->
+			<div class="header_text">
+				<p>短期产品同步来袭</p>
+				<p>国庆资金不闲置</p>
+			</div>
+			<!--头部文字 end-->
+			<!--收益 start-->
+			<div class="income">
+				<!--单个盒子文字  start-->
+				<div class="box_text box_text1">
+					<!--年收益率  start-->
+					<div class="annualYield">
+						<div class="tenDay">
+							<p><span>10</span><span>天</span></p>
+							<p>年化收益率</p>
+						</div>
+						<span class="seven">7</span>
+						<span class="percentageIcon"></span>
+					</div>
+					<!--年收益率  end-->
+					<div class="slogan">您的国庆放长假，闲置资金不放假</div>
+					<div class="activityTime">活动时间：09/29-09/30</div>
+					<div class="startIcon"></div>
+				</div>
+				<!--单个盒子文字  end-->
+				<!--单个盒子文字  start-->
+				<div class="box_text box_text2">
+					<!--年收益率  start-->
+					<div class="annualYield annualYield2">
+						<div class="tenDay">
+							<p><span>90</span><span>天</span></p>
+							<p>年化收益率</p>
+						</div>
+						<span class="seven">11.5</span>
+						<span class="percentageIcon percentageIcon2"></span>
+					</div>
+					<!--年收益率  end-->
+					<div class="slogan">您的国庆放长假，闲置资金不放假</div>
+					<div class="activityTime">活动时间：09/29-09/30</div>
+					<div class="startIcon"></div>
+				</div>
+				<!--单个盒子文字  end-->
+				<!--单个盒子文字  start-->
+				<div class="box_text box_text3">
+					<!--年收益率  start-->
+					<div class="annualYield annualYield3">
+						<div class="tenDay">
+							<p><span>180</span><span>天</span></p>
+							<p>年化收益率</p>
+						</div>
+						<span class="seven">12</span>
+						<span class="percentageIcon percentageIcon3"></span>
+					</div>
+					<!--年收益率  end-->
+					<div class="slogan">您的国庆放长假，闲置资金不放假</div>
+					<div class="activityTime">活动时间：09/29-09/30</div>
+					<div class="startIcon"></div>
+				</div>
+				<!--单个盒子文字  end-->
+			</div>
+			<!--收益 end-->
+			<!--温馨提示 start-->
+			<div class="warmPrompt">
+				<p>温馨提示</p>
+				<p>① 本次加息活动产品不参与牛人计划;</p>
+				<p>② 活动时间内,每天固定时间发布加息产品;</p>
+				<p>③ 加息产品额度有限,先到先得!</p>
+			</div>
+			<!--温馨提示 end-->
+			<div class="productData">
+				<p class="productTitle"><span id="termOfInvestment">投资期限</span><span class="date">日期</span><span class="outOfTime">发标时间</span></p>
+				<div id="timePosition">
+					<p class="time" id="time"><span >10天</span><span id="day">9/29-9/30</span><span >10:00</span><span >11:00</span><span >15:00</span><span >16:00</span><span >17:00</span></p>
+					<p class="time2"><span >90/180天</span><span >9/29-9/30</span><span >10:00</span><span >17:00</span></p>
+					<p class="time3"><span >90/180天</span><span >9/29-9/30</span><span >10:00</span><span >无</span></p>
+				</div>
+			</div>
+			<!--底部文字 start-->
+			<div class="footer">
+				<p>© 2015牛牛bank All Rights Reserved</p>
+				<p>活动最终解释权归深圳市金牛牛互联网金融服务有限公司所有</p>
+			</div>
+			<!--底部文字 end-->
+		</div>
+	</body>
+</html>

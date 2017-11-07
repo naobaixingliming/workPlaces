@@ -1,0 +1,377 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#all {
+	width: 100%;
+	height: 100%;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/pc_bg_nationalday20160924.jpg) center center no-repeat!important;
+	overflow: hidden;
+	font-family: arial;
+	margin: 0 auto;
+}
+
+.header_text {
+	width: 100%;
+	height: 740px;
+	position: relative;
+	overflow: hidden;
+}
+
+#cloudBig {
+	display: inline-block;
+	width: 1920px;
+	height: 150px;
+	margin-left: 100px;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/cloudBigl20160926.png) no-repeat;
+	opacity: 0.8;
+}
+
+#cloudSmall {
+	display: inline-block;
+	width: 800px;
+	height: 100px;
+	margin-left: 1400px;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/cloudSmall20160926.png) no-repeat;
+	opacity: 0.8;
+}
+
+.header_text p {
+	width: 100%;
+	margin-left: 37.5%;
+	font-size: 30px;
+	color: #f2e3e3;
+	font-family: "microsoft yahei";
+}
+
+.income {
+	width: 100%;
+	height: 765px;
+	position: relative;
+}
+
+.box_income {
+	/*width: 500px;
+	height: 60%;
+	color: #493123;
+	position: absolute;
+	background: url(../img/box_wallet20160927.png) no-repeat ;
+	background-size:100% ;
+	top: 250px;
+	left: 500px;*/
+	width: 500px;
+	height: 60%;
+	color: #493123;
+	position: absolute;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/box_wallet20160927.png) no-repeat;
+	background-size: 90%;
+	padding-top: 40px;
+	top: 210px;
+	left: 18%;
+}
+
+.control {
+	margin-left: 90px;
+}
+
+.annualYield {
+	margin-left: 20px;
+}
+
+.yellowRegion {
+	font-size: 18px;
+}
+
+.annualYield div {
+	display: inline-block;
+}
+
+.ten {
+	color: #b33a38;
+	font-size: 50px;
+}
+
+.seven {
+	color: #b33a38;
+	font-size: 80px;
+}
+
+.percentageIcon {
+	width: 45px;
+	height: 45px;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/thePercentage20160922.png) no-repeat;
+}
+
+.slogan {
+	font-size: 16px;
+	color: #e2cfcf;
+	font-family: "microsoft yahei";
+	margin-top: 75px;
+}
+
+.activityTime {
+	width: 40%;
+	color: #c97622;
+	font-size: 14px;
+}
+
+.activityTimeTop {
+	background-color: #792522;
+	border: 1px #561c18 solid;
+	padding: 5px 10px;
+	border-radius: 5rem;
+	margin-left: 35px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.startIcon {
+	width: 221px;
+	height: 67px;
+	text-align: center;
+	line-height: 60px;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/startBtn20160922.png) no-repeat;
+	background-size: cover;
+	color: #902b29;
+	font-family: "microsoft yahei";
+	font-size: 24px;
+	margin-top: 65px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.box_income2 {
+	width: 500px;
+	height: 60%;
+	color: #493123;
+	position: absolute;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/box_wallet20160927.png) no-repeat;
+	background-size: 90%;
+	padding-top: 40px;
+	top: 210px;
+	left: 53%;
+}
+
+.annualYield2 {
+	margin-left: -17px;
+}
+
+.slogan2 {
+	margin-left: -45px;
+}
+
+.accrual {
+	width: 100%;
+	height: 615px;
+	position: relative;
+	overflow: hidden;
+}
+
+.bg_icon {
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 1043px;
+	height: 326px;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/box_walletLong20160927.png) no-repeat;
+	background-size: 100%;
+}
+
+.box_accrual {
+	width: 500px;
+	height: 35%;
+	color: #493123;
+	position: absolute;
+	top: 175px;
+	right: 48.5%;
+}
+
+.revenueTitle,
+.activityTimeBom {
+	display: inline-block;
+}
+
+.revenueTitle {
+	font-size: 20px;
+	font-family: "microsoft yahei";
+	color: #714405;
+}
+
+.activityTimeBom {
+	position: absolute;
+	left: 300px;
+	top: 5px;
+}
+
+.annualYieldBom {
+	color: #e2cfcf;
+	margin-top: 20px;
+	margin-left: 120px;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.infomation {
+	display: inline-block;
+}
+
+#twelve {
+	font-family: arial;
+	font-size: 80px;
+	color: #fff;
+}
+
+#percentSign {
+	font-size: 30px;
+	color: #fff;
+}
+
+.startIconBom {
+	margin-top: 25px;
+}
+
+.box_accrual2 {
+	left: 51.8%;
+}
+
+.prompt {
+	width: 1920px;
+	height: 312px;
+}
+
+.warmPrompt {
+	display: inline-block;
+	width: 390;
+	margin-left: 420px;
+	margin-top: 40px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	overflow: hidden;
+	font-family: "microsoft yahei";
+}
+
+.warmPrompt p:first-child {
+	width: 50%;
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: #902b29;
+}
+
+.warmPrompt p {
+	color: #6e3d2d;
+}
+
+.table {
+	width: 690px;
+	height: 170px;
+	display: inline-block;
+	background: url(http://images-web.oss-cn-hangzhou.aliyuncs.com/table20160927.png) no-repeat;
+	background-size: 100%;
+	color: #6e3d2d;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	position: relative;
+	top: 30px;
+}
+
+.productTitle {
+	position: absolute;
+	top: 15px;
+	left: 110px;
+}
+
+.date {
+	margin-left: 70px;
+}
+
+.outOfTime {
+	margin-left: 160px;
+}
+
+.time {
+	position: absolute;
+	top: 53px;
+	left: 95px;
+	*left: 100px;
+}
+
+#September {
+	margin-left: 50px;
+}
+
+#tenOclick {
+	margin-left: 30px;
+}
+
+#eleOclick {
+	margin-left: 20px;
+}
+
+#fitOclick {
+	margin-left: 20px;
+}
+
+#sixOclick {
+	margin-left: 20px;
+}
+
+#sevOclick {
+	margin-left: 20px;
+}
+
+.time2 {
+	position: absolute;
+	top: 90px;
+	left: 60px;
+}
+
+#September2 {
+	margin-left: 30px;
+}
+
+#tenOclick2 {
+	margin-left: 60px;
+}
+
+#sevOclick2 {
+	margin-left: 180px;
+}
+
+.time3 {
+	position: absolute;
+	top: 130px;
+	left: 35px;
+}
+
+#September3 {
+	margin-left: 50px;
+}
+
+#tenOclick3 {
+	margin-left: 110px;
+}
+
+#nothing {
+	margin-left: 200px;
+}
+
+.footer {
+	width: 1920px;
+	text-align: center;
+	color: #a56937;
+	font-size: 13px;
+	height: 50px;
+	margin-top: 85px;
+	line-height: 70px;
+}

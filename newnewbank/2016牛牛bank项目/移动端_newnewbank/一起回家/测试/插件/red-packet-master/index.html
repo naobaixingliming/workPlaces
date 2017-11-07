@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>红包雨</title>
+		<!--<link rel="stylesheet" href="css/index.css" />-->
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background: #e2e2e2;
+			}
+			
+			img {
+				display: block;
+				width: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			i {
+				font-style: normal;
+			}
+			
+			.hidden {
+				display: none;
+			}
+			
+			.rel {
+				position: relative;
+			}
+			
+			.container {
+				max-width: 640px;
+				margin: 0 auto;
+			}
+			
+			.action {
+				padding: 16px 0;
+				text-align: center;
+			}
+			
+			.content-init .countdown3 {
+				width: 50px;
+				height: 50px;
+				margin: 40% auto 0;
+				text-align: center;
+				line-height: 50px;
+				font-size: 20px;
+				font-weight: bold;
+				border-radius: 25px;
+				background: #07b576;
+				color: white;
+			}
+			
+			.content-ing {
+				display: none;
+			}
+			
+			.content-ing .countdown10 {
+				position: absolute;
+				width: 20%;
+				top: 10px;
+				left: 45%;
+				padding: 10px 0;
+				background: #07b576;
+				border-radius: 5px;
+				color: white;
+				text-align: center;
+			}
+			
+			.content-ing .countdown10:after {
+				content: ' s';
+			}
+			
+			.content-ing .number {
+				position: absolute;
+				width: 50px;
+				bottom: 16px;
+				left: 16px;
+				padding: 8px 0;
+				font-size: 16px;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+				background: #07b576;
+			}
+			
+			.content-ing .canvas {
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.content-ing .canvas .item {
+				position: absolute;
+				width: 243px;
+				height: 327px;
+				top: -50px;
+				background:url(../hongbaoyu/images/1234.png) no-repeat ;
+				background-size:50% 50% ;
+			}
+			
+			.content-ing .canvas .item.falling {
+				top: 1200px;
+			}
+			
+			.content-result {
+				display: none;
+				padding-top: 30%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body ontouchstart="">
+		<div class="container">
+
+			<!--抢红包-->
+			<section>
+				<div class="content-init rel">
+					<div class="countdown3">3</div>
+				</div>
+				<div class="content-ing rel">
+					<div class="countdown10">10</div>
+					<!--<div class="number">0</div>-->
+					<div class="canvas"></div>
+				</div>
+				<div class="content-result"></div>
+			</section>
+
+		</div>
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,456 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+.font_60 {
+	font-size: 60px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+.bgColor_f5f5f5 {
+	background-color: #f5f5f5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_indent {
+	text-indent: 2em;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.mar-left-70 {
+	margin-left: 70px;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.padding-top-40 {
+	padding-top: 40px;
+}
+
+.padding-top-75 {
+	padding-top: 75px;
+}
+
+.padding-bottom-70 {
+	padding-bottom: 70px;
+}
+
+.padding-left-120 {
+	padding-left: 120px;
+}
+
+.rootNode {
+	width: 100%;
+	background-color: #fff;
+}
+
+.onePage {
+	width: 100%;
+	min-width: 1200px;
+	height: 381px;
+	background: #ecb526 url(https://images-web.newnewbank.com/head-Bigevent20170808.jpg) no-repeat top center;
+	border-bottom: 1px solid #f44975;
+}
+
+.circle-bar {
+	position: absolute;
+	bottom: -11px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #f4d483;
+	border: 3px solid #fff;
+}
+
+.circle-1 {
+	left: 70px;
+}
+
+.circle-2 {
+	left: 180px;
+}
+
+.circle-3 {
+	left: 280px;
+}
+
+.circle-4 {
+	left: 50%;
+	background-color: #F44975;
+}
+
+.nav-year li {
+	float: left;
+	color: #000;
+	font-size: 18px;
+	margin-right: 50px;
+	cursor: pointer;
+	position: relative;
+}
+
+.nav-year .current {
+	margin-top: -5px;
+	float: left;
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background-color: #F44975;
+	border-radius: 16px;
+	color: #fff;
+}
+
+.w-110 {
+	width: 110px;
+}
+
+.line-height-53 {
+	line-height: 53px;
+}
+
+.line-height-50 {
+	line-height: 50px;
+}
+
+.line-height-40 {
+	line-height: 40px;
+}
+
+.active {
+	display: block;
+}
+
+.h-dot-line {
+	border-left: 1px dotted #999;
+}
+.h-190{
+	height: 190px;
+}
+.h-170 {
+	height: 170px;
+}
+
+.h-150 {
+	height: 150px;
+}
+
+.h-120 {
+	height: 120px;
+}
+
+.h-115 {
+	height: 115px;
+}
+
+.h-108 {
+	height: 108px;
+}
+
+.h-80 {
+	height: 80px;
+}
+
+.h-70 {
+	height: 70px;
+}
+
+.h-60 {
+	height: 60px;
+}
+
+.h-65 {
+	height: 65px;
+}
+
+.h-35 {
+	height: 35px;
+}
+
+.h-30 {
+	height: 30px;
+}
+
+.h-24 {
+	height: 24px;
+}
+
+.h-20 {
+	height: 20px;
+}
+
+.left-year {
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+
+.mar-left-18 {
+	margin-left: 18px;
+}

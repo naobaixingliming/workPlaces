@@ -1,0 +1,190 @@
+* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: "microsoft yahei";
+			}
+			input[type=button], input[type=submit], input[type=file], button { 
+				 -webkit-appearance: none;
+			}
+			#root {
+				width: 10.0rem;
+				height: 17.75rem;
+				background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/goHome20161203.jpg) no-repeat;
+				background-size: 10.0rem 17.75rem;
+				overflow: hidden;
+			}
+			.contain{
+				margin-top:7.8rem ;
+			}
+			
+			.people{
+				width:80% ;
+				margin:0 auto ;
+				height:0.625rem ;
+				font-size: 0.375rem;
+			}
+			.people> .person {
+				position: relative;
+				line-height: 0.625rem;
+				display: inline-block;
+				width:40%;
+				height: 0.625rem;
+			}
+			.people .theOwner{
+
+			}
+			.people .passenger{
+				left:2.4rem ;
+			}
+			.people label {
+				display: block;
+			    position: absolute;
+			    width: 1.5625rem;
+			    /*top: -0.078125rem;*/
+			    left: 0.703125rem;
+			    outline: none;
+			    /*cursor: pointer;*/
+			}
+			
+			
+			
+			.people input {
+				z-index: 3;
+				display: block;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				/*bottom: 0;*/
+				/*left: 50px;*/
+				margin: auto;
+				width: 20px;
+				height:20px;
+			}
+			
+			.people .user-defined {
+				z-index: 2;
+				position: absolute;
+				top: 0;
+				/*bottom: 0;*/
+				/*left: 50px;*/
+				margin: auto;
+				width:20px;
+				height: 20px;
+				border: 1px solid #eaa213;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			
+			.people .user-defined span.circle {
+				display: block;
+				width: 14px;
+				height: 14px;
+				margin-top:2px;
+				margin-left: 2px;
+				background-color: transparent;
+				border-radius: 7px;
+			}
+			
+			@media only screen and (max-width:320px ) {
+				.people input {
+					width: 18px;
+					height:18px;
+				}			
+				.people .user-defined {
+					width:18px;
+					height: 18px;
+					border: 1px solid #eaa213;
+					border-radius: 9px;
+				}			
+				.people .user-defined span.circle {
+					width: 12px;
+					height: 12px;
+					margin-top:2px;
+					margin-left: 2px;
+					border-radius: 6px;
+				}
+			}
+			
+			@media only screen and (min-width:414px) {						
+				.people input {
+					width: 22px;
+					height:22px;
+				}			
+				.people .user-defined {
+					width:22px;
+					height: 22px;
+					border: 1px solid #eaa213;
+					border-radius: 11px;
+				}			
+				.people .user-defined span.circle {
+					width: 16px;
+					height: 16px;
+					margin-top:2px;
+					margin-left: 2px;
+					border-radius: 8px;
+				}
+			}
+			
+			.people .user-defined span.active {
+				background-color: #eaa213;
+			}
+			
+			.inputBox{
+				width:90% ;
+				height: 1.09375rem;
+				border:1px #eaa213 solid;
+				border-radius:0.1rem ;
+				margin:0 auto;
+				font-size: 0.375rem;
+			}
+			.nameBox{
+				margin:0.4rem auto;
+			}
+			.tellBox{
+				
+			}
+			input[type='text']{
+				border: 0;
+				outline: 0;
+				width: 100%;
+				height: 100%;
+				padding-left: 0.3125rem;
+				border-radius:0.1rem ;
+			}
+			.submit{
+				width:90% ;
+				height:1.09375rem;
+				line-height:1.09375rem;
+				text-align: center;
+				margin:0.4rem  auto ;
+				background-color:#eaa213 ;
+				color: #fff;
+				border-radius:0.1rem ;
+				font-size: 0.5625rem;
+				box-shadow:0 0.078125rem 0.15625rem #e98b11 ;
+			}
+			.textInfo{
+				text-align: center;
+				font-size: 0.3125rem;
+				color: #666;
+				letter-spacing: 0.03125rem;
+			}
+			.textInfo a{
+				color: #b20606;
+			}
+			.activityDescription{
+				width:90% ;
+				margin:.4rem auto ;
+			}
+			.activityDescription>a,.redText{
+				color: #b72b2e;
+				font-size: 0.34375rem;	
+			}
+			.redText{
+				display: inline-block;
+			}
+			.activityDescription p{
+				font-size: 0.3125rem;
+				line-height: 0.5rem;
+			}

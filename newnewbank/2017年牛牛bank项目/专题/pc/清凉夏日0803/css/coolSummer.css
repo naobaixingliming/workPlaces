@@ -1,0 +1,630 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000!important;
+}
+
+.color_fff {
+	color: #fff!important;
+}
+
+.color_333 {
+	color: #333!important;
+}
+
+.color_666 {
+	color: #666!important;
+}
+
+.color_999 {
+	color: #999!important;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9!important;
+}
+
+.color_f44975 {
+	color: #f44975!important;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe!important;
+}
+
+.color_fbb03b {
+	color: #fbb03b!important;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.rootNode {
+				width: 100%;
+				max-width: 1920px;
+				min-height: 3800px;
+				margin: 0 auto;
+				background-color: #0249ba;
+				box-shadow: 0 0 5px 5px #dcdcdc;
+			}
+			
+			.onePage {
+				width: 100%;
+				min-width: 1200px;
+				height: 1242px;
+				background: url(https://images-web.newnewbank.com/head-banner20170803.png) no-repeat center top;
+			}
+			.twoPage{
+				width: 100%;
+				max-width: 1920px;
+				height:1276px ;
+				background: url(https://images-web.newnewbank.com/bg-1-20170803.jpg) no-repeat;
+			}
+			.threePage{
+				width: 100%;
+				max-width: 1920px;
+				height:1410px ;
+				background: url(https://images-web.newnewbank.com/bg-2-20170803.jpg) no-repeat;
+			}
+			.fourPage{
+				width: 100%;
+				max-width: 1920px;
+				height:1357px ;
+				background: url(https://images-web.newnewbank.com/bg-3-20170803.jpg) no-repeat;
+			}
+			.fivePage{
+				width: 100%;
+				max-width: 1920px;
+				height:1328px ;
+				background: url(https://images-web.newnewbank.com/bg-4-20170803.jpg) no-repeat;
+			}
+			.bgBottom{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				max-width: 1920px;
+				height:1168px ;
+				background: url(https://images-web.newnewbank.com/bottomBg20170803.png) no-repeat 50% 50%;				
+			}
+			
+			
+			
+			
+			.waterPolo{
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				margin-right: 25px;
+				background: url(https://images-web.newnewbank.com/waterPolo20170803.png) no-repeat;
+			}
+			.dis-top p{
+				margin-bottom: 20px;
+			}
+			.ruleIcon{
+				width: 281px;
+				height: 139px;
+				background: url(https://images-web.newnewbank.com/iceBlock20170803.png) no-repeat;
+				margin-left: 120px;
+			}
+			.color_0d59c1{
+				color: #0d59c1;
+			}
+			.ball{
+				width: 128px;
+				height: 128px;
+				position: absolute;
+				background: url(https://images-web.newnewbank.com/waterPoloB20170803.png) no-repeat;
+			}
+			.ball-f1{
+				top: -100px;
+				left: -145px;
+				background-size:50% ;
+			}
+			.ball-f2{
+				top: 30px;
+				right: -250px;
+			}
+			.ball-f3{
+				bottom: -50px;
+				right: -240px;
+			}
+			.ball-f4{
+				bottom: -140px;
+				left: -140px;
+				background-size:80% ;
+			}
+			.shoalFish-4{				
+				position: absolute;
+				top: -110px;
+				right: 20px;
+			}
+			.manyFish{
+				position: absolute;
+				bottom: -190px;
+				right: 5px;
+			}
+			.outBox{
+				background-color:#007bb6 ;
+				border-radius: 5px;
+				padding: 8px;
+				margin-top: 750px;
+			}
+			.whiteBox{
+				width: 416px;
+				height: 114px;
+				border-radius: 5px;
+			}
+			.gift-box-1{
+				position: absolute;
+				top: -10px;
+				left: 36px;
+			}
+			.gift-box-2{
+				position: absolute;
+				top: 320px;
+				right: 40px;
+			}
+			.gift-box-3{
+				position: absolute;
+				top: 770px;
+				left: 40px;
+			}
+			.gift-box-4{
+				position: absolute;
+				top: 1100px;
+				right: 40px;
+			}
+			.gift-box-5{
+				position: absolute;
+				top: 1430px;
+				left: 100px;
+			}
+			.gift-box-6{
+				position: absolute;
+				top: 1855px;
+				right: 60px;
+			}
+			.gift-box-7{
+				position: absolute;
+				top: 2210px;
+				left: 65px;
+			}
+			.gift-box-8{
+				position: absolute;
+				top: 2650px;
+				right: -70px;
+			}
+			.gift-box-9{
+				position: absolute;
+				bottom: 300px;
+				left: 125px;
+			}
+			
+			.textBox{
+				width: 279px;
+				height: 63px;
+				background: url(https://images-web.newnewbank.com/textBox20170803.png) no-repeat;
+			}
+			
+			.leftArrow{
+				position: absolute;
+				left: -10px;
+				top: 25px;
+				width: 0;
+			    height: 0;
+			    border-top: 7px solid transparent;
+			    border-right: 10px solid #c5e4f4;
+			    border-bottom: 7px solid transparent;
+			}
+			.rightArrow{
+				position: absolute;
+				right: -10px;
+				top: 25px;
+				width: 0;
+			    height: 0;
+			    border-top: 7px solid transparent;
+			    border-left: 10px solid #c5e4f4;
+			    border-bottom: 7px solid transparent;
+			}
+			.bottomArrow{
+				position: absolute;
+				left:50%;
+				bottom: -10px;
+				width: 0;
+			    height: 0;
+			    border-top: 10px solid #c5e4f4;
+			    border-right: 7px solid transparent;
+			    border-left: 7px solid transparent;								
+			}
+			.bottomArrow-right{
+				left:80%;
+			}
+			.color_0064ff{
+				color: #0064ff;
+			}
+			.pos-1{
+			    position: absolute;
+			    right: -180px;
+			    top: 60px;
+			}
+			.pos-2{
+			    position: absolute;
+			    right: 160px;
+			    top: -120px;
+			}
+			.pos-3{
+			    position: absolute;
+			    right: 100px;
+			    top: -120px;
+			}
+			.pos-4{
+			    position: absolute;
+			    right: 100px;
+			    top: -120px;
+			}
+			.pos-6{
+			    position: absolute;
+			    left: -70px;
+			    top: 0;
+			}
+			.pos-9{
+			    position: absolute;
+			    left: 70px;
+			    top:-120px ;
+			}
+			.goInvest{
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			.investBtn{
+				display: block;
+				color: #0754bf;
+				width: 306px;
+				height: 150px;
+				line-height: 90px;
+				background: url(https://images-web.newnewbank.com/investBtn20170803.png) no-repeat;
+			}
+			
+			.iceBlock{
+				position: absolute;
+				top: 435px;
+				left: 300px;
+				width:281px ;
+				height: 139px;
+				background: url(https://images-web.newnewbank.com/iceBlock20170803.png) no-repeat;
+				background-size:60% ;
+			}
+			.iceBlock-1{
+				top: 1335px;
+				left: 560px;
+				background-size:50% ;
+			}
+			.sharkLeft{
+				position: absolute;
+				top: 610px;
+				left: -360px;
+				width: 257px;
+				height: 148px;
+				background: url(https://images-web.newnewbank.com/sharkLeft20170803.png) no-repeat;
+			}
+			.bubble-1{
+				position: absolute;
+				top: 840px;
+				left: -288px;
+				width: 267px;
+				height: 210px;
+				background: url(https://images-web.newnewbank.com/bubble-1-20170803.png) no-repeat;
+			}
+			.penguinRight{
+				position: absolute;
+				top: 800px;
+				right: -360px;
+				width: 272px;
+				height: 599px;
+				background: url(https://images-web.newnewbank.com/penguinRight20170803.png) no-repeat;
+			}
+			.penguinLeft{
+				position: absolute;
+				top: 1650px;
+				left: -360px;
+				width: 409px;
+				height: 1236px;
+				background: url(https://images-web.newnewbank.com/penguinLeft20170803.png) no-repeat;
+			}
+			.bubble-2{
+				position: absolute;
+				top: 1816px;
+				right: -360px;
+				width: 174px;
+				height: 174px;
+				background: url(https://images-web.newnewbank.com/bubble-2-20170803.png) no-repeat;
+			}
+			.shoalFish{
+				position: absolute;
+				top: 2400px;
+				left: -40px;
+				width: 195px;
+				height: 106px;
+				background: url(https://images-web.newnewbank.com/shoalFish-2-20170803.png) no-repeat;
+				
+			}
+			.bubble-3{
+				position: absolute;
+				top: 2500px;
+				left: -280px;
+				width: 91px;
+				height: 181px;
+				background: url(https://images-web.newnewbank.com/bubble-3-20170803.png) no-repeat;
+			}
+			.sharkMiddle{
+				position: absolute;
+				bottom: 460px;
+				left: -360px;
+				width: 334px;
+				height: 167px;
+				background: url(https://images-web.newnewbank.com/sharkMiddle20170803.png) no-repeat;
+			}
+			.shoalFish-3{
+				position: absolute;
+				bottom: 250px;
+				left: -110px;
+				width: 124px;
+				height: 95px;
+				background: url(https://images-web.newnewbank.com/shoalFish-3-20170803.png) no-repeat;
+			}
+			.shoalFish-1{
+				position: absolute;
+				bottom: 400px;
+				right: -40px;
+				width: 164px;
+				height: 51px;
+				background: url(https://images-web.newnewbank.com/shoalFish-1-20170803.png) no-repeat;
+			}
+			.ball-b1{
+				right:-70px ;
+				bottom: 250px;
+				background-size:80% ;
+			}
+			.ball-b2{
+				left:-220px ;
+				bottom: 0;
+				background-size:50% ;
+			}
+			.ball-b3{
+				left:-110px ;
+				bottom: 150px;
+				background-size:50% ;
+			}
+			.ball-b4{
+				right:-230px ;
+				bottom: 850px;
+				background-size:70% ;
+			}
+			.red-fish{
+				position: absolute;
+				bottom: 1150px;
+				right: -70px;
+				width: 161px;
+				height: 90px;
+				background: url(https://images-web.newnewbank.com/fish-120170804.png) no-repeat;
+			}

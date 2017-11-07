@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>兑换中心</title>
+		<link rel="stylesheet" type="text/css" href="css/wap_exchange20161116.css"/>
+	</head>
+	<body>
+		<div id="root">
+			<div id="cover"></div>
+			<!--弹框   start-->
+			<div class="popup">
+				<div class="recBox">
+					<div class="p_icon"></div>
+					<div class="bge9e9e9"></div>
+					<p class="fs27">恭喜您，兑换成功</p>
+					<p class="account">一张<a>0.5%</a>加息券已放入您的账户</p>
+					<div class="investment">去投资</div>
+				</div>
+				<div class="ball">
+					<div class="w_1line"></div>
+					<div class="delete"></div>	
+				</div>
+							
+			</div>
+			<!--弹框  end-->
+			
+			
+			<div class="head"><img src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_head20161116.jpg"/></div>
+			<!--主题内容 start-->
+			<div class="main">
+				<div class="w_535">
+					<!--登录注册 start-->
+					<div class="logLine">
+						<a>您好，兑换请先</a> 
+						<span ><a href="#">登录 </a> |  <a href="#">注册</a></span>
+					</div>
+					<!--登录注册 end-->
+					<div class="clearF"></div>
+					<!--兑换码输入框 start-->
+					<div class="inputBox margBox">
+						<input type="text"  placeholder="请输入加息券兑换码" />
+					</div>
+					<!--兑换码输入框 end-->
+					<!--确定兑换 start-->
+					<div class="inputBox redBox">
+						确认兑换
+					</div>
+					<!--确定兑换 end-->
+					<!--温馨提示 start-->
+					<div class="prompt">
+						<div class="icon">温馨提示</div>
+					</div>
+					<!--温馨提示 end-->
+					<!--文字说明 start-->
+					<div class="textDescription">
+						<p>（1）参加牛牛bank2016感恩客户投资分享会的客户，
+							现场可获得一张0.5%加息券，凭券上的兑换码即可兑换;</p>
+						<p>（2）优惠券兑换成功立即到账，可去“个人中心-我的优
+							惠-加息券”中查询</p>
+						<p>（3）每个兑换码仅可兑换一次。</p>
+						<p>（4）本次活动最终解释权归牛牛bank所有</p>
+						
+					</div>
+					<!--文字说明 end-->
+				</div>
+			</div>
+			<!--主题内容 end-->
+		</div>
+		<script src="js/zepto-1.1.6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				var exchange={
+					init:function(){
+						this.binbEvent();
+					},
+					binbEvent:function(){
+						$('.redBox').on('click',function(){
+							$('#cover,.popup').css('display','block');
+						});
+						$('.delete').on('click',function(){
+							$('#cover,.popup').css('display','none');
+						});
+						
+					}
+
+				}
+				
+				exchange.init();
+			})();
+			
+			
+		</script>
+		
+	</body>
+</html>

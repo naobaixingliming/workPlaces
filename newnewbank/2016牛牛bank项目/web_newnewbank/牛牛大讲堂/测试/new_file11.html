@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/retain.css"/>
+	</head>
+
+	<body>
+		<div class="content active">
+			<!-- one  start -->
+			<div class="subNav">
+				<!-- 1  line -->
+				<div class="firstLine titleContent">
+					<a class="redRct">牛牛讲堂</a>
+					<a class="title">【第20讲】：共享经济+社群，满足人更深层次的需求</a>
+					<a class="date">2016-8-20</a>
+					<a class="concern"><span>150</span>人关注</a>
+					<a class="review"><span>50</span>条评论</a>
+				</div>
+				<!-- 1  line -->
+				<!-- 2  line -->
+				<div class="introduce">
+					<div class="person">
+						<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/speaker.jpg" />
+					</div>
+					<div class="writtenWords">
+						<p>这一个时代它有什么样的背景呢？</p>
+						<p>第一，随着经济的快速发展和人口的增多，资源开始出现大面积的短缺，不仅是大宗资源， 石油、铁矿石、煤炭等等，也包括个人的私人的用品，出行所需要的交通、道路、停车位， 住房等等，都越来越紧缺，紧缺是分享的一个基础。
+						</p>
+						<a href="#">查看全文></a>
+					</div>
+				</div>
+				<!-- 2  line -->
+			</div>
+			<!-- one  end -->
+			<!-- two  start -->
+			<div class="subNav">
+				<div class="secondLine titleContent">
+					<a class="redRct">牛牛讲堂</a>
+					<a class="title">【第19讲】：学习《易经》，一命二运三风水四积阴德五读书!</a>
+					<a class="concern"><span>300</span></a>
+					<a class="review"><span>99</span></a>
+				</div>
+				<div class="introduce none">
+					<div class="person">
+						<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/speaker.jpg" />
+					</div>
+					<div class="writtenWords">
+						<p>这一个时代它有什么样的背景呢？</p>
+						<p>第一，随着经济的快速发展和人口的增多，资源开始出现大面积的短缺，不仅是大宗资源， 石油、铁矿石、煤炭等等，也包括个人的私人的用品，出行所需要的交通、道路、停车位， 住房等等，都越来越紧缺，紧缺是分享的一个基础。
+						</p>
+						<a href="#">查看全文></a>
+					</div>
+				</div>
+			</div>
+			<!-- two  end -->
+			<!-- three   -->
+			<div class="subNav">
+				<div class="secondLine thridLine titleContent">
+					<a class="redRct">牛牛讲堂</a>
+					<a class="title">【第18讲】：家，如何才能变得更好？</a>
+					<a class="concern"><span>300</span></a>
+					<a class="review"><span>99</span></a>
+				</div>
+				<div class="introduce none">
+					<div class="person">
+						<img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/speaker.jpg" />
+					</div>
+					<div class="writtenWords">
+						<p>这一个时代它有什么样的背景呢？</p>
+						<p>第一，随着经济的快速发展和人口的增多，资源开始出现大面积的短缺，不仅是大宗资源， 石油、铁矿石、煤炭等等，也包括个人的私人的用品，出行所需要的交通、道路、停车位， 住房等等，都越来越紧缺，紧缺是分享的一个基础。
+						</p>
+						<a href="#">查看全文></a>
+					</div>
+				</div>
+			</div>
+			<!-- three   -->
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".titleContent").click(function() {
+//					$(this).toggleClass("currentDd").siblings(".subNav").removeClass("currentDd")
+//					$(this).toggleClass("currentDt").siblings(".subNav").removeClass("currentDt")
+					$(this).next(".introduce").slideDown(300)
+							.parent('.subNav').siblings('.subNav').find('.introduce').slideUp(500)
+				})
+			})
+			
+			
+			
+		</script>
+	</body>
+
+</html>

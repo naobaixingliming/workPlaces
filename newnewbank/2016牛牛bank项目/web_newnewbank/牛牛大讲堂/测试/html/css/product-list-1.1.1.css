@@ -1,0 +1,675 @@
+@charset "UTF-8";
+.product-wrap {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  margin: 0 auto;
+}
+.product-wrap .pro-top-img {
+  width: 100%;
+  height: 302px;
+  margin: 0 auto;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_topImg01_20160421.jpg) no-repeat center top;
+}
+
+.pro-con-box {
+  width: 1200px;
+  height: auto;
+  margin: -132px auto 0 auto;
+}
+
+.pro-menu-wrap {
+  width: 1198px;
+  height: 166px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+.pro-menu-wrap ul {
+  width: 100%;
+}
+.pro-menu-wrap ul li {
+  width: 131px;
+  height: 140px;
+  padding: 24px 1px 1px 1px;
+  float: left;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pro-menu-wrap ul li .menu-bg {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_menu_bg_20160419.png);
+  background-repeat: no-repeat;
+}
+.pro-menu-wrap ul li .menu-bg span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 50%;
+  text-align: center;
+  font: normal 14px/20px "Microsoft YaHei";
+}
+.pro-menu-wrap ul li .menu-text {
+  width: 50px;
+  height: 32px;
+  margin: 10px auto 0 auto;
+  background-image: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/product_menu_text_20160419.png);
+  background-repeat: no-repeat;
+}
+.pro-menu-wrap ul li.menu01 .menu-bg {
+  background-position: 0px 0px;
+}
+.pro-menu-wrap ul li.menu02 .menu-bg {
+  background-position: -138px 0px;
+}
+.pro-menu-wrap ul li.menu03 .menu-bg {
+  background-position: -271px 0px;
+}
+.pro-menu-wrap ul li.menu04 .menu-bg {
+  background-position: -401px 0px;
+}
+.pro-menu-wrap ul li.menu05 .menu-bg {
+  background-position: -534px 0px;
+}
+.pro-menu-wrap ul li.menu06 .menu-bg {
+  background-position: -664px 0px;
+}
+.pro-menu-wrap ul li.menu07 .menu-bg {
+  background-position: -797px 0px;
+}
+.pro-menu-wrap ul li.menu08 .menu-bg {
+  background-position: -928px 0px;
+}
+.pro-menu-wrap ul li.menu09 .menu-bg {
+  background-position: -1060px 0px;
+}
+.pro-menu-wrap ul li.menu01 .menu-text {
+  background-position: -16px -4px;
+}
+.pro-menu-wrap ul li.menu02 .menu-text {
+  background-position: -154px -3px;
+}
+.pro-menu-wrap ul li.menu03 .menu-text {
+  background-position: -286px -3px;
+}
+.pro-menu-wrap ul li.menu04 .menu-text {
+  background-position: -416px -3px;
+}
+.pro-menu-wrap ul li.menu05 .menu-text {
+  background-position: -550px -4px;
+}
+.pro-menu-wrap ul li.menu06 .menu-text {
+  background-position: -678px -3px;
+}
+.pro-menu-wrap ul li.menu07 .menu-text {
+  background-position: -812px -5px;
+}
+.pro-menu-wrap ul li.menu08 .menu-text {
+  background-position: -944px -4px;
+}
+.pro-menu-wrap ul li.menu09 .menu-text {
+  background-position: -1076px -2px;
+}
+.pro-menu-wrap ul li.menu01:hover .menu-text, .pro-menu-wrap ul li.menu01.active .menu-text {
+  background-position: -16px -93px;
+}
+.pro-menu-wrap ul li.menu02:hover .menu-text, .pro-menu-wrap ul li.menu02.active .menu-text {
+  background-position: -154px -92px;
+}
+.pro-menu-wrap ul li.menu03:hover .menu-text, .pro-menu-wrap ul li.menu03.active .menu-text {
+  background-position: -286px -92px;
+}
+.pro-menu-wrap ul li.menu04:hover .menu-text, .pro-menu-wrap ul li.menu04.active .menu-text {
+  background-position: -416px -92px;
+}
+.pro-menu-wrap ul li.menu05:hover .menu-text, .pro-menu-wrap ul li.menu05.active .menu-text {
+  background-position: -550px -93px;
+}
+.pro-menu-wrap ul li.menu06:hover .menu-text, .pro-menu-wrap ul li.menu06.active .menu-text {
+  background-position: -678px -92px;
+}
+.pro-menu-wrap ul li.menu07:hover .menu-text, .pro-menu-wrap ul li.menu07.active .menu-text {
+  background-position: -812px -94px;
+}
+.pro-menu-wrap ul li.menu08:hover .menu-text, .pro-menu-wrap ul li.menu08.active .menu-text {
+  background-position: -944px -93px;
+}
+.pro-menu-wrap ul li.menu09:hover .menu-text, .pro-menu-wrap ul li.menu09.active .menu-text {
+  background-position: -1076px -91px;
+}
+.pro-menu-wrap ul li:hover, .pro-menu-wrap ul li.active {
+  padding: 23px 0px 0px 0px;
+  border: 1px solid #f44975;
+}
+
+.pro-type-intro {
+  width: 1200px;
+  height: auto;
+  position: relative;
+  margin: 26px auto 0 auto;
+  font-size: 0;
+}
+.pro-type-intro li {
+  width: 1132px;
+  height: auto;
+  padding: 0px 34px 0 24px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  display: none;
+}
+.pro-type-intro li .small-triangle {
+  width: 26px;
+  height: 18px;
+  position: absolute;
+  top: -18px;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/small_triangle_20160419.png) no-repeat center top;
+}
+.pro-type-intro li.type-intro01 .small-triangle {
+  left: 50px;
+}
+.pro-type-intro li.type-intro02 .small-triangle {
+  left: 184px;
+}
+.pro-type-intro li.type-intro03 .small-triangle {
+  left: 318px;
+}
+.pro-type-intro li.type-intro04 .small-triangle {
+  left: 452px;
+}
+.pro-type-intro li.type-intro05 .small-triangle {
+  left: 586px;
+}
+.pro-type-intro li.type-intro06 .small-triangle {
+  left: 720px;
+}
+.pro-type-intro li.type-intro07 .small-triangle {
+  left: 854px;
+}
+.pro-type-intro li.type-intro08 .small-triangle {
+  left: 988px;
+}
+.pro-type-intro li.type-intro09 .small-triangle {
+  left: 1122px;
+}
+
+.type-intro-box {
+  width: 100%;
+  height: auto;
+  padding: 16px 0;
+  overflow: hidden;
+}
+.type-intro-box .company-logo {
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  line-height: 110px;
+  vertical-align: middle;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+.type-intro-box .intro-info {
+  margin-left: 28px;
+  width: 988px;
+}
+.type-intro-box .intro-info .info-top {
+  position: relative;
+  width: 100%;
+}
+.type-intro-box .intro-info .info-top h4 {
+  font: normal 18px/24px "Microsoft YaHei";
+  text-align: left;
+}
+.type-intro-box .intro-info .info-top .total-info {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.type-intro-box .intro-info .info-top .total-info span {
+  display: inline-block;
+  margin-left: 36px;
+  font: normal 13px/24px "Microsoft YaHei";
+}
+.type-intro-box .intro-info .info-top .total-info span b {
+  font-weight: normal;
+}
+.type-intro-box .intro-info .intro-text {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+.type-intro-box .intro-info .intro-text p {
+  font: normal 14px/24px "Microsoft YaHei";
+  color: #666666;
+}
+.type-intro-box .intro-info .product-name {
+  font: normal 14px/24px "Microsoft YaHei";
+}
+
+.type-intro-box.multi {
+  border-top: 1px solid #dfdfdf;
+}
+
+.pro-main-box {
+  width: 1200px;
+  margin: 0 auto 54px auto;
+}
+
+.pro-left-box {
+  width: 884px;
+  padding-top: 24px;
+  *padding-top: 20px;
+  height: auto;
+}
+.pro-left-box .sorting-way {
+  width: 100%;
+  font-size: 0;
+}
+.pro-left-box .sorting-way span {
+  display: inline-block;
+  margin-left: 28px;
+  font: normal 16px/24px "Microsoft YaHei";
+  color: #666666;
+}
+.pro-left-box .sorting-way a {
+  display: inline-block;
+  height: 24px;
+  padding: 0 8px;
+  margin-left: 20px;
+  font: normal 14px/24px "Microsoft YaHei";
+  color: #666666;
+  border-radius: 4px;
+}
+
+.pro-list-box {
+  width: 100%;
+  height: auto;
+  margin-top: 4px;
+  *margin-top: 0px;
+}
+
+.pro-list {
+  width: 100%;
+  height: 1168px;
+  font-size: 0;
+  overflow: hidden;
+}
+.pro-list li {
+  width: 882px;
+  height: 142px;
+  margin-top: 21px;
+  *margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pro-box-top {
+  width: 100%;
+  height: 48px;
+  position: relative;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.pro-box-top h4 {
+  display: inline-block;
+  height: 48px;
+  padding-left: 36px;
+  font: normal 18px/48px "Microsoft YaHei";
+  float: left;
+}
+.pro-box-top span {
+  display: inline-block;
+  height: 48px;
+  padding-left: 26px;
+  font: normal 14px/48px "Microsoft YaHei";
+}
+
+.coupon-tips {
+  position: absolute;
+  top: 13px;
+  right: 38px;
+}
+.coupon-tips span {
+  display: inline-block;
+  padding: 0 8px;
+  height: 20px;
+  font: normal 13px/20px "Microsoft YaHei";
+  margin-left: 14px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.pro-info {
+  width: 100%;
+  height: auto;
+}
+
+.column01 {
+  width: 154px;
+  text-align: center;
+  padding-top: 24px;
+}
+.column01 p {
+  font: normal 30px/30px "Microsoft YaHei";
+}
+.column01 span {
+  font: normal 14px/24px "Microsoft YaHei";
+}
+
+.column02 {
+  width: 100px;
+  text-align: center;
+  padding-top: 29px;
+}
+.column02 p {
+  font: normal 20px/24px "Microsoft YaHei";
+}
+.column02 span {
+  font: normal 14px/24px "Microsoft YaHei";
+}
+
+.column03 {
+  width: 140px;
+  text-align: center;
+  padding-top: 29px;
+}
+.column03 p {
+  font: normal 18px/24px "Microsoft YaHei";
+}
+.column03 span {
+  font: normal 14px/24px "Microsoft YaHei";
+}
+
+.column04 {
+  width: 248px;
+  padding-top: 29px;
+  margin-left: 18px;
+}
+.column04 p {
+  font: normal 13px/24px "Microsoft YaHei";
+  padding-left: 10px;
+}
+
+.progress-wrap {
+  width: 248px;
+  margin: 0 auto;
+}
+.progress-wrap .line-progress {
+  width: 190px;
+  height: 6px;
+  position: relative;
+  top: 9px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+.progress-wrap .line-progress .progress-finished {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 3px;
+}
+.progress-wrap .line-progress .progress-finished i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/line_progress_20160420.png) repeat-x;
+  animation: progress 50s infinite linear;
+  -webkit-animation: progress 50s infinite linear;
+}
+.progress-wrap span {
+  display: block;
+  margin-left: 10px;
+  font: normal 13px/24px "Microsoft YaHei";
+}
+
+@keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+@-webkit-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+.column05 {
+  width: 152px;
+  margin-left: 38px;
+  padding-top: 28px;
+}
+
+.pro-btn {
+  display: block;
+  width: 152px;
+  height: 40px;
+  border-radius: 4px;
+  font: normal 18px/40px "Microsoft YaHei";
+  text-align: center;
+}
+
+/*  分页器start  */
+.paging-box {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+
+.paging-btns {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.paging-btns a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 5px;
+}
+.paging-btns a.selected, .paging-btns a.selected:hover {
+  cursor: default;
+}
+
+.prev-page b {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  font-size: 0;
+  line-height: 0;
+  border-color: #f5f5f5 #666666 #f5f5f5 #f5f5f5;
+  position: absolute;
+  left: 9px;
+  top: 12px;
+}
+
+.next-page b {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-style: solid;
+  font-size: 0;
+  line-height: 0;
+  border-color: #f5f5f5 #f5f5f5 #f5f5f5 #666666;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+.jumpPage {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.jumpIpt {
+  display: inline-block;
+  width: 30px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #CCCCCC;
+  padding: 0 5px;
+  color: #333333;
+  border-radius: 4px;
+  margin-left: 4px;
+  vertical-align: top;
+}
+
+/*  分页器end  */
+.pro-right-box {
+  width: 284px;
+  margin-left: 30px;
+  padding-top: 14px;
+  height: auto;
+}
+
+.r-con-wrap {
+  width: 100%;
+  height: auto;
+  margin-top: 26px;
+}
+.r-con-wrap h4 {
+  font: normal 16px/32px "Microsoft YaHei";
+  padding-left: 6px;
+}
+
+.r-con-box {
+  width: 282px;
+  margin-top: 2px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+}
+
+.recommend-box {
+  padding: 24px 0;
+}
+.recommend-box h2 {
+  font: bold 24px/32px "Microsoft YaHei";
+  color: #333333;
+  text-align: center;
+}
+.recommend-box .yield-box {
+  width: 134px;
+  height: 70px;
+  padding: 32px 0;
+  margin: 14px auto 0 auto;
+  background: url(https://images-web.oss-cn-hangzhou.aliyuncs.com/circle_bg_20160419.png) no-repeat center top;
+}
+.recommend-box .yield-box p {
+  font: bold 24px/36px "Microsoft YaHei";
+  text-align: center;
+}
+.recommend-box .yield-box p strong {
+  font-size: 48px;
+}
+.recommend-box .yield-box span {
+  display: block;
+  font: normal 14px/24px "Microsoft YaHei";
+  text-align: center;
+}
+.recommend-box .cycle {
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+.recommend-box .cycle span {
+  display: inline-block;
+  font: normal 14px/24px "Microsoft YaHei";
+}
+.recommend-box .cycle a {
+  display: inline-block;
+  margin-left: 14px;
+  font: normal 14px/24px "Microsoft YaHei";
+}
+.recommend-box .recommend-buy-now {
+  display: block;
+  width: 220px;
+  height: 40px;
+  margin: 18px auto 3px auto;
+  text-align: center;
+  border-radius: 5px;
+  font: normal 18px/40px "Microsoft YaHei";
+}
+
+.prominent-box {
+  padding: 12px 0 14px 0;
+}
+.prominent-box table {
+  width: 100%;
+  text-align: center;
+}
+.prominent-box table th {
+  height: 40px;
+  font: normal 14px/40px "Microsoft YaHei";
+  border-bottom: 1px dashed #cccccc;
+}
+.prominent-box table td {
+  height: 24px;
+  padding-top: 14px;
+  font: normal 13px/24px "Microsoft YaHei";
+}
+.prominent-box table td span {
+  display: inline-block;
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.notice-box {
+  padding: 14px 0 24px 0;
+}
+.notice-box table {
+  width: 100%;
+  text-align: center;
+}
+.notice-box table th {
+  height: 48px;
+  font: normal 15px/48px "Microsoft YaHei";
+  border-bottom: 1px dashed #cccccc;
+}
+.notice-box table td {
+  height: 24px;
+  padding-top: 18px;
+  font: normal 13px/24px "Microsoft YaHei";
+}
+
+.novice-box {
+  width: 282px;
+  height: 144px;
+  margin-top: 28px;
+  overflow: hidden;
+}
+.novice-box img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=product-list-1.1.1.css.map */

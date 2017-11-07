@@ -1,0 +1,182 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "microsoft yahei";
+}
+
+#all {
+	/*width:100% ;*/
+	height: 77.75rem;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_bg201610114.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.headerText {
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	margin-top: 4.296875rem;
+	color: #fff;
+	opacity: 0.6;
+}
+
+[data-dpr="2"] .headerText {
+	font-size: 26px;
+}
+
+[data-dpr="3"] .headerText {
+	font-size: 39px;
+}
+
+[data-dpr="2"] .rectangularFrame .loginButton {
+	font-size: 32px;
+}
+
+[data-dpr="3"] .headerText {
+	font-size: 48px;
+}
+
+.containBox1 {
+	width: 100%;
+	margin-top: 7.03125rem;
+}
+
+.tenThousand {
+	width: 9.578125rem;
+	height: 9.71875rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_1w20161014.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.investmentButton {
+	width: 4.765625rem;
+	height: 1.03125rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap-buyButton20161014.png) no-repeat;
+	background-size: 100% 100%;
+	color: #54127d;
+	font-size: 16px;
+	line-height: 1.03125rem;
+	text-align: center;
+}
+
+[data-dpr="2"] .investmentButton {
+	font-size: 32px;
+}
+
+[data-dpr="3"] .headerText {
+	font-size: 48px;
+}
+
+.investmentButton1 {
+	margin-top: 7.34375rem;
+}
+
+.containBox2 {
+	width: 100%;
+	margin-top: 1.640625rem;
+}
+
+.fortyThousand {
+	width: 9.1875rem;
+	height: 9.828125rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_4w20161014.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.investmentButton2 {
+	margin-top: 7.5rem;
+}
+
+.investmentButton3 {
+	margin-top: 6.5625rem;
+}
+
+.investmentButton4 {
+	margin-top: 7.109375rem;
+}
+
+.investmentButton5 {
+	margin-top: 6.875rem;
+}
+
+.investmentButton6 {
+	margin-top: 7.03125rem;
+}
+
+.containBox3 {
+	width: 100%;
+	margin-top: 1.328125rem;
+}
+
+.eightyThousand {
+	width: 9.609375rem;
+	height: 10.140625rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_8w20161014.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.containBox4 {
+	width: 100%;
+	margin-top: 0.625rem;
+}
+
+.oneHundredThousand {
+	width: 9.84375rem;
+	height: 9.0rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_10w20161014.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.containBox5 {
+	width: 100%;
+	margin-top: 1.25rem;
+}
+
+.twoHundredThousand {
+	width: 9.671875rem;
+	height: 9.78125rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_20w20161014.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.containBox6 {
+	width: 100%;
+	margin-top: 0.625rem;
+}
+
+.sixHundredThousand {
+	width: 8.671875rem;
+	height: 9.40625rem;
+	margin: 0 auto;
+	background: url(http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_60w20161014.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.footerText {
+	width: 100%;
+	color: #5d1a6e;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 1.25rem;
+}
+
+[data-dpr="2"] .footerText {
+	font-size: 22px;
+}
+
+[data-dpr="3"] .footerText {
+	font-size: 33px;
+}
