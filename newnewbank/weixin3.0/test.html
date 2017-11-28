@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>优惠券</title>
+    <link rel="stylesheet" href="css/coupons-1.1.1.css"/>
+    <style type="text/css">
+        li{height: 30px;font-size: 16px;}
+    </style>
+</head>
+<body class="coupons" ontouchstart>
+  <div id="wrapper">  
+  <div id="scroller">  
+   <ul id="thelist">  
+    <li>Generated row 1</li>  
+    <li>Generated row 2</li>  
+    <li>Generated row 3</li>  
+    <li>Generated row 4</li>  
+    <li>Generated row 5</li>  
+    <li>Generated row 6</li>  
+   </ul>  
+   <div id="pullUp">  
+    <span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>  
+   </div>  
+  </div>  
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/iscroll-4.2.5.js"></script>
+<script>
+$(function(){
+    $(".coupon_tabs a").on("click",function(){
+        var iThis = $(this).index();
+        $(this).addClass("cur").siblings().removeClass("cur");
+        $(".cb_box").eq(iThis).fadeIn().siblings().hide();
+    }); 
+})
+
+var myScroll,pullUpEl, pullUpOffset,generatedCount = 0;
+
+ 
+/**
+ * 滚动翻页 （自定义实现此方法）
+ * myScroll.refresh();      // 数据加载完成后，调用界面更新方法
+ */
+var i = 2; //初始化页码为2
+function pullUpAction () {
+    setTimeout(function () {
+        var page = i++; // 每上拉一次页码加一次 （就比如下一页下一页）
+        ajaxFn(page);
+        
+        // $.ajax({  
+        //  type: "GET",  
+        //  url: "http://192.168.20.10:8002/mobile/weixin3.0/json/coupons.json",  
+        //  data: { page: generatedCount },  
+        //  dataType: "json",  
+        //  success: function (data) {  
+        //   var json = data;
+        //   $(json).each(function () {  
+        //    li = document.createElement('li');  
+        //    //  li.innerText = 'Generated row ' + (++generatedCount);  
+        //    li.innerHTML = '<p>'+(++generatedCount)+'</p>';      
+        //    el.appendChild(li, el.childNodes[0]);  
+        //   })  
+        //  }  
+        // }); 
+
+        myScroll.refresh();     //数据加载完成后，调用界面更新方法
+    }, 1000);  
+} 
+
+
+function ajaxFn(page){ // ajax后台交互
+        var el, li;
+        el = document.getElementById('thelist');
+    $.ajax({
+        type : "GET",
+        dataType : "JSON",
+        url : "http://192.168.20.10:8002/mobile/weixin3.0/json/coupons.json", // 你请求的地址
+        data : {
+            'page': page  // 传过去的页码
+        },
+        success : function(data){
+            console.info(data);
+            // data =  eval(data.clientList);
+            if(data.length){ // 如果后台传过来有数据执行如下操作 ， 没有就执行else 告诉用户没有更多内容呢
+                li = document.createElement('li');  
+               li.innerHTML = '<p>'+(++generatedCount)+'</p>';      
+               el.appendChild(li, el.childNodes[0]);  
+            }else{
+                $('.pullUpLabel').html('亲，没有更多内容了！');
+            }
+ 
+        },
+        error : function(){
+             
+        }
+    });
+     
+}
+
+/** 
+  * 初始化iScroll控件 
+  */  
+  function loaded() {  
+   pullUpEl = document.getElementById('pullUp');  
+   pullUpOffset = pullUpEl.offsetHeight;  
+   myScroll = new iScroll('wrapper', {  
+    useTransition: false,   
+    onRefresh: function () {
+    if (pullUpEl.className.match('loading')) {  
+      pullUpEl.className = '';  
+      pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';  
+     }  
+    },  
+    onScrollMove: function () { 
+    if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {  
+      pullUpEl.className = 'flip';  
+      pullUpEl.querySelector('.pullUpLabel').innerHTML = '松手开始更新...';  
+      this.maxScrollY = this.maxScrollY;  
+     } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {  
+      pullUpEl.className = '';  
+      pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多...';  
+      this.maxScrollY = pullUpOffset;  
+     }  
+    },  
+    onScrollEnd: function () {
+    if (pullUpEl.className.match('flip')) {  
+      pullUpEl.className = 'loading';  
+      pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中...';  
+      pullUpAction(); // Execute custom function (ajax call?)  
+     }  
+    }  
+   });  
+   setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);  
+  }  
+  //初始化绑定iScroll控件  
+  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);  
+  document.addEventListener('DOMContentLoaded', loaded, false); 
+</script>

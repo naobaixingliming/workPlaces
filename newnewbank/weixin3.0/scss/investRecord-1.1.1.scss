@@ -1,0 +1,122 @@
+@charset 'utf-8';
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html,body{font-size: 62.5%;}
+a img,fieldset{border:0;}
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+.fl{float:left;}
+.fr{float:right;}
+.clear {font-size: 0;height: 0;line-height: 0;overflow: hidden;clear: both;}
+@mixin inner-padding{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+@mixin middle-box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+@mixin webkit-box{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin flex-box($num){
+	-webkit-box-flex: $num;
+	-webkit-flex: $num;
+	-ms-flex: $num;
+	flex: $num;
+}
+@mixin middle-popup{
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+  	transform: translate(-50%,-50%);
+  	z-index: 100;
+}
+.page_wrap, body{background-color:#efeff4;}
+.record_tabs{width:100%; @include webkit-box; background: #efeff4; z-index: 1; position:absolute; top:0; left:0;
+	box-shadow: 0 0 10px 0 rgba(155,143,143,0.3);
+	-webkit-box-shadow: 0 0 10px 0 rgba(155,143,143,0.3);
+	-moz-box-shadow: 0 0 10px 0 rgba(155,143,143,0.3);
+	a{display:block; position:relative; width:100%; @include flex-box(1);text-align: center;font-size: 1.6rem; color:#666666;padding: 1.5rem 0;
+	border-bottom: 1px solid #cccccc;}
+}
+.record_wrap{
+	padding-top: 5.4rem;
+}
+
+.record_box{width:100%;position:relative;padding:3% 2%; @include inner-padding; display:none;}
+.record_list{width:100%; height:auto;
+	li{background:#FFFFFF; margin-bottom: 3%;border-radius: .5rem; overflow:hidden;
+		a{ border-radius: .5rem;
+			.rl_box{@include middle-box; padding:1.5rem;}
+		}
+		a:active {background-color: #d9d9d9;}
+	}
+	.record_hd{width:6rem; height:6rem; margin-right: 1.5rem;}
+	.record_hd.yi{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.shi{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.zhu{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_zhu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.xing{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_xing_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.edc{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_edc_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.medical{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_medical_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.yu{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.shou{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shou_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_hd.other{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_other_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+	.record_bd{@include flex-box(1); min-width: 0;
+		h4{color:#999999; font-size: 1.4rem; font-weight: 400; line-height: 1.7; float:left;
+			i{font-style: normal; display:inline; font-size: 1rem;}
+			b{font-size: 1.4rem; font-weight: 400; color:#333333; font-style: normal; display:inline;}
+		}
+		span{float:right; display:block; font-size: 1rem; color:#eea838; border:1px solid #eea838; border-radius: 1rem; padding:.2rem .8rem;}
+		p{font-size: 1.2rem; color:#999999; line-height: 1.7;
+			strong{font-size: 1.6rem; font-weight: 400;}
+		}
+	}
+}
+.rl_pro_info{background:#ebfaff; @include webkit-box;
+	.rl_col{width:100%; @include flex-box(1); text-align: center; padding:2%;
+		strong{font-size: 1.4rem; font-weight: 400; color:#333333; line-height: 1.4;}
+		p{font-size: 1.2rem; color:#999999; line-height: 1.4;}
+	}
+}
+
+
+@media screen and (max-width:480px){
+	// html,body{font-size: 75%;}
+}
+
+@media screen and (max-width:320px){
+	.record_list{
+		li{
+			a{
+				.rl_box{padding:1rem;}
+			}
+		}
+		.record_hd{
+			margin-right: 1rem;
+		} 
+		.record_bd{
+			h4{ font-size: 1.2rem;
+				b{font-size: 1.2rem;}
+			}
+			p{font-size: 1.1rem;
+				strong{font-size: 1.4rem;}
+			}
+		}
+	}
+}

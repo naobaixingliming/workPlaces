@@ -1,0 +1,42 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 100%; }
+
+.page, body { background-color: #efeff4; }
+.not_weixin .header{border-bottom:1px solid #d9d9d9;}
+
+.addressList li { background: #FFFFFF; padding: 3% 0; border-bottom: 1px solid #dddddd; display: -webkit-box; }
+.addressList li:active{background-color: #ececec;}
+.addressList li .user_info { font-size: 1.4rem; color: #333333; font-weight: 400; }
+.addressList li p { font-size: 1.2rem; color: #999999; margin-top: .4rem; }
+.addressList_hd{width: 0%; overflow: hidden;
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+  min-width: 0;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+}
+.addressList_hd .weui_icon_success_circle:before, .weui_icon_success_no_circle:before{color:#f44975;}
+.addressList_bd{-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1; padding: 0 3%;}
+.addressList_ft{width: 12%;position: relative;
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+  min-width: 0;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;}
+.addressList_ft:before{content:' '; display: block;position: absolute;left: 0;width: 1px;height: 100%;background-color: #d9d9d9;-webkit-transform: scaleX(.5);transform: scaleX(.5);}
+.editor_icon{display: block; width: 18px; height: 19px; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/editor_icon_20160603.png) no-repeat 50% 50%; background-size: 100% auto;}
+
+.manage_btn { display: block; width: 100%; height: 4.6rem; line-height: 4.6rem; position: absolute; bottom: 0; font-size: 1.8rem; text-align: center; color: #FFFFFF; }
+
+@media screen and (max-width: 480px) { html, body { font-size: 62.5%; } }
+
+

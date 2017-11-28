@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>每日惊喜</title>
+    <link rel="stylesheet" href="css/dailySurprise-1.1.1.css"/>
+</head>
+<body class="dailySurprise not_weixin" ontouchstart>
+  <div class="page_wrap slideIn">
+    <div class="page_outer">
+      <div class="page_inner">
+      <!--  顶部 start -->
+      <header class="header">
+        <div class="head_box">
+          <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+          <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">每日惊喜</h3></div></div>
+          <div class="head_ft"><a class="new_message" href="javascript:;">&nbsp;<i></i></a></div>
+        </div>
+      </header>
+     <!--  顶部end  -->
+        <div class="page_content">
+          <!--  签到信息 start -->
+          <div class="signIn mainBgColor">
+            <div class="signIn_info">
+              <div class="my_coupon">
+                <div class="my_coupon_box">
+                  <p>我的优惠券</p>
+                  <a href="javascript:;">5张</a>
+                </div>
+              </div>
+              <div class="signIn_btn">
+                <div class="signIn_btn_box">
+                  <div class="signIn_btn_wrap">
+                    <strong class="mainTextColor">签到</strong> <!--  已签到  -->
+                    <p class="mainTextColor">连续2天</p>  <!--  明日再来 -->
+                  </div>
+                </div>
+              </div>
+              <div class="strategy_btn">
+                <a href="javascript:;">签到攻略</a>
+              </div>
+            </div>
+            <div class="signIn_days">
+              <div class="signIn_progress">
+                <div class="sip_inner" style="width:25%;"></div> <!--  第二天25%，第三天50%，...75%,100% -->
+              </div>
+              <ul class="sid_box">
+                <li class="signed"><span>1</span><p>第1天</p></li>
+                <li class="signed"><span>2</span><p>第2天</p></li>
+                <li class=""><span>3</span><p>第3天</p></li>
+                <li class=""><span>4</span><p>第4天</p></li>
+                <li class=""><span>5</span><p>第5天</p></li>
+              </ul>
+            </div>
+          </div>
+          <!--  签到信息end  -->
+          <!--  推荐活动start  -->
+          <div class="surprise_title">
+              <h3>推荐活动</h3>
+          </div>
+          <div class="recom_act">
+            <a href="javascript:;"><img src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/recom_activity_img01_20160526.jpg" /></a>
+            <a href="javascript:;"><img src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/recom_activity_img02_20160526.jpg" /></a>
+          </div>
+          <!--  推荐活动end  -->
+
+        </div>
+        <!--  底部菜单start -->
+        <div class="navbar">
+            <a href="javascript:;" class="navBar_item">
+                <div class="navBar_icon nbi01"></div>
+                <p class="navBar_label">首页</p>
+            </a>
+            <a href="javascript:;" class="navBar_item">
+                <div class="navBar_icon nbi02"></div>
+                <p class="navBar_label">理财</p>
+            </a>
+            <a href="javascript:;" class="navBar_item">
+                <div class="navBar_icon_center nbi05"></div>
+                <p class="navBar_label">礼品</p>
+            </a>
+            <a href="javascript:;" class="navBar_item">
+                <div class="navBar_icon nbi03"></div>
+                <p class="navBar_label">合伙人</p>
+            </a>
+            <a href="javascript:;" class="navBar_item navBar_item_on">
+                <div class="navBar_icon nbi04"></div>
+                <p class="navBar_label">我的</p>
+            </a>
+        </div>
+        <!--  底部菜单end  -->
+        <!--  底部菜单start  -->
+        <div class="shadow"></div>
+        <div class="tips_popup">
+          <div class="">
+            <p>温馨提示：</p>
+            <p>1、连续签到5天，可获5元现金券。</p>
+            <p>2、如未满5天签到中断，需要从第1天开始重新签到。</p>
+            <p>3、现金券奖励在第5天完成签到后立即发放。</p>
+            <p>4、现金券投资1000元可使用，有效期1个月。</p>
+          </div>
+        </div>
+        <!--  底部菜单end  -->
+      </div>
+    </div>
+  </div>        
+
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(".strategy_btn a").on("click",function(){
+        $(".shadow, .tips_popup").show();
+      });
+      $(".shadow").on("click",function(){
+        $(".shadow, .tips_popup").hide();
+      });
+    });
+  </script>
+</body>
+</html>

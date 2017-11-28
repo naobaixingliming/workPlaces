@@ -1,0 +1,69 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 62.5%; }
+
+a img, fieldset { border: 0; }
+
+a { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.page_wrap, body { background-color: #efeff4; }
+
+.signIn { width: 100%; padding: 5%; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+
+.signIn_info { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.my_coupon { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+.my_coupon p { color: #FFFFFF; font-size: 1.3rem; }
+.my_coupon a { display: block; font-size: 1.6rem; font-weight: 500; color: #fff400; text-align: center; text-decoration: underline; }
+
+.my_coupon_box { display: inline-block; }
+
+.signIn_btn { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
+
+.signIn_btn_box { width: 10rem; height: 10rem; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/signIn_btn_bg_20160526.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.signIn_btn_box .signIn_btn_wrap { width: 100%; }
+.signIn_btn_box strong { display: block; width: 70%; margin: 0 auto; font-size: 1.8rem; text-align: center; padding-bottom: .4rem; }
+.signIn_btn_box p { display: block; width: 80%; margin: .4rem auto 0 auto; font-size: 1.2rem; text-align: center; }
+
+.strategy_btn { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: right; }
+.strategy_btn a { color: #FFFFFF; font-size: 1.3rem; padding: .6rem 0; }
+
+.signIn_days { width: 96%; position: relative; margin: 5% auto 0 auto; }
+
+.signIn_progress { width: 100%; position: absolute; top: 1.4rem; left: 0; height: .8rem; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/signIn_progress_bg01_20160526.png) no-repeat 50% 50%; background-size: 100% 100%; }
+
+.sip_inner { position: absolute; top: 0; left: 0; height: .8rem; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/signIn_progress_bg02_20160526.png) no-repeat 50% 50%; background-size: 100% 100%; }
+
+.sid_box { width: 100%; position: relative; text-align: justify; text-justify: distribute-all-lines; font-size: 0; }
+.sid_box li { display: inline-block; width: 3.6rem; }
+.sid_box li span { display: block; width: 3.6rem; height: 3.6rem; font-size: 1.6rem; font-weight: 400; line-height: 3.6rem; text-align: center; background: #fa8aa7; border-radius: 50%; }
+.sid_box li p { font-size: 1.4rem; font-weight: 400; color: #ffadc2; text-align: center; margin-top: .4rem; }
+.sid_box .signed span { color: #FFFFFF; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/signIn_days_bg_20160526.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.sid_box .signed p { color: #FFFFFF; }
+
+.sid_box:after { display: inline-block; width: 100%; height: 0; font-size: 0; margin: 0; padding: 0; overflow: hidden; content: "."; }
+
+.surprise_title { width: 56%; margin: 4% auto; text-align: center; position: relative; }
+.surprise_title h3 { font-weight: normal; font-size: 1.4rem; height: 1.8rem; line-height: 1.8rem; color: #999999; text-align: center; display: inline-block; position: relative; padding: 0 .8rem; background: #efeff4; z-index: 1; }
+
+.surprise_title:before { content: ''; display: block; position: absolute; top: 8px; left: 0px; width: 100%; height: 1px; background: #dddddd; }
+
+.recom_act { width: 100%; height: auto; padding: 0 1%; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.recom_act a { display: inline-block; width: 50%; text-align: center; overflow: hidden; padding: 0 1%; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+.recom_act a img { width: 100%; height: auto; vertical-align: middle; }
+
+.shadow { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 900; background: rgba(0, 0, 0, 0.8); display: none; }
+
+.tips_popup { width: 90%; height: auto; background: #FFFFFF; position: absolute; left: 5%; top: 30%; border-radius: .4rem; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ padding: 1.5rem; font-size: 1.3rem; color: #999999; line-height: 1.7; z-index: 1000; display: none; }
+
+

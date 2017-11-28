@@ -1,0 +1,67 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 62.5%; }
+
+a img, fieldset { border: 0; }
+
+a { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.page_wrap, body { background-color: #efeff4; }
+
+.piggyBank_top { padding: 5%; position: relative; }
+.piggyBank_top p { color: #FFFFFF; font-size: 1.4rem; opacity: .6; text-align: center; }
+.piggyBank_top strong { display: block; font-size: 3.6rem; font-weight: 400; color: #FFFFFF; text-align: center; margin-top: 2%; }
+.piggyBank_top .pig_help { display: block; padding: 1rem; position: absolute; top: 3%; right: 3%; }
+.piggyBank_top .pig_help span { display: block; width: 1.4rem; height: 1.4rem; line-height: 1.4rem; font-size: 1.2rem; text-align: center; background: #fbb6c8; border-radius: 50%; }
+
+.pig_info { width: 100%; background: #FFFFFF; padding: 3% 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.pig_col { width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ padding: .5rem 10%; border-right: 1px solid #dddddd; }
+.pig_col p { color: #999999; font-size: 1.2rem; }
+.pig_col strong { display: block; margin-top: .4rem; font-size: 1.8rem; line-height: 2rem; font-weight: 400; }
+
+.pig_col:last-of-type { border-right: none; }
+
+.pig_title { width: 56%; margin: 4% auto; text-align: center; position: relative; }
+.pig_title h3 { font-weight: normal; font-size: 1.4rem; height: 1.8rem; line-height: 1.8rem; color: #999999; text-align: center; display: inline-block; position: relative; padding: 0 .8rem; background: #efeff4; z-index: 1; }
+
+.pig_title:before { content: ''; display: block; position: absolute; top: 8px; left: 0px; width: 100%; height: 1px; background: #dddddd; }
+
+.recom_box { width: 100%; position: relative; padding: 1px 0; }
+
+.recom_list { width: 100%; height: auto; }
+.recom_list li { background: #FFFFFF; margin-bottom: 3%; }
+.recom_list li a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 1.5rem; }
+.recom_list li a:active { background-color: #d9d9d9; }
+.recom_list .pig_hd { width: 6rem; height: 6rem; margin-right: 1.5rem; }
+.recom_list .pig_hd.yi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.shi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.zhu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_zhu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.xing { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_xing_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.edc { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_edc_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.medical { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_medical_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.yu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.shou { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shou_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_hd.other { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_other_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.recom_list .pig_bd { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; min-width: 0; }
+.recom_list .pig_bd strong { color: #333333; font-size: 1.4rem; font-weight: 400; line-height: 1.7; }
+.recom_list .pig_bd p { font-size: 1.2rem; color: #999999; line-height: 1.7; }
+.recom_list .pig_ft { text-align: right; color: #888; }
+.recom_list .pig_ft:after { content: " "; display: inline-block; -webkit-transform: rotate(45deg); transform: rotate(45deg); height: 6px; width: 6px; border-width: 2px 2px 0 0; border-color: #c8c8cd; border-style: solid; position: relative; top: -2px; top: -1px; margin-left: .3em; }
+
+.piggyBank_popup { position: fixed; width: 85%; background: #FFFFFF; border-radius: .4rem; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 100; display: none; }
+
+.piggyBank_rules { padding: 5% 3%; }
+.piggyBank_rules p { font-size: 1.2rem; color: #999999; text-indent: 2em; line-height: 1.7; }
+.piggyBank_rules p span { color: #666666; }
+

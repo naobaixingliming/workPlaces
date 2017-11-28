@@ -1,0 +1,37 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+.page, body { background-color: #FFFFFF; }
+
+.weui_label { width: 4em; }
+
+.weui_cells { margin-top: 0; line-height: 2.2; }
+
+.login_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+
+.forget_password { display: inline-block; text-align: center; font-size: 17px; line-height: 1.7; color: #666666; }
+
+.no_account { position: relative; margin-top: 45%; text-align: center; width: 100%; font-size: 17px; line-height: 1.41176471; color: #111111; }
+.no_account a { color: #111111; }
+
+.weui_icon_clear:before { font-size: 21px; margin-left: .2em; margin-right: .2em; }
+
+.weui_icon_warn:before { font-size: 21px; }
+.automatic_login{ margin-top:1em; padding: 0 15px;text-align:right; font-size: 14px; color:#666666;}
+.automatic_login .weui_cell{padding: 0 15px;}
+.automatic_login p{font-size: 14px;}
+.weui_cells_checkbox .weui_icon_checked:before {
+  content: '\EA01';
+  color: #c9c9c9;
+  font-size: 14px;
+  display: block;
+}
+.weui_cells_checkbox .weui_check:checked+.weui_icon_checked:before {
+  content: '\EA06';
+  color: #f44975;
+}
+.weui_cells_checkbox .weui_cell:active {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 320px) { .weui_cells { font-size: 16px; } }
+

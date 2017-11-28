@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>特权金</title>
+    <link rel="stylesheet" href="css/privilege-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+  <div class="page_wrap slideIn">
+    <div class="page_outer">
+      <div class="page_inner">
+      <!--  顶部 start -->
+      <header class="header">
+        <div class="head_box">
+          <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+          <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">特权金</h3></div></div>
+          <div class="head_ft"><a class="new_message" href="javascript:;">&nbsp;<i></i></a></div>
+        </div>
+      </header>
+     <!--  顶部end  -->
+        <div class="page_content">
+          <div class="pri_top">
+            <p>特权金待收收益(元)</p>
+            <strong>40.00</strong>
+            <a class="get_btn" href="javascript:;">领取</a>
+            <a class="pri_help" href="javascript:;"><span>?</span></a>
+          </div>
+          <div class="pri_info">
+            <div class="pri_col">
+              <p>累计收益(元)</p>
+              <strong>400.00</strong>
+            </div>
+            <div class="pri_col">
+              <p>可用特权金</p>
+              <strong>40000</strong>
+            </div>
+            <div class="pri_col">
+              <p>已投入特权金</p>
+              <strong>889000</strong>
+            </div>
+          </div>
+
+          <div class="privilege_pro">
+            <div class="pri_mark"></div>
+            <div class="pri_pro_info">
+              <div class="ppi_box">
+                <strong>特权标</strong>
+                <div class="pp_box"><p>年化收益率：<b class="mainTextColor">10%</b></p><p>投资周期：<span class="mainTextColor">7天</span></p></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--  理财底部菜单start -->
+        <div class="navbar2">
+            <a href="javascript:;" class="navBar_item2">
+                <div class="navBar_icon nbi06"></div>
+                <p class="navBar_label">客服</p>
+            </a>
+            <a href="javascript:;" class="navBar_item2">
+                <div class="navBar_icon nbi07"></div>
+                <p class="navBar_label">礼品兑换</p>
+            </a>
+            <a href="javascript:;" class="navBar_item3 js_buy_privilege mainBgColor">
+                <p>购买特权标</p>
+            </a>            
+        </div>
+        <!--  理财底部菜单end  -->
+      </div>
+    </div>
+  </div>
+  <!--  购买特权标start  -->
+    <div class="buy_pri">
+      <div class="bp_box">
+        <p class="bp_name">投资特权金</p>
+        <div class="investInput">
+          <input type="number" name="investAmount" placeholder="最小投资1">
+          <span>特权金</span>
+        </div>
+      </div>
+      <a class="buyPri_btn mainBgColor" href="javascript:;">确定</a>
+    </div>
+    <!--  购买特权标end  -->
+  <!--  弹框start  -->
+  <div class="shadow"></div>
+  <div class="priRules_popup">
+    <div class="pri_rules">
+      <p><span>特权金：</span>特权金是牛牛bank送出的虚拟本金。</p>
+      <p><span>获取途径：</span>新用户注册即送4000特权金（填写推荐码），未填写推荐码送2000特权金。</p>
+      <p><span>有效期：</span>特权金有效期为2个月，2个月未使用将会失效。</p>
+      <p>1、特权标7天一个周期，购买后立刻起息；到期后特权金相应减少，收益将自动转入您的“可领取特权金收益”内；</p>
+      <p>2、用户投资100元以上购买平台任意产品即可领取特权金收益；</p>
+      <p>3、计算公式：投资金额*10%/365*7；</p>
+      <p>4、如发现有人恶意注册，刷取特权金的行为牛牛bank有权取消该用户获得的特权本金及其收益；</p>
+      <p>5、本活动最终解释权归牛牛bank所有。</p>
+    </div>
+  </div>
+  <!--  弹框end  -->        
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript">
+      $(function(){
+          $(".pri_help").on("click",function(){
+            $(".shadow, .priRules_popup").fadeIn(0);
+          });
+          $(".shadow").on("click",function(){
+            $(".shadow, .priRules_popup").hide();
+            $(".buy_pri").removeClass("buy_pri_on");
+          });
+          $(".js_buy_privilege").on("click",function(){
+            $(".shadow").show();
+            $(".buy_pri").addClass("buy_pri_on");
+          });
+      });
+  </script>
+</body>
+</html>

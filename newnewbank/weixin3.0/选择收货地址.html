@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>选择收货地址</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/chooseAddress-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+    <div class="page_wrap slideIn">
+        <div class="page_outer">
+            <div class="page_inner">
+            <!--  顶部 start -->
+              <header class="header">
+                <div class="head_box">
+                    <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+                    <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">选择收获地址</h3></div></div>
+                    <div class="head_ft"></div>
+                </div>
+              </header>
+             <!--  顶部end  -->
+                <div class="page_content">
+                    <ul class="addressList">
+                        <li>
+                            <div class="addressList_hd" style="width:12%;">
+                                <i class="weui_icon_success_no_circle"></i>
+                            </div>
+                            <div class="addressList_bd">
+                                <div class="user_info clearfix">
+                                    <div class="fl">小龙虾</div>
+                                    <div class="fr">138****8899</div>
+                                </div>
+                                <p>广东省深圳市南山区南山街道深圳市南山区海德三道15号海岸大厦东座B904</p>
+                            </div>
+                            <div class="addressList_ft">
+                                <a href="javascript:;"><i class="editor_icon"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="addressList_hd">
+                                <i class="weui_icon_success_no_circle"></i>
+                            </div>
+                            <div class="addressList_bd">
+                                <div class="user_info clearfix">
+                                    <div class="fl">小龙虾</div>
+                                    <div class="fr">138****8899</div>
+                                </div>
+                                <p>广东省深圳市南山区南山街道深圳市南山区海德三道15号海岸大厦东座B904</p>
+                            </div>
+                            <div class="addressList_ft">
+                                <a href="javascript:;"><i class="editor_icon"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="addressList_hd">
+                                <i class="weui_icon_success_no_circle"></i>
+                            </div>
+                            <div class="addressList_bd">
+                                <div class="user_info clearfix">
+                                    <div class="fl">小龙虾</div>
+                                    <div class="fr">138****8899</div>
+                                </div>
+                                <p>广东省深圳市南山区南山街道深圳市南山区海德三道15号海岸大厦东座B904</p>
+                            </div>
+                            <div class="addressList_ft">
+                                <a href="javascript:;"><i class="editor_icon"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="manage_btn mainBgColor" href="javascript:;">管 理</a>        
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".addressList").on("click","li",function(){
+            $(this).find(".addressList_hd").css("width","12%");
+            $(this).siblings().find(".addressList_hd").css("width","0");
+        });
+    });
+    </script>
+</body>
+</html>

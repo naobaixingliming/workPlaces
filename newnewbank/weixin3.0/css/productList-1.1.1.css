@@ -1,0 +1,115 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 62.5%; }
+
+a img, fieldset { border: 0; }
+
+a { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.page_wrap, body { background-color: #efeff4; }
+.page_content2 { box-sizing: border-box; height: 100%; padding-top: 3%; overflow: hidden; -webkit-overflow-scrolling: touch; }
+
+.not_weixin .page_inner{padding-top: 42px;}
+
+.pro_type_nav { float: left; box-sizing: border-box; width: 70px; height: 100%; overflow: auto; }
+
+.pro_nav_list li { height: 4.9rem; line-height: 4.9rem; padding-right: .6rem; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; background: #FFFFFF; text-align: center; }
+.pro_nav_list li p { display: inline-block; height: 100%; font-weight: 400; font-size: 1.2rem; color: #999999; position: relative; }
+.pro_nav_list li p img { height: 2rem; width: auto; visibility: hidden; }
+.pro_nav_list li p span { display: block; position: absolute; top: 0.2rem; right: -2.2rem;}
+
+.pro_nav_list li.cur { border-right: 1px solid #efeff4; background: #efeff4; }
+
+.pro_nav_list li .all { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_all_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .yi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_yi_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .shi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_shi_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .zhu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_zhu_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .xing { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_xing_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .edc { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_edc_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .medical { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_medical_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .yu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_yu_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .shou { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_shou_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li .other { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_other_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .all { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_all_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .yi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_yi_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .shi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_shi_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .zhu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_zhu_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .xing { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_xing_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .edc { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_edc_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .medical { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_medical_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .yu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_yu_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .shou { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_shou_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_nav_list li.cur .other { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/proNav_icon_other_red_20160530.png) no-repeat 50% 50%; background-size: auto 2rem; }
+
+.pro_box { padding: 0 2%; margin-left: 7rem; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box; height: 100%; overflow: auto; padding-bottom: 7rem; -webkit-overflow-scrolling: touch; }
+
+.pro_banner { width: 100%; height: auto; text-align: center; }
+.pro_banner img { width: 100%; vertical-align: middle; }
+
+.pro_list { width: 100%; position: relative; }
+.pro_list li { margin-top: 3%; width: 100%; background: #FFFFFF; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ padding: 1rem; }
+.pro_list .pro_top { border-bottom: 1px solid #dddddd; padding: .4rem 0; }
+.pro_list .pro_top p { font-size: 1.4rem; color: #333333; height: 2.4rem; line-height: 2.4rem; }
+.pro_list .pro_top span { display: inline-block; font-weight: 400; font-size: 1.4rem; padding: 0 1rem; height: 2.4rem; max-width: 76%; overflow: hidden; }
+.pro_list .pro_top i { display: inline-block; width: 2.4rem; height: 2.4rem; font-size: 1.4rem; margin-left: .4rem; float: left; }
+.pro_list .pro_top i.yi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/yi_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.shi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/shi_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.zhu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/zhu_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.xing { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/xing_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.edc { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/edc_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.medical { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/medical_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.yu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/yu_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.shou { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/shou_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.yinpiao { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/yinpiao_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.baoli { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/baoli_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.zunin { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/zunin_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.other { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/other_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.new { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/xin_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_top i.te { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/tequan_icon_20160524.png) no-repeat 50% 50%; background-size: 98% 98%; }
+.pro_list .pro_info { width: 100%; -webkit-columns: 3; -webkit-column-gap: 0; text-align: center; margin: 1rem 0 0 0; }
+.pro_list .pro_info .col span { display: block; font-weight: 500; font-size: 1.4rem; color: #111111; height: 1.8rem; line-height: 1.8rem; }
+.pro_list .pro_info .col span strong { font-size: 1.8rem; font-weight: 500; }
+.pro_list .pro_info .col p { margin-top: .4rem; font-size: 1.2rem; color: #999999; }
+.pro_list .pro_progress { margin-top: 1rem; }
+.pro_list .pro_progress .progress_wrap { /*width: 68%;*/ height: 2.4rem; line-height: 2.4rem; margin-right: 8.2rem; }
+.pro_list .pro_progress .progress_wrap .progress_box { width: 65%; height: .6rem; border-radius: .3rem; float: left; position: relative; top: 0.9rem; background: #dddddd; }
+.pro_list .pro_progress .progress_wrap .progress_box span { display: block; height: 100%; position: absolute; top: 0px; left: 0px; border-radius: .3rem; background-color: #f66687; background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(255, 255, 255, 0.2)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.75, rgba(255, 255, 255, 0.2)), color-stop(0.75, transparent), to(transparent)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+.pro_list .pro_progress .progress_wrap p { font-size: 1.2rem; margin-left: 68%; }
+.pro_list .pro_progress .pro_btn p { display: inline-block; width: 42px; border-radius: 1.2rem; font-size: 1.4rem; height: 2.4rem; line-height: 2.6rem; padding: 0 2rem; color: #FFFFFF; text-align: center; }
+.pro_list .pro_progress .pro_btn p.yuyue { background: #7ccae5; } 
+.pro_list .pro_progress .pro_btn p.huankuan { background: #CCCCCC; } 
+
+@media screen and (max-width: 320px){
+	.pro_list .pro_progress .pro_btn p { width: 36px; font-size: 1.2rem; height: 2.4rem; line-height: 2.4rem; padding: 0 1.5rem;}
+	.pro_list .pro_progress .progress_wrap {margin-right: 6.6rem; }
+}
+

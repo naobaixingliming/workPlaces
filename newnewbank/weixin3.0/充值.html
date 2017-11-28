@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>充值</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/recharge-1.1.1.css"/>
+</head>
+<body class="recharge not_weixin" ontouchstart>
+<!--  顶部 start -->
+  <header class="header">
+    <div class="head_box">
+        <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+        <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">充值</h3></div></div>
+        <div class="head_ft"></div>
+    </div>
+  </header>
+ <!--  顶部end  -->
+    <div class="container js_container">
+        <div class="page slideIn">
+            <div class="bd" style="height: 100%;">
+                <div class="weui_tab">
+                    <div class="weui_navbar">
+                        <div class="weui_navbar_item weui_bar_item_on">快捷支付</div>
+                        <div class="weui_navbar_item">银联在线支付</div>
+                    </div>
+                    <div class="weui_tab_bd">
+                        <!-- 快捷支付start -->
+                        <div class="recharge_box" style="display:block;">
+                            <div class="hasBindCard" style="display:block;">  <!--  已绑卡显示  -->
+                                <div class="weui_cells">
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <p>卡号</p>
+                                        </div>
+                                        <div class="weui_cell_ft"><span class="bankCard_num">6225201622221898</span><i class="eyes_icon eyes_icon_show">&nbsp;</i></div>
+                                    </div>
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <p>银行</p>
+                                        </div>
+                                        <div class="weui_cell_ft">招商银行</div>
+                                    </div>
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <p>单次充值限额</p>
+                                        </div>
+                                        <div class="weui_cell_ft">5万元</div>
+                                    </div>
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <p>单日充值限额</p>
+                                        </div>
+                                        <div class="weui_cell_ft">5万元</div>
+                                    </div>
+                                
+                                </div>
+                                <div class="weui_cells" style="margin-top:1.4em;">
+                                    <div class="weui_cell canRecharge"> <!--  不能快捷充值时隐藏  -->
+                                        <div class="weui_cell_hd"><label class="weui_label">充值金额</label></div>
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <input class="weui_input ipt_text enterAmount" type="number" placeholder="请输入充值金额" />
+                                        </div>
+                                        <div class="weui_cell_ft">
+                                            <i class="weui_icon_clear" style="display:none;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recharge_btn canRecharge"> <!--  不能快捷充值时隐藏  -->
+                                    <a href="javascript:;" class="weui_btn btn_gray">确认充值</a>  <!-- 可以充值后btn_gray替换btn_mainColor -->
+                                </div>
+                                <div class="cantRecharge" style="display:none;"> <!-- 绑定银行卡不能快捷充值提示  -->
+                                    <p><i class="weui_icon_warn"></i>暂不支持已绑定卡作为充值卡，请使用网上银行或银联在线支付功能！</p>
+                                </div>
+                            </div>
+                            <!--  未绑卡状态start  -->
+                            <div class="noBindCard" style="display:none;">  <!--  未绑卡时显示  -->
+                                <div class="gth">
+                                    <i class="weui_icon_msg weui_icon_warn"></i>
+                                </div>
+                                <div class="noBindCard_p">
+                                    <p>您还没有绑定的银行卡</p>
+                                    <p>开通快捷支付，下次可快速付款无需再次绑定。</p>
+                                </div>
+                                <div class="recharge_btn"> <!--  不能快捷充值时隐藏  -->
+                                    <a href="javascript:;" class="weui_btn btn_mainColor">去绑卡</a>  <!-- 可以充值后btn_gray替换btn_mainColor -->
+                                </div>
+                            </div>
+                            <!--  未绑卡状态end  -->
+                        </div>
+                        <!--  快捷支付end  -->
+                        <!--  银联支付 start  -->
+                        <div class="recharge_box">
+                            <div class="select_card" style="display:block;">
+                                <div class="weui_cells">
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <p>单笔限额</p>
+                                        </div>
+                                        <div class="weui_cell_ft">2000元</div>
+                                    </div>
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <p>每日限额</p>
+                                        </div>
+                                        <div class="weui_cell_ft">5000元</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="weui_cells" style="margin-top:1.4em;">
+                                    <div class="weui_cell">
+                                        <div class="weui_cell_hd"><label class="weui_label">充值金额</label></div>
+                                        <div class="weui_cell_bd weui_cell_primary">
+                                            <input class="weui_input ipt_text enterAmount" type="number" placeholder="请输入充值金额"/>
+                                        </div>
+                                        <div class="weui_cell_ft">
+                                            <i class="weui_icon_clear" style="display:none;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recharge_btn">
+                                    <a href="javascript:;" class="weui_btn btn_gray">确认充值</a> <!--  输入后btn_gray替换成btn_mainColor进入可点击状态 -->
+                                </div>
+
+                                <dl class="yinlian_tips">
+                                    <dt><strong>温馨提示：</strong></dt>
+                                    <dd>单笔限额、每日限额只针对一张银行卡。</dd>
+                                    <dd>超过5000元的投资，可使用多张银行卡进行充值。</dd>
+                                    <dd>单笔充值人民币<span style="color:#f44975;">满100元（含）立减10元</span>优惠，<br>每个活动日限前15000名。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--  银联支付end  -->
+                    </div>
+                </div>
+            </div>
+            
+            <!--  填写短信验证码start  -->
+            <div class="message_code" style="display:none;">
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input ipt_text" type="text" placeholder="短信验证码"/>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <i class="weui_icon_warn" style="display:none;"></i>
+                            <i class="weui_icon_clear" style="display:none;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bindCard_btn">
+                    <a href="javascript:;" class="weui_btn btn_gray">完成</a> <!--  输入后btn_gray替换成btn_mainColor进入可点击状态 -->
+                </div>
+            </div>
+            <!--  填写短信验证码end  -->
+        </div>        
+    </div>
+
+    <!--  弹框start  -->
+    <div class="shadow"></div>
+    <div class="recharge_popup">
+        <div class="rp_text">
+            <p>投资人充值过程全程免费，不收取任何手续费。</p>
+            <p>充值/提现必须为银行借记卡，不支持存折、信用卡充值。</p>
+            <p>严禁利用充值功能进行信用卡套现、转账、洗钱等行为，一经发现，将封停账号30天。</p>
+            <p>充值期间，请勿关闭浏览器，待充值成功并返回首页后，所充资金才能入账，如有疑问，请联系客服。</p>
+            <p>充值需开通银行卡网上支付功能，如有疑问请咨询开户行客服。</p>
+            <p>单笔限额、每日限额只针对一张银行卡。</p>
+            <p>超过5000元的投资，可使用多张银行卡进行充值。</p>
+            <p>单笔充值人民币满<strong class="mainTextColor">100元（含）立减10元</strong>优惠，每个活动日限前15000名。</p>
+        </div>
+    </div>
+    <!--  弹框end  -->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    $(function(){
+        $(".weui_navbar .weui_navbar_item").on("click",function(){
+            var iThis = $(this).index();
+            $(this).addClass("weui_bar_item_on").siblings().removeClass("weui_bar_item_on");
+            $(".recharge_box").eq(iThis).fadeIn().siblings().hide();
+        });
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+.page, body { background-color: #efeff4; }
+
+.weui_label { width: 4em; }
+
+.weui_cells { margin-top: 0; line-height: 2.2; }
+
+.realName_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+
+.weui_icon_clear:before { font-size: 21px; margin-left: .2em; margin-right: .2em; }
+
+.realName_tips { color: #CCCCCC; font-size: 14px; line-height: 24px; padding: 2% 5%; }
+.realName_tips i { padding-right: 10px; }
+
+.weui_icon_warn:before { font-size: 21px; color: #7dcae6; line-height: 24px; }
+
+.weui_cell { padding-top: 15px; }
+.weui_cell .ipt_text { padding-left: 0; }
+
+.realName_label { height: 12px; line-height: 1.4; position: absolute; top: 0px; left: 15px; display: none; }
+.realName_label label { color: #333333; font-size: 10px; }
+
+@media screen and (max-width: 320px) { .weui_cells { font-size: 16px; } }
+
+

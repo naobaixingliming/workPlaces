@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>实名认证</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/realName-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+<!--  顶部 start -->
+  <header class="header">
+    <div class="head_box">
+        <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+        <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">实名认证</h3></div></div>
+        <div class="head_ft"></div>
+    </div>
+  </header>
+ <!--  顶部end  -->
+    <div class="container js_container">
+        <div class="page slideIn">
+            <p class="realName_tips"><i class="weui_icon_warn"></i>请填写您的真实信息，通过后将不能修改</p>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="realName_label"><label>真实姓名</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input ipt_text" type="text" placeholder="真实姓名"/>
+                    </div>
+                    <div class="weui_cell_ft">
+                        <i class="weui_icon_clear" style="display:none;"></i>
+                    </div>
+                </div>
+                <div class="weui_cell">
+                    <div class="realName_label"><label>身份证号</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input ipt_text" type="text" placeholder="身份证号"/>
+                    </div>
+                    <div class="weui_cell_ft">
+                        <i class="weui_icon_clear" style="display:none;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="realName_btn">
+                <a href="javascript:;" class="weui_btn btn_gray">完成</a> <!--  填完内容 btn_gray替换成btn_mainColor -->
+            </div>
+        </div>        
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/myDialog-1.1.1.js"></script>
+    <script src="js/common-1.1.1.js"></script>
+    <script>
+        $(function(){
+            var tempPlaceholder;
+            $("input.ipt_text").on("focus",function(){
+                tempPlaceholder = $(this).attr("placeHolder");
+                $(this).attr("placeholder","");
+                $(this).parents(".weui_cell").find(".realName_label").show();
+            }).on("blur",function(){
+                $(this).attr("placeholder",tempPlaceholder);
+                tempPlaceholder='';
+                if($(this).val()==''||$(this).val()==null){
+                    $(this).parents(".weui_cell").find(".realName_label").hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

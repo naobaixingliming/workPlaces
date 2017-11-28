@@ -1,0 +1,45 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+.page, body { background-color: #efeff4; }
+
+.weui_label { width: 4.5em; }
+
+.weui_cells { margin-top: 0; line-height: 2.2; }
+
+.cashDrawal_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+
+.weui_icon_clear:before { font-size: 21px; margin-left: .2em; margin-right: .2em; }
+
+.cashDrawal_tips { color: #CCCCCC; font-size: 14px; line-height: 24px; padding: 2% 5%; }
+.cashDrawal_tips i { padding-right: 10px; }
+
+.weui_icon_warn:before { font-size: 21px; color: #7dcae6; line-height: 24px; }
+
+.weui_cell { padding-top: 15px; }
+.weui_cell .ipt_text { padding-left: 0.8em; }
+
+.bindBank .weui_cell_ft span { display: inline-block; }
+
+.bindBank .weui_cell_ft i { height: 35px; float: right; }
+
+.message_code .weui_cell .ipt_text {padding-left: 0;}
+.bindCard_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+
+.noBindCard{margin: 3em auto 0 auto; width: 100%; display: none;}
+.gth{text-align: center; padding: 5%;}
+.gth .weui_icon_msg:before {font-size: 90px; line-height: 1em;}
+.gth .weui_icon_warn.weui_icon_msg:before{color:#dcdcdc;}
+.noBindCard_p p{ text-align: center; line-height: 32px;}
+.noBindCard_p p:nth-of-type(1){font-size: 18px;color:#666666;}
+.noBindCard_p p:nth-of-type(2){font-size: 14px;color:#999999;}
+
+.cashTimeTips{padding: 0 15px; margin-top: 1em;}
+.cashTimeTips dt strong{font-weight: 700; font-size: 14px; color: #9b9b9b;}
+.cashTimeTips dd{font-size: 14px; color:#9b9b9b; line-height: 1.7;}
+
+@media screen and (max-width: 320px) { 
+	.weui_cells { font-size: 16px; } 
+	.cashTimeTips dt strong{font-size: 12px;}
+	.cashTimeTips dd{font-size: 12px;}
+}
+

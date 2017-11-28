@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>修改性别</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/common-1.1.1.css"/>
+    <style type="text/css">
+    .weui_cells{margin-top: 0;}
+    .weui_cells_radio .weui_check:checked+.weui_icon_checked:before {color: #f44975;}
+    </style>
+</head>
+<body class="not_weixin" ontouchstart>
+<!--  顶部 start -->
+  <header class="header">
+    <div class="head_box">
+        <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+        <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">修改性别</h3></div></div>
+        <div class="head_ft"></div>
+    </div>
+  </header>
+ <!--  顶部end  -->
+    <div class="container js_container">
+        <div class="page slideIn">
+            <div class="weui_cells weui_cells_radio">
+                <label class="weui_cell weui_check_label" for="x11">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>男</p>
+                    </div>
+                    <div class="weui_cell_ft">
+                        <input type="radio" class="weui_check" name="radio1" id="x11" checked="checked">
+                        <span class="weui_icon_checked"></span>
+                    </div>
+                </label>
+                <label class="weui_cell weui_check_label" for="x12">
+
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>女</p>
+                    </div>
+                    <div class="weui_cell_ft">
+                        <input type="radio" name="radio1" class="weui_check" id="x12">
+                        <span class="weui_icon_checked"></span>
+                    </div>
+                </label>
+            </div>
+        </div>        
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+</body>
+</html>

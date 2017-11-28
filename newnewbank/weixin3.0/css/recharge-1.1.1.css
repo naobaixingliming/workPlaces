@@ -1,0 +1,66 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+.page, body { background-color: #efeff4; }
+
+.weui_navbar { background: #efeff4; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ z-index: 1; }
+
+.weui_navbar_item { color: #666666; background: #efeff4; padding: 12px 0; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+
+.weui_navbar_item:after { border-right: none; }
+
+.weui_navbar_item.weui_bar_item_on { background: #efeff4; }
+
+.recharge_box { margin-top: 4%; display: none; }
+
+.weui_label { width: 4em; }
+
+.weui_cells { margin-top: 0; line-height: 2.2; }
+
+.weui_icon_clear:before { font-size: 21px; margin-left: .2em; margin-right: .2em; }
+
+.cantRecharge { color: #CCCCCC; font-size: 14px; line-height: 24px; padding: 5%; }
+.cantRecharge p { padding-left: 30px; position: relative; }
+.cantRecharge i { display: inline-block; position: absolute; top: 0px; left: 0px; }
+
+.cantRecharge .weui_icon_warn:before { font-size: 21px; color: #7dcae6; line-height: 24px; }
+
+.bankCard_num { display: inline-block; font-size: 17px; height: 20px; line-height: 20px; }
+
+.weui_select { padding-left: 0; height: 34px; }
+
+.weui_cells_form .select_controls .weui_cell_ft { font-size: 14px; color: #CCCCCC; }
+
+.pleaseChoose { position: absolute; width: 20%; right: 5%; top: 25%; }
+
+.select_controls .weui_cell_ft:after { content: " "; display: inline-block; -webkit-transform: rotate(45deg); transform: rotate(45deg); height: 6px; width: 6px; border-width: 2px 2px 0 0; border-color: #c8c8cd; border-style: solid; position: relative; top: -2px; top: -1px; margin-left: .3em; }
+
+.recharge_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+.message_code .weui_cell .ipt_text {padding-left: 0;}
+.bindCard_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+
+.recharge_popup { position: fixed; width: 85%; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 100; border-radius: 3px; background: #FFFFFF; display: none; }
+
+.rp_text { padding: 5% 3%; }
+.rp_text p { font-size: 12px; line-height: 1.7; color: #999999; text-indent: 2em; }
+.rp_text strong { font-weight: 400; }
+
+.noBindCard{margin: 3em auto 0 auto; width: 100%; display: none;}
+.gth{text-align: center; padding: 5%;}
+.gth .weui_icon_msg:before {font-size: 90px;}
+.gth .weui_icon_warn.weui_icon_msg:before{color:#dcdcdc;}
+.noBindCard_p p{ text-align: center; line-height: 32px;}
+.noBindCard_p p:nth-of-type(1){font-size: 18px;color:#666666;}
+.noBindCard_p p:nth-of-type(2){font-size: 14px;color:#999999;}
+
+.yinlian_tips{padding: 0 20px; margin-top: 2em; font-size: 12px; color: #9b9b9b; line-height: 1.8;}
+.yinlian_tips strong{font-weight: 400;}
+
+.enterAmount{font-weight:600;padding-left:1.4em;}
+.enterAmount::-webkit-input-placeholder { color: #CCCCCC;font-weight: normal;}
+.enterAmount:-moz-placeholder { color: #CCCCCC; font-weight: normal; }
+.enterAmount::-moz-placeholder { color: #CCCCCC; font-weight: normal; }
+.enterAmount:-ms-input-placeholder { color: #CCCCCC; font-weight: normal; }
+
+@media screen and (max-width: 320px) { .weui_cells { font-size: 16px; } }
+
+

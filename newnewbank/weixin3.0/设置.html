@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>设置</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/setUp-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+    <div class="container js_container">
+        <div class="page_wrap slideIn">
+            <div class="page_outer">
+                <div class="page_inner">
+                <!--  顶部 start -->
+                      <header class="header">
+                        <div class="head_box">
+                            <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+                            <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">设置</h3></div></div>
+                            <div class="head_ft"><a class="new_message" href="javascript:;">&nbsp;<i></i></a></div>
+                        </div>
+                      </header>
+                     <!--  顶部end  -->
+                    <div class="page_content">
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>头像</p>
+                                </div>
+                                <div class="weui_cell_ft head_box"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/user_head_default_20160526.png" /></div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>姓名</p>
+                                </div>
+                                <div class="weui_cell_ft noArrow">小龙虾</div>
+                            </a>
+                            <a class="weui_cell change_sex" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>性别</p>
+                                </div>
+                                <div class="weui_cell_ft">男</div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>身份证号码</p>
+                                </div>
+                                <div class="weui_cell_ft noArrow"><span class="idCardNumber">412311111111116789</span><i class="eyes_icon eyes_icon_show showIdCardNumber"></i></div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>银行卡号</p>
+                                </div>
+                                <div class="weui_cell_ft noArrow"><span class="bankCardNumber">6225201622221898</span><i class="eyes_icon eyes_icon_show showBankCardNumber"></i></div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>邮箱</p>
+                                </div>
+                                <div class="weui_cell_ft">10086100@qq.com</div>
+                            </a>
+                        </div>
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>地址管理</p>
+                                </div>
+                                <div class="weui_cell_ft"></div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>修改交易密码</p>
+                                </div>
+                                <div class="weui_cell_ft"></div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>找回交易密码</p>
+                                </div>
+                                <div class="weui_cell_ft"></div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="exit mainBgColor"><a href="javascript:;">退出当前账户</a></div>
+
+                    <!--  设置性别start  -->
+                    <div class="sex_dialog">
+                        <div class="weui_cells weui_cells_radio">
+                            <label class="weui_cell weui_check_label" for="x11">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>男</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" class="weui_check" name="radio1" id="x11" checked="checked">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                            <label class="weui_cell weui_check_label" for="x12">
+
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>女</p>
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <input type="radio" name="radio1" class="weui_check" id="x12">
+                                    <span class="weui_icon_checked"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <!--  设置性别end  -->
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/myDialog-1.1.1.js"></script>
+    <script src="js/common-1.1.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".change_sex").on("click",function(){
+                $(".sex_dialog").removeClass("slideOut").addClass("slideIn");
+            });
+            $(".sex_dialog .weui_cells_radio").on("click","label",function(){
+                setTimeout(function(){$(".sex_dialog").removeClass("slideIn").addClass("slideOut");},300);
+            });
+
+
+            var tempIdCardStr = $(".idCardNumber").text();  //保存身份证号
+            var tempBankCardStr = $(".bankCardNumber").text();  //保存银行卡号
+            $(".showIdCardNumber").on("click",function(){
+                if($(this).hasClass("eyes_icon_show")){
+                    var idCardNumber = $.plusXing(tempIdCardStr,4,4);
+                    $(".idCardNumber").text(idCardNumber);
+                    $(this).removeClass("eyes_icon_show");
+                }else{
+                    $(".idCardNumber").text(tempIdCardStr);
+                    $(this).addClass("eyes_icon_show");
+                }
+            });
+            $(".showBankCardNumber").on("click",function(){
+                if($(this).hasClass("eyes_icon_show")){
+                    var bankCardNumber = $.plusXing(tempBankCardStr,4,4);
+                    $(".bankCardNumber").text(bankCardNumber);
+                    $(this).removeClass("eyes_icon_show");
+                }else{
+                    $(".bankCardNumber").text(tempBankCardStr);
+                    $(this).addClass("eyes_icon_show");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

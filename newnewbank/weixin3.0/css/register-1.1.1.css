@@ -1,0 +1,34 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+.page, body { background-color: #FFFFFF; }
+
+.weui_label { width: 5em; }
+
+.weui_cells { margin-top: 0; line-height: 2.2; }
+
+.regis_btn { padding: 0 15px; margin-top: 2em; text-align: center; }
+.regis_btn p { color: #666666; }
+.regis_suc_btn{padding: 0 15px; margin-top: 2em;  text-align: right;}
+.regis_suc_btn a{display: inline-block; color:#666666; font-size: 14px; line-height: 1.8;}
+
+.to_login { display: inline-block; text-align: center; font-size: 17px; line-height: 1.7; color: #666666; }
+
+.weui_icon_clear:before { font-size: 21px; margin-left: .2em; margin-right: .2em; }
+
+.getCode { display: inline-block; color: #FFFFFF; background: #7dcae6; font-size: 14px; border-radius: 4px; line-height: 2.4; padding: 0 .4em; }
+.ipt_text{padding-left: 0;}
+
+.regis_suc_icon{width: 15%; margin: 10% auto 0 auto;}
+.regis_suc_icon img{width: 100%; height: auto;}
+.regis_suc_info{margin:3% auto 0 auto; padding: 0 15px;}
+.regis_suc_info strong{display: block; font-weight: 400; font-size: 24px; color:#000000; text-align: center;}
+.regis_suc_info p{font-size: 13px; color:#999999; text-align: center; margin-top: 2%;}
+.regis_suc_info p span{color:#f44975;}
+
+@media screen and (max-width: 320px) { 
+	.weui_cells { font-size: 16px; }
+	.getCode { font-size: 13px; }
+	.regis_suc_info p{font-size: 12px;} 
+}
+
+

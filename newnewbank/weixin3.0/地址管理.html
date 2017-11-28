@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>地址管理</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/manageAddress-1.1.1.css"/>
+</head>
+<body class="manageAddress not_weixin" ontouchstart>
+    <div class="page_wrap slideIn">
+        <div class="page_outer">
+            <div class="page_inner">
+            <!--  顶部 start -->
+              <header class="header">
+                <div class="head_box">
+                    <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+                    <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">地址管理</h3></div></div>
+                    <div class="head_ft"><a class="new_message" href="javascript:;">&nbsp;<i></i></a></div>
+                </div>
+              </header>
+             <!--  顶部end  -->
+                <div class="page_content">
+                    <ul class="addressList">
+                        <li>
+                            <div class="address_info">
+                                <div class="user_info clearfix">
+                                    <div class="fl">小龙虾</div>
+                                    <div class="fr">138****8899</div>
+                                </div>
+                                <p>广东省深圳市南山区南山街道深圳市南山区海德三道15号海岸大厦东座B904</p>
+                            </div>
+                            <div class="operate_address clearfix">
+                                <div class="setDefault checked fl">
+                                    <a href="javascript:;"><i class="weui_icon_success"></i> 默认地址</a>
+                                </div>
+                                <div class="operate_btns fr">
+                                    <a href="javascript:;"><i class="icon_editor"></i> <span>编辑</span></a>
+                                    <a href="javascript:;"><i class="icon_delete"></i> <span>删除</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address_info">
+                                <div class="user_info clearfix">
+                                    <div class="fl">小龙虾</div>
+                                    <div class="fr">138****8899</div>
+                                </div>
+                                <p>广东省深圳市南山区南山街道深圳市南山区海德三道15号海岸大厦东座B904</p>
+                            </div>
+                            <div class="operate_address clearfix">
+                                <div class="setDefault fl">
+                                    <a href="javascript:;"><i class="weui_icon_circle"></i> 设为默认</a>
+                                </div>
+                                <div class="operate_btns fr">
+                                    <a href="javascript:;"><i class="icon_editor"></i> <span>编辑</span></a>
+                                    <a href="javascript:;"><i class="icon_delete"></i> <span>删除</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address_info">
+                                <div class="user_info clearfix">
+                                    <div class="fl">小龙虾</div>
+                                    <div class="fr">138****8899</div>
+                                </div>
+                                <p>广东省深圳市南山区南山街道深圳市南山区海德三道15号海岸大厦东座B904</p>
+                            </div>
+                            <div class="operate_address clearfix">
+                                <div class="setDefault fl">
+                                    <a href="javascript:;"><i class="weui_icon_circle"></i> 设为默认</a>
+                                </div>
+                                <div class="operate_btns fr">
+                                    <a href="javascript:;"><i class="icon_editor"></i> <span>编辑</span></a>
+                                    <a href="javascript:;"><i class="icon_delete"></i> <span>删除</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="addAddress_btn mainBgColor" href="javascript:;">+ 添加新地址</a>        
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $(".setDefault").on("click",function(){
+            $(".setDefault").removeClass("checked").html('<a href="javascript:;"><i class="weui_icon_circle"></i> 设为默认</a>');
+            $(this).addClass("checked").html('<a href="javascript:;"><i class="weui_icon_success"></i> 默认地址</a>');
+        });
+    })
+    </script>
+</body>
+</html>

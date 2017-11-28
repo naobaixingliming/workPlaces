@@ -1,0 +1,64 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+@import url(vip_font.css);
+html, body { font-size: 62.5%; }
+
+a img, fieldset { border: 0; }
+
+a { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.page_wrap, body { background-color: #efeff4; }
+
+.personal_top { padding: 5%; margin: 0 auto; position: relative; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+
+.setUp_box { position: absolute; top: 5%; right: 5%; z-index: 1; }
+.setUp_box a { color: #FFFFFF; display: inline-block; text-align: center; font-size: 1.3rem; height: 1.8rem; line-height: 1.8rem; }
+.setUp_box .setUp_btn { padding: .4rem 1rem; }
+.setUp_box .new_message { width: 1.8rem; height: 1.8rem; position: relative; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/message_icon_20160526.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.setUp_box .new_message i { display: block; width: .8rem; height: .8rem; background-color: #FFFFFF; border-radius: 50%; position: absolute; top: -.2rem; right: -.2rem; }
+
+.personal_box { width: 100%; position: relative; padding: 1px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.head_box { width: 6rem; height: 6rem; text-align: center; }
+.head_box img { width: 100%; height: auto; vertical-align: middle; }
+
+.user_name { color: #FFFFFF; font-size: 1.6rem; margin-left: 2%; }
+
+.vipLevel { display: inline-block; background: #dd305c; padding: .4rem 1.6rem; margin-left: 5%; font-size: 1.4rem; text-align: center; color: #FFFFFF; border-radius: 1.4rem; }
+.vipLevel i { display: inline-block; font-size: 1.6rem; position: relative; top: 2px; opacity: .7; }
+.vipLevel span { display: inline-block; font-size: 1.4rem; opacity: .7; }
+
+.vipLevel:after { content: " "; display: inline-block; -webkit-transform: rotate(45deg); transform: rotate(45deg); height: 6px; width: 6px; border-width: 2px 2px 0 0; border-color: #FFFFFF; border-style: solid; position: relative; top: -2px; top: -1px; margin-left: .3em; }
+
+.accountInfo_box { width: 100%; height: auto; position: relative; background: #FFFFFF; overflow-y: hidden; overflow-x: auto; }
+.accountInfo_box .ab { padding: 2rem 0; overflow: hidden; }
+.accountInfo_box .ab span { display: block; font-size: 1.6rem; color: #333333; font-weight: 400; text-align: center; }
+.accountInfo_box .ab span i { font-size: 1.4rem; font-style: normal; }
+.accountInfo_box .ab p { text-align: center; color: #666666; font-size: 1.2rem; margin-top: .4rem; }
+
+.accountInfo_box .swiper-slide { width: 28.5%; }
+
+.personal_nav { width: 100%; overflow: hidden; position: relative; margin-top: 5%; background: #FFFFFF; }
+
+.quick-entry-nav { width: 100%; }
+.quick-entry-nav a { width: 25%; float: left; font-size: 1.2rem; text-decoration: none; color: #666; text-align: center; display: block; padding: 1rem 0; }
+.quick-entry-nav a img { display: block; width: 4rem; height: 4rem; margin: 0 auto 6px auto; }
+
+.personal_banner { width: 100%; margin-top: 5%; background: #FFFFFF; text-align: center; }
+.personal_banner img { width: 100%; height: auto; vertical-align: middle; }
+
+.user_operate { margin-top: 5%; background: #FFFFFF; }
+.user_operate a { width: 25%; float: left; font-size: 1.2rem; text-decoration: none; color: #666; text-align: center; display: block; padding: 1rem 0; }
+.user_operate a img { display: block; width: 4rem; height: 4rem; margin: 0 auto 6px auto; }
+.user_operate a strong { color: #999999; font-size: 1.6rem; display: block; margin-top: 2rem; }
+

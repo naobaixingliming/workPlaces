@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>提现</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/cashDrawal-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+<!--  顶部 start -->
+  <header class="header">
+    <div class="head_box">
+        <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+        <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">提现</h3></div></div>
+        <div class="head_ft"></div>
+    </div>
+  </header>
+ <!--  顶部end  -->
+    <div class="container js_container">
+        <div class="page slideIn">
+            <div class="mainContent" style="display:block;">
+                <div class="hasBindCard" style="display:block;">
+                    <p class="cashDrawal_tips"><i class="weui_icon_warn"></i>单笔限额5万，当日累计限额50万</p>
+                    <div class="weui_cells">
+                        <div class="weui_cell bindBank">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>招商银行</p>
+                            </div>
+                            <div class="weui_cell_ft"><span>6225201622221898</span><i class="eyes_icon"></i></div>
+                        </div>
+                        <!-- <div class="weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p>到账时间</p>
+                            </div>
+                            <div class="weui_cell_ft"><span>次日24点前到账</span></div>
+                        </div> -->
+                        <div class="weui_cell">
+                            <div class="weui_label"><label>转出金额</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input ipt_text" type="number" placeholder="本次可转出：20.00元"/>
+                            </div>
+                            <div class="weui_cell_ft">
+                                <i class="weui_icon_clear" style="display:none;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cashDrawal_btn">
+                        <a href="javascript:;" class="weui_btn btn_gray">确定提现</a> <!--  填完内容 btn_gray替换成btn_mainColor -->
+                    </div>
+
+                    <dl class="cashTimeTips">
+                        <dt><strong>温馨提示：</strong></dt>
+                        <dd style="text-indent:2em;">15:00之前申请，预计到账日期T+1个工作日；</dd>
+                        <dd style="text-indent:2em;">15:00之后申请，预计到账日期T+2个工作日；</dd>
+                    </dl>
+                </div>
+                <!--  未绑卡状态start  -->
+                <div class="noBindCard" style="display:none;">  <!--  未绑卡时显示  -->
+                    <div class="gth">
+                        <i class="weui_icon_msg weui_icon_warn"></i>
+                    </div>
+                    <div class="noBindCard_p">
+                        <p>您还没有绑定的银行卡</p>
+                        <p>绑卡成功后该银行卡将设置为<span class="mainTextColor">默认提现银行卡</span></p>
+                    </div>
+                    <div class="bindCard_btn">
+                        <a href="javascript:;" class="weui_btn btn_mainColor">去绑卡</a>
+                    </div>
+                </div>
+                <!--  未绑卡状态end  -->
+            </div>
+
+            <!--  填写交易密码start  -->
+            <div class="message_code" style="display:none;">
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input ipt_text" type="text" placeholder="请输入交易密码"/>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <i class="weui_icon_warn" style="display:none;"></i>
+                            <i class="weui_icon_clear" style="display:none;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bindCard_btn">
+                    <a href="javascript:;" class="weui_btn btn_gray">完成</a> <!--  输入后btn_gray替换成btn_mainColor进入可点击状态 -->
+                </div>
+            </div>
+            <!--  填写交易密码end  -->
+        </div>        
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function(){
+            // var tempPlaceholder;
+            // $("input.ipt_text").on("focus",function(){
+            //     tempPlaceholder = $(this).attr("placeHolder");
+            //     $(this).attr("placeholder","");
+            // }).on("blur",function(){
+            //     $(this).attr("placeholder",tempPlaceholder);
+            //     tempPlaceholder='';
+            // });
+
+            var now = new Date();
+            var compareTime = new Date();
+            compareTime.setHours ("15");
+            compareTime.setMinutes ("00");
+            if(now.getTime()-compareTime.getTime()<0){
+                $(".cashTimeTips dd").eq(0).css({"font-weight":"400","color":"#666666"});
+            }else{
+                $(".cashTimeTips dd").eq(1).css({"font-weight":"400","color":"#666666"});
+            }
+        });
+    </script>
+</body>
+</html>

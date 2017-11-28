@@ -1,0 +1,62 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 62.5%; }
+
+a img, fieldset { border: 0; }
+
+a { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.page_wrap, body { background-color: #efeff4; }
+
+.record_tabs { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; background: #efeff4; z-index: 1; position: absolute; top: 0; left: 0; box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.3); -webkit-box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.3); -moz-box-shadow: 0 0 10px 0 rgba(155, 143, 143, 0.3); }
+.record_tabs a { display: block; position: relative; width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: center; font-size: 1.6rem; color: #666666; padding: 1.5rem 0; border-bottom: 1px solid #cccccc; }
+.not_weixin .record_tabs{top: 46px;}
+.record_wrap { padding-top: 5.4rem; }
+
+.record_box { width: 100%; position: relative; padding: 3% 2%; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ display: none; }
+
+.record_list { width: 100%; height: auto; }
+.record_list li { background: #FFFFFF; margin-bottom: 3%; border-radius: .5rem; overflow: hidden; }
+.record_list li a { border-radius: .5rem; }
+.record_list li a .rl_box { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 1.5rem; }
+.record_list li a:active { background-color: #d9d9d9; }
+.record_list .record_hd { width: 6rem; height: 6rem; margin-right: 1.5rem; }
+.record_list .record_hd.yi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.shi { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.zhu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_zhu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.xing { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_xing_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.edc { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_edc_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.medical { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_medical_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.yu { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.shou { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shou_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_hd.other { background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_other_20160531.png) no-repeat 50% 50%; background-size: 100% 100%; }
+.record_list .record_bd { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; min-width: 0; }
+.record_list .record_bd h4 { color: #999999; font-size: 1.4rem; font-weight: 400; line-height: 1.7; float: left; }
+.record_list .record_bd h4 i { font-style: normal; display: inline; font-size: 1rem; }
+.record_list .record_bd h4 b { font-size: 1.4rem; font-weight: 400; color: #333333; font-style: normal; display: inline; }
+.record_list .record_bd span { float: right; display: block; font-size: 1rem; color: #eea838; border: 1px solid #eea838; border-radius: 1rem; padding: .2rem .8rem; }
+.record_list .record_bd p { font-size: 1.2rem; color: #999999; line-height: 1.7; }
+.record_list .record_bd p strong { font-size: 1.6rem; font-weight: 400; }
+
+.rl_pro_info { background: #ebfaff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.rl_pro_info .rl_col { width: 100%; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: center; padding: 2%; }
+.rl_pro_info .rl_col strong { font-size: 1.4rem; font-weight: 400; color: #333333; line-height: 1.4; }
+.rl_pro_info .rl_col p { font-size: 1.2rem; color: #999999; line-height: 1.4; }
+
+@media screen and (max-width: 320px) { .record_list li a .rl_box { padding: 1rem; }
+  .record_list .record_hd { margin-right: 1rem; }
+  .record_list .record_bd h4 { font-size: 1.2rem; }
+  .record_list .record_bd h4 b { font-size: 1.2rem; }
+  .record_list .record_bd p { font-size: 1.1rem; }
+  .record_list .record_bd p strong { font-size: 1.4rem; } }
+

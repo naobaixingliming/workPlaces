@@ -1,0 +1,31 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 62.5%; }
+
+.page, body { background-color: #efeff4; }
+.not_weixin .page_wrap{padding-top: 46px;}
+
+.cashBox01 { margin-top: 5%; padding: 0 5%; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+
+.cbl { width: 50%; }
+.cbl strong { color: #333333; font-size: 1.6rem; font-weight: 400; display: block; }
+.cbl span { display: block; margin-top: .2rem; font-size: 1.2rem; color: #999999; }
+
+.cbr { width: 50%; font-size: 1.4rem; text-align: right; }
+
+.cashBox02 { margin-top: 5%; padding: 0 5%; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+.cashBox02 p { font-size: 1.4rem; color: #666666; line-height: 1.4; }
+
+.cashBox03 { margin-top: 5%; padding: 0 5%; color: #999999; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.cashBox03 p { display: inline-block; font-size: 1.4rem; height: 2.4rem; position: relative; }
+.cashBox03 p i { padding-right: .4rem; }
+.cashBox03 span { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: center; position: relative; }
+.cashBox03 span:before { content: ' '; display: block; width: 80%; position: absolute; top: 1.2rem; left: 10%; height: 1px; border-top: 1px dashed #999999; }
+
+.icon_cashDraw { display: inline-block; width: 20px; height: 24px; float: left; margin-right: .4rem; background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/cashDraw_icon_20160607.png) no-repeat 50% 50%; background-size: 95% auto; }
+
+.weui_icon_success:before { color: #7dcae6; }
+
+.cashBox04 { margin-top: 5%; padding: 0 5%; position: relative; box-sizing: border-box; -moz-box-sizing: border-box; /* Firefox */ -webkit-box-sizing: border-box; /* Safari */ }
+.cashBox04 a { display: block; width: 100%; padding: .6rem 0; font-size: 1.4rem; font-weight: 400; border-radius: .4rem; text-align: center; }
+

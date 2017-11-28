@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>存钱罐</title>
+    <link rel="stylesheet" href="css/piggyBank-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+  <div class="page_wrap slideIn">
+    <div class="page_outer">
+      <div class="page_inner">
+      <!--  顶部 start -->
+      <header class="header">
+        <div class="head_box">
+          <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+          <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">存钱罐</h3></div></div>
+          <div class="head_ft"><a class="new_message" href="javascript:;">&nbsp;<i></i></a></div>
+        </div>
+      </header>
+     <!--  顶部end  -->
+        <div class="page_content">
+          <div class="piggyBank_top mainBgColor">
+            <p>您的存钱罐收益(元)</p>
+            <strong>1.92</strong>
+            <a class="pig_help" href="javascript:;"><span class="mainTextColor">?</span></a>
+          </div>
+          <div class="pig_info">
+            <div class="pig_col">
+              <p>七日年化收益(%)</p>
+              <strong class="mainTextColor">3.6386</strong>
+            </div>
+            <div class="pig_col">
+              <p>累计收益(元)</p>
+              <strong class="mainTextColor">40.00</strong>
+            </div>
+          </div>
+
+          <div class="pig_title">
+              <h3>为您推荐</h3>
+          </div>
+
+          <div class="recom_box">
+            <ul class="recom_list">
+              <li>
+                <a href="javascript:;">
+                  <div class="pig_hd yi"></div>  <!--yi,shi,zhu,xing,edc,medical,yu,shou,other-->
+                  <div class="pig_bd">
+                    <strong>金珠宝第十二期</strong>
+                    <p>1小时前发布</p>
+                  </div>
+                  <span class="pig_ft"></span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <div class="pig_hd shi"></div>  <!--yi,shi,zhu,xing,edc,medical,yu,shou,other-->
+                  <div class="pig_bd">
+                    <strong>菜篮宝第十期</strong>
+                    <p>4小时前发布</p>
+                  </div>
+                  <span class="pig_ft"></span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <div class="pig_hd other"></div>  <!--yi,shi,zhu,xing,edc,medical,yu,shou,other-->
+                  <div class="pig_bd">
+                    <strong>牛牛租赁第151期</strong>
+                    <p>6小时前发布</p>
+                  </div>
+                  <span class="pig_ft"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          
+
+        </div>
+        <!--  理财底部菜单start -->
+        <div class="navbar2">
+            <a href="javascript:;" class="navBar_item2">
+                <div class="navBar_icon nbi06"></div>
+                <p class="navBar_label">客服</p>
+            </a>
+            <a href="javascript:;" class="navBar_item2">
+                <div class="navBar_icon nbi07"></div>
+                <p class="navBar_label">礼品兑换</p>
+            </a>
+            <a href="javascript:;" class="navBar_item3 mainBgColor">
+                <p>提取收益</p>
+            </a>            
+        </div>
+        <!--  理财底部菜单end  -->
+      </div>
+    </div>
+  </div>
+  <!--  弹框start  -->
+  <div class="shadow"></div>
+  <div class="piggyBank_popup">
+    <div class="piggyBank_rules">
+      <p><span>存钱罐：</span>是新浪联手汇添富基金主推，具有账户余额增值功能。让您账户余额每日有收益。存钱罐近7日年化收益率3.6386%，转入、转出都是实时的，无需等待。</p>
+      <p><span>收益计算：</span>当天15:00前（T+1）个工作日计算收益，当天15:00后（T+2）个工作日计算收益。</p>
+      <p>每个新浪支付账号都具有存钱罐功能，当您在牛牛bank完成实名认证后，将会自动开通存钱罐功能。存钱罐目前是不收取任何手续费。只要您点击<span>【领取收益】</span>后，您的存钱罐收益会实时打入您的可用余额中，您用于提现或投资。</p>
+    </div>
+  </div>
+  <!--  弹框end  -->        
+
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript">
+      $(function(){
+          $(".pig_help").on("click",function(){
+            $(".shadow, .piggyBank_popup").fadeIn(0);
+          });
+          $(".shadow").on("click",function(){
+            $(".shadow, .piggyBank_popup").hide();
+          });
+      });
+  </script>
+</body>
+</html>

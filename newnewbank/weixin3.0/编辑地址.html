@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>编辑地址</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/editorAddress-1.1.1.css"/>
+</head>
+<body class="editorAddress not_weixin" ontouchstart>
+    <div class="page_wrap slideIn">
+        <div class="page_outer">
+            <div class="page_inner">
+            <!--  顶部 start -->
+              <header class="header">
+                <div class="head_box">
+                    <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+                    <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">编辑地址</h3></div></div>
+                    <div class="head_ft"></div>
+                </div>
+              </header>
+             <!--  顶部end  -->
+                <div class="page_content">
+                    <div class="weui_cells weui_cells_form" id="city" style="margin-top:0px;">
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">收货人</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="text" placeholder="请填写收货人" value="小龙虾" />
+                            </div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_hd"><label class="weui_label">联系电话</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <input class="weui_input" type="number" placeholder="请填写联系电话" value="13822228899" />
+                            </div>
+                        </div>
+                        <div class="weui_cell select_controls">
+                            <div class="weui_cell_hd"><label class="weui_label">所在省份</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <select class="weui_select prov" name="select1" id="id_provSelect">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="weui_cell_ft pleaseChoose">请选择</div>
+                        </div>
+                        <div class="weui_cell select_controls">
+                            <div class="weui_cell_hd"><label class="weui_label">所在城市</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <select class="weui_select city" name="select1" id="id_citySelect">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="weui_cell_ft pleaseChoose">请选择</div>
+                        </div>
+                        <div class="weui_cell select_controls">
+                            <div class="weui_cell_hd"><label class="weui_label">所在地区</label></div>
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <select class="weui_select dist" name="select1" id="id_areaSelect">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="weui_cell_ft pleaseChoose">请选择</div>
+                        </div>
+                        <div class="weui_cell">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <textarea class="weui_textarea" placeholder="请填写详细地址，不少于5个字" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui_cells weui_cells_form">
+                        <div class="weui_cell weui_cell_switch">
+                            <div class="weui_cell_hd weui_cell_primary">设为默认</div>
+                            <div class="weui_cell_ft">
+                                <input class="weui_switch" type="checkbox"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui_cells weui_cells_access">
+                        <a class="weui_cell" href="javascript:;">
+                            <div class="weui_cell_bd weui_cell_primary">
+                                <p class="mainTextColor">删除地址</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="save_btn mainBgColor" href="javascript:;">保 存</a>        
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/myDialog-1.1.1.js"></script>
+    <script src="js/address/jquery.cityselect.js"></script>
+    <!-- <script src="js/address/chinaAddress.js"></script>
+     <script src="js/address/ChooseAddress.js"></script> -->
+    <script>
+        $(function(){
+            // loadProvince('430104'); 
+            
+            $("#city").citySelect({  
+                url:"js/address/city.min.js",
+                prov:"湖南", //省份 
+                city:"长沙", //城市 
+                dist:"岳麓区" //区县 
+            });
+            $(".weui_select").on("change",function(){
+                $(this).parent().next(".pleaseChoose").hide();
+            });
+        });
+    </script>
+</body>
+</html>

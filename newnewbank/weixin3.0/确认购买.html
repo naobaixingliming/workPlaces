@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>确认购买</title>
+    <link rel="stylesheet" href="css/buyProduct-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+  <div class="page_wrap slideIn">
+    <div class="page_outer">
+      <div class="page_inner">
+      <!--  顶部 start -->
+      <header class="header">
+        <div class="head_box">
+          <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+          <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">确认购买</h3></div></div>
+          <div class="head_ft"><a class="new_message" href="javascript:;">&nbsp;<i></i></a></div>
+        </div>
+      </header>
+     <!--  顶部end  -->
+        <div class="page_content">
+          <div class="buy_top">
+            <div class="mark_box mark_yi"></div> <!-- mark_yi,shi,zhu,xing,edc,medical,yu,shou,other  -->
+            <div class="buy_pro_info">
+              <h4>金珠宝第17期</h4>
+              <div class="bpi_box clearfix">
+                <div class="bpi_col">
+                  <p><strong class="mainTextColor">11%</strong></p>
+                  <p>年化收益率</p>
+                </div>
+                <div class="bpi_col">
+                  <p><span class="mainTextColor">92天</span></p>
+                  <p>投资周期</p>
+                </div>
+                <div class="bpi_col">
+                  <p><span class="mainTextColor">200万</span></p>
+                  <p>融资金额</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buy_info">
+            <div class="bi_box">
+              <!-- <p class="item_name">投资金额</p> -->
+              <div class="balanceBox">
+                <p class="balance">账户可用金额：<span>100000000000.03</span>元 </p>
+                <a class="buyAll mainTextColor" href="javascript:;">全部抢购</a>
+              </div>
+              <div class="investInput">
+                <input type="number" name="investAmount" placeholder="最高可投余额15556" />
+                <span>元</span>
+              </div>
+            </div>
+
+            <div class="bi_box">
+              <p class="item_name">投资预期收益</p>
+              <div class="investBtnBox">
+                <a href="javascript:;" class="earnings mainBgColor">￥<i>320</i><span> + ￥<i>11.25</i><b>（加息券收益）</b></span></a>
+              </div>
+            </div>
+
+            <div class="bi_box">
+              <p class="item_name">现金券</p>
+              <div class="investBtnBox">
+                <a href="javascript:;" class="choosable checked">￥10</a>  <!--  checked选中，default默认,overdue过期-->
+                <a href="javascript:;" class="choosable default">￥50</a>
+                <a href="javascript:;" class="choosable default">￥50</a>
+                <a href="javascript:;" class="choosable default">￥100</a>
+                <a href="javascript:;" class="overdue">￥10</a>
+                <a href="javascript:;" class="overdue">￥20</a>
+              </div>
+            </div>
+
+            <div class="bi_box">
+              <p class="item_name">加息券</p>
+              <div class="investBtnBox">
+                <a href="javascript:;" class="choosable checked">+ 0.1%</a>
+                <a href="javascript:;" class="choosable default">+ 0.5%</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--  底部菜单start -->
+        <div class="buy_btn mainBgColor"><a href="javascript:;" class="buy_ok_btn">确定</a></div>
+        <!--  底部菜单end  -->
+      </div>
+    </div>
+  </div>   
+  <!--  加载等待弹框start  -->     
+  <div class="loading">
+    <div class="loading_bg"></div>
+  </div>
+  <!--  加载等待弹框end  -->
+ <!--  <div class="weui_dialog_alert buy_dialog" id="dialog3">
+      <div class="weui_mask"></div>
+      <div class="weui_dialog">
+          <div class="weui_dialog_hd buy_dialog_title"><strong class="weui_dialog_title">请输入交易密码</strong><a class="buy_dialog_close" href="javascript:;"><span></span></a></div>
+          <div class="weui_dialog_bd">
+            <div class="tradeMoney">￥<strong>888888.88</strong></div>
+            <div class="tradePassword">
+              <input type="password" placeholder="密码" />
+            </div>
+          </div>
+          <div class="buy_dialog_ft">
+              <a href="javascript:;" class="weui_btn_dialog">确定</a>
+          </div>
+      </div>
+  </div> -->
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/myDialog-1.1.1.js"></script>
+  <script type="text/javascript">
+      $(function(){
+          $(".investBtnBox").on("click","a.choosable",function(){
+            if($(this).hasClass("checked")){
+              $(this).removeClass("checked").addClass("default");
+            }else{
+              $(this).removeClass("default").addClass("checked").siblings("a.choosable").removeClass("checked").addClass("default");
+            }
+          });
+
+          $(".buy_ok_btn").on("click",function(){
+            var buyDialog = $("body").buyDialog({
+                text:"88888888.88",
+                okCallBack:function(){
+                  buyDialog.showTips("*交易密码错误");
+                  // $(".tradeError").show();
+                  setTimeout(function(){buyDialog.closeTips();},3000);
+                  return false;
+                }
+            });
+          });
+      });
+  </script>
+</body>
+</html>

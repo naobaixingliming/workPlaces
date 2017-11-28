@@ -1,0 +1,47 @@
+@charset 'utf-8';
+$mainColor:#f44975;
+.btn_mainColor{background-color:$mainColor;}
+.btn_gray{background-color:#CCCCCC;}
+.mainTextColor{color:$mainColor;}
+.mainBgColor{background-color:$mainColor;}
+
+.index .col01 strong{color:$mainColor;}
+.index .col01 span{color:$mainColor;}
+.index .col03 p.goumai{background:$mainColor;}
+
+.coupons .coupon_tabs a.cur{span{color:$mainColor; border-bottom: 2px solid $mainColor;}}
+
+.recharge .weui_navbar_item.weui_bar_item_on{color:$mainColor; border-bottom:2px solid $mainColor;}
+
+.manageAddress .addressList .setDefault.checked .weui_icon_success:before{color:$mainColor;}
+.manageAddress .addressList .setDefault.checked a{color:$mainColor;}
+
+.myNews .myNews_tabs a.cur{
+	span{color:$mainColor; border-bottom: 2px solid $mainColor;}
+}
+
+.investRecord .record_tabs{
+	a.cur{color: $mainColor;border-bottom: 2px solid $mainColor;}
+}
+.cashDrawalProgress .cashBox04{a{border:1px solid $mainColor;}}
+
+.dailySurprise .signIn_btn_box strong{border-bottom: 1px solid $mainColor;}
+.sid_box li span{color:$mainColor;}
+
+.productDetails .pd_nav{a.cur{color:$mainColor; border-bottom: 1px solid $mainColor;}}
+
+.productList .pro_nav_list li span{color:$mainColor;}
+.productList .pro_list .pro_btn p.goumai { background: $mainColor;}
+
+.gift .gift_type{
+	a.cur{
+		span{color:$mainColor; border-bottom:2px solid $mainColor;}
+	}
+}
+
+.editorAddress{
+	.weui_switch:checked {
+	  border-color: $mainColor;
+	  background-color: $mainColor;
+	}
+}

@@ -1,0 +1,117 @@
+@charset 'utf-8';
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html,body{font-size: 62.5%;}
+a img,fieldset{border:0;}
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+.fl{float:left;}
+.fr{float:right;}
+.clear {font-size: 0;height: 0;line-height: 0;overflow: hidden;clear: both;}
+@mixin inner-padding{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+@mixin middle-box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+@mixin webkit-box{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin flex-box($num){
+	-webkit-box-flex: $num;
+	-webkit-flex: $num;
+	-ms-flex: $num;
+	flex: $num;
+}
+.page_wrap, body{background-color:#FFFFFF;}
+.buy_top{padding:2% 0; @include webkit-box; background:#efeff4;}
+.mark_box{width:9rem; height:9rem; margin: 0 3%;}
+.mark_box.mark_yi{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_shi{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shi_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_zhu{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_zhu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_xing{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_xing_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_edc{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_edc_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_medical{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_medical_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_yu{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_yu_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_shou{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_shou_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+.mark_box.mark_other{background:url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/mark_other_20160531.png) no-repeat 50% 50%; background-size: 100% 100%;}
+
+.buy_pro_info{@include flex-box(1);
+	h4{font-size: 1.6rem; color:#111111; font-weight: 400;margin-top: 1rem;}
+	.bpi_box{ margin-top: .6rem;
+		.bpi_col{display:inline-block; float:left; margin-right: 8%;}
+		p{text-align: center;font-size: 1.4rem; height:2.2rem; line-height: 2.2rem;
+			strong{font-size: 1.8rem; font-weight: 400;}
+			span{font-size: 1.6rem;}
+		}
+	}
+}
+
+.buy_info{background:#FFFFFF; @include inner-padding; padding:0 3% 5% 3%;}
+.bi_box{padding:3% 0; border-bottom: 1px solid #dddddd;
+	.item_name{font-size: 1.4rem; color:#333333; margin-top: 2%;}
+	.investInput{width:100%; height:3.6rem; position:relative; background:#f5f5f5; border-radius: 1.2rem; margin:3% 0;
+		input{width:100%; height:3.6rem; line-height: 3.6rem; background:#f5f5f5; font-size: 1.4rem; color:#333333; @include inner-padding; padding:0 3.4rem 0 .8rem; border-radius:1.2rem;}
+		span{display:block; position:absolute; top:0; right:0; height:3.6rem; line-height: 3.6rem; font-size:1.4rem; color:#999999; padding-right: .8rem;}
+	}
+	.investBtnBox{padding-bottom:3%;
+		span{display:inline-block;margin:3% 8% 0 0; padding:.4rem .8rem; border-radius: .4rem; font-size: 1.4rem; color:#FFFFFF;}
+		a{display:inline-block;margin:3% 8% 0 0; padding:.4rem .8rem; border-radius: .4rem; font-size: 1.4rem;}
+		a.checked{background:#f44975; color:#FFFFFF;}
+		a.default{background:#f5f5f5; color:#333333;}
+		span.overdue{background:#f5f5f5; color:#CCCCCC;}
+	}
+}
+.buy_btn{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	a{
+		display: block;
+		width: 100%;
+		height: 4.8rem;
+		line-height: 4.8rem;
+		font-size: 1.6rem;
+		text-align: center;
+		color: #FFFFFF;
+	}
+}
+
+
+@media screen and (max-width:480px){
+	// html,body{font-size: 75%;}
+}
+
+@media screen and (max-width:320px){
+	.buy_pro_info{
+		h4{font-size: 1.6rem;margin-top: 1.2rem;}
+		.bpi_box{ margin-top: .8rem;
+			.bpi_col{margin-right: 8%;}
+			p{font-size: 1.2rem; height:1.8rem; line-height: 1.8rem;
+				strong{font-size: 1.6rem;}
+				span{font-size: 1.4rem;}
+			}
+		}
+	}
+}

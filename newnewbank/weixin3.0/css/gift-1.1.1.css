@@ -1,0 +1,44 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html, body { font-size: 62.5%; }
+
+a img, fieldset { border: 0; }
+
+a { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.clearfix:after { display: block; clear: both; content: ""; visibility: hidden; height: 0; }
+
+.clearfix { zoom: 1; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clear { font-size: 0; height: 0; line-height: 0; overflow: hidden; clear: both; }
+
+.page_wrap, body { background-color: #efeff4; }
+.not_weixin .header{border-bottom:1px solid #d9d9d9;}
+
+.gift_type { width: 100%; background: #FFFFFF; padding: 3% 0; }
+.gift_type .swiper-slide { width: 22.22%; }
+.gift_type a { display: block; width: 100%; font-size: 1.2rem; text-decoration: none; text-align: center; }
+.gift_type a img { display: block; width: 4rem; height: 4rem; margin: 0 auto .2rem auto; }
+.gift_type a span { display: inline-block; color: #666666; padding-bottom: .4rem; border-bottom: 2px solid #FFFFFF; }
+
+.gift_banner { width: 100%; height: auto; margin-top: 3%; }
+.gift_banner a { display: block; width: 100%; height: auto; text-align: center; }
+.gift_banner a img { width: 100%; height: auto; vertical-align: middle; }
+
+.gift_list { width: 100%; }
+.gift_list ul { width: 100%; height: auto; }
+.gift_list li { width: 48%; margin: 2% 0 0 2%; float: left; background: #FFFFFF; overflow: hidden; }
+.gift_list li a { display: block; width: 100%; height: auto; }
+.gift_list .g_imgBox { width: 100%; height: auto; text-align: center; }
+.gift_list .g_imgBox img { width: 100%; height: auto; vertical-align: middle; }
+.gift_list h4 { padding: 0 .4rem; color: #333333; height: 1.6rem; font-size: 1.4rem; font-weight: 400; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.gift_list .g_info { padding: 2% 2% 3% 2%; }
+.gift_list .g_info p { font-size: 1.2rem; height: 1.8rem; line-height: 1.8rem; }
+.gift_list .g_info p:nth-of-type(1) b { font-size: 1.4rem; font-weight: 400; }
+.gift_list .g_info p:nth-of-type(2) { color: #cccccc; }
+
+

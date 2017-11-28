@@ -1,0 +1,17 @@
+@charset 'utf-8';
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+html,body{font-size: 100%;}
+.page, body{background-color:#efeff4;}
+.addressList{
+	li{background:#FFFFFF; padding: 3% 5%; border-bottom: 1px solid #dddddd;
+		.user_info{font-size: 1.4rem; color:#333333;font-weight: 400;}
+		p{font-size: 1.2rem; color:#999999; margin-top: .4rem;}
+	}
+}
+.manage_btn{display:block; width:100%; height: 4.6rem; line-height: 4.6rem; position: absolute; bottom:0; font-size: 1.8rem; text-align: center; color:#FFFFFF;}
+
+
+@media screen and (max-width:480px){
+	html,body{font-size: 62.5%;}
+}

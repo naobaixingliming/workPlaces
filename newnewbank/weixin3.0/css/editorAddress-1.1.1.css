@@ -1,0 +1,28 @@
+@import url(baseColor-1.1.1.css);
+@import url(common-1.1.1.css);
+.page, body { background-color: #efeff4; }
+
+.weui_label { width: 4em; color: #333333; }
+
+.weui_input { color: #666666; }
+
+.weui_select { color: #666666; }
+
+.weui_cells { line-height: 2; }
+
+.select_controls { padding: 4px 15px; }
+
+.weui_cell_switch { padding-top: 10px; padding-bottom: 10px; }
+
+.weui_icon_clear:before { font-size: 21px; margin-left: .2em; margin-right: .2em; }
+
+.weui_cells_form .select_controls .weui_cell_ft { font-size: 14px; color: #CCCCCC; }
+
+.pleaseChoose { position: absolute; width: 20%; right: 5%; top: 25%; }
+
+.select_controls .weui_cell_ft:after { content: " "; display: inline-block; -webkit-transform: rotate(45deg); transform: rotate(45deg); height: 6px; width: 6px; border-width: 2px 2px 0 0; border-color: #c8c8cd; border-style: solid; position: relative; top: -2px; top: -1px; margin-left: .3em; }
+
+.save_btn { display: block; width: 100%; height: 46px; line-height: 46px; position: absolute; bottom: 0; font-size: 18px; text-align: center; color: #FFFFFF; }
+
+@media screen and (max-width: 320px) { .weui_cells { font-size: 16px; } }
+

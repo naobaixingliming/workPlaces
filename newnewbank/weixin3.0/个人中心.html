@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title>个人中心</title>
+		<link rel="stylesheet" href="css/swiper-3.1.7.min.css" />
+		<link rel="stylesheet" href="css/personalCenter-1.1.1.css" />
+		
+		
+		<!--修改20161024 start-->
+		<style type="text/css">
+			.personalCenter .cover{
+				display: none;
+				width:100% ;
+				height:100% ;
+				position:fixed ;
+				background-color: #000000;
+				opacity: 0.9;
+				z-index:1000 ;
+			}
+			.delete{
+				width: 100%;
+				height:6% ;
+				line-height:300% ;
+			    color: #fff;
+			    background-color: #eb849b;
+			    border-radius: 5px 5px 0 0;
+			}
+			.delete a{
+				font-size: 3.6rem;
+				cursor: pointer;
+				float: right;
+			}
+			.personalCenter .perponPopup{
+				display: none;
+				z-index: 2000;
+			    width: 80%;
+			    height: 80%;
+			    position: fixed;
+			    top: 10%;
+			    right: 10%;
+			    background-color: #fff;
+			    border-radius: 5px;
+			}
+			.user_nameChange{
+				color: #000;
+			    font-size: 1.6rem;
+			    margin-left: 5%;
+			}
+			.vipLevelChange{
+				display: inline-block;
+			    padding: .4rem 1.6rem;
+			    font-size: 1.4rem;
+			    text-align: center;
+			    color: #c1c1c1;
+			}
+			.perponPopup .redFont{
+				margin: 5% 0 2%;
+				color:#eb849b ;
+				text-align: center;
+				font-size:1.6rem ;
+				font-family: "microsoft yahei";
+			}
+			.perponPopup .blackFont{
+				color:#000 ;
+				text-align: center;
+				font-size:1.4rem ;
+				font-family: "microsoft yahei";
+			}
+			#qrCode{
+				width: 80%;
+			    height: 35%;
+			    text-align: center;
+			    margin:5% 0;
+			    margin-left:10% ;
+			}
+			.qrCodeInco img{
+				width:60% ;
+			}
+			.grayFont{
+				display: block;
+				color: #999999!important;
+				width: 90%;
+				margin:0 auto ;
+			}	
+		</style>
+		<!--修改20161024 start-->
+		
+		
+		
+	</head>
+
+	<body class="personalCenter" ontouchstart>
+		
+		
+		<!--修改20161021 strat-->
+		<div class="cover"></div>
+		<div class="perponPopup">
+			<p	class="delete"><a>×</a></p>
+			<div class="personal_box clearfix" >
+                <div class="head_box fl" style="margin-left:5% ;"><img src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/user_head_20160526.png"></div>
+                <p class="user_nameChange fl">大龙虾</p>
+                <a class="vipLevelChange fl" href="javascript:;"><i class="icon-1-02">&nbsp;</i><span>会员</span></a>
+            </div>
+            <p class="redFont">恭喜，您的专属二维码已生成！</p>
+			<p class="blackFont">快邀请您的小伙伴一起赚钱吧！</p>
+			<div id="qrCode" >
+				<!--<img id="qrCode"  src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCodeBig20161021.jpg"/>-->
+			</div>
+			<span class="blackFont grayFont">将专属二维码发送给客户，客户扫描进入并成功注册，
+			不用填写推荐码，即可建立客户关系。</span>
+		</div>
+		<!--修改20161021 end-->
+		
+		
+		
+		<div class="page_wrap slideIn">
+			<div class="page_outer">
+				<div class="page_inner">
+					<div class="page_content" style="padding-top:0;">
+						<!--  顶部start  -->
+						<div class="personal_top mainBgColor">
+							<div class="setUp_box">
+								<a class="setUp_btn" href="javascript:;">设置</a>
+								<a class="new_message" href="javascript:;">&nbsp;<i></i></a>
+							</div>
+							<div class="personal_box clearfix">
+								<div class="head_box fl"><img src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/user_head_20160526.png" /></div>
+								<p class="user_name fl">大龙虾</p>
+								<a class="vipLevel fl" href="javascript:;"><i class="icon-1-02">&nbsp;</i><span>会员</span></a>
+								
+								
+								<!--修改20161021 strat-->
+								<img src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCode20161021.png" class="qrCode" style="position: absolute;right: 1%;width: 7%;top: 35%;" />
+								<!--修改20161021 end-->
+								
+								
+							</div>
+						</div>
+						<!--  顶部end  -->
+						<!--  账户信息start  -->
+						<div class="accountInfo_box">
+							<div class="swiper-container accountInfo_container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" >
+										<div class="ab">
+											<span><i>￥</i>200.00</span>
+											<p>可用余额</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ab">
+											<span><i>￥</i>20000.00</span>
+											<p>账户总资产</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ab">
+											<span><i>￥</i>300.00</span>
+											<p>累计收益</p>
+										</div>
+									</div>
+									<div class="swiper-slide" >
+										<div class="ab">
+											<span><i>￥</i>300.00</span>
+											<p>待收收益</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ab">
+											<span><i>￥</i>300.00</span>
+											<p>待收收益</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ab">
+											<span><i>￥</i>300.00</span>
+											<p>待收收益</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  账户信息end  -->
+						<!--  个人中心菜单start -->
+						<div class="personal_nav">
+							<nav class="quick-entry-nav">
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon01_20160526.png"><span>我的特权金</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon02_20160526.png"><span>每日惊喜</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon03_20160526.png"><span>投资记录</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon04_20160526.png"><span>邀请奖励</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon05_20160526.png"><span>会员中心</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon06_20160526.png"><span>优惠券</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon07_20160526.png"><span>存钱罐</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon08_20160526.png"><span>客服</span></a>
+							</nav>
+						</div>
+						<!--  个人中心菜单end  -->
+						<!--  礼品换购广告 start  -->
+						<div class="personal_banner">
+							<a href="javascript:;"><img src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_banner_20160526.jpg" /></a>
+						</div>
+						<!--  礼品换购广告 end  -->
+						<!--  用户操作入口 start -->
+						<div class="user_operate">
+							<div class="user_operate_entry clearfix">
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon09_20160526.png"><span>礼品兑换</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon10_20160526.png"><span>提现</span></a>
+								<a href="#"><img width="45" height="45" src="https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/personal_center_icon11_20160526.png"><span>充值</span></a>
+								<a href="#"><strong>......</strong></a>
+							</div>
+						</div>
+						<!--  用户操作入口 end  -->
+
+					</div>
+					<!--  底部菜单start -->
+					<div class="navbar">
+						<a href="javascript:;" class="navBar_item">
+							<div class="navBar_icon nbi01"></div>
+							<p class="navBar_label">首页</p>
+						</a>
+						<a href="javascript:;" class="navBar_item">
+							<div class="navBar_icon nbi02"></div>
+							<p class="navBar_label">理财</p>
+						</a>
+						<a href="javascript:;" class="navBar_item">
+							<div class="navBar_icon_center nbi05"></div>
+							<p class="navBar_label">礼品</p>
+						</a>
+						<a href="javascript:;" class="navBar_item">
+							<div class="navBar_icon nbi03"></div>
+							<p class="navBar_label">合伙人</p>
+						</a>
+						<a href="javascript:;" class="navBar_item navBar_item_on">
+							<div class="navBar_icon nbi04"></div>
+							<p class="navBar_label">我的</p>
+						</a>
+					</div>
+					<!--  底部菜单end  -->
+
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/swiper-3.1.7.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var mySwiper = new Swiper('.accountInfo_container', {
+						freeMode: true,
+						roundLengths: true,
+						slidesPerView: 'auto'
+				});
+				
+				
+				//修改 20161021 start
+				//点击二维码生成事件
+				$(".qrCode").on('click', function() {
+					$(".cover,.perponPopup").show();
+				});
+				$(".delete").on('click',function(){
+					$(".cover,.perponPopup").hide();
+				});				
+				//使用canvas生成二维码
+    			jQuery('#qrCode').qrcode({
+				    render : "canvas",
+				   correctLevel:0,
+				    width : 150,
+				    height : 150,
+				    text: utf16to8("http://blog.csdn.net/mr_smile2014/article/details/51782122")
+				});
+				function utf16to8(str){
+					var out, i, len, c;    
+					out = "";    
+					len = str.length; 
+					for(i = 0; i < len; i++) {    
+						   c = str.charCodeAt(i);    
+						   if ((c >= 0x0001) && (c <= 0x007F)) {    
+						       out += str.charAt(i);    
+						   } else if (c > 0x07FF) {    
+						       out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));    
+						       out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F));    
+						       out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));    
+						   } else {    
+						       out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F));    
+						       out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));    
+						   }  					
+					}
+					return out;
+				}    
+				//修改 20161021 end
+				
+				
+				
+			});
+		</script>
+	</body>
+
+</html>

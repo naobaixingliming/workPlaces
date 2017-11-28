@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>银行卡明细</title>
+    <link rel="stylesheet" href="css/weui.min.css"/>
+    <link rel="stylesheet" href="css/setUp-1.1.1.css"/>
+</head>
+<body class="not_weixin" ontouchstart>
+    <div class="container js_container">
+        <div class="page_wrap slideIn">
+            <div class="page_outer">
+                <div class="page_inner">
+                <!--  顶部 start -->
+                      <header class="header">
+                        <div class="head_box">
+                            <div class="head_hd"><a class="back" href="javascript:;"></a></div>
+                            <div class="head_bd"><div class="head_bd_box"><h3 class="pageTitle">银行卡明细</h3></div></div>
+                            <div class="head_ft"></div>
+                        </div>
+                      </header>
+                     <!--  顶部end  -->
+                    <div class="page_content unbundlingBox">
+                        <div class="weui_cells weui_cells_access">
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>已绑银行</p>
+                                </div>
+                                <div class="weui_cell_ft noArrow"><span class="idCardNumber">招商银行</span><i class="weui_icon_success showIdCardNumber"></i></div>
+                            </a>
+                            <a class="weui_cell" href="javascript:;">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <p>卡号</p>
+                                </div>
+                                <div class="weui_cell_ft noArrow"><span class="bankCardNumber">6225201622221898</span><i class="eyes_icon eyes_icon_show showBankCardNumber"></i></div>
+                            </a>
+                        </div>
+                        <div class="unbundling"><a class="weui_btn mainBgColor" href="javascript:;">解除绑定</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/myDialog-1.1.1.js"></script>
+    <script src="js/common-1.1.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            
+
+            var tempBankCardStr = $(".bankCardNumber").text();  //保存银行卡号
+            $(".showBankCardNumber").on("click",function(){
+                if($(this).hasClass("eyes_icon_show")){
+                    var bankCardNumber = $.plusXing(tempBankCardStr,4,4);
+                    $(".bankCardNumber").text(bankCardNumber);
+                    $(this).removeClass("eyes_icon_show");
+                }else{
+                    $(".bankCardNumber").text(tempBankCardStr);
+                    $(this).addClass("eyes_icon_show");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
